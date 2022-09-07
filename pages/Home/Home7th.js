@@ -18,7 +18,14 @@ const cards = [
         title: "Free And Open Source Software",
         img: "../../public/image/images.jpg",
         description: "Use Timeline to plan projects right the time. how the pieces fit together."
-    }
+    },
+    {
+        id: 4,
+        title: "Free And Open Source Software",
+        img: { images },
+        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+    },
+   
 
 ];
 
@@ -31,13 +38,24 @@ const Home7th = () => {
                     color: "rgb(75, 101, 126)"
                 }}
             >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
-            <div className='grid grid-cols-1 lg:grid-cols-3  space-y-2 ml-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 space-y-2 space-x-1'>
                 {
                     cards.map(card => (
                         <div
                             key={card.id}>
-                         <h1> {card.title} </h1>
-                            </div>)
+                            <div className="card w-92 bg-base-100 shadow-xl ">
+                            {/* <figure>
+                                <Image src={images} alt=""></Image>
+                            </figure> */}
+                            <div className="card-body">
+                                <h2 className="card-title">Free And Open Source Software</h2>
+                                <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
+                                <div className="card-actions">
+                                    <button className='font-semibold text-purple-500 hover:text-purple-900'>Read more &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+</div>)
                       
                    )
                }
