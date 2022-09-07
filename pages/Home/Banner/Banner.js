@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Image from 'next/image';
-import banner2 from '../../public/banner2.jpeg'
-import download from '../../public/download.jpg'
+import banner2 from '../../../public/banner2.jpeg'
+import download from '../../../public/download.jpg'
 const Banner = () => {
     return (
         <>
