@@ -39,8 +39,8 @@ const Home2nd = () => {
                 style={{
                     color:"rgb(75, 101, 126)"
             }}
-            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</p>
-            <div className='grid grid-cols-1 lg:grid-cols-3 ml-6 space-y-2'>
+            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
+            <div className='grid grid-cols-1 lg:grid-cols-3  space-y-2 ml-8'>
                 <div
                   className="card w-96 bg-base-100 shadow-xl">
             <div className="px-10 pt-10">
@@ -54,7 +54,7 @@ const Home2nd = () => {
                         <h2 className="card-title">Free And Open Source Software</h2>
                         <p >Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const Home2nd = () => {
                         <h2 className="card-title">Free And Open Source Software</h2>
                         <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const Home2nd = () => {
                         <h2 className="card-title">Free And Open Source Software</h2>
                         <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,6 @@ const Home5th = () => {
     const opts = {
         height: "390",
         width: "640",
-        // marginX:"auto",
         playerVars: {
             autoplay: 1,
         }
@@ -24,9 +23,9 @@ const Home5th = () => {
                     }}
                 >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</p>
             </div>
-            <div className="block items-center mx-auto">
-                <h3 className="text-4xl text-center font-bold my-3">RBS-Technology - Youtube</h3>
-                <YouTube className="mx-auto" videoId="sTnm5jvjgjM"
+            <div className="flex items-center ">
+              
+                <YouTube className="mx-auto border-8 " videoId="mTz0GXj8NN0"
                     opts={opts} onReady={()=>OnReady} />
             </div>
    
