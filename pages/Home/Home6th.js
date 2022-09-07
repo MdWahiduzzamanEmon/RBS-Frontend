@@ -4,7 +4,7 @@ import download from '../../public/download.jpg'
 
 const Home6th = () => {
     return (
-        <div className="stats shadow"
+        <div className="stats shadow my-10"
             style={{
                 backgroundImage: `url(${download.src})`,
                 width: '100%',
