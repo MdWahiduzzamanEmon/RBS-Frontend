@@ -31,18 +31,18 @@ const cards = [
     
 ];
 
-const SpeedUp = () => {
+const Home2nd = () => {
     return (
-        <div className=" my-24">
+        <div className=" my-24 mx-auto">
             <h1 className="text-4xl text-center font-bold my-3">Speed Up Your Workflow</h1>
-            <h3 className="text-xl text-center mb-5"
+            <p className="text-xl text-center mb-5"
                 style={{
                     color:"rgb(75, 101, 126)"
             }}
-            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</h3>
-            <div className='flex space-x-1'>
+            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
+            <div className='grid grid-cols-1 lg:grid-cols-3  space-y-2 ml-8'>
                 <div
-                  className="card w-96 bg-base-100 shadow-2xl">
+                  className="card w-96 bg-base-100 shadow-xl">
             <div className="px-10 pt-10">
                         <Image
                             src={images}
@@ -52,9 +52,9 @@ const SpeedUp = () => {
                     </div>
                     <div className="card-body text-center">
                         <h2 className="card-title">Free And Open Source Software</h2>
-                        <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
+                        <p >Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const SpeedUp = () => {
                         <h2 className="card-title">Free And Open Source Software</h2>
                         <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const SpeedUp = () => {
                         <h2 className="card-title">Free And Open Source Software</h2>
                         <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
                         <div className="card-actions">
-                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more</button>
+                            <button className='font-semibold text-fuchsia-600 hover:text-fuchsia-900'>Read more &rarr;</button>
                         </div>
                     </div>
                 </div>
@@ -100,4 +100,4 @@ const SpeedUp = () => {
     );
 };
 
-export default SpeedUp;
+export default Home2nd;

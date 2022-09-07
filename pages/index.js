@@ -1,7 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Banner from './Banner/Banner'
-import SpeedUp from './SpeedUp/SpeedUp'
+import HomePage from './Home/HomePage'
+
 
 
 export default function Home() {
@@ -11,8 +9,7 @@ export default function Home() {
         color:"rgb(23, 52, 101)"
     }}
     >
-      <Banner />
-      <SpeedUp/>
+      <HomePage/>
     </div>
   )
 }

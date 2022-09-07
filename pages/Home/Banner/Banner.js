@@ -1,22 +1,12 @@
 import Navbar from "./Navbar";
 import Image from 'next/image';
-import banner2 from '../../public/banner2.jpeg'
-import download from '../../public/download.jpg'
+import banner2 from '../../../public/banner2.jpeg'
+import download from '../../../public/download.jpg'
 const Banner = () => {
     return (
         <>
             <div className="text-white"
-//                 style={{
-//                     // backgroundColor: "rgb(30, 35, 52)",
-//                     backgroundImage: "url('../public/download.jpg')",
-//                     objectFit:"cover"
-//                     // height: "400px",
-//                     // width:"100%",
-//                     // clipPath: "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 79% 89%, 31% 95%, 0 100%, 0% 30%)",
-//                     // backgroundSize:"cover",
-//                     // backgroundRepeat: "no-repeat",
-// }}
-                style={{
+            style={{
                     backgroundImage: `url(${download.src})`,
                     width: '100%',
                     height: '100%',
