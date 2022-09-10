@@ -23,9 +23,13 @@ const Home5th = () => {
                     }}
                 >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</p>
             </div>
-            <div className="flex items-center ">
+            <div className="flex items-center container">
               
                 <YouTube className="mx-auto border-8 " videoId="mTz0GXj8NN0"
+                    style={{
+                        width: "100%",
+                    }}
+
                     opts={opts} onReady={()=>OnReady} />
             </div>
    

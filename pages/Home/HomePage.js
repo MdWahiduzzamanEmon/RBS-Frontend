@@ -10,12 +10,14 @@ const HomePage = () => {
     return (
         <div>
             <Banner />
-            <Home2nd />
-            <Home3rd />
-            <Home4th />
-            <Home5th />
-            <Home6th />
-            <Home7th/>
+            <div className="container mx-auto">
+                <Home2nd />
+                <Home3rd />
+                <Home4th />
+                {/* <Home5th /> */}
+                <Home6th />
+                <Home7th />
+            </div>
         </div>
     );
 };

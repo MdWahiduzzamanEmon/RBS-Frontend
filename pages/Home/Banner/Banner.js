@@ -5,18 +5,22 @@ import download from '../../../public/download.jpg'
 const Banner = () => {
     return (
         <>
-            <div className="text-white"
-            style={{
+            <div className="text-white "
+                style={{
                     backgroundImage: `url(${download.src})`,
                     width: '100%',
                     height: '100%',
                     clipPath: "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 71% 87%, 0 100%, 0% 30%)"
                 }}
-                 
+
             >
                 <Navbar />
-                <div className="hero min-h-screen">
-                    <div className="hero-content flex-col lg:flex-row">
+                <div className="flex
+                    items-center justify-center
+            h-screen container mx-auto">
+                    <div className="flex
+                    items-center justify-center
+                     lg:flex-row">
 
                         <div>
                             <h1 className="text-7xl font-bold">Best Project Management Software!</h1>
