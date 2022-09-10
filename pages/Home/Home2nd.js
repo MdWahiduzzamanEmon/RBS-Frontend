@@ -102,7 +102,7 @@ const Home2nd = () => {
                                 <h2 className="card-title">Free And Open Source Software</h2>
                                 <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
                                 <div className="card-actions">
-                                    <button className='font-semibold text-purple-500 hover:text-purple-900'>Read more &rarr;</button>
+                                    <button className='btn btn-primary font-semibold text-purple-500 hover:text-purple-900'>Read more &rarr;</button>
                                 </div>
                             </div>
                         </div>
