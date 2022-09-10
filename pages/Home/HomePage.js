@@ -5,10 +5,12 @@ import Home4th from "./Home4th";
 import Home5th from "./Home5th";
 import Home6th from "./Home6th";
 import Home7th from "./Home7th";
+import NavBar from "./Banner/NavBar";
 
 const HomePage = () => {
     return (
         <div>
+            <NavBar/>
             <Banner />
             <div className="container mx-auto">
                 <Home2nd />

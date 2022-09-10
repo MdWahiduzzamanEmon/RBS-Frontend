@@ -1,11 +1,12 @@
-import Navbar from "./Navbar";
+import Navbar from "./NavBar";
 import Image from 'next/image';
 import banner2 from '../../../public/banner2.jpeg'
 import download from '../../../public/download.jpg'
+import NavBar from "./NavBar";
 const Banner = () => {
     return (
         <>
-            <div className="text-white "
+            <div className="text-white pt-4"
                 style={{
                     backgroundImage: `url(${download.src})`,
                     width: '100%',
@@ -14,11 +15,10 @@ const Banner = () => {
                 }}
 
             >
-                <Navbar />
-                <div className="flex
-                    items-center justify-center
-            h-screen container mx-auto">
-                    <div className="flex
+                {/* <Navbar /> */}
+                {/* <NavBar/> */}
+                <div className="flex items-center justify-center h-screen container mx-auto">
+                    <div className="d-flex
                     items-center justify-center
                      lg:flex-row">
 
@@ -27,7 +27,7 @@ const Banner = () => {
                             <p className="py-6">Use Timeline to plan projects right the first time. See how the pieces fit together.</p>
                             <button className="btn btn-primary">Get Started</button>
                         </div>
-                        <Image src={banner2} className="max-w-sm rounded-xl shadow-2xl " alt=" " />
+                        <Image src={banner2} className="" alt=" " />
                     </div>
                 </div>
             </div>
