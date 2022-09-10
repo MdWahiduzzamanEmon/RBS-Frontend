@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#1E2334 '}} className=''>
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
