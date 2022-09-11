@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card } from 'react-bootstrap';
 import images from "../../public/image/images.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faSett} from '@fortawesome/free-solid-svg-icons'
 const cards = [
     {
         id: 1,
