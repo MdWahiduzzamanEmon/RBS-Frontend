@@ -29,20 +29,16 @@ const Home2nd = () => {
     return (
         <div className=" my-24 mx-auto">
             <h1 className="text-center font-bold my-3">Speed Up Your Workflow</h1>
-            <p className="text-center mb-5"
-                style={{
-                    color:"rgb(75, 101, 126)"
-            }}
-            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
+            <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
            
-            <div className='d-flex flex-column flex-lg-row justify-content-lg-evenly'>
+            <div className='d-flex flex-column flex-lg-row justify-content-md-evenly'>
             {
                 cards.map(card => (
                     <div
                         key={card.id}>
                         
                         <div>
-                            <Card className=' card shadow-lg rounded' style={{ width: '18rem' }}>
+                            <Card className=' card shadow-lg rounded w-sm-50' >
                                 <Image className='img-fluid rounded-top' src={images} alt="" />
                                 <Card.Body>
                                     <Card.Title>{card.title}</Card.Title>

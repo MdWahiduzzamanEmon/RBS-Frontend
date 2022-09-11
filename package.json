@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.10",
     "bootstrap": "^5.2.1",
     "daisyui": "^2.25.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
+    "react-iframe": "^1.8.0",
     "react-youtube": "^9.0.3"
   },
   "devDependencies": {

@@ -1,5 +1,8 @@
 import Image from 'next/image';
+import { Card } from 'react-bootstrap';
 import images from "../../public/image/images.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 const cards = [
     {
         id: 1,
@@ -31,31 +34,29 @@ const cards = [
 
 const Home7th = () => {
     return (
-        <div className=" my-24 mx-auto">
-            <h1 className="text-4xl text-center font-bold my-3">Speed Up Your Workflow</h1>
-            <p className="text-xl text-center mb-5"
-                style={{
-                    color: "rgb(75, 101, 126)"
-                }}
-            >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
-            <div className='grid grid-cols-1 lg:grid-cols-4 space-y-2 space-x-1'>
+        <div className=" my-5 mx-auto">
+            <h1 className="text-4xl text-center font-bold my-3">Our Software Features</h1>
+            <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
+            <div className='d-flex flex-column flex-lg-row justify-content-md-evenly'>
                 {
                     cards.map(card => (
                         <div
-                            key={card.id}>
-                            <div className="card w-92 bg-base-100 shadow-xl ">
-                            {/* <figure>
-                                <Image src={images} alt=""></Image>
-                            </figure> */}
-                            <div className="card-body">
-                                <h2 className="card-title">Free And Open Source Software</h2>
-                                <p>Use Timeline to plan projects right the time. how the pieces fit together.</p>
-                                <div className="card-actions">
-                                    <button className='font-semibold text-purple-500 hover:text-purple-900'>Read more &rarr;</button>
-                                </div>
-                            </div>
+                            key={card.id}
+                        >
+
+                            <Card className=' card rounded w-sm-50 w-md-75' >
+                                <FontAwesomeIcon icon={faSett} /> 
+                                    <Card.Body>
+                                        <Card.Title>{card.title}</Card.Title>
+                                        <Card.Text>
+                                            {card.description}
+                                        </Card.Text>
+                                        <button className='border-0 hover:text-primary'>Read more &rarr;</button>
+                                    </Card.Body>
+                                </Card>
                         </div>
-</div>)
+                       
+)
                       
                    )
                }
