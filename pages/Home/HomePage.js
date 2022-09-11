@@ -8,6 +8,7 @@ import Home6th from "./Home6th";
 import Home7th from "./Home7th";
 import NavBar from "./Banner/NavBar";
 import Home3rd from "./Home3rd/Home3rd";
+import Home10th from "./Home10th/Home10th";
 
 const HomePage = () => {
     return (
@@ -19,6 +20,7 @@ const HomePage = () => {
                 <Home5th />
                 {/* <Home6th /> */}
                 <Home7th />
+                <Home10th/>
             </div>
         </div>
     );
