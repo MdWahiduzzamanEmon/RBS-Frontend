@@ -7,7 +7,7 @@ import home3rdStyles from '../../../styles/Home3rd.module.css'
 import checkIcon from '../../../public/check.png'
 const Home3rd = () => {
     return (
-        <div className="d-flex flex-row mt-5">
+        <div className="d-flex flex-column flex-lg-row mt-5">
                 
                 <div className=''>
                     <h1 className="fs-1 fw-bold">Your Base For Classic,<br /> Agile  Project <br /> Management</h1>

@@ -3,13 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavStyles from '../../../styles/NavBar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#1E2334 '}} className=''>
       <Container>
         <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <span>
+          <FontAwesomeIcon icon={faBars} color="#FFF"  size="2x"/>
+          </span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#features" className='text-white'>Home</Nav.Link>

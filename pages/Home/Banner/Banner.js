@@ -17,9 +17,8 @@ const Banner = () => {
                 {/* <Navbar /> */}
                 {/* <NavBar/> */}
                 <div className="container mx-auto ">
-                    <div className="d-flex align-items-center justify-content-center">
-
-                        <div>
+                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                        <div className="mb-3 mb-lg-0">
                             <h1 className="fs-1 fw-bold">Best Project Management Software!</h1>
                             <p className="py-6">Use Timeline to plan projects right the first time. See how the pieces fit together.</p>
                             <button className="btn btn-primary">Get Started</button>

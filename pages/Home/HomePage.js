@@ -10,9 +10,7 @@ import Home3rd from "./Home3rd/Home3rd";
 const HomePage = () => {
     return (
         <div>
-            <NavBar/>
-            <Banner />
-            <div className="container-lg">
+            <div>
                 <Home2nd />
                 <Home3rd />
                 <Home4th />
