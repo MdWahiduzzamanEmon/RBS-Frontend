@@ -13,15 +13,9 @@ const Home3rd = () => {
                 
                 <div className=''>
                     <h1 className="fs-1 fw-bold">Your Base For Classic,<br /> Agile  Project <br /> Management</h1>
-                    <p className="fs-5 my-3"
-                        style={{
-                            color: "rgb(75, 101, 126)"
-                        }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
+                    <p className="fs-5 my-3">On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
                     <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color=''></FontAwesomeIcon></span>40+ customizable templates</h3>
-                    <p className="fs-5 my-3"
-                        style={{
-                            color: "rgb(75, 101, 126)"
-                        }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
+                    <p className="fs-5 my-3">On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
 
                     <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color=''></FontAwesomeIcon></span>Free And Open Source Software</h3>
                     <p className="fs-5 my-3"
