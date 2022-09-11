@@ -17,13 +17,13 @@ const Home3rd = () => {
                         style={{
                             color: "rgb(75, 101, 126)"
                         }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
-                    <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color=''></FontAwesomeIcon></span>40+ customizable templates</h3>
+                    <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>40+ customizable templates</h3>
                     <p className="fs-5 my-3"
                         style={{
                             color: "rgb(75, 101, 126)"
                         }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
 
-                    <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color=''></FontAwesomeIcon></span>Free And Open Source Software</h3>
+                    <h3 className="fs-4 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>Free And Open Source Software</h3>
                     <p className="fs-5 my-3"
                         style={{
                             color: "rgb(75, 101, 126)"

@@ -8,7 +8,7 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#1E2334 '}} className=''>
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#1D2333 '}} className=''>
       <Container>
         <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
