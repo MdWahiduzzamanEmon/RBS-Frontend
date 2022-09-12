@@ -1,13 +1,23 @@
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 // import React from 'react';
-import image2 from '../../../../public/image/image2.jpg'
+import image2 from '../../../../public/image/image2.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home9th = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+       easing:"ease-out-cubic",
+
+        });
+    }, [])
     return (
-        <div>
+        <div className='my-5'>
             <h1 className="text-4xl text-center font-bold my-3">Best 3 Reason For Choose Our <br /> Software Service</h1>
             <div className='d-grid my-5 gap-5'>
             {/* <div className='row row-cols-1 row-cols-md-2'> */}
@@ -29,10 +39,18 @@ const Home9th = () => {
                                 <p className=' fs-4 fw-bold p-3 '>Full Implementation and <br /> Training Support</p> </Col>
                         
                     </Col>
-                    <Col xs={12} md={7} className='bg-light rounded-3 '>
-                        {/* <Image src={image2} alt=" " /> */}
+                    {/* <Col className=' d-flex bg-light rounded-3 '>
+                      
                         <Image src={image2} alt=" "
-                            className="d-flex w-25 h-25 rounded-5 justify-content-center align-items-center shadow-lg" />
+                            className="rounded-3 shadow-lg p-5" />
+                    </Col> */}
+                    <Col xs={12} md={7} className='d-flex bg-light rounded-3 '>
+                    
+                        <Image
+                            data-aos="flip-left"
+                            
+                            src={image2} alt=" "
+                            className="d-flex w-25 h-25 rounded-5 justify-content-center align-items-center shadow-lg p-2" />
                     </Col>
                 </Row>
                
