@@ -7,6 +7,8 @@ import footerStyles from './Footer.module.css'
 import circleImage from '../../public/footer-circle-image-1.png'
 import hoverImage from '../../public/footer-image1.png'
 import footerBgImage from '../../public/footer-gradient-image.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     const demoData = [
@@ -93,6 +95,8 @@ const Footer = () => {
         <section className='container-fluid pt-5' 
         style={{
             backgroundImage: `url(${footerBgImage.src})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
             fontFamily: 'Poppins'
         }}>
            <div className='py-5'>
@@ -108,7 +112,7 @@ const Footer = () => {
                    </div>
                     <p className='fs-3 fw-bold text-white'>Ready To Start Work?</p>
                     <p className='fs-3 fw-bold text-white'>Purchase Now!</p>
-                    <button className={` ${footerStyles.footerButton} border-0 px-3 py-2 rounded-1`}>More Features &rarr;</button>
+                    <button className={` ${footerStyles.footerButton} border-0 px-3 py-2 rounded-1`}>More Features <FontAwesomeIcon icon={faArrowRight}/></button>
                  </div>
             </Card>
            </div>

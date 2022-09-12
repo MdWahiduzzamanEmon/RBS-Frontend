@@ -6,7 +6,6 @@ import Home4th from "./Home4th";
 import Home5th from "./Home5th";
 import Home6th from "./Home6th/Home6th";
 import Home7th from "./Home7th/Home7th";
-import NavBar from "./Banner/NavBar";
 import Home3rd from "./Home3rd/Home3rd";
 import Home10th from "./Home10th/Home10th";
 import Home9th from "./Home7th/Home9th/Home9th";

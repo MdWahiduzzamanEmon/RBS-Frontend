@@ -2,13 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import NavStyles from '../../../styles/NavBar.module.css'
+import NavStyles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#1D2333 '}} className=''>
+    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation}`}>
       <Container>
         <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -18,8 +18,8 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#features" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="#pricing" className='text-white'>About us</Nav.Link>
+            <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
+            <Nav.Link href="#aboutUs" className='text-white'>About us</Nav.Link>
             <NavDropdown  className='text-white'  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">
@@ -35,10 +35,10 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets"className='text-white'>Contact us</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes"className='text-white'>
+            <Nav.Link href="#contactUs"className='text-white'>Contact us</Nav.Link>
+            {/* <Nav.Link eventKey={2} href="#memes"className='text-white'>
               Dank memes
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

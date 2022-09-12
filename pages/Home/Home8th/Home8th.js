@@ -26,8 +26,8 @@ const Home8th = () => {
             // margin: '50px'
             }}>
             <div className= 'py-5 '>
-                <div className='row row-cols-1 row-cols-md-2 g-4 d-flex flex-column flex-lg-row'>
-                    <div className='position-relative mb-lg-0 mb-4'>
+                <div className='row row-cols-1 row-cols-md-2'>
+                    <div className='position-relative mb-lg-0  d-lg-block d-none'>
                         <div className={`${home8thStyles.dotImage} position-absolute `}><Image src={image5} alt='' className=' img-fluid'></Image></div>
                         <div className={`${home8thStyles.middleImage} position-absolute `}><Image src={image1} alt='' className=' img-fluid'></Image></div>
                         <div className={`${home8thStyles.bottomImage} position-absolute `}><Image src={image2} alt='' className=' img-fluid'></Image></div>
@@ -36,14 +36,14 @@ const Home8th = () => {
                     </div>
                     <div>
                         <h1 className='fs-2 fw-bold'>Yore Base For Classic, Agile Or <br /> Project Management</h1>
-                        <p>On the other hand we denounce with righteous indignation dislike men who are so beguiled and demoralized.</p>
+                        <p className='fs-6'>On the other hand we denounce with righteous indignation dislike men who are so beguiled and demoralized.</p>
                         <div>
-                           <h1 className='fs-4  '><FontAwesomeIcon icon={faCircle} size='2xs'/> Protect Your Data And Privacy</h1>
-                           <p>Use Timeline to plan projects right long the first time. how the pieces fit together.</p>
+                           <h1 className='fs-5 fw-bold '><FontAwesomeIcon icon={faCircle} size='2xs'/> Protect Your Data And Privacy</h1>
+                           <p className='fs-6'>Use Timeline to plan projects right long the first time. how the pieces fit together.</p>
                         </div>
                         <div>
-                           <h1 className='fs-4'><FontAwesomeIcon icon={faCircle} size='2xs'/> Free And Open Source Software</h1>
-                           <p>Use Timeline to plan projects right long the first time. how the pieces fit together.</p>
+                           <h1 className='fs-5 fw-bold'><FontAwesomeIcon icon={faCircle} size='2xs'/> Free And Open Source Software</h1>
+                           <p className='fs-6'>Use Timeline to plan projects right long the first time. how the pieces fit together.</p>
                         </div>
                         <div>
                             <button className={`${home8thStyles.buttonGradient} border-0`}>Contact Us      <FontAwesomeIcon icon={faArrowRight}/></button>
