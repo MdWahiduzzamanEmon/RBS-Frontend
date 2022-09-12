@@ -4,6 +4,9 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import rbsLogo from '../../public/RBS_logo.png'
 import footerStyles from './Footer.module.css'
+import circleImage from '../../public/footer-circle-image-1.png'
+import hoverImage from '../../public/footer-image1.png'
+import footerBgImage from '../../public/footer-gradient-image.png'
 
 const Footer = () => {
     const demoData = [
@@ -87,16 +90,29 @@ const Footer = () => {
         },
     ]
     return (
-        <section className='container-fluid'>
-             
-             <Card className='container-lg'>
-                 <Card.Body>
-                    <p>Ready to start work?</p>
-                    <p>Purchase Now!</p>
-                    
-                 </Card.Body>
+        <section className='container-fluid' 
+        style={{
+            backgroundImage: `url(${footerBgImage.src})`,
+            fontFamily: 'Poppins'
+        }}>
+           <div className='py-5'>
+           <Card className={`${footerStyles.gradientFooter}  container-lg px-5 py-5 overflow-hidden border-0`}>
+                 <div className='position-relative '>
+                    {/* <div className={` ${footerStyles.footerCircle} position-absolute`}>
+                    <Image src={circleImage} alt='circle image'></Image>
+                    </div> */}
+                   <div className='overflow-hidden'>
+                   <div className={`${footerStyles.footerHoverImage} position-absolute d-none d-lg-block`}>
+                        <Image src={hoverImage} alt=''></Image>
+                    </div>
+                   </div>
+                    <p className='fs-3 fw-bold text-white'>Ready To Start Work?</p>
+                    <p className='fs-3 fw-bold text-white'>Purchase Now!</p>
+                    <button className={` ${footerStyles.footerButton} border-0 px-3 py-2 rounded-1`}>More Features &rarr;</button>
+                 </div>
             </Card>
-            <div className='d-flex flex-column justify-content-center container-lg'>
+           </div>
+            <div className='d-flex flex-column justify-content-center container-lg mt-5'>
             <div className='footer-top-part row row-cols-1 row-cols-md-3 g-4 justify-content-center'>
            {
             demoData.map((data,index)=> (
