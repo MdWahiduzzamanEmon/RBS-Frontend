@@ -11,11 +11,12 @@ import Slider from './slider';
 const Home6th = () => {
     return (
             // <div className="my-5 text-white d-grid row  g-4"
-        <div className=' container-fluid my-5 mx-auto'
+        <div className=' my-5 mx-auto'
             style={{
-            backgroundImage: `url(${download.src})`,
-            width: '100%',
-            height: '100%',
+            // backgroundImage: `url(${download.src})`,
+            // width: '100%',
+            // height: '100%',
+                backgroundColor: "rgb(30, 35, 52)"
 
         }}
         >
@@ -58,8 +59,8 @@ const Home6th = () => {
 
                 </div>
            </div>
-            <div className='pb-5'>
-                {/* <Image src={client1} alt='' height={'170px'} width={'1000px'} className='mb-5 img-fluid rounded-5'/> */}
+            <div className='pb-5 '>
+                
                 <Slider></Slider>
             </div>
         </div>

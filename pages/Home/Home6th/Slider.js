@@ -20,7 +20,7 @@ export default function Slider() {
     return (
         <>
             <div className={`${style.background} container-lg my-5 p-5 mx-auto rounded-5 text-white`} >
-            <Swiper className={`${style.swiper} `}
+                <Swiper className={`${style.swiper} `}
                     slidesPerView={4}
                     loop={true}
                     autoplay={{
@@ -32,6 +32,28 @@ export default function Slider() {
                 pagination={{
                     clickable: true,
                 }}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                            
+                        },
+                        // when window width is >= 640px
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        // when window width is >= 1024px
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
                 modules={[Pagination,Autoplay]}
                 // className="mySwiper"
             >
