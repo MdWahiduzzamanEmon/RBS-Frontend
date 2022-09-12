@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import rbsLogo from '../../public/RBS_logo.png'
+import footerStyles from './Footer.module.css'
 
 const Footer = () => {
     const demoData = [
@@ -85,7 +86,7 @@ const Footer = () => {
         },
     ]
     return (
-        <section className='container-fluid p-5'>
+        <section className='container-fluid'>
             <div className='d-flex flex-column justify-content-center container-lg'>
             <div className='footer-top-part row row-cols-1 row-cols-md-3 g-4 justify-content-center'>
            {
@@ -103,9 +104,9 @@ const Footer = () => {
             ))
            } 
             </div>
-            <div className='footer-bottom-part d-flex flex-row justify-content-between align-items-center'>
-               <div> <Image src={rbsLogo} alt=''></Image></div>
-               <div><p>Copyright &copy; RBSTech, All rights reserved.</p></div>
+            <div className='footer-bottom-part d-flex flex-column flex-md-row justify-content-between align-items-center'>
+               <div className=''> <Image src={rbsLogo} width='200px' height='150px' layout='fixed' alt=''></Image></div>
+               <div><p className='fs-6'>Copyright &copy; {new Date().getFullYear()} RBS Tech, All rights reserved.</p></div>
             </div>
             </div>
         </section>
