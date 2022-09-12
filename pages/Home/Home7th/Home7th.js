@@ -2,33 +2,36 @@ import Image from 'next/image';
 import { Card } from 'react-bootstrap';
 import images from "../../../public/image/images.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faDownload, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faBoltLightning, faCoffee, faDownload, faFileDownload, faGear, faReceipt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import style from './Home7th.module.css';
 const cards = [
     {
         id: 1,
         title: "Free And Open Source Software",
-        img: "../../public/image/images.jpg",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+      
+        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
+        icon: faGear
     },
     {
         id: 2,
         title: "Free And Open Source Software",
-        img: "../../public/image/images.jpg",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+       description: "Use Timeline to plan projects right the time. how the pieces fit together.",
+        icon: faBoltLightning
     },
     {
         id: 3,
         title: "Free And Open Source Software",
-        img: "../../public/image/images.jpg",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+      
+        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
+        icon: faDownload
     },
     {
         id: 4,
         title: "Free And Open Source Software",
-        img: { images },
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+       
+        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
+        icon: faReceipt
     },
    
 
@@ -36,7 +39,7 @@ const cards = [
 
 const Home7th = () => {
     return (
-        <div className=" my-5 mx-auto">
+        <div className=" container-lg my-5 mx-auto">
             <h1 className="text-4xl text-center font-bold my-3">Our Software Features</h1>
             <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
             <div className='row row-cols-1 row-cols-md-4 g-4'>
@@ -47,7 +50,7 @@ const Home7th = () => {
                         >
 
                             <Card className=' card rounded w-sm-50 w-md-75 shadow-lg' >
-                                <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3' icon={faDownload} /> </div>
+                                <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3' icon={card.icon} /> </div>
                                <Card.Body>
                                         <Card.Title>{card.title}</Card.Title>
                                         <Card.Text>

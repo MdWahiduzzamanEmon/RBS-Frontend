@@ -9,7 +9,7 @@ const Home4th = () => {
     return (
         
             // <div className="d-flex flex-column flex-lg-row ">
-        <div className="d-grid my-5">
+        <div className="container-lg d-grid my-5">
             <Row>
                 <Col className=" d-flex  bg-light rounded-5 align-items-center">
                     <div >

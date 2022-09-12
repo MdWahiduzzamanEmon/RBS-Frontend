@@ -4,7 +4,7 @@ import Banner from "./Banner/Banner";
 import Home2nd from "./Home2nd/Home2nd";
 import Home4th from "./Home4th";
 import Home5th from "./Home5th";
-import Home6th from "./Home6th";
+import Home6th from "./Home6th/Home6th";
 import Home7th from "./Home7th/Home7th";
 import NavBar from "./Banner/NavBar";
 import Home3rd from "./Home3rd/Home3rd";

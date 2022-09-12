@@ -1,22 +1,25 @@
 import Image from 'next/image';
-import banner2 from '../../public/banner2.jpeg'
-import download from '../../public/download.jpg';
+import banner2 from '../../../public/banner2.jpeg'
+import download from '../../../public/download.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import style from './Home6th/Home6th.module.css';
-import avatar from '../../public/image/avatar.jpg'
-import client1  from '../../public/image/client1.jpg'
+import style from './Home6th.module.css';
+import avatar from '../../../public/image/avatar.jpg'
+import client1  from '../../../public/image/client1.jpg'
+import Slider from './slider';
 
 const Home6th = () => {
     return (
             // <div className="my-5 text-white d-grid row  g-4"
-        <div className=' container-fluid my-5 mx-auto' style={{
+        <div className=' container-fluid my-5 mx-auto'
+            style={{
             backgroundImage: `url(${download.src})`,
             width: '100%',
             height: '100%',
 
-        }}>
-            <div className="my-5 text-white row row-cols-1 row-cols-md-3 g-4"
+        }}
+        >
+            <div className=" container-lg my-5 text-white row row-cols-1 row-cols-md-3 g-4"
            // <div className="my-5 text-white d-flex flex-column flex-md-row justify-content-evenly"
                 
             >
@@ -55,8 +58,9 @@ const Home6th = () => {
 
                 </div>
            </div>
-            <div className='row row-cols-1 row-cols-2 my-5 w-full'>
-                <Image src={client1} alt='' height={'170px'} width={'1000px'} className='mb-5 img-fluid rounded-5'/>
+            <div className='py-5'>
+                {/* <Image src={client1} alt='' height={'170px'} width={'1000px'} className='mb-5 img-fluid rounded-5'/> */}
+                <Slider></Slider>
             </div>
         </div>
     );

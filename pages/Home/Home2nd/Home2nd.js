@@ -1,25 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Card } from 'react-bootstrap';
-import images from "../../../public/image/images.jpg";
+// import images from "../../../public/image/";
+// import avatar from "../../../public/banner2.jpeg";
 import style from './Home2nd.module.css';
 const cards = [
     {
         id: 1,
         title: "Free And Open Source Software",
-        img: {images},
+        img: "/banner.jpeg",
         description: "Use Timeline to plan projects right the time. how the pieces fit together."
     },
     {
         id: 2,
         title: "Free And Open Source Software",
-        img: {images},
+        img: "/banner2.jpeg",
+      
         description: "Use Timeline to plan projects right the time. how the pieces fit together."
     },
     {
         id: 3,
         title: "Free And Open Source Software",
-        img: {images},
+        img: "/image2.jpg",
         description: "Use Timeline to plan projects right the time. how the pieces fit together."
     },
     
@@ -29,7 +31,7 @@ const cards = [
 
 const Home2nd = () => {
     return (
-        <div className=" my-24 mx-auto">
+        <div className="container-lg my-24 mx-auto">
             <h1 className="text-center font-bold my-3">Speed Up Your Workflow</h1>
             <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
            
@@ -41,7 +43,7 @@ const Home2nd = () => {
                         
                         <div>
                             <Card className=' card shadow-lg rounded w-sm-50' >
-                                <Image className='img-fluid rounded-top' src={images} alt="" />
+                                <Image className='img-fluid rounded-top' src={card.img} alt="" width="200px" height="300px" />
                                 <Card.Body>
                                     <Card.Title>{card.title}</Card.Title>
                                     <Card.Text>

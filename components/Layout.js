@@ -8,7 +8,7 @@ const Layout = ({children}) => {
         <>
           <NavBar/>
             <Banner />
-        <div className='container-lg'>
+            <div >
             {children}
         </div>
         <Footer/>
