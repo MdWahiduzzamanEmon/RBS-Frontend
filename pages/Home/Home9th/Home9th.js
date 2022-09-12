@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 // import React from 'react';
-import image2 from '../../../../public/image/image2.jpg';
+import image2 from '../../../public/image/image2.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,8 +17,12 @@ const Home9th = () => {
         });
     }, [])
     return (
-        <div className=' container-lg my-5'>
-            <h1 className="text-4xl text-center font-bold my-3">Best 3 Reason For Choose Our <br /> Software Service</h1>
+        <div className=' container-lg my-5'
+            style={{
+                fontFamily: 'Poppins'
+        }}
+        >
+            <h1 className="fs-2 text-center fw-bold my-3">Best 3 Reason For Choose Our <br /> Software Service</h1>
             <div className='d-grid my-5 gap-5'>
             {/* <div className='row row-cols-1 row-cols-md-2'> */}
                 <Row className='d-flex justify-content-md-between'>
