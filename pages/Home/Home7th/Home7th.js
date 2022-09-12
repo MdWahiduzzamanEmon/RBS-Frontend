@@ -11,27 +11,31 @@ const cards = [
         title: "Free And Open Source Software",
       
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faGear
+        icon: faGear,
+        color:"red"
     },
     {
         id: 2,
         title: "Free And Open Source Software",
        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faBoltLightning
+        icon: faBoltLightning,
+        color:"green"
     },
     {
         id: 3,
         title: "Free And Open Source Software",
       
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faDownload
+        icon: faDownload,
+        color:"blue"
     },
     {
         id: 4,
         title: "Free And Open Source Software",
        
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faReceipt
+        icon: faReceipt,
+        color:"yellow"
     },
    
 
@@ -39,7 +43,7 @@ const cards = [
 
 const Home7th = () => {
     return (
-        <div className=" container-lg my-5 mx-auto">
+        <div className=" container-lg my-5 mx-auto py-5">
             <h1 className="text-4xl text-center font-bold my-3">Our Software Features</h1>
             <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
             <div className='row row-cols-1 row-cols-md-4 g-4'>
@@ -50,7 +54,11 @@ const Home7th = () => {
                         >
 
                             <Card className=' card rounded w-sm-50 w-md-75 shadow-lg' >
-                                <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3' icon={card.icon} /> </div>
+                                <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3'
+                                    style={{
+                                    color:card.color
+                                }}
+                                    icon={card.icon} /> </div>
                                <Card.Body>
                                         <Card.Title>{card.title}</Card.Title>
                                         <Card.Text>
