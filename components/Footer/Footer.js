@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Card } from 'react-bootstrap';
 import rbsLogo from '../../public/RBS_logo.png'
 import footerStyles from './Footer.module.css'
 
@@ -87,6 +88,14 @@ const Footer = () => {
     ]
     return (
         <section className='container-fluid'>
+             
+             <Card className='container-lg'>
+                 <Card.Body>
+                    <p>Ready to start work?</p>
+                    <p>Purchase Now!</p>
+                    
+                 </Card.Body>
+            </Card>
             <div className='d-flex flex-column justify-content-center container-lg'>
             <div className='footer-top-part row row-cols-1 row-cols-md-3 g-4 justify-content-center'>
            {
