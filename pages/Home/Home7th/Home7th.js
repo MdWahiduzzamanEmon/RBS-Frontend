@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card } from 'react-bootstrap';
 import images from "../../../public/image/images.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBoltLightning, faCoffee, faDownload, faFileDownload, faGear, faReceipt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faBoltLightning, faCoffee, faDownload, faFileDownload, faGear, faReceipt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import style from './Home7th.module.css';
 const cards = [
@@ -12,7 +12,7 @@ const cards = [
       
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
         icon: faGear,
-        color:"red"
+        color:"purple"
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const cards = [
       
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
         icon: faDownload,
-        color:"blue"
+        color:"orange"
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const cards = [
        
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
         icon: faReceipt,
-        color:"yellow"
+        color:"purple"
     },
    
 
@@ -64,7 +64,7 @@ const Home7th = () => {
                                         <Card.Text>
                                             {card.description}
                                         </Card.Text>
-                                    <Link href='/' style={{ textDecoration: 'none' }}><button className={`${style.btnColor} border-0 btn-color`}>Read more &rarr;</button></Link>
+                                    <Link href='/' style={{ textDecoration: 'none' }}><button className={`${style.btnColor} border-0 btn-color`}>Read more <FontAwesomeIcon icon={faArrowRight}/> </button></Link>
                                     </Card.Body>
                                 </Card>
                         </div>
