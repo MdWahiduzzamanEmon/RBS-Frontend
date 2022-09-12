@@ -1,49 +1,63 @@
 import Image from 'next/image';
 import banner2 from '../../public/banner2.jpeg'
-import download from '../../public/download.jpg'
+import download from '../../public/download.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import style from './Home6th/Home6th.module.css';
+import avatar from '../../public/image/avatar.jpg'
+import client1  from '../../public/image/client1.jpg'
 
 const Home6th = () => {
     return (
-        <div className="stats shadow my-10"
-            style={{
-                backgroundImage: `url(${download.src})`,
-                width: '100%',
-                height: '100%',
-                clipPath: "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 71% 87%, 0 100%, 0% 30%)"
-            }}
-         >
+            // <div className="my-5 text-white d-grid row  g-4"
+        <div className=' container-fluid my-5 mx-auto' style={{
+            backgroundImage: `url(${download.src})`,
+            width: '100%',
+            height: '100%',
 
-            <div className="stat">
-                <div className="stat-figure text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+        }}>
+            <div className="my-5 text-white row row-cols-1 row-cols-md-3 g-4"
+           // <div className="my-5 text-white d-flex flex-column flex-md-row justify-content-evenly"
+                
+            >
+                <div className=''>
+                    <h1 className='' style={{ fontSize: "60px" }}>9.8k+</h1>
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <h5>Happy Customers</h5>
+
+                    <p>Use Timeline to plan <br /> projects right the first time. <br/>See how the pieces <br /> fit together.</p>
                 </div>
-                <div className="stat-title">Total Likes</div>
-                <div className="stat-value text-primary">25.6K</div>
-                <div className="stat-desc">21% more than last month</div>
-            </div>
-
-            <div className="stat">
-                <div className="stat-figure text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <div className=''>
+                    <h1 className='' style={{ fontSize: "60px" }}>A+</h1>
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
+                    <h5>Happy Customers</h5>
+                    <p>Use Timeline to plan <br /> projects right the first time. <br/>See how the pieces <br /> fit together.</p>
                 </div>
-                <div className="stat-title">Page Views</div>
-                <div className="stat-value text-secondary">2.6M</div>
-                <div className="stat-desc">21% more than last month</div>
-            </div>
+                <div className=''>
+                    <h2 className=''>Trusted By 12,000 Customers <br/> Using Our Software!</h2>
 
-            <div className="stat">
-                <div className="stat-figure text-secondary">
-                    <div className="avatar online">
-                        <div className="w-16 rounded-full">
-                            <Image layout='fill' src={banner2} alt=" " />
+                    <p>Use Timeline to plan  projects right the first time. <br/> See how the pieces fit together.</p>
+                    <div className='d-flex flex-column justify-content-center align-items-center justify-content-md-start   flex-md-row '>
+                        <Image src={avatar} alt=" "  className='rounded-2' />
+                        <div className='ms-3'>
+                            <h6>Hanri Thomas Doe</h6>
+                            <p>Consultancy Agency</p>
                         </div>
                     </div>
-                </div>
-                <div className="stat-value">86%</div>
-                <div className="stat-title">Tasks done</div>
-                <div className="stat-desc text-secondary">31 tasks remaining</div>
-            </div>
 
+                </div>
+           </div>
+            <div className='row row-cols-1 row-cols-2 my-5 w-full'>
+                <Image src={client1} alt='' height={'170px'} width={'1000px'} className='mb-5 img-fluid rounded-5'/>
+            </div>
         </div>
     );
 };

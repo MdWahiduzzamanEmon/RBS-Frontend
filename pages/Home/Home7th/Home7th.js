@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { Card } from 'react-bootstrap';
-import images from "../../public/image/images.jpg";
+import images from "../../../public/image/images.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSett} from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faDownload, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
+import style from './Home7th.module.css';
 const cards = [
     {
         id: 1,
@@ -37,21 +39,21 @@ const Home7th = () => {
         <div className=" my-5 mx-auto">
             <h1 className="text-4xl text-center font-bold my-3">Our Software Features</h1>
             <p className="text-center mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
-            <div className='d-flex flex-column flex-lg-row justify-content-md-evenly'>
+            <div className='row row-cols-1 row-cols-md-4 g-4'>
                 {
                     cards.map(card => (
                         <div
                             key={card.id}
                         >
 
-                            <Card className=' card rounded w-sm-50 w-md-75' >
-                                <FontAwesomeIcon icon={faSett} /> 
-                                    <Card.Body>
+                            <Card className=' card rounded w-sm-50 w-md-75 shadow-lg' >
+                                <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3' icon={faDownload} /> </div>
+                               <Card.Body>
                                         <Card.Title>{card.title}</Card.Title>
                                         <Card.Text>
                                             {card.description}
                                         </Card.Text>
-                                        <button className='border-0 hover:text-primary'>Read more &rarr;</button>
+                                    <Link href='/' style={{ textDecoration: 'none' }}><button className={`${style.btnColor} border-0 btn-color`}>Read more &rarr;</button></Link>
                                     </Card.Body>
                                 </Card>
                         </div>
