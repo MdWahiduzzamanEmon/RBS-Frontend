@@ -23,7 +23,7 @@ const cards = [
     {
         id: 3,
         title: "Free And Open Source Software",
-        img: "/image2.jpg",
+        img: "/image2.png",
         description: "Use Timeline to plan projects right the time. how the pieces fit together."
     },
     
