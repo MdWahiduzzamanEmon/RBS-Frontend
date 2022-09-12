@@ -26,7 +26,7 @@ const Home8th = () => {
             // margin: '50px'
             }}>
             <div className= 'py-5 '>
-                <div className='row row-cols-1 row-cols-md-2 g-4'>
+                <div className='row row-cols-1 row-cols-md-2 g-4 d-flex flex-column flex-lg-row'>
                     <div className='position-relative mb-lg-0 mb-4'>
                         <div className={`${home8thStyles.dotImage} position-absolute `}><Image src={image5} alt='' className=' img-fluid'></Image></div>
                         <div className={`${home8thStyles.middleImage} position-absolute `}><Image src={image1} alt='' className=' img-fluid'></Image></div>

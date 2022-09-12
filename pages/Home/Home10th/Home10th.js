@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Card } from 'react-bootstrap';
 import images from "../../../public/image/images.jpg";
 import image2 from "../../../public/image/clients.jpg";
@@ -31,7 +33,7 @@ const Home10th = () => {
         },        
     ];
     return (
-        <div className='my-5 container-lg'>
+        <div className='my-5 py-5 container-lg'>
            <div>
            <h1 className='text-center fw-bold my-3 '>Our Special Blogs</h1>
             <p className='text-center mb-5'>On the other hand we denounce with righteous indignation dislike men who <br /> are so beguiled and demoralized</p>
@@ -50,7 +52,7 @@ const Home10th = () => {
                                     <Card.Text>
                                         {card.description}
                                     </Card.Text>
-                                    <Link href='/' style={{textDecoration: 'none'}}><button className={`${home10thStyles.btnColor} border-0 btn-color`}>Read more &rarr;</button></Link>
+                                    <Link href='/' style={{textDecoration: 'none'}}><button className={`${home10thStyles.btnColor} border-0 btn-color`}>Read more <FontAwesomeIcon icon={faArrowRight}/></button></Link>
                                 </Card.Body>
                             </Card>
                         </div>

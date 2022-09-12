@@ -90,7 +90,7 @@ const Footer = () => {
         },
     ]
     return (
-        <section className='container-fluid' 
+        <section className='container-fluid pt-5' 
         style={{
             backgroundImage: `url(${footerBgImage.src})`,
             fontFamily: 'Poppins'
