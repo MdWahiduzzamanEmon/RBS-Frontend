@@ -21,7 +21,8 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
     "react-iframe": "^1.8.0",
-    "react-youtube": "^9.0.3"
+    "react-youtube": "^9.0.3",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
@@ -30,3 +31,4 @@
     "postcss": "^8.4.16"
   }
 }
+ 

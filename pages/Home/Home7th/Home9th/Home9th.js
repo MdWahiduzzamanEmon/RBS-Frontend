@@ -17,7 +17,7 @@ const Home9th = () => {
         });
     }, [])
     return (
-        <div className='my-5'>
+        <div className=' container-lg my-5'>
             <h1 className="text-4xl text-center font-bold my-3">Best 3 Reason For Choose Our <br /> Software Service</h1>
             <div className='d-grid my-5 gap-5'>
             {/* <div className='row row-cols-1 row-cols-md-2'> */}
