@@ -1,8 +1,14 @@
+import Footer from "../components/Footer/Footer";
+import FooterCommon from "../components/FooterCommon/FooterCommon";
+import NavBar from "./Home/Navbar/NavBar";
+
 const contactUs = () => {
     return (
-        <div>
-            
-        </div>
+        <section>
+            {/* <FooterCommon/> */}
+            {/* <NavBar/> */}
+            <Footer/>
+        </section>
     );
 };
 
