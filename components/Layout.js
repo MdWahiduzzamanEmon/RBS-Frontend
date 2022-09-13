@@ -7,11 +7,11 @@ import Footer from './Footer/Footer';
 const Layout = ({children}) => {
     return (
         <>
-          <NavBar/>
+          {/* <NavBar/> */}
             <div >
             {children}
         </div>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     );
 };

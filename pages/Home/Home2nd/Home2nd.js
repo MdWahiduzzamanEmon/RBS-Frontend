@@ -3,7 +3,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Card } from 'react-bootstrap';
-// import images from "../../../public/image/";
+// import images from "../../../public/";
 // import avatar from "../../../public/banner2.jpeg";
 import style from './Home2nd.module.css';
 const cards = [
