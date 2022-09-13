@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faFingerprint } from '@fortawesome/free-solid-svg-icons';
+import {faFingerprint, faHand, faHandBackFist, faHandHolding, faHandHoldingDroplet, faHandHoldingMedical, faHandsHoldingCircle, faLightbulb, faMobileScreen, faTabletScreenButton } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Card } from 'react-bootstrap';
@@ -9,14 +9,16 @@ const cards = [
         id: 1,
         title: "Innovative Ideas Pixel- Perfect Design",
         img: "/aboutCard1.png",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
+        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
+        icon: faLightbulb,
+
     },
     {
         id: 2,
         title: "Highly Customizable UI Experience",
         img: "/aboutCard2.png",
         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon:faFingerprint,
+        icon:faTabletScreenButton,
 
     },
     {
@@ -50,14 +52,17 @@ const Home2nd = () => {
 
                             <div>
                                 <Card className=' card shadow-lg rounded w-sm-50' >
-                                    {/* <Image  src={card.img} alt="" width="10px" height="100px" /> */}
-                                    
-                                    <Card.Body>
+                                    <div className='d-flex justify-content-center'>
+                                        <FontAwesomeIcon className='fw-semibold py-3 px-2  ' style={{
+                                            fontSize: "50px"
+                                        }} icon={card.icon} />
+                                    </div>
+                                   <Card.Body>
                                         <Card.Title className='fs-5 fw-bold'>{card.title}</Card.Title>
                                         <Card.Text className='fs-6'>
                                             {card.description}
                                         </Card.Text>
-                                        {/* <Link href='/' style={{ textDecoration: 'none' }}><button className={`${style.btnColor} border-0 `}>Read more <FontAwesomeIcon icon={faArrowRight} /></button></Link> */}
+                                      
                                     </Card.Body>
                                 </Card>
                             </div>
