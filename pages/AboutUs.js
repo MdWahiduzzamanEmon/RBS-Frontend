@@ -1,9 +1,12 @@
-const aboutUs = () => {
+import React from 'react';
+import AboutBanner from '../components/AboutUs/AboutBanner';
+
+const index = () => {
     return (
         <div>
-            <h1>About us page</h1>
+            <AboutBanner></AboutBanner>
         </div>
     );
 };
 
-export default aboutUs;
+export default index;

@@ -52,7 +52,6 @@ const Home9th = () => {
                     
                         <Image
                             data-aos="flip-left"
-                            
                             src={image2} alt=" "
                             className="d-flex w-25 h-25 rounded-5 justify-content-center align-items-center shadow-lg p-2" />
                     </Col>

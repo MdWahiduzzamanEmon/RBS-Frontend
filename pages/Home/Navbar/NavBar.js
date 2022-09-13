@@ -8,9 +8,9 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation} bg-transparent`}>
+    <Navbar  collapseOnSelect expand="lg" className={`${NavStyles.navigation} bg-transparent`}>
       <Container>
-        <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
+        <Navbar.Brand href="/" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <span>
           <FontAwesomeIcon icon={faBars} color="#FFF"  size="2x"/>
