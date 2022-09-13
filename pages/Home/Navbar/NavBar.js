@@ -8,7 +8,7 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation}`}>
+    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation} bg-transparent`}>
       <Container>
         <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -35,11 +35,8 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#contactUs"className='text-white'>Contact us</Nav.Link>
+            <Nav.Link href="/contactUs"className='text-white'>Contact us</Nav.Link>
             <Nav.Link href="/dashboard"className='text-white'>Admin Panel</Nav.Link>
-            {/* <Nav.Link eventKey={2} href="#memes"className='text-white'>
-              Dank memes
-            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
