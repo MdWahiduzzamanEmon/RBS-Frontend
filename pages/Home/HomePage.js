@@ -15,6 +15,8 @@ const HomePage = () => {
     return (
         <div>
             <div>
+            <Banner />
+
                 <Home2nd />
                 <Home3rd />
                 <Home4th />

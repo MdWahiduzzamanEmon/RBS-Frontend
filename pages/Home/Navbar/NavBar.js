@@ -18,9 +18,9 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
+            <Nav.Link href="/" className='text-white'>Home</Nav.Link>
             <Nav.Link href="#aboutUs" className='text-white'>About us</Nav.Link>
-            <NavDropdown  className='text-white'  title={
+            <NavDropdown  className={`${NavStyles.navLink}`}  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -36,6 +36,7 @@ const NavBar = () => {
           </Nav>
           <Nav>
             <Nav.Link href="#contactUs"className='text-white'>Contact us</Nav.Link>
+            <Nav.Link href="/dashboard"className='text-white'>Admin Panel</Nav.Link>
             {/* <Nav.Link eventKey={2} href="#memes"className='text-white'>
               Dank memes
             </Nav.Link> */}
