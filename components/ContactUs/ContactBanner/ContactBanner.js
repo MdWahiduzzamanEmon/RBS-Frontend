@@ -3,7 +3,7 @@ import banner2 from '../../../public/banner2.png'
 
 const ContactBanner = () => {
     return (
-        <div className=''
+        <div className='px-3'
             style={{
                 backgroundImage: `url(${banner2.src})`,
                 height:"300px",
