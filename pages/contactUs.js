@@ -11,7 +11,7 @@ const contactUs = () => {
             <ContactInfos/>
             {/* <FooterCommon/> */}
             {/* <NavBar/> */}
-            <Footer/>
+            {/* <Footer/> */}
         </section>
     );
 };
