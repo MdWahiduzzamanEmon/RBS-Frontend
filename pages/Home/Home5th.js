@@ -1,37 +1,24 @@
-// import React from 'react';
+import React from 'react';
+import Iframe from 'react-iframe'
 
 import YouTube from "react-youtube";
 
 const Home5th = () => {
-    const opts = {
-        height: "390",
-        width: "640",
-        playerVars: {
-            autoplay: 1,
-        }
-    }
-    const OnReady=(e)=> {
-        e.target.pauseVideo()
-    }
+   
     return (
-        <div>
+        <div style={{ fontFamily: 'Poppins' }}>
             <div>
-                <h1 className="text-4xl text-center font-bold my-3">10-Minutes Setup</h1>
-                <p className="text-xl text-center mb-5"
-                    style={{
-                        color: "rgb(75, 101, 126)"
-                    }}
-                >Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</p>
+                <h1 className="text-center fs-2 fw-bold my-3">10-Minutes Setup</h1>
+                <p className="fs-6  text-center mb-5 px-2">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gapsand overlaps before you start.</p>
             </div>
             <div className="flex items-center container">
-              
-                <YouTube className="mx-auto border-8 " videoId="mTz0GXj8NN0"
-                    style={{
-                        width: "100%",
-                    }}
-
-                    opts={opts} onReady={()=>OnReady} />
-            </div>
+                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                    width="100%"
+                    height="450px"
+                    id="myId"
+                    className="myClassname"
+                    display="initial"
+                    position="relative" />   </div>
    
         </div>
     );
