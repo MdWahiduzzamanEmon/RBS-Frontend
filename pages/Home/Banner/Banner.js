@@ -29,7 +29,10 @@ const Banner = () => {
                             className="mb-3 mb-lg-0">
                             <h1 className="fs-1 fw-bold">Best Project Management Software!</h1>
                             <p className="py-6 fs-6">Use Timeline to plan projects right the first time. See how the pieces fit together.</p>
+                           <div className="d-flex flex-lg-row flex-column">
+                           <button className={`${bannerStyles.buttonGradientOutline} `}><span>Discover More</span> <FontAwesomeIcon icon={faArrowRight}/></button>
                             <button className={`${bannerStyles.buttonGradient} border-0`}>More Features <FontAwesomeIcon icon={faArrowRight}/></button>
+                           </div>
                         </div>
                        <div className="p-3">
                        <Image data-aos="fade-left" src={banner2} className="img-fluid" alt=" " />
