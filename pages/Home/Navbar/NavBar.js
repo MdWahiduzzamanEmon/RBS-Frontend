@@ -19,7 +19,7 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="#aboutUs" className='text-white'>About us</Nav.Link>
+            <Nav.Link href="/aboutUs" className='text-white'>About us</Nav.Link>
             <NavDropdown  className={`${NavStyles.navLink}`}  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">

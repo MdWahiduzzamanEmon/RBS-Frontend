@@ -33,7 +33,7 @@ const cards = [
 
 const Home2nd = () => {
     return (
-        <div className="container-lg my-24 mx-auto"
+        <div className="container-lg my-5 py-5 mx-auto"
             style={{
                 fontFamily: 'Poppins'
         }}
