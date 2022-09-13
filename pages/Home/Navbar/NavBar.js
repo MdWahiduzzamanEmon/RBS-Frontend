@@ -8,9 +8,9 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation}`}>
+    <Navbar  collapseOnSelect expand="lg" className={`${NavStyles.navigation} bg-transparent`}>
       <Container>
-        <Navbar.Brand href="#home" className='text-white'>RBS Tech</Navbar.Brand>
+        <Navbar.Brand href="/" className='text-white'>RBS Tech</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <span>
           <FontAwesomeIcon icon={faBars} color="#FFF"  size="2x"/>
@@ -18,9 +18,9 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="/aboutUs" className='text-white'>About us</Nav.Link>
-            <NavDropdown  className='text-white'  title={
+            <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+            <Nav.Link href="#aboutUs" className='text-white'>About us</Nav.Link>
+            <NavDropdown  className={`${NavStyles.navLink}`}  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -35,8 +35,8 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#contactUs"className='text-white'>
-              Contact us</Nav.Link>
+            <Nav.Link href="#contactUs"className='text-white'>Contact us</Nav.Link>
+            <Nav.Link href="/dashboard"className='text-white'>Admin Panel</Nav.Link>
             {/* <Nav.Link eventKey={2} href="#memes"className='text-white'>
               Dank memes
             </Nav.Link> */}

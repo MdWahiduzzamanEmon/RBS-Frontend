@@ -15,12 +15,16 @@ const Banner = () => {
     },[])
     return (
         <>
-            <div className={`${bannerStyles.bannerWidth} d-flex align-items-center justify-content-center `}
+            <div
+                className={`${bannerStyles.bannerWidth}  `}
                 style={{
                     backgroundImage: `url(${download.src})`,
                     clipPath: "polygon(0 0, 100% 0, 100% 30%, 100% 100%, 71% 87%, 0 100%, 0% 30%)",
                 }}
-            >
+                >
+                <NavBar></NavBar>
+                <div className="d-flex align-items-center justify-content-center">
+
                 <div
                     className="container mx-auto ">
                     <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center p-3">
@@ -38,6 +42,7 @@ const Banner = () => {
                        <Image data-aos="fade-left" src={banner2} className="img-fluid" alt=" " />
                        </div>
                     </div>
+                </div>
                 </div>
             </div>
         </>

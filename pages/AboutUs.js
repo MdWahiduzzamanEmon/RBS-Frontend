@@ -1,11 +1,10 @@
 import React from 'react';
+import AboutBanner from '../components/AboutUs/AboutBanner';
 
 const index = () => {
     return (
         <div>
-            <h1>About 
-                
-            </h1>
+            <AboutBanner></AboutBanner>
         </div>
     );
 };
