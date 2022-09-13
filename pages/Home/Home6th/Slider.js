@@ -24,18 +24,18 @@ export default function Slider() {
                     slidesPerView={4}
                     loop={true}
                     autoplay={{
-                        delay:1000
+                        delay:3000
                     }}
                 spaceBetween={30}
                 centeredSlides={true}
-                    // scrollbar={{ draggable: true }}
+                   
                 pagination={{
                     clickable: true,
                 }}
                     breakpoints={{
                         320: {
                             slidesPerView: 1,
-                            spaceBetween: 20,
+                            spaceBetween: 10,
                             
                         },
                         // when window width is >= 640px
@@ -59,11 +59,11 @@ export default function Slider() {
             >
                 
                     <SwiperSlide className={`${style.SwiperSlide}`}>
-                        {/* <Image src={gp} alt=" " height="150px" width="120px"/> */}
-                        <h1>AIRTEL</h1>
+                       
+                        <h1 className={`${style.SwiperSlide}`}>AIRTEL</h1>
                     </SwiperSlide>
                     <SwiperSlide className={`${style.SwiperSlide}`}>
-                        {/* <Image src={akt} alt=" " height="150px" width="120px" /> */}
+                       
                         <h1>RBS Tech </h1>
                     </SwiperSlide>
                     
