@@ -24,7 +24,6 @@ const Banner = () => {
                 >
                 <NavBar></NavBar>
                 <div className="d-flex align-items-center justify-content-center">
-
                 <div
                     className="container mx-auto ">
                     <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center p-3">

@@ -1,0 +1,22 @@
+.footerCommon{
+    background: #1E2334;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url(../../public/footer2.png); */
+    /* background-position: 70% 130px; */
+    /* background-repeat: no-repeat; */
+    /* background-size: auto; */
+    /* padding: 80px 20px; */
+    line-height: 2;
+}
+
+.text {
+    color: #D1D1D5
+}
+
+.footerBottom {
+    background: #222739;
+    padding: 30px 0px;
+    color: #FFF;
+
+}

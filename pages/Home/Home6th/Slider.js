@@ -7,35 +7,36 @@ import style from "./Home6th.module.css";
 // import required modules
 import { Pagination } from "swiper";
 import Image from "next/image";
+import React, { useEffect } from "react"
 
 
 export default function Slider() {
-    SwiperCore.use([Autoplay]);
+    const [isSSR, setIsSSR] = React.useState(true);
+    SwiperCore.use([Autoplay]); 
+
+    useEffect(() => { 
+        setIsSSR(false);
+    }, []);
     return (
         <>
-            <div
-                className={`${style.background} 
-                container-lg my-5 p-5 mx-auto rounded-5 w-100 text-white`} 
-                >
-                <Swiper
-                    className={`${style.swiper} `}
-                    slidesPerView="auto"
+
+            {!isSSR && <div className={`${style.background} container-lg my-5 p-5 mx-auto rounded-5 text-white`} >
+                <Swiper className={`${style.swiper} `}
+                    slidesPerView={4}
                     loop={true}
                     autoplay={{
-                        delay:3000
+                        delay: 1000
                     }}
-                spaceBetween={30}
-                centeredSlides={true}
-                   
-                pagination={{
-                    clickable: true,
-                }}
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    // scrollbar={{ draggable: true }}
+                    pagination={{
+                        clickable: true,
+                    }}
                     breakpoints={{
                         320: {
                             slidesPerView: 1,
-                            spaceBetween: 10,
-                           
-               
+                            spaceBetween: 20,
                         },
                         // when window width is >= 640px
                         640: {
@@ -53,34 +54,25 @@ export default function Slider() {
                             spaceBetween: 50,
                         },
                     }}
-                modules={[Pagination,Autoplay]}
+                    modules={[Pagination, Autoplay]}
                 // className="mySwiper"
-            >
-                
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1 className={`${style.SwiperSlide}`}
-                        >AIRTEL</h1>
-                    </SwiperSlide>
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1>RBS Tech </h1>
-                    </SwiperSlide>
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1>RBS Tech</h1>
+                >
+
+                    <SwiperSlide className={`${style.SwiperSlide}`}>
+                        {/* <Image src={gp} alt=" " height="150px" width="120px"/> */}
+                        <h1>AIRTEL</h1>
                     </SwiperSlide>
                     <SwiperSlide
                         className={`${style.SwiperSlide}`}
                     ><h1>TELETALK</h1>
                     </SwiperSlide>
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1>TELETALK</h1>
+
+                    <SwiperSlide className={`${style.SwiperSlide}`}>
+                        <h1>RBS Tech</h1>
                     </SwiperSlide>
                 </Swiper>
-                </div>
-            
+            </div>}
+
         </>
     );
 }

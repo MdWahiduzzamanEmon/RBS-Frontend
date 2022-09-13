@@ -35,11 +35,8 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#contactUs"className='text-white'>Contact us</Nav.Link>
+            <Nav.Link href="/contactUs"className='text-white'>Contact us</Nav.Link>
             <Nav.Link href="/dashboard"className='text-white'>Admin Panel</Nav.Link>
-            {/* <Nav.Link eventKey={2} href="#memes"className='text-white'>
-              Dank memes
-            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
