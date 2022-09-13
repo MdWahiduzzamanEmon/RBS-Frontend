@@ -5,9 +5,9 @@ import NavBar from "./Home/Navbar/NavBar";
 const contactUs = () => {
     return (
         <section>
-            {/* <FooterCommon/> */}
+            <FooterCommon/>
             {/* <NavBar/> */}
-            <Footer/>
+            {/* <Footer/> */}
         </section>
     );
 };
