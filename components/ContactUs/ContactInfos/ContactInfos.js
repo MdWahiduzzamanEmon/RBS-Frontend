@@ -4,7 +4,7 @@ import infosStyles from './ContactInfos.module.css'
 const ContactInfos = () => {
     return (
         <div className={`${infosStyles.infos} px-3 py-5`}>
-            <div className='row row-cols-1 row-cols-md-4 justify-content-center g-4'>
+            <div className='row row-cols-1 row-cols-md-4 justify-content-center g-4 mx-sm-auto'>
             <div className=''>
                 <h1 className='fs-2 mb-3'>Email Us</h1>
                 <p>If you have any queries please feel free to email us.</p>

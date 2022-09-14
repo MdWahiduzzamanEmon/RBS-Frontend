@@ -1,10 +1,10 @@
 import Pricing from "../components/Pricing/Pricing"
-import NavBar from "./Home/Navbar/NavBar";
+import PricingBanner from "../components/Pricing/PricingBanner";
 
 const pricing = () => {
     return (
         <>
-            <NavBar/>
+            <PricingBanner/>
             <Pricing/>
         </>
     );

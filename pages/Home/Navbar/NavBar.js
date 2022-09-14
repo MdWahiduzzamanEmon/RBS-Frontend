@@ -11,7 +11,9 @@ const NavBar = () => {
   return (
     <Navbar  collapseOnSelect expand="lg" className={`${NavStyles.navigation} bg-transparent`}>
       <Container>
-        <Navbar.Brand href="/" className='text-white'>RBS Tech</Navbar.Brand>
+        <Link href="/" passHref>
+          <Navbar.Brand className='text-white'>RBS Tech</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <span>
           <FontAwesomeIcon icon={faBars} color="#FFF"  size="2x"/>
