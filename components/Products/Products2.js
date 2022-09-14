@@ -21,6 +21,10 @@ const Products2 = () => {
                 <p className="fs-6 my-4">
                     <span className='me-2'><FontAwesomeIcon className='' icon={faCheck} color='purple'></FontAwesomeIcon></span>Built with latest technology
                 </p> 
+                <p className="fs-6 my-4">
+                    <span className='me-2'><FontAwesomeIcon className='' icon={faCheck} color='purple'></FontAwesomeIcon></span>Manage complex workflows
+                </p>
+                <button className='btn btn-primary'>Purchase now</button>
                 
             </div>
             <div className='p-3 w-100'>
