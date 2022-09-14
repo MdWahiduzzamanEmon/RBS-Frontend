@@ -27,10 +27,13 @@ const NavBar = () => {
            <Link href="/aboutUs" passHref>
               <Nav.Link className='text-white'>About us</Nav.Link>
            </Link>
+           <Link href="/products" passHref>
+              <Nav.Link className='text-white'>Products</Nav.Link>
+           </Link>
            <Link href="/pricing" passHref>
               <Nav.Link className='text-white'>Pricing</Nav.Link>
            </Link>
-            <NavDropdown  className={`${NavStyles.navLink}`}  title={
+            {/* <NavDropdown  className={`${NavStyles.navLink}`}  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -42,7 +45,7 @@ const NavBar = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Nav>
             <Link  href="/contactUs" passHref>
