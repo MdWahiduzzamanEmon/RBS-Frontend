@@ -1,8 +1,12 @@
+import Pricing from "../components/Pricing/Pricing"
+import NavBar from "./Home/Navbar/NavBar";
+
 const pricing = () => {
     return (
-        <div>
-            <h1>Pricing</h1>
-        </div>
+        <>
+            <NavBar/>
+            <Pricing/>
+        </>
     );
 };
 
