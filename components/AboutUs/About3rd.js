@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import about3rd from '../../public/about3rd.png'
+import download2 from '../../public/download (2).jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,7 +27,7 @@ const About3rd = () => {
 
             </div>
             <div className='p-3 w-100'>
-                <Image className=' rounded-5' src={about3rd} alt=" " objectFit='cover' width="100%" height="100%" layout="responsive" />
+                <Image className=' rounded-5' src={download2} alt=" "  width="100%" height="100%" layout="responsive" />
             </div>
         </div>
     );
