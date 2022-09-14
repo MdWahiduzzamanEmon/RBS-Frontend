@@ -1,23 +1,36 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Card } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import contactFormStyles from './ContactForm.module.css'
 
 const ContactForm = () => {
     return (
-        <div className='w-50 mx-auto'>
+        <Card className={`${contactFormStyles.contactForm} mx-auto shadow-md p-3 bg-white rounded border-0`}>
+          <Card.Body>
             <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
+              <h1 className='fs-1 fw-bold pb-4'>Send Us Message</h1>
+              <Form.Group className="mb-3 outline-none" controlId="formBasicEmail">
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
   
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
-        </div>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control type="password" placeholder="Password" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control type="text" placeholder="Phone" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control as='textarea' type="text" placeholder="Message" height="900px" />
+              </Form.Group>
+              <Button className={`${contactFormStyles.buttonGradient}`} type="submit">
+                  Submit <FontAwesomeIcon icon={faArrowRight}/>
+              </Button>
+            </Form>
+          </Card.Body>
+        </Card>
     );
 };
 
