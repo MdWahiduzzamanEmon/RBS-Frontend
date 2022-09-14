@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavStyles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link';
 
 const NavBar = () => {
   return (
@@ -18,8 +19,17 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="/aboutUs" className='text-white'>About us</Nav.Link>
+            <Link href='/' passHref>
+              <Nav.Link className='text-white'>Home</Nav.Link>
+            </Link>
+            {/* <Link href='/'>Home</Link>
+            <Link href='/aboutUs'>About us</Link> */}
+           <Link href="/aboutUs" passHref>
+              <Nav.Link className='text-white'>About us</Nav.Link>
+           </Link>
+           <Link href="/pricing" passHref>
+              <Nav.Link className='text-white'>Pricing</Nav.Link>
+           </Link>
             <NavDropdown  className={`${NavStyles.navLink}`}  title={
         <span className="text-white my-auto">Products</span>
     } id="collasible-nav-dropdown">
@@ -35,8 +45,12 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/contactUs"className='text-white'>Contact us</Nav.Link>
-            <Nav.Link href="/dashboard"className='text-white'>Admin Panel</Nav.Link>
+            <Link  href="/contactUs" passHref>
+              <Nav.Link className='text-white'>Contact us</Nav.Link>
+            </Link>
+           <Link href="/adminPanel" passHref>
+              <Nav.Link className='text-white'>Admin Panel</Nav.Link>
+           </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -4,10 +4,10 @@ import infosStyles from './ContactInfos.module.css'
 const ContactInfos = () => {
     return (
         <div className={`${infosStyles.infos} px-3 py-5`}>
-            <div className='row row-cols-4 justify-content-center g-4'>
+            <div className='row row-cols-1 row-cols-md-4 justify-content-center g-4'>
             <div className=''>
                 <h1 className='fs-2 mb-3'>Email Us</h1>
-                <p>On the other hand we denounce with beguiled and demoralized.</p>
+                <p>If you have any queries please feel free to email us.</p>
                 <p style={{color: '#625DF5'}} className='fw-bold'>info@example.com</p>
             </div>
             <div>
@@ -18,7 +18,7 @@ const ContactInfos = () => {
             </div>
             <div>
                 <h1 className='fs-2 mb-3'>Get In Touch</h1>
-                <p>On the other hand we denounce with beguiled and demoralized.</p>
+                <p>`{"Have any questions? We'd love to hear from you."}`</p>
                 <p>+1 (888) 456 7890</p>
                 <p>+1 (444) 123 4560</p>
             </div>

@@ -14,7 +14,7 @@ const FooterCommon = () => {
 
         },
         {
-            id: 1,
+            id: 2,
             title: "Help and Advice",
             lists: [
                 {
@@ -36,7 +36,7 @@ const FooterCommon = () => {
             ]
         },
         {
-            id: 2,
+            id: 3,
             title: "Our Features",
             lists: [
                 {
@@ -74,7 +74,7 @@ const FooterCommon = () => {
             ]
         },
         {
-            id: 3,
+            id: 4,
             title: "Our Features",
             lists: [
                 {
@@ -98,7 +98,7 @@ const FooterCommon = () => {
                 <div className="row">
                     {
                         demoData.map((data, index) => (
-                            <div key={index} className='col-3'>
+                            <div key={index} className='col-12 col-lg-3'>
                                 {data?.logo && (
                                     <Image src={data?.logo} width='100px' height='100px' alt='logo' className='img-fluid rounded-circle'
                                     
