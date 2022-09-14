@@ -8,7 +8,7 @@ import contactFormStyles from './ContactForm.module.css'
 
 const ContactForm = () => {
     return (
-        <Card className={`${contactFormStyles.contactForm} mx-auto shadow-md p-3 bg-white rounded border-0`}>
+        <Card className={`${contactFormStyles.contactForm} mx-auto p-2 p-lg-5 shadow-md bg-white rounded border-0`}>
           <Card.Body>
             <Form>
               <h1 className='fs-1 fw-bold pb-4'>Send Us Message</h1>

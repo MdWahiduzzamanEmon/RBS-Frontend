@@ -13,7 +13,7 @@ const ContactBanner = () => {
         >
             <NavBar /> 
             <div className='text-white text-center py-5 '>
-                <h1 className='fs-1 fw-bold'>Contact Us</h1>
+                <h1 className='fw-bold' style={{fontSize:'65px', fontFamily: 'Poppins'}} >Contact Us</h1>
             </div>
         </div>
     );

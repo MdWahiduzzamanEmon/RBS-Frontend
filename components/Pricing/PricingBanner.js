@@ -13,7 +13,7 @@ const PricingBanner = () => {
         >
             <NavBar /> 
             <div className='text-white text-center py-5 '>
-                <h1 className='fs-1 fw-bold'>Pricing</h1>
+                <h1 className='fw-bold' style={{fontSize:'65px', fontFamily: 'Poppins'}}>Pricing</h1>
             </div>
         </div>
     );

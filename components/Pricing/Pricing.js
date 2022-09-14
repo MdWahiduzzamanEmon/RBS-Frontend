@@ -114,7 +114,7 @@ const Pricing = () => {
     ]
     return (
         <section className='my-5'>
-           <Card className={`${pricingStyles.priceCard} mx-auto  p-3`}>
+           <Card className={`${pricingStyles.priceCard} mx-auto  p-3 border-0`}>
                 <Card.Body>
                     <Card.Title className='fs-2 fw-bold pt-3'>Clean, Simple and Transparent Pricing</Card.Title>
                     <Card.Subtitle className='fw-normal my-3'>Make things easier for your business.</Card.Subtitle>
@@ -123,10 +123,11 @@ const Pricing = () => {
                         {
                             priceDemo.map((data,index)=> (
                                 <Col key={index} sm={1} md={3}>
-                                    <Card className={`${pricingStyles.singlePriceCard} my-2 my-lg-5 py-2`} 
-                                        style={{backgroundColor: data?.status === 'active' && '#8f5df4',
+                                    <Card className={`${pricingStyles.singlePriceCard} my-2 my-lg-5 py-2 border-0`} 
+                                        style={{backgroundColor: data?.status === 'active' && '#353B80',
                                                 color: data?.status === 'active' && '#FFF'    
                                     }}
+                                    // #8f5df4
                                     >
                                         <Card.Body>
                                             <h1 className='fs-4 fw-bold py-3'>{data?.title}</h1>
@@ -135,11 +136,11 @@ const Pricing = () => {
                                             <ul className='list-unstyled'>
                                                {
                                                 data?.features?.map((item, index)=>(
-                                                    <li key={index}><FontAwesomeIcon icon={faCheckCircle} color={data?.status === 'active' ? '#FFF' : '#8f5df4' } className='me-1'/>{item?.name}</li>
+                                                    <li key={index}><FontAwesomeIcon icon={faCheckCircle} color={data?.status === 'active' ? '#FFF' : '#353B80' } className='me-1'/>{item?.name}</li>
                                                 ))
                                                }
                                             </ul>
-                                            <button className={`${pricingStyles.buttonGradientOutline} my-3`} style={{backgroundColor: data?.status === 'active' && '#FFF'}}><span>Choose plan</span></button>
+                                            <button className={`${pricingStyles.buttonGradientOutline} my-3`} style={{backgroundColor: data?.status === 'active' && '#FFF'}}><span className='fw-bold'>Choose plan</span></button>
                                         </Card.Body>
                                     </Card>
                                  </Col>))              
