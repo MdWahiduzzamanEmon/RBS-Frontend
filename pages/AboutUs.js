@@ -11,10 +11,9 @@ const index = () => {
             color: "rgb(23, 52, 101)",
            fontFamily: 'Poppins'
         }}>
-            <AboutBanner></AboutBanner>
+            <AboutBanner/>
             <About2nd/>
-          
-            <About3rd/>
+          <About3rd/>
             <Team />
            
         </div>
