@@ -7,8 +7,7 @@ import About3rd from '../components/AboutUs/About3rd';
 
 const index = () => {
     return (
-        <div style={{
-            color: "rgb(23, 52, 101)",
+        <div style={{color: "rgb(23, 52, 101)",
             fontFamily: 'Poppins'
         }}>
             <AboutBanner />
