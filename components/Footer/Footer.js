@@ -134,7 +134,7 @@ const Footer = () => {
            } 
             </div>
             <div className='footer-bottom-part d-flex flex-column flex-md-row justify-content-between align-items-center'>
-               <div className=''> <Image src={rbsLogo} width='200px' height='150px' layout='fixed' alt=''></Image></div>
+               <div className=''> <Image src={rbsLogo} width='200px' height='150px' layout='fixed' alt='' className='img-fluid'></Image></div>
                <div><p className='fs-6'>Copyright &copy; {new Date().getFullYear()} RBS Tech, All rights reserved.</p></div>
             </div>
             </div>

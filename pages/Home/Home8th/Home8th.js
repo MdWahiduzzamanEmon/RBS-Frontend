@@ -35,7 +35,7 @@ const Home8th = () => {
                         <div className={`${home8thStyles.checkImage} position-absolute`}><Image src={image4} alt=''></Image></div>
                     </div>
                     <div>
-                        <h1 className='fs-2 fw-bold'>Yore Base For Classic, Agile Or <br /> Project Management</h1>
+                        <h1 className='fs-2 fw-bold'>Your Base For Classic, Agile Or <br /> Project Management</h1>
                         <p className='fs-6'>On the other hand we denounce with righteous indignation dislike men who are so beguiled and demoralized.</p>
                         <div>
                            <h1 className='fs-5 fw-bold '><FontAwesomeIcon icon={faCircle} size='2xs'/> Protect Your Data And Privacy</h1>

@@ -3,7 +3,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Card } from 'react-bootstrap';
-// import images from "../../../public/image/";
+// import images from "../../../public/";
 // import avatar from "../../../public/banner2.jpeg";
 import style from './Home2nd.module.css';
 const cards = [
@@ -33,7 +33,7 @@ const cards = [
 
 const Home2nd = () => {
     return (
-        <div className="container-lg my-24 mx-auto"
+        <div className="container-lg my-5 py-5 mx-auto"
             style={{
                 fontFamily: 'Poppins'
         }}
