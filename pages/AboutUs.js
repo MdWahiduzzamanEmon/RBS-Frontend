@@ -9,13 +9,13 @@ const index = () => {
     return (
         <div style={{
             color: "rgb(23, 52, 101)",
-           fontFamily: 'Poppins'
+            fontFamily: 'Poppins'
         }}>
-            <AboutBanner/>
-            <About2nd/>
-          <About3rd/>
+            <AboutBanner />
+            <About2nd />
+            <About3rd />
             <Team />
-           
+
         </div>
     );
 };
