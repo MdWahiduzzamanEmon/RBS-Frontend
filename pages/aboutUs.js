@@ -13,8 +13,7 @@ const aboutUs = () => {
             <AboutBanner />
             <About2nd />
             <About3rd />
-            <Team />
-
+            <Team /> 
         </div>
     );
 };
