@@ -55,7 +55,8 @@ const Banner = () => {
                                 <button className={`${bannerStyles.buttonGradient} border-0`}>More Features <FontAwesomeIcon icon={faArrowRight} /></button>
                             </Row>
                         </Col>
-                        <Col md={7} style={{ height: "350", width: "500" }}
+                        <Col md={7}
+                            // style={{ height: "350", width: "500" }}
                             className=""
                         >
                             <BannerSlider />
