@@ -39,7 +39,7 @@ const Banner = () => {
                 <NavBar></NavBar>
                 {/* <div className="d-flex align-items-center justify-content-center"> */}
                 <div
-                    className="container mx-auto ">
+                    className="container mx-auto  pt-5">
                     {/* <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center p-3"> */}
                     <Row className="d-flex justify-content-center align-items-center">
                         <Col md={5}

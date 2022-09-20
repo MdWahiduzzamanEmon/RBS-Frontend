@@ -14,6 +14,21 @@ import React, { useEffect } from "react";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+const images = [
+    {
+        id:"1",
+        img:"/banner2.png"
+    },
+    {
+        id:"2",
+        img:"/bannerslide2.png"
+    },
+    {
+        id:"3",
+        img:"/bannerslide1.png"
+    }
+]
+
 export default function Slider() {
     const [isSSR, setIsSSR] = React.useState(true);
     SwiperCore.use([Autoplay]);
@@ -41,8 +56,33 @@ export default function Slider() {
                             // Pagination, Navigation
                         ]}
                     // className="mySwiper"
-                    >
-                        <SwiperSlide className={`${style.slideImg} slideImg`}>
+                    >{
+                            images.map((image => (
+                                <>
+                                    <SwiperSlide className={`${style.slideImg} slideImg`}>
+                                        <Image src={image.img} alt="banner image"
+                                            height="400px" width="600px"
+                                            style={{ objectFit: "cover" }}
+                                        // layout="content"
+                                        />
+                                    </SwiperSlide>
+                                    {/* <SwiperSlide className={`${style.slideImg} slideImg`}>
+                                        <Image src={image.img} alt="banner image"
+                                            height="400px" width="600px"
+                                            style={{
+                                                objectFit: "cover"
+                                            }}
+                                        /></SwiperSlide>
+                                    <SwiperSlide className={`${style.slideImg} slideImg`}><Image src={bannerSlide1} alt="banner image"
+                                        height="400px" width="600px"
+                                        style={{
+                                            objectFit: "content"
+                                        }}
+                                    /></SwiperSlide> */}
+                                </> 
+                            )))
+                    }
+                        {/* <SwiperSlide className={`${style.slideImg} slideImg`}>
                             <Image src={banner2} alt="banner image"
                                 height="400px" width="600px"
                                 style={{ objectFit: "cover" }}
@@ -61,7 +101,7 @@ export default function Slider() {
                             style={{
                                 objectFit: "content"
                             }}
-                        /></SwiperSlide>
+                        /></SwiperSlide> */}
 
 
                     </Swiper>
