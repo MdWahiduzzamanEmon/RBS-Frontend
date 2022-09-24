@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import banner2 from '../../../public/banner2.png'
-import bannerSlide2 from '../../../public/bannerslide2.png'
-import bannerSlide1 from '../../../public/bannerslide1.png'
-import download from '../../../public/download.jpg'
+// import banner2 from '../../../public/banner2.png'
+// import bannerSlide2 from '../../../public/bannerslide2.png'
+// import bannerSlide1 from '../../../public/bannerslide1.png'
+// import download from '../../../public/download.jpg'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

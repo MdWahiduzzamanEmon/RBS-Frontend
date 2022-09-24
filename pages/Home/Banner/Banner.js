@@ -56,8 +56,8 @@ const Banner = () => {
                             </Row>
                         </Col>
                         <Col md={7}
-                            // style={{ height: "350", width: "500" }}
-                            className=""
+                            style={{ height:"400px", width:"600px" }}
+                            // className=" d-flex justify-content-center align-items-center"
                         >
                             <BannerSlider />
                         </Col>
