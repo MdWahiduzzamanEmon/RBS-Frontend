@@ -13,11 +13,11 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 
 
-const HomePage = () => {
+const HomePage = ({bannerData}) => {
     return (
         <div>
             <div>
-            <Banner />
+            <Banner bannerData={bannerData} />
 
                 <Home2nd />
                 <Home3rd />

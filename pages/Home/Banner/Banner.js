@@ -20,13 +20,14 @@ import BannerSlider from './BannerSlider'
 import SwiperCore, { Autoplay, Pagination, Navigation, } from "swiper";
 import { Col, Row } from "react-bootstrap";
 
-const Banner = () => {
+const Banner = ({bannerData}) => {
+    console.log(bannerData.items)
     // useEffect(() => {
     //     AOS.init({ duration: 2000 });
     // },[])
 
    //get banner detail api
-   
+
 
 
 
@@ -50,8 +51,14 @@ const Banner = () => {
                         // data-aos="fade-right"
                         // className="mb-3 mb-lg-0"
                         >
-                            <h1 className="fs-1 fw-bold">Best Project Management Software!</h1>
-                            <p className="fs-6">Use Timeline to plan projects right the first time. See how the pieces fit together.</p>
+                           {
+                            bannerData?.items?.map((item,index)=> (
+                                <div key={item?.id}>
+                                 <h1 className="fs-1 fw-bold">{item?.title}</h1>
+                                <p className="fs-6">{item?.description}</p>
+                                </div>
+                            ))
+                           }
                             <Row
                             // className="d-flex flex-lg-row flex-column"
                             >
