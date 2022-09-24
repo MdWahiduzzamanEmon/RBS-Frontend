@@ -1,7 +1,7 @@
 .bannerWidth {
     height: 100vh;
     color: #FFF;
-    padding: 15px;
+    /* padding: 15px; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -27,6 +27,11 @@
     margin-right: 5px;
     font-size: 15px;
     border:1px solid #FFF;
+}
+.slideImg{
+    display: flex;
+justify-content: flex-end;
+align-items: center;
 }
 
 @media (max-width: 600px) {

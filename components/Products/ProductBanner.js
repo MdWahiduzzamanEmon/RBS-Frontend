@@ -16,7 +16,7 @@ const ProductBanner = () => {
                 style={{ backgroundColor:"rgb(39, 45, 84)"}}
             ><NavBar />
             </div>
-            <div className='bg-light'>
+            <div className='bg-light border border-bottom'>
 
            <div className="  d-flex flex-column flex-lg-row align-items-center container-lg" style={{ fontFamily: 'Poppins' }}>
 
