@@ -1,4 +1,6 @@
 import HomePage from './Home/HomePage'
+import axios from 'axios'
+
 
 
 
@@ -12,4 +14,9 @@ export default function Home() {
       <HomePage/>
     </div>
   )
+}
+
+export async function getServerSideProps(){
+  const bannerData= await axios.get('../public/JSON/banner.json')
+  
 }

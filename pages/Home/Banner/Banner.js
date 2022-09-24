@@ -25,6 +25,10 @@ const Banner = () => {
     //     AOS.init({ duration: 2000 });
     // },[])
 
+   //get banner detail api
+   
+
+
 
     return (
         <>

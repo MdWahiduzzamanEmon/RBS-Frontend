@@ -7,6 +7,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import  checkImage from '../../../public/check.png';
 import checkIcon from '../../../public/check.png'
 import styles from './Home3rd.module.css'
+
 const Home3rd = () => {
     return (
         <div className="d-flex flex-column flex-lg-row  my-5 py-5 align-items-center container-lg" style={{fontFamily: 'Poppins'}}>

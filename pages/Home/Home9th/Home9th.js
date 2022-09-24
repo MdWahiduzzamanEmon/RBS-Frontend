@@ -22,7 +22,7 @@ const Home9th = () => {
                 fontFamily: 'Poppins'
         }}
         >
-            <h1 className="fs-2 text-center fw-bold my-3">Best 3 Reason For Choose Our <br /> Software Service</h1>
+            <h1 className="fs-2 text-center fw-bold my-3">Best 3 Reason For Choose Our Software Service</h1>
             <div className='d-grid my-5 gap-5'>
             {/* <div className='row row-cols-1 row-cols-md-2'> */}
                 <Row className='d-flex justify-content-md-between'>
@@ -30,17 +30,17 @@ const Home9th = () => {
                        
                             <Col className='bg-light shadow-lg rounded-3 me-md-5'>
                                 <FontAwesomeIcon className='text-center fs-1 text-success pt-3 ps-3' icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 '>Managing Change Requests <br /> and Scope Creep</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 '>Managing Change Requests and Scope Creep</p> </Col>
                             <Col className='shadow-lg rounded-3 mx-md-5' style={{
                                 backgroundColor: "#1D2333",
                             }}>
                                 <FontAwesomeIcon className='text-center text-white fs-1 pt-3 ps-3'
                                     style={{ color: "#1D2333" }}
                                     icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 text-white '>Know Who is Available <br /> and When</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 text-white '>Know Who is Available and When</p> </Col>
                         <Col className='bg-light shadow-lg rounded-3 me-md-5'>
                                 <FontAwesomeIcon className='text-center fs-1 text-warning pt-3 ps-3' icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 '>Full Implementation and <br /> Training Support</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 '>Full Implementation and  Training Support</p> </Col>
                         
                     </Col>
                     {/* <Col className=' d-flex bg-light rounded-3 '>
