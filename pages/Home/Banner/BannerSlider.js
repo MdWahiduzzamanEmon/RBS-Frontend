@@ -14,22 +14,10 @@ import React, { useEffect } from "react";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-const images = [
-    {
-        id:"1",
-        img:"/banner2.png"
-    },
-    {
-        id:"2",
-        img:"/bannerslide2.png"
-    },
-    {
-        id:"3",
-        img:"/bannerslide1.png"
-    }
-]
 
-export default function Slider() {
+
+export default function Slider({bannerImagesData}) {
+    console.log(bannerImagesData)
     const [isSSR, setIsSSR] = React.useState(true);
     SwiperCore.use([Autoplay]);
 
@@ -57,7 +45,7 @@ export default function Slider() {
                         ]}
                     // className="mySwiper"
                     >{
-                            images.map((image => (
+                        bannerImagesData?.images?.map((image,index) => (
                                 <>
                                     <SwiperSlide className={`${style.slideImg} slideImg`}>
                                         <Image src={image.img} alt="banner image"
@@ -80,7 +68,7 @@ export default function Slider() {
                                         }}
                                     /></SwiperSlide> */}
                                 </> 
-                            )))
+                            ))
                     }
                         {/* <SwiperSlide className={`${style.slideImg} slideImg`}>
                             <Image src={banner2} alt="banner image"

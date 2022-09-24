@@ -4,14 +4,17 @@ import axios from 'axios'
 
 
 
-export default function Home({bannerData}) {
+export default function Home({bannerData, bannerImagesData}) {
   return (
     <div
       style={{
         color:"rgb(23, 52, 101)"
     }}
     >
-      <HomePage bannerData={bannerData}/>
+      <HomePage 
+      bannerData={bannerData}
+      bannerImagesData={bannerImagesData}
+      />
       <div>
      
       
@@ -24,12 +27,14 @@ export default function Home({bannerData}) {
 export async function getServerSideProps(){
   // await axios.get('../public/JSON/banner.json')
   const response = await axios.get('http://localhost:3000/api/banner')
+  const bannerImages= await axios.get('http://localhost:3000/api/bannerImage')
   // const newData = await response.json()
   console.log(response.data)
 
   return {
     props: {
-     bannerData:response.data
+     bannerData:response.data,
+     bannerImagesData: bannerImages.data,
     }
   }
 
