@@ -59,7 +59,7 @@ export default function Slider() {
                     >{
                             images.map((image => (
                                 <>
-                                    <SwiperSlide className={`${style.slideImg} slideImg`}>
+                                    <SwiperSlide key={image.id} className={`${style.slideImg} slideImg`}>
                                         <Image src={image.img} alt="banner image"
                                             height="400px" width="600px"
                                             style={{ objectFit: "cover" }}

@@ -1,5 +1,5 @@
 import HomePage from './Home/HomePage'
-import axios from 'axios'
+// import axios from 'axios'
 
 
 
@@ -16,7 +16,7 @@ export default function Home() {
   )
 }
 
-export async function getServerSideProps(){
-  const bannerData= await axios.get('../public/JSON/banner.json')
+// export async function getServerSideProps(){
+//   const bannerData= await axios.get('../public/JSON/banner.json')
   
-}
+// }
