@@ -13,37 +13,37 @@ const Home3rd = ({home3rdData}) => {
     return (
         <div style={{fontFamily: 'Poppins', display: home3rdData?.isShow ? 'block' : 'none'}}>
         <div className="d-flex flex-column flex-lg-row  my-5 py-5 align-items-center container-lg" >
-                {
+                <div className='p-3'>
+                   {
                     home3rdData?.items?.map((data,index)=>(
+                        <div key={data?.id} style={{display: data?.isShow ? 'block': 'none'}}>
+                             <h1 className="fs-2 fw-bold">{data?.title}</h1>
+                            <p className="fs-6 my-4"
+                        style={{
+                            color: "rgb(75, 101, 126)"
+                        }}>{data?.description}</p>
+                            <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>{data?.subTitle1}</h3>
+                            <p className="fs-6 my-4"
+                        style={{
+                            color: "rgb(75, 101, 126)"
+                        }}>{data?.subTitle1Description}</p>
+                            <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>{data?.subTitle2}</h3>
+                            <p className="fs-6 my-4"
+                        style={{
+                            color: "rgb(75, 101, 126)"
+                        }}>{data?.subTitle2Description}</p>
+                            </div>
+                    ))
+                   }    
+                </div>
+               <div className='p-3 w-100'>
+              {
+                  home3rdData?.items?.map((data,index)=>(
 
-                <div className='p-3' key={data?.id}>
-                
-                 
-                     <div key={data?.id} style={{display: data?.isShow ? 'block': 'none'}}>
-                          <h1 className="fs-2 fw-bold">{data?.title}</h1>
-                         <p className="fs-6 my-4"
-                     style={{
-                         color: "rgb(75, 101, 126)"
-                     }}>{data?.description}</p>
-                         <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>{data?.subTitle1}</h3>
-                         <p className="fs-6 my-4"
-                     style={{
-                         color: "rgb(75, 101, 126)"
-                     }}>{data?.subTitle1Description}</p>
-                         <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon icon={faCheck} color='#765DF5'></FontAwesomeIcon></span>{data?.subTitle2}</h3>
-                         <p className="fs-6 my-4"
-                     style={{
-                         color: "rgb(75, 101, 126)"
-                     }}>{data?.subTitle2Description}</p>
-                         </div>
-                 
-            <div className='p-3 w-100'>
-               <Image src={data?.image} alt=" " objectFit='cover' width="100%" height="100%" layout="responsive"/>
+                      <Image key={data?.id} src={data?.image} alt=" " objectFit='cover' width="100%" height="100%" layout="responsive"/>
+                  ))
+              }
                </div>
-             </div>
-                    )
-
-                    )}
         </div>
         </div>
     );

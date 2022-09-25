@@ -8,7 +8,7 @@ import image2 from "../../../public/image/clients.jpg";
 import home10thStyles from './Home10th.module.css'
 import Link from 'next/link';
 
-const Home10th = () => {
+const Home10th = (home10thData) => {
     const cards = [
         {
             id: 1,

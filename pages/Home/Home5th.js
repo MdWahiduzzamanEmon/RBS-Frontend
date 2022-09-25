@@ -6,7 +6,7 @@ import YouTube from "react-youtube";
 const Home5th = ({home5thData}) => {
    
     return (
-        <div style={{ fontFamily: 'Poppins', display: home5thData?.isShow ? 'block': 'none' }}>
+        <div style={{ fontFamily: 'Poppins', display: home5thData?.isShow ? 'block': 'none' }} className="py-5 my-5">
            {
             home5thData?.titleData?.map((data,index)=> (
                 <div key={data?.id} style={{display: data?.isShow ? 'block': 'none'}}>

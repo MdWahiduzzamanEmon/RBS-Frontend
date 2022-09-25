@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 // import React from 'react';
-import image2 from '../../../public/image/image2.jpg';
+import image2 from '../../../public/image2.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Home9th = () => {
+const Home9th = ({home9thData}) => {
     useEffect(() => {
         AOS.init({
             duration: 2000,
@@ -16,13 +16,18 @@ const Home9th = () => {
 
         });
     }, [])
+
     return (
-        <div className=' container-lg my-5'
+        <div className=' container-lg my-5 pt-5'
             style={{
-                fontFamily: 'Poppins'
+                fontFamily: 'Poppins',
+                display: home9thData?.isShow ? 'block' : 'none',
         }}
         >
-            <h1 className="fs-2 text-center fw-bold my-3">Best 3 Reason For Choose Our Software Service</h1>
+            {
+                home9thData?.items?.map((data,index)=>(
+                    <div key={data?.id}>
+            <h1 className="fs-2 text-center fw-bold my-3 w-50  m-auto">{data?.title}</h1>
             <div className='d-grid my-5 gap-5'>
             {/* <div className='row row-cols-1 row-cols-md-2'> */}
                 <Row className='d-flex justify-content-md-between'>
@@ -30,17 +35,17 @@ const Home9th = () => {
                        
                             <Col className='bg-light shadow-lg rounded-3 me-md-5'>
                                 <FontAwesomeIcon className='text-center fs-1 text-success pt-3 ps-3' icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 '>Managing Change Requests and Scope Creep</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 '>{data?.subTitle1}</p> </Col>
                             <Col className='shadow-lg rounded-3 mx-md-5' style={{
                                 backgroundColor: "#1D2333",
                             }}>
                                 <FontAwesomeIcon className='text-center text-white fs-1 pt-3 ps-3'
                                     style={{ color: "#1D2333" }}
                                     icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 text-white '>Know Who is Available and When</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 text-white '>{data?.subTitle2}</p> </Col>
                         <Col className='bg-light shadow-lg rounded-3 me-md-5'>
                                 <FontAwesomeIcon className='text-center fs-1 text-warning pt-3 ps-3' icon={faCheckCircle} />
-                                <p className=' fs-4 fw-bold p-3 '>Full Implementation and  Training Support</p> </Col>
+                                <p className=' fs-4 fw-bold p-3 '>{data?.subTitle3}</p> </Col>
                         
                     </Col>
                     {/* <Col className=' d-flex bg-light rounded-3 '>
@@ -49,16 +54,24 @@ const Home9th = () => {
                             className="rounded-3 shadow-lg p-5" />
                     </Col> */}
                     <Col xs={12} md={7} className='d-flex bg-light rounded-3 '>
-                    
+                        <div className='w-100'>
                         <Image
                             data-aos="flip-left"
-                            src={image2} alt=" "
-                            className="d-flex w-25 h-25 rounded-5 justify-content-center align-items-center shadow-lg p-2" />
+                            src={data?.image} alt=" "
+                            width='100%'
+                            height='80%'
+                            layout='responsive'
+                            objectFit='cover'
+                            className="d-flex rounded-5 justify-content-center align-items-center shadow-lg p-2" />
+                        </div>
                     </Col>
                 </Row>
                
 
             </div>
+                    </div>
+                ))
+            }
             </div>
         
     );
