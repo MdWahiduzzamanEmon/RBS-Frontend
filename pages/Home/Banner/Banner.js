@@ -79,9 +79,13 @@ const Banner = ({bannerData, bannerImagesData}) => {
                             // style={{ height: "350", width: "500" }}
                             className=""
                         >
-                            <BannerSlider 
-                            bannerImagesData={bannerImagesData}
-                            />
+                         {
+                            bannerImagesData.isShow && (
+                                <BannerSlider 
+                                bannerImagesData={bannerImagesData}
+                                />
+                            )
+                         }
                         </Col>
                         {/* </div> */}
                     </Row>

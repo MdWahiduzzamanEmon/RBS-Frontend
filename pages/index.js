@@ -1,8 +1,5 @@
 import HomePage from './Home/HomePage'
 import axios from 'axios'
-// const axios = require('axios')
-
-
 
 export default function Home({bannerData, bannerImagesData}) {
   return (
@@ -16,8 +13,6 @@ export default function Home({bannerData, bannerImagesData}) {
       bannerImagesData={bannerImagesData}
       />
       <div>
-     
-      
 
       </div>
     </div>
