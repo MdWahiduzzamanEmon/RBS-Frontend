@@ -20,33 +20,45 @@ const Home8th = ({home8thData}) => {
         style={{
             backgroundImage: `url(${gradientImage.src})`,
             backgroundSize: 'cover',
-            // backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             width: '100%',
-            // margin: '50px'
             display: (home8thData?.isShow) ? "block" : "none"
             }}>
-            <div className='py-5 '>
+            <div className='py-5'>
                 {
-                    home8thData.itemData.items.map((data, index) => (
+                    home8thData?.items.map((data, index) => (
                         <div key={index}
-                            className='row row-cols-1 row-cols-md-2 w-100'>
+                            className='row row-cols-1 row-cols-md-2 '>
                             <div className='position-relative mb-lg-0  d-lg-block d-none'>
-                                <div className={`${home8thStyles.dotImage} position-absolute `}><Image src={data.image5} alt='' height="100%" width="100%"
-                                    objectFit="cover" layout="responsive" className=' img-fluid'></Image></div>
-                                <div className={`${home8thStyles.middleImage} position-absolute `}><Image src={data.image1} alt='' height="100%" width="100%"
-                                    objectFit="cover" layout="responsive" className=' img-fluid' ></Image></div>
-                                <div className={`${home8thStyles.bottomImage} position-absolute `}><Image src={data.image2} alt='' height="100%" width="100%"
-                                    objectFit="cover" layout="responsive" className=' img-fluid'></Image></div>
-                                <div className={`${home8thStyles.topImage} position-absolute `}><Image src={data.image3} alt='' height="100%" width="100%"
-                                    objectFit="cover" layout="responsive" className=' img-fluid'></Image></div>
-                                <div className={`${home8thStyles.checkImage} position-absolute`}>
+                                <div className={`${home8thStyles.dotImage} position-absolute w-100 `}>
+                                    <Image src={data.image5} alt=''
+                                        height="100%" width="100%"
+                                        objectFit="cover" layout="responsive" className=' img-fluid'></Image>
+                                </div>
+                                <div className={`${home8thStyles.middleImage} position-absolute w-100 `}>
+                                    <Image src={data.image1} alt=''
+                                        height="100%" width="100%"
+                                        objectFit="cover" layout="responsive" className=' img-fluid' ></Image>
+                                </div>
+                                <div className={`${home8thStyles.bottomImage} position-absolute w-100 `}>
+                                    <Image src={data.image2} alt=''
+                                        height="100%" width="100%"
+                                        objectFit="cover" layout="responsive" className=' img-fluid'></Image>
+                                </div>
+                                <div className={`${home8thStyles.topImage} position-absolute w-100 `}>
+                                    <Image src={data.image3} alt=''
+                                        height="100%" width="100%"
+                                        objectFit="cover" layout="responsive" className=' img-fluid'>
+                                        </Image>
+                                </div>
+                                <div className={`${home8thStyles.checkImage} position-absolute w-100`}>
                                     <Image src={data.image4} alt=''
                                         height="100%"
                                         width="100%"
                                         objectFit="cover"
                                         layout="responsive"
-                                ></Image></div>
+                                    ></Image>
+                                </div>
                             </div>
                             <div>
                                 <h1 className='fs-2 fw-bold'>{ data.title}</h1>
