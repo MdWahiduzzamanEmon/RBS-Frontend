@@ -13,7 +13,13 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 
 
-const HomePage = ({bannerData, bannerImagesData,home2ndData}) => {
+const HomePage = ({
+    bannerData,
+    bannerImagesData,
+    home2ndData,
+    home4thData,
+    home8thData,
+    home10thData }) => {
     return (
         <div>
             <div>
@@ -23,14 +29,14 @@ const HomePage = ({bannerData, bannerImagesData,home2ndData}) => {
              />
 
                 <Home2nd home2ndData={home2ndData} />
-                <Home3rd />
-                <Home4th />
+                <Home3rd  />
+                <Home4th home4thData= {home4thData} />
                 <Home5th />
                 <Home6th />
                 <Home7th />
-                <Home8th/>
+                <Home8th home8thData={home8thData} />
                 <Home9th />
-                <Home10th/>
+                <Home10th home10thData={home10thData} />
                 <PurchaseCard/>
             </div>
         </div>
