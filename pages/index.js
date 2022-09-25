@@ -12,7 +12,9 @@ export default function Home({
   home8thData,
   home9thData,
   home10thData,
-purchaseCardData}) {
+purchaseCardData,
+// footerData
+}) {
   return (
     <div
       style={{
@@ -53,6 +55,7 @@ export async function getServerSideProps(){
   const home9thData = await axios.get('http://localhost:3000/api/home9thapi')
   const home10thData = await axios.get('http://localhost:3000/api/home10thapi')
   const purchaseCardInfos = await axios.get('http://localhost:3000/api/purchaseCard')
+  // const footerInfos= await axios.get('http://localhost:3000/api/footerapi')
   // const home11thData = await axios.get('http://localhost:3000/api/home11thapi')
 
   // const newData = await response.json()
@@ -73,6 +76,7 @@ export async function getServerSideProps(){
      home9thData: home9thData.data,
      home10thData: home10thData.data,
      purchaseCardData: purchaseCardInfos.data,
+    //  footerData: footerInfos.data
     }
   }
 

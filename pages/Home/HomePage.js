@@ -13,7 +13,14 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 
 
-const HomePage = ({bannerData, bannerImagesData, home2ndData, home3rdData , home5thData, home4thData,home7thData,
+const HomePage = ({
+    bannerData, 
+    bannerImagesData, 
+    home2ndData, 
+    home3rdData, 
+    home5thData, 
+    home4thData,
+    home7thData,
     home8thData,
     home9thData,
     home10thData,
