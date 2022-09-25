@@ -13,7 +13,9 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 
 
-const HomePage = ({bannerData, bannerImagesData}) => {
+
+const HomePage = ({bannerData, bannerImagesData,home2ndData}) => {
+
     return (
         <div>
             <div>
@@ -22,7 +24,7 @@ const HomePage = ({bannerData, bannerImagesData}) => {
             bannerImagesData={bannerImagesData}
              />
 
-                <Home2nd />
+                <Home2nd home2ndData={home2ndData} />
                 <Home3rd />
                 <Home4th />
                 <Home5th />

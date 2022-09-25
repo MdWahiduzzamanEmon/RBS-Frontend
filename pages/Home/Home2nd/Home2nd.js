@@ -2,53 +2,62 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import Link from 'next/link';
+import axios from "axios";
 import { Button, Card } from 'react-bootstrap';
 // import images from "../../../public/";
 // import avatar from "../../../public/banner2.jpeg";
 import style from './Home2nd.module.css';
-const cards = [
-    {
-        id: 1,
-        title: "Free And Open Source Software",
-        img: "/images.jpg",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
-    },
-    {
-        id: 2,
-        title: "Free And Open Source Software",
-        img: "/banner2.jpeg",
-      
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
-    },
-    {
-        id: 3,
-        title: "Free And Open Source Software",
-        img: "/image2.png",
-        description: "Use Timeline to plan projects right the time. how the pieces fit together."
-    },
-    
-   
-    
-];
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-const Home2nd = () => {
+const Home2nd = ({ home2ndData }) => {
+    console.log(home2ndData);
+    
     return (
         <div className="container-lg my-5 py-5 mx-auto"
             style={{
-                fontFamily: 'Poppins'
+                fontFamily: 'Poppins',
+                display: (home2ndData?.isShow)? "block":"none"
+                   
+               
         }}
+        > <div
+                style={{
+                    display: (home2ndData?.titleData.isShow) ? "block" : "none"
+                }}
         >
-            <h1 className="fs-2 text-center fw-bold my-3">Speed Up Your Workflow</h1>
-            <p className="text-center fs-6 mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
+                {
+                    home2ndData?.titleData?.titleItems?.map((data) => (
+                        <div key={data.id}
+
+                        >
+                            <h1 className="fs-2 text-center fw-bold my-3">{data.title} </h1>
+                            <p className="text-center fs-6 mb-5">{data.titleDescription} </p>
+                        </div>
+                    ))
+                }   
+        </div>
+            
+            
            
-            <div className='row row-cols-1 row-cols-md-3 g-4'>
+            <div className='row row-cols-1 row-cols-md-3 g-4'
+            // style={{
+            //                     display: (home2ndData?.items.isShow) ? "block" : "none"
+            //                 }}
+            >
             {
-                cards.map(card => (
+                    home2ndData?.cardItem?.items?.slice(0,3).map(card => (
                     <div
-                        key={card.id}>
+                            key={card.id}
+                           
+                        >
                         
                         <div>
-                            <Card className=' card shadow-lg rounded w-sm-50' >
+                                <Card className=' card shadow-lg rounded w-sm-50'
+                                    // style={{
+                                    //     display: (card.isShow) ? "block" : "none"
+                                    // }}
+                                >
                                 <Image className='img-fluid rounded-top' src={card.img} alt="" width="300px" height="200px" />
                                 <Card.Body>
                                     <Card.Title className='fs-5 fw-bold'>{card.title}</Card.Title>
