@@ -10,8 +10,11 @@ import BannerSlider from './BannerSlider'
 import SwiperCore, { Autoplay, Pagination, Navigation, } from "swiper";
 import { Col, Row } from "react-bootstrap";
 
-const Banner = ({bannerData}) => {
-    // console.log(bannerData.items)
+
+const Banner = ({bannerData, bannerImagesData}) => {
+    console.log(bannerData.items)
+
+
     // useEffect(() => {
     //     AOS.init({ duration: 2000 });
     // },[])
@@ -42,12 +45,21 @@ const Banner = ({bannerData}) => {
                         // className="mb-3 mb-lg-0"
                         >
                            {
-                            bannerData?.items?.map((item,index)=> (
-                                <div key={item?.id}>
-                                 <h1 className="fs-1 fw-bold">{item?.title}</h1>
-                                <p className="fs-6">{item?.description}</p>
+                            bannerData?.isShow && (
+                                <div>
+                                {
+                                    bannerData?.items?.map((item,index)=> (
+                                        <div 
+                                        key={item?.id}
+                                        style={{display: item?.isShow ? 'block':'none'}}
+                                        >
+                                        <h1 className="fs-1 fw-bold">{item?.title}</h1>
+                                        <p className="fs-6">{item?.description}</p>
+                                        </div>
+                                    ))
+                                }
                                 </div>
-                            ))
+                            )
                            }
                             <Row
                             // className="d-flex flex-lg-row flex-column"
@@ -60,7 +72,13 @@ const Banner = ({bannerData}) => {
                             style={{ height:"400px", width:"600px" }}
                             // className=" d-flex justify-content-center align-items-center"
                         >
-                            <BannerSlider />
+                         {
+                            bannerImagesData.isShow && (
+                                <BannerSlider 
+                                bannerImagesData={bannerImagesData}
+                                />
+                            )
+                         }
                         </Col>
                         {/* </div> */}
                     </Row>
