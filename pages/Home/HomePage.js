@@ -13,9 +13,7 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 
 
-
 const HomePage = ({bannerData, bannerImagesData,home2ndData}) => {
-
     return (
         <div>
             <div>

@@ -10,11 +10,8 @@ import BannerSlider from './BannerSlider'
 import SwiperCore, { Autoplay, Pagination, Navigation, } from "swiper";
 import { Col, Row } from "react-bootstrap";
 
-
 const Banner = ({bannerData, bannerImagesData}) => {
     console.log(bannerData.items)
-
-
     // useEffect(() => {
     //     AOS.init({ duration: 2000 });
     // },[])
