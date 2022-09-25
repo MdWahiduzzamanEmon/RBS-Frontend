@@ -2,44 +2,56 @@ import Image from 'next/image';
 import { Card } from 'react-bootstrap';
 import images from "../../../public/image/images.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight, faBoltLightning, faCoffee, faDownload, faFileDownload, faGear, faReceipt } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faArrowRight, 
+    faBoltLightning, 
+    faCoffee, 
+    faDownload, 
+    faFileDownload, 
+    faGear, 
+    faReceipt } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import style from './Home7th.module.css';
-const cards = [
-    {
-        id: 1,
-        title: "Free And Open Source Software",
-      
-        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faGear,
-        color:"purple"
-    },
-    {
-        id: 2,
-        title: "Free And Open Source Software",
-       description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faBoltLightning,
-        color:"green"
-    },
-    {
-        id: 3,
-        title: "Free And Open Source Software",
-      
-        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faDownload,
-        color:"orange"
-    },
-    {
-        id: 4,
-        title: "Free And Open Source Software",
-       
-        description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-        icon: faReceipt,
-        color:"purple"
-    },
-   
 
-];
+const home7thDemoData = {
+    "id":1,
+    "isShow": true,
+    "items": [
+        {
+            "id": 1,
+            "isShow": true,
+           "title": "Free And Open Source Software",
+            "description": "Use Timeline to plan projects right the time. how the pieces fit together.",
+            "icon": faGear,
+            "color":"purple"
+        },
+        {
+            "id": 2,
+            "isShow": true,
+           "title": "Free And Open Source Software",
+           "description": "Use Timeline to plan projects right the time. how the pieces fit together.",
+            "icon": faBoltLightning,
+            "color":"green"
+        },
+        {
+            "id": 3,
+            "isShow": true,
+           "title": "Free And Open Source Software",
+            "description": "Use Timeline to plan projects right the time. how the pieces fit together.",
+            "icon": faDownload,
+            "color":"orange"
+        },
+        {
+            "id": 4,
+            "isShow": true,
+           "title": "Free And Open Source Software",
+            "description": "Use Timeline to plan projects right the time. how the pieces fit together.",
+            "icon": faReceipt,
+            "color":"purple"
+        },
+    
+    ]
+}
 
 const Home7th = () => {
     return (
@@ -52,7 +64,7 @@ const Home7th = () => {
             <p className="text-center fs-6 mb-5">Use Timeline to plan projects right the first time. See how the pieces you <br /> can spot gap sand overlaps before you start.</p>
             <div className='row row-cols-1 row-cols-md-4 g-4'>
                 {
-                    cards.map(card => (
+                    home7thDemoData.items.map(card => (
                         <div
                             key={card.id}
                         >
@@ -60,7 +72,7 @@ const Home7th = () => {
                             <Card className=' card rounded w-sm-50 w-md-75 shadow-lg' >
                                 <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3'
                                     style={{
-                                    color:card.color
+                                    "color":card.color
                                 }}
                                     icon={card.icon} /> </div>
                                <Card.Body>
@@ -72,9 +84,7 @@ const Home7th = () => {
                                     </Card.Body>
                                 </Card>
                         </div>
-                       
 )
-                      
                    )
                }
 
