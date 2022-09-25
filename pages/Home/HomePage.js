@@ -18,6 +18,7 @@ const HomePage = ({
     bannerImagesData,
     home2ndData,
     home4thData,
+    home6thData,
     home8thData,
     home10thData }) => {
     return (
@@ -32,7 +33,7 @@ const HomePage = ({
                 <Home3rd  />
                 <Home4th home4thData= {home4thData} />
                 <Home5th />
-                <Home6th />
+                <Home6th home6thData={home6thData} />
                 <Home7th />
                 <Home8th home8thData={home8thData} />
                 <Home9th />

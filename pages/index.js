@@ -1,7 +1,7 @@
 import HomePage from './Home/HomePage'
 import axios from 'axios'
 
-export default function Home({bannerData, bannerImagesData, home2ndData,home4thData,home8thData,home10thData }) {
+export default function Home({ bannerData, bannerImagesData, home2ndData, home4thData,home6thData,home8thData,home10thData }) {
   return (
     <div
       style={{
@@ -13,6 +13,7 @@ export default function Home({bannerData, bannerImagesData, home2ndData,home4thD
       bannerImagesData={bannerImagesData}
         home2ndData={home2ndData}
         home4thData={home4thData}
+        home6thData={home6thData}
         home8thData={home8thData}
         home10thData={home10thData}
       />
@@ -29,6 +30,7 @@ export async function getServerSideProps(){
   const bannerImages= await axios.get('http://localhost:3000/api/bannerImage')
   const home2ndData = await axios.get('http://localhost:3000/api/home2ndapi')
   const home4thData = await axios.get('http://localhost:3000/api/home4thapi')
+  const home6thData = await axios.get('http://localhost:3000/api/home6thapi')
   const home8thData = await axios.get('http://localhost:3000/api/home8thapi')
   const home10thData = await axios.get('http://localhost:3000/api/home10thapi')
 
@@ -44,7 +46,8 @@ export async function getServerSideProps(){
      home2ndData: home2ndData.data,
      home4thData: home4thData.data,
      home8thData: home8thData.data,
-     home10thData: home10thData.data,
+      home10thData: home10thData.data,
+      home6thData: home6thData.data
     }
   }
 
