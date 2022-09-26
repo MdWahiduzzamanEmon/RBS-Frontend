@@ -33,7 +33,7 @@ export async function getServerSideProps(){
         props:{
             about2ndData: about2ndInfos.data,
             about3rdData:about3rdData.data,  
-      teamData:teamData.data, 
+            teamData:teamData.data, 
         }
     }
 
