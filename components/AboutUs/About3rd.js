@@ -1,35 +1,47 @@
 import Image from 'next/image';
-import download2 from '../../public/download (2).jpg'
+// import download2 from '../../public/download (2).jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
-const About3rd = () => {
+const About3rd = ({ about3rdData }) => {
+    console.log(about3rdData);
     return (
-        <div className="d-flex flex-column flex-lg-row  my-5 py-5 align-items-center container-lg" style={{ fontFamily: 'Poppins' }}>
+        <div style={{
+            display:(about3rdData.isShow)? "block" : "none"
+        }}>
+           
+                {
+                    about3rdData?.items?.map(data => (
+                        <div key={data.id}
+                            className="d-flex flex-column flex-lg-row  my-5 py-5 align-items-center container-lg" style={{ fontFamily: 'Poppins' }}>  
+                            <div className='p-3'>
+                                <h1 className="fs-2 fw-bold">{data.title }</h1>
+                                <p className="fs-6 my-4"
+                                    style={{
+                                        color: "rgb(75, 101, 126)"
+                                    }}>{data.titleDescription }</p>
+                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='orange'></FontAwesomeIcon></span>{data.subTitle1 }</h3>
+                                <p className="fs-6 my-4"
+                                    style={{
+                                        color: "rgb(75, 101, 126)"
+                                    }}>{data.subTitleDescription1}</p>
 
-            <div className='p-3'>
-                <h1 className="fs-2 fw-bold">We Have More Than 20+ Years <br /> Practical Experience</h1>
-                <p className="fs-6 my-4"
-                    style={{
-                        color: "rgb(75, 101, 126)"
-                    }}>On the other hand we denounce with righteous dislike men who are so beguiled.</p>
-                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='orange'></FontAwesomeIcon></span>Protect Your Data And Privacy</h3>
-                <p className="fs-6 my-4"
-                    style={{
-                        color: "rgb(75, 101, 126)"
-                    }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
+                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='purple'></FontAwesomeIcon></span>{data.subTitle2}</h3>
+                                <p className="fs-6 my-4"
+                                    style={{
+                                        color: "rgb(75, 101, 126)"
+                                    }}>{data.subTitleDescription2}</p>
 
-                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='purple'></FontAwesomeIcon></span>Free And Open Source Software</h3>
-                <p className="fs-6 my-4"
-                    style={{
-                        color: "rgb(75, 101, 126)"
-                    }}>On the other hand we denounce with righteus indignation dislike men who are beguiled and</p>
-
-            </div>
-            <div className='p-3 w-100'>
-                <Image className=' rounded-5' src={download2} alt=" "  width="100%" height="100%" layout="responsive" />
-            </div>
+                            </div>
+                            <div className='p-3 w-100'>
+                                <Image className=' rounded-5' src={data.img} alt=" " width="100%" height="100%" layout="responsive" />
+                            </div>
+                        </div>
+                    ))
+}
+                
         </div>
+        
     );
 };
 

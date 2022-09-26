@@ -35,44 +35,48 @@ const cards = [
 ];
 
 const Home2nd = () => {
+    
     return (
-        <div className="container-lg my-5 py-5 mx-auto"
-            style={{
-                fontFamily: 'Poppins'
-            }}
-        >
-            <h1 className="fs-2 text-center fw-bold my-3">How Our Development Works</h1>
-            <p className="text-center fs-6 mb-5">On the other hand we denounce with righteous indignation dislike men <br /> who are so beguiled and demoralized.</p>
+        <div
+            >
+            <div className="container-lg my-5 py-5 mx-auto"
+                style={{
+                    fontFamily: 'Poppins'
+                }}
+            >
+                <h1 className="fs-2 text-center fw-bold my-3">How Our Development Works</h1>
+                <p className="text-center fs-6 mb-5">On the other hand we denounce with righteous indignation dislike men <br /> who are so beguiled and demoralized.</p>
 
-            <div className='row row-cols-1 row-cols-md-3 g-4'>
-                {
-                    cards.map(card => (
-                        <div
-                            key={card.id}>
+                <div className='row row-cols-1 row-cols-md-3 g-4'>
+                    {
+                        cards.map(card => (
+                            <div
+                                key={card.id}>
 
-                            <div>
-                                <Card className=' card shadow-lg rounded w-sm-50' >
-                                    <div className='d-flex justify-content-center'>
-                                        <FontAwesomeIcon className='fw-semibold py-3 px-2  ' style={{
-                                            fontSize: "50px"
-                                        }} icon={card.icon} />
-                                    </div>
-                                   <Card.Body>
-                                        <Card.Title className='fs-5 fw-bold'>{card.title}</Card.Title>
-                                        <Card.Text className='fs-6'>
-                                            {card.description}
-                                        </Card.Text>
-                                      
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        </div>)
+                                <div>
+                                    <Card className=' card shadow-lg rounded w-sm-50' >
+                                        <div className='d-flex justify-content-center'>
+                                            <FontAwesomeIcon className='fw-semibold py-3 px-2  ' style={{
+                                                fontSize: "50px"
+                                            }} icon={card.icon} />
+                                        </div>
+                                        <Card.Body>
+                                            <Card.Title className='fs-5 fw-bold'>{card.title}</Card.Title>
+                                            <Card.Text className='fs-6'>
+                                                {card.description}
+                                            </Card.Text>
 
-                    )
-                }
+                                        </Card.Body>
+                                    </Card>
+                                </div>
+                            </div>)
+
+                        )
+                    }
+                </div>
+
             </div>
-
-        </div>
+       </div>
     );
 };
 
