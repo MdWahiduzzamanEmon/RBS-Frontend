@@ -1,3 +1,4 @@
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 export const product2ndJson = {
     "id": 1,
     "isShow": true,
@@ -5,13 +6,13 @@ export const product2ndJson = {
         {
             "id": 1,
             "isShow": true,
-            "title": "We Have More Than 20+ Years Practical Experience",
-            "titleDescription": "On the other hand we denounce with righteous dislike men who are so beguiled.",
-            "subTitle1": "Protect your Data and Privacy",
-            "subTitleDescription1": "On the other hand we denounce with righteus indignation dislike men who are beguiled ",
-            "subTitle2": "Free And Open Source Software",
-            "subTitleDescription2": "On the other hand we denounce with righteus indignation dislike men who are beguiled",
-            "img": "/download (2).jpg",
+            "title": "Most Advanced Technology Ever! Made For You.",
+            "titleDescription1": "Built with latest technology",
+            "titleDescription2": "Manage complex workflows",
+            "titleDescription3": "Built with latest technology",
+            "titleDescription4": "Manage complex workflows",
+            "icon": faCheck,
+            "img": "/product22.jpg",
         }
     ],
 

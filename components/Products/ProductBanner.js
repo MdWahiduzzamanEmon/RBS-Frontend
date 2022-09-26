@@ -7,9 +7,15 @@ const ProductBanner = ({ productBannerData }) => {
     return (
         <div>
             <div
-                style={{ backgroundColor:"rgb(39, 45, 84)"}}>
+                style={{ backgroundColor: "rgb(39, 45, 84)" }}
+            
+            >
                 <NavBar />
             </div>
+            <div
+                style={{ display:(productBannerData.isShow)?"block":"none"}}
+            >
+                
             {
                 productBannerData?.items?.map(data => (
                     <div key={data.id}
@@ -28,6 +34,8 @@ const ProductBanner = ({ productBannerData }) => {
                     </div>  
                 ))
             }
+          </div>
+            
            
             
             

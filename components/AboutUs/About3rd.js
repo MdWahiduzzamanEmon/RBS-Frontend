@@ -20,13 +20,13 @@ const About3rd = ({ about3rdData }) => {
                                     style={{
                                         color: "rgb(75, 101, 126)"
                                     }}>{data.titleDescription }</p>
-                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='orange'></FontAwesomeIcon></span>{data.subTitle1 }</h3>
+                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={data.icon} color='orange'></FontAwesomeIcon></span>{data.subTitle1 }</h3>
                                 <p className="fs-6 my-4"
                                     style={{
                                         color: "rgb(75, 101, 126)"
                                     }}>{data.subTitleDescription1}</p>
 
-                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={faCheckCircle} color='purple'></FontAwesomeIcon></span>{data.subTitle2}</h3>
+                                <h3 className="fs-5 fw-bold"><span className='me-2'><FontAwesomeIcon className='fs-3' icon={data.icon} color='purple'></FontAwesomeIcon></span>{data.subTitle2}</h3>
                                 <p className="fs-6 my-4"
                                     style={{
                                         color: "rgb(75, 101, 126)"
