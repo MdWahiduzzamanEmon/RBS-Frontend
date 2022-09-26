@@ -6,24 +6,29 @@ import Image from 'next/image';
 import purchaseStyles from './PurchaseCard.module.css'
 import hoverImage from '../../public/footer-image1.png'
 
-const PurchaseCard = () => {
+const PurchaseCard = ({purchaseCardData}) => {
+   
     return (
-        <div className='py-5'>
-           <Card className={`${purchaseStyles.gradientBackground}  container-lg px-5 py-5 overflow-hidden border-0`}>
-                 <div className='position-relative '>
-                    {/* <div className={` ${footerStyles.footerCircle} position-absolute`}>
-                    <Image src={circleImage} alt='circle image'></Image>
-                    </div> */}
-                   <div className='overflow-hidden'>
-                   <div className={`${purchaseStyles.imagePosition} position-absolute d-none d-lg-block`}>
-                        <Image src={hoverImage} alt='' className='img-fluid'></Image>
-                    </div>
+        <div className='py-5' style={{display: purchaseCardData?.isShow ? 'block' : 'none'}}>
+         {
+            purchaseCardData?.items.map((data,index)=>(
+                <Card className={`${purchaseStyles.gradientBackground}  container-lg px-5 py-5 overflow-hidden border-0`}  key={data?.id}>
+                <div className='position-relative '>
+                   {/* <div className={` ${footerStyles.footerCircle} position-absolute`}>
+                   <Image src={circleImage} alt='circle image'></Image>
+                   </div> */}
+                  <div className='overflow-hidden'>
+                  <div className={`${purchaseStyles.imagePosition} position-absolute d-none d-lg-block`}>
+                       <Image src={hoverImage} alt='' className='img-fluid'></Image>
                    </div>
-                    <p className='fs-3 fw-bold text-white'>Ready To Start Work?</p>
-                    <p className='fs-3 fw-bold text-white'>Purchase Now!</p>
-                    <button className={` ${purchaseStyles.footerButton} border-0 px-3 py-2 rounded-1`}>More Features <FontAwesomeIcon icon={faArrowRight}/></button>
-                 </div>
-            </Card>
+                  </div>
+                   <p className='fs-3 fw-bold text-white'>{data?.title}</p>
+                   <p className='fs-3 fw-bold text-white'>{data?.subTitle}</p>
+                   <button className={` ${purchaseStyles.footerButton} border-0 px-3 py-2 rounded-1`}>To know more <FontAwesomeIcon icon={faArrowRight}/></button>
+                </div>
+           </Card>
+            ))
+         }
            </div>
     );
 };
