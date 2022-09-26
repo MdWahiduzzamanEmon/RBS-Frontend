@@ -1,12 +1,12 @@
 import NavBar from '../../pages/Home/Navbar/NavBar';
-import bannerAbout from '../../public/BannerAbout.png';
+import bannerCommon from '../../public/BannerCommon.png';
 import styles from './AboutBanner.module.css';
 
 const AboutBanner = () => {
     return (
         <div className=''
             style={{
-                backgroundImage: `url(${bannerAbout.src})`,
+                backgroundImage: `url(${bannerCommon.src})`,
                 height:"300px",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat"
