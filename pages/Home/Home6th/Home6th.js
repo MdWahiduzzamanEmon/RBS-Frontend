@@ -37,19 +37,9 @@ const Home6th = ({ home6thData }) => {
 
                     <p>{home6thData.column1Description}</p>
                 </div>
-                {/* <div className='text-center'>
-                    <h1 className='' style={{ fontSize: "60px" }}>A+</h1>
-                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
-                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
-                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
-                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
-                    <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
-                    <h5>Happy Customers</h5>
-                    <p>Use Timeline to plan <br /> projects right the first time. <br/>See how the pieces <br /> fit together.</p>
-                </div> */}
                 <div className='my-5'>
                     {/* <p className='align-items-center'>{home6thData.column1Description}</p>  */}
-                    <blockquote>{home6thData.column1Description} </blockquote>
+                    <blockquote className={`${style.quote} quote`}>{home6thData.column1Description} </blockquote>
                     <p>{home6thData.column2Name}</p>
                 </div>
                 <div className=''>

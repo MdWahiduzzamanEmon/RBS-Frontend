@@ -4,7 +4,7 @@ export const home6thJson = {
     "column1Title": "9.8k+",
     "column1SubTitle": "Happy Customers",
     "column1Description": "Use Timeline to plan  projects right the first time. See how the pieces fit together.",
-    "column2Text": "Use Timeline to plan  projects right the first time. See how the pieces fit together.",
+    "column2Text": " Use Timeline to plan  projects right the first time. See how the pieces fit together.",
     "column2Name":"-by Hanri Thomas Doe",
     "column3Title": "Trusted By 12,000 Customers Using Our Software!",
     "column3Description": "Use Timeline to plan  projects right the first time.See how the pieces fit together.",
