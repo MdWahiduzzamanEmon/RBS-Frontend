@@ -5,35 +5,6 @@ import Link from 'next/link';
 import { Button, Card } from 'react-bootstrap';
 import about2ndStyles from './About2nd.module.css'
 
-// const cards = [
-//     {
-//         id: 1,
-//         title: "Innovative Ideas Pixel- Perfect Design",
-//         img: "/aboutCard1.png",
-//         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-//         icon: faLightbulb,
-
-//     },
-//     {
-//         id: 2,
-//         title: "Highly Customizable UI Experience",
-//         img: "/aboutCard2.png",
-//         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-//         icon:faTabletScreenButton,
-
-//     },
-//     {
-//         id: 3,
-//         title: "Efficient Connectivity Assistance",
-//         img: "/aboutCard3.png",
-//         description: "Use Timeline to plan projects right the time. how the pieces fit together.",
-//         icon: faFingerprint,
-
-//     },
-
-
-
-// ];
 
 const Home2nd = ({about2ndData}) => {
     console.log(about2ndData)
@@ -74,13 +45,11 @@ const Home2nd = ({about2ndData}) => {
                                     </Card.Body>
                                 </Card>
                             </div>
-                        </div>)
-
-                    )
-                }
+                        </div>
+                        )
+                    )}
             </div>
-
-        </div>
+       </div>
     );
 };
 

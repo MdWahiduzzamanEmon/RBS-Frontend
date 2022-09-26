@@ -21,6 +21,7 @@ const HomePage = ({
     home5thData, 
     home4thData,
     home7thData,
+    home6thData,
     home8thData,
     home9thData,
     home10thData,
@@ -38,7 +39,7 @@ const HomePage = ({
                 <Home3rd home3rdData={home3rdData} />
                 <Home4th home4thData={home4thData}/>
                 <Home5th home5thData={home5thData}/>
-                <Home6th />
+                <Home6th home6thData={home6thData} />
                 <Home7th home7thData={home7thData}/>
                 <Home8th home8thData={home8thData} />
                 <Home9th home9thData={home9thData}/>

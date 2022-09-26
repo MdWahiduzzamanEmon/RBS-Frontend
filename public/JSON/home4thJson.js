@@ -1,10 +1,7 @@
 export const home4thJson = {
     "id": 1,
     "isShow": true,
-    "itemData": {
-        "id": 1,
-        "isShow": true,
-        "items": [
+     "items": [
             {
                 "id": 1,
                 "isShow": true,
@@ -14,8 +11,8 @@ export const home4thJson = {
                 "subTitleDescription1":"On the other hand we denounce with righteus indignation dislike men who are beguiled ",
                 "subTitle2": "Free And Open Source Software",
                 "subTitleDescription2":"On the other hand we denounce with righteus indignation dislike men who are beguiled",
-                "img": "/project1.jpeg",
+                "img": "/bgImg.jpg",
             }
         ],
-    },
+    
 }

@@ -6,9 +6,10 @@ export default function Home({
   bannerImagesData, 
   home2ndData,
   home3rdData,
-  home5thData,
-  home7thData,
   home4thData,
+  home5thData,
+  home6thData,
+  home7thData,
   home8thData,
   home9thData,
   home10thData,
@@ -28,6 +29,7 @@ purchaseCardData,
       home3rdData={home3rdData}
       home4thData={home4thData}
       home5thData={home5thData}
+      home6thData={home6thData}
       home7thData={home7thData}
       home8thData={home8thData}
       home9thData={home9thData}
@@ -51,6 +53,7 @@ export async function getServerSideProps(){
   const home5thInfos= await axios.get('http://localhost:3000/api/home5thapi')
   const home7thInfos= await axios.get('http://localhost:3000/api/home7thapi')
   const home4thData = await axios.get('http://localhost:3000/api/home4thapi')
+  const home6thData = await axios.get('http://localhost:3000/api/home6thapi')
   const home8thData = await axios.get('http://localhost:3000/api/home8thapi')
   const home9thData = await axios.get('http://localhost:3000/api/home9thapi')
   const home10thData = await axios.get('http://localhost:3000/api/home10thapi')
@@ -74,6 +77,7 @@ export async function getServerSideProps(){
      home4thData: home4thData.data,
      home8thData: home8thData.data,
      home9thData: home9thData.data,
+     home6thData: home6thData.data,
      home10thData: home10thData.data,
      purchaseCardData: purchaseCardInfos.data,
     //  footerData: footerInfos.data

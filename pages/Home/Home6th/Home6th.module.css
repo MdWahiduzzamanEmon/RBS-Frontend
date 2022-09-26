@@ -31,6 +31,25 @@ background: linear-gradient(90deg, rgba(142,112,185,1) 0%, rgba(103,30,222,0.830
   align-items: center;
   text-align: center;
 }
+.quote::before{
+  content: '\201C';
+  font-size:40px;
+  font-family: sans-serif;
+  color: rgb(161, 80, 237);
+  position: relative;
+  top:10px;
+}
+.quote::after{
+  content: '\201D';
+  font-size:40px;
+  font-family: sans-serif;
+  color: rgb(161, 80, 237);
+  position: relative;
+  top:13px;
+}
+.quote{
+  line-height: 20px;
+}
 /* .swiper-slide h1 {
   display: block;
   width: 100%;

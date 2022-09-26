@@ -11,7 +11,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 const Home2nd = ({ home2ndData }) => {
-    console.log(home2ndData);
+    // console.log(home2ndData);
     
     return (
         <div className="container-lg my-5 py-5 mx-auto"

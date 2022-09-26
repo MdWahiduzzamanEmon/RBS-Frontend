@@ -1,9 +1,9 @@
 .bannerText{
     position:relative;
-    font-size:14vw;
+    font-size:8vw;
     color:#272D54;
-    -webkit-text-stroke: 0.3vw #4a5bdc;
-    text-transform: uppercase;
+    -webkit-text-stroke: 0.3vw #dbdffa;
+    /* text-transform: uppercase; */
 }
 /* .bannerText::before{
     content:attr(data-text);
