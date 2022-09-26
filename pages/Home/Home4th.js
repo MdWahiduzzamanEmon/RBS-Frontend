@@ -8,12 +8,12 @@ import imagesIcon2 from "../../public/image/imageIcon2.png";
 const Home4th = ({ home4thData }) => {
 
     return (
-        <div className="bg-light"
+        <div className="bg-light my-5"
         style={{
             display: (home4thData?.isShow) ? "block" : "none"
     }}
     >
-        <div className="container-lg   d-grid grid-column grid-md-row my-5"
+        <div className="container-lg   d-grid grid-column grid-md-row "
             style={{
                 fontFamily: 'Poppins',
                 
@@ -24,12 +24,12 @@ const Home4th = ({ home4thData }) => {
                         className="align-items-center"
                     // style={{ display: (data?.isShow) ? "block" : "none" }}
                     >
-                        <Col xs={12} md={6} className=" d-flex   rounded-5 align-items-center">
+                        <Col xs={12} md={6} className=" d-flex rounded-5 align-items-center">
                             <div className="w-100 " >
                                 <Image
-                                    className=" justify-content-center  max-w-sm rounded-5 p-2" src={data.img} alt=" "
+                                    className=" justify-content-center max-w-sm rounded-5 p-2" src={data.img} alt=" "
                                     // height="400" width="450" 
-                                    height="100%" width="100%"
+                                    height="70%" width="100%"
                                     objectFit="cover" layout="responsive"
 
                                 />

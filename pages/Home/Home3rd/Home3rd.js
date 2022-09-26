@@ -40,7 +40,7 @@ const Home3rd = ({home3rdData}) => {
               {
                   home3rdData?.items?.map((data,index)=>(
 
-                      <Image key={data?.id} src={data?.image} alt=" " objectFit='cover' width="100%" height="100%" layout="responsive"/>
+                      <Image key={data?.id} src={data?.image} alt=" " objectFit='cover' width="100%" height="70%" layout="responsive" className='rounded-5'/>
                   ))
               }
                </div>
