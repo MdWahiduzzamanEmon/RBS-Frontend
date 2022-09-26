@@ -5,8 +5,8 @@ export const productSliderDemo = {
     "items":[
         {
             "id":1,
-            "isShow": false,
-            "title": "Card title2222",
+            "isShow": true,
+            "title": "Card title",
             "description": " This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
             "image":"/cardProduct1.jpg"
         },
