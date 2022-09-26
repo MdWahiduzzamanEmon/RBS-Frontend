@@ -24,7 +24,7 @@ const Home4th = ({ home4thData }) => {
                         className="align-items-center"
                     // style={{ display: (data?.isShow) ? "block" : "none" }}
                     >
-                        <Col xs={12} md={6} className=" d-flex rounded-5 align-items-center">
+                        <Col xs={12} md={6} className=" d-flex rounded-5 align-items-center py-5">
                             <div className="w-100 " >
                                 <Image
                                     className=" justify-content-center max-w-sm rounded-5 p-2" src={data.img} alt=" "

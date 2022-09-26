@@ -5,6 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import purchaseStyles from './PurchaseCard.module.css'
 import hoverImage from '../../public/footer-image1.png'
+import Link from 'next/link';
 
 const PurchaseCard = ({purchaseCardData}) => {
    
@@ -24,7 +25,7 @@ const PurchaseCard = ({purchaseCardData}) => {
                   </div>
                    <p className='fs-3 fw-bold text-white'>{data?.title}</p>
                    <p className='fs-3 fw-bold text-white'>{data?.subTitle}</p>
-                   <button className={` ${purchaseStyles.footerButton} border-0 px-3 py-2 rounded-1`}>To know more <FontAwesomeIcon icon={faArrowRight}/></button>
+                   <Link href='/pricing'><button className={` ${purchaseStyles.footerButton} border-0 px-3 py-2 rounded-1`}>To know more <FontAwesomeIcon icon={faArrowRight}/></button></Link>
                 </div>
            </Card>
             ))
