@@ -1,5 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe'
+import home5thStyles from './Home5th.module.css'
 
 import YouTube from "react-youtube";
 
@@ -11,7 +12,7 @@ const Home5th = ({home5thData}) => {
             home5thData?.titleData?.map((data,index)=> (
                 <div key={data?.id} style={{display: data?.isShow ? 'block': 'none'}}>
                 <h1 className="text-center fs-2 fw-bold my-3">{data?.title}</h1>
-                <p className="fs-6  text-center mb-5 px-2">{data?.description}</p>
+                <p className={`${home5thStyles.headingDescription} fs-6  text-center mb-5 px-2`}>{data?.description}</p>
                 </div>
             ))
            }
