@@ -56,29 +56,22 @@ export default function Slider({ sliderData }) {
                         },
                     }}
                     modules={[Pagination, Autoplay]}
-                // className="mySwiper"
+                
                 >
                     {
                         sliderData.map(data => (
-                            <SwiperSlide key={data.id}
-                                className={`${style.SwiperSlide}`}>
-                                {/* <Image src={gp} alt=" " height="150px" width="120px"/> */}
-                                <h1>{data.client}</h1>
-                            </SwiperSlide>
-                        ))
+                        <>
+                                {
+                                    data.isShow && (
+                                        <SwiperSlide key={data.id}
+                                        className={`${style.SwiperSlide}`}>
+                                        <h1>{data.client}</h1>
+                                    </SwiperSlide>
+                                    )
+                            }
+                            </>
+                            ))
                     }
-
-                    {/* <SwiperSlide className={`${style.SwiperSlide}`}>
-                        <h1>AIRTEL</h1>
-                    </SwiperSlide>
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1>TELETALK</h1>
-                    </SwiperSlide>
-
-                    <SwiperSlide className={`${style.SwiperSlide}`}>
-                        <h1>RBS Tech</h1>
-                    </SwiperSlide> */}
                 </Swiper>
             </div>}
 

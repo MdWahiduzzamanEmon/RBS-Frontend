@@ -18,12 +18,12 @@ export const home6thJson = {
             "client": "AIRTEL",
             },
             {"id": 2,
-            "isShow": true,
+            "isShow": false,
              "client": "TELETALK",
             },
             {"id": 3,
             "isShow": true,
-             "client": "RBS TECK",
+             "client": "RBS TECH",
 
             }
            

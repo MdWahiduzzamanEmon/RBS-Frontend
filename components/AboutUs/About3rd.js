@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 const About3rd = ({ about3rdData }) => {
-    console.log(about3rdData);
+    // console.log(about3rdData);
     return (
         <div style={{
             display:(about3rdData.isShow)? "block" : "none"

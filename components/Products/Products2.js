@@ -4,7 +4,7 @@ import Image from 'next/image';
 import product22 from '../../public/product22.jpg';
 
 const Products2 = ({ product2ndData }) => {
-    console.log(product2ndData);
+    // console.log(product2ndData);
     return (
         <div
             style={{ display: (product2ndData.isShow) ? "block" : "none" }}
