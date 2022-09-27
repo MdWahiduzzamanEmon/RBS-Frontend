@@ -3,12 +3,12 @@ import ContactBanner from "../components/ContactUs/ContactBanner/ContactBanner";
 import ContactForm from "../components/ContactUs/ContactForm/ContactForm";
 import ContactInfos from "../components/ContactUs/ContactInfos/ContactInfos";
 
-const contactUs = ({contactUsData}) => {
+const contactUs = ({contactUsData,contactUsForm}) => {
     return (
         <section className="">
             <ContactBanner/>
             <ContactInfos contactUsData={contactUsData}/>
-            <ContactForm/>
+            <ContactForm contactUsForm={contactUsForm}/>
         </section>
     );
 };
@@ -17,10 +17,12 @@ export default contactUs;
 
 export async function getServerSideProps(){
     const contactUsInfos = await axios.get('http://localhost:3000/api/contactus/contactusapi')
+    const contactUsFormInfos = await axios.get('http://localhost:3000/api/contactus/contactusFormapi')
 
     return {
         props:{
-            contactUsData: contactUsInfos.data
+            contactUsData: contactUsInfos.data,
+            contactUsForm: contactUsFormInfos.data
         }
     }
 }

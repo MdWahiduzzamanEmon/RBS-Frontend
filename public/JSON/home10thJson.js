@@ -49,9 +49,6 @@ export const home10thJson = {
            
         ]
     }
-
-
-
 };
 
 

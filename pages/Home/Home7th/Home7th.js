@@ -29,14 +29,14 @@ const Home7th = ({home7thData}) => {
                             key={data?.id}
                         >
 
-                            <Card className=' card rounded w-sm-50 w-md-75 shadow-lg' >
+                            <Card className=' card rounded shadow-lg' >
                                 <div className='d-flex justify-content-center mt-1'><FontAwesomeIcon className='bg-light p-3 rounded-2 fs-3'
                                     style={{
                                     "color":data?.color
                                 }}
                                     icon={data?.icon} /> </div>
                                <Card.Body>
-                                        <Card.Title className='fs-5'>{data?.title}</Card.Title>
+                                        <Card.Title className='fs-6 fw-bold'>{data?.title}</Card.Title>
                                         <Card.Text className='fs-6'>
                                             {data?.description}
                                         </Card.Text>
