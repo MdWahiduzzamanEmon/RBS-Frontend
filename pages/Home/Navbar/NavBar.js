@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation}`}>
+    <Navbar collapseOnSelect expand="lg" className={`${NavStyles.navigation} `}>
       <Container>
         <Link href="/" passHref>
           <Navbar.Brand className="text-dark fw-bold">RBS Tech</Navbar.Brand>
