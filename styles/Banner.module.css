@@ -1,8 +1,11 @@
 .bannerWidth {
-    height: 100vh;
-    color: #FFF;
-    /* padding: 15px; */
+    height: 120vh;
+    color: rgb(23, 52, 101);
     font-family: 'Poppins', sans-serif;
+}
+
+.bannerContent{
+    margin-top: 100px;
 }
 
 .buttonGradient {
@@ -35,6 +38,11 @@ align-items: center;
 }
 
 @media (max-width: 600px) {
+
+    .bannerContent{
+        margin-top: 50px;
+    }
+
     .buttonGradientOutline {
       margin-bottom: 5px;
     }
