@@ -31,7 +31,11 @@ const ProductSlider = ({productSliderData}) => {
                         spaceBetween={30}
                         loop={true}
                         autoplay={{
-                            delay: 1000
+                            delay: 4000,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                            waitForTransition: true
+
                         }}
                         pagination={{
                             clickable: true,
