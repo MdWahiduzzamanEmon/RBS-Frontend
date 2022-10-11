@@ -1,6 +1,7 @@
 .bannerWidth {
     height: 120vh;
-    color: rgb(23, 52, 101);
+    /* color: rgb(23, 52, 101); */
+    color: #FFF;
     font-family: 'Poppins', sans-serif;
 }
 

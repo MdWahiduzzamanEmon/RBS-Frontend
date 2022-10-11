@@ -4,9 +4,10 @@ import banner2 from "../../../public/banner2.jpeg";
 // import download from "../../../public/download.jpg";
 // import bannerImage1 from "../../../public/bannerImage1.jpg";
 import bannerImage2 from "../../../public/bannerImage2.jpg";
+import bannerImage4 from "../../../public/bannerImage4.jpg";
 import NavBar from "../Navbar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import bannerStyles from "../../../styles/Banner.module.css";
 import BannerSlider from "./BannerSlider";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
@@ -19,13 +20,19 @@ const Banner = ({ bannerData, bannerImagesData }) => {
   // },[])
 
   //get banner detail api
+  const marqueeTextDemo = [
+    {
+      id: 1,
+      text: "Use Timeline to plan projects right the first time. See how the pieces you can spot gap sand overlaps before you start.",
+    },
+  ];
 
   return (
     <>
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
-          backgroundImage: `url(${bannerImage2.src})`,
+          backgroundImage: `url(${bannerImage4.src})`,
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
@@ -48,12 +55,12 @@ const Banner = ({ bannerData, bannerImagesData }) => {
               justifyContent: "center",
             }}
           >
-            <FontAwesomeIcon icon={faCircle} size="2xs" color="red" />{" "}
-            <small className="ms-2">
-              {" "}
-              Use Timeline to plan projects right the first time. See how the
-              pieces you can spot gap sand overlaps before you start.
-            </small>
+            {marqueeTextDemo?.map((data) => (
+              <>
+                <FontAwesomeIcon icon={faCircle} size="2xs" color="red" />{" "}
+                <small className="ms-2"> {data.text}</small>
+              </>
+            ))}
           </p>
         </div>
         <div
