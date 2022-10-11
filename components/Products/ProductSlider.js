@@ -12,18 +12,20 @@ import Image from "next/image";
 import cardProduct1 from '../../public/cardProduct1.jpg'
 
 
-const ProductSlider = () => {
+const ProductSlider = ({productSliderData}) => {
+    console.log(productSliderData)
     const [isSSR, setIsSSR] = React.useState(true);
     SwiperCore.use([Autoplay]);
 
     useEffect(() => {
         setIsSSR(false);
     }, []);
+
     return (
-       <>
+       <section style={{display: productSliderData?.isShow ? 'block' : 'none'}}>
             {!isSSR && 
                 <div className="container-lg py-5 my-5 ">
-                    <h1 className="text-center text-decoration-underline pb-5">More Related Products</h1>
+                    <h1 className="text-center text-decoration-underline pb-5">{productSliderData?.title}</h1>
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={30}
@@ -59,83 +61,34 @@ const ProductSlider = () => {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
-                            <Card>
-                                <Image src={cardProduct1} alt=" " variant="top" />
-                                <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
-                                    <Card.Text>
-                                        This is a longer card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide> <Card>
-                            <Image src={cardProduct1} alt=" " variant="top" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide> <Card>
-                            <Image src={cardProduct1} alt=" " variant="top" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text <br />
-                                    lead-in to additional content. <br />
-                                    This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide> <Card>
-                            <Image src={cardProduct1} alt=" " variant="top" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text <br />
-                                    lead-in to additional content. <br />
-                                    This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide> <Card>
-                            <Image src={cardProduct1} alt=" " variant="top" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text <br />
-                                    lead-in to additional content. <br />
-                                    This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide> <Card>
-                            <Image src={cardProduct1} alt=" " variant="top" />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a longer card with supporting text <br />
-                                    lead-in to additional content. <br />
-                                    This content is a little bit
-                                    longer.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        
+                       
+                            {
+                                productSliderData?.items.map((data,index)=> (
+                                <>
+                                {
+                                    data?.isShow && (
+                                        <SwiperSlide key={data?.id} >
+                                        <Card >
+                                        <div className="w-100">
+                                        <Image src={data?.image} alt=" " variant="top" layout="responsive" width='100%' height='50%' objectFit='cover'/>
+                                        </div>
+                                            <Card.Body>
+                                                <Card.Title>{data?.title}</Card.Title>
+                                                <Card.Text>
+                                                {data?.description}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        </SwiperSlide>
+                                    )
+                                }
+                                </>
+                                ))
+                            }
                     </Swiper>
                 </div>
                 } 
-    </>
+    </section>
     );
 };
 

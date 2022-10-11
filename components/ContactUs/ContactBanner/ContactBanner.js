@@ -1,22 +1,25 @@
-import NavBar from '../../../pages/Home/Navbar/NavBar';
-import banner2 from '../../../public/banner2.png'
+import NavBar from "../../../pages/Home/Navbar/NavBar";
+import bannerCommon from "../../../public/bannerCommon.png";
+import styles from "./contactBanner.module.css";
 
 const ContactBanner = () => {
-    return (
-        <div className='px-3'
-            style={{
-                backgroundImage: `url(${banner2.src})`,
-                height:"300px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat"       
-        }}
-        >
-            <NavBar /> 
-            <div className='text-white text-center py-5 '>
-                <h1 className='fw-bold' style={{fontSize:'65px', fontFamily: 'Poppins'}} >Contact Us</h1>
-            </div>
-        </div>
-    );
+  return (
+    <div
+      className=""
+      style={{
+        backgroundImage: `url(${bannerCommon.src})`,
+        height: "300px",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        fontFamily: "Poppins",
+      }}
+    >
+      <NavBar />
+      <div className="text-white text-center py-5 ">
+        <h1 className={`${styles.bannerText} bannerText`}>Contact Us</h1>
+      </div>
+    </div>
+  );
 };
 
 export default ContactBanner;

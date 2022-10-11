@@ -10,7 +10,8 @@ import Image from "next/image";
 import React, { useEffect } from "react"
 
 
-export default function Slider() {
+export default function Slider({ sliderData }) {
+    console.log(sliderData);
     const [isSSR, setIsSSR] = React.useState(true);
     SwiperCore.use([Autoplay]); 
 
@@ -58,21 +59,22 @@ export default function Slider() {
                         },
                     }}
                     modules={[Pagination, Autoplay]}
-                // className="mySwiper"
+                
                 >
-
-                    <SwiperSlide className={`${style.SwiperSlide}`}>
-                        {/* <Image src={gp} alt=" " height="150px" width="120px"/> */}
-                        <h1>AIRTEL</h1>
-                    </SwiperSlide>
-                    <SwiperSlide
-                        className={`${style.SwiperSlide}`}
-                    ><h1>TELETALK</h1>
-                    </SwiperSlide>
-
-                    <SwiperSlide className={`${style.SwiperSlide}`}>
-                        <h1>RBS Tech</h1>
-                    </SwiperSlide>
+                    {
+                        sliderData.map(data => (
+                        <>
+                                {
+                                    data.isShow && (
+                                        <SwiperSlide key={data.id}
+                                        className={`${style.SwiperSlide}`}>
+                                        <h1>{data.client}</h1>
+                                    </SwiperSlide>
+                                    )
+                            }
+                            </>
+                            ))
+                    }
                 </Swiper>
             </div>}
 
