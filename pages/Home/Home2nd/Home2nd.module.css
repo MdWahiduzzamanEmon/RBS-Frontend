@@ -2,6 +2,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 18rem;
 } */
+.description{
+    width: 50%;
+    margin: auto;
+  
+}
 
 .btnColor {
     color: #765DF5;
@@ -12,4 +17,14 @@
 
 .link {
     text-decoration: none;
+}
+
+/* .swiper-container-free-mode > .swiper-wrapper{
+    transition-timing-function : linear;
+  } */
+
+@media (max-width: 600px){
+    .description {
+        width: 100%;
+    }
 }
