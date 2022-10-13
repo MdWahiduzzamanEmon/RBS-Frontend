@@ -14,7 +14,6 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { Col, Row } from "react-bootstrap";
 
 const Banner = ({ bannerData, bannerImagesData }) => {
-  console.log(bannerData.items);
   // useEffect(() => {
   //     AOS.init({ duration: 2000 });
   // },[])
@@ -28,7 +27,12 @@ const Banner = ({ bannerData, bannerImagesData }) => {
   ];
 
   return (
-    <>
+    <section
+      style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+      }}
+    >
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -119,7 +123,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         </div>
         {/* </div> */}
       </div>
-    </>
+    </section>
   );
 };
 

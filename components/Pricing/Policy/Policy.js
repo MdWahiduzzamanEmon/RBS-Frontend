@@ -12,9 +12,11 @@ const Policy = ({ policyData }) => {
       style={{
         display: policyData?.isShow ? "block" : "none",
         color: "rgb(23, 52, 101)",
+        background: "rgb(226, 246, 254)",
+        padding: "50px 0",
       }}
     >
-      <Row className=" mx-auto my-5 pb-5 gx-lg-4 gy-3">
+      <Row className=" mx-auto gx-lg-4 gy-3">
         {policyData?.items.map((data, index) => (
           <Col key={index} sm={1} md={4}>
             <Card

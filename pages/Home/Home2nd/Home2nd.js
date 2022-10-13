@@ -24,216 +24,85 @@ const Home2nd = ({ home2ndData }) => {
   }, []);
 
   return (
-    <section>
-      {!isSSR && (
+    <section
+      style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        padding: "50px 0",
+      }}
+    >
+      <div
+        className="container  mx-auto"
+        style={{
+          fontFamily: "Poppins",
+          display: home2ndData?.isShow ? "block" : "none",
+        }}
+      >
+        {" "}
         <div
-          className=" my-5 py-5 mx-auto"
           style={{
-            fontFamily: "Poppins",
-            display: home2ndData?.isShow ? "block" : "none",
+            display: home2ndData?.titleData.isShow ? "block" : "none",
           }}
+          className={`${style.description}`}
         >
-          {" "}
-          <div
-            style={{
-              display: home2ndData?.titleData.isShow ? "block" : "none",
-            }}
-            className={`${style.description}`}
-          >
-            {home2ndData?.titleData?.titleItems?.map((data) => (
-              <div key={data.id}>
-                <h1 className="fs-2 text-center fw-bold my-3">{data.title} </h1>
-                <p className="text-center fs-6 mb-5">
-                  {data.titleDescription}{" "}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div
-          // className="row row-cols-1 row-cols-md-3 g-4"
-          // style={{
-          //                     display: (home2ndData?.items.isShow) ? "block" : "none"
-          //                 }}
-          >
-            {/* {home2ndData?.cardItem?.items?.slice(0, 3).map((card) => ( */}
-            {/* {home2ndData?.cardItem?.items.map((card) => (
-          <div key={card.id}> */}
-            {/* <div>
-              <Home2ndSlider card={card} />
-            </div> */}
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={5}
-              freeMode={true}
-              loop={true}
-              speed={5000}
-              autoplay={{
-                delay: 1,
-                disableOnInteraction: false,
-                reverseDirection: true,
-              }}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                640: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 3,
-                },
-                1024: {
-                  slidesPerView: 4,
-                },
-              }}
-              modules={[Autoplay, Pagination]}
-              className="mySwiper"
-            >
-              {home2ndData?.cardItem?.items.slice(0, 6).map((card) => (
-                <div key={card.id}>
-                  <SwiperSlide
-                  // style={{ transitionTimingFunction: "linear" }}
-                  >
-                    <Card
-                      className=" card shadow-lg rounded "
-                      style={{
-                        // display: (card.isShow) ? "block" : "none"
-                        backgroundImage: `url(${card?.img})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundColor: "rgba(0, 0, 0, 0.7)",
-                        backgroundBlendMode: "multiply",
-                        height: "150px",
-                        color: "white",
-                      }}
-                    >
-                      {/* <Image
-                  className="img-fluid rounded-top"
-                  src={card.img}
-                  alt=""
-                  width="300px"
-                  height="200px"
-                /> */}
-                      {/* <Card.Body>
-                  <Card.Title className="fs-5 p-5 ">{card.title}</Card.Title> */}
-                      {/* <Card.Text className="fs-6">{card.description}</Card.Text> */}
-                      {/* <Link href="/" style={{ textDecoration: "none" }}>
-                    <button className={`${style.btnColor} border-0 `}>
-                      Read more <FontAwesomeIcon icon={faArrowRight} />
-                    </button>
-                  </Link> */}
-                      {/* </Card.Body> */}
-                      {/* <div
-                  className="card text-white bg-primary mb-3"
-                  //   style={{ maxWidth: "18rem" }}
-                > */}
-                      {/* <div className="card-header">Header</div> */}
-                      {/* <div className="card h-100"> */}
-                      {/* <Image src="..." class="card-img-top" alt="..."> */}
-                      <div className=" m-auto">
-                        <h5 className="p-3 ">{card?.title}</h5>
-                      </div>
-                      {/* </div> */}
-                      {/* </div> */}
-                    </Card>
-                  </SwiperSlide>
-                </div>
-              ))}
-            </Swiper>
-          </div>
-          {/* reverse slider */}
-          <div
-            style={{ marginTop: "25px" }}
-            // className="row row-cols-1 row-cols-md-3 g-4"
-            // style={{
-            //                     display: (home2ndData?.items.isShow) ? "block" : "none"
-            //                 }}
-          >
-            {/* {home2ndData?.cardItem?.items?.slice(0, 3).map((card) => ( */}
-            {/* {home2ndData?.cardItem?.items.map((card) => (
-          <div key={card.id}> */}
-            {/* <div>
-              <Home2ndSlider card={card} />
-            </div> */}
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={5}
-              freeMode={true}
-              loop={true}
-              speed={5000}
-              autoplay={{
-                delay: 1,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                640: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 3,
-                },
-                1024: {
-                  slidesPerView: 4,
-                },
-              }}
-              modules={[Autoplay, Pagination]}
-              className="mySwiper"
-            >
-              {home2ndData?.cardItem?.items.slice(6, 12).map((card) => (
-                <div key={card.id}>
-                  <SwiperSlide style={{ transitionTimingFunction: "linear" }}>
-                    <Card
-                      className=" card shadow-lg rounded "
-                      style={{
-                        // display: (card.isShow) ? "block" : "none"
-                        backgroundImage: `url(${card?.img})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundColor: "rgba(0, 0, 0, 0.7)",
-                        backgroundBlendMode: "multiply",
-                        height: "150px",
-                        color: "white",
-                      }}
-                    >
-                      {/* <Image
-                  className="img-fluid rounded-top"
-                  src={card.img}
-                  alt=""
-                  width="300px"
-                  height="200px"
-                /> */}
-                      {/* <Card.Body>
-                  <Card.Title className="fs-5 p-5 ">{card.title}</Card.Title> */}
-                      {/* <Card.Text className="fs-6">{card.description}</Card.Text> */}
-                      {/* <Link href="/" style={{ textDecoration: "none" }}>
-                    <button className={`${style.btnColor} border-0 `}>
-                      Read more <FontAwesomeIcon icon={faArrowRight} />
-                    </button>
-                  </Link> */}
-                      {/* </Card.Body> */}
-                      {/* <div
-                  className="card text-white bg-primary mb-3"
-                  //   style={{ maxWidth: "18rem" }}
-                > */}
-                      {/* <div className="card-header">Header</div> */}
-                      {/* <div className="card h-100"> */}
-                      {/* <Image src="..." class="card-img-top" alt="..."> */}
-                      <div className="m-auto">
-                        <h5 className="p-5">{card?.title}</h5>
-                      </div>
-                      {/* </div> */}
-                      {/* </div> */}
-                    </Card>
-                  </SwiperSlide>
-                </div>
-              ))}
-            </Swiper>
-          </div>
+          {home2ndData?.titleData?.titleItems?.map((data) => (
+            <div key={data.id}>
+              <h1 className="fs-2 text-center fw-bold ">{data.title} </h1>
+              <p className="text-center fs-6 mb-5">{data.titleDescription} </p>
+            </div>
+          ))}
         </div>
-      )}
+        <div className="row row-cols-2 row-cols-md-5 g-4 justify-content-center text-center">
+          {home2ndData?.cardItem?.items.map((card) => (
+            <div key={card.id} className="">
+              <Card
+                className=" card shadow-lg rounded"
+                style={{
+                  // display: (card.isShow) ? "block" : "none"
+                  backgroundImage: `url(${card?.img})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundColor: "rgba(0, 0, 0, 0.7)",
+                  backgroundBlendMode: "multiply",
+                  height: "80px",
+                  color: "white",
+                  fontSize: "15px",
+                }}
+              >
+                {/* <Image
+                  className="img-fluid rounded-top"
+                  src={card.img}
+                  alt=""
+                  width="300px"
+                  height="200px"
+                /> */}
+                {/* <Card.Body>
+                  <Card.Title className="fs-5 p-5 ">{card.title}</Card.Title> */}
+                {/* <Card.Text className="fs-6">{card.description}</Card.Text> */}
+                {/* <Link href="/" style={{ textDecoration: "none" }}>
+                    <button className={`${style.btnColor} border-0 `}>
+                      Read more <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
+                  </Link> */}
+                {/* </Card.Body> */}
+                {/* <div
+                  className="card text-white bg-primary mb-3"
+                  //   style={{ maxWidth: "18rem" }}
+                > */}
+                {/* <div className="card-header">Header</div> */}
+                {/* <div className="card h-100"> */}
+                {/* <Image src="..." class="card-img-top" alt="..."> */}
+                <div className=" m-auto">
+                  <h1 className="p-3 fs-6 ">{card?.title}</h1>
+                </div>
+                {/* </div> */}
+                {/* </div> */}
+              </Card>
+            </div>
+          ))}
+        </div>
+        {/* reverse slider */}
+      </div>
     </section>
   );
 };

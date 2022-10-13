@@ -15,7 +15,7 @@ const ContactBanner = () => {
       }}
     >
       <NavBar />
-      <div className="text-white text-center py-5 ">
+      <div className="text-white text-center">
         <h1 className={`${styles.bannerText} bannerText`}>Contact Us</h1>
       </div>
     </div>

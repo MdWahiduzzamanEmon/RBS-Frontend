@@ -1,15 +1,18 @@
 export const home9thDemoData = {
-    "id":1,
-    "isShow":true,
-    "items":[
-        {
-            "id": 1,
-            "title":"Best 3 Reason For Choose Our Software Service",
-            "subTitle1":"Managing Change Requests and Scope Creep",
-            "subTitle2":"Know Who is Available and When",
-            "subTitle3":"Full Implementation and  Training Support",
-            "image": '/image2.jpg',
-        }
-    ]
-
-}
+  id: 1,
+  isShow: true,
+  items: [
+    {
+      id: 1,
+      title:
+        "What makes our software better than 99% of other solutions on the market?",
+      subTitle1:
+        "Manage projects, automate processes, and scale up to enterprise-level programs and portfolios, all with one platform.",
+      subTitle2:
+        "Companies of all sizes can scale with confidence and deliver value as business requirements evolve.",
+      subTitle3:
+        "We move beyond best practices to make sure everything you do with us is safe and secure, from access to policies to the data flows through your work. ",
+      image: "/image2.jpg",
+    },
+  ],
+};

@@ -1,18 +1,19 @@
 export const home4thJson = {
-    "id": 1,
-    "isShow": true,
-     "items": [
-            {
-                "id": 1,
-                "isShow": true,
-                "title": "Your Base For Classic, Agile Project Management",
-                "titleDescription": "On the other hand we denounce with righteus indignation dislike men who are beguiled",
-                "subTitle1": "Free And Open Source Software",
-                "subTitleDescription1":"On the other hand we denounce with righteus indignation dislike men who are beguiled ",
-                "subTitle2": "Free And Open Source Software",
-                "subTitleDescription2":"On the other hand we denounce with righteus indignation dislike men who are beguiled",
-                "img": "/bgImg.jpg",
-            }
-        ],
-    
-}
+  id: 1,
+  isShow: true,
+  items: [
+    {
+      id: 1,
+      isShow: true,
+      title: "Task Management Features",
+      titleDescription: "Made for You. Made for Your Team.",
+      subTitle1: "Assignees & Watchers",
+      subTitleDescription1:
+        "Incoming. Assign tasks to the responsible person and stay in the loop as a task watcher – coordination made easy! ",
+      subTitle2: "Due Dates",
+      subTitleDescription2:
+        "Right on time. Set due dates to keep your team informed about what’s needed, when. See overdue tasks from the project board!",
+      img: "/bgImg.jpg",
+    },
+  ],
+};

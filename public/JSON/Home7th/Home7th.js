@@ -1,8 +1,15 @@
 import {
   faBoltLightning,
+  faBullhorn,
+  faChartLine,
+  faClipboardList,
+  faCode,
   faDownload,
   faGear,
+  faGlobe,
+  faHouse,
   faReceipt,
+  faTowerCell,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const home7thDemoData = {
@@ -23,8 +30,8 @@ export const home7thDemoData = {
       title: "Real Estate & Constrcution Project",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
-      icon: faGear,
-      color: "purple",
+      icon: faHouse,
+      color: "#6C6CFF",
     },
     {
       id: 2,
@@ -32,8 +39,8 @@ export const home7thDemoData = {
       title: "Web & Software Development",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
-      icon: faGear,
-      color: "purple",
+      icon: faCode,
+      color: "#00C875",
     },
     {
       id: 3,
@@ -41,7 +48,7 @@ export const home7thDemoData = {
       title: "Telecommunication & Infrastructure",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
-      icon: faBoltLightning,
+      icon: faTowerCell,
       color: "green",
     },
     {
@@ -50,8 +57,8 @@ export const home7thDemoData = {
       title: "Sales & Marketing",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
-      icon: faDownload,
-      color: "orange",
+      icon: faBullhorn,
+      color: "#00D2D2",
     },
     {
       id: 5,
@@ -59,8 +66,26 @@ export const home7thDemoData = {
       title: "CRM",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
-      icon: faReceipt,
-      color: "purple",
+      icon: faChartLine,
+      color: "#FF9900",
+    },
+    {
+      id: 6,
+      isShow: true,
+      title: "Freelancer",
+      //   description:
+      //     "Use Timeline to plan projects right the time. how the pieces fit together.",
+      icon: faGlobe,
+      color: "#FF7575",
+    },
+    {
+      id: 7,
+      isShow: true,
+      title: "Any Project",
+      //   description:
+      //     "Use Timeline to plan projects right the time. how the pieces fit together.",
+      icon: faClipboardList,
+      color: "#ABCDFD",
     },
   ],
 };
