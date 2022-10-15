@@ -27,7 +27,7 @@ const Home9th = ({ home9thData }) => {
       <div
         className=" container-lg "
         style={{
-          fontFamily: `"Poppins", sans-serif`,
+          fontFamily: "Poppins",
           display: home9thData?.isShow ? "block" : "none",
         }}
       >
@@ -48,7 +48,7 @@ const Home9th = ({ home9thData }) => {
                       className="text-center fs-1 text-success pt-3 ps-3"
                       icon={faCheckCircle}
                     />
-                    <p className=" fs-6 fw-bold p-3 ">{data?.subTitle1}</p>{" "}
+                    <p className=" fs-6 p-3 ">{data?.subTitle1}</p>{" "}
                   </Col>
                   <Col
                     className="shadow-lg rounded-3 mx-md-5"
@@ -61,16 +61,14 @@ const Home9th = ({ home9thData }) => {
                       style={{ color: "#1D2333" }}
                       icon={faCheckCircle}
                     />
-                    <p className=" fs-6 fw-bold p-3 text-white ">
-                      {data?.subTitle2}
-                    </p>{" "}
+                    <p className=" fs-6 p-3 text-white ">{data?.subTitle2}</p>{" "}
                   </Col>
                   <Col className="bg-light shadow-lg rounded-3 me-md-5">
                     <FontAwesomeIcon
                       className="text-center fs-1 text-warning pt-3 ps-3"
                       icon={faCheckCircle}
                     />
-                    <p className=" fs-6 fw-bold p-3 ">{data?.subTitle3}</p>{" "}
+                    <p className=" fs-6 p-3 ">{data?.subTitle3}</p>{" "}
                   </Col>
                 </Col>
                 {/* <Col className=' d-flex bg-light rounded-3 '>

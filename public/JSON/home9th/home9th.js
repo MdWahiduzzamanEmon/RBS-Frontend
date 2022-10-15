@@ -4,14 +4,13 @@ export const home9thDemoData = {
   items: [
     {
       id: 1,
-      title:
-        "What makes our software better than 99% of other solutions on the market?",
+      title: "What makes our software better than others?",
       subTitle1:
-        "Manage projects, automate processes, and scale up to enterprise-level programs and portfolios, all with one platform.",
+        "Manage tasks, streamline operations, and scale up to enterprise-level programs all from a single platform.",
       subTitle2:
-        "Companies of all sizes can scale with confidence and deliver value as business requirements evolve.",
+        "Companies of all sizes can use our software because of the flexibility it provides.",
       subTitle3:
-        "We move beyond best practices to make sure everything you do with us is safe and secure, from access to policies to the data flows through your work. ",
+        "Manage tasks for faster productivity and uses dynamic Kanban boards to track the progress.",
       image: "/image2.jpg",
     },
   ],

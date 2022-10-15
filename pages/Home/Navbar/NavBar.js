@@ -26,12 +26,12 @@ const NavBar = () => {
             </Link>
             {/* <Link href='/'>Home</Link>
             <Link href='/aboutUs'>About us</Link> */}
-            <Link href="/aboutUs" passHref>
+            {/* <Link href="/aboutUs" passHref>
               <Nav.Link className="text-dark">About us</Nav.Link>
-            </Link>
-            <Link href="/products" passHref>
+            </Link> */}
+            {/* <Link href="/products" passHref>
               <Nav.Link className="text-dark">Products</Nav.Link>
-            </Link>
+            </Link> */}
             <Link href="/pricing" passHref>
               <Nav.Link className="text-dark">Pricing</Nav.Link>
             </Link>

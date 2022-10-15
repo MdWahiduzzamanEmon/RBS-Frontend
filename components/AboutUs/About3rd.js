@@ -29,18 +29,18 @@ const About3rd = ({ about3rdData }) => {
             >
               {data.titleDescription}
             </p>
-            <h3 className="fs-5 fw-bold">
+            <h3 className="fs-5 fw-bold d-flex align-items-center">
               <span className="me-2">
                 <FontAwesomeIcon
-                  className="fs-3"
+                  fontSize="xs"
                   icon={data.icon}
                   color="orange"
-                ></FontAwesomeIcon>
+                />
               </span>
-              {data.subTitle1}
+              <span className="">{data.subTitle1}</span>
             </h3>
             <p
-              className="fs-6 my-4"
+              className="fs-6"
               style={{
                 color: "rgb(75, 101, 126)",
               }}
@@ -48,18 +48,18 @@ const About3rd = ({ about3rdData }) => {
               {data.subTitleDescription1}
             </p>
 
-            <h3 className="fs-5 fw-bold">
+            <h3 className="fs-5 fw-bold d-flex align-items-center">
               <span className="me-2">
                 <FontAwesomeIcon
-                  className="fs-3"
+                  fontSize="xs"
                   icon={data.icon}
                   color="purple"
-                ></FontAwesomeIcon>
+                />
               </span>
-              {data.subTitle2}
+              <span>{data.subTitle2}</span>
             </h3>
             <p
-              className="fs-6 my-4"
+              className="fs-6 "
               style={{
                 color: "rgb(75, 101, 126)",
               }}

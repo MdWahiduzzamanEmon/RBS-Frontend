@@ -9,9 +9,7 @@ import client1 from "../../../public/image/client1.jpg";
 import Slider from "./slider";
 
 const Home6th = ({ home6thData }) => {
-  console.log(home6thData);
   return (
-    // <div className="my-5 text-white d-grid row  g-4"
     <div
       className="mx-auto"
       style={{
@@ -23,14 +21,9 @@ const Home6th = ({ home6thData }) => {
         backgroundColor: "rgb(30, 35, 52)",
       }}
     >
-      <div
-        className=" container-lg mx-auto my-5 text-white row row-cols-1 row-cols-md-3 g-4"
-        // <div className="my-5 text-white d-flex flex-column flex-md-row justify-content-evenly"
-      >
+      <div className=" container-lg mx-auto text-white row row-cols-1 row-cols-md-3 g-4">
         <div className="text-center">
-          <h1 className="" style={{ fontSize: "60px" }}>
-            {home6thData?.column1Title}
-          </h1>
+          <h1 style={{ fontSize: "60px" }}>{home6thData?.column1Title}</h1>
           <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
           <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
           <FontAwesomeIcon className={`${style.icon}`} icon={faStar} />
@@ -40,17 +33,17 @@ const Home6th = ({ home6thData }) => {
 
           <p>{home6thData?.column1Description}</p>
         </div>
-        <div className="my-5">
+        <div>
           {/* <p className='align-items-center'>{home6thData.column1Description}</p>  */}
           <blockquote className={`${style.quote} quote`}>
-            {home6thData?.column1Description}{" "}
+            {home6thData?.column2Text}{" "}
           </blockquote>
           <p>{home6thData?.column2Name}</p>
         </div>
-        <div className="">
-          <h2 className="">{home6thData.column3Title}</h2>
+        <div>
+          <h2>{home6thData.column3Title}</h2>
 
-          <p>{home6thData.column3Description}</p>
+          {/* <p>{home6thData.column3Description}</p> */}
           <div className="d-flex flex-column justify-content-center align-items-center justify-content-md-start   flex-md-row ">
             <div className="w-25">
               <Image
@@ -71,7 +64,7 @@ const Home6th = ({ home6thData }) => {
           </div>
         </div>
       </div>
-      <div className="pb-5 ">
+      <div>
         <Slider sliderData={home6thData.slider}></Slider>
       </div>
     </div>

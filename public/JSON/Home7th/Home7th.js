@@ -19,7 +19,7 @@ export const home7thDemoData = {
     {
       id: 1,
       isShow: true,
-      title: "A platform built for a new way of working",
+      title: "A platform designed for a new style of working",
       description: "What you would like to manage with our platform",
     },
   ],

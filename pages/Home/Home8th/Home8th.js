@@ -1,7 +1,7 @@
 import React from "react";
 import gradientImage from "../../../public/gradient-image-1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { convertToHsl } from "daisyui/src/colors/functions";
 import home8thStyles from "./Home8th.module.css";
@@ -100,18 +100,31 @@ const Home8th = ({ home8thData }) => {
               <h1 className="fs-2 fw-bold">{data.title}</h1>
               <p className="fs-6">{data.titleDescription}</p>
               <div>
-                <h1 className="fs-5 fw-bold ">
-                  <FontAwesomeIcon icon={faCircle} size="2xs" />{" "}
+                <h1 className="fs-5 fw-bold d-flex align-items-center">
+                  <span className="me-2">
+                    <FontAwesomeIcon icon={faCircleCheck} color="#00D2D2" />
+                  </span>
                   {data.subTitle1}
                 </h1>
                 <p className="fs-6">{data.subTitleDescription1}</p>
               </div>
               <div>
-                <h1 className="fs-5 fw-bold">
-                  <FontAwesomeIcon icon={faCircle} size="2xs" />{" "}
+                <h1 className="fs-5 fw-bold d-flex align-items-center">
+                  <span className="me-2">
+                    <FontAwesomeIcon icon={faCircleCheck} color="#FF9900" />
+                  </span>
                   {data.subTitle2}
                 </h1>
                 <p className="fs-6">{data.subTitleDescription2}</p>
+              </div>
+              <div>
+                <h1 className="fs-5 fw-bold d-flex align-items-center">
+                  <span className="me-2">
+                    <FontAwesomeIcon icon={faCircleCheck} color="#FF7575" />
+                  </span>
+                  {data.subTitle3}
+                </h1>
+                <p className="fs-6">{data.subTitleDescription3}</p>
               </div>
               {/* <div>
                 <button className={`${home8thStyles.buttonGradient} border-0`}>

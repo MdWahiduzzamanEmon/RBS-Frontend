@@ -10,7 +10,7 @@ export const home2ndJson = {
         isShow: true,
         title: "Speed Up Your Workflow",
         titleDescription:
-          "Maximize your team's performance, accelerate growth, and improve customer experience with our software's robust and extensive features.",
+          "Boost your team's performance, accelerate growth, and enhance customer experience with our software's rich and comprehensive features.",
       },
     ],
   },

@@ -5,15 +5,19 @@ export const home3rdInfos = {
     {
       id: 1,
       isShow: true,
-      title: "Flexible for your needs",
+      title: "Customizable Task Board",
       description:
-        "Our software offers a rich set of views, workflows, reports, and dashboards to capture and track your plans, resources, and schedules. ",
-      subTitle1: "One goal. Unlimited ways to work.",
+        "Dynamic dashboards enable teams to create unique workflows to fit their procedures. Use Kanban boards to track work progress, plan using project timelines, schedule with shared calendars, and share updates using tables.",
+      subTitle1: "Assignees & Observers",
       subTitle1Description:
-        "Access the same project through five different dynamic views: a kanban board, Gantt chart, spreadsheet, calendar or simple task list.",
-      subTitle2: "Get the whole picture. Finally.",
+        "Assign tasks to the appropriate person and keep informed as a task observer - coordinating made simple!",
+      subTitle2: "Due Dates",
       subTitle2Description:
-        "Keep an eye on your team's progress and workload. Get real-time charts and other visual highlights to share status, spot potential problems, and keep work on track.",
+        "Set due dates to keep your team updated on what is required and when. View project board overdue tasks!",
+      image: "/project1.jpeg",
+      subTitle3: "Time Tracking",
+      subTitle3Description:
+        "Set due dates to keep your team updated on what is required and when. View project board overdue tasks!",
       image: "/project1.jpeg",
     },
   ],

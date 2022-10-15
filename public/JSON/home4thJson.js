@@ -5,14 +5,16 @@ export const home4thJson = {
     {
       id: 1,
       isShow: true,
-      title: "Task Management Features",
+      title: "Project Management Features",
       titleDescription: "Made for You. Made for Your Team.",
-      subTitle1: "Assignees & Watchers",
+      subTitle1: "Project",
       subTitleDescription1:
-        "Incoming. Assign tasks to the responsible person and stay in the loop as a task watcher – coordination made easy! ",
-      subTitle2: "Due Dates",
+        "On Kanban-style boards, keep track of tasks and optimize processes by moving from to-do to doing to done.",
+      subTitle2: "Tasks",
       subTitleDescription2:
-        "Right on time. Set due dates to keep your team informed about what’s needed, when. See overdue tasks from the project board!",
+        "Specify requirements in tasks, collaborate with others, and link to resources.",
+      subTitle3: "Expense",
+      subTitleDescription3: "Keep track of your expenses and budget.",
       img: "/bgImg.jpg",
     },
   ],

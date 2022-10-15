@@ -7,13 +7,16 @@ export const home8thJson = {
       isShow: true,
       title: "Features for Communication.",
       titleDescription:
-        "Inefficient team collaboration and email overload are killing your team’s productivity and costing you money… but they don’t have to. Align your team, boost transparency and get more done with our software.",
+        "Real-time chat channels help to streamline team collaboration. To keep your team moving on action items, use @mentions to add anybody to work chats and assign comments.",
       subTitle1: "Notifications",
       subTitleDescription1:
-        "Ring ring. Receive to-the-minute notifications about important task updates: on web, in our mobile apps or via email.",
-      subTitle2: "Comments",
+        "Receive real-time notifications about significant task updates through the web.",
+      subTitle2: "Chat",
       subTitleDescription2:
-        "Aligned. Comment, reply or react to updates in the activity stream: the assignee and watchers will be notified instantly.",
+        "With Chat view, you can quickly post updates, link resources, and centralize team conversation all in one spot.",
+      subTitle3: "Task Discussion",
+      subTitleDescription3:
+        "Create discussions about your tasks and projects to improve team collaboration.",
       image1: "/image1.jpg",
       image2: "/image2.png",
       image3: "/image3.png",
