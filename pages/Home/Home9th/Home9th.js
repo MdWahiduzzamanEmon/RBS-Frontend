@@ -45,8 +45,10 @@ const Home9th = ({ home9thData }) => {
                 <Col xs={12} md={5}>
                   <Col className="bg-light shadow-lg rounded-3 me-md-5">
                     <FontAwesomeIcon
-                      className="text-center fs-1 text-success pt-3 ps-3"
+                      className="text-center pt-3 ps-3"
                       icon={faCheckCircle}
+                      size="2x"
+                      color="#00D2D2"
                     />
                     <p className=" fs-6 p-3 ">{data?.subTitle1}</p>{" "}
                   </Col>
@@ -57,16 +59,19 @@ const Home9th = ({ home9thData }) => {
                     }}
                   >
                     <FontAwesomeIcon
-                      className="text-center text-white fs-1 pt-3 ps-3"
-                      style={{ color: "#1D2333" }}
+                      className="text-center pt-3 ps-3"
                       icon={faCheckCircle}
+                      size="2x"
+                      color="#FF9900"
                     />
                     <p className=" fs-6 p-3 text-white ">{data?.subTitle2}</p>{" "}
                   </Col>
                   <Col className="bg-light shadow-lg rounded-3 me-md-5">
                     <FontAwesomeIcon
-                      className="text-center fs-1 text-warning pt-3 ps-3"
+                      className="text-center pt-3 ps-3"
                       icon={faCheckCircle}
+                      size="2x"
+                      color="#FF7575"
                     />
                     <p className=" fs-6 p-3 ">{data?.subTitle3}</p>{" "}
                   </Col>
