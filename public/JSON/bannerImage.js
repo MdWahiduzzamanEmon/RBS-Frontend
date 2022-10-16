@@ -5,7 +5,7 @@ export const bannerImages = {
     {
       id: "1",
       isShow: true,
-      img: "/bannerImage9.png",
+      img: "/banner/project-manager1.svg",
     },
     // {
     //   id: "2",

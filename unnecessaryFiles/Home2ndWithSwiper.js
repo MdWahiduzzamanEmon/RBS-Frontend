@@ -1,5 +1,10 @@
 import { Card } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+import "./styles.css";
 
 <div
   style={{ marginTop: "25px" }}

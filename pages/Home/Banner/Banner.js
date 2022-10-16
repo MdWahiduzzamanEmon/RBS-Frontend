@@ -12,6 +12,7 @@ import bannerStyles from "../../../styles/Banner.module.css";
 import BannerSlider from "./BannerSlider";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { Col, Row } from "react-bootstrap";
+import { data } from "autoprefixer";
 
 const Banner = ({ bannerData, bannerImagesData }) => {
   // useEffect(() => {
@@ -111,12 +112,23 @@ const Banner = ({ bannerData, bannerImagesData }) => {
             </Col>
             <Col
               md={7}
-              style={{ height: "400px", width: "600px" }}
+              // style={{ height: "400px", width: "600px" }}
               // className=" d-flex justify-content-center align-items-center"
             >
-              {bannerImagesData.isShow && (
+              {/* {bannerImagesData.isShow && (
                 <BannerSlider bannerImagesData={bannerImagesData} />
-              )}
+              )} */}
+              {bannerImagesData?.images?.map((data, index) => (
+                <Image
+                  key={data.id}
+                  src={data.img}
+                  width="100%"
+                  height="70%"
+                  alt="project manager"
+                  layout="responsive"
+                  // style={{ objectFit: "cover" }}
+                ></Image>
+              ))}
             </Col>
             {/* </div> */}
           </Row>

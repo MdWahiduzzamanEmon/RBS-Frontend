@@ -56,6 +56,9 @@ const NavBar = () => {
             <Link href="/adminPanel" passHref>
               <Nav.Link className="text-dark">Admin Panel</Nav.Link>
             </Link>
+            <Link href="/signup" passHref>
+              <Nav.Link className="text-dark">Sign up</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
