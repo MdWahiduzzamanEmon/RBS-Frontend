@@ -1,15 +1,30 @@
 export const home9thDemoData = {
-    "id":1,
-    "isShow":true,
-    "items":[
-        {
-            "id": 1,
-            "title":"Best 3 Reason For Choose Our Software Service",
-            "subTitle1":"Managing Change Requests and Scope Creep",
-            "subTitle2":"Know Who is Available and When",
-            "subTitle3":"Full Implementation and  Training Support",
-            "image": '/image2.jpg',
-        }
-    ]
-
-}
+  id: 1,
+  isShow: true,
+  title: "What makes our software better than others?",
+  items: [
+    {
+      id: 1,
+      subTitle1:
+        "Manage tasks, streamline operations, and scale up to enterprise-level programs all from a single platform.",
+      subTitle2:
+        "Companies of all sizes can use our software because of the flexibility it provides.",
+      subTitle3:
+        "Manage tasks for faster productivity and uses dynamic Kanban boards to track the progress.",
+    },
+  ],
+  pics: [
+    {
+      id: 1,
+      img: "/todoBoard.png",
+    },
+    {
+      id: 2,
+      img: "/todoBoard1.png",
+    },
+    {
+      id: 3,
+      img: "/todoBoard2.png",
+    },
+  ],
+};

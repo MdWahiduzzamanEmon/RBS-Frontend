@@ -12,9 +12,9 @@ import bannerStyles from "../../../styles/Banner.module.css";
 import BannerSlider from "./BannerSlider";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { Col, Row } from "react-bootstrap";
+import { data } from "autoprefixer";
 
 const Banner = ({ bannerData, bannerImagesData }) => {
-  console.log(bannerData.items);
   // useEffect(() => {
   //     AOS.init({ duration: 2000 });
   // },[])
@@ -23,12 +23,17 @@ const Banner = ({ bannerData, bannerImagesData }) => {
   const marqueeTextDemo = [
     {
       id: 1,
-      text: "Use Timeline to plan projects right the first time. See how the pieces you can spot gap sand overlaps before you start.",
+      text: "It's not a project management tool, It's completely  a project management software",
     },
   ];
 
   return (
-    <>
+    <section
+      style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+      }}
+    >
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -80,10 +85,20 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                       key={item?.id}
                       style={{ display: item?.isShow ? "block" : "none" }}
                     >
-                      <h1 className="fs-1 fw-bold ">{item?.title}</h1>
-                      <p className="fs-6 ">
-                        <small>{item?.description}</small>
-                      </p>
+                      <h1 className="fw-bold " style={{ fontSize: "45px" }}>
+                        {item?.title}
+                      </h1>
+                      <div style={{ fontSize: "18px" }}>
+                        <p className=" ">
+                          <small>{item?.primaryDescription}</small>
+                        </p>
+                        <p className="">
+                          <small>{item?.secondaryDescription}</small>
+                        </p>
+                        <p className="">
+                          <small>{item?.tertiaryDescription}</small>
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -97,19 +112,30 @@ const Banner = ({ bannerData, bannerImagesData }) => {
             </Col>
             <Col
               md={7}
-              style={{ height: "400px", width: "600px" }}
+              // style={{ height: "400px", width: "600px" }}
               // className=" d-flex justify-content-center align-items-center"
             >
-              {bannerImagesData.isShow && (
+              {/* {bannerImagesData.isShow && (
                 <BannerSlider bannerImagesData={bannerImagesData} />
-              )}
+              )} */}
+              {bannerImagesData?.images?.map((data, index) => (
+                <Image
+                  key={data.id}
+                  src={data.img}
+                  width="100%"
+                  height="70%"
+                  alt="project manager"
+                  layout="responsive"
+                  // style={{ objectFit: "cover" }}
+                ></Image>
+              ))}
             </Col>
             {/* </div> */}
           </Row>
         </div>
         {/* </div> */}
       </div>
-    </>
+    </section>
   );
 };
 
