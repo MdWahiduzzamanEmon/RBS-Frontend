@@ -10,10 +10,10 @@ import "swiper/css/pagination";
 const Home9thSlider = ({ home9thData }) => {
   console.log(home9thData);
   return (
-    <div className="w-100">
+    <div className="w-100 rounded-5 overflow-hidden">
       <Swiper
         autoplay={{
-          delay: 1500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -27,8 +27,9 @@ const Home9thSlider = ({ home9thData }) => {
                 width="100%"
                 height="80%"
                 layout="responsive"
-                // objectFit="cover"
+                objectFit="contain"
                 alt="image"
+                className="rounded-5"
               />
             </SwiperSlide>
           )

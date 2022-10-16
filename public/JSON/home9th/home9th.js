@@ -14,17 +14,33 @@ export const home9thDemoData = {
     },
   ],
   pics: [
+    // {
+    //   id: 1,
+    //   img: "/todoBoard.png",
+    // },
+    // {
+    //   id: 2,
+    //   img: "/todoBoard1.png",
+    // },
+    // {
+    //   id: 3,
+    //   img: "/todoBoard2.png",
+    // },
+    // {
+    //   id: 4,
+    //   img: "/todoBoard3.png",
+    // },
+    // {
+    //   id: 5,
+    //   img: "/todoBoard4.png",
+    // },
     {
-      id: 1,
-      img: "/todoBoard.png",
+      id: 5,
+      img: "/todoBoard5.png",
     },
     {
-      id: 2,
-      img: "/todoBoard1.png",
-    },
-    {
-      id: 3,
-      img: "/todoBoard2.png",
+      id: 5,
+      img: "/todoBoard6.png",
     },
   ],
 };
