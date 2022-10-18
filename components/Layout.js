@@ -6,9 +6,8 @@ const Layout = ({ children }) => {
   const [footerDetails, setFooterDetails] = useState({});
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/footerapi")
+      .get("/api/footerapi")
       .then((response) => setFooterDetails(response.data));
-    console.log(footerDetails);
   }, []);
   return (
     <>

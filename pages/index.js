@@ -39,8 +39,7 @@ export default function Home() {
       setHome6thData(res.data);
     });
     axios.get("/api/home7thapi").then((res) => {
-      setHome7thData(res);
-      console.log(res.data);
+      setHome7thData(res.data);
     });
     axios.get("/api/home8thapi").then((res) => {
       setHome8thData(res.data);

@@ -47,7 +47,7 @@ const Home2nd = ({ home2ndData }) => {
         >
           {home2ndData?.titleData?.titleItems?.map((data) => (
             <div key={data.id} data-aos="zoom-out-right">
-              <h1 className="fs-2 text-center fw-bold ">{data.title} </h1>
+              <h1 className="fs-2 text-center fw-bold mb-3">{data.title} </h1>
               <p className="text-center fs-6 mb-5">{data.titleDescription} </p>
             </div>
           ))}

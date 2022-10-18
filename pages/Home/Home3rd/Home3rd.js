@@ -20,14 +20,14 @@ const Home3rd = ({ home3rdData }) => {
         padding: "50px 0",
       }}
     >
-      <div className="d-flex flex-column flex-lg-row align-items-center container-lg">
-        <div className="p-3 w-50" data-aos="zoom-in-down">
+      <div className="d-flex flex-column-reverse  flex-lg-row align-items-center container-lg">
+        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
             <div
               key={data?.id}
               style={{ display: data?.isShow ? "block" : "none" }}
             >
-              <h1 className="fs-2 fw-bold">{data?.title}</h1>
+              <h1 className="fs-2 fw-bold  mb-3">{data?.title}</h1>
               <p
                 className="fs-6"
                 style={{
@@ -82,7 +82,7 @@ const Home3rd = ({ home3rdData }) => {
             </div>
           ))}
         </div>
-        <div className="p-3 w-50" data-aos="zoom-in-down">
+        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
             <Image
               key={data?.id}

@@ -79,8 +79,6 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                         className="fw-bold "
                         style={{ fontSize: "45px" }}
                         data-aos="fade-down"
-                        // data-aos="fade-right"
-                        data-aos-offset="300"
                       >
                         {item?.title}
                       </h1>

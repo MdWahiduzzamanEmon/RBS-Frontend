@@ -40,6 +40,9 @@ align-items: center;
 }
 
 @media (max-width: 600px) {
+    .bannerWidth {
+        height: 1100px;
+    }
 
     .bannerContent{
         margin-top: 50px;

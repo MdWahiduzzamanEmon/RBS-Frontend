@@ -15,7 +15,7 @@ const Home4th = ({ home4thData }) => {
     >
       <div className="d-flex flex-column flex-lg-row align-items-center container-lg">
         <div
-          className="p-3 w-50"
+          className="p-3 w-100 w-lg-50"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000"
@@ -34,7 +34,7 @@ const Home4th = ({ home4thData }) => {
           ))}
         </div>
         <div
-          className="p-3 w-50"
+          className="p-3 w-100 w-lg-50"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000"

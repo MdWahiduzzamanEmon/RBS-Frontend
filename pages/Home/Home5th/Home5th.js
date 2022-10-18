@@ -1,8 +1,15 @@
+import Aos from "aos";
 import React from "react";
 import Iframe from "react-iframe";
 import home5thStyles from "./Home5th.module.css";
 
 const Home5th = ({ home5thData }) => {
+  React.useEffect(() => {
+    Aos.init({
+      duration: 1400,
+      easing: "ease-in-out-quart",
+    });
+  }, []);
   return (
     <div
       style={{
@@ -17,6 +24,7 @@ const Home5th = ({ home5thData }) => {
         <div
           key={data?.id}
           style={{ display: data?.isShow ? "block" : "none" }}
+          data-aos="fade-down"
         >
           <h1 className="text-center fs-2 fw-bold ">{data?.title}</h1>
           <p
@@ -30,8 +38,9 @@ const Home5th = ({ home5thData }) => {
         <div
           key={data?.id}
           style={{ display: data?.isShow ? "block" : "none" }}
+          data-aos="fade-up"
         >
-          <div className="flex items-center container">
+          <div className="d-flex d-items-center container">
             <Iframe
               url={data?.video}
               width="100%"

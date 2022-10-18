@@ -5,7 +5,6 @@ import styles from "./AboutBanner.module.css";
 const AboutBanner = () => {
   return (
     <div
-      className=""
       style={{
         backgroundImage: `url(${bannerCommon.src})`,
         height: "300px",

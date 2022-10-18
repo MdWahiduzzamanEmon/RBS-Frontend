@@ -1,11 +1,10 @@
 import NavBar from "../../../pages/Home/Navbar/NavBar";
-import bannerCommon from "../../../public/bannerCommon.png";
+import bannerCommon from "../../../public/BannerCommon.png";
 import styles from "./contactBanner.module.css";
 
 const ContactBanner = () => {
   return (
     <div
-      className=""
       style={{
         backgroundImage: `url(${bannerCommon.src})`,
         height: "300px",

@@ -29,7 +29,7 @@ const PurchaseCard = ({ purchaseCardData }) => {
             className={`${purchaseStyles.gradientBackground}  container-lg px-5 py-5 overflow-hidden border-0`}
             key={data?.id}
             // data-aos="fade-down-left"
-            data-aos="flip-up"
+            data-aos="fade-down"
             // data-aos-duration="1000"
           >
             <div className="position-relative ">

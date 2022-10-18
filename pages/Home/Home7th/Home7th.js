@@ -1,7 +1,15 @@
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import Aos from "aos";
 
 const Home7th = ({ home7thData }) => {
+  React.useEffect(() => {
+    Aos.init({
+      duration: 1400,
+      easing: "ease-in-out-quart",
+    });
+  }, []);
   return (
     <section
       style={{
@@ -18,7 +26,7 @@ const Home7th = ({ home7thData }) => {
         }}
       >
         {home7thData?.titleData?.map((data, index) => (
-          <div key={data?.id}>
+          <div key={data?.id} data-aos="zoom-out-right">
             <h1 className="fs-2 text-center fw-bold my-3">{data?.title}</h1>
             <p className="text-center mb-5 " style={{ fontSize: "20px" }}>
               {data?.description}
@@ -27,7 +35,7 @@ const Home7th = ({ home7thData }) => {
         ))}
         <div className="row row-cols-2 row-cols-md-4 g-4 justify-content-center text-center">
           {home7thData?.items?.map((data, index) => (
-            <div key={data?.id} className="">
+            <div key={data?.id} data-aos="zoom-out-right">
               <Card
                 className=" card rounded shadow-lg border-0"
                 style={{

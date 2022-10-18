@@ -26,7 +26,7 @@ const Home8th = ({ home8thData }) => {
         backgroundColor: "rgb(226, 246, 254)",
       }}
     >
-      <div className="py-5 container">
+      <div className=" container">
         {home8thData?.items?.map((data, index) => (
           <div key={index} className="row row-cols-1 row-cols-md-2 ">
             <div

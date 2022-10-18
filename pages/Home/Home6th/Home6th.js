@@ -47,9 +47,11 @@ const Home6th = ({ home6thData }) => {
           <p>{home6thData?.column2Name}</p>
         </div>
         <div>
-          <h2>{home6thData?.column3Title}</h2>
+          <h2 className="text-center text-lg-start mb-5">
+            {home6thData?.column3Title}
+          </h2>
 
-          <div className="d-flex flex-column justify-content-center align-items-center justify-content-md-start   flex-md-row ">
+          <div className="d-flex flex-column justify-content-center align-items-center justify-content-md-start flex-md-row ">
             <div className="w-25">
               <Image
                 src={home6thData?.img}
