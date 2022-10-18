@@ -76,7 +76,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                       style={{ display: item?.isShow ? "block" : "none" }}
                     >
                       <h1
-                        className="fw-bold "
+                        className="fw-bold mb-5 "
                         style={{ fontSize: "45px" }}
                         data-aos="fade-down"
                       >
@@ -89,7 +89,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                         <p className="" data-aos="fade-right">
                           <small>{item?.secondaryDescription}</small>
                         </p>
-                        <p className="" data-aos="fade-up">
+                        <p className=" mb-5 mb-lg-0" data-aos="fade-up">
                           <small>{item?.tertiaryDescription}</small>
                         </p>
                       </div>
