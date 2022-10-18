@@ -1,0 +1,20 @@
+.description{
+    width: 50%;
+    margin: auto;
+}
+
+.btnColor {
+    color: #765DF5;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    .description {
+        width: 100%;
+    }
+}
