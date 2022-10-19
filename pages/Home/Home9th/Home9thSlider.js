@@ -8,6 +8,12 @@ import { Autoplay, Pagination } from "swiper";
 import Aos from "aos";
 
 const Home9thSlider = ({ sliderData }) => {
+  const [isSSR, setIsSSR] = React.useState(true);
+
+  React.useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
   React.useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -17,7 +23,7 @@ const Home9thSlider = ({ sliderData }) => {
   return (
     <>
       <div className="w-100 rounded-5 overflow-hidden " data-aos="zoom-in-up">
-        <Swiper
+        {!isSSR && <Swiper
           slidesPerView={1}
           loop={true}
           modules={[Autoplay, Pagination]}
@@ -43,7 +49,7 @@ const Home9thSlider = ({ sliderData }) => {
               />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper>}
       </div>
     </>
   );
