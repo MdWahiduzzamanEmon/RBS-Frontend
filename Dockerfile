@@ -10,7 +10,7 @@ RUN npm i
 COPY . .
 
 # Build app
-RUN #yarn build
+RUN #npm run build
 
 EXPOSE 3000
 
