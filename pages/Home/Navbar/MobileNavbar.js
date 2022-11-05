@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,9 +9,28 @@ import styles from "./MobileNavbar.module.css";
 const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
   return (
     <>
+      <style>
+        {`
+       
+        .accordion-item:nth-child(3) .accordion-button::after {
+          width: 0;
+        }
+        .accordion-item:nth-child(4) .accordion-button::after {
+          width: 0;
+        }
+
+        .accordion-button:focus {
+          box-shadow: none;
+        }
+    }
+    `}
+      </style>
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
-          <h1>RBS Tech</h1>
+          <Link href="/">
+            {/* {" "} */}
+            <h1>RBS Tech</h1>
+          </Link>
         </div>
         <div>
           {state.mobileNavbarOpen ? (
@@ -43,29 +63,44 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
           <Accordion defaultActiveKey="0">
             {navLinks.map((navLink) => (
               <Accordion.Item eventKey={navLink.id} key={navLink.id}>
-                <Accordion.Header
-                  onClick={(e) => {
-                    openNavElements(e);
-                  }}
-                  // style={{ padding: "0px" }}
-                >
-                  {navLink.text}
-                </Accordion.Header>
-                <Accordion.Body style={{ padding: "0px" }}>
-                  <div className={`${styles.navbarItemsInnerContainer}`}>
-                    <div>
-                      {" "}
-                      {state?.openProduct && <Product navLinks={navLinks} />}
-                      {state?.openResources && (
-                        <Resources navLinks={navLinks} />
-                      )}
+                {navLink.href ? (
+                  <Link href={navLink.href}>
+                    <Accordion.Header
+                      onClick={(e) => {
+                        openNavElements(e);
+                      }}
+                      // style={{ padding: "0px" }}
+                    >
+                      {navLink.text}
+                    </Accordion.Header>
+                  </Link>
+                ) : (
+                  <Accordion.Header
+                    onClick={(e) => {
+                      openNavElements(e);
+                    }}
+                    // style={{ padding: "0px" }}
+                  >
+                    {navLink.text}
+                  </Accordion.Header>
+                )}
+                {!navLink.href && (
+                  <Accordion.Body style={{ padding: "0px" }}>
+                    <div className={`${styles.navbarItemsInnerContainer}`}>
+                      <div>
+                        {" "}
+                        {state?.openProduct && <Product navLinks={navLinks} />}
+                        {state?.openResources && (
+                          <Resources navLinks={navLinks} />
+                        )}
+                      </div>
+                      <div className={`${styles.navbarItemsContainerRight}`}>
+                        {/* <img src="" alt="" /> */}
+                        hello
+                      </div>
                     </div>
-                    <div className={`${styles.navbarItemsContainerRight}`}>
-                      {/* <img src="" alt="" /> */}
-                      hello
-                    </div>
-                  </div>
-                </Accordion.Body>
+                  </Accordion.Body>
+                )}
               </Accordion.Item>
             ))}
             {/* <Accordion.Item eventKey="1">

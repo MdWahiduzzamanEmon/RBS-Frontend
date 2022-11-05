@@ -1,0 +1,26 @@
+/* .tabColor {
+  color: red;
+  position: relative;
+}
+
+.tabColor:focus::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: yellowgreen;
+}
+
+.linkContainer {
+  position: relative;
+  color: red;
+}
+
+.linkItemContainer:focus::before {
+  content: "";
+  position: absolute;
+  top: 46px;
+  left: 0;
+  background-color: red;
+  height: 2px;
+} */

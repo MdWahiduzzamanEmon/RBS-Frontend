@@ -7,16 +7,6 @@ import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import React, { useReducer } from "react";
 import { Col, Dropdown, NavDropdown, Row } from "react-bootstrap";
-import {
-  NavContainer,
-  NavItemContainer,
-} from "../../../components/styles/Container.styles";
-import {
-  NavItemLi,
-  NavItemUl,
-  NavLi,
-} from "../../../components/styles/Elements.styles";
-import { StyledNavLi } from "../../../components/styles/Custom.styles";
 import navbarReducer, { initialState } from "../../../reducers/navbarReducer";
 import Product from "../../../components/product/Product";
 import Resources from "../../../components/resources/Resources";
@@ -198,7 +188,10 @@ const NavBar = () => {
               }`}
             >
               <div className={`${navStyles.navbarBrand}`}>
-                <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
+                <Link href="/">
+                  {/* {" "} */}
+                  <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
+                </Link>
               </div>
               {navLinks.map((navLink) => (
                 <>
