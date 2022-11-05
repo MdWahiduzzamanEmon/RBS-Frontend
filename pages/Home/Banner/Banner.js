@@ -26,11 +26,12 @@ const Banner = ({ bannerData, bannerImagesData }) => {
 
   return (
     <section
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-      }}
+    // style={{
+    //   backgroundImage:
+    //     "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+    // }}
     >
+      <NavBar></NavBar>
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -38,7 +39,6 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
-        <NavBar></NavBar>
         {/* marquee text */}
         <div
           style={{

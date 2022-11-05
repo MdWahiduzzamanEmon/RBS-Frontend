@@ -2,3 +2,137 @@
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(90deg,#faebeb 0%, #dde6fd 100%);
 }
+
+.navDropdown {
+    /* max-width: 100%; */
+    position: unset !important;
+    margin-left: 20px !important;
+}
+
+.innerNavItemsContainer {
+    width: 1200px;
+
+}
+
+.navbarContainer {
+    background: linear-gradient(90deg,#faebeb 0%, #dde6fd 100%);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    height: 70px;
+}
+
+.navbarBrand{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbarBrandText {
+    margin-bottom: 0;
+}
+
+.navbarMainItems {
+    display: inline-block;
+    font-size: clamp(15px, 1.5vw, 20px);
+    /* font-size: 20px; */
+    margin-bottom: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    /* border-bottom: 1px solid gold; */
+    /* padding: 20px; */
+    position: relative;
+    
+
+}
+
+.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    padding: 2px;
+    width: 100%;
+    background-color: #2A75D1;
+    bottom: 0;
+    transform: scaleX(1);
+
+}
+
+.navbarMainItems::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    padding: 1px;
+    width: 0;
+    background-color: #2A75D1;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: width .25s ease-in ;
+
+}
+.navbarMainItems:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 7px; */
+    top: 45px;
+    padding: 2px;
+    width: 100%;
+    /* margin-right: 100%; */
+    background-color: #2A75D1;
+    /* visibility: visible; */
+    transform-origin: bottom left;
+    transform: scaleX(1);
+
+}
+/* .navbarMainItems::after:hover {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: px;
+    background-color: red;
+    visibility: ;
+
+} */
+
+.navChevronIcons {
+    /* transform: scale(5); */
+    transition: all 3s ease-in-out ;
+}
+
+.navbarItemsContainer {
+    position: absolute;
+    /* height: 500px; */
+    color: #000;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 10000;
+}
+.navbarItemsInnerContainer{
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.navbarItemsContainerRight {
+    /* height: calc(100vh - 70px); */
+
+    background: #212936;
+}
+
+

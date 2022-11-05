@@ -1,6 +1,12 @@
 import HomePage from "./Home/HomePage";
 import axios from "axios";
 import React, { useEffect } from "react";
+import GlobalStyles from "../components/styles/Global.styles";
+import dynamic from "next/dynamic";
+
+// const Navbar = dynamic(() => import("../pages/Home/Navbar/NavBar"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   const [bannerData, setBannerData] = React.useState({});

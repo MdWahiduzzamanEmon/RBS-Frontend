@@ -29,7 +29,7 @@ const HomePage = ({
   return (
     <div>
       <div>
-        <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
+        {/* <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} /> */}
 
         <Home2nd home2ndData={home2ndData} />
         <Home3rd home3rdData={home3rdData} />
