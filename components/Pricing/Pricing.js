@@ -6,13 +6,25 @@ import { FaExclamationCircle } from "react-icons/fa";
 import styles from "./Pricing.module.css";
 
 const Pricing = ({ pricingData }) => {
-  console.log(pricingData);
+  const changePriceColor = (itemName) => {
+    if (itemName === "Basic") {
+      return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftPurple}`;
+    } else if (itemName === "Individual") {
+      return `${styles.rateContainerTopItemLeft}`;
+    } else if (itemName === "Standard") {
+      return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftBlue}`;
+    } else if (itemName === "Pro") {
+      return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftGreen}`;
+    } else if (itemName === "Enterprise") {
+      return `${styles.rateContainerTopItemLeft} `;
+    }
+  };
   return (
     <section
       style={{
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        padding: "50px  20px",
+        padding: "50px 35px",
         fontFamily: "Poppins",
       }}
     >
@@ -22,9 +34,7 @@ const Pricing = ({ pricingData }) => {
             <h5 className={`${styles.heading}`}>{item.title}</h5>
             <div className={`${styles.rateContainer}`}>
               <div className={`${styles.rateContainerTop}`}>
-                <p className={`${styles.rateContainerTopItemLeft}`}>
-                  ${item.price}
-                </p>
+                <p className={changePriceColor(item.title)}>${item.price}</p>
                 <div className={`${styles.rateContainerTopItemRight}`}>
                   <p className="mb-0">seat/</p>
                   <p>month</p>
@@ -32,7 +42,7 @@ const Pricing = ({ pricingData }) => {
               </div>
               <div className={`${styles.rateContainerBottom}`}>
                 <p className={`${styles.rateContainerBottomItemTop}`}>
-                  <small>Total ${item.monthlyPrice} / month</small>
+                  Total ${item.monthlyPrice} / month
                 </p>
                 <p className={`${styles.rateContainerBottomItemBottom}`}>
                   <small>{item.billingDuration}</small>
@@ -51,7 +61,7 @@ const Pricing = ({ pricingData }) => {
               <div>
                 {item.features.lists.map((list) => (
                   <div className={`${styles.rateIncludePart}`} key={list.id}>
-                    <p>
+                    <p className={`${styles.features}`}>
                       <small>{list.title}</small>
                     </p>
                     <FaExclamationCircle color="#A0A1AC" />
@@ -62,6 +72,7 @@ const Pricing = ({ pricingData }) => {
           </div>
         ))}
       </div>
+      <div>Complete features list</div>
     </section>
   );
 };

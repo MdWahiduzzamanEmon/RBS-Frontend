@@ -1,15 +1,13 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  /* gap: 5px; */
-  /* padding: 20px; */
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-items: center;
 }
 
 .pricingCard {
-  width: 250px;
+  width: 230px;
   height: 720px;
-  padding: 20px;
+  padding: 15px;
   /* border-top-style: none; */
   /* border-top-color: red; */
   border-top-style: none;
@@ -30,7 +28,7 @@
   left: -1px;
   right: 0;
   /* top: 0; */
-  width: 250px;
+  width: 230px;
   /* width: 250px; */
   height: 10px;
   background-color: transparent;
@@ -49,7 +47,7 @@
   left: -1px;
   right: 0;
   /* top: 0; */
-  width: 250px;
+  width: 230px;
   /* width: 250px; */
   height: 10px;
   background-color: #a25ddc;
@@ -67,7 +65,7 @@
   left: -1px;
   right: 0;
   /* top: 0; */
-  width: 250px;
+  width: 230px;
   /* width: 250px; */
   height: 10px;
   background-color: #0085ff;
@@ -85,7 +83,7 @@
   left: -1px;
   right: 0;
   /* top: 0; */
-  width: 250px;
+  width: 230px;
   /* width: 250px; */
   height: 10px;
   background-color: #00ca72;
@@ -103,7 +101,7 @@
   left: -1px;
   right: 0;
   /* top: 0; */
-  width: 250px;
+  width: 230px;
   /* width: 250px; */
   height: 10px;
   background-color: #2b2c5d;
@@ -116,8 +114,13 @@
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 18px;
+  font-weight: bold;
   padding-top: 10px;
+}
+
+.rateContainer {
+  margin-top: 20px;
 }
 
 .rateContainerTop {
@@ -128,13 +131,23 @@
 }
 
 .rateContainerTopItemLeft {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 55px;
+  font-weight: 300;
   border-bottom: 0;
 }
+
+.rateContainerTopItemLeftPurple {
+  color: #a25ddc;
+}
+.rateContainerTopItemLeftBlue {
+  color: #0085ff;
+}
+.rateContainerTopItemLeftGreen {
+  color: #00ca72;
+}
 .rateContainerTopItemRight {
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 13px;
+  font-weight: 300;
   border-bottom: 0;
 }
 
@@ -145,7 +158,7 @@
 }
 
 .rateContainerBottomItemTop {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -180,8 +193,11 @@
 }
 
 .shortIntro {
+  font-size: 15px;
   margin-top: 25px;
   margin-bottom: 65px;
+  /* opacity: 0.8; */
+  font-weight: 300;
 }
 
 .divider {
@@ -197,8 +213,15 @@
 }
 
 .includesTitle {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
   margin-top: 20px;
+}
+
+.features {
+  color: #000;
+  /* opacity: 0.8; */
+  font-weight: 300;
 }
 
 /* .priceCard{

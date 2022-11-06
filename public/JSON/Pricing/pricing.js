@@ -6,7 +6,7 @@ export const pricingDemoData = {
     {
       id: 1,
       title: "Individual",
-      price: "8",
+      price: "0",
       monthlyPrice: "24",
       billingDuration: "Billed annually",
       shortIntro: "Manage all your teams work in one place",
@@ -66,7 +66,7 @@ export const pricingDemoData = {
     {
       id: 3,
       title: "Standard",
-      price: "8",
+      price: "10",
       monthlyPrice: "24",
       billingDuration: "Billed annually",
       shortIntro: "Manage all your teams’ work in one place",
@@ -96,7 +96,7 @@ export const pricingDemoData = {
     {
       id: 4,
       title: "Pro",
-      price: "8",
+      price: "16",
       monthlyPrice: "24",
       billingDuration: "Billed annually",
       shortIntro: "Manage all your teams’ work in one place",
