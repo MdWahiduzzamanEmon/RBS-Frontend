@@ -8,6 +8,8 @@ import EngineeringTeam from "./mpComponents/EngineeringTeam";
 import image1 from "../../public/image/todoBoard5.png";
 
 const ManagePlatform = ({ managePlatformData }) => {
+  console.log(managePlatformData);
+
   return (
     <>
       <style>
@@ -75,19 +77,23 @@ const ManagePlatform = ({ managePlatformData }) => {
           fill
           style={{ color: "#2a75d1" }}
         >
-          <Tab eventKey="engineering-team" title="Engineering Team">
-            {/* <Home7th /> */}
-            {/* <EngineeringTeam /> */}
-            <CVerticalTab />
-          </Tab>
-          <Tab eventKey="real-state" title="Real Estate & Construction Project">
+          {managePlatformData?.items?.map((data, index) => (
+            <Tab eventKey={data.eventKey} title={data.title} key={data.id}>
+              {/* <Home7th /> */}
+              {/* <EngineeringTeam /> */}
+              {/* {data?.submenus?.map((data) => ( */}
+              <CVerticalTab cVerticalTabData={data} />
+              {/* ))} */}
+            </Tab>
+          ))}
+          {/* <Tab eventKey="real-state" title="Real Estate & Construction Project">
             <Home7th />
           </Tab>
           <Tab eventKey="it" title="IT">
             hello
           </Tab>
           <Tab eventKey="sales-marketing" title="Sales and Marketing"></Tab>
-          <Tab eventKey="others" title="Others"></Tab>
+          <Tab eventKey="others" title="Others"></Tab> */}
           {/* <Tab eventKey="contact" title="Contact" disabled></Tab> */}
         </Tabs>
       </section>
