@@ -1,12 +1,7 @@
 import React from "react";
-import CVerticalTab from "../../utility/CVerticalTab";
 
 const EngineeringTeam = () => {
-  return (
-    <div>
-      <CVerticalTab />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default EngineeringTeam;

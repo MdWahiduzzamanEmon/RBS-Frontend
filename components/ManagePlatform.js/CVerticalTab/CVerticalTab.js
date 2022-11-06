@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { Col, Nav, Row, Tab } from "react-bootstrap";
-import image1 from "../../public/image/todoBoard5.png";
 import {
   initialStateMp,
   managePlatformReducer,
-} from "../../reducers/managePlatformReducer";
+} from "../../../reducers/managePlatformReducer";
 import styles from "./CVerticalTab.module.css";
 
 const CVerticalTab = ({ cVerticalTabData }) => {

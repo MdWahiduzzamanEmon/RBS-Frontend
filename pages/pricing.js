@@ -19,7 +19,7 @@ const PricingMain = () => {
 
   return (
     <>
-      <PricingBanner />
+      {/* <PricingBanner /> */}
       <Pricing pricingData={pricingData} />
       <Policy policyData={policyData} />
     </>

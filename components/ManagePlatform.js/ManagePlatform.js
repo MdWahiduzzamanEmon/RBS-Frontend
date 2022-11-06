@@ -2,10 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Col, Nav, Row, Tab, Tabs } from "react-bootstrap";
 import Home7th from "../../pages/Home/Home7th/Home7th";
-import CVerticalTab from "../utility/CVerticalTab";
 import styles from "./ManagePlatform.module.css";
 import EngineeringTeam from "./mpComponents/EngineeringTeam";
-import image1 from "../../public/image/todoBoard5.png";
+import CVerticalTab from "./CVerticalTab/CVerticalTab";
 
 const ManagePlatform = ({ managePlatformData }) => {
   console.log(managePlatformData);
