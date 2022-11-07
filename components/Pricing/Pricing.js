@@ -2,10 +2,16 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { FaExclamationCircle } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaChevronUp,
+  FaExclamationCircle,
+} from "react-icons/fa";
+import CompleteFeaturesList from "./CompleteFeaturesList";
 import styles from "./Pricing.module.css";
 
 const Pricing = ({ pricingData }) => {
+  const [isShow, setIsShow] = React.useState(false);
   const changePriceColor = (itemName) => {
     if (itemName === "Basic") {
       return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftPurple}`;
@@ -72,7 +78,20 @@ const Pricing = ({ pricingData }) => {
           </div>
         ))}
       </div>
-      <div>Complete features list</div>
+      <div
+        style={{
+          textAlign: "center",
+          padding: "30px",
+          fontWeight: "400",
+          fontSize: "30px",
+          cursor: "pointer",
+        }}
+        onClick={() => setIsShow(!isShow)}
+      >
+        Complete features list{" "}
+        {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
+      </div>
+      {isShow && <CompleteFeaturesList />}
     </section>
   );
 };
