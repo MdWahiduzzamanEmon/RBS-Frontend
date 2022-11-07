@@ -12,6 +12,7 @@ import Home8th from "./Home8th/Home8th";
 import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 import Home5th from "./Home5th/Home5th";
 import ManagePlatform from "../../components/ManagePlatform.js/ManagePlatform";
+import CircularMotion from "../../components/circularMotion/CircularMotion";
 
 const HomePage = ({
   bannerData,
@@ -32,7 +33,7 @@ const HomePage = ({
   return (
     <div>
       <div>
-        {/* <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} /> */}
+        <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
         <ManagePlatform managePlatformData={managePlatformData} />
         <Home2nd home2ndData={home2ndData} />
         <Home3rd home3rdData={home3rdData} />

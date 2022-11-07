@@ -34,6 +34,14 @@ const Pricing = ({ pricingData }) => {
         fontFamily: "Poppins",
       }}
     >
+      <div className={`${styles.mainTitleContainer}`}>
+        <h1 className={`${styles.mainTitle}`}>
+          Supercharge your teamwork. Start free.
+        </h1>
+        <p className={`${styles.details}`}>
+          Unlimited boards and workflows. No credit card needed.
+        </p>
+      </div>
       <div className={`${styles.container}`}>
         {pricingData?.items?.map((item, index) => (
           <div className={`${styles.pricingCard}`} key={item.id}>

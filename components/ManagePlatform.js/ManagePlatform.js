@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Col, Nav, Row, Tab, Tabs } from "react-bootstrap";
 import Home7th from "../../pages/Home/Home7th/Home7th";
-import styles from "./ManagePlatform.module.css";
 import EngineeringTeam from "./mpComponents/EngineeringTeam";
 import CVerticalTab from "./CVerticalTab/CVerticalTab";
+import styles from "./ManagePlatform.module.css";
 
 const ManagePlatform = ({ managePlatformData }) => {
   console.log(managePlatformData);
@@ -52,15 +52,27 @@ const ManagePlatform = ({ managePlatformData }) => {
                 padding-left: 100px;
                 padding-right: 100px;
             }
+
+            @media (max-width: 768px) {
+              .nav-item .nav-link::before {
+                background-color: transparent;
+            }
+    
+            .nav-item .nav-link:hover::before, .nav-item .nav-link:focus::before {
+                background-color: transparent;
+            }
+            }
         `}
       </style>
       <section
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-          padding: "50px 0",
+          // padding: "50px 35px ",
           fontFamily: "Poppins",
+          // marginBottom: "200px",
         }}
+        className={`${styles.managePlatformContainer}`}
       >
         {managePlatformData?.titleData?.map((data, index) => (
           <div key={data?.id} data-aos="zoom-out-right">
@@ -75,6 +87,7 @@ const ManagePlatform = ({ managePlatformData }) => {
           id="fill-tab-example"
           fill
           style={{ color: "#2a75d1" }}
+          // style={{}}
         >
           {managePlatformData?.items?.map((data, index) => (
             <Tab eventKey={data.eventKey} title={data.title} key={data.id}>
