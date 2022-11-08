@@ -154,6 +154,16 @@ export const pricingDemoData = {
       },
     },
   ],
+  completeFeatures: {
+    id: 1,
+    title: "Complete features",
+    category: [
+      {
+        id: 1,
+        title: "Individual",
+      },
+    ],
+  },
 };
 
 // export const pricingDemoData = {

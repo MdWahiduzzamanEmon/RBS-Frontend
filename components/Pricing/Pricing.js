@@ -1,7 +1,15 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Col,
+  OverlayTrigger,
+  Popover,
+  Row,
+  Tooltip,
+} from "react-bootstrap";
 import {
   FaChevronDown,
   FaChevronUp,
@@ -93,7 +101,32 @@ const Pricing = ({ pricingData }) => {
                         <p className={`${styles.features}`}>
                           <small>{list.title}</small>
                         </p>
-                        <FaExclamationCircle color="#A0A1AC" />
+                        {["top"].map((placement) => (
+                          <OverlayTrigger
+                            key={placement}
+                            placement={placement}
+                            overlay={
+                              <Tooltip id={`tooltip-${placement}`}>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptas, aut.
+                              </Tooltip>
+                            }
+                          >
+                            <Button
+                              variant="secondary"
+                              style={{
+                                backgroundColor: "transparent",
+                                border: "none",
+                              }}
+                            >
+                              <FaExclamationCircle
+                                color="#A0A1AC"
+                                // title="Within boards we have rows, or 'Items' - An Item can be anything you want it to be - Task, project, customer, etc. Each free account starts with 200 free Items. You can get more Items by referring friends to create their own accounts."
+                                style={{ cursor: "pointer" }}
+                              ></FaExclamationCircle>
+                            </Button>
+                          </OverlayTrigger>
+                        ))}
                       </div>
                     ))}
                   </div>
@@ -114,7 +147,7 @@ const Pricing = ({ pricingData }) => {
             Complete features list{" "}
             {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
           </div>
-          {isShow && <CompleteFeaturesList />}
+          {isShow && <CompleteFeaturesList pricingData={pricingData} />}
         </>
       ) : (
         <PricingForSD pricingData={pricingData} />

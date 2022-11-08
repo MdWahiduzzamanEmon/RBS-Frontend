@@ -4,8 +4,8 @@ export const initialState = {
   openPricing: false,
   openWatchADemo: false,
   showActiveInnerText: "",
+  changeNavbarPosition: "",
   mobileNavbarOpen: false,
-  changeNavbarPosition: false,
 };
 
 export default function navbarReducer(state = initialState, action) {
@@ -63,6 +63,7 @@ export default function navbarReducer(state = initialState, action) {
         openResources: action.payload.openResources,
         openPricing: action.payload.openPricing,
         openWatchADemo: action.payload.openWatchADemo,
+        showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
     }

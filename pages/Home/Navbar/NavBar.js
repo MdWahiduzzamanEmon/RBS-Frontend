@@ -194,7 +194,6 @@ const NavBar = () => {
           openResources: false,
           openPricing: false,
           innerText: navItemName,
-          changeNavbarPosition: !state.changeNavbarPosition,
         },
       });
     } else if (navItemName === "Resources") {
@@ -205,7 +204,6 @@ const NavBar = () => {
           openProduct: false,
           openPricing: false,
           innerText: navItemName,
-          changeNavbarPosition: !state.changeNavbarPosition,
         },
       });
     } else if (navItemName === "Pricing") {
@@ -217,7 +215,6 @@ const NavBar = () => {
           openResources: false,
           openWatchADemo: false,
           innerText: navItemName,
-          changeNavbarPosition: false,
         },
       });
     } else if (navItemName === "Watch a demo") {
@@ -229,7 +226,6 @@ const NavBar = () => {
           openProduct: false,
           openResources: false,
           innerText: navItemName,
-          changeNavbarPosition: false,
         },
       });
     } else {
@@ -270,7 +266,7 @@ const NavBar = () => {
                 (state?.showActiveInnerText && state.openResources)
               }`}
               style={{
-                position: state?.changeNavbarPosition ? "fixed" : "relative",
+                position: state?.showActiveInnerText ? "fixed" : "relative",
               }}
             >
               <div
@@ -283,7 +279,7 @@ const NavBar = () => {
                       openResources: false,
                       openPricing: false,
                       openWatchADemo: false,
-                      changeNavbarPosition: false,
+                      innerText: "",
                     },
                   });
                 }}
@@ -383,15 +379,19 @@ const NavBar = () => {
               <div
                 className={`${navStyles.navbarItemsContainer}`}
                 style={{
-                  position: state?.changeNavbarPosition ? "fixed" : "absolute",
+                  position: state?.showActiveInnerText ? "fixed" : "absolute",
                 }}
               >
                 <div
                   className={`${navStyles.navbarItemsInnerContainer} ${stickyClass}`}
                 >
                   <div className={`${navStyles.navbarItemsContainerLeft}`}>
-                    {state?.openProduct && <Product navLinks={navLinks} />}
-                    {state?.openResources && <Resources navLinks={navLinks} />}
+                    {state?.openProduct && (
+                      <Product navLinks={navLinks} dispatch={dispatch} />
+                    )}
+                    {state?.openResources && (
+                      <Resources navLinks={navLinks} dispatch={dispatch} />
+                    )}
 
                     {/* hello */}
                   </div>

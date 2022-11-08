@@ -14,7 +14,7 @@
 
 .stickyNav {
   position: sticky;
-  top: 0;
+  top: 70px;
   left: 0;
   /* background-image: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%); */
   background-color: #dde6fd;

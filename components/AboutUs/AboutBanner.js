@@ -12,7 +12,6 @@ const AboutBanner = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <NavBar />
       <div className=" d-flex justify-content-center align-items-center text-white text-center py-5 ">
         <h1 className={`${styles.bannerText} bannerText`}>About us</h1>
       </div>

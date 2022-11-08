@@ -3,7 +3,8 @@ import { FaExclamationCircle } from "react-icons/fa";
 import NavBar from "../../pages/Home/Navbar/NavBar";
 import styles from "./CompleteFeaturesList.module.css";
 
-const CompleteFeaturesList = () => {
+const CompleteFeaturesList = ({ pricingData }) => {
+  console.log(pricingData);
   const [stickyClass, setStickyClass] = React.useState("");
 
   React.useEffect(() => {
@@ -73,7 +74,7 @@ const CompleteFeaturesList = () => {
           >
             <td
               colSpan={6}
-              style={{ fontWeight: 500, fontSize: "20px", marginTop: "20px" }}
+              style={{ fontWeight: 500, fontSize: "20px", marginTop: "38px" }}
             >
               Essentials
             </td>
