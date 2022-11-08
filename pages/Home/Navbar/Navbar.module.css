@@ -18,8 +18,20 @@
   display: flex;
   align-items: center;
   padding: 15px;
-  position: relative;
+  /* position: relative; */
+  width: 100%;
   height: 70px;
+  z-index: 7000;
+}
+
+.stickyNav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* background-image: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%); */
+  background-color: #dde6fd;
+  width: 100%;
+  /* padding-left: 230px; */
 }
 
 .navbarBrand {
@@ -119,7 +131,7 @@
 }
 
 .navbarItemsContainer {
-  position: absolute;
+  /* position: fixed; */
   /* height: 500px; */
   color: #000;
   top: 70px;

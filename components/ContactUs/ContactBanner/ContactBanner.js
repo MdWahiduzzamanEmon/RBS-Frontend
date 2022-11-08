@@ -13,7 +13,6 @@ const ContactBanner = () => {
         fontFamily: "Poppins",
       }}
     >
-      <NavBar />
       <div className="text-white d-flex justify-content-center align-items-center py-5">
         <h1 className={`${styles.bannerText} bannerText`}>Contact Us</h1>
       </div>

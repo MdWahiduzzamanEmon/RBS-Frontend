@@ -7,8 +7,10 @@ import {
   FaChevronUp,
   FaExclamationCircle,
 } from "react-icons/fa";
+import useViewport from "../../hooks/useViewport";
 import CompleteFeaturesList from "./CompleteFeaturesList";
 import styles from "./Pricing.module.css";
+import PricingForSD from "./pricingForSmallDevices/PricingForSD";
 
 const Pricing = ({ pricingData }) => {
   const [isShow, setIsShow] = React.useState(false);
@@ -25,6 +27,10 @@ const Pricing = ({ pricingData }) => {
       return `${styles.rateContainerTopItemLeft} `;
     }
   };
+
+  const { width } = useViewport();
+  const breakpoint = 600;
+
   return (
     <section
       style={{
@@ -42,64 +48,77 @@ const Pricing = ({ pricingData }) => {
           Unlimited boards and workflows. No credit card needed.
         </p>
       </div>
-      <div className={`${styles.container}`}>
-        {pricingData?.items?.map((item, index) => (
-          <div className={`${styles.pricingCard}`} key={item.id}>
-            <h5 className={`${styles.heading}`}>{item.title}</h5>
-            <div className={`${styles.rateContainer}`}>
-              <div className={`${styles.rateContainerTop}`}>
-                <p className={changePriceColor(item.title)}>${item.price}</p>
-                <div className={`${styles.rateContainerTopItemRight}`}>
-                  <p className="mb-0">seat/</p>
-                  <p>month</p>
+      {width > breakpoint ? (
+        <>
+          <div className={`${styles.container}`}>
+            {pricingData?.items?.map((item, index) => (
+              <div className={`${styles.pricingCard}`} key={item.id}>
+                <h5 className={`${styles.heading}`}>{item.title}</h5>
+                <div className={`${styles.rateContainer}`}>
+                  <div className={`${styles.rateContainerTop}`}>
+                    <p className={changePriceColor(item.title)}>
+                      ${item.price}
+                    </p>
+                    <div className={`${styles.rateContainerTopItemRight}`}>
+                      <p className="mb-0">seat/</p>
+                      <p>month</p>
+                    </div>
+                  </div>
+                  <div className={`${styles.rateContainerBottom}`}>
+                    <p className={`${styles.rateContainerBottomItemTop}`}>
+                      Total ${item.monthlyPrice} / month
+                    </p>
+                    <p className={`${styles.rateContainerBottomItemBottom}`}>
+                      <small>{item.billingDuration}</small>
+                    </p>
+                  </div>
+                </div>
+                <button className={`${styles.primaryButton}`}>
+                  Try for free
+                </button>
+                <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
+
+                <div className={`${styles.divider}`}></div>
+
+                <div>
+                  <h3 className={`${styles.includesTitle}`}>
+                    {item.features.title}
+                  </h3>
+                  <div>
+                    {item.features.lists.map((list) => (
+                      <div
+                        className={`${styles.rateIncludePart}`}
+                        key={list.id}
+                      >
+                        <p className={`${styles.features}`}>
+                          <small>{list.title}</small>
+                        </p>
+                        <FaExclamationCircle color="#A0A1AC" />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className={`${styles.rateContainerBottom}`}>
-                <p className={`${styles.rateContainerBottomItemTop}`}>
-                  Total ${item.monthlyPrice} / month
-                </p>
-                <p className={`${styles.rateContainerBottomItemBottom}`}>
-                  <small>{item.billingDuration}</small>
-                </p>
-              </div>
-            </div>
-            <button className={`${styles.primaryButton}`}>Try for free</button>
-            <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
-
-            <div className={`${styles.divider}`}></div>
-
-            <div>
-              <h3 className={`${styles.includesTitle}`}>
-                {item.features.title}
-              </h3>
-              <div>
-                {item.features.lists.map((list) => (
-                  <div className={`${styles.rateIncludePart}`} key={list.id}>
-                    <p className={`${styles.features}`}>
-                      <small>{list.title}</small>
-                    </p>
-                    <FaExclamationCircle color="#A0A1AC" />
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div
-        style={{
-          textAlign: "center",
-          padding: "30px",
-          fontWeight: "400",
-          fontSize: "30px",
-          cursor: "pointer",
-        }}
-        onClick={() => setIsShow(!isShow)}
-      >
-        Complete features list{" "}
-        {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
-      </div>
-      {isShow && <CompleteFeaturesList />}
+          <div
+            style={{
+              textAlign: "center",
+              padding: "30px",
+              fontWeight: "400",
+              fontSize: "30px",
+              cursor: "pointer",
+            }}
+            onClick={() => setIsShow(!isShow)}
+          >
+            Complete features list{" "}
+            {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
+          </div>
+          {isShow && <CompleteFeaturesList />}
+        </>
+      ) : (
+        <PricingForSD pricingData={pricingData} />
+      )}
     </section>
   );
 };

@@ -1,0 +1,226 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-items: center;
+}
+
+.pricingCard {
+  max-width: 400px;
+  height: 720px;
+  padding: 15px;
+  /* border-top-style: none; */
+  /* border-top-color: red; */
+  margin-top: 20px;
+  border-top-style: none;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+
+  /* border-top: none; */
+  /* border-radius: 0 0 5px 5px; */
+  position: relative;
+  /* background-color: transparent; */
+}
+
+.pricingCard:before {
+  content: "";
+  position: absolute;
+  bottom: 719px;
+  left: -1px;
+  right: -1px;
+  /* top: 0; */
+  max-width: 400px;
+  /* width: 250px; */
+  height: 10px;
+  background-color: transparent;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* border-radius: 5px;  */
+}
+
+.pricingCard:nth-child(2):before {
+  content: "";
+  position: absolute;
+  bottom: 719px;
+  left: -1px;
+  right: -1px;
+  /* top: 0; */
+  max-width: 400px;
+  /* width: 250px; */
+  height: 10px;
+  background-color: #a25ddc;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* border-radius: 5px;  */
+}
+.pricingCard:nth-child(3):before {
+  content: "";
+  position: absolute;
+  bottom: 719px;
+  left: -1px;
+  right: -1px;
+  /* top: 0; */
+  max-width: 400px;
+  /* width: 250px; */
+  height: 10px;
+  background-color: #0085ff;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* border-radius: 5px;  */
+}
+.pricingCard:nth-child(4):before {
+  content: "";
+  position: absolute;
+  bottom: 719px;
+  left: -1px;
+  right: -1px;
+  /* top: 0; */
+  max-width: 400px;
+  /* width: 250px; */
+  height: 10px;
+  background-color: #00ca72;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* border-radius: 5px;  */
+}
+.pricingCard:nth-child(5):before {
+  content: "";
+  position: absolute;
+  bottom: 719px;
+  left: -1px;
+  right: -1px;
+  /* top: 0; */
+  max-width: 400px;
+  /* width: 250px; */
+  height: 10px;
+  background-color: #2b2c5d;
+  border-radius: 5px 5px 0 0;
+  border-bottom-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* border-radius: 5px;  */
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.rateContainer {
+  margin-top: 20px;
+}
+
+.rateContainerTop {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 15px;
+}
+
+.rateContainerTopItemLeft {
+  font-size: 55px;
+  font-weight: 300;
+  border-bottom: 0;
+}
+
+.rateContainerTopItemLeftPurple {
+  color: #a25ddc;
+}
+.rateContainerTopItemLeftBlue {
+  color: #0085ff;
+}
+.rateContainerTopItemLeftGreen {
+  color: #00ca72;
+}
+.rateContainerTopItemRight {
+  font-size: 13px;
+  font-weight: 300;
+  border-bottom: 0;
+}
+
+.rateContainerBottom {
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 0;
+}
+
+.rateContainerBottomItemTop {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.rateContainerBottomItemBottom {
+  font-size: 15px;
+}
+
+.primaryButton {
+  width: 120px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 8px 10px;
+  background-color: #5a5ad5;
+  border: none;
+}
+.primaryButton:hover {
+  /* width: 150px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 8px 20px; */
+  background-color: #6262e4;
+  /* border: none; */
+}
+
+.primaryButtonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shortIntro {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 65px;
+  /* opacity: 0.8; */
+  font-weight: 300;
+}
+
+.divider {
+  border: 1px solid #c5c7d0;
+}
+
+.rateIncludePart {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #000;
+  font-weight: normal;
+}
+
+.includesTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.features {
+  color: #000;
+  /* opacity: 0.8; */
+  font-weight: 300;
+}

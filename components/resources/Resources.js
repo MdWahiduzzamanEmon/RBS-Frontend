@@ -7,18 +7,18 @@ const Resources = ({ navLinks }) => {
     <div className={`${resourcesStyles.productContainer}`}>
       <div>
         <h1 className={`${resourcesStyles.primaryTitle}`}>
-          {navLinks?.[0]?.items?.text}
+          {navLinks?.[1]?.items?.text}
         </h1>
         <Link href="/home">
           <div className={`${resourcesStyles.primaryHoverLink}`}>
             <h4 className={`${resourcesStyles.secondaryTitle}`}>
-              {navLinks?.[0]?.items?.title}
+              {navLinks?.[1]?.items?.title}
             </h4>
-            <p>{navLinks?.[0]?.items?.description}</p>
+            <p>{navLinks?.[1]?.items?.description}</p>
           </div>
         </Link>
       </div>
-      {navLinks?.[0]?.subItems?.map((item) => (
+      {navLinks?.[1]?.subItems?.map((item) => (
         <div key={item.id}>
           <hr />
           <h1 className={`${resourcesStyles.primaryTitle}`}>{item.text}</h1>

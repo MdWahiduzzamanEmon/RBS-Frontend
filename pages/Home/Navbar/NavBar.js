@@ -104,7 +104,69 @@ const NavBar = () => {
       id: 4,
       text: "Resources",
       // href: "/resources",
-      items: {},
+      items: {
+        id: 1,
+        text: "Overview re",
+        title: "RBS Platform",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+      },
+      subItems: [
+        {
+          id: 2,
+          text: "Capabilities",
+          options: [
+            {
+              id: 1,
+              title: "Project Management",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 2,
+              title: "IT & Ops",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 3,
+              title: "Marketing",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 4,
+              title: "Construction",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 1,
+              title: "Project Management",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 2,
+              title: "IT & Ops",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 3,
+              title: "Marketing",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+            {
+              id: 4,
+              title: "Construction",
+              description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+            },
+          ],
+        },
+      ],
     },
     {
       id: 5,
@@ -132,6 +194,7 @@ const NavBar = () => {
           openResources: false,
           openPricing: false,
           innerText: navItemName,
+          changeNavbarPosition: !state.changeNavbarPosition,
         },
       });
     } else if (navItemName === "Resources") {
@@ -142,6 +205,7 @@ const NavBar = () => {
           openProduct: false,
           openPricing: false,
           innerText: navItemName,
+          changeNavbarPosition: !state.changeNavbarPosition,
         },
       });
     } else if (navItemName === "Pricing") {
@@ -153,6 +217,7 @@ const NavBar = () => {
           openResources: false,
           openWatchADemo: false,
           innerText: navItemName,
+          changeNavbarPosition: false,
         },
       });
     } else if (navItemName === "Watch a demo") {
@@ -164,6 +229,7 @@ const NavBar = () => {
           openProduct: false,
           openResources: false,
           innerText: navItemName,
+          changeNavbarPosition: false,
         },
       });
     } else {
@@ -171,10 +237,27 @@ const NavBar = () => {
     }
   };
 
-  const { width } = useViewport();
+  const [stickyClass, setStickyClass] = React.useState("");
 
+  React.useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 200
+        ? setStickyClass(navStyles.stickyNav)
+        : setStickyClass("");
+    }
+  };
+
+  const { width } = useViewport();
   const breakpoint = 600;
-  console.log(width);
 
   return (
     <>
@@ -186,8 +269,25 @@ const NavBar = () => {
                 (state?.showActiveInnerText && state.openProduct) ||
                 (state?.showActiveInnerText && state.openResources)
               }`}
+              style={{
+                position: state?.changeNavbarPosition ? "fixed" : "relative",
+              }}
             >
-              <div className={`${navStyles.navbarBrand}`}>
+              <div
+                className={`${navStyles.navbarBrand}`}
+                onClick={() => {
+                  dispatch({
+                    type: "CLOSE_NAVBAR",
+                    payload: {
+                      openProduct: false,
+                      openResources: false,
+                      openPricing: false,
+                      openWatchADemo: false,
+                      changeNavbarPosition: false,
+                    },
+                  });
+                }}
+              >
                 <Link href="/">
                   {/* {" "} */}
                   <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
@@ -280,8 +380,15 @@ const NavBar = () => {
               {/* <Product></Product> */}
             </div>
             {(state?.openProduct || state?.openResources) && (
-              <div className={`${navStyles.navbarItemsContainer}`}>
-                <div className={`${navStyles.navbarItemsInnerContainer}`}>
+              <div
+                className={`${navStyles.navbarItemsContainer}`}
+                style={{
+                  position: state?.changeNavbarPosition ? "fixed" : "absolute",
+                }}
+              >
+                <div
+                  className={`${navStyles.navbarItemsInnerContainer} ${stickyClass}`}
+                >
                   <div className={`${navStyles.navbarItemsContainerLeft}`}>
                     {state?.openProduct && <Product navLinks={navLinks} />}
                     {state?.openResources && <Resources navLinks={navLinks} />}
