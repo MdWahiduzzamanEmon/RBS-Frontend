@@ -1,0 +1,26 @@
+.mobileNavbarContainer {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 70px;
+}
+
+.accordion-button::after {
+  width: 0;
+}
+
+.navbarItemsInnerContainer {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.navbarItemsContainerRight {
+  /* height: calc(100vh - 70px); */
+
+  background: #212936;
+}

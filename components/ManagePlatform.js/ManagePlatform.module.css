@@ -1,0 +1,12 @@
+.managePlatformContainer {
+  padding-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .managePlatformContainer {
+    padding-bottom: 250px;
+  }
+}

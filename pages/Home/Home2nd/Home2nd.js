@@ -9,19 +9,19 @@ import "swiper/css/pagination";
 import Aos from "aos";
 
 const Home2nd = ({ home2ndData }) => {
-  const [isSSR, setIsSSR] = React.useState(true);
-  SwiperCore.use([Autoplay]);
+  // const [isSSR, setIsSSR] = React.useState(true);
+  // SwiperCore.use([Autoplay]);
 
-  useEffect(() => {
-    setIsSSR(false);
-  }, []);
+  // useEffect(() => {
+  //   setIsSSR(false);
+  // }, []);
 
-  useEffect(() => {
-    Aos.init({
-      duration: 2000,
-      easing: "ease-in-out-quart",
-    });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration: 2000,
+  //     easing: "ease-in-out-quart",
+  //   });
+  // }, []);
 
   return (
     <section

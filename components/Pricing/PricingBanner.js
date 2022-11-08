@@ -13,7 +13,7 @@ const PricingBanner = () => {
         fontFamily: "Poppins",
       }}
     >
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="text-white text-center py-5 ">
         <h1 className={`${styles.bannerText} bannerText`}>Pricing</h1>
       </div>

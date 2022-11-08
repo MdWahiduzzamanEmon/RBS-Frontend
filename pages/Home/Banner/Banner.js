@@ -7,6 +7,7 @@ import bannerStyles from "../../../styles/Banner.module.css";
 import { Col, Row } from "react-bootstrap";
 import Aos from "aos";
 import React from "react";
+import CircularMotion from "../../../components/circularMotion/CircularMotion";
 
 const Banner = ({ bannerData, bannerImagesData }) => {
   React.useEffect(() => {
@@ -31,6 +32,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
       }}
     >
+      {/* <NavBar></NavBar> */}
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -38,7 +40,6 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
-        <NavBar></NavBar>
         {/* marquee text */}
         <div
           style={{
@@ -99,7 +100,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
               )}
             </Col>
             <Col md={7}>
-              {bannerImagesData?.images?.map((data, index) => (
+              {/* {bannerImagesData?.images?.map((data, index) => (
                 <Image
                   key={data.id}
                   src={data.img}
@@ -109,7 +110,8 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                   layout="responsive"
                   data-aos="fade-up-left"
                 />
-              ))}
+              ))} */}
+              <CircularMotion />
             </Col>
           </Row>
         </div>

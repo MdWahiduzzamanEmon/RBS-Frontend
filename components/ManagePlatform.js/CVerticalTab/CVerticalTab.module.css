@@ -1,0 +1,37 @@
+/* .tabColor {
+  color: red;
+  position: relative;
+}
+
+.tabColor:focus::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: yellowgreen;
+}
+
+.linkContainer {
+  position: relative;
+  color: red;
+}
+
+.linkItemContainer:focus::before {
+  content: "";
+  position: absolute;
+  top: 46px;
+  left: 0;
+  background-color: red;
+  height: 2px;
+} */
+
+/* .submenuDetailsContainer:nth-child(1) {
+  padding: 15px 0px;
+  text-align: justify;
+  background: #f8f7f5;
+}
+.submenuDetailsContainer2:nth-child(2) {
+  padding: 15px 0px;
+  text-align: justify;
+  background: #fff;
+} */
