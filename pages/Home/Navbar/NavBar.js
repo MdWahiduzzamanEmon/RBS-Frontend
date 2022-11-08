@@ -192,7 +192,7 @@ const NavBar = () => {
         payload: {
           openProduct: !state.openProduct,
           openResources: false,
-          openPricing: false,
+          // openPricing: false,
           innerText: navItemName,
         },
       });
@@ -202,7 +202,7 @@ const NavBar = () => {
         payload: {
           openResources: !state.openResources,
           openProduct: false,
-          openPricing: false,
+          // openPricing: false,
           innerText: navItemName,
         },
       });
@@ -210,10 +210,10 @@ const NavBar = () => {
       dispatch({
         type: "OPEN_PRICING",
         payload: {
-          openPricing: !state.openPricing,
+          // openPricing: !state.openPricing,
           openProduct: false,
           openResources: false,
-          openWatchADemo: false,
+          // openWatchADemo: false,
           innerText: navItemName,
         },
       });
@@ -221,8 +221,8 @@ const NavBar = () => {
       dispatch({
         type: "OPEN_WATCH_A_DEMO",
         payload: {
-          openWatchADemo: !state.openWatchADemo,
-          openPricing: false,
+          // openWatchADemo: true,
+          // openPricing: false,
           openProduct: false,
           openResources: false,
           innerText: navItemName,
@@ -232,6 +232,12 @@ const NavBar = () => {
       console.log("No match");
     }
   };
+  console.log("open resources", state.openResources);
+  console.log("open pricing", state.openPricing);
+  console.log("innerText", state.showActiveInnerText);
+
+  const router = useRouter();
+  console.log(router.pathname);
 
   const [stickyClass, setStickyClass] = React.useState("");
 
@@ -266,7 +272,10 @@ const NavBar = () => {
                 (state?.showActiveInnerText && state.openResources)
               }`}
               style={{
-                position: state?.showActiveInnerText ? "fixed" : "relative",
+                position:
+                  state?.openProduct || state?.openResources
+                    ? "fixed"
+                    : "relative",
               }}
             >
               <div
@@ -299,12 +308,14 @@ const NavBar = () => {
                           (navLink.text === state?.showActiveInnerText &&
                             state.openProduct) ||
                           (navLink.text === state?.showActiveInnerText &&
-                            state.openResources) ||
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openPricing) ||
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openWatchADemo)
-                            ? `${navStyles.active}`
+                            state.openResources)
+                            ? // (navLink.text === state?.showActiveInnerText &&
+                              //   state.openPricing) ||
+                              // (navLink.text === state?.showActiveInnerText &&
+                              //   state.openWatchADemo)
+                              // navLink.href === router.pathname ||
+                              // navLink.href === router.pathname
+                              `${navStyles.active}`
                             : ""
                         }`}
                         onClick={(e) => {
@@ -327,12 +338,15 @@ const NavBar = () => {
                         (navLink.text === state?.showActiveInnerText &&
                           state.openProduct) ||
                         (navLink.text === state?.showActiveInnerText &&
-                          state.openResources) ||
-                        (navLink.text === state?.showActiveInnerText &&
-                          state.openPricing) ||
-                        (navLink.text === state?.showActiveInnerText &&
-                          state.openWatchADemo)
-                          ? `${navStyles.active}`
+                          state.openResources)
+                          ? // ||
+                            // (navLink.text === state?.showActiveInnerText &&
+                            //   state.openPricing) ||
+                            // (navLink.text === state?.showActiveInnerText &&
+                            //   state.openWatchADemo)
+                            // navLink.href === router.pathname ||
+                            // navLink.href === router.pathname
+                            `${navStyles.active}`
                           : ""
                       }`}
                       onClick={(e) => {
@@ -378,8 +392,14 @@ const NavBar = () => {
             {(state?.openProduct || state?.openResources) && (
               <div
                 className={`${navStyles.navbarItemsContainer}`}
+                // style={{
+                //   position: state?.showActiveInnerText ? "fixed" : "absolute",
+                // }}
                 style={{
-                  position: state?.showActiveInnerText ? "fixed" : "absolute",
+                  position:
+                    state?.openProduct || state?.openResources
+                      ? "fixed"
+                      : "absolute",
                 }}
               >
                 <div

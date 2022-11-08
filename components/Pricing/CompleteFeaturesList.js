@@ -74,7 +74,7 @@ const CompleteFeaturesList = ({ pricingData }) => {
           >
             <td
               colSpan={6}
-              style={{ fontWeight: 500, fontSize: "20px", marginTop: "38px" }}
+              style={{ fontWeight: 500, fontSize: "20px", marginTop: "43px" }}
             >
               Essentials
             </td>

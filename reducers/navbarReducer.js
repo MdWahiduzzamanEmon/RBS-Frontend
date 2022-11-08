@@ -15,6 +15,8 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
+        // openPricing: action.payload.openPricing,
+        // openWatchADemo: action.payload.openWatchADemo,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -24,6 +26,8 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
+        // openPricing: action.payload.openPricing,
+        // openWatchADemo: action.payload.openWatchADemo,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -33,8 +37,8 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        openPricing: action.payload.openPricing,
-        openWatchADemo: action.payload.openWatchADemo,
+        // openPricing: action.payload.openPricing,
+        // openWatchADemo: action.payload.openWatchADemo,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -44,8 +48,8 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        openPricing: action.payload.openPricing,
-        openWatchADemo: action.payload.openWatchADemo,
+        // openPricing: action.payload.openPricing,
+        // openWatchADemo: action.payload.openWatchADemo,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -61,8 +65,8 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        openPricing: action.payload.openPricing,
-        openWatchADemo: action.payload.openWatchADemo,
+        // openPricing: action.payload.openPricing,
+        // openWatchADemo: action.payload.openWatchADemo,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
