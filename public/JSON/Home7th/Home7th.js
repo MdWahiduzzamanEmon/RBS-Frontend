@@ -28,7 +28,7 @@ export const home7thDemoData = {
     {
       id: 1,
       isShow: true,
-      title: "Engineering Team",
+      title: "Engineering",
       eventKey: "engineering-team",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
@@ -58,7 +58,7 @@ export const home7thDemoData = {
     {
       id: 2,
       isShow: true,
-      title: "Real Estate & Construction Project",
+      title: "Construction ",
       eventKey: "real-state",
       //   description:
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
