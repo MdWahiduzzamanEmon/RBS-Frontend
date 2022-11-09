@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { FaExclamationCircle } from "react-icons/fa";
 import styles from "./PricingForSD.module.css";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const PricingForSD = ({ pricingData }) => {
   const changePriceColor = (itemName) => {
@@ -95,7 +96,34 @@ const PricingForSD = ({ pricingData }) => {
                       <p className={`${styles.features}`}>
                         <small>{list.title}</small>
                       </p>
-                      <FaExclamationCircle color="#A0A1AC" />
+                      {["top"].map((placement) => (
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptas, aut.
+                            </Tooltip>
+                          }
+                          trigger="click"
+                        >
+                          <Button
+                            variant="secondary"
+                            style={{
+                              backgroundColor: "transparent",
+                              border: "none",
+                            }}
+                          >
+                            <FaExclamationCircle
+                              color="#A0A1AC"
+                              // title="Within boards we have rows, or 'Items' - An Item can be anything you want it to be - Task, project, customer, etc. Each free account starts with 200 free Items. You can get more Items by referring friends to create their own accounts."
+                              style={{ cursor: "pointer" }}
+                            ></FaExclamationCircle>
+                          </Button>
+                        </OverlayTrigger>
+                      ))}
+                      {/* <FaExclamationCircle color="#A0A1AC" /> */}
                     </div>
                   ))}
                 </div>

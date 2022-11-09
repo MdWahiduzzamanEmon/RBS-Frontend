@@ -82,7 +82,7 @@ const CompleteFeaturesList = ({ pricingData }) => {
 
           <tr>
             <td>
-              <p>Essentials</p>
+              <p>Maximum number of seats</p>
               <p>
                 <FaExclamationCircle />
               </p>

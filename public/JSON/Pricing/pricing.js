@@ -162,7 +162,53 @@ export const pricingDemoData = {
         id: 1,
         title: "Individual",
       },
+      {
+        id: 2,
+        title: "Basic",
+      },
+      {
+        id: 3,
+        title: "Standard",
+      },
+      {
+        id: 4,
+        title: "Pro",
+      },
+      {
+        id: 5,
+        title: "Enterprise",
+      },
     ],
+    subCategory: {
+      id: 1,
+      title: "Essentials",
+      lists: [
+        {
+          id: 1,
+          title: "Maximum number of seats",
+        },
+        {
+          id: 2,
+          title: "Upto 2 seats",
+        },
+        {
+          id: 3,
+          title: "Unlimited",
+        },
+        {
+          id: 4,
+          title: "Unlimited",
+        },
+        {
+          id: 5,
+          title: "Unlimited",
+        },
+        {
+          id: 6,
+          title: "Unlimited",
+        },
+      ],
+    },
   },
 };
 

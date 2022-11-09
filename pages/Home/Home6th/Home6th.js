@@ -70,9 +70,9 @@ const Home6th = ({ home6thData }) => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in-up">
+      {/* <div data-aos="zoom-in-up">
         <Slider sliderData={home6thData?.slider}></Slider>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,0 +1,31 @@
+.miniPricingContainer {
+  font-family: "Poppins", sans-serif;
+}
+
+.miniPricingTitle {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.planContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  justify-items: center;
+}
+
+.singlePlan {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.primaryButton {
+  width: 120px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 8px 10px;
+  background-color: #5a5ad5;
+  border: none;
+}

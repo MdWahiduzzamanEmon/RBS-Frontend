@@ -16,6 +16,7 @@ export default function Home() {
   const [home9thData, setHome9thData] = React.useState({});
   const [home10thData, setHome10thData] = React.useState({});
   const [purchaseCardData, setPurchaseCardData] = React.useState({});
+  const [miniPricingData, setMiniPricingData] = React.useState({});
 
   useEffect(() => {
     axios.get("/api/banner").then((res) => {
@@ -48,6 +49,9 @@ export default function Home() {
     axios.get("/api/home8thapi").then((res) => {
       setHome8thData(res.data);
     });
+    axios.get("/api/miniPricingapi").then((res) => {
+      setMiniPricingData(res.data);
+    });
     axios.get("/api/home9thapi").then((res) => {
       setHome9thData(res.data);
     });
@@ -62,7 +66,7 @@ export default function Home() {
     });
   }, []);
 
-  console.log(managePlatformData);
+  console.log(miniPricingData);
 
   return (
     <div
@@ -86,6 +90,7 @@ export default function Home() {
         home9thData={home9thData}
         home10thData={home10thData}
         purchaseCardData={purchaseCardData}
+        miniPricingData={miniPricingData}
       />
     </div>
   );

@@ -13,6 +13,7 @@ import PurchaseCard from "../../components/PurchaseCard/PurchaseCard";
 import Home5th from "./Home5th/Home5th";
 import ManagePlatform from "../../components/ManagePlatform.js/ManagePlatform";
 import CircularMotion from "../../components/circularMotion/CircularMotion";
+import MiniPricing from "../../components/miniPricing/MiniPricing";
 
 const HomePage = ({
   bannerData,
@@ -28,22 +29,35 @@ const HomePage = ({
   home9thData,
   home10thData,
   purchaseCardData,
+  miniPricingData,
 }) => {
-  console.log(managePlatformData);
+  console.log(miniPricingData);
   return (
     <div>
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
         <ManagePlatform managePlatformData={managePlatformData} />
+        {/* //***************Mini pricing section************* */}
+        <MiniPricing miniPricingData={miniPricingData} />
+
+        {/* //**************Features section****************/}
         <Home2nd home2ndData={home2ndData} />
+
+        {/* //***************Video section***************** */}
+        <Home5th home5thData={home5thData} />
+
+        {/* //********Describing features in details******** */}
         <Home3rd home3rdData={home3rdData} />
         <Home4th home4thData={home4thData} />
-        <Home5th home5thData={home5thData} />
-        <Home6th home6thData={home6thData} />
-        <Home7th home7thData={home7thData} />
         <Home8th home8thData={home8thData} />
+
+        {/* //*******************Review section****************/}
+        <Home6th home6thData={home6thData} />
+        {/* <Home7th home7thData={home7thData} /> */}
+
+        {/* //**********Why Software is better section*******  */}
         <Home9th home9thData={home9thData} />
-        <PurchaseCard purchaseCardData={purchaseCardData} />
+        {/* <PurchaseCard purchaseCardData={purchaseCardData} /> */}
       </div>
     </div>
   );

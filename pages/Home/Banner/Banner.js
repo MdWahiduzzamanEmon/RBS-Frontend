@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bannerImage4 from "../../../public/bannerImage4.jpg";
+import bannerImageVector from "../../../public/banner/backgroundVector.png";
 import NavBar from "../Navbar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -31,12 +32,15 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
       }}
+      // className="container"
     >
       {/* <NavBar></NavBar> */}
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
-          backgroundImage: `url(${bannerImage4.src})`,
+          backgroundImage: `url(${bannerImageVector.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
