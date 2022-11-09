@@ -37,9 +37,6 @@ const HomePage = ({
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
         <ManagePlatform managePlatformData={managePlatformData} />
-        {/* //***************Mini pricing section************* */}
-        <MiniPricing miniPricingData={miniPricingData} />
-
         {/* //**************Features section****************/}
         <Home2nd home2ndData={home2ndData} />
 
@@ -54,6 +51,9 @@ const HomePage = ({
         {/* //*******************Review section****************/}
         <Home6th home6thData={home6thData} />
         {/* <Home7th home7thData={home7thData} /> */}
+
+        {/* //***************Mini pricing section************* */}
+        <MiniPricing miniPricingData={miniPricingData} />
 
         {/* //**********Why Software is better section*******  */}
         <Home9th home9thData={home9thData} />

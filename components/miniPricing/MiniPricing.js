@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import { FaChevronRight } from "react-icons/fa";
 import styles from "./MiniPricing.module.css";
 
 const MiniPricing = ({ miniPricingData }) => {
@@ -15,17 +17,36 @@ const MiniPricing = ({ miniPricingData }) => {
           {miniPricingData.title}
         </h1>
         <div className={`${styles.planContainer}`}>
-          {miniPricingData.packages.map((plan) => (
+          {miniPricingData?.packages?.map((plan) => (
             <div key={plan.id} className={`${styles.singlePlan}`}>
               <h4>{plan.title}</h4>
               <p>{plan.details}</p>
-              <p>
-                <small>{plan.price}</small>
-              </p>
-              <button className={`${styles.primaryButton}`}>
+              <div className={`${styles.rateContainerMiniPricing}`}>
+                <p className="fs-1">
+                  <small>{plan.price}</small>
+                </p>
+                <div>
+                  <p className="mb-0">
+                    <small>seat/</small>
+                  </p>
+                  <p className="mb-1">
+                    <small>month</small>
+                  </p>
+                </div>
+              </div>
+              <button className={`${styles.primaryButton} mb-2`}>
                 Try for free
               </button>
-              <p>Learn more</p>
+              <Link href="/pricing">
+                <p
+                  className={`${styles.mPricingLink}`}
+                  style={{ cursor: "pointer", color: "#5a5ad5" }}
+                >
+                  {/* <small> */}
+                  Learn more <FaChevronRight fontSize="10px" />
+                  {/* </small> */}
+                </p>
+              </Link>
             </div>
           ))}
         </div>

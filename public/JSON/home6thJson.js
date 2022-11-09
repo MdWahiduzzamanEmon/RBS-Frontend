@@ -1,7 +1,7 @@
 export const home6thJson = {
   id: 1,
   isShow: true,
-  column1Title: "500+",
+  column1Title: "1000+",
   column1SubTitle: "Happy Customers",
   // column1Description:
   //   "Use Timeline to plan  projects right the first time. See how the pieces fit together.",

@@ -9,7 +9,7 @@
 
 .planContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
 }
 
@@ -20,6 +20,13 @@
   border-radius: 5px;
 }
 
+.rateContainerMiniPricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
 .primaryButton {
   width: 120px;
   color: #fff;
@@ -28,4 +35,28 @@
   padding: 8px 10px;
   background-color: #5a5ad5;
   border: none;
+}
+.primaryButton:hover {
+  background-color: #7373de;
+}
+
+.mPricingLink {
+  font-size: 15px;
+  color: #5a5ad5;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.mPricingLink:hover {
+  color: #6f6fcf;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .planContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 15px;
+  }
 }

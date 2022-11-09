@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 600px) {
   .managePlatformContainer {
-    padding-bottom: 250px;
+    /* padding-bottom: 250px; */
   }
 }

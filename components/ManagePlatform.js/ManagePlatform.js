@@ -5,6 +5,8 @@ import Home7th from "../../pages/Home/Home7th/Home7th";
 import EngineeringTeam from "./mpComponents/EngineeringTeam";
 import CVerticalTab from "./CVerticalTab/CVerticalTab";
 import styles from "./ManagePlatform.module.css";
+import image from "../../public/image/todoBoard5.png";
+import ManagePlatformDetailInformation from "./managePlatformDetailInformation/ManagePlatformDetailInformation";
 
 const ManagePlatform = ({ managePlatformData }) => {
   console.log(managePlatformData);
@@ -94,8 +96,10 @@ const ManagePlatform = ({ managePlatformData }) => {
               {/* <Home7th /> */}
               {/* <EngineeringTeam /> */}
               {/* {data?.submenus?.map((data) => ( */}
-              <CVerticalTab cVerticalTabData={data} />
+              {/* <CVerticalTab cVerticalTabData={data} /> */}
               {/* ))} */}
+              {/* <Image src={image} alt="image" width={500} height={500}></Image> */}
+              <ManagePlatformDetailInformation platformInformation={data} />
             </Tab>
           ))}
           {/* <Tab eventKey="real-state" title="Real Estate & Construction Project">
