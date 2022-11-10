@@ -14,6 +14,7 @@ import Home5th from "./Home5th/Home5th";
 import ManagePlatform from "../../components/ManagePlatform.js/ManagePlatform";
 import CircularMotion from "../../components/circularMotion/CircularMotion";
 import MiniPricing from "../../components/miniPricing/MiniPricing";
+import FeaturesBoard from "../../components/featuresBoard/FeaturesBoard";
 
 const HomePage = ({
   bannerData,
@@ -30,15 +31,17 @@ const HomePage = ({
   home10thData,
   purchaseCardData,
   miniPricingData,
+  featuresData,
 }) => {
   console.log(miniPricingData);
   return (
     <div>
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
+        <FeaturesBoard featuresData={featuresData} />
         <ManagePlatform managePlatformData={managePlatformData} />
         {/* //**************Features section****************/}
-        <Home2nd home2ndData={home2ndData} />
+        {/* <Home2nd home2ndData={home2ndData} /> */}
 
         {/* //***************Video section***************** */}
         <Home5th home5thData={home5thData} />

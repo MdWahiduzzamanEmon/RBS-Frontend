@@ -70,39 +70,41 @@ const ManagePlatform = ({ managePlatformData }) => {
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+          // "linear-gradient(to right, #24c6dc, #514a9d)",
           // padding: "50px 35px ",
           fontFamily: "Poppins",
           // marginBottom: "200px",
         }}
         className={`${styles.managePlatformContainer}`}
       >
-        {managePlatformData?.titleData?.map((data, index) => (
-          <div key={data?.id} data-aos="zoom-out-right">
-            <h1 className="fs-2 text-center fw-bold my-3">{data?.title}</h1>
-            <p className="text-center mb-5 " style={{ fontSize: "20px" }}>
-              {data?.description}
-            </p>
-          </div>
-        ))}
-        <Tabs
-          defaultActiveKey="engineering-team"
-          id="fill-tab-example"
-          fill
-          style={{ color: "#2a75d1" }}
-          // style={{}}
-        >
-          {managePlatformData?.items?.map((data, index) => (
-            <Tab eventKey={data.eventKey} title={data.title} key={data.id}>
-              {/* <Home7th /> */}
-              {/* <EngineeringTeam /> */}
-              {/* {data?.submenus?.map((data) => ( */}
-              {/* <CVerticalTab cVerticalTabData={data} /> */}
-              {/* ))} */}
-              {/* <Image src={image} alt="image" width={500} height={500}></Image> */}
-              <ManagePlatformDetailInformation platformInformation={data} />
-            </Tab>
+        <div className="container">
+          {managePlatformData?.titleData?.map((data, index) => (
+            <div key={data?.id} data-aos="zoom-out-right">
+              <h1 className="fs-2 text-center fw-bold my-3">{data?.title}</h1>
+              <p className="text-center mb-5 " style={{ fontSize: "20px" }}>
+                {data?.description}
+              </p>
+            </div>
           ))}
-          {/* <Tab eventKey="real-state" title="Real Estate & Construction Project">
+          <Tabs
+            defaultActiveKey="engineering-team"
+            id="fill-tab-example"
+            fill
+            style={{ color: "#2a75d1" }}
+            // style={{}}
+          >
+            {managePlatformData?.items?.map((data, index) => (
+              <Tab eventKey={data.eventKey} title={data.title} key={data.id}>
+                {/* <Home7th /> */}
+                {/* <EngineeringTeam /> */}
+                {/* {data?.submenus?.map((data) => ( */}
+                {/* <CVerticalTab cVerticalTabData={data} /> */}
+                {/* ))} */}
+                {/* <Image src={image} alt="image" width={500} height={500}></Image> */}
+                <ManagePlatformDetailInformation platformInformation={data} />
+              </Tab>
+            ))}
+            {/* <Tab eventKey="real-state" title="Real Estate & Construction Project">
             <Home7th />
           </Tab>
           <Tab eventKey="it" title="IT">
@@ -110,8 +112,9 @@ const ManagePlatform = ({ managePlatformData }) => {
           </Tab>
           <Tab eventKey="sales-marketing" title="Sales and Marketing"></Tab>
           <Tab eventKey="others" title="Others"></Tab> */}
-          {/* <Tab eventKey="contact" title="Contact" disabled></Tab> */}
-        </Tabs>
+            {/* <Tab eventKey="contact" title="Contact" disabled></Tab> */}
+          </Tabs>
+        </div>
       </section>
     </>
   );

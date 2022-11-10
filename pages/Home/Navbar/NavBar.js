@@ -265,7 +265,11 @@ const NavBar = () => {
     <>
       {width > breakpoint ? (
         <div>
-          <div>
+          <div
+            style={{
+              background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);",
+            }}
+          >
             <div
               className={`${navStyles.navbarContainer} ${
                 (state?.showActiveInnerText && state.openProduct) ||
@@ -278,30 +282,61 @@ const NavBar = () => {
                     : "relative",
               }}
             >
-              <div
-                className={`${navStyles.navbarBrand}`}
-                onClick={() => {
-                  dispatch({
-                    type: "CLOSE_NAVBAR",
-                    payload: {
-                      openProduct: false,
-                      openResources: false,
-                      openPricing: false,
-                      openWatchADemo: false,
-                      innerText: "",
-                    },
-                  });
-                }}
-              >
-                <Link href="/">
-                  {/* {" "} */}
-                  <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
-                </Link>
-              </div>
-              {navLinks.map((navLink) => (
-                <>
-                  {navLink.href ? (
-                    <Link href={navLink.href}>
+              <div className="container d-flex align-items-center">
+                <div
+                  className={`${navStyles.navbarBrand}`}
+                  onClick={() => {
+                    dispatch({
+                      type: "CLOSE_NAVBAR",
+                      payload: {
+                        openProduct: false,
+                        openResources: false,
+                        openPricing: false,
+                        openWatchADemo: false,
+                        innerText: "",
+                      },
+                    });
+                  }}
+                >
+                  <Link href="/">
+                    {/* {" "} */}
+                    <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
+                  </Link>
+                </div>
+                {navLinks.map((navLink) => (
+                  <>
+                    {navLink.href ? (
+                      <Link href={navLink.href}>
+                        <p
+                          key={navLink.id}
+                          className={`${navStyles.navbarMainItems} ${
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openProduct) ||
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openResources)
+                              ? // (navLink.text === state?.showActiveInnerText &&
+                                //   state.openPricing) ||
+                                // (navLink.text === state?.showActiveInnerText &&
+                                //   state.openWatchADemo)
+                                // navLink.href === router.pathname ||
+                                // navLink.href === router.pathname
+                                `${navStyles.active}`
+                              : ""
+                          }`}
+                          onClick={(e) => {
+                            openNavElements(e);
+                          }}
+                          // style={{
+                          //   borderBottom: state?.isActive ? {navStyles.active} : "",
+                          // }}
+                        >
+                          {/* {faChevronUp} */}
+                          {/* <FaChevronUp style={{ color: "green" }} />  */}
+                          {navLink.text}
+                          {/* <FaChevronUp style={{ color: "green" }} /> */}
+                        </p>
+                      </Link>
+                    ) : (
                       <p
                         key={navLink.id}
                         className={`${navStyles.navbarMainItems} ${
@@ -309,7 +344,8 @@ const NavBar = () => {
                             state.openProduct) ||
                           (navLink.text === state?.showActiveInnerText &&
                             state.openResources)
-                            ? // (navLink.text === state?.showActiveInnerText &&
+                            ? // ||
+                              // (navLink.text === state?.showActiveInnerText &&
                               //   state.openPricing) ||
                               // (navLink.text === state?.showActiveInnerText &&
                               //   state.openWatchADemo)
@@ -325,67 +361,37 @@ const NavBar = () => {
                         //   borderBottom: state?.isActive ? {navStyles.active} : "",
                         // }}
                       >
-                        {/* {faChevronUp} */}
-                        {/* <FaChevronUp style={{ color: "green" }} />  */}
                         {navLink.text}
-                        {/* <FaChevronUp style={{ color: "green" }} /> */}
-                      </p>
-                    </Link>
-                  ) : (
-                    <p
-                      key={navLink.id}
-                      className={`${navStyles.navbarMainItems} ${
-                        (navLink.text === state?.showActiveInnerText &&
+                        {/* {navLink.icon} */}
+                        {(navLink.text === state?.showActiveInnerText &&
                           state.openProduct) ||
                         (navLink.text === state?.showActiveInnerText &&
-                          state.openResources)
-                          ? // ||
-                            // (navLink.text === state?.showActiveInnerText &&
-                            //   state.openPricing) ||
-                            // (navLink.text === state?.showActiveInnerText &&
-                            //   state.openWatchADemo)
-                            // navLink.href === router.pathname ||
-                            // navLink.href === router.pathname
-                            `${navStyles.active}`
-                          : ""
-                      }`}
-                      onClick={(e) => {
-                        openNavElements(e);
-                      }}
-                      // style={{
-                      //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                      // }}
-                    >
-                      {navLink.text}
-                      {/* {navLink.icon} */}
-                      {(navLink.text === state?.showActiveInnerText &&
-                        state.openProduct) ||
-                      (navLink.text === state?.showActiveInnerText &&
-                        state.openResources) ? (
-                        <FaChevronDown
-                          style={{
-                            fontSize: "12px",
-                            marginLeft: "3px",
-                            fontWeight: "normal",
-                            opacity: ".5",
-                          }}
-                          className={`${navStyles.navChevronIcons}`}
-                        />
-                      ) : (
-                        <FaChevronUp
-                          style={{
-                            fontSize: "12px",
-                            marginLeft: "3px",
-                            opacity: ".5",
-                          }}
-                          className={`${navStyles.navChevronIcons}`}
-                        />
-                      )}
-                      {/* <FaChevronUp style={{ color: "green" }} /> */}
-                    </p>
-                  )}
-                </>
-              ))}
+                          state.openResources) ? (
+                          <FaChevronDown
+                            style={{
+                              fontSize: "12px",
+                              marginLeft: "3px",
+                              fontWeight: "normal",
+                              opacity: ".5",
+                            }}
+                            className={`${navStyles.navChevronIcons}`}
+                          />
+                        ) : (
+                          <FaChevronUp
+                            style={{
+                              fontSize: "12px",
+                              marginLeft: "3px",
+                              opacity: ".5",
+                            }}
+                            className={`${navStyles.navChevronIcons}`}
+                          />
+                        )}
+                        {/* <FaChevronUp style={{ color: "green" }} /> */}
+                      </p>
+                    )}
+                  </>
+                ))}
+              </div>
 
               {/* <Product></Product> */}
             </div>
