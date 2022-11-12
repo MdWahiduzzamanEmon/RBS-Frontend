@@ -17,8 +17,7 @@ const Home9th = ({ home9thData }) => {
   return (
     <section
       style={{
-        backgroundImage:
-          "linear-gradient(45deg, rgb(249, 236, 248) 5%, rgb(226, 246, 254) 100%)",
+        background: "rgb(226, 246, 254)",
         padding: "50px 0px",
       }}
     >

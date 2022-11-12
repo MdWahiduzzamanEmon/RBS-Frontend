@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+  align-items: center;
 }
 
 .singlePlan {
@@ -26,6 +27,30 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+.rateContainerItemBlack {
+  color: rgb(23, 52, 101);
+  font-size: 40px;
+}
+
+.rateContainerItemPurple {
+  color: #a25ddc;
+  font-size: 40px;
+}
+.rateContainerItemBlue {
+  color: #0085ff;
+  font-size: 40px;
+}
+.rateContainerItemGreen {
+  color: #00ca72;
+  font-size: 40px;
+}
+
+.rateContainerRight {
+  font-size: 13px;
+  font-weight: 300;
+  border-bottom: 0;
 }
 
 .primaryButton {

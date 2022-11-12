@@ -82,14 +82,11 @@ const Home6th = ({ home6thData }) => {
             modules={[Pagination, Autoplay]}
             className="mySwiper"
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             // onSwiper={setSwiper}
-            onSwiper={(swiper) => console.log(swiper.activeIndex)}
-            onSlideChange={(swiper) =>
-              console.log("slide change", setActiveSlide(swiper.activeIndex))
-            }
+            onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
           >
             {home6thData?.reviewLists?.map((review) => (
               <SwiperSlide

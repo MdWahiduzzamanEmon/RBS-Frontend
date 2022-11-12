@@ -47,8 +47,9 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         {/* marquee text */}
         <div
           style={{
-            backgroundColor: "#F3F3F3",
-            color: "#000",
+            // backgroundColor: "#F3F3F3",
+            backgroundColor: "#03A8EE",
+            color: "#fff",
           }}
           className="shadow-lg"
         >
@@ -62,7 +63,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           >
             {marqueeTextDemo?.map((data) => (
               <>
-                <FontAwesomeIcon icon={faCircle} size="2xs" color="red" />{" "}
+                {/* <FontAwesomeIcon icon={faCircle} size="2xs" color="red" />{" "} */}
                 <small className="ms-2"> {data.text}</small>
               </>
             ))}

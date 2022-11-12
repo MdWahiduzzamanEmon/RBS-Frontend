@@ -9,7 +9,7 @@ const Home4th = ({ home4thData }) => {
       style={{
         display: home4thData?.isShow ? "block" : "none",
         backgroundImage:
-          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "50px 0",
       }}
     >
