@@ -3,6 +3,7 @@
 }
 
 .miniPricingTitle {
+  font-weight: bold;
   text-align: center;
   padding-bottom: 25px;
 }

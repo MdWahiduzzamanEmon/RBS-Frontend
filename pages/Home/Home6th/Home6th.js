@@ -5,6 +5,9 @@ import style from "./Home6th.module.css";
 import Slider from "./slider";
 import React from "react";
 import Aos from "aos";
+import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
+import { Autoplay, EffectCards, EffectCreative, Pagination } from "swiper";
+import { useRef } from "react";
 
 const Home6th = ({ home6thData }) => {
   React.useEffect(() => {
@@ -13,6 +16,33 @@ const Home6th = ({ home6thData }) => {
       easing: "ease-in-out-quart",
     });
   }, []);
+
+  // const activeSlide = useRef;
+  // React.useEffect(() => {
+  // activeSlide.current = console.log(activeSlide);
+  // const handleClick = (event) => {
+  //   console.log("Button clicked");
+  // };
+  // const element = activeSlide.current;
+  // element?.addEventListener("change", handleClick);
+  // return () => {
+  //   element?.removeEventListener("change", handleClick);
+  // };
+  // }, [activeSlide]);
+  // const swiperSlide = useSwiperSlide();
+  // console.log(swiperSlide);
+
+  // const [swiper, setSwiper] = React.useState(null);
+
+  // const slideTo = (index) => {
+  //   if (swiper) swiper.slideTo(index);
+  // };
+  // console.log(swiper?.activeIndex);
+
+  const [activeSlide, setActiveSlide] = React.useState(0);
+
+  console.log(activeSlide);
+
   return (
     <div
       className="mx-auto"
@@ -41,32 +71,91 @@ const Home6th = ({ home6thData }) => {
           <p>{home6thData?.column1Description}</p>
         </div>
         <div>
-          <blockquote className={`${style.quote} quote`}>
+          {/* <blockquote className={`${style.quote} quote`}>
             {home6thData?.column2Text}{" "}
           </blockquote>
-          <p>{home6thData?.column2Name}</p>
+          <p>{home6thData?.column2Name}</p> */}
+          <Swiper
+            effect={"creative"}
+            pagination={true}
+            grabCursor={true}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            // onSwiper={setSwiper}
+            onSwiper={(swiper) => console.log(swiper.activeIndex)}
+            onSlideChange={(swiper) =>
+              console.log("slide change", setActiveSlide(swiper.activeIndex))
+            }
+          >
+            {home6thData?.reviewLists?.map((review) => (
+              <SwiperSlide
+                style={{ backgroundColor: "" }}
+                key={review.id}
+                // ref={activeSlide}
+                // onChange={(e) => console.log("catching data")}
+              >
+                {/* {console.log(review)} */}
+                <blockquote className={`${style.quote} quote`}>
+                  {review?.review}
+                </blockquote>
+
+                <p>- {review.name} </p>
+              </SwiperSlide>
+            ))}
+            {/* <SwiperSlide style={{ backgroundColor: "black" }}>
+              <blockquote className={`${style.quote} quote`}>
+                {home6thData?.column2Text}{" "}
+              </blockquote>
+              <p>{home6thData?.column2Name}</p>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>Slide 6</SwiperSlide>
+            <SwiperSlide>Slide 7</SwiperSlide>
+            <SwiperSlide>Slide 8</SwiperSlide>
+            <SwiperSlide>Slide 9</SwiperSlide> */}
+          </Swiper>
         </div>
+
         <div>
           <h2 className="text-center text-lg-start mb-5">
             {home6thData?.column3Title}
           </h2>
 
-          <div className="d-flex flex-column justify-content-center align-items-center justify-content-md-start flex-md-row ">
-            <div className="w-25">
-              <Image
-                src={home6thData?.img}
-                alt=" "
-                height={150}
-                width={150}
-                objectFit="cover"
-                layout="responsive"
-                className="rounded-2"
-              />
-            </div>
-            <div className="ms-3">
-              <h6>{home6thData?.name}</h6>
-              <p>{home6thData?.designation}</p>
-            </div>
+          <div>
+            {home6thData?.reviewLists?.map((review, index) => (
+              <div
+                key={review?.id}
+                className="d-flex flex-column justify-content-center align-items-center justify-content-md-start flex-md-row gap-2"
+              >
+                {activeSlide === index ? (
+                  <>
+                    <div className="w-25">
+                      <Image
+                        src={review?.img}
+                        alt=" "
+                        height={150}
+                        width={150}
+                        objectFit="cover"
+                        layout="responsive"
+                        className="rounded-2"
+                      />
+                    </div>
+                    <div className="text-center text-lg-start">
+                      <h6>{review?.name}</h6>
+                      <p className="">
+                        <small>{review?.designation}</small>
+                      </p>
+                    </div>
+                  </>
+                ) : null}
+              </div>
+            ))}
           </div>
         </div>
       </div>
