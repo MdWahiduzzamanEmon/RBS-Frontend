@@ -17,7 +17,7 @@
 .dataContainer {
   /* height: 500px; */
   text-align: justify;
-  font-size: 17px;
+  font-size: 15px;
   padding: 20px;
   /* background: rgb(226, 246, 254); */
   /* background: linear-gradient(
@@ -28,6 +28,13 @@
   /* background: linear-gradient(to right, #bbd2c5, #536976); */
 }
 
+@media screen and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(249, 236, 248);
+  }
+}
 @media screen and (max-width: 600px) {
   .container {
     display: grid;

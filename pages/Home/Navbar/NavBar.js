@@ -232,12 +232,8 @@ const NavBar = () => {
       console.log("No match");
     }
   };
-  console.log("open resources", state.openResources);
-  console.log("open pricing", state.openPricing);
-  console.log("innerText", state.showActiveInnerText);
 
   const router = useRouter();
-  console.log(router.pathname);
 
   const [stickyClass, setStickyClass] = React.useState("");
 
@@ -270,11 +266,12 @@ const NavBar = () => {
               background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);",
             }}
           >
-            <div
-              className={`${navStyles.navbarContainer} ${
+            {/* ${
                 (state?.showActiveInnerText && state.openProduct) ||
                 (state?.showActiveInnerText && state.openResources)
-              }`}
+              } */}
+            <div
+              className={`${navStyles.navbarContainer}`}
               style={{
                 position:
                   state?.openProduct || state?.openResources
@@ -300,7 +297,7 @@ const NavBar = () => {
                 >
                   <Link href="/">
                     {/* {" "} */}
-                    <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
+                    <p className={`${navStyles.navbarBrandText}`}>Vitlous</p>
                   </Link>
                 </div>
                 {navLinks.map((navLink) => (

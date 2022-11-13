@@ -29,7 +29,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
         <div>
           <Link href="/">
             {/* {" "} */}
-            <h1>RBS Tech</h1>
+            <h1>Vitlous</h1>
           </Link>
         </div>
         <div>

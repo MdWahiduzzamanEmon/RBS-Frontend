@@ -39,8 +39,8 @@ const FooterCommon = ({ footerDetails }) => {
       </div>
       <div className={`${footerCommonStyles.footerBottom} text-center w-100`}>
         <p>
-          Copyright &copy; {new Date().getFullYear()} RBS Tech Limited, All
-          rights reserved.
+          Copyright &copy; {new Date().getFullYear()} Vitlous, All rights
+          reserved.
         </p>
       </div>
     </>

@@ -85,7 +85,7 @@ const ManagePlatform = ({ managePlatformData }) => {
         className={`${styles.managePlatformContainer}`}
       >
         <div className="container">
-          <div data-aos="zoom-out-down">
+          <div data-aos="zoom-in-down">
             {managePlatformData?.titleData?.map((data, index) => (
               <div key={data?.id}>
                 <h1 className="fs-2 text-center fw-bold my-3">{data?.title}</h1>

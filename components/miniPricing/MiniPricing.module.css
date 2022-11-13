@@ -13,6 +13,8 @@
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .singlePlan {
@@ -78,6 +80,17 @@
   font-weight: 500;
 }
 
+/* media queries for max-width: 600px and 992px */
+
+@media screen and (max-width: 992px) {
+  .planContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+}
 @media screen and (max-width: 600px) {
   .planContainer {
     display: grid;

@@ -10,22 +10,22 @@ const CircularMotion = () => {
           <div
             className={`${styles.pCircle1} d-flex align-items-center justify-content-center `}
           >
-            Mentor
+            Approachable
           </div>
           <div
             className={`${styles.pCircle2} d-flex align-items-center justify-content-center `}
           >
-            Coach
+            Caring
           </div>
           <div
             className={`${styles.pCircle3} d-flex align-items-center justify-content-center `}
           >
-            Leader
+            Transparent
           </div>
           <div
             className={`${styles.pCircle4} d-flex align-items-center justify-content-center `}
           >
-            Transparent
+            Leader
           </div>
         </div>
         {/* round 2 */}
@@ -53,12 +53,12 @@ const CircularMotion = () => {
               <div
                 className={`${styles.tCircle1} d-flex align-items-center justify-content-center `}
               >
-                Caring
+                Coach
               </div>
               <div
                 className={`${styles.tCircle2} d-flex align-items-center justify-content-center `}
               >
-                Approachable
+                Mentor
               </div>
             </div>
           </div>

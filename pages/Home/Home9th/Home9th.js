@@ -37,7 +37,7 @@ const Home9th = ({ home9thData }) => {
           </h1>
           <div className="my-5 gap-5">
             <Row className="d-flex justify-content-md-between">
-              <Col xs={12} md={5}>
+              <Col xs={12} md={12} lg={5}>
                 {home9thData?.items?.map((data, index) => (
                   <div key={data.id}>
                     <Col
@@ -82,7 +82,7 @@ const Home9th = ({ home9thData }) => {
                   </div>
                 ))}
               </Col>
-              <Col xs={12} md={7}>
+              <Col xs={12} md={12} lg={7}>
                 <Home9thSlider sliderData={home9thData?.pics} />
               </Col>
             </Row>
