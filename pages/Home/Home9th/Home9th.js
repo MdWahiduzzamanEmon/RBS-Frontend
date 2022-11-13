@@ -19,14 +19,10 @@ const Home9th = ({ home9thData }) => {
       style={{
         background: "rgb(226, 246, 254)",
         padding: "50px 0px",
+        fontFamily: "Poppins",
       }}
     >
-      <div
-        className=" container"
-        style={{
-          fontFamily: "Poppins",
-        }}
-      >
+      <div className=" container">
         <div>
           <h1
             className="fs-2 text-center fw-bold  m-auto"

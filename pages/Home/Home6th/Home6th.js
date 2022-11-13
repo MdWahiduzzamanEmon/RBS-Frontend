@@ -41,8 +41,6 @@ const Home6th = ({ home6thData }) => {
 
   const [activeSlide, setActiveSlide] = React.useState(0);
 
-  console.log(activeSlide);
-
   return (
     <div
       className="mx-auto"
@@ -53,6 +51,7 @@ const Home6th = ({ home6thData }) => {
         height: "100%",
         padding: "50px 0",
         backgroundColor: "rgb(30, 35, 52)",
+        fontFamily: "Poppins",
       }}
     >
       <div

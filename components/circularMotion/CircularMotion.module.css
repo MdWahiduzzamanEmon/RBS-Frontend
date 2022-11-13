@@ -277,9 +277,9 @@
 
 /*********** mobile devices max width 600*********** */
 
-@media screen and (max-width: 600px) {
-  /* *****primary circle Keyframes*********** */
-  .primaryCircle {
+/* @media screen and (max-width: 600px) { */
+/* *****primary circle Keyframes*********** */
+/* .primaryCircle {
     width: 370px;
     height: 370px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -290,145 +290,145 @@
     right: 0;
     margin: auto;
     border-radius: 50%;
-  }
+  } */
 
-  .secondaryCircle {
-    width: 240px;
-    height: 240px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    position: relative;
-    top: 70px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
-  }
+/* .secondaryCircle {
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
 
-  .tertiaryCircle {
-    width: 60px;
-    height: 60px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    position: relative;
-    top: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
-  }
+.tertiaryCircle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+} */
 
-  /************ secondary circle ***********/
-  .sCircle1 {
-    width: 70px;
-    height: 70px;
-    font-size: 11px;
-  }
-  .sCircle2 {
-    width: 70px;
-    height: 70px;
-    font-size: 11px;
-  }
-  .sCircle3 {
-    width: 70px;
-    height: 70px;
-    font-size: 11px;
-  }
+/************ secondary circle ***********/
+/* .sCircle1 {
+  width: 70px;
+  height: 70px;
+  font-size: 11px;
+}
+.sCircle2 {
+  width: 70px;
+  height: 70px;
+  font-size: 11px;
+}
+.sCircle3 {
+  width: 70px;
+  height: 70px;
+  font-size: 11px;
+} */
 
-  /***********tertiary circle************ */
-  .tCircle1 {
-    width: 45px;
-    height: 45px;
-    font-size: 11px;
+/***********tertiary circle************ */
+/* .tCircle1 {
+  width: 45px;
+  height: 45px;
+  font-size: 11px;
+}
+
+.tCircle2 {
+  width: 45px;
+  height: 45px;
+  font-size: 11px;
+} */
+
+/* @keyframes pCircle1 {
+  0% {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
   }
-
-  .tCircle2 {
-    width: 45px;
-    height: 45px;
-    font-size: 11px;
-  }
-
-  @keyframes pCircle1 {
-    0% {
-      transform: rotate(0deg) translate(-180px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-180px) rotate(-360deg);
-    }
-  }
-
-  @keyframes pCircle2 {
-    0% {
-      transform: rotate(0deg) translate(-180px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-180px) rotate(-360deg);
-    }
-  }
-
-  @keyframes pCircle3 {
-    0% {
-      transform: rotate(0deg) translate(-180px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-180px) rotate(-360deg);
-    }
-  }
-
-  @keyframes pCircle4 {
-    0% {
-      transform: rotate(0deg) translate(-180px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-180px) rotate(-360deg);
-    }
-  }
-  /* *****Secondary circle keyframes********* */
-
-  @keyframes sCircle1 {
-    0% {
-      transform: rotate(0deg) translate(-105px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-105px) rotate(-360deg);
-    }
-  }
-
-  @keyframes sCircle2 {
-    0% {
-      transform: rotate(0deg) translate(-105px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-105px) rotate(-360deg);
-    }
-  }
-
-  @keyframes sCircle3 {
-    0% {
-      transform: rotate(0deg) translate(-105px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-105px) rotate(-360deg);
-    }
-  }
-
-  /* *****tertiary circle keyframes********* */
-
-  @keyframes tCircle1 {
-    0% {
-      transform: rotate(0deg) translate(-35px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-35px) rotate(-360deg);
-    }
-  }
-
-  @keyframes tCircle2 {
-    0% {
-      transform: rotate(0deg) translate(-35px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-35px) rotate(-360deg);
-    }
+  100% {
+    transform: rotate(360deg) translate(-180px) rotate(-360deg);
   }
 }
+
+@keyframes pCircle2 {
+  0% {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-180px) rotate(-360deg);
+  }
+}
+
+@keyframes pCircle3 {
+  0% {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-180px) rotate(-360deg);
+  }
+}
+
+@keyframes pCircle4 {
+  0% {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-180px) rotate(-360deg);
+  }
+} */
+/* *****Secondary circle keyframes********* */
+
+/* @keyframes sCircle1 {
+  0% {
+    transform: rotate(0deg) translate(-105px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-105px) rotate(-360deg);
+  }
+} */
+
+/* @keyframes sCircle2 {
+    0% {
+      transform: rotate(0deg) translate(-105px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-105px) rotate(-360deg);
+    }
+  } */
+
+/* @keyframes sCircle3 {
+    0% {
+      transform: rotate(0deg) translate(-105px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-105px) rotate(-360deg);
+    }
+  } */
+
+/* *****tertiary circle keyframes********* */
+
+/* @keyframes tCircle1 {
+    0% {
+      transform: rotate(0deg) translate(-35px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-35px) rotate(-360deg);
+    }
+  } */
+
+/* @keyframes tCircle2 {
+    0% {
+      transform: rotate(0deg) translate(-35px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-35px) rotate(-360deg);
+    }
+  } */
+/* } */

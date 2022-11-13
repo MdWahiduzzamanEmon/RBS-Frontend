@@ -11,6 +11,7 @@ const Home4th = ({ home4thData }) => {
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "50px 0",
+        fontFamily: "Poppins",
       }}
     >
       <div className="d-flex flex-column flex-lg-row align-items-center container-lg">

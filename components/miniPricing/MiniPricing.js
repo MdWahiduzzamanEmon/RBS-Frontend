@@ -5,7 +5,6 @@ import styles from "./MiniPricing.module.css";
 import Aos from "aos";
 
 const MiniPricing = ({ miniPricingData }) => {
-  console.log(miniPricingData);
   const changePriceColor = (itemName) => {
     if (itemName === "Individual") {
       return `${styles.rateContainerItemBlack}`;
@@ -53,16 +52,16 @@ const MiniPricing = ({ miniPricingData }) => {
               <button className={`${styles.primaryButton} mb-2`}>
                 Try for free
               </button>
-              <Link href="/pricing">
+              {/* <Link href="/pricing">
                 <p
                   className={`${styles.mPricingLink}`}
                   style={{ cursor: "pointer", color: "#5a5ad5" }}
-                >
-                  {/* <small> */}
-                  Learn more <FaChevronRight fontSize="10px" />
-                  {/* </small> */}
-                </p>
-              </Link>
+                > */}
+              {/* <small> */}
+              {/* Learn more <FaChevronRight fontSize="10px" /> */}
+              {/* </small> */}
+              {/* </p>
+              </Link> */}
             </div>
           ))}
         </div>

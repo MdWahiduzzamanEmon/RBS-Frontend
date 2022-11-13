@@ -11,7 +11,10 @@ import {
   faReceipt,
   faTowerCell,
 } from "@fortawesome/free-solid-svg-icons";
-import image1 from "../../../public/image/todoBoard5.png";
+import engineeringImage from "../../../public/image/engineering.png";
+import itImage from "../../../public/image/it.png";
+import salesImage from "../../../public/image/sales&marketing.png";
+import constructionImage from "../../../public/image/construction.png";
 
 export const home7thDemoData = {
   id: 1,
@@ -34,9 +37,12 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faHouse,
       color: "#6C6CFF",
-      image: image1,
-      description:
-        "There is a growing need for better management of projects within the disciplines of engineering, business and technology, and this software is a direct response to that need. With an emphasis on practical application, this software addresses the final objective of project management: to integrate and integrate the interests, resources and efforts of many interested parties to achieve the general goals of the project.",
+      image: engineeringImage,
+      description: {
+        id: 1,
+        title:
+          "There is a growing need for better management of projects within the disciplines of engineering, business and technology, and this software is a direct response to that need. With an emphasis on practical application, this software addresses the final objective of project management: to integrate and integrate the interests, resources and efforts of many interested parties to achieve the general goals of the project.",
+      },
       // submenus: [
       //   {
       //     id: 1,
@@ -67,9 +73,12 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faCode,
       color: "#00C875",
-      image: image1,
-      description:
-        "Construction Project management is a responsible process. The project management process connects all other project activities together and creates the harmony in the project. Therefore, the project management team should have a detailed understanding on all the project management processes and this software that can make use for each project management process.",
+      image: constructionImage,
+      description: {
+        id: 1,
+        title:
+          "Construction Project management is a responsible process. The project management process connects all other project activities together and creates the harmony in the project. Therefore, the project management team should have a detailed understanding on all the project management processes and this software that can make use for each project management process.",
+      },
       // submenus: [
       //   {
       //     id: 1,
@@ -94,9 +103,12 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faTowerCell,
       color: "green",
-      image: image1,
-      description:
-        "The IT Project management is one of the critical processes of any project. This is due to the fact that project management is the core process that connects all other project activities and processes together. When it comes to the activities of project management, there are plenty. However, these plenty of project management activities can be categorized into This software.",
+      image: itImage,
+      description: {
+        id: 1,
+        title:
+          "The IT Project management is one of the critical processes of any project. This is due to the fact that project management is the core process that connects all other project activities and processes together. When it comes to the activities of project management, there are plenty. However, these plenty of project management activities can be categorized into This software.",
+      },
       // submenus: [
       //   {
       //     id: 1,
@@ -121,9 +133,18 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faBullhorn,
       color: "#00D2D2",
-      image: image1,
-      description:
-        "This software is the perfect solution to make the planning and execution of specific tasks carried out by a marketing department to ensure that a marketing campaign's goal is successfully reached. It entails employing different skills, tools, and expertise to ensure that finances, sales, and user experience are on point. This software helps marketing teams communicate effectively from start to finish. This software will help marketing teams make use of communication to ensure team members keep in touch and communicate anytime. Communication is a key feature of successful marketing campaigns",
+      image: salesImage,
+      description: {
+        id: 1,
+        title:
+          "This software is the perfect solution to make the planning and execution of specific tasks carried out by a marketing department to ensure that a marketing campaign's goal is successfully reached. It entails employing different skills, tools, and expertise to ensure that finances, sales, and user experience are on point.",
+      },
+
+      secondaryDescription: {
+        id: 1,
+        title:
+          " This software helps marketing teams communicate effectively from start to finish. This software will help marketing teams make use of communication to ensure team members keep in touch and communicate anytime. Communication is a key feature of successful marketing campaigns",
+      },
       // submenus: [
       //   {
       //     id: 1,
@@ -148,9 +169,69 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faBullhorn,
       color: "#00D2D2",
-      image: image1,
-      description:
-        "This software can be used for any project and this software is the perfect solution to make,Project Initiation, Project Planning,Project ExecutionProject Control and Validation,Project Closeout and Evaluation,",
+      image: engineeringImage,
+      description: {
+        id: 1,
+        title: "Vitlous is also perfect for…….",
+        items: [
+          {
+            id: 1,
+            title: "Creative & Design",
+          },
+          {
+            id: 2,
+            title: "Architects",
+          },
+          {
+            id: 3,
+            title: "Consultants",
+          },
+          {
+            id: 4,
+            title: "Agencies",
+          },
+          {
+            id: 5,
+            title: "HR",
+          },
+          {
+            id: 6,
+            title: "Product",
+          },
+          {
+            id: 7,
+            title: "Operations",
+          },
+        ],
+      },
+
+      secondaryDescription: {
+        id: 1,
+        title:
+          "This software can be used for any project and this software is the perfect solution to make…..",
+        items: [
+          {
+            id: 1,
+            title: "Project Initiation",
+          },
+          {
+            id: 2,
+            title: "Project Planning",
+          },
+          {
+            id: 3,
+            title: "Project Execution",
+          },
+          {
+            id: 4,
+            title: "Project Control and Validation",
+          },
+          {
+            id: 5,
+            title: "Project Closeout and Evaluation",
+          },
+        ],
+      },
       // submenus: [
       //   {
       //     id: 1,
