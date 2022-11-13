@@ -21,7 +21,7 @@ const PricingMain = () => {
     <>
       {/* <PricingBanner /> */}
       <Pricing pricingData={pricingData} />
-      <Policy policyData={policyData} />
+      {/* <Policy policyData={policyData} /> */}
     </>
   );
 };

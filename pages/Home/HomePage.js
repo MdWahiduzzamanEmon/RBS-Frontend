@@ -33,7 +33,6 @@ const HomePage = ({
   miniPricingData,
   featuresData,
 }) => {
-  console.log(miniPricingData);
   return (
     <div>
       <div>

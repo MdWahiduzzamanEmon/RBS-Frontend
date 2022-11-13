@@ -14,6 +14,7 @@
 
 .navbarContainer {
   background: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -54,7 +55,7 @@
 .navbarMainItems {
   display: inline-block;
   color: #173465;
-  font-size: clamp(15px, 1.5vw, 20px);
+  font-size: clamp(10px, 1.1vw, 20px);
   /* font-size: 20px; */
   margin-bottom: 0;
   cursor: pointer;
@@ -73,7 +74,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 46px;
+  top: 42px;
   padding: 2px;
   width: 100%;
   background-color: #2a75d1;
@@ -86,7 +87,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 46px;
+  top: 42px;
   padding: 2px;
   width: 0%;
   /* background-color: #2a75d1; */
@@ -106,7 +107,7 @@
   position: absolute;
   /* bottom: 0; */
   /* left: 7px; */
-  top: 46px;
+  top: 42px;
   padding: 2px;
   width: 100%;
   /* margin-right: 100%; */
@@ -139,7 +140,7 @@
   top: 70px;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 1000;
 }
 .navbarItemsInnerContainer {
   height: calc(100vh - 70px);
@@ -152,4 +153,47 @@
   /* height: calc(100vh - 70px); */
 
   background: #212936;
+}
+
+.primaryButton {
+  width: 90px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 6px 8px;
+  background-color: #5a5ad5;
+  border: none;
+}
+.primaryButton:hover {
+  background-color: #7373de;
+}
+
+.marqueeText {
+  font-family: "Poppins", sans-serif;
+  /* z-index: 5000; */
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .navbarItemsInnerContainer {
+    /* height: calc(100vh - 70px);
+    overflow-y: auto;
+    display: grid; */
+    grid-template-columns: 1fr;
+    background: #fff;
+  }
+
+  .navbarMainItems::after {
+    content: none;
+  }
+
+  .active::before {
+    content: none;
+  }
 }

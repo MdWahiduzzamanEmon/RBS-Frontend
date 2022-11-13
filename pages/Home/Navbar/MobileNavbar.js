@@ -89,9 +89,11 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                     <div className={`${styles.navbarItemsInnerContainer}`}>
                       <div>
                         {" "}
-                        {state?.openProduct && <Product navLinks={navLinks} />}
+                        {state?.openProduct && (
+                          <Product navLinks={navLinks} dispatch={dispatch} />
+                        )}
                         {state?.openResources && (
-                          <Resources navLinks={navLinks} />
+                          <Resources navLinks={navLinks} dispatch={dispatch} />
                         )}
                       </div>
                       <div className={`${styles.navbarItemsContainerRight}`}>

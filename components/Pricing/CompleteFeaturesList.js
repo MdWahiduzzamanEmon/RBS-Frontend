@@ -24,7 +24,7 @@ const CompleteFeaturesList = ({ pricingData }) => {
     }
   };
   return (
-    <div>
+    <div className="container overflow-auto">
       <table className={`${styles.tableContainer}`}>
         <thead
           className={`${styles.tableHeadContainer} ${stickyClass}`}

@@ -134,6 +134,9 @@ const Pricing = ({ pricingData }) => {
               </div>
             ))}
           </div>
+          {/* {width > 600 && width < 992 ? (
+            ""
+          ) : ( */}
           <div
             style={{
               textAlign: "center",
@@ -147,6 +150,7 @@ const Pricing = ({ pricingData }) => {
             Complete features list{" "}
             {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
           </div>
+          {/* )} */}
           {isShow && <CompleteFeaturesList pricingData={pricingData} />}
         </>
       ) : (

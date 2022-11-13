@@ -36,7 +36,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
     >
       {/* <NavBar></NavBar> */}
       {/* marquee text */}
-      <div className="container">
+      {/* <div className="container">
         <div
           style={{
             backgroundColor: "#03A8EE",
@@ -61,7 +61,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
             ))}
           </p>
         </div>
-      </div>
+      </div> */}
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -71,6 +71,34 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
+        {/* marquee text */}
+        <div
+          style={{
+            backgroundColor: "#03A8EE",
+            color: "#fff",
+          }}
+          className="container"
+        >
+          <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
+            <p
+              style={{
+                // padding: "10px",
+                marginTop: "5px",
+                marginBottom: "5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {marqueeTextDemo?.map((data) => (
+                <>
+                  <small>{data.text}</small>
+                </>
+              ))}
+            </p>
+          </div>
+        </div>
+        {/* <div className="d-flex align-items-center"> */}
         <div className={`${bannerStyles.bannerContent} container `}>
           <Row className="d-flex">
             <Col sm={12} md={12} lg={5}>
@@ -121,6 +149,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           </Row>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };
