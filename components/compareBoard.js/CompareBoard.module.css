@@ -1,0 +1,63 @@
+.container {
+  font-family: "Poppins", sans-serif;
+}
+.compareTabs {
+  justify-content: center;
+  width: 100%;
+}
+
+.compareTabs li button {
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  flex: 1 0 20%;
+  color: #000000;
+  padding: 7px;
+  font-size: 30px;
+  font-weight: 600;
+  /* height: 30px; */
+}
+
+.titleBlank {
+  background-color: transparent;
+}
+
+.titleCompetitor {
+  color: #727491;
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-weight: 400;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featuresContainer:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.featuresTitle {
+  font-size: 18px;
+  font-weight: 400;
+  width: 75%;
+}
+
+.featuresOwnCompany {
+  font-size: 14px;
+}
+
+.featuresOtherCompany {
+  font-size: 14px;
+}

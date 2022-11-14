@@ -24,3 +24,18 @@
 
   background: #212936;
 }
+.buttonsContainer {
+  padding: 20px;
+  /* padding-bottom: 15px; */
+}
+.primaryButton {
+  width: 90px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 6px 8px;
+  margin-right: 15px;
+  background-color: #5a5ad5;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}

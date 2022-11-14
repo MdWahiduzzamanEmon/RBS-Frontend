@@ -18,8 +18,8 @@
 
 .dataContainer {
   /* height: 500px; */
-  /* text-align: justify; */
-  font-size: 18px;
+  text-align: justify;
+  font-size: 17px;
   padding: 20px;
   color: #000;
   background-image: linear-gradient(
@@ -38,7 +38,7 @@
   /* background: linear-gradient(to right, #bbd2c5, #536976); */
 }
 
-.description::first-letter {
+/* .description::first-letter {
   font-size: 40px;
   font-weight: 700;
   color: #000;
@@ -47,7 +47,7 @@
   font-size: 40px;
   font-weight: 700;
   color: #000;
-}
+} */
 
 @media screen and (max-width: 992px) {
   .container {

@@ -72,30 +72,6 @@ const NavBar = () => {
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
-            {
-              id: 1,
-              title: "Project Management",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 2,
-              title: "IT & Ops",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 3,
-              title: "Marketing",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 4,
-              title: "Construction",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
           ],
         },
       ],
@@ -141,25 +117,25 @@ const NavBar = () => {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 1,
+              id: 5,
               title: "Project Management",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 2,
+              id: 6,
               title: "IT & Ops",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 3,
+              id: 7,
               title: "Marketing",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 4,
+              id: 8,
               title: "Construction",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
@@ -180,6 +156,18 @@ const NavBar = () => {
       href: "/watchDemo",
       items: {},
     },
+    // {
+    //   id: 7,
+    //   text: "Log in",
+    //   href: "/login",
+    //   type: "button",
+    // },
+    // {
+    //   id: 8,
+    //   text: "Sign up",
+    //   href: "/signup",
+    //   type: "button",
+    // },
   ];
 
   const openNavElements = (e) => {
@@ -263,7 +251,7 @@ const NavBar = () => {
         <div>
           <div
             style={{
-              background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);",
+              background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%)",
             }}
           >
             {/* ${
@@ -279,7 +267,7 @@ const NavBar = () => {
                     : "relative",
               }}
             >
-              <div className="container-lg d-flex align-items-center justify-content-lg-between ">
+              <div className="container-lg d-flex align-items-center justify-content-lg-between">
                 <div
                   className={`${navStyles.navbarBrand}`}
                   onClick={() => {
@@ -304,9 +292,8 @@ const NavBar = () => {
                   {navLinks.map((navLink) => (
                     <>
                       {navLink.href ? (
-                        <Link href={navLink.href}>
+                        <Link href={navLink.href} key={navLink.id}>
                           <p
-                            key={navLink.id}
                             className={`${navStyles.navbarMainItems} ${
                               (navLink.text === state?.showActiveInnerText &&
                                 state.openProduct) ||
@@ -391,7 +378,7 @@ const NavBar = () => {
                   ))}
                 </div>
                 <div className="">
-                  <button className={`${navStyles.primaryButton} me-2`}>
+                  <button className={`${navStyles.primaryButton}`}>
                     Log in
                   </button>
                   <button className={`${navStyles.primaryButton}`}>

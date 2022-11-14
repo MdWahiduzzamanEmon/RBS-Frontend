@@ -60,7 +60,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
       </div>
       {state.mobileNavbarOpen && (
         <div>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="0" style={{ zIndex: "2000" }}>
             {navLinks.map((navLink) => (
               <Accordion.Item eventKey={navLink.id} key={navLink.id}>
                 {navLink.href ? (
@@ -84,6 +84,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                     {navLink.text}
                   </Accordion.Header>
                 )}
+
                 {!navLink.href && (
                   <Accordion.Body style={{ padding: "0px" }}>
                     <div className={`${styles.navbarItemsInnerContainer}`}>
@@ -117,6 +118,10 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item> */}
+            <div className={`${styles.buttonsContainer}`}>
+              <button className={`${styles.primaryButton}`}>Log in</button>
+              <button className={`${styles.primaryButton}`}>Sign up</button>
+            </div>
           </Accordion>
         </div>
       )}

@@ -15,6 +15,7 @@ import ManagePlatform from "../../components/ManagePlatform.js/ManagePlatform";
 import CircularMotion from "../../components/circularMotion/CircularMotion";
 import MiniPricing from "../../components/miniPricing/MiniPricing";
 import FeaturesBoard from "../../components/featuresBoard/FeaturesBoard";
+import CompareBoard from "../../components/compareBoard.js/CompareBoard";
 
 const HomePage = ({
   bannerData,
@@ -37,6 +38,7 @@ const HomePage = ({
     <div>
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
+        <CompareBoard />
         <FeaturesBoard featuresData={featuresData} />
         <ManagePlatform managePlatformData={managePlatformData} />
         {/* //**************Features section****************/}

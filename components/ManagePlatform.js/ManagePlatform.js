@@ -9,8 +9,6 @@ import image from "../../public/image/todoBoard5.png";
 import ManagePlatformDetailInformation from "./managePlatformDetailInformation/ManagePlatformDetailInformation";
 
 const ManagePlatform = ({ managePlatformData }) => {
-  console.log(managePlatformData);
-
   return (
     <>
       <style>
@@ -22,7 +20,6 @@ const ManagePlatform = ({ managePlatformData }) => {
         .nav-item{
          
             position: relative;
-            // background-color: green;
           
         }
 
