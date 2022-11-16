@@ -24,9 +24,9 @@ const Home4th = ({ home4thData }) => {
           {home4thData?.items?.map((data, index) => (
             <Image
               key={data?.id}
-              src={data?.img}
+              src={data.img}
               alt=" "
-              objectFit="cover"
+              objectFit="contain"
               width={500}
               height={400}
               layout="responsive"

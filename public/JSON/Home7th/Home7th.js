@@ -11,10 +11,13 @@ import {
   faReceipt,
   faTowerCell,
 } from "@fortawesome/free-solid-svg-icons";
-import engineeringImage from "../../../public/image/engineering.png";
+import engineeringImage from "../../../public/image/engineering.jpg";
+import constructionImage from "../../../public/image/construction-infographic.png";
 import itImage from "../../../public/image/it.png";
 import salesImage from "../../../public/image/sales&marketing.png";
-import constructionImage from "../../../public/image/construction.png";
+import othersImage from "../../../public/hr.jpg";
+
+// import constructionImage from "../../../public/image/construction.png";
 
 export const home7thDemoData = {
   id: 1,
@@ -169,7 +172,7 @@ export const home7thDemoData = {
       //     "Use Timeline to plan projects right the time. how the pieces fit together.",
       icon: faBullhorn,
       color: "#00D2D2",
-      image: engineeringImage,
+      image: othersImage,
       description: {
         id: 1,
         title: "Vitlous is also perfect for…….",

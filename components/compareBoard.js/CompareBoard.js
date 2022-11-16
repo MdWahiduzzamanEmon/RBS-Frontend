@@ -965,7 +965,6 @@ const CompareBoard = () => {
       // },
     ],
   };
-  console.log("details present", showDetails, "tab name:", selectedTab);
   return (
     <section
       style={{
@@ -974,7 +973,10 @@ const CompareBoard = () => {
       }}
     >
       <div className={`${styles.container} container`}>
-        <div className={`${styles.compareHeadingContainer}`}>
+        <div
+          className={`${styles.compareHeadingContainer}`}
+          data-aos="zoom-in-down"
+        >
           <h1 className={`${styles.compareHeading} fs-2 mb-3`}>
             {compareDemoData.title}
           </h1>
@@ -987,6 +989,7 @@ const CompareBoard = () => {
           id="uncontrolled-tab-example"
           // className="mb-3"
           className={`${styles.compareTabs} mb-3`}
+          data-aos="zoom-in-down"
         >
           {compareDemoData.competitors.map((competitor) => (
             <Tab
@@ -994,6 +997,7 @@ const CompareBoard = () => {
               title={competitor.name}
               key={competitor.id}
               className={`${styles.compareTab}`}
+              data-aos="zoom-in-down"
             >
               <div>
                 <div className={`${styles.titleContainer}`}>

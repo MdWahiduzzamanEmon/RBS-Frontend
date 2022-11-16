@@ -1,3 +1,4 @@
+import customizableTaskBoard from "../../../public/image/customizable-task-board.png";
 export const home3rdInfos = {
   id: 1,
   isShow: true,
@@ -18,7 +19,7 @@ export const home3rdInfos = {
       subTitle3: "Time Tracking",
       subTitle3Description:
         "Set due dates to keep your team updated on what is required and when. View project board overdue tasks!",
-      image: "/project1.jpeg",
+      image: customizableTaskBoard,
     },
   ],
 };

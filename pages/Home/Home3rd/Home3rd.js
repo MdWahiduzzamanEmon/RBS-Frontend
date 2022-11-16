@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Aos from "aos";
+import customizableTaskBoard from "../../../public/image/customizable-task-board.png";
 
 const Home3rd = ({ home3rdData }) => {
   React.useEffect(() => {
@@ -87,9 +88,9 @@ const Home3rd = ({ home3rdData }) => {
           {home3rdData?.items?.map((data, index) => (
             <Image
               key={data?.id}
-              src={data?.image}
+              src={data.image}
               alt=" "
-              objectFit="cover"
+              objectFit="contain"
               width={500}
               height={450}
               layout="responsive"

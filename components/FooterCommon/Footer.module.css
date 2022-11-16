@@ -17,21 +17,28 @@
 }
 
 .text {
-  /* color: #D1D1D5 */
   color: #000;
   font-size: 15px;
   font-weight: 400;
   opacity: 0.6;
+  border-bottom: 1px solid transparent;
+}
+
+.text:hover {
+  display: inline-block;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .footerBottom {
-  /* background: #222739; */
   background-image: linear-gradient(
     90deg,
     rgb(250, 235, 235) 0%,
     rgb(223, 231, 253) 100%
   );
   padding: 30px 0px;
-  /* color: #FFF; */
   color: #000;
 }

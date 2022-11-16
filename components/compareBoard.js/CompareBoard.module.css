@@ -102,13 +102,7 @@
   border: none;
 }
 .comparisonShowButton:hover {
-  /* width: 150px;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 25px;
-  padding: 8px 20px; */
   background-color: #6262e4;
-  /* border: none; */
 }
 
 .primaryButtonText {
@@ -128,11 +122,25 @@
   border: none;
 }
 .comparisonCollapseButton:hover {
-  /* width: 150px;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 25px;
-  padding: 8px 20px; */
   background-color: #6262e4;
-  /* border: none; */
+}
+
+@media screen and (max-width: 990px) {
+  .compareHeadingContainer {
+    width: 100%;
+  }
+
+  .compareShortDetails {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .compareHeadingContainer {
+    width: 100%;
+  }
+
+  .compareShortDetails {
+    width: 85%;
+  }
 }
