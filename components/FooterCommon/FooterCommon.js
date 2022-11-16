@@ -9,9 +9,9 @@ const FooterCommon = ({ footerDetails }) => {
       <div className={`${footerCommonStyles.footerCommon} px-3 pt-5`}>
         <div className="row">
           {footerDetails?.items?.map((data, index) => (
-            <div key={index} className="col-12 col-lg-3">
-              {data?.logo && (
-                <div className="d-flex justify-content-center">
+            <div key={index} className="col-12 col-md-3 col-lg-3">
+              <div className="d-none d-sm-flex d-md-flex d-lg-flex justify-content-center">
+                {data?.logo && (
                   <Image
                     src={data?.logo}
                     width="100px"
@@ -19,8 +19,8 @@ const FooterCommon = ({ footerDetails }) => {
                     alt="logo"
                     className="img-fluid rounded-circle "
                   />
-                </div>
-              )}
+                )}
+              </div>
               {/* {data?.description && <p>{data?.description}</p>} */}
               <h1 className="fs-6 fw-bold">{data.title}</h1>
               <ul className="ms-0 ps-0 fs-6">
