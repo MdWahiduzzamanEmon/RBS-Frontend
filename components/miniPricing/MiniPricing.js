@@ -49,9 +49,11 @@ const MiniPricing = ({ miniPricingData }) => {
                   </p>
                 </div>
               </div>
-              <button className={`${styles.primaryButton} mb-2`}>
-                Try for free
-              </button>
+              <Link href="/pricing">
+                <button className={`${styles.primaryButton} mb-2`}>
+                  Try for free
+                </button>
+              </Link>
               {/* <Link href="/pricing">
                 <p
                   className={`${styles.mPricingLink}`}

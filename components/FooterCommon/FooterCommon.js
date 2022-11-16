@@ -11,17 +11,19 @@ const FooterCommon = ({ footerDetails }) => {
           {footerDetails?.items?.map((data, index) => (
             <div key={index} className="col-12 col-lg-3">
               {data?.logo && (
-                <Image
-                  src={data?.logo}
-                  width="100px"
-                  height="100px"
-                  alt="logo"
-                  className="img-fluid rounded-circle"
-                />
+                <div className="d-flex justify-content-center">
+                  <Image
+                    src={data?.logo}
+                    width="100px"
+                    height="100px"
+                    alt="logo"
+                    className="img-fluid rounded-circle "
+                  />
+                </div>
               )}
-              {data?.description && <p>{data?.description}</p>}
-              <h1 className="fs-4 fw-bold">{data.title}</h1>
-              <ul className="ms-0 ps-0">
+              {/* {data?.description && <p>{data?.description}</p>} */}
+              <h1 className="fs-6 fw-bold">{data.title}</h1>
+              <ul className="ms-0 ps-0 fs-6">
                 {data?.lists?.map((itemData, index) => (
                   <Link href={itemData?.url} key={index}>
                     <li

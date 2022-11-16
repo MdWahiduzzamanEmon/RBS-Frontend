@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./ManagePlatformDetailInformation.module.css";
 
 const ManagePlatformDetailInformation = ({ platformInformation }) => {
-  console.log(platformInformation);
   return (
     <section>
       <div className={`${styles.container}`}>

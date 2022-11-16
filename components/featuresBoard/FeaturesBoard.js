@@ -3,7 +3,6 @@ import styles from "./FeaturesBoard.module.css";
 import Aos from "aos";
 
 const FeaturesBoard = ({ featuresData }) => {
-  console.log(featuresData);
   return (
     <section
       style={{

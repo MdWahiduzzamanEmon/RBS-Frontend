@@ -6,14 +6,14 @@ export const footerDemoData = {
       id: 1,
       isShow: true,
       logo: "/RBS_logo.png",
-      description:
-        "On the other handed denounce with who are so beg demoralized.",
+      // description:
+      //   "On the other handed denounce with who are so beg demoralized.",
       // link:
     },
     {
       id: 2,
       isShow: true,
-      title: "Help and Advice",
+      title: "Company",
       lists: [
         {
           url: "/aboutUs",
@@ -29,6 +29,22 @@ export const footerDemoData = {
         },
         {
           url: "/",
+          item: "Brand",
+        },
+        {
+          url: "/",
+          item: "Careers",
+        },
+        {
+          url: "/",
+          item: "Security",
+        },
+        {
+          url: "/",
+          item: "Pricing",
+        },
+        {
+          url: "/",
           item: "Term and Condition",
         },
         {
@@ -40,58 +56,42 @@ export const footerDemoData = {
     {
       id: 3,
       isShow: true,
-      title: "Our Features",
+      title: "Resources",
       lists: [
         {
           url: "/",
-          item: "Open Source",
+          item: "Project Management",
         },
         {
           url: "/",
-          item: "Faster Performance",
+          item: "IT & Ops",
         },
         {
           url: "/",
-          item: "Term and Condition",
+          item: "Marketing",
         },
         {
           url: "/",
-          item: "Privacy Policy",
-        },
-        {
-          url: "/",
-          item: "Customer Spotlight",
-        },
-        {
-          url: "/",
-          item: "Reseller Program",
-        },
-        {
-          url: "/",
-          item: "Careers",
-        },
-        {
-          url: "/",
-          item: "Terms of Service",
+          item: "Construction",
         },
       ],
     },
     {
       id: 4,
       isShow: true,
-      title: "Our Features",
+      title: "Popular Features",
       lists: [
         {
           url: "/",
-          item: "Email: demo@example.com",
+          item: "",
         },
         {
           url: "/",
-          item: "Phone: 94273492324",
+          item: "",
         },
         {
           url: "/",
-          item: "Address: Collins street, West Victoria, Australia ",
+          item: "",
         },
       ],
     },

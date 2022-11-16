@@ -66,8 +66,6 @@ export default function Home() {
     });
   }, []);
 
-  console.log(miniPricingData);
-
   return (
     <div
       style={{

@@ -38,7 +38,6 @@ const HomePage = ({
     <div>
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
-        <CompareBoard />
         <FeaturesBoard featuresData={featuresData} />
         <ManagePlatform managePlatformData={managePlatformData} />
         {/* //**************Features section****************/}
@@ -58,6 +57,9 @@ const HomePage = ({
 
         {/* //***************Mini pricing section************* */}
         <MiniPricing miniPricingData={miniPricingData} />
+
+        {/*//**************Comparing softwares******************/}
+        <CompareBoard />
 
         {/* //**********Why Software is better section*******  */}
         <Home9th home9thData={home9thData} />
