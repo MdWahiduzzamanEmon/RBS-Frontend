@@ -26,7 +26,7 @@ const Home4th = ({ home4thData }) => {
               key={data?.id}
               src={data.img}
               alt=" "
-              objectFit="contain"
+              objectFit="cover"
               width={500}
               height={400}
               layout="responsive"

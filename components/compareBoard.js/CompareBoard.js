@@ -984,210 +984,211 @@ const CompareBoard = () => {
             {compareDemoData.description}
           </p>
         </div>
-        <Tabs
-          defaultActiveKey="Wrike"
-          id="uncontrolled-tab-example"
-          // className="mb-3"
-          className={`${styles.compareTabs} mb-3`}
-          data-aos="zoom-in-down"
-        >
-          {compareDemoData.competitors.map((competitor) => (
-            <Tab
-              eventKey={competitor.name}
-              title={competitor.name}
-              key={competitor.id}
-              className={`${styles.compareTab}`}
-              data-aos="zoom-in-down"
-            >
-              <div>
-                <div className={`${styles.titleContainer}`}>
-                  <p className={`${styles.title} ${styles.titleBlank}`}></p>
-                  <p className={`${styles.title}`}>
-                    {competitor?.headings?.title1}
-                  </p>
-                  <p className={`${styles.title} ${styles.titleCompetitor}`}>
-                    {competitor?.headings?.title2}
-                  </p>
-                </div>
-                {showDetails && competitor.name === selectedTab ? (
-                  <>
-                    {competitor?.challenges?.map((challenge) => (
-                      <>
-                        <div
-                          className={`${styles.featuresContainer}`}
-                          key={challenge.id}
-                        >
-                          <div className={`${styles.featuresTitle}`}>
-                            <p>{challenge.title}</p>
-                          </div>
-                          <div className={`${styles.featuresOwnCompany}`}>
-                            {challenge?.company1?.items?.map((item) => (
-                              <p key={item.id}>
-                                <FaCheckCircle
-                                  color="#519e7d"
-                                  style={{ marginRight: "10px" }}
-                                />
-                                {item.title}
-                              </p>
-                            ))}
-                          </div>
-                          <div className={`${styles.featuresOtherCompany}`}>
-                            {challenge?.company2?.items?.map((item) => (
-                              <p key={item.id}>
-                                {item.isAvailable ? (
-                                  <FaCheckCircle
-                                    color="#519e7d"
-                                    style={{ marginRight: "10px" }}
-                                  />
-                                ) : (
-                                  <FaTimesCircle
-                                    color="#d45a5a"
-                                    style={{ marginRight: "10px" }}
-                                  />
-                                )}
-                                {item.title}
-                              </p>
-                            ))}
-                          </div>
-
-                          {/* <div key={item.id}>
-                              
-                               <p>Portfolio</p>
-                               <p>Project time budget</p>
-                            </div> */}
-
-                          {/* {challenge?.company2?.items?.map((item) => (
-                            <div key={item.id}>
-                              <p>
-                                <FaCheckCircle color="#134d34" />
-                                Board view
-                              </p>
-                              <p>Portfolio</p>
-                              <p>Project time budget</p>
-                            </div>
-                          ))} */}
-                          {/* <div>
-                            <p>Board view</p>
-                            <p>
-                              <HiXCircle />
-                              Portfolio
-                            </p>
-                            <p>Project time budget</p>
-                          </div> */}
-                        </div>
-                      </>
-                    ))}
-                  </>
-                ) : (
-                  <>
-                    {competitor?.challenges?.slice(0, 3).map((challenge) => (
-                      <>
-                        <div
-                          className={`${styles.featuresContainer}`}
-                          key={challenge.id}
-                        >
-                          <div className={`${styles.featuresTitle}`}>
-                            <p>{challenge.title}</p>
-                          </div>
-                          <div className={`${styles.featuresOwnCompany}`}>
-                            {challenge?.company1?.items?.map((item) => (
-                              <p key={item.id}>
-                                <FaCheckCircle
-                                  color="#519e7d"
-                                  style={{ marginRight: "10px" }}
-                                />
-                                {item.title}
-                              </p>
-                            ))}
-                          </div>
-                          <div className={`${styles.featuresOtherCompany}`}>
-                            {challenge?.company2?.items?.map((item) => (
-                              <p key={item.id}>
-                                {item.isAvailable ? (
-                                  <FaCheckCircle
-                                    color="#519e7d"
-                                    style={{ marginRight: "10px" }}
-                                  />
-                                ) : (
-                                  <FaTimesCircle
-                                    color="#d45a5a"
-                                    style={{ marginRight: "10px" }}
-                                  />
-                                )}
-                                {item.title}
-                              </p>
-                            ))}
-                          </div>
-
-                          {/* <div key={item.id}>
-                              
-                               <p>Portfolio</p>
-                               <p>Project time budget</p>
-                            </div> */}
-
-                          {/* {challenge?.company2?.items?.map((item) => (
-                            <div key={item.id}>
-                              <p>
-                                <FaCheckCircle color="#134d34" />
-                                Board view
-                              </p>
-                              <p>Portfolio</p>
-                              <p>Project time budget</p>
-                            </div>
-                          ))} */}
-                          {/* <div>
-                            <p>Board view</p>
-                            <p>
-                              <HiXCircle />
-                              Portfolio
-                            </p>
-                            <p>Project time budget</p>
-                          </div> */}
-                        </div>
-                      </>
-                    ))}
-                  </>
-                )}
-              </div>
-              {/* {chall} */}
-              <div
-                className={`${styles.buttonsContainer} mt-5`}
-                // style={{
-                //   display:
-                //     showDetails && competitor.name === selectedTab
-                //       ? "none"
-                //       : "block",
-                // }}
+        <div data-aos="zoom-in-down">
+          <Tabs
+            defaultActiveKey="Wrike"
+            id="uncontrolled-tab-example"
+            // className="mb-3"
+            className={`${styles.compareTabs} mb-3`}
+          >
+            {compareDemoData.competitors.map((competitor) => (
+              <Tab
+                eventKey={competitor.name}
+                title={competitor.name}
+                key={competitor.id}
+                className={`${styles.compareTab}`}
+                // data-aos="zoom-in-down"
               >
-                {showDetails && competitor.name === selectedTab ? (
-                  <button
-                    className={`${styles.comparisonCollapseButton}`}
-                    onClick={() => {
-                      setShowDetails(!showDetails);
-                      setSelectedTab(competitor.name);
-                    }}
-                  >
-                    Collapse full comparison
-                  </button>
-                ) : (
-                  <button
-                    className={`${styles.comparisonShowButton}`}
-                    onClick={() => {
-                      setShowDetails(true);
-                      setSelectedTab(competitor.name);
-                    }}
-                    style={{
-                      display:
-                        competitor?.challenges?.length > 3 ? "block" : "none",
-                    }}
-                  >
-                    View full comparison
-                  </button>
-                )}
-              </div>
-            </Tab>
-          ))}
-        </Tabs>
+                <div>
+                  <div className={`${styles.titleContainer}`}>
+                    <p className={`${styles.title} ${styles.titleBlank}`}></p>
+                    <p className={`${styles.title}`}>
+                      {competitor?.headings?.title1}
+                    </p>
+                    <p className={`${styles.title} ${styles.titleCompetitor}`}>
+                      {competitor?.headings?.title2}
+                    </p>
+                  </div>
+                  {showDetails && competitor.name === selectedTab ? (
+                    <>
+                      {competitor?.challenges?.map((challenge) => (
+                        <>
+                          <div
+                            className={`${styles.featuresContainer}`}
+                            key={challenge.id}
+                          >
+                            <div className={`${styles.featuresTitle}`}>
+                              <p>{challenge.title}</p>
+                            </div>
+                            <div className={`${styles.featuresOwnCompany}`}>
+                              {challenge?.company1?.items?.map((item) => (
+                                <p key={item.id}>
+                                  <FaCheckCircle
+                                    color="#519e7d"
+                                    style={{ marginRight: "10px" }}
+                                  />
+                                  {item.title}
+                                </p>
+                              ))}
+                            </div>
+                            <div className={`${styles.featuresOtherCompany}`}>
+                              {challenge?.company2?.items?.map((item) => (
+                                <p key={item.id}>
+                                  {item.isAvailable ? (
+                                    <FaCheckCircle
+                                      color="#519e7d"
+                                      style={{ marginRight: "10px" }}
+                                    />
+                                  ) : (
+                                    <FaTimesCircle
+                                      color="#d45a5a"
+                                      style={{ marginRight: "10px" }}
+                                    />
+                                  )}
+                                  {item.title}
+                                </p>
+                              ))}
+                            </div>
+
+                            {/* <div key={item.id}>
+                              
+                               <p>Portfolio</p>
+                               <p>Project time budget</p>
+                            </div> */}
+
+                            {/* {challenge?.company2?.items?.map((item) => (
+                            <div key={item.id}>
+                              <p>
+                                <FaCheckCircle color="#134d34" />
+                                Board view
+                              </p>
+                              <p>Portfolio</p>
+                              <p>Project time budget</p>
+                            </div>
+                          ))} */}
+                            {/* <div>
+                            <p>Board view</p>
+                            <p>
+                              <HiXCircle />
+                              Portfolio
+                            </p>
+                            <p>Project time budget</p>
+                          </div> */}
+                          </div>
+                        </>
+                      ))}
+                    </>
+                  ) : (
+                    <>
+                      {competitor?.challenges?.slice(0, 3).map((challenge) => (
+                        <>
+                          <div
+                            className={`${styles.featuresContainer}`}
+                            key={challenge.id}
+                          >
+                            <div className={`${styles.featuresTitle}`}>
+                              <p>{challenge.title}</p>
+                            </div>
+                            <div className={`${styles.featuresOwnCompany}`}>
+                              {challenge?.company1?.items?.map((item) => (
+                                <p key={item.id}>
+                                  <FaCheckCircle
+                                    color="#519e7d"
+                                    style={{ marginRight: "10px" }}
+                                  />
+                                  {item.title}
+                                </p>
+                              ))}
+                            </div>
+                            <div className={`${styles.featuresOtherCompany}`}>
+                              {challenge?.company2?.items?.map((item) => (
+                                <p key={item.id}>
+                                  {item.isAvailable ? (
+                                    <FaCheckCircle
+                                      color="#519e7d"
+                                      style={{ marginRight: "10px" }}
+                                    />
+                                  ) : (
+                                    <FaTimesCircle
+                                      color="#d45a5a"
+                                      style={{ marginRight: "10px" }}
+                                    />
+                                  )}
+                                  {item.title}
+                                </p>
+                              ))}
+                            </div>
+
+                            {/* <div key={item.id}>
+                              
+                               <p>Portfolio</p>
+                               <p>Project time budget</p>
+                            </div> */}
+
+                            {/* {challenge?.company2?.items?.map((item) => (
+                            <div key={item.id}>
+                              <p>
+                                <FaCheckCircle color="#134d34" />
+                                Board view
+                              </p>
+                              <p>Portfolio</p>
+                              <p>Project time budget</p>
+                            </div>
+                          ))} */}
+                            {/* <div>
+                            <p>Board view</p>
+                            <p>
+                              <HiXCircle />
+                              Portfolio
+                            </p>
+                            <p>Project time budget</p>
+                          </div> */}
+                          </div>
+                        </>
+                      ))}
+                    </>
+                  )}
+                </div>
+                {/* {chall} */}
+                <div
+                  className={`${styles.buttonsContainer} mt-5`}
+                  // style={{
+                  //   display:
+                  //     showDetails && competitor.name === selectedTab
+                  //       ? "none"
+                  //       : "block",
+                  // }}
+                >
+                  {showDetails && competitor.name === selectedTab ? (
+                    <button
+                      className={`${styles.comparisonCollapseButton}`}
+                      onClick={() => {
+                        setShowDetails(!showDetails);
+                        setSelectedTab(competitor.name);
+                      }}
+                    >
+                      Collapse full comparison
+                    </button>
+                  ) : (
+                    <button
+                      className={`${styles.comparisonShowButton}`}
+                      onClick={() => {
+                        setShowDetails(true);
+                        setSelectedTab(competitor.name);
+                      }}
+                      style={{
+                        display:
+                          competitor?.challenges?.length > 3 ? "block" : "none",
+                      }}
+                    >
+                      View full comparison
+                    </button>
+                  )}
+                </div>
+              </Tab>
+            ))}
+          </Tabs>
+        </div>
       </div>
     </section>
   );
