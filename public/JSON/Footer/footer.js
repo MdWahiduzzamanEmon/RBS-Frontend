@@ -60,19 +60,27 @@ export const footerDemoData = {
       lists: [
         {
           url: "/",
-          item: "Project Management",
+          item: "Free classes",
         },
         {
           url: "/",
-          item: "IT & Ops",
+          item: "Tutorial videos",
         },
         {
           url: "/",
-          item: "Marketing",
+          item: "Blog",
         },
         {
           url: "/",
-          item: "Construction",
+          item: "Tutorial",
+        },
+        {
+          url: "/",
+          item: "Social community",
+        },
+        {
+          url: "/",
+          item: "Success stories",
         },
       ],
     },
@@ -83,15 +91,59 @@ export const footerDemoData = {
       lists: [
         {
           url: "/",
-          item: "",
+          item: "Intuitive Dashboard",
         },
         {
           url: "/",
-          item: "",
+          item: "Kanban Board",
         },
         {
           url: "/",
-          item: "",
+          item: "Gantt Chart",
+        },
+        {
+          url: "/",
+          item: "Calendar view ",
+        },
+        {
+          url: "/",
+          item: "Project Management",
+        },
+        {
+          url: "/",
+          item: "Task  Management",
+        },
+        {
+          url: "/",
+          item: "Document Management",
+        },
+        {
+          url: "/",
+          item: "Budget Management ",
+        },
+        {
+          url: "/",
+          item: "Project & Task Discussion",
+        },
+        {
+          url: "/",
+          item: "Live Communication",
+        },
+        {
+          url: "/",
+          item: "Issue Tracking",
+        },
+        {
+          url: "/",
+          item: "Time Tracking",
+        },
+        {
+          url: "/",
+          item: "Resource management",
+        },
+        {
+          url: "/",
+          item: "Requisition, Invoice, Income, Expense, VAT-TAX Management",
         },
       ],
     },

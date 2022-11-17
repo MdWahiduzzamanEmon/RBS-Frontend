@@ -20,22 +20,9 @@ const NavBar = () => {
   //***navbarReducer */
   const [state, dispatch] = useReducer(navbarReducer, initialState);
   const navLinks = [
-    // {
-    //   id: 1,
-    //   text: "RBS Tech",
-    //   href: "/",
-    //   items: {},
-    // },
-    // {
-    //   id: 2,
-    //   text: "Home",
-    //   href: "/",
-    // },
     {
-      id: 3,
+      id: 1,
       text: "Product",
-      // icon: <FaChevronUp />,
-      // href: "/product",
       items: {
         id: 1,
         text: "Overview",
@@ -45,43 +32,34 @@ const NavBar = () => {
       },
       subItems: [
         {
-          id: 2,
+          id: 1,
           text: "Capabilities",
           options: [
             {
               id: 1,
               title: "Project Management",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
               id: 2,
               title: "IT & Ops",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
               id: 3,
               title: "Marketing",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
               id: 4,
               title: "Construction",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
           ],
         },
       ],
     },
     {
-      id: 4,
+      id: 2,
       text: "Resources",
-      // href: "/resources",
       items: {
-        id: 1,
+        id: 2,
         text: "Overview re",
         title: "RBS Platform",
         description:
@@ -94,80 +72,44 @@ const NavBar = () => {
           options: [
             {
               id: 1,
-              title: "Project Management",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Free classes",
             },
             {
               id: 2,
-              title: "IT & Ops",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Tutorial videos",
             },
             {
               id: 3,
-              title: "Marketing",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Blog",
             },
             {
               id: 4,
-              title: "Construction",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Tutorial",
             },
             {
               id: 5,
-              title: "Project Management",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Social Community",
             },
             {
               id: 6,
-              title: "IT & Ops",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 7,
-              title: "Marketing",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 8,
-              title: "Construction",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
+              title: "Success Stories",
             },
           ],
         },
       ],
     },
     {
-      id: 5,
+      id: 3,
       text: "Pricing",
       href: "/pricing",
       items: {},
     },
     {
-      id: 6,
+      id: 4,
       text: "Watch a demo",
       href: "/watchDemo",
       items: {},
     },
-    // {
-    //   id: 7,
-    //   text: "Log in",
-    //   href: "/login",
-    //   type: "button",
-    // },
-    // {
-    //   id: 8,
-    //   text: "Sign up",
-    //   href: "/signup",
-    //   type: "button",
-    // },
   ];
 
   const openNavElements = (e) => {

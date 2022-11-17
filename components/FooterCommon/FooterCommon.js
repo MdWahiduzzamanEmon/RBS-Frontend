@@ -22,8 +22,10 @@ const FooterCommon = ({ footerDetails }) => {
                 )}
               </div>
               {/* {data?.description && <p>{data?.description}</p>} */}
-              <h1 className="fs-6 fw-bold">{data.title}</h1>
-              <ul className="ms-0 ps-0 fs-6">
+              <h1 className="fs-6 fw-bold" style={{ color: "#173465" }}>
+                {data.title}
+              </h1>
+              <ul className={`${footerCommonStyles.textContainer} ms-0 ps-0`}>
                 {data?.lists?.map((itemData, index) => (
                   <Link href={itemData?.url} key={index}>
                     <li
