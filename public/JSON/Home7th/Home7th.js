@@ -130,6 +130,36 @@ export const home7thDemoData = {
     {
       id: 4,
       isShow: true,
+      title: "Telecommunication",
+      eventKey: "telecommunication",
+      //   description:
+      //     "Use Timeline to plan projects right the time. how the pieces fit together.",
+      icon: faTowerCell,
+      color: "green",
+      image: itImage,
+      description: {
+        id: 1,
+        title:
+          "The IT Project management is one of the critical processes of any project. This is due to the fact that project management is the core process that connects all other project activities and processes together. When it comes to the activities of project management, there are plenty. However, these plenty of project management activities can be categorized into This software.",
+      },
+      // submenus: [
+      //   {
+      //     id: 1,
+      //     title: "Marketing Executive",
+      //     eventKey: "first",
+      //     images: "/image/todoBoard5.png",
+      //   },
+      //   {
+      //     id: 2,
+      //     title: "Marketing Director",
+      //     eventKey: "second",
+      //     images: "/image/todoBoard5.png",
+      //   },
+      // ],
+    },
+    {
+      id: 5,
+      isShow: true,
       title: "Sales & Marketing",
       eventKey: "sales-marketing",
       //   description:
@@ -164,7 +194,7 @@ export const home7thDemoData = {
       // ],
     },
     {
-      id: 5,
+      id: 6,
       isShow: true,
       title: "Others",
       eventKey: "others",

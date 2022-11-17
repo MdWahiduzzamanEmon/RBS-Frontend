@@ -1,10 +1,10 @@
 import React from "react";
-import { FaExclamationCircle } from "react-icons/fa";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import NavBar from "../../pages/Home/Navbar/NavBar";
 import styles from "./CompleteFeaturesList.module.css";
 
 const CompleteFeaturesList = ({ pricingData }) => {
-  console.log(pricingData);
   const [stickyClass, setStickyClass] = React.useState("");
 
   React.useEffect(() => {
@@ -23,8 +23,9 @@ const CompleteFeaturesList = ({ pricingData }) => {
         : setStickyClass("");
     }
   };
+
   return (
-    <div className="container overflow-auto">
+    <div className={`${styles.cFContainer} container`}>
       <table className={`${styles.tableContainer}`}>
         <thead
           className={`${styles.tableHeadContainer} ${stickyClass}`}
@@ -35,129 +36,121 @@ const CompleteFeaturesList = ({ pricingData }) => {
           // style={{ borderBottom: "1px solid #ced4da" }}
           >
             <th>{/* <p>Individual</p> */}</th>
-            <th>
-              <p> Individual</p>
-              <button className={`${styles.primaryButton}`}>
-                Try for free
-              </button>
-            </th>
-            <th>
-              <p>Basic</p>
-              <button className={`${styles.primaryButton}`}>
-                Try for free
-              </button>
-            </th>
-            <th>
-              <p>Standard</p>
-              <button className={`${styles.primaryButton}`}>
-                Try for free
-              </button>
-            </th>
-            <th>
-              <p>Pro</p>
-              <button className={`${styles.primaryButton}`}>
-                Try for free
-              </button>
-            </th>
-            <th>
-              <p>Enterprise</p>
-              <button className={`${styles.primaryButton}`}>
-                Try for free
-              </button>
-            </th>
+            {pricingData?.completeFeatures?.categories?.map((category) => (
+              <th key={category?.id}>
+                {category.title === "Individual" && (
+                  <p className={`${styles.titleNormal}`}>{category?.title}</p>
+                )}
+                {category.title === "Basic" && (
+                  <p className={`${styles.titlePurple}`}>{category?.title}</p>
+                )}
+                {category.title === "Standard" && (
+                  <p className={`${styles.titleBlue}`}>{category?.title}</p>
+                )}
+                {category.title === "Pro" && (
+                  <p className={`${styles.titleGreen}`}>{category?.title}</p>
+                )}
+                {category.title === "Enterprise" && (
+                  <p className={`${styles.titleNormal}`}>{category?.title}</p>
+                )}
+                <button className={`${styles.primaryButton}`}>
+                  Try for free
+                </button>
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody className={`${styles.tableBody}`}>
-          <tr
-            className={`${styles.tableRow}`}
-            // style={{ borderBottom: "1px solid #6c757d)" }}
-          >
-            <td
+          {pricingData?.completeFeatures?.subCategories?.map((sCatergory) => (
+            <>
+              <tr
+                key={sCatergory?.id}
+                className={`${styles.tableRow}`}
+                // style={{ borderBottom: "1px solid #6c757d)" }}
+              >
+                <td
+                  // key={sCatergory?.id}
+                  colSpan={6}
+                  style={{
+                    fontWeight: 500,
+                    fontSize: "20px",
+                    marginTop: "43px",
+                  }}
+                >
+                  <p>{sCatergory.title}</p>
+                </td>
+                {/* <td
               colSpan={6}
               style={{ fontWeight: 500, fontSize: "20px", marginTop: "43px" }}
             >
               Essentials
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <p>Maximum number of seats</p>
-              <p>
-                <FaExclamationCircle />
-              </p>
-            </td>
-            <td>Upto 2 seats</td>
-            <td>1 board per dashboard</td>
-            <td>Upto 2 seats</td>
-            <td>1 board per dashboard</td>
-            <td>Upto 2 seats</td>
-          </tr>
-          <tr>
-            <td>
-              <p>Maximum number of seats</p>
-              <p>
-                <FaExclamationCircle />
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>Items</td>
-          </tr>
-          <tr>
-            <td>File storage</td>
-          </tr>
-          <tr>
-            <td>Activity log</td>
-          </tr>
-          <tr>
-            <td>Unlimited boards</td>
-          </tr>
-          <tr>
-            <td>Unlimited docs</td>
-          </tr>
-
-          <tr className={`${styles.tableRow}`}>
-            <td colSpan={6} style={{ fontWeight: 500, fontSize: "20px" }}>
-              Collaboration
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <p>Essentials</p>
-              <p>
-                <FaExclamationCircle />
-              </p>
-            </td>
-            <td>Upto 2 seats</td>
-            <td>1 board per dashboard</td>
-            <td>Upto 2 seats</td>
-          </tr>
-          <tr>
-            <td>
-              <p>Maximum number of seats</p>
-              <p>
-                <FaExclamationCircle />
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>Items</td>
-          </tr>
-          <tr>
-            <td>File storage</td>
-          </tr>
-          <tr>
-            <td>Activity log</td>
-            <td>1 board per dashboard</td>
-          </tr>
-          <tr>
-            <td>Unlimited boards</td>
-          </tr>
-          <tr>
-            <td>Unlimited docs</td>
-          </tr>
+            </td> */}
+              </tr>
+              {sCatergory?.lists?.map((list) => (
+                <>
+                  <tr key={list?.id}>
+                    <td>
+                      <p>{list?.title}</p>
+                      {["top"].map((placement) => (
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptas, aut.
+                            </Tooltip>
+                          }
+                        >
+                          <Button
+                            variant="secondary"
+                            style={{
+                              backgroundColor: "transparent",
+                              border: "none",
+                            }}
+                          >
+                            <FaExclamationCircle
+                              color="#A0A1AC"
+                              // title="Within boards we have rows, or 'Items' - An Item can be anything you want it to be - Task, project, customer, etc. Each free account starts with 200 free Items. You can get more Items by referring friends to create their own accounts."
+                              style={{ cursor: "pointer" }}
+                            ></FaExclamationCircle>
+                          </Button>
+                        </OverlayTrigger>
+                      ))}
+                      {/* <p>
+                        <FaExclamationCircle />
+                      </p> */}
+                    </td>
+                    {list.items.map((item) => (
+                      <>
+                        {item.isAvailable && item.id ? (
+                          <td key={item?.id}>
+                            {item?.id === 1 && (
+                              <FaCheckCircle color="#173465" />
+                            )}
+                            {item?.id === 2 && (
+                              <FaCheckCircle color="#a25ddc" />
+                            )}
+                            {item?.id === 3 && (
+                              <FaCheckCircle color="#0085ff" />
+                            )}
+                            {item?.id === 4 && (
+                              <FaCheckCircle color="#00ca72" />
+                            )}
+                            {item?.id === 5 && (
+                              <FaCheckCircle color="#173465" />
+                            )}
+                          </td>
+                        ) : (
+                          <td key={item?.id}>{item?.title}</td>
+                        )}
+                      </>
+                    ))}
+                  </tr>
+                </>
+              ))}
+            </>
+          ))}
         </tbody>
       </table>
     </div>
