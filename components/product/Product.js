@@ -60,7 +60,6 @@ const Product = ({ navLinks, dispatch }) => {
                   <h4 className={`${productStyles.tertiaryTitle}`}>
                     {option.title}
                   </h4>
-                  <p>{option.description}</p>
                 </div>
               ))}
             </div>

@@ -60,7 +60,7 @@ const Resources = ({ navLinks, dispatch }) => {
                   <h4 className={`${resourcesStyles.tertiaryTitle}`}>
                     {option.title}
                   </h4>
-                  <p>{option.description}</p>
+                  {/* <p>{option.description}</p> */}
                 </div>
               ))}
             </div>
