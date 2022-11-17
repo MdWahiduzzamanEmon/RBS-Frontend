@@ -1,0 +1,146 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  color: rgb(23, 52, 101);
+}
+
+.compareHeadingContainer {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.compareHeading {
+  text-align: center;
+  /* font-size: 40px; */
+  font-weight: 700;
+}
+
+.compareShortDetails {
+  font-family: "Poppins";
+  font-weight: 400;
+  text-align: center;
+  /* font-size: 16px; */
+  /* font-weight: 400; */
+  width: 65%;
+  margin: 0 auto;
+}
+
+.compareTabs {
+  justify-content: center;
+  width: 100%;
+}
+
+.compareTabs li button {
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  flex: 1 0 20%;
+  /* color: #000000; */
+  padding: 7px;
+  font-size: 30px;
+  font-weight: 600;
+  /* height: 30px; */
+}
+
+.titleBlank {
+  background-color: transparent;
+}
+
+.titleCompetitor {
+  color: #727491;
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-weight: 400;
+  border-top: 1px solid rgba(204, 204, 204, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featuresContainer:last-child {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.featuresTitle {
+  font-size: clamp(12px, 2vw, 18px);
+  font-weight: 400;
+  width: 75%;
+}
+
+.featuresOwnCompany {
+  font-size: clamp(10px, 1.5vw, 14px);
+}
+
+.featuresOtherCompany {
+  font-size: clamp(10px, 1.5vw, 14px);
+}
+
+.buttonsContainer {
+  width: 22%;
+  margin: auto;
+}
+
+.comparisonShowButton {
+  width: clamp(150px, 22vw, 200px);
+  color: #fff;
+  font-size: clamp(11px, 1.6vw, 15px);
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 12px 12px;
+  background-color: #5a5ad5;
+  border: none;
+}
+.comparisonShowButton:hover {
+  background-color: #6262e4;
+}
+
+.primaryButtonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comparisonCollapseButton {
+  width: clamp(220px, 22vw, 290px);
+  color: #fff;
+  font-size: clamp(11px, 1.6vw, 15px);
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 12px 12px;
+  background-color: #5a5ad5;
+  border: none;
+}
+.comparisonCollapseButton:hover {
+  background-color: #6262e4;
+}
+
+@media screen and (max-width: 990px) {
+  .compareHeadingContainer {
+    width: 100%;
+  }
+
+  .compareShortDetails {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .compareHeadingContainer {
+    width: 100%;
+  }
+
+  .compareShortDetails {
+    width: 85%;
+  }
+}

@@ -12,7 +12,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams work in one place",
       features: {
         id: 1,
-        title: "Includes Individual, plus:",
+        title: "Individual plan includes:",
         lists: [
           {
             id: 1,
@@ -42,7 +42,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Individual, plus:",
+        title: "Includes Individual , plus:",
         lists: [
           {
             id: 1,
@@ -72,7 +72,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Individual, plus:",
+        title: "Includes Basic, plus:",
         lists: [
           {
             id: 1,
@@ -102,7 +102,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Individual, plus:",
+        title: "Includes Standard, plus:",
         lists: [
           {
             id: 1,
@@ -132,7 +132,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Individual, plus:",
+        title: "Includes Pro, plus:",
         lists: [
           {
             id: 1,
@@ -157,7 +157,7 @@ export const pricingDemoData = {
   completeFeatures: {
     id: 1,
     title: "Complete features",
-    category: [
+    categories: [
       {
         id: 1,
         title: "Individual",
@@ -179,36 +179,284 @@ export const pricingDemoData = {
         title: "Enterprise",
       },
     ],
-    subCategory: {
-      id: 1,
-      title: "Essentials",
-      lists: [
-        {
-          id: 1,
-          title: "Maximum number of seats",
-        },
-        {
-          id: 2,
-          title: "Upto 2 seats",
-        },
-        {
-          id: 3,
-          title: "Unlimited",
-        },
-        {
-          id: 4,
-          title: "Unlimited",
-        },
-        {
-          id: 5,
-          title: "Unlimited",
-        },
-        {
-          id: 6,
-          title: "Unlimited",
-        },
-      ],
-    },
+    subCategories: [
+      {
+        id: 1,
+        title: "Essentials",
+        lists: [
+          {
+            id: 1,
+            title: "Maximum number of seats",
+            items: [
+              {
+                id: 1,
+                title: "Upto 2 seats",
+              },
+              {
+                id: 2,
+                title: "Unlimited",
+              },
+              {
+                id: 3,
+                title: "Unlimited",
+              },
+              {
+                id: 4,
+                title: "Unlimited",
+              },
+              {
+                id: 5,
+                title: "Unlimited",
+              },
+            ],
+          },
+          {
+            id: 2,
+            title: "Items",
+            items: [
+              {
+                id: 1,
+                title: "Up to 1000",
+              },
+              {
+                id: 2,
+                title: "Unlimited",
+              },
+              {
+                id: 3,
+                title: "Unlimited",
+              },
+              {
+                id: 4,
+                title: "Unlimited",
+              },
+              {
+                id: 5,
+                title: "Unlimited",
+              },
+            ],
+          },
+          {
+            id: 3,
+            title: "File storage",
+            items: [
+              {
+                id: 1,
+                title: "500 MB",
+              },
+              {
+                id: 2,
+                title: "5 GB",
+              },
+              {
+                id: 3,
+                title: "20 GB",
+              },
+              {
+                id: 4,
+                title: "100 GB",
+              },
+              {
+                id: 5,
+                title: "1000 GB",
+              },
+            ],
+          },
+          {
+            id: 4,
+            title: "Activity log",
+            items: [
+              {
+                id: 1,
+                title: "1 week",
+              },
+              {
+                id: 2,
+                title: "1 week",
+              },
+              {
+                id: 3,
+                title: "6 months",
+              },
+              {
+                id: 4,
+                title: "1 year",
+              },
+              {
+                id: 5,
+                title: "5 years",
+              },
+            ],
+          },
+          {
+            id: 5,
+            title: "Unlimited boards",
+            items: [
+              {
+                id: 1,
+                isAvailable: false,
+              },
+              {
+                id: 2,
+                title: "Unlimited",
+                isAvailable: true,
+              },
+              {
+                id: 3,
+                title: "Unlimited",
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                title: "Unlimited",
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                title: "Unlimited",
+                isAvailable: true,
+              },
+            ],
+          },
+          {
+            id: 6,
+            title: "Unlimited docs",
+            items: [
+              {
+                id: 1,
+                isAvailable: true,
+              },
+              {
+                id: 2,
+                isAvailable: true,
+              },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                isAvailable: true,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Collaboration",
+        lists: [
+          {
+            id: 1,
+            title: "Embedded documents",
+            items: [
+              {
+                id: 1,
+                isAvailable: true,
+              },
+              {
+                id: 2,
+                isAvailable: true,
+              },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                isAvailable: true,
+              },
+            ],
+          },
+          {
+            id: 2,
+            title: "Whiteboard collaboration",
+            items: [
+              {
+                id: 1,
+                isAvailable: true,
+              },
+              {
+                id: 2,
+                isAvailable: true,
+              },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                isAvailable: true,
+              },
+            ],
+          },
+          {
+            id: 3,
+            title: "Updates section",
+            items: [
+              {
+                id: 1,
+                isAvailable: true,
+              },
+              {
+                id: 2,
+                isAvailable: true,
+              },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                isAvailable: true,
+              },
+            ],
+          },
+          {
+            id: 4,
+            title: "Zoom integration",
+            items: [
+              {
+                id: 1,
+                isAvailable: false,
+              },
+              {
+                id: 2,
+                isAvailable: false,
+              },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              {
+                id: 5,
+                isAvailable: true,
+              },
+            ],
+          },
+        ],
+      },
+    ],
   },
 };
 

@@ -1,20 +1,20 @@
-.navigation {
+/* .navigation {
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);
-}
+} */
 
-.navDropdown {
-  /* max-width: 100%; */
+/* .navDropdown {
   position: unset !important;
   margin-left: 20px !important;
-}
+} */
 
-.innerNavItemsContainer {
+/* .innerNavItemsContainer {
   width: 1200px;
-}
+} */
 
 .navbarContainer {
   background: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -35,26 +35,29 @@
 }
 
 .navbarBrand {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   color: #173465;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-right: 40px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
 .navbarBrandText {
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .navbarMainItems {
   display: inline-block;
   color: #173465;
-  font-size: clamp(15px, 1.5vw, 20px);
+  font-size: clamp(13px, 1.1vw, 20px);
   /* font-size: 20px; */
+  font-weight: 400;
   margin-bottom: 0;
   cursor: pointer;
   margin-right: 15px;
@@ -72,7 +75,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 46px;
+  top: 42px;
   padding: 2px;
   width: 100%;
   background-color: #2a75d1;
@@ -85,8 +88,8 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 46px;
-  padding: 1px;
+  top: 42px;
+  padding: 2px;
   width: 0%;
   /* background-color: #2a75d1; */
   bottom: 0;
@@ -105,7 +108,7 @@
   position: absolute;
   /* bottom: 0; */
   /* left: 7px; */
-  top: 46px;
+  top: 42px;
   padding: 2px;
   width: 100%;
   /* margin-right: 100%; */
@@ -138,7 +141,7 @@
   top: 70px;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 1000;
 }
 .navbarItemsInnerContainer {
   height: calc(100vh - 70px);
@@ -151,4 +154,68 @@
   /* height: calc(100vh - 70px); */
 
   background: #212936;
+}
+
+.primaryButton {
+  width: 90px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 6px 8px;
+  margin-right: 5px;
+  background-color: #5a5ad5;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.primaryButton:hover {
+  background-color: #7373de;
+}
+
+.marqueeText {
+  font-family: "Poppins", sans-serif;
+  /* z-index: 5000; */
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .navbarItemsInnerContainer {
+    /* height: calc(100vh - 70px);
+    overflow-y: auto;
+    display: grid; */
+    grid-template-columns: 1fr;
+    background: #fff;
+  }
+
+  /* .navbarMainItems {
+    margin-right: 15px;
+  } */
+
+  .navbarMainItems::after {
+    content: none;
+  }
+
+  .active::before {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .navbarBrand {
+    font-size: 30px;
+  }
+  .navbarMainItems {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+  .primaryButton {
+    width: 60px;
+    color: #fff;
+    font-size: 10px;
+  }
 }

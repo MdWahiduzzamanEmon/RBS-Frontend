@@ -5,6 +5,7 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import home8thStyles from "./Home8th.module.css";
 import Image from "next/image";
 import Aos from "aos";
+import communicationImage from "../../../public/image/online-communication.png";
 
 const Home8th = ({ home8thData }) => {
   React.useEffect(() => {
@@ -24,13 +25,17 @@ const Home8th = ({ home8thData }) => {
         display: home8thData?.isShow ? "block" : "none",
         padding: "50px 0",
         backgroundColor: "rgb(226, 246, 254)",
+        fontFamily: "Poppins",
       }}
     >
-      <div className=" container">
+      <div className=" container-lg">
         {home8thData?.items?.map((data, index) => (
-          <div key={index} className="row row-cols-1 row-cols-md-2 ">
-            <div
-              className="position-relative mb-lg-0  d-lg-block d-none"
+          <div
+            key={index}
+            className="row row-cols-1 row-cols-md-1 row-cols-lg-2 p-3"
+          >
+            {/* <div
+              className="position-relative mb-lg-0 d-lg-block d-none"
               data-aos="zoom-out-up"
             >
               <div
@@ -97,7 +102,7 @@ const Home8th = ({ home8thData }) => {
                   layout="responsive"
                 />
               </div>
-            </div>
+            </div> */}
             <div data-aos="zoom-in-right">
               <h1 className="fs-2 fw-bold">{data.title}</h1>
               <p className="fs-6">{data.titleDescription}</p>
@@ -128,6 +133,18 @@ const Home8th = ({ home8thData }) => {
                 </h1>
                 <p className="fs-6">{data.subTitleDescription3}</p>
               </div>
+            </div>
+            <div data-aos="zoom-in-right">
+              <Image
+                key={data?.id}
+                src={communicationImage}
+                alt=" "
+                objectFit="contain"
+                width={500}
+                height={450}
+                layout="responsive"
+                className="rounded-5 p-2"
+              />
             </div>
           </div>
         ))}

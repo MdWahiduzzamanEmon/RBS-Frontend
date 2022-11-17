@@ -14,9 +14,9 @@ export const about2ndDemoData = {
     {
       id: 1,
       isShow: true,
-      title: "We are RBS",
+      title: "We are Vitlous",
       description:
-        "RBS Tech Limited is a software and IT solution provider based in Dhaka, Bangladesh. Our company is made up of well experienced employees. We have been in the IT sector for over 2 years. We design beautiful online productivity and creativity tools that users like to use.",
+        "Vitlous is a software and IT solution provider based in Dhaka, Bangladesh. Our company is made up of well experienced employees. We have been in the IT sector for over 2 years. We design beautiful online productivity and creativity tools that users like to use.",
     },
   ],
   subSection: {

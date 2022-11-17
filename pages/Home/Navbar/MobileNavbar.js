@@ -29,7 +29,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
         <div>
           <Link href="/">
             {/* {" "} */}
-            <h1>RBS Tech</h1>
+            <h1>Vitlous</h1>
           </Link>
         </div>
         <div>
@@ -60,7 +60,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
       </div>
       {state.mobileNavbarOpen && (
         <div>
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="0" style={{ zIndex: "2000" }}>
             {navLinks.map((navLink) => (
               <Accordion.Item eventKey={navLink.id} key={navLink.id}>
                 {navLink.href ? (
@@ -84,14 +84,17 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                     {navLink.text}
                   </Accordion.Header>
                 )}
+
                 {!navLink.href && (
                   <Accordion.Body style={{ padding: "0px" }}>
                     <div className={`${styles.navbarItemsInnerContainer}`}>
                       <div>
                         {" "}
-                        {state?.openProduct && <Product navLinks={navLinks} />}
+                        {state?.openProduct && (
+                          <Product navLinks={navLinks} dispatch={dispatch} />
+                        )}
                         {state?.openResources && (
-                          <Resources navLinks={navLinks} />
+                          <Resources navLinks={navLinks} dispatch={dispatch} />
                         )}
                       </div>
                       <div className={`${styles.navbarItemsContainerRight}`}>
@@ -115,6 +118,10 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item> */}
+            <div className={`${styles.buttonsContainer}`}>
+              <button className={`${styles.primaryButton}`}>Log in</button>
+              <button className={`${styles.primaryButton}`}>Sign up</button>
+            </div>
           </Accordion>
         </div>
       )}

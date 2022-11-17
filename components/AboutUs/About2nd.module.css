@@ -1,12 +1,17 @@
-.description{
-    width: 50%;
-    margin: auto;
-
+.description {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
 }
 
-@media (max-width:600px){
-   .description {
-    width: 100%;
-   }
-}
+/* @media (max-width: 900px) {
+  .description {
+    width: 80%;
+  }
+} */
 
+@media (max-width: 600px) {
+  .description {
+    width: 90%;
+  }
+}

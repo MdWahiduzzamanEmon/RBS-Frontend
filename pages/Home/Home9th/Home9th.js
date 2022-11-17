@@ -17,17 +17,14 @@ const Home9th = ({ home9thData }) => {
   return (
     <section
       style={{
+        // background: "rgb(226, 246, 254)",
         backgroundImage:
-          "linear-gradient(45deg, rgb(249, 236, 248) 5%, rgb(226, 246, 254) 100%)",
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "50px 0px",
+        fontFamily: "Poppins",
       }}
     >
-      <div
-        className=" container"
-        style={{
-          fontFamily: "Poppins",
-        }}
-      >
+      <div className=" container">
         <div>
           <h1
             className="fs-2 text-center fw-bold  m-auto"
@@ -38,7 +35,7 @@ const Home9th = ({ home9thData }) => {
           </h1>
           <div className="my-5 gap-5">
             <Row className="d-flex justify-content-md-between">
-              <Col xs={12} md={5}>
+              <Col xs={12} md={12} lg={5}>
                 {home9thData?.items?.map((data, index) => (
                   <div key={data.id}>
                     <Col
@@ -83,7 +80,7 @@ const Home9th = ({ home9thData }) => {
                   </div>
                 ))}
               </Col>
-              <Col xs={12} md={7}>
+              <Col xs={12} md={12} lg={7}>
                 <Home9thSlider sliderData={home9thData?.pics} />
               </Col>
             </Row>

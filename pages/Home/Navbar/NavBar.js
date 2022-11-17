@@ -72,30 +72,6 @@ const NavBar = () => {
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
-            {
-              id: 1,
-              title: "Project Management",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 2,
-              title: "IT & Ops",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 3,
-              title: "Marketing",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
-            {
-              id: 4,
-              title: "Construction",
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-            },
           ],
         },
       ],
@@ -141,25 +117,25 @@ const NavBar = () => {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 1,
+              id: 5,
               title: "Project Management",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 2,
+              id: 6,
               title: "IT & Ops",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 3,
+              id: 7,
               title: "Marketing",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
             },
             {
-              id: 4,
+              id: 8,
               title: "Construction",
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
@@ -180,6 +156,18 @@ const NavBar = () => {
       href: "/watchDemo",
       items: {},
     },
+    // {
+    //   id: 7,
+    //   text: "Log in",
+    //   href: "/login",
+    //   type: "button",
+    // },
+    // {
+    //   id: 8,
+    //   text: "Sign up",
+    //   href: "/signup",
+    //   type: "button",
+    // },
   ];
 
   const openNavElements = (e) => {
@@ -232,12 +220,8 @@ const NavBar = () => {
       console.log("No match");
     }
   };
-  console.log("open resources", state.openResources);
-  console.log("open pricing", state.openPricing);
-  console.log("innerText", state.showActiveInnerText);
 
   const router = useRouter();
-  console.log(router.pathname);
 
   const [stickyClass, setStickyClass] = React.useState("");
 
@@ -265,12 +249,17 @@ const NavBar = () => {
     <>
       {width > breakpoint ? (
         <div>
-          <div>
-            <div
-              className={`${navStyles.navbarContainer} ${
+          <div
+            style={{
+              background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%)",
+            }}
+          >
+            {/* ${
                 (state?.showActiveInnerText && state.openProduct) ||
                 (state?.showActiveInnerText && state.openResources)
-              }`}
+              } */}
+            <div
+              className={`${navStyles.navbarContainer}`}
               style={{
                 position:
                   state?.openProduct || state?.openResources
@@ -278,115 +267,125 @@ const NavBar = () => {
                     : "relative",
               }}
             >
-              <div
-                className={`${navStyles.navbarBrand}`}
-                onClick={() => {
-                  dispatch({
-                    type: "CLOSE_NAVBAR",
-                    payload: {
-                      openProduct: false,
-                      openResources: false,
-                      openPricing: false,
-                      openWatchADemo: false,
-                      innerText: "",
-                    },
-                  });
-                }}
-              >
-                <Link href="/">
-                  {/* {" "} */}
-                  <p className={`${navStyles.navbarBrandText}`}>RBS Tech</p>
-                </Link>
-              </div>
-              {navLinks.map((navLink) => (
-                <>
-                  {navLink.href ? (
-                    <Link href={navLink.href}>
-                      <p
-                        key={navLink.id}
-                        className={`${navStyles.navbarMainItems} ${
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openProduct) ||
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openResources)
-                            ? // (navLink.text === state?.showActiveInnerText &&
+              <div className="container-lg d-flex align-items-center justify-content-lg-between">
+                <div
+                  className={`${navStyles.navbarBrand}`}
+                  onClick={() => {
+                    dispatch({
+                      type: "CLOSE_NAVBAR",
+                      payload: {
+                        openProduct: false,
+                        openResources: false,
+                        openPricing: false,
+                        openWatchADemo: false,
+                        innerText: "",
+                      },
+                    });
+                  }}
+                >
+                  <Link href="/">
+                    {/* {" "} */}
+                    <p className={`${navStyles.navbarBrandText}`}>Vitlous</p>
+                  </Link>
+                </div>
+                <div>
+                  {navLinks.map((navLink) => (
+                    <>
+                      {navLink.href ? (
+                        <Link href={navLink.href} key={navLink.id}>
+                          <p
+                            className={`${navStyles.navbarMainItems} ${
+                              (navLink.text === state?.showActiveInnerText &&
+                                state.openProduct) ||
+                              (navLink.text === state?.showActiveInnerText &&
+                                state.openResources)
+                                ? `${navStyles.active}`
+                                : ""
+                              // (navLink.text === state?.showActiveInnerText &&
                               //   state.openPricing) ||
                               // (navLink.text === state?.showActiveInnerText &&
                               //   state.openWatchADemo)
                               // navLink.href === router.pathname ||
                               // navLink.href === router.pathname
-                              `${navStyles.active}`
-                            : ""
-                        }`}
-                        onClick={(e) => {
-                          openNavElements(e);
-                        }}
-                        // style={{
-                        //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                        // }}
-                      >
-                        {/* {faChevronUp} */}
-                        {/* <FaChevronUp style={{ color: "green" }} />  */}
-                        {navLink.text}
-                        {/* <FaChevronUp style={{ color: "green" }} /> */}
-                      </p>
-                    </Link>
-                  ) : (
-                    <p
-                      key={navLink.id}
-                      className={`${navStyles.navbarMainItems} ${
-                        (navLink.text === state?.showActiveInnerText &&
-                          state.openProduct) ||
-                        (navLink.text === state?.showActiveInnerText &&
-                          state.openResources)
-                          ? // ||
-                            // (navLink.text === state?.showActiveInnerText &&
-                            //   state.openPricing) ||
-                            // (navLink.text === state?.showActiveInnerText &&
-                            //   state.openWatchADemo)
-                            // navLink.href === router.pathname ||
-                            // navLink.href === router.pathname
-                            `${navStyles.active}`
-                          : ""
-                      }`}
-                      onClick={(e) => {
-                        openNavElements(e);
-                      }}
-                      // style={{
-                      //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                      // }}
-                    >
-                      {navLink.text}
-                      {/* {navLink.icon} */}
-                      {(navLink.text === state?.showActiveInnerText &&
-                        state.openProduct) ||
-                      (navLink.text === state?.showActiveInnerText &&
-                        state.openResources) ? (
-                        <FaChevronDown
-                          style={{
-                            fontSize: "12px",
-                            marginLeft: "3px",
-                            fontWeight: "normal",
-                            opacity: ".5",
-                          }}
-                          className={`${navStyles.navChevronIcons}`}
-                        />
+                            }`}
+                            onClick={(e) => {
+                              openNavElements(e);
+                            }}
+                            // style={{
+                            //   borderBottom: state?.isActive ? {navStyles.active} : "",
+                            // }}
+                          >
+                            {/* {faChevronUp} */}
+                            {/* <FaChevronUp style={{ color: "green" }} />  */}
+                            {navLink.text}
+                            {/* <FaChevronUp style={{ color: "green" }} /> */}
+                          </p>
+                        </Link>
                       ) : (
-                        <FaChevronUp
-                          style={{
-                            fontSize: "12px",
-                            marginLeft: "3px",
-                            opacity: ".5",
+                        <p
+                          key={navLink.id}
+                          className={`${navStyles.navbarMainItems} ${
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openProduct) ||
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openResources)
+                              ? // ||
+                                // (navLink.text === state?.showActiveInnerText &&
+                                //   state.openPricing) ||
+                                // (navLink.text === state?.showActiveInnerText &&
+                                //   state.openWatchADemo)
+                                // navLink.href === router.pathname ||
+                                // navLink.href === router.pathname
+                                `${navStyles.active}`
+                              : ""
+                          }`}
+                          onClick={(e) => {
+                            openNavElements(e);
                           }}
-                          className={`${navStyles.navChevronIcons}`}
-                        />
+                          // style={{
+                          //   borderBottom: state?.isActive ? {navStyles.active} : "",
+                          // }}
+                        >
+                          {navLink.text}
+                          {/* {navLink.icon} */}
+                          {(navLink.text === state?.showActiveInnerText &&
+                            state.openProduct) ||
+                          (navLink.text === state?.showActiveInnerText &&
+                            state.openResources) ? (
+                            <FaChevronDown
+                              style={{
+                                fontSize: "12px",
+                                marginLeft: "3px",
+                                fontWeight: "normal",
+                                opacity: ".5",
+                              }}
+                              className={`${navStyles.navChevronIcons}`}
+                            />
+                          ) : (
+                            <FaChevronUp
+                              style={{
+                                fontSize: "12px",
+                                marginLeft: "3px",
+                                opacity: ".5",
+                              }}
+                              className={`${navStyles.navChevronIcons}`}
+                            />
+                          )}
+                          {/* <FaChevronUp style={{ color: "green" }} /> */}
+                        </p>
                       )}
-                      {/* <FaChevronUp style={{ color: "green" }} /> */}
-                    </p>
-                  )}
-                </>
-              ))}
-
+                    </>
+                  ))}
+                </div>
+                <div className="">
+                  <button className={`${navStyles.primaryButton}`}>
+                    Log in
+                  </button>
+                  <button className={`${navStyles.primaryButton}`}>
+                    Sign up
+                  </button>
+                </div>
+              </div>
               {/* <Product></Product> */}
             </div>
             {(state?.openProduct || state?.openResources) && (

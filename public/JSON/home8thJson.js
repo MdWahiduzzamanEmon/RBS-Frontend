@@ -5,7 +5,7 @@ export const home8thJson = {
     {
       id: 1,
       isShow: true,
-      title: "Features for Communication.",
+      title: "Features for Communication",
       titleDescription:
         "Real-time chat channels help to streamline team collaboration. To keep your team moving on action items, use @mentions to add anybody to work chats and assign comments.",
       subTitle1: "Notifications",

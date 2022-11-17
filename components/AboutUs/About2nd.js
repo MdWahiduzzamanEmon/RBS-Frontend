@@ -37,13 +37,13 @@ const Home2nd = ({ about2ndData }) => {
           <h1 className="text-center fs-2 fw-bold p-5">
             {about2ndData?.subSection?.title}
           </h1>
-          <div className="row row-cols-1 row-cols-md-4 g-2">
+          <div className="row row-cols-2 row-cols-md-4 g-2">
             {about2ndData?.subSection?.items?.map((data, index) => (
               <div key={data.id}>
                 <div>
                   <Card
                     className=" card shadow-lg rounded border-0 "
-                    style={{ height: "280px" }}
+                    style={{ height: "350px" }}
                   >
                     <div className="d-flex justify-content-center">
                       <FontAwesomeIcon

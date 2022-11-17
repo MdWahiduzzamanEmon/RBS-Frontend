@@ -66,14 +66,13 @@ export default function Home() {
     });
   }, []);
 
-  console.log(miniPricingData);
-
   return (
     <div
       style={{
         color: "rgb(23, 52, 101)",
-        backgroundImage:
-          "linearGradient(90deg, rgb(226, 246, 254) 0%, rgb(249, 236, 248) 100% )",
+        // backgroundImage:
+        //   "linearGradient(90deg, rgb(226, 246, 254) 0%, rgb(249, 236, 248) 100% )",
+        background: "linear-gradient(to right, #24c6dc, #514a9d)",
       }}
     >
       <HomePage
@@ -91,6 +90,7 @@ export default function Home() {
         home10thData={home10thData}
         purchaseCardData={purchaseCardData}
         miniPricingData={miniPricingData}
+        featuresData={home2ndData}
       />
     </div>
   );

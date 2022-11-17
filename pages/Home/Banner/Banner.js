@@ -35,6 +35,33 @@ const Banner = ({ bannerData, bannerImagesData }) => {
       // className="container"
     >
       {/* <NavBar></NavBar> */}
+      {/* marquee text */}
+      {/* <div className="container">
+        <div
+          style={{
+            backgroundColor: "#03A8EE",
+            color: "#fff",
+          }}
+          className={`${bannerStyles.marqueeText} shadow-lg`}
+        >
+          <p
+            style={{
+              padding: "5px",
+              marginTop: "5px",
+              marginBottom: "5px",
+              // display: "flex",
+              // alignItems: "center",
+              // justifyContent: "center",
+            }}
+          >
+            {marqueeTextDemo?.map((data) => (
+              <>
+                <small>{data.text}</small>
+              </>
+            ))}
+          </p>
+        </div>
+      </div> */}
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
@@ -47,32 +74,34 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         {/* marquee text */}
         <div
           style={{
-            backgroundColor: "#F3F3F3",
-            color: "#000",
+            backgroundColor: "#03A8EE",
+            color: "#fff",
           }}
-          className="shadow-lg"
+          className="container"
         >
-          <p
-            style={{
-              padding: "10px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            {marqueeTextDemo?.map((data) => (
-              <>
-                <FontAwesomeIcon icon={faCircle} size="2xs" color="red" />{" "}
-                <small className="ms-2"> {data.text}</small>
-              </>
-            ))}
-          </p>
+          <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
+            <p
+              style={{
+                // padding: "10px",
+                marginTop: "5px",
+                marginBottom: "5px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {marqueeTextDemo?.map((data) => (
+                <>
+                  <small>{data.text}</small>
+                </>
+              ))}
+            </p>
+          </div>
         </div>
-        <div
-          className={` ${bannerStyles.bannerContent} container mx-auto  pt-5`}
-        >
-          <Row className="d-flex ">
-            <Col md={5}>
+        {/* <div className="d-flex align-items-center"> */}
+        <div className={`${bannerStyles.bannerContent} container `}>
+          <Row className="d-flex">
+            <Col sm={12} md={12} lg={5}>
               {bannerData?.isShow && (
                 <div>
                   {bannerData?.items?.map((item, index) => (
@@ -88,7 +117,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                         {item?.title}
                       </h1>
                       <div style={{ fontSize: "18px" }}>
-                        <p className=" " data-aos="fade-left">
+                        <p className=" " data-aos="fade-up">
                           <small>{item?.primaryDescription}</small>
                         </p>
                         <p className="" data-aos="fade-right">
@@ -103,7 +132,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                 </div>
               )}
             </Col>
-            <Col md={7}>
+            <Col sm={12} md={12} lg={7}>
               {/* {bannerImagesData?.images?.map((data, index) => (
                 <Image
                   key={data.id}
@@ -120,6 +149,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           </Row>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };

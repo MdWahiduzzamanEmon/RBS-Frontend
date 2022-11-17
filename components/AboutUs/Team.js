@@ -25,11 +25,11 @@ const Team = ({ teamData }) => {
           </div>
         ))}
 
-        <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="row row-cols-sm-2 row-cols-md-3 g-4">
           {teamData?.cardItem?.items?.slice(0, 3).map((card) => (
             <div key={card.id}>
               <div>
-                <Card className=" card shadow-lg rounded w-sm-50">
+                <Card className=" card shadow-lg rounded">
                   <Image
                     className="img-fluid rounded-top"
                     src={card.img}

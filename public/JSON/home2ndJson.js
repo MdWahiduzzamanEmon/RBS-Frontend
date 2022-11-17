@@ -23,7 +23,8 @@ export const home2ndJson = {
         isShow: true,
         title: "Very informative Dashboard",
         img: "/images.jpg",
-        // description: "Very informative Dashboard",
+        description:
+          "Use Timeline to plan projects right the time. how the pieces fit together.Use Timeline to plan projects right the time. how the pieces fit together.",
       },
       {
         id: 2,
