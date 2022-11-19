@@ -1,6 +1,6 @@
 import Image from "next/image";
-import bannerImage4 from "../../../public/bannerImage4.jpg";
-import bannerImageVector from "../../../public/banner/backgroundVector.png";
+// import bannerImageVector from "../../../public/banner/backgroundVector.png";
+import bannerImage from "../../../public/banner/bannerImage.jpeg";
 import NavBar from "../Navbar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -65,7 +65,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
-          backgroundImage: `url(${bannerImageVector.src})`,
+          backgroundImage: `url(${bannerImage.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
@@ -75,6 +75,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         <div
           style={{
             backgroundColor: "#03A8EE",
+            // backgroundColor: "#161515",
             color: "#fff",
           }}
           className="container"

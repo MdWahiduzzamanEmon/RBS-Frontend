@@ -36,7 +36,7 @@
     rgb(249, 236, 248) 100%
   ); */
   color: #000;
-  font-size: 1.5rem;
+  /* font-size: 12px; */
 }
 
 .flipCardBack {
@@ -103,13 +103,14 @@
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 1.9rem;
+  padding: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* outline: 1px solid transparent; */
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  font-size: 12px;
 }
 
 .flipCardBack {
@@ -158,6 +159,7 @@
 
 .flipCardInner span {
   font-size: 12px;
+  line-height: 15px;
   font-weight: 300;
 }
 

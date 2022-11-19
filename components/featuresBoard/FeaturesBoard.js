@@ -45,9 +45,11 @@ const FeaturesBoard = ({ featuresData }) => {
                 >
                   <div className={`${styles.flipCardInner}`}>
                     <div className="card bg-transparent border-0 text-center">
-                      <div className="card-body">
+                      <div>
                         <i className="icon-line2-camera h1"></i>
-                        <h3 className="fs-6">{card.title}</h3>
+                        <h3 className="" style={{ fontSize: "15px" }}>
+                          {card.title}
+                        </h3>
                         {/* <p className="card-text fw-normal">
                         With supporting text below as a natural lead-in to
                         additional content.
