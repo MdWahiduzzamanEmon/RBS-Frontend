@@ -74,7 +74,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         {/* marquee text */}
         <div
           style={{
-            backgroundColor: "#03A8EE",
+            // backgroundColor: "#03A8EE",
             // backgroundColor: "#161515",
             color: "#fff",
           }}
