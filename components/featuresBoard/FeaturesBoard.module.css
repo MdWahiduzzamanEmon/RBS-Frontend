@@ -27,7 +27,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   width: 100%;
-  height: 130px;
+  height: 135px;
   /* height: 280px; */
   border-radius: 6px;
   /* background: linear-gradient(
@@ -69,7 +69,7 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 130px;
+  height: 135px;
   content: "";
   display: block;
   opacity: 0.6;
@@ -103,7 +103,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1.9rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* outline: 1px solid transparent; */
@@ -157,8 +157,7 @@
 }
 
 .flipCardInner span {
-  font-size: 15px;
-  /* line-height: 20px; */
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -166,6 +165,8 @@
   position: relative;
   font-size: 12px;
   text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: -0.8px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.7);
 }
