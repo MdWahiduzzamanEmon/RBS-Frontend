@@ -92,6 +92,7 @@ export const footerDemoData = {
         {
           url: "/",
           item: "Intuitive Dashboard",
+          url: "/product",
         },
         {
           url: "/",

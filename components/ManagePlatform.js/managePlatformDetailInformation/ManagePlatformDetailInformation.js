@@ -1,15 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./ManagePlatformDetailInformation.module.css";
+import cImage from "../../../public/image/construction2.png";
 
 const ManagePlatformDetailInformation = ({ platformInformation }) => {
+  const { pics } = platformInformation;
   return (
     <section>
       <div className={`${styles.container}`}>
         <div className={`${styles.imageContainer}`}>
           <Image
-            src={platformInformation.image}
-            alt="image"
+            src={pics}
+            alt=""
             width={500}
             height={300}
             layout="responsive"

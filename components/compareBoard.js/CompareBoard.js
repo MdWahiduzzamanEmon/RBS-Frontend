@@ -23,7 +23,9 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title: "See challenges before they cause problems",
+            title1: "Board view",
+            title2: "Portfolio Management",
+            title3: "Project time budget",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -66,7 +68,9 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title: "Full visibility into performance and profitability",
+            title1: "Burndown reporting",
+            title2: "Utilization reports",
+            title3: "Workload resource management",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -109,7 +113,9 @@ const CompareBoard = () => {
           },
           {
             id: 3,
-            title: "Manage financial obligations",
+            title1: "Billing and invoicing",
+            title2: "Resource scheduling",
+            title3: "Budgeting",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -152,7 +158,9 @@ const CompareBoard = () => {
           },
           {
             id: 4,
-            title: "Manage people",
+            title1: "Dependencies",
+            title2: "Time tracking",
+            title3: "Workload",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -195,7 +203,9 @@ const CompareBoard = () => {
           },
           {
             id: 5,
-            title: "Protect your data and support your team",
+            title1: "2FA",
+            title2: "Custom domain with SSL",
+            title3: "Phone, live chat, and email support",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -238,7 +248,9 @@ const CompareBoard = () => {
           },
           {
             id: 6,
-            title: "Create a Dependencies",
+            title1: "Use intake forms",
+            title2: "Add unlimited clients",
+            title3: "Custom branding",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -292,7 +304,9 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title: "Manage complex client work projects",
+            title1: "Assign tasks to more than one person",
+            title2: "Use project tags",
+            title3: "Set a project time budget",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -335,7 +349,9 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title: "Get visibility into performance and profitability",
+            title1: "Burndown reporting",
+            title2: "Utilization reports",
+            title3: "Workload resource management",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -378,7 +394,9 @@ const CompareBoard = () => {
           },
           {
             id: 3,
-            title: "Manage financial obligations",
+            title1: "Billing and invoicing",
+            title2: "Resource scheduling",
+            title3: "Budgeting",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -421,7 +439,9 @@ const CompareBoard = () => {
           },
           {
             id: 4,
-            title: "Manage people",
+            title1: "Dependencies",
+            title2: "Time tracking",
+            title3: "Workload",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -464,7 +484,9 @@ const CompareBoard = () => {
           },
           {
             id: 5,
-            title: "Protect your data and support your team",
+            title1: "2FA",
+            title2: "Custom domain with SSL",
+            title3: "Phone, live chat, and email support",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -507,7 +529,9 @@ const CompareBoard = () => {
           },
           {
             id: 6,
-            title: "Create a great client experience",
+            title1: "Custom branding",
+            title2: "Add companies",
+            title3: "See what’s coming next",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -561,7 +585,9 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title: "See challenges before they cause problems",
+            title1: "Board view",
+            title2: "Portfolio",
+            title3: "Project time budget",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -604,7 +630,9 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title: "Full visibility into performance and profitability",
+            title1: "Burndown reporting",
+            title2: "Utilization reports",
+            title3: "Workload resource management",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -647,7 +675,9 @@ const CompareBoard = () => {
           },
           {
             id: 3,
-            title: "Manage financial obligations",
+            title1: "Billing and invoicing",
+            title2: "Resource scheduling",
+            title3: "Budgeting",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -690,7 +720,9 @@ const CompareBoard = () => {
           },
           {
             id: 4,
-            title: "Manage people",
+            title1: "Dependencies",
+            title2: "Time tracking",
+            title3: "Workload",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -733,7 +765,9 @@ const CompareBoard = () => {
           },
           {
             id: 5,
-            title: "Protect your data and support your team",
+            title1: "2FA",
+            title2: "Custom domain with SSL",
+            title3: "Phone, live chat, and email support",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -776,7 +810,9 @@ const CompareBoard = () => {
           },
           {
             id: 6,
-            title: "Create a Dependencies",
+            title1: "Use intake forms",
+            title2: "Add unlimited clients",
+            title3: "Custom branding",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -830,7 +866,9 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title: "See challenges before they cause problems",
+            title1: "Board view",
+            title2: "Portfolio Management",
+            title3: "Project time budget",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -873,7 +911,9 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title: "Full visibility into performance and profitability",
+            title1: "Critical path",
+            title2: "Utilization reports",
+            title3: "Workload resource management",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -916,7 +956,9 @@ const CompareBoard = () => {
           },
           {
             id: 3,
-            title: "A complete suite of tools",
+            title1: "Integrated team chat",
+            title2: "Easy document management",
+            title3: "Built-in CRM",
             company1: {
               id: 1,
               title: "Vitlous",
@@ -1018,7 +1060,9 @@ const CompareBoard = () => {
                             key={challenge.id}
                           >
                             <div className={`${styles.featuresTitle}`}>
-                              <p>{challenge.title}</p>
+                              <p>{challenge.title1}</p>
+                              <p>{challenge.title2}</p>
+                              <p>{challenge.title3}</p>
                             </div>
                             <div className={`${styles.featuresOwnCompany}`}>
                               {challenge?.company1?.items?.map((item) => (
@@ -1087,7 +1131,9 @@ const CompareBoard = () => {
                             key={challenge.id}
                           >
                             <div className={`${styles.featuresTitle}`}>
-                              <p>{challenge.title}</p>
+                              <p>{challenge.title1}</p>
+                              <p>{challenge.title2}</p>
+                              <p>{challenge.title3}</p>
                             </div>
                             <div className={`${styles.featuresOwnCompany}`}>
                               {challenge?.company1?.items?.map((item) => (

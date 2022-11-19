@@ -11,6 +11,7 @@ const PricingMain = () => {
   React.useEffect(() => {
     axios.get("/api/pricing/pricingapi").then((res) => {
       setPricingData(res.data);
+      console.log(pricingData);
     });
     axios.get("/api/pricing/policyapi").then((res) => {
       setPolicyData(res.data);

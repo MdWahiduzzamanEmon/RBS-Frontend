@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import React from "react";
 
-const Home4th = ({ home4thData }) => {
+const FeatureWithRightImage = () => {
   return (
     <div
       className=""
@@ -24,8 +24,8 @@ const Home4th = ({ home4thData }) => {
           {home4thData?.items?.map((data, index) => (
             <Image
               key={data?.id}
-              src={data?.img}
-              alt="project management image"
+              src={data.img}
+              alt=" "
               objectFit="cover"
               width={500}
               height={400}
@@ -105,4 +105,4 @@ const Home4th = ({ home4thData }) => {
   );
 };
 
-export default Home4th;
+export default FeatureWithRightImage;

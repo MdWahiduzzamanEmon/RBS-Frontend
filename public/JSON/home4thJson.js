@@ -1,4 +1,5 @@
-import projectManagementImage from "../../public/image/project-management.png";
+import projectManagementImage from "../../public/pm.png";
+
 export const home4thJson = {
   id: 1,
   isShow: true,
@@ -16,7 +17,7 @@ export const home4thJson = {
         "Specify requirements in tasks, collaborate with others, and link to resources.",
       subTitle3: "Expense",
       subTitleDescription3: "Keep track of your expenses and budget.",
-      img: projectManagementImage,
+      img: "/pm.png",
     },
   ],
 };

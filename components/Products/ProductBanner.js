@@ -9,9 +9,7 @@ const ProductBanner = ({ productBannerData }) => {
         backgroundColor: "rgb(226, 246, 254)",
       }}
     >
-      <div>
-        <NavBar />
-      </div>
+      <div>{/* <NavBar /> */}</div>
       <div
         className=" "
         style={{ display: productBannerData.isShow ? "block" : "none" }}
