@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import footerCommonStyles from "./Footer.module.css";
 
 const FooterCommon = ({ footerDetails }) => {
+  const router = useRouter();
+  console.log(router);
   return (
     <>
       <div className={`${footerCommonStyles.footerCommon} px-3 pt-5`}>
@@ -27,14 +30,24 @@ const FooterCommon = ({ footerDetails }) => {
               </h1>
               <ul className={`${footerCommonStyles.textContainer} ms-0 ps-0`}>
                 {data?.lists?.map((itemData, index) => (
-                  <Link href={itemData?.url} key={index}>
-                    <li
-                      className={`${footerCommonStyles.text}`}
-                      style={{ listStyle: "none", cursor: "pointer" }}
-                    >
-                      {itemData.item}
-                    </li>
-                  </Link>
+                  // <Link
+                  //   href={{
+                  //     pathname: "/features/[slug]",
+                  //     query: { slug: itemData.item },
+                  //   }}
+                  //   key={index}
+                  // >
+                  <li
+                    key={index}
+                    className={`${footerCommonStyles.text}`}
+                    style={{ listStyle: "none", cursor: "pointer" }}
+                    onClick={() => {
+                      router.push(itemData.url);
+                    }}
+                  >
+                    {itemData.item}
+                  </li>
+                  // </Link>
                 ))}
               </ul>
             </div>

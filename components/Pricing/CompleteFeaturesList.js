@@ -47,7 +47,7 @@ const CompleteFeaturesList = ({ pricingData }) => {
                 {category.title === "Standard" && (
                   <p className={`${styles.titleBlue}`}>{category?.title}</p>
                 )}
-                {category.title === "Pro" && (
+                {category.title === "Premium" && (
                   <p className={`${styles.titleGreen}`}>{category?.title}</p>
                 )}
                 {category.title === "Enterprise" && (
@@ -63,13 +63,8 @@ const CompleteFeaturesList = ({ pricingData }) => {
         <tbody className={`${styles.tableBody}`}>
           {pricingData?.completeFeatures?.subCategories?.map((sCatergory) => (
             <>
-              <tr
-                key={sCatergory?.id}
-                className={`${styles.tableRow}`}
-                // style={{ borderBottom: "1px solid #6c757d)" }}
-              >
+              {/* <tr key={sCatergory?.id} className={`${styles.tableRow}`}>
                 <td
-                  // key={sCatergory?.id}
                   colSpan={6}
                   style={{
                     fontWeight: 500,
@@ -79,13 +74,7 @@ const CompleteFeaturesList = ({ pricingData }) => {
                 >
                   <p>{sCatergory.title}</p>
                 </td>
-                {/* <td
-              colSpan={6}
-              style={{ fontWeight: 500, fontSize: "20px", marginTop: "43px" }}
-            >
-              Essentials
-            </td> */}
-              </tr>
+              </tr> */}
               {sCatergory?.lists?.map((list) => (
                 <>
                   <tr key={list?.id}>
@@ -117,9 +106,6 @@ const CompleteFeaturesList = ({ pricingData }) => {
                           </Button>
                         </OverlayTrigger>
                       ))}
-                      {/* <p>
-                        <FaExclamationCircle />
-                      </p> */}
                     </td>
                     {list.items.map((item) => (
                       <>

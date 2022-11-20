@@ -14,7 +14,7 @@ export const home5thDemoData = {
     {
       id: 1,
       isShow: true,
-      video: "http://www.youtube.com/embed/xDMP3i36naA",
+      video: "https://www.youtube.com/embed/Jk-JwtScIlw",
     },
   ],
 };

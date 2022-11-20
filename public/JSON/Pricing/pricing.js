@@ -3,36 +3,36 @@ export const pricingDemoData = {
   title: "Supercharge your teamwork. Start free.",
   description: "Unlimited boards and workflows. No credit card needed.",
   items: [
-    {
-      id: 1,
-      title: "Individual",
-      price: "0",
-      monthlyPrice: "24",
-      billingDuration: "Billed annually",
-      shortIntro: "Manage all your teams work in one place",
-      features: {
-        id: 1,
-        title: "Individual plan includes:",
-        lists: [
-          {
-            id: 1,
-            title: "Unlimited free viewers",
-          },
-          {
-            id: 2,
-            title: "Unlimited items",
-          },
-          {
-            id: 3,
-            title: "5 GB file storage",
-          },
-          {
-            id: 4,
-            title: "Prioritised customer support",
-          },
-        ],
-      },
-    },
+    // {
+    //   id: 1,
+    //   title: "Individual",
+    //   price: "0",
+    //   monthlyPrice: "24",
+    //   billingDuration: "Billed annually",
+    //   shortIntro: "Manage all your teams work in one place",
+    //   features: {
+    //     id: 1,
+    //     title: "Individual plan includes:",
+    //     lists: [
+    //       {
+    //         id: 1,
+    //         title: "Unlimited free viewers",
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "Unlimited items",
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "5 GB file storage",
+    //       },
+    //       {
+    //         id: 4,
+    //         title: "Prioritised customer support",
+    //       },
+    //     ],
+    //   },
+    // },
     {
       id: 2,
       title: "Basic",
@@ -42,7 +42,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Individual , plus:",
+        title: "Basic plan includes:",
         lists: [
           {
             id: 1,
@@ -95,7 +95,7 @@ export const pricingDemoData = {
     },
     {
       id: 4,
-      title: "Pro",
+      title: "Premium",
       price: "16",
       monthlyPrice: "24",
       billingDuration: "Billed annually",
@@ -132,7 +132,7 @@ export const pricingDemoData = {
       shortIntro: "Manage all your teams’ work in one place",
       features: {
         id: 1,
-        title: "Includes Pro, plus:",
+        title: "Includes Premium, plus:",
         lists: [
           {
             id: 1,
@@ -158,10 +158,10 @@ export const pricingDemoData = {
     id: 1,
     title: "Complete features",
     categories: [
-      {
-        id: 1,
-        title: "Individual",
-      },
+      // {
+      //   id: 1,
+      //   title: "Individual",
+      // },
       {
         id: 2,
         title: "Basic",
@@ -172,7 +172,7 @@ export const pricingDemoData = {
       },
       {
         id: 4,
-        title: "Pro",
+        title: "Premium",
       },
       {
         id: 5,
@@ -186,11 +186,11 @@ export const pricingDemoData = {
         lists: [
           {
             id: 1,
-            title: "Maximum number of seats",
+            title: "Number of users",
             items: [
               {
                 id: 1,
-                title: "Upto 2 seats",
+                title: "Unlimited",
               },
               {
                 id: 2,
@@ -204,49 +204,23 @@ export const pricingDemoData = {
                 id: 4,
                 title: "Unlimited",
               },
-              {
-                id: 5,
-                title: "Unlimited",
-              },
+              // {
+              //   id: 5,
+              //   title: "Unlimited",
+              // },
             ],
           },
           {
             id: 2,
-            title: "Items",
+            title: "Storage",
             items: [
               {
                 id: 1,
-                title: "Up to 1000",
-              },
-              {
-                id: 2,
-                title: "Unlimited",
-              },
-              {
-                id: 3,
-                title: "Unlimited",
-              },
-              {
-                id: 4,
-                title: "Unlimited",
-              },
-              {
-                id: 5,
-                title: "Unlimited",
-              },
-            ],
-          },
-          {
-            id: 3,
-            title: "File storage",
-            items: [
-              {
-                id: 1,
-                title: "500 MB",
-              },
-              {
-                id: 2,
                 title: "5 GB",
+              },
+              {
+                id: 2,
+                title: "10 GB",
               },
               {
                 id: 3,
@@ -254,94 +228,116 @@ export const pricingDemoData = {
               },
               {
                 id: 4,
-                title: "100 GB",
+                title: "Ask",
+              },
+              // {
+              //   id: 5,
+              //   title: "Ask",
+              // },
+            ],
+          },
+          {
+            id: 3,
+            title: "Whit Label Branding",
+            items: [
+              {
+                id: 1,
+                isAvailable: true,
               },
               {
-                id: 5,
-                title: "1000 GB",
+                id: 2,
+                isAvailable: true,
               },
+              {
+                id: 3,
+                isAvailable: true,
+              },
+              {
+                id: 4,
+                isAvailable: true,
+              },
+              // {
+              //   id: 5,
+              //   isAvailable: true,
+              // },
             ],
           },
           {
             id: 4,
-            title: "Activity log",
+            title: "Kanban Board",
             items: [
               {
                 id: 1,
-                title: "1 week",
+                title: "Unlimited",
               },
               {
                 id: 2,
-                title: "1 week",
+                title: "Unlimited",
               },
               {
                 id: 3,
-                title: "6 months",
+                title: "Unlimited",
               },
               {
                 id: 4,
-                title: "1 year",
+                title: "Unlimited",
               },
-              {
-                id: 5,
-                title: "5 years",
-              },
+              // {
+              //   id: 5,
+              //   title: "5 years",
+              // },
             ],
           },
           {
             id: 5,
-            title: "Unlimited boards",
+            title: "Dashboard",
             items: [
               {
                 id: 1,
-                isAvailable: false,
+                title: "Unlimited",
               },
               {
                 id: 2,
                 title: "Unlimited",
-                isAvailable: true,
               },
               {
                 id: 3,
                 title: "Unlimited",
-                isAvailable: true,
               },
               {
                 id: 4,
                 title: "Unlimited",
-                isAvailable: true,
               },
-              {
-                id: 5,
-                title: "Unlimited",
-                isAvailable: true,
-              },
+              // {
+              //   id: 5,
+              //   title: "Unlimited",
+              // },
             ],
           },
           {
             id: 6,
-            title: "Unlimited docs",
+            title: "Gantt Chart",
             items: [
               {
                 id: 1,
-                isAvailable: true,
+                title: "Unlimited",
               },
               {
                 id: 2,
-                isAvailable: true,
+                title: "Unlimited",
               },
               {
                 id: 3,
-                isAvailable: true,
+                title: "Unlimited",
               },
               {
                 id: 4,
-                isAvailable: true,
+                title: "Unlimited",
               },
-              {
-                id: 5,
-                isAvailable: true,
-              },
+              // {
+              //   id: 5,
+              //   title: "Unlimited",
+              // },
             ],
           },
         ],

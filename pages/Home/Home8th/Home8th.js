@@ -105,7 +105,9 @@ const Home8th = ({ home8thData }) => {
             </div> */}
             <div data-aos="zoom-in-right">
               <h1 className="fs-2 fw-bold">{data.title}</h1>
-              <p className="fs-6">{data.titleDescription}</p>
+              <p className="fs-6" style={{ textAlign: "justify" }}>
+                {data.titleDescription}
+              </p>
               <div>
                 <h1 className="fs-5 fw-bold d-flex align-items-center">
                   <span className="me-2">
@@ -113,7 +115,9 @@ const Home8th = ({ home8thData }) => {
                   </span>
                   {data.subTitle1}
                 </h1>
-                <p className="fs-6">{data.subTitleDescription1}</p>
+                <p className="fs-6" style={{ textAlign: "justify" }}>
+                  {data.subTitleDescription1}
+                </p>
               </div>
               <div>
                 <h1 className="fs-5 fw-bold d-flex align-items-center">
@@ -122,7 +126,9 @@ const Home8th = ({ home8thData }) => {
                   </span>
                   {data.subTitle2}
                 </h1>
-                <p className="fs-6">{data.subTitleDescription2}</p>
+                <p className="fs-6" style={{ textAlign: "justify" }}>
+                  {data.subTitleDescription2}
+                </p>
               </div>
               <div>
                 <h1 className="fs-5 fw-bold d-flex align-items-center">
@@ -131,7 +137,9 @@ const Home8th = ({ home8thData }) => {
                   </span>
                   {data.subTitle3}
                 </h1>
-                <p className="fs-6">{data.subTitleDescription3}</p>
+                <p className="fs-6" style={{ textAlign: "justify" }}>
+                  {data.subTitleDescription3}
+                </p>
               </div>
             </div>
             <div data-aos="zoom-in-right">

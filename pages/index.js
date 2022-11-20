@@ -7,7 +7,7 @@ export default function Home() {
   const [bannerImagesData, setBannerImagesData] = React.useState({});
   const [home2ndData, setHome2ndData] = React.useState({});
   const [home3rdData, setHome3rdData] = React.useState({});
-  const [home4thData, setHome4thData] = React.useState({});
+  const [projectManagementData, setProjectManagementData] = React.useState({});
   const [home5thData, setHome5thData] = React.useState({});
   const [home6thData, setHome6thData] = React.useState({});
   const [home7thData, setHome7thData] = React.useState({});
@@ -31,8 +31,8 @@ export default function Home() {
     axios.get("/api/home3rdapi").then((res) => {
       setHome3rdData(res.data);
     });
-    axios.get("/api/home4thapi").then((res) => {
-      setHome4thData(res.data);
+    axios.get("/api/projectManagementapi").then((res) => {
+      setProjectManagementData(res.data);
     });
     axios.get("/api/home5thapi").then((res) => {
       setHome5thData(res.data);
@@ -81,7 +81,7 @@ export default function Home() {
         managePlatformData={managePlatformData}
         home2ndData={home2ndData}
         home3rdData={home3rdData}
-        home4thData={home4thData}
+        projectManagementData={projectManagementData}
         home5thData={home5thData}
         home6thData={home6thData}
         home7thData={home7thData}

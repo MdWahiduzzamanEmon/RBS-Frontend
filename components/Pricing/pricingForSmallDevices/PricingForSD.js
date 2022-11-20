@@ -19,7 +19,7 @@ const PricingForSD = ({ pricingData }) => {
       return `${styles.rateContainerTopItemLeft}`;
     } else if (itemName === "Standard") {
       return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftBlue}`;
-    } else if (itemName === "Pro") {
+    } else if (itemName === "Premium") {
       return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftGreen}`;
     } else if (itemName === "Enterprise") {
       return `${styles.rateContainerTopItemLeft} `;
