@@ -16,6 +16,7 @@ import MiniPricing from "../../components/miniPricing/MiniPricing";
 import FeaturesBoard from "../../components/featuresBoard/FeaturesBoard";
 import CompareBoard from "../../components/compareBoard.js/CompareBoard";
 import ProjectManagement from "./ProjectManagement";
+import FinancialManagement from "../../components/FinancialManagement/FinancialManagement";
 
 const HomePage = ({
   bannerData,
@@ -33,6 +34,7 @@ const HomePage = ({
   purchaseCardData,
   miniPricingData,
   featuresData,
+  financialManagementData,
 }) => {
   return (
     <div>
@@ -49,6 +51,9 @@ const HomePage = ({
         {/* //********Describing features in details******** */}
         <Home3rd home3rdData={home3rdData} />
         <ProjectManagement projectManagementData={projectManagementData} />
+        <FinancialManagement
+          financialManagementData={financialManagementData}
+        />
         <Home8th home8thData={home8thData} />
 
         {/* //*******************Review section****************/}

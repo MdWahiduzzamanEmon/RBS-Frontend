@@ -17,7 +17,7 @@ const FeatureWithLeftImage = ({ feature, colorChange }) => {
         padding: "50px 0",
       }}
     >
-      <div className="d-flex flex-column-reverse flex-lg-row container-lg">
+      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg">
         <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <div>

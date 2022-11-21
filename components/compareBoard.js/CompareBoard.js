@@ -23,24 +23,24 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title1: "Board view",
-            title2: "Portfolio Management",
-            title3: "Project time budget",
+            title1: "Whit Label Branding",
+            title2: "Kanban Board",
+            title3: "Dashboard",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Board view",
+                  title: "Whit Label Branding",
                 },
                 {
                   id: 2,
-                  title: "Portfolio Management",
+                  title: "Kanban Board",
                 },
                 {
                   id: 3,
-                  title: "Project time budget",
+                  title: "Dashboard",
                 },
               ],
             },
@@ -50,42 +50,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Board view",
-                  isAvailable: true,
+                  title: "Whit Label Branding",
+                  isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Portfolio Management",
-                  isAvailable: false,
+                  title: "Kanban Board",
+                  isAvailable: true,
                 },
                 {
                   id: 3,
-                  title: "Project time budget",
-                  isAvailable: false,
+                  title: "Dashboard",
+                  isAvailable: true,
                 },
               ],
             },
           },
           {
             id: 2,
-            title1: "Burndown reporting",
-            title2: "Utilization reports",
-            title3: "Workload resource management",
+            title1: "Calendar View",
+            title2: "Live Chat Communication",
+            title3: "Bill & Invoice Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
+                  title: "Calendar View",
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
+                  title: "Live Chat Communication",
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
+                  title: "Bill & Invoice Management",
                 },
               ],
             },
@@ -95,42 +95,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
-                  isAvailable: false,
+                  title: "Calendar View",
+                  isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
+                  title: "Live Chat Communication",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
-                  isAvailable: true,
+                  title: "Bill & Invoice Management",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 3,
-            title1: "Billing and invoicing",
-            title2: "Resource scheduling",
-            title3: "Budgeting",
+            title1: "Expense Management",
+            title2: "Issue Tracking",
+            title3: "Time Tracking",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
+                  title: "Issue Tracking",
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
+                  title: "Time Tracking",
                 },
               ],
             },
@@ -140,17 +140,17 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
-                  isAvailable: true,
+                  title: "Issue Tracking",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
+                  title: "Time Tracking",
                   isAvailable: true,
                 },
               ],
@@ -158,24 +158,24 @@ const CompareBoard = () => {
           },
           {
             id: 4,
-            title1: "Dependencies",
-            title2: "Time tracking",
-            title3: "Workload",
+            title1: "Document Management",
+            title2: "Program Details",
+            title3: "Project Details",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
+                  title: "Program Details",
                 },
                 {
                   id: 3,
-                  title: "Workload",
+                  title: "Project Details",
                 },
               ],
             },
@@ -185,42 +185,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                   isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
-                  isAvailable: true,
+                  title: "Program Details",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload",
-                  isAvailable: true,
+                  title: "Project Details",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 5,
-            title1: "2FA",
-            title2: "Custom domain with SSL",
-            title3: "Phone, live chat, and email support",
+            title1: "Task Details",
+            title2: "Project Budget",
+            title3: "Task Budget",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "2FA",
+                  title: "Task Details",
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
+                  title: "Task Budget",
                 },
               ],
             },
@@ -230,42 +230,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "2FA",
+                  title: "Task Details",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
-                  isAvailable: true,
+                  title: "Task Budget",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 6,
-            title1: "Use intake forms",
-            title2: "Add unlimited clients",
-            title3: "Custom branding",
+            title1: "Project Discussion",
+            title2: "Task Discussion",
+            title3: "VAT-TAX Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Use intake forms",
+                  title: "Project Discussion",
                 },
                 {
                   id: 2,
-                  title: "Add unlimited clients",
+                  title: "Task Discussion",
                 },
                 {
                   id: 3,
-                  title: "Custom branding",
+                  title: "VAT-TAX Management",
                 },
               ],
             },
@@ -275,17 +275,132 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Use intake forms",
+                  title: "Project Discussion",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Add unlimited clients",
-                  isAvailable: true,
+                  title: "Task Discussion",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Custom branding",
+                  title: "VAT-TAX Management",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 7,
+            title1: "Income Management",
+            title2: "Los-Profit Calculation",
+            title3: "Budget-Cost Comparison",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Wrike",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 8,
+            title1: "Requisition Management",
+            title2: "Client Control Panel",
+            title3: "Vendor Control Panel",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Wrike",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 9,
+            title1: "Notification",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Wrike",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
                   isAvailable: true,
                 },
               ],
@@ -304,24 +419,24 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title1: "Assign tasks to more than one person",
-            title2: "Use project tags",
-            title3: "Set a project time budget",
+            title1: "Whit Label Branding",
+            title2: "Kanban Board",
+            title3: "Dashboard",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Assign tasks to more than one person",
+                  title: "Whit Label Branding",
                 },
                 {
                   id: 2,
-                  title: "Use project tags",
+                  title: "Kanban Board",
                 },
                 {
                   id: 3,
-                  title: "Set a project time budget",
+                  title: "Dashboard",
                 },
               ],
             },
@@ -331,42 +446,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Assign tasks to more than one person",
+                  title: "Whit Label Branding",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Use project tags",
-                  isAvailable: false,
+                  title: "Kanban Board",
+                  isAvailable: true,
                 },
                 {
                   id: 3,
-                  title: "Set a project time budget",
-                  isAvailable: false,
+                  title: "Dashboard",
+                  isAvailable: true,
                 },
               ],
             },
           },
           {
             id: 2,
-            title1: "Burndown reporting",
-            title2: "Utilization reports",
-            title3: "Workload resource management",
+            title1: "Calendar View",
+            title2: "Live Chat Communication",
+            title3: "Bill & Invoice Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
+                  title: "Calendar View",
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
+                  title: "Live Chat Communication",
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
+                  title: "Bill & Invoice Management",
                 },
               ],
             },
@@ -376,42 +491,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
-                  isAvailable: false,
+                  title: "Calendar View",
+                  isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
-                  isAvailable: true,
+                  title: "Live Chat Communication",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
-                  isAvailable: true,
+                  title: "Bill & Invoice Management",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 3,
-            title1: "Billing and invoicing",
-            title2: "Resource scheduling",
-            title3: "Budgeting",
+            title1: "Expense Management",
+            title2: "Issue Tracking",
+            title3: "Time Tracking",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
+                  title: "Issue Tracking",
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
+                  title: "Time Tracking",
                 },
               ],
             },
@@ -421,42 +536,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
+                  title: "Issue Tracking",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
-                  isAvailable: false,
+                  title: "Time Tracking",
+                  isAvailable: true,
                 },
               ],
             },
           },
           {
             id: 4,
-            title1: "Dependencies",
-            title2: "Time tracking",
-            title3: "Workload",
+            title1: "Document Management",
+            title2: "Program Details",
+            title3: "Project Details",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
+                  title: "Program Details",
                 },
                 {
                   id: 3,
-                  title: "Workload",
+                  title: "Project Details",
                 },
               ],
             },
@@ -466,42 +581,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                   isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
+                  title: "Program Details",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload",
-                  isAvailable: true,
+                  title: "Project Details",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 5,
-            title1: "2FA",
-            title2: "Custom domain with SSL",
-            title3: "Phone, live chat, and email support",
+            title1: "Task Details",
+            title2: "Project Budget",
+            title3: "Task Budget",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "2FA",
+                  title: "Task Details",
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
+                  title: "Task Budget",
                 },
               ],
             },
@@ -511,17 +626,17 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "2FA",
-                  isAvailable: true,
+                  title: "Task Details",
+                  isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
+                  title: "Task Budget",
                   isAvailable: false,
                 },
               ],
@@ -529,24 +644,24 @@ const CompareBoard = () => {
           },
           {
             id: 6,
-            title1: "Custom branding",
-            title2: "Add companies",
-            title3: "See what’s coming next",
+            title1: "Project Discussion",
+            title2: "Task Discussion",
+            title3: "VAT-TAX Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Custom branding",
+                  title: "Project Discussion",
                 },
                 {
                   id: 2,
-                  title: "Add companies",
+                  title: "Task Discussion",
                 },
                 {
                   id: 3,
-                  title: "See what’s coming next",
+                  title: "VAT-TAX Management",
                 },
               ],
             },
@@ -556,18 +671,133 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Custom branding",
+                  title: "Project Discussion",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Add companies",
+                  title: "Task Discussion",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "See what’s coming next",
+                  title: "VAT-TAX Management",
                   isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 7,
+            title1: "Income Management",
+            title2: "Los-Profit Calculation",
+            title3: "Budget-Cost Comparison",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Asana",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 8,
+            title1: "Requisition Management",
+            title2: "Client Control Panel",
+            title3: "Vendor Control Panel",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Asana",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 9,
+            title1: "Notification",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Asana",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                  isAvailable: true,
                 },
               ],
             },
@@ -585,24 +815,24 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title1: "Board view",
-            title2: "Portfolio",
-            title3: "Project time budget",
+            title1: "Whit Label Branding",
+            title2: "Kanban Board",
+            title3: "Dashboard",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Board view",
+                  title: "Whit Label Branding",
                 },
                 {
                   id: 2,
-                  title: "Portfolio",
+                  title: "Kanban Board",
                 },
                 {
                   id: 3,
-                  title: "Project time budget",
+                  title: "Dashboard",
                 },
               ],
             },
@@ -612,17 +842,17 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Board view",
+                  title: "Whit Label Branding",
                   isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Portfolio",
+                  title: "Kanban Board",
                   isAvailable: true,
                 },
                 {
                   id: 3,
-                  title: "Project time budget",
+                  title: "Dashboard",
                   isAvailable: true,
                 },
               ],
@@ -630,24 +860,24 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title1: "Burndown reporting",
-            title2: "Utilization reports",
-            title3: "Workload resource management",
+            title1: "Calendar View",
+            title2: "Live Chat Communication",
+            title3: "Bill & Invoice Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
+                  title: "Calendar View",
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
+                  title: "Live Chat Communication",
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
+                  title: "Bill & Invoice Management",
                 },
               ],
             },
@@ -657,42 +887,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Burndown reporting",
+                  title: "Calendar View",
                   isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
-                  isAvailable: true,
+                  title: "Live Chat Communication",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
-                  isAvailable: true,
+                  title: "Bill & Invoice Management",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 3,
-            title1: "Billing and invoicing",
-            title2: "Resource scheduling",
-            title3: "Budgeting",
+            title1: "Expense Management",
+            title2: "Issue Tracking",
+            title3: "Time Tracking",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
+                  title: "Issue Tracking",
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
+                  title: "Time Tracking",
                 },
               ],
             },
@@ -702,17 +932,17 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Billing and invoicing",
+                  title: "Expense Management",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Resource scheduling",
-                  isAvailable: true,
+                  title: "Issue Tracking",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Budgeting",
+                  title: "Time Tracking",
                   isAvailable: true,
                 },
               ],
@@ -720,24 +950,24 @@ const CompareBoard = () => {
           },
           {
             id: 4,
-            title1: "Dependencies",
-            title2: "Time tracking",
-            title3: "Workload",
+            title1: "Document Management",
+            title2: "Program Details",
+            title3: "Project Details",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
+                  title: "Program Details",
                 },
                 {
                   id: 3,
-                  title: "Workload",
+                  title: "Project Details",
                 },
               ],
             },
@@ -747,42 +977,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Dependencies",
+                  title: "Document Management",
                   isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Time tracking",
-                  isAvailable: true,
+                  title: "Program Details",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload",
-                  isAvailable: true,
+                  title: "Project Details",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 5,
-            title1: "2FA",
-            title2: "Custom domain with SSL",
-            title3: "Phone, live chat, and email support",
+            title1: "Task Details",
+            title2: "Project Budget",
+            title3: "Task Budget",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "2FA",
+                  title: "Task Details",
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
+                  title: "Task Budget",
                 },
               ],
             },
@@ -792,42 +1022,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "2FA",
-                  isAvailable: true,
+                  title: "Task Details",
+                  isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Custom domain with SSL",
+                  title: "Project Budget",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Phone, live chat, and email support",
-                  isAvailable: true,
+                  title: "Task Budget",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 6,
-            title1: "Use intake forms",
-            title2: "Add unlimited clients",
-            title3: "Custom branding",
+            title1: "Project Discussion",
+            title2: "Task Discussion",
+            title3: "VAT-TAX Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Use intake forms",
+                  title: "Project Discussion",
                 },
                 {
                   id: 2,
-                  title: "Add unlimited clients",
+                  title: "Task Discussion",
                 },
                 {
                   id: 3,
-                  title: "Custom branding",
+                  title: "VAT-TAX Management",
                 },
               ],
             },
@@ -837,18 +1067,133 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Use intake forms",
-                  isAvailable: true,
+                  title: "Project Discussion",
+                  isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Add unlimited clients",
+                  title: "Task Discussion",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Custom branding",
+                  title: "VAT-TAX Management",
                   isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 7,
+            title1: "Income Management",
+            title2: "Los-Profit Calculation",
+            title3: "Budget-Cost Comparison",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "ClickUp",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 8,
+            title1: "Requisition Management",
+            title2: "Client Control Panel",
+            title3: "Vendor Control Panel",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "ClickUp",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 9,
+            title1: "Notification",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "ClickUp",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                  isAvailable: true,
                 },
               ],
             },
@@ -866,24 +1211,24 @@ const CompareBoard = () => {
         challenges: [
           {
             id: 1,
-            title1: "Board view",
-            title2: "Portfolio Management",
-            title3: "Project time budget",
+            title1: "Whit Label Branding",
+            title2: "Kanban Board",
+            title3: "Dashboard",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Board view",
+                  title: "Whit Label Branding",
                 },
                 {
                   id: 2,
-                  title: "Portfolio Management",
+                  title: "Kanban Board",
                 },
                 {
                   id: 3,
-                  title: "Project time budget",
+                  title: "Dashboard",
                 },
               ],
             },
@@ -893,17 +1238,17 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Board view",
-                  isAvailable: true,
-                },
-                {
-                  id: 2,
-                  title: "Portfolio Management",
+                  title: "Whit Label Branding",
                   isAvailable: false,
                 },
                 {
+                  id: 2,
+                  title: "Kanban Board",
+                  isAvailable: true,
+                },
+                {
                   id: 3,
-                  title: "Project time budget",
+                  title: "Dashboard",
                   isAvailable: true,
                 },
               ],
@@ -911,24 +1256,24 @@ const CompareBoard = () => {
           },
           {
             id: 2,
-            title1: "Critical path",
-            title2: "Utilization reports",
-            title3: "Workload resource management",
+            title1: "Calendar View",
+            title2: "Live Chat Communication",
+            title3: "Bill & Invoice Management",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Critical path",
+                  title: "Calendar View",
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
+                  title: "Live Chat Communication",
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
+                  title: "Bill & Invoice Management",
                 },
               ],
             },
@@ -938,42 +1283,42 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Critical path",
-                  isAvailable: false,
+                  title: "Calendar View",
+                  isAvailable: true,
                 },
                 {
                   id: 2,
-                  title: "Utilization reports",
-                  isAvailable: true,
+                  title: "Live Chat Communication",
+                  isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Workload resource management",
-                  isAvailable: true,
+                  title: "Bill & Invoice Management",
+                  isAvailable: false,
                 },
               ],
             },
           },
           {
             id: 3,
-            title1: "Integrated team chat",
-            title2: "Easy document management",
-            title3: "Built-in CRM",
+            title1: "Expense Management",
+            title2: "Issue Tracking",
+            title3: "Time Tracking",
             company1: {
               id: 1,
               title: "Vitlous",
               items: [
                 {
                   id: 1,
-                  title: "Integrated team chat",
+                  title: "Expense Management",
                 },
                 {
                   id: 2,
-                  title: "Easy document management",
+                  title: "Issue Tracking",
                 },
                 {
                   id: 3,
-                  title: "Built-in CRM",
+                  title: "Time Tracking",
                 },
               ],
             },
@@ -983,17 +1328,267 @@ const CompareBoard = () => {
               items: [
                 {
                   id: 1,
-                  title: "Integrated team chat",
+                  title: "Expense Management",
                   isAvailable: false,
                 },
                 {
                   id: 2,
-                  title: "Easy document management",
+                  title: "Issue Tracking",
                   isAvailable: false,
                 },
                 {
                   id: 3,
-                  title: "Built-in CRM",
+                  title: "Time Tracking",
+                  isAvailable: true,
+                },
+              ],
+            },
+          },
+          {
+            id: 4,
+            title1: "Document Management",
+            title2: "Program Details",
+            title3: "Project Details",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Document Management",
+                },
+                {
+                  id: 2,
+                  title: "Program Details",
+                },
+                {
+                  id: 3,
+                  title: "Project Details",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Document Management",
+                  isAvailable: true,
+                },
+                {
+                  id: 2,
+                  title: "Program Details",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Project Details",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 5,
+            title1: "Task Details",
+            title2: "Project Budget",
+            title3: "Task Budget",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Task Details",
+                },
+                {
+                  id: 2,
+                  title: "Project Budget",
+                },
+                {
+                  id: 3,
+                  title: "Task Budget",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Task Details",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Project Budget",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Task Budget",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 6,
+            title1: "Project Discussion",
+            title2: "Task Discussion",
+            title3: "VAT-TAX Management",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Project Discussion",
+                },
+                {
+                  id: 2,
+                  title: "Task Discussion",
+                },
+                {
+                  id: 3,
+                  title: "VAT-TAX Management",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Project Discussion",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Task Discussion",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "VAT-TAX Management",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 7,
+            title1: "Income Management",
+            title2: "Los-Profit Calculation",
+            title3: "Budget-Cost Comparison",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Income Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Los-Profit Calculation",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Budget-Cost Comparison",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 8,
+            title1: "Requisition Management",
+            title2: "Client Control Panel",
+            title3: "Vendor Control Panel",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Requisition Management",
+                  isAvailable: false,
+                },
+                {
+                  id: 2,
+                  title: "Client Control Panel",
+                  isAvailable: false,
+                },
+                {
+                  id: 3,
+                  title: "Vendor Control Panel",
+                  isAvailable: false,
+                },
+              ],
+            },
+          },
+          {
+            id: 9,
+            title1: "Notification",
+            company1: {
+              id: 1,
+              title: "Vitlous",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
+                },
+              ],
+            },
+            company2: {
+              id: 1,
+              title: "Monday",
+              items: [
+                {
+                  id: 1,
+                  title: "Notification",
                   isAvailable: true,
                 },
               ],
@@ -1077,7 +1672,14 @@ const CompareBoard = () => {
                             </div>
                             <div className={`${styles.featuresOtherCompany}`}>
                               {challenge?.company2?.items?.map((item) => (
-                                <p key={item.id}>
+                                <p
+                                  key={item.id}
+                                  style={{
+                                    textDecoration: !item.isAvailable
+                                      ? "line-through"
+                                      : "",
+                                  }}
+                                >
                                   {item.isAvailable ? (
                                     <FaCheckCircle
                                       color="#519e7d"
@@ -1150,7 +1752,14 @@ const CompareBoard = () => {
                             </div>
                             <div className={`${styles.featuresOtherCompany}`}>
                               {challenge?.company2?.items?.map((item) => (
-                                <p key={item.id}>
+                                <p
+                                  key={item.id}
+                                  style={{
+                                    textDecoration: !item.isAvailable
+                                      ? "line-through"
+                                      : "",
+                                  }}
+                                >
                                   {item.isAvailable ? (
                                     <FaCheckCircle
                                       color="#519e7d"

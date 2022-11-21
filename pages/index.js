@@ -17,6 +17,9 @@ export default function Home() {
   const [home10thData, setHome10thData] = React.useState({});
   const [purchaseCardData, setPurchaseCardData] = React.useState({});
   const [miniPricingData, setMiniPricingData] = React.useState({});
+  const [financialManagementData, setFinancialManagementData] = React.useState(
+    {}
+  );
 
   useEffect(() => {
     axios.get("/api/banner").then((res) => {
@@ -64,6 +67,9 @@ export default function Home() {
     axios.get("api/purchaseCard").then((res) => {
       setPurchaseCardData(res.data);
     });
+    axios.get("api/financialManagementapi").then((res) => {
+      setFinancialManagementData(res.data);
+    });
   }, []);
 
   return (
@@ -91,6 +97,7 @@ export default function Home() {
         purchaseCardData={purchaseCardData}
         miniPricingData={miniPricingData}
         featuresData={home2ndData}
+        financialManagementData={financialManagementData}
       />
     </div>
   );

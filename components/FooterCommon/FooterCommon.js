@@ -17,8 +17,8 @@ const FooterCommon = ({ footerDetails }) => {
                 {data?.logo && (
                   <Image
                     src={data?.logo}
-                    width="100px"
-                    height="100px"
+                    width="120px"
+                    height="120px"
                     alt="logo"
                     className="img-fluid rounded-circle "
                   />

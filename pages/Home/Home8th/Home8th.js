@@ -32,7 +32,7 @@ const Home8th = ({ home8thData }) => {
         {home8thData?.items?.map((data, index) => (
           <div
             key={index}
-            className="row row-cols-1 row-cols-md-1 row-cols-lg-2 p-3"
+            className="row row-cols-1 row-cols-md-1 row-cols-lg-2 align-items-center p-3"
           >
             {/* <div
               className="position-relative mb-lg-0 d-lg-block d-none"

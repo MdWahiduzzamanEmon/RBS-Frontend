@@ -5,7 +5,7 @@ export const footerDemoData = {
     {
       id: 1,
       isShow: true,
-      logo: "/RBS_logo.png",
+      logo: "/logoVitlous.png",
       // description:
       //   "On the other handed denounce with who are so beg demoralized.",
       // link:
