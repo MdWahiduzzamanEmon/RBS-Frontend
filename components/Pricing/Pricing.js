@@ -1,5 +1,6 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import React from "react";
 import {
   Button,
@@ -37,7 +38,7 @@ const Pricing = ({ pricingData }) => {
   };
 
   const { width } = useViewport();
-  const breakpoint = 600;
+  const breakpoint = 992;
 
   return (
     <section
@@ -61,30 +62,64 @@ const Pricing = ({ pricingData }) => {
           <div className={`${styles.container}`}>
             {pricingData?.items?.map((item, index) => (
               <div className={`${styles.pricingCard}`} key={item.id}>
-                <h5 className={`${styles.heading}`}>{item.title}</h5>
-                <div className={`${styles.rateContainer}`}>
-                  <div className={`${styles.rateContainerTop}`}>
-                    <p className={changePriceColor(item.title)}>
-                      ${item.price}
-                    </p>
-                    <div className={`${styles.rateContainerTopItemRight}`}>
-                      <p className="mb-0">seat/</p>
-                      <p>month</p>
+                <div className={`${styles.pricingTopContainer}`}>
+                  <h5 className={`${styles.heading}`}>{item.title}</h5>
+                  <div className={`${styles.rateContainer}`}>
+                    <div className={`${styles.rateContainerTop}`}>
+                      {item.title !== "Enterprise" && (
+                        <>
+                          <p className={changePriceColor(item.title)}>
+                            ${item.price}
+                          </p>
+                          <div
+                            className={`${styles.rateContainerTopItemRight}`}
+                          >
+                            <p className="mb-0">seat/</p>
+                            <p>month</p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                    <div className={`${styles.rateContainerBottom}`}>
+                      {item.title === "Enterprise" ? (
+                        <Image
+                          src={item?.icon}
+                          alt="enterprise image"
+                          width={80}
+                          height={150}
+                          objectFit="contain"
+                          // layout="responsive"
+                          style={{
+                            width: "50px",
+                            height: "50px",
+                            margin: "0 auto",
+                          }}
+                        ></Image>
+                      ) : (
+                        <>
+                          <p className={`${styles.rateContainerBottomItemTop}`}>
+                            Total ${item.monthlyPrice} / month
+                          </p>
+                          <p
+                            className={`${styles.rateContainerBottomItemBottom}`}
+                          >
+                            <small>{item.billingDuration}</small>
+                          </p>
+                        </>
+                      )}
                     </div>
                   </div>
-                  <div className={`${styles.rateContainerBottom}`}>
-                    <p className={`${styles.rateContainerBottomItemTop}`}>
-                      Total ${item.monthlyPrice} / month
-                    </p>
-                    <p className={`${styles.rateContainerBottomItemBottom}`}>
-                      <small>{item.billingDuration}</small>
-                    </p>
-                  </div>
+                  {item.title === "Enterprise" ? (
+                    <button className={`${styles.primaryButton}`}>
+                      Contact us
+                    </button>
+                  ) : (
+                    <button className={`${styles.primaryButton}`}>
+                      Try for free
+                    </button>
+                  )}
+                  <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
                 </div>
-                <button className={`${styles.primaryButton}`}>
-                  Try for free
-                </button>
-                <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
 
                 <div className={`${styles.divider}`}></div>
 
@@ -134,27 +169,28 @@ const Pricing = ({ pricingData }) => {
               </div>
             ))}
           </div>
-          {/* {width > 600 && width < 992 ? (
-            ""
-          ) : ( */}
-          <div
-            style={{
-              textAlign: "center",
-              padding: "30px",
-              fontWeight: "400",
-              fontSize: "30px",
-              cursor: "pointer",
-            }}
-            onClick={() => setIsShow(!isShow)}
-          >
-            Complete features list{" "}
-            {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
-          </div>
-          {/* )} */}
-          {isShow && <CompleteFeaturesList pricingData={pricingData} />}
         </>
       ) : (
         <PricingForSD pricingData={pricingData} />
+      )}
+      {width > 768 && (
+        <div
+          style={{
+            textAlign: "center",
+            padding: "30px",
+            fontWeight: "400",
+            fontSize: "30px",
+            cursor: "pointer",
+          }}
+          onClick={() => setIsShow(!isShow)}
+        >
+          Complete features list{" "}
+          {<>{isShow ? <FaChevronUp /> : <FaChevronDown />}</>}
+        </div>
+      )}
+      {/* )} */}
+      {isShow && width > 768 && (
+        <CompleteFeaturesList pricingData={pricingData} />
       )}
     </section>
   );

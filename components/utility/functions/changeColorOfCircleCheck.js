@@ -6,8 +6,17 @@ const changeColorOfCircleCheck = (keyPointId) => {
     case 2: {
       return "#FF9900";
     }
-    default: {
+    case 3: {
       return "#FF7575";
+    }
+    case 4: {
+      return "#3E6D9C";
+    }
+    case 5: {
+      return "#557153";
+    }
+    default: {
+      return "#D36B00";
     }
   }
 };

@@ -26,7 +26,7 @@
 
 .pricingCard {
   width: 230px;
-  height: 720px;
+  height: 740px;
   padding: 15px;
   color: #173465;
   /* border-top-style: none; */
@@ -45,7 +45,7 @@
 .pricingCard:before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -64,7 +64,7 @@
 .pricingCard:nth-child(2):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -82,7 +82,7 @@
 .pricingCard:nth-child(3):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -100,7 +100,7 @@
 .pricingCard:nth-child(4):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -118,7 +118,7 @@
 .pricingCard:nth-child(5):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -132,6 +132,10 @@
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   /* border-radius: 5px;  */
+}
+
+.pricingTopContainer {
+  height: 400px;
 }
 
 .heading {
@@ -242,9 +246,12 @@
 
 .features {
   color: #000;
+  /* font-size: clamp(14px, 1.5vw, 15px); */
   /* opacity: 0.8; */
   font-weight: 300;
 }
+
+/* ************** Responsive devices***************** */
 
 /* .priceCard{
     width: 90%;

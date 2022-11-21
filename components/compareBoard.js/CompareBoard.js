@@ -1081,7 +1081,9 @@ const CompareBoard = () => {
                                   {item.isAvailable ? (
                                     <FaCheckCircle
                                       color="#519e7d"
-                                      style={{ marginRight: "10px" }}
+                                      style={{
+                                        marginRight: "10px",
+                                      }}
                                     />
                                   ) : (
                                     <FaTimesCircle
