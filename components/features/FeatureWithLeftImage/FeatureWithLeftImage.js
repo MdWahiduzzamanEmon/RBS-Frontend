@@ -1,11 +1,15 @@
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
-const FeatureWithLeftImage = ({ feature }) => {
-  const { title, description, keyPoints } = feature;
+const FeatureWithLeftImage = ({ feature, colorChange }) => {
+  const { id, title, description, keyPoints, image, hashLink } = feature;
+
   return (
     <div
+      id={hashLink}
       style={{
         fontFamily: "Poppins",
         background: "rgb(226, 246, 254)",
@@ -13,7 +17,7 @@ const FeatureWithLeftImage = ({ feature }) => {
         padding: "50px 0",
       }}
     >
-      <div className="d-flex flex-column-reverse  flex-lg-row align-items-center container-lg">
+      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg">
         <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <div>
@@ -22,25 +26,30 @@ const FeatureWithLeftImage = ({ feature }) => {
               className="fs-6"
               style={{
                 color: "rgb(75, 101, 126)",
+                textAlign: "justify",
               }}
             >
               {description}
             </p>
-            {keyPoints.map((keyPoint, index) => (
+            {feature?.keyPoints?.map?.((keyPoint, index) => (
               <div key={keyPoint.id}>
                 <h3 className="fs-5 fw-bold d-flex align-items-center">
                   <span className="me-2">
-                    <FontAwesomeIcon icon={faCheckCircle} color="#FF9900" />
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      color={colorChange(keyPoint.id)}
+                    />
                   </span>
-                  {title}
+                  {keyPoint.title}
                 </h3>
                 <p
                   className="fs-6"
                   style={{
                     color: "rgb(75, 101, 126)",
+                    textAlign: "justify",
                   }}
                 >
-                  {description}
+                  {keyPoint.description}
                 </p>
               </div>
             ))}
@@ -48,18 +57,18 @@ const FeatureWithLeftImage = ({ feature }) => {
           {/* ))} */}
         </div>
         <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
-          {home3rdData?.items?.map((data, index) => (
-            <Image
-              key={data?.id}
-              src={data.image}
-              alt=" "
-              objectFit="contain"
-              width={500}
-              height={450}
-              layout="responsive"
-              className="rounded-5 p-2"
-            />
-          ))}
+          {/* {home3rdData?.items?.map((data, index) => ( */}
+          <Image
+            // key={data.id}
+            src={image}
+            alt=" "
+            objectFit="contain"
+            width={500}
+            height={450}
+            layout="responsive"
+            className="rounded-5 p-2"
+          />
+          {/* ))} */}
         </div>
       </div>
     </div>

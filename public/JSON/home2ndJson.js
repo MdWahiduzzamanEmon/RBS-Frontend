@@ -24,12 +24,12 @@ export const home2ndJson = {
         title: "Very informative Dashboard",
         img: "/images.jpg",
         description:
-          "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 2,
         isShow: true,
-        title: "User Role Based Permission",
+        title: "Kanban Board",
         img: "/banner2.jpeg",
         description:
           "Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually.",
@@ -37,18 +37,18 @@ export const home2ndJson = {
       {
         id: 3,
         isShow: true,
-        title: "Approval Management System",
+        title: "Gantt Chart",
         img: "/images.jpg",
         description:
-          "That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility.",
+          "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.",
       },
       {
         id: 4,
         isShow: true,
-        title: "Client Control Panel",
+        title: "Calendar view",
         img: "/banner2.jpeg",
         description:
-          "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.",
+          "It lets a user view and interact with a calendar that they can navigate by month, year, or decade.",
       },
       {
         id: 5,
@@ -85,26 +85,26 @@ export const home2ndJson = {
       {
         id: 9,
         isShow: true,
-        title: "Kanban Board",
+        title: "User Role Based Permission ",
         img: "/images.jpg",
         description:
-          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
+          "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.",
       },
       {
         id: 10,
         isShow: true,
-        title: "Calendar view ",
+        title: "Client Control Panel",
         img: "/images.jpg",
         description:
-          "It lets a user view and interact with a calendar that they can navigate by month, year, or decade.",
+          "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.",
       },
       {
         id: 11,
         isShow: true,
-        title: "Gantt Chart",
+        title: "Approval Management System",
         img: "/images.jpg",
         description:
-          "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.",
+          "That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility.",
       },
 
       {

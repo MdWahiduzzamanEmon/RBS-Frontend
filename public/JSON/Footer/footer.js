@@ -5,7 +5,7 @@ export const footerDemoData = {
     {
       id: 1,
       isShow: true,
-      logo: "/RBS_logo.png",
+      logo: "/logoVitlous.png",
       // description:
       //   "On the other handed denounce with who are so beg demoralized.",
       // link:
@@ -90,61 +90,73 @@ export const footerDemoData = {
       title: "Popular Features",
       lists: [
         {
-          url: "/",
           item: "Intuitive Dashboard",
-          url: "/product",
+          url: "/features#dashboard",
         },
         {
           url: "/",
           item: "Kanban Board",
+          url: "/features#kanban",
         },
         {
           url: "/",
           item: "Gantt Chart",
+          url: "/features#gantt",
         },
         {
           url: "/",
           item: "Calendar view ",
+          url: "/features#calendar",
         },
         {
           url: "/",
           item: "Project Management",
+          url: "/features#projectManagement",
         },
         {
           url: "/",
           item: "Task  Management",
+          url: "/features#taskManagement",
         },
         {
           url: "/",
           item: "Document Management",
+          url: "/features#documentManagement",
         },
         {
           url: "/",
           item: "Budget Management ",
+          url: "/features#budgetManagement",
         },
         {
           url: "/",
           item: "Project & Task Discussion",
+          url: "/features#projectTaskDiscussion",
         },
         {
           url: "/",
           item: "Live Communication",
+          url: "/features#liveCommunication",
         },
         {
           url: "/",
           item: "Issue Tracking",
+          url: "/features#issueTracking",
         },
         {
           url: "/",
           item: "Time Tracking",
+          url: "/features#timeTracking",
         },
         {
           url: "/",
           item: "Resource management",
+          url: "/features#resourceManagement",
         },
         {
           url: "/",
           item: "Requisition, Invoice, Income, Expense, VAT-TAX Management",
+          url: "/features#requisitionInvoiceIncomeExpenseVatTaxManagement",
         },
       ],
     },

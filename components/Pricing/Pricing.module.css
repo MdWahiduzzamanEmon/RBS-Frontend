@@ -17,14 +17,16 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(4, 230px);
+  /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+  place-content: center;
+  gap: 15px;
   row-gap: 20px;
 }
 
 .pricingCard {
   width: 230px;
-  height: 720px;
+  height: 740px;
   padding: 15px;
   color: #173465;
   /* border-top-style: none; */
@@ -43,7 +45,7 @@
 .pricingCard:before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -62,7 +64,7 @@
 .pricingCard:nth-child(2):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -80,7 +82,7 @@
 .pricingCard:nth-child(3):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -98,7 +100,7 @@
 .pricingCard:nth-child(4):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -116,7 +118,7 @@
 .pricingCard:nth-child(5):before {
   content: "";
   position: absolute;
-  bottom: 719px;
+  bottom: 739px;
   left: -1px;
   right: 0;
   /* top: 0; */
@@ -130,6 +132,10 @@
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   /* border-radius: 5px;  */
+}
+
+.pricingTopContainer {
+  height: 400px;
 }
 
 .heading {
@@ -233,15 +239,19 @@
 
 .includesTitle {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .features {
   color: #000;
+  /* font-size: clamp(14px, 1.5vw, 15px); */
   /* opacity: 0.8; */
   font-weight: 300;
 }
+
+/* ************** Responsive devices***************** */
 
 /* .priceCard{
     width: 90%;

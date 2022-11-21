@@ -2,7 +2,6 @@ import Banner from "./Banner/Banner";
 
 // import Home3rd from "./Home3rd";
 import Home2nd from "./Home2nd/Home2nd";
-import Home4th from "./Home4th";
 import Home6th from "./Home6th/Home6th";
 import Home7th from "./Home7th/Home7th";
 import Home3rd from "./Home3rd/Home3rd";
@@ -16,6 +15,8 @@ import CircularMotion from "../../components/circularMotion/CircularMotion";
 import MiniPricing from "../../components/miniPricing/MiniPricing";
 import FeaturesBoard from "../../components/featuresBoard/FeaturesBoard";
 import CompareBoard from "../../components/compareBoard.js/CompareBoard";
+import ProjectManagement from "./ProjectManagement";
+import FinancialManagement from "../../components/FinancialManagement/FinancialManagement";
 
 const HomePage = ({
   bannerData,
@@ -23,7 +24,7 @@ const HomePage = ({
   home2ndData,
   home3rdData,
   home5thData,
-  home4thData,
+  projectManagementData,
   home7thData,
   managePlatformData,
   home6thData,
@@ -33,6 +34,7 @@ const HomePage = ({
   purchaseCardData,
   miniPricingData,
   featuresData,
+  financialManagementData,
 }) => {
   return (
     <div>
@@ -48,7 +50,10 @@ const HomePage = ({
 
         {/* //********Describing features in details******** */}
         <Home3rd home3rdData={home3rdData} />
-        <Home4th home4thData={home4thData} />
+        <ProjectManagement projectManagementData={projectManagementData} />
+        <FinancialManagement
+          financialManagementData={financialManagementData}
+        />
         <Home8th home8thData={home8thData} />
 
         {/* //*******************Review section****************/}

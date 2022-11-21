@@ -10,6 +10,7 @@ import { Pagination } from "swiper";
 import { FaExclamationCircle } from "react-icons/fa";
 import styles from "./PricingForSD.module.css";
 import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import Image from "next/image";
 
 const PricingForSD = ({ pricingData }) => {
   const changePriceColor = (itemName) => {
@@ -19,7 +20,7 @@ const PricingForSD = ({ pricingData }) => {
       return `${styles.rateContainerTopItemLeft}`;
     } else if (itemName === "Standard") {
       return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftBlue}`;
-    } else if (itemName === "Pro") {
+    } else if (itemName === "Premium") {
       return `${styles.rateContainerTopItemLeft} ${styles.rateContainerTopItemLeftGreen}`;
     } else if (itemName === "Enterprise") {
       return `${styles.rateContainerTopItemLeft} `;
@@ -41,11 +42,11 @@ const PricingForSD = ({ pricingData }) => {
             spaceBetween: 10,
           },
           640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 5,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
           1024: {
@@ -62,7 +63,7 @@ const PricingForSD = ({ pricingData }) => {
               key={item.id}
             >
               <h5 className={`${styles.heading}`}>{item.title}</h5>
-              <div className={`${styles.rateContainer}`}>
+              {/* <div className={`${styles.rateContainer}`}>
                 <div className={`${styles.rateContainerTop}`}>
                   <p className={changePriceColor(item.title)}>${item.price}</p>
                   <div className={`${styles.rateContainerTopItemRight}`}>
@@ -82,7 +83,61 @@ const PricingForSD = ({ pricingData }) => {
               <button className={`${styles.primaryButton}`}>
                 Try for free
               </button>
-              <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
+              <p className={`${styles.shortIntro}`}>{item.shortIntro}</p> */}
+
+              <div className={`${styles.rateContainer}`}>
+                <div className={`${styles.rateContainerTop}`}>
+                  {item.title !== "Enterprise" && (
+                    <>
+                      <p className={changePriceColor(item.title)}>
+                        ${item.price}
+                      </p>
+                      <div className={`${styles.rateContainerTopItemRight}`}>
+                        <p className="mb-0">seat/</p>
+                        <p>month</p>
+                      </div>
+                    </>
+                  )}
+                </div>
+                <div className={`${styles.rateContainerBottom}`}>
+                  {item.title === "Enterprise" ? (
+                    <Image
+                      src={item?.icon}
+                      alt="enterprise image"
+                      width={80}
+                      height={150}
+                      objectFit="contain"
+                      // layout="responsive"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        margin: "0 auto",
+                      }}
+                    ></Image>
+                  ) : (
+                    <>
+                      <p className={`${styles.rateContainerBottomItemTop}`}>
+                        Total ${item.monthlyPrice} / month
+                      </p>
+                      <p className={`${styles.rateContainerBottomItemBottom}`}>
+                        <small>{item.billingDuration}</small>
+                      </p>
+                    </>
+                  )}
+                </div>
+              </div>
+              <div>
+                {item.title === "Enterprise" ? (
+                  <button className={`${styles.primaryButton}`}>
+                    Contact us
+                  </button>
+                ) : (
+                  <button className={`${styles.primaryButton}`}>
+                    Try for free
+                  </button>
+                )}
+                <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
+              </div>
 
               <div className={`${styles.divider}`}></div>
 

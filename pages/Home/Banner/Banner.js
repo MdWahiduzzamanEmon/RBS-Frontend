@@ -1,6 +1,6 @@
 import Image from "next/image";
 // import bannerImageVector from "../../../public/banner/backgroundVector.png";
-import bannerImage from "../../../public/banner/bannerImage.jpeg";
+import bannerImage from "../../../public/banner/bannerImage.jpg";
 import NavBar from "../Navbar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
@@ -68,6 +68,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           backgroundImage: `url(${bannerImage.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          backgroundPosition: "35% 18%",
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
@@ -118,7 +119,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                         {item?.title}
                       </h1>
                       <div style={{ fontSize: "18px" }}>
-                        <p className=" " data-aos="fade-up">
+                        <p className="" data-aos="fade-up">
                           <small>{item?.primaryDescription}</small>
                         </p>
                         <p className="" data-aos="fade-right">

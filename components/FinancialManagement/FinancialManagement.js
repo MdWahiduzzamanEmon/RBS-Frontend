@@ -1,32 +1,15 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import React from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import changeColorOfCircleCheck from "../utility/functions/changeColorOfCircleCheck";
 
-const FeatureWithRightImage = ({ feature, colorChange }) => {
-  const { id, title, description, keyPoints, image, hashLink } = feature;
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash.length > 0) {
-      window.location.hash = "";
-      window.location.hash = hash;
-    }
-    // window.history.replaceState({}, document.title, window.location.href);
-    // if (document.referrer && !hash) {
-    //   window.location.hash = "";
-
-    //   window.location.href = document.referrer;
-
-    //   return (window.location.pathname = "/");
-    // }
-  });
-
+const FinancialManagement = ({ financialManagementData }) => {
+  console.log(financialManagementData);
+  const { id, title, description, keyPoints, image } = financialManagementData;
   return (
     <div
-      id={hashLink}
+      className=""
       style={{
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
@@ -34,8 +17,8 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
         fontFamily: "Poppins",
       }}
     >
-      <div className="d-flex flex-column flex-lg-row align-items-center container-lg">
-        <div className="p-3 w-100  w-lg-50" data-aos="zoom-in-down">
+      <div className="d-flex flex-column flex-lg-row-reverse align-items-center container-lg">
+        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <Image
             // key={data.id}
@@ -46,7 +29,6 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
             height={450}
             layout="responsive"
             className="rounded-5 p-2"
-            style={{ display: "inline-block" }}
           />
           {/* ))} */}
         </div>
@@ -69,7 +51,7 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
                   <span className="me-2">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
-                      color={colorChange(keyPoint.id)}
+                      color={changeColorOfCircleCheck(keyPoint.id)}
                     />
                   </span>
                   {keyPoint?.title}
@@ -93,4 +75,4 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
   );
 };
 
-export default FeatureWithRightImage;
+export default FinancialManagement;
