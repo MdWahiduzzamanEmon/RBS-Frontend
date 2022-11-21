@@ -104,6 +104,19 @@ const Home8th = ({ home8thData }) => {
               </div>
             </div> */}
             <div data-aos="zoom-in-right">
+              <Image
+                key={data?.id}
+                src={communicationImage}
+                alt=" "
+                objectFit="contain"
+                width={500}
+                height={450}
+                layout="responsive"
+                className="rounded-5 p-2"
+              />
+            </div>
+
+            <div data-aos="zoom-in-right">
               <h1 className="fs-2 fw-bold">{data.title}</h1>
               <p className="fs-6" style={{ textAlign: "justify" }}>
                 {data.titleDescription}
@@ -141,18 +154,6 @@ const Home8th = ({ home8thData }) => {
                   {data.subTitleDescription3}
                 </p>
               </div>
-            </div>
-            <div data-aos="zoom-in-right">
-              <Image
-                key={data?.id}
-                src={communicationImage}
-                alt=" "
-                objectFit="contain"
-                width={500}
-                height={450}
-                layout="responsive"
-                className="rounded-5 p-2"
-              />
             </div>
           </div>
         ))}
