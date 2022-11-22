@@ -113,16 +113,13 @@ const NavBar = () => {
   ];
 
   const openNavElements = (e) => {
-    // console.log(e.target.innerText);
     let navItemName = e.target.innerText;
-    // console.log(navItemName);
     if (navItemName === "Product") {
       dispatch({
         type: "OPEN_PRODUCT",
         payload: {
           openProduct: !state.openProduct,
           openResources: false,
-          // openPricing: false,
           innerText: navItemName,
         },
       });
@@ -132,7 +129,6 @@ const NavBar = () => {
         payload: {
           openResources: !state.openResources,
           openProduct: false,
-          // openPricing: false,
           innerText: navItemName,
         },
       });
@@ -185,8 +181,11 @@ const NavBar = () => {
   };
 
   const { width } = useViewport();
-  const breakpoint = 600;
+  const breakpoint = 800;
 
+  console.log("activeInnerText", state?.showActiveInnerText);
+  console.log("openProduct", state?.openProduct);
+  console.log("openResources", state?.openResources);
   return (
     <>
       {width > breakpoint ? (
@@ -243,12 +242,6 @@ const NavBar = () => {
                                 state.openResources)
                                 ? `${navStyles.active}`
                                 : ""
-                              // (navLink.text === state?.showActiveInnerText &&
-                              //   state.openPricing) ||
-                              // (navLink.text === state?.showActiveInnerText &&
-                              //   state.openWatchADemo)
-                              // navLink.href === router.pathname ||
-                              // navLink.href === router.pathname
                             }`}
                             onClick={(e) => {
                               openNavElements(e);
@@ -271,22 +264,12 @@ const NavBar = () => {
                               state.openProduct) ||
                             (navLink.text === state?.showActiveInnerText &&
                               state.openResources)
-                              ? // ||
-                                // (navLink.text === state?.showActiveInnerText &&
-                                //   state.openPricing) ||
-                                // (navLink.text === state?.showActiveInnerText &&
-                                //   state.openWatchADemo)
-                                // navLink.href === router.pathname ||
-                                // navLink.href === router.pathname
-                                `${navStyles.active}`
+                              ? `${navStyles.active}`
                               : ""
                           }`}
                           onClick={(e) => {
                             openNavElements(e);
                           }}
-                          // style={{
-                          //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                          // }}
                         >
                           {navLink.text}
                           {/* {navLink.icon} */}

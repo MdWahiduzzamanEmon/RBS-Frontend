@@ -75,8 +75,6 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         {/* marquee text */}
         <div
           style={{
-            // backgroundColor: "#03A8EE",
-            // backgroundColor: "#161515",
             color: "#fff",
           }}
           className="container"
@@ -84,7 +82,6 @@ const Banner = ({ bannerData, bannerImagesData }) => {
           <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
             <p
               style={{
-                // padding: "10px",
                 marginTop: "5px",
                 marginBottom: "5px",
                 display: "flex",

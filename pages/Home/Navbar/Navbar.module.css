@@ -147,13 +147,13 @@
     background: #fff;
   }
 
-  .navbarMainItems::after {
+  /* .navbarMainItems::after {
     content: none;
-  }
+  } */
 
-  .active::before {
+  /* .active::before {
     content: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 780px) {
