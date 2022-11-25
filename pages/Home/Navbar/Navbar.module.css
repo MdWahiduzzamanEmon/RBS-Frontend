@@ -107,12 +107,13 @@
 .navbarItemsInnerContainer {
   max-height: calc(100vh - 70px);
   overflow-y: auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
   background: #fff;
 }
 .navbarItemsContainerRight {
-  background: #212936;
+  /* background: #212936; */
+  border-left: 1px solid #e4e4e4;
 }
 
 .primaryButton {
