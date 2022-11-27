@@ -21,6 +21,7 @@ import { motion } from "framer-motion";
 import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
 import whyImage from "../../../public/svg/query-icon.svg";
 import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
+import { closeNavbar } from "../../../reducers/navbarReducer/actions";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -51,50 +52,62 @@ const NavBar = () => {
           {
             id: 1,
             title: "Whit label branding",
+            name: "Whit-Label-Branding",
           },
           {
             id: 2,
             title: "Kanban board",
+            name: "Kanban-Board",
           },
           {
             id: 3,
             title: "Gantt chart",
+            name: "Gantt-Chart",
           },
           {
             id: 4,
             title: "Calendar view",
+            name: "Calendar-View",
           },
           {
             id: 5,
             title: "Live chat communication",
+            name: "Live-Chat-Communication",
           },
           {
             id: 6,
             title: "Project & Task discussion",
+            name: "Project-Task-Discussion",
           },
           {
             id: 7,
             title: "Project & Task budget",
+            name: "Project-Task-Budget",
           },
           {
             id: 8,
             title: "Billing & Invoicing",
+            name: "Billing-Invoicing",
           },
           {
             id: 9,
             title: "Income & Expense",
+            name: "Income-Expense",
           },
           {
             id: 10,
             title: "Issue tracking",
+            name: "Issue-Tracking",
           },
           {
             id: 11,
             title: "Time tracking",
+            name: "Time-Tracking",
           },
           {
             id: 12,
             title: "Document management",
+            name: "Document-Management",
           },
         ],
       },
@@ -322,17 +335,7 @@ const NavBar = () => {
                 <div
                   className={`${navStyles.navbarBrand}`}
                   onClick={() => {
-                    dispatch({
-                      type: "CLOSE_NAVBAR",
-                      payload: {
-                        openProduct: false,
-                        openResources: false,
-                        openContactUs: false,
-                        openPricing: false,
-                        openWatchADemo: false,
-                        innerText: "",
-                      },
-                    });
+                    dispatch(closeNavbar());
                   }}
                 >
                   <Link href="/">

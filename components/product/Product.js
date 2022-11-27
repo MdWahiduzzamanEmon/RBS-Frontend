@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { closeNavbar } from "../../reducers/navbarReducer/actions";
 import BillingInvoiceSvg from "../../svgComponents/BillingInvoiceSvg";
 import CalenderViewSvg from "../../svgComponents/CalenderViewSvg";
 import DocumentSvg from "../../svgComponents/DocumentSvg";
@@ -94,7 +95,7 @@ const Product = ({ navLinks, dispatch }) => {
                 {navLink.allFeatures.map((item) => (
                   <Link
                     key={item.id}
-                    href="/pricing"
+                    href="/allFeatures"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -160,12 +161,12 @@ const Product = ({ navLinks, dispatch }) => {
                 </h4>
                 <div className={`${productStyles.listContainer}`}>
                   {navLink.featuresList.lists.map((list) => (
-                    <>
+                    <Link href={"/allFeatures/" + list.name} key={list.id}>
                       <div
-                        key={list.id}
                         className={`${productStyles.list}`}
                         onMouseOver={() => handleShowListLinkIcon(list.id)}
                         onMouseLeave={handleHideListLinkIcon}
+                        onClick={() => dispatch(closeNavbar())}
                       >
                         <div className={`${productStyles.listLeftSide}`}>
                           {showListSvg(list.title)}
@@ -177,7 +178,7 @@ const Product = ({ navLinks, dispatch }) => {
                           <ExternalLinkSvg width="12px" height="12px" />
                         )}
                       </div>
-                    </>
+                    </Link>
                   ))}
                 </div>
                 {/* </div> */}
