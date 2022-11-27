@@ -1,0 +1,65 @@
+.scrollFeaturesContainerTitle {
+  color: #173465;
+  font-size: clamp(20px, 5vw, 48px);
+  padding-bottom: 25px;
+}
+
+.sFeatureContainer {
+  /* width: 400px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.sFeatureContainerTitle {
+  color: #173465;
+  font-size: clamp(20px, 2vw, 28px);
+  padding: 20px 10px 5px;
+}
+.sFeatureContainerDescription {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 300;
+  padding: 0 10px 0;
+}
+.sFeatureContainerButton {
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px 10px;
+  outline: 1px solid #5a5ad5;
+  position: relative;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.sFeatureContainerButton:hover {
+  color: #fff;
+}
+.sFeatureContainerButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5a5ad5;
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  /* margin: 20px 10px; */
+}
+.sFeatureContainerButton:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #5a5ad5;
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  opacity: 1;
+  z-index: -1;
+  /* margin: 20px 10px; */
+}
