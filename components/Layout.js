@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div>{children}</div>
-      {/* <FooterCommon footerDetails={footerDetails} /> */}
+      <FooterCommon footerDetails={footerDetails} />
     </>
   );
 };
