@@ -6,23 +6,37 @@
 .bannerContainer {
   display: flex;
   height: calc(100vh - 70px);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* banner heading and description --inner container */
 .bannerInnerContainerTop {
-  font-size: clamp(12px, 2vw, 20px);
-}
-
-.bannerInnerContainerTop {
+  font-size: clamp(15px, 2vw, 20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
+.bannerInnerContainerPathLeft {
+  color: #a7acc5;
+  font-size: clamp(15px, 2vw, 20px);
+  cursor: pointer;
+}
+
+.bannerInnerContainerPathLeft:hover {
+  color: #888fb1;
+}
+
+.bannerInnerContainerPathRight {
   /* align-items: center; */
+  color: #5a5ad5;
+  font-size: clamp(15px, 2vw, 20px);
 }
 
 .bannerInnerContainerTitle {
-  font-size: clamp(25px, 10vw, 58px);
+  color: #173465;
+  font-size: clamp(20px, 10vw, 58px);
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -31,10 +45,203 @@
 }
 
 .bannerInnerContainerBottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  /* margin-bottom: 100px; */
+}
 
-  /* align-items: center; */
+.bannerInnerContainerVideo {
+  /* display: block; */
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* large image with features list */
+.largeImageWithFeatures {
+  padding: 30px;
+}
+
+.largeImageWithFeaturesTitleContainer {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.largeImageWithFeaturesTitle {
+  color: #173465;
+  font-size: clamp(21px, 5vw, 48px);
+}
+
+.largeImageWithFeaturesInfos {
+  font-size: clamp(15px, 2vw, 20px);
+  padding-top: 10px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.largeImageWithFeaturesImage {
+  display: block;
+  padding: 80px 40px 50px;
+}
+
+.largeImageWithFeaturesList {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  place-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.largeImageWithFeaturesListTitle {
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: #173465;
+}
+.largeImageWithFeaturesListDetails {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 300;
+}
+
+/* tutorials container*/
+.tutorialsContainer {
+  padding: 50px 0;
+}
+
+.tutorialsContainerTitle {
+  color: #173465;
+  font-size: clamp(21px, 5vw, 48px);
+  padding-bottom: 25px;
+}
+
+.tutorialsStepsContainer {
+  font-family: "poppins", sans-serif;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  gap: 40px; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.tutorialsStepsAccordionContainer {
+  flex: 0 1 auto;
+}
+
+.tutorialsStepsAccordion:focus {
+  background-color: #fff !important;
+}
+
+.tutorialsStepsTitle button {
+  font-size: clamp(18px, 2.5vw, 20px) !important;
+  color: #173465 !important;
+  background-color: #fff !important;
+}
+
+.tutorialsStepsTitle button::after {
+  background-image: url("/pageImages/plusIcon.png") !important;
+}
+
+.tutorialsStepsTitle button:hover,
+.tutorialsStepsTitle button:focus {
+  color: #173465 !important;
+  outline: none !important;
+}
+
+.tutorialsStepsTitle button:focus {
+  background-color: #fafafa !important;
+  border-color: unset !important;
+  box-shadow: none !important;
+}
+
+.tutorialsStepsDescription {
+  background-color: #fafafa;
+}
+
+.tutorialsImageContainer {
+  width: 500px;
+  height: 500px;
+  flex: 0 0 auto;
+  /* height: 500px; */
+}
+
+.tutorialsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* height: 500px; */
+}
+
+/* media queries for devices max-width: 600px & 992px */
+
+@media screen and (max-width: 1200px) {
+  .bannerContainer {
+    height: unset;
+  }
+
+  .bannerInnerContainerVideo {
+    /* display: block; */
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .largeImageWithFeaturesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 50px;
+    padding: 40px 70px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .bannerContainer {
+    height: unset;
+  }
+
+  .largeImageWithFeaturesList {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .largeImageWithFeaturesInfos {
+    font-size: clamp(15px, 2vw, 20px);
+    padding-top: 10px;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  .tutorialsImageContainer {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tutorialsImageContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bannerInnerContainerVideo {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .largeImageWithFeaturesImage {
+    display: block;
+    padding: 50px 0 30px;
+  }
+
+  .largeImageWithFeaturesList {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .tutorialsStepsContainer {
+    padding-top: 0px;
+  }
 }
