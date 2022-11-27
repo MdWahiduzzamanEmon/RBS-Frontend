@@ -252,7 +252,7 @@ export const allFeaturesDemoData = [
       features: [
         {
           id: 1,
-          title: "Whit-Label-Branding",
+          title: "Whit Label Branding",
           name: "Whit-Label-Branding",
           description:
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae beatae possimus dolorem ad, recusandae ex velit dignissimos consequatur provident dolores!",
@@ -423,7 +423,7 @@ export const allFeaturesDemoData = [
       features: [
         {
           id: 1,
-          title: "Whit-Label-Branding",
+          title: "Whit Label Branding",
           name: "Whit-Label-Branding",
           description:
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae beatae possimus dolorem ad, recusandae ex velit dignissimos consequatur provident dolores!",
@@ -594,7 +594,7 @@ export const allFeaturesDemoData = [
       features: [
         {
           id: 1,
-          title: "Whit-Label-Branding",
+          title: "Whit Label Branding",
           name: "Whit-Label-Branding",
           description:
             " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae beatae possimus dolorem ad, recusandae ex velit dignissimos consequatur provident dolores!",

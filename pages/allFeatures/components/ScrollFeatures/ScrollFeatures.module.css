@@ -22,6 +22,7 @@
 .sFeatureContainerButton {
   width: 150px;
   padding: 10px 20px;
+  background-color: transparent;
   border: none;
   margin: 20px 10px;
   outline: 1px solid #5a5ad5;
