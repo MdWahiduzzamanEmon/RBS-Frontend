@@ -2,7 +2,7 @@ export const allFeaturesMainPageData = {
   id: 1,
   banner: {
     id: 1,
-    title: "Features that make work easier",
+    title: "Features at a glance",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     image: "/pageImages/pageImage1.png",
   },
