@@ -13,8 +13,6 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
     if (hash === `#${hashLink}`) {
       window.location.hash = "";
       window.location.hash = hash;
-    } else {
-      window.location = "/";
     }
     // window.history.replaceState({}, document.title, window.location.href);
     // if (document.referrer && !hash) {
