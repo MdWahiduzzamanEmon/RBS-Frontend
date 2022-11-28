@@ -1,0 +1,39 @@
+.categoriesContainer {
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: 400;
+  color: #173465;
+  padding: 55px 10px;
+}
+
+/* feature cards */
+.featureCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.categoriesContainerTitle {
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 992px) {
+  /* feature cards */
+  .featureCardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* feature cards */
+  .featureCardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* feature cards */
+  .featureCardsContainer {
+    grid-template-columns: 1fr;
+  }
+}

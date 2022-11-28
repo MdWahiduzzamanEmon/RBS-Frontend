@@ -45,7 +45,7 @@ const ScrollFeatures = ({ items }) => {
                 spaceBetween: 40,
               },
               1024: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 50,
               },
             }}
@@ -60,7 +60,7 @@ const ScrollFeatures = ({ items }) => {
                     src={item.image}
                     alt={item.title}
                     width={200}
-                    height={100}
+                    height={150}
                     layout="responsive"
                     objectFit="cover"
                     className={`${styles.sFeatureContainerImage}`}
