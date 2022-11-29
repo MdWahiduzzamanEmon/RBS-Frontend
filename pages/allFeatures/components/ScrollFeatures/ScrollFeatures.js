@@ -37,8 +37,8 @@ const ScrollFeatures = ({ items }) => {
                 spaceBetween: 10,
               },
               640: {
-                slidesPerView: 1,
-                spaceBetween: 5,
+                slidesPerView: 2,
+                spaceBetween: 20,
               },
               768: {
                 slidesPerView: 2,
@@ -51,11 +51,13 @@ const ScrollFeatures = ({ items }) => {
             }}
           >
             {items?.scrollFeatures?.features?.map((item) => (
-              <SwiperSlide
-                key={item.id}
-                className={`${styles.sFeatureContainer}`}
-              >
-                <div>
+              <div key={item.id}>
+                <SwiperSlide
+                  key={item.id}
+                  direction="vertical"
+                  className={`${styles.sFeatureContainer}`}
+                >
+                  {/* <div> */}
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -65,6 +67,7 @@ const ScrollFeatures = ({ items }) => {
                     objectFit="cover"
                     className={`${styles.sFeatureContainerImage}`}
                   ></Image>
+
                   <h1 className={`${styles.sFeatureContainerTitle}`}>
                     {item.title}
                   </h1>
@@ -76,8 +79,9 @@ const ScrollFeatures = ({ items }) => {
                       Read More
                     </button>
                   </Link>
-                </div>
-              </SwiperSlide>
+                  {/* </div> */}
+                </SwiperSlide>
+              </div>
             ))}
           </Swiper>
         </>

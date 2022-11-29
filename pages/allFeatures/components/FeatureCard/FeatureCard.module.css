@@ -1,75 +1,111 @@
-.card {
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* box-shadow: 1px 1px 0px linear-gradient(120deg, #00bc40, #4c3ae3); */
-  border-radius: 10px;
-  border: none;
-  outline: none;
+.wrap {
+  display: flex;
+  flex-direction: column;
+  /* width: clamp(200px, 70vw, 320px); */
+  height: 300px;
+  margin: 10px;
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+  background-size: cover;
   position: relative;
-  background: linear-gradient(120deg, #2bc0e4, #eaecc6);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  z-index: 1;
   cursor: pointer;
-  text-align: justify;
-  transition: all 1s ease;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins";
 }
-.card::before {
+
+.wrap::before {
   content: "";
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* box-shadow: 1px 1px 0px linear-gradient(120deg, #00bc40, #4c3ae3); */
-  border-radius: 8px;
-  border: none;
-  outline: none;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  z-index: -1;
-  background: #fff;
-  transition: all 1s ease;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins";
 }
 
-.card:hover {
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* box-shadow: 1px 1px 0px linear-gradient(120deg, #00bc40, #4c3ae3); */
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  position: relative;
-  background: linear-gradient(120deg, #085078, #85d8ce);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* z-index: 1; */
-  cursor: pointer;
-  text-align: justify;
-  transition: all 1s ease;
+.wrap::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+  overflow: hidden;
+  color: white;
+  font-family: "Poppins";
 }
 
-.cardTitle {
-  font-size: clamp(15px, 2vw, 20px);
-  color: #373753;
-  padding: 10px 0;
+.blankWrapper {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: #173465;
 }
 
-.cardDescription {
-  font-size: clamp(15px, 2vw, 20px);
+.wrap .text {
+  position: absolute;
+  padding: 30px;
+  height: calc(100% - 60px);
+}
+
+.wrap .text::before {
+  position: absolute;
+  padding: 30px;
+  height: calc(100% - 60px);
+}
+
+.wrap h3 {
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 500;
+  margin: 20px 0 0 0;
+}
+
+.wrap p {
+  font-size: clamp(13px, 2vw, 15px);
   font-weight: 300;
-  /* color: #727491; */
-  color: #000;
+  margin: 20px 0 0 0;
+  line-height: 25px;
+  transition-delay: 0.2s;
 }
 
+.description {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+
+.wrap:hover {
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+  transform: scale(1.05);
+}
+
+/* button */
 .cardButton {
-  border: none;
-  background: linear-gradient(120deg, #085078, #85d8ce);
+  /* background: linear-gradient(120deg, #085078, #85d8ce); */
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   width: 150px;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 10px 15px;
   position: relative;
   z-index: 1;
-  /* margin: 20px 0; */
+  margin-top: auto;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  display: inline-block;
+  align-self: flex-start;
+  border: none;
+  border-radius: 25px;
 }
 .cardButton::after {
   content: "";
@@ -78,15 +114,15 @@
   left: 1px;
   right: 1px;
   bottom: 1px;
-  border: none;
   background: #fff;
   /* width: 150px; */
   padding: 10px 20px;
+  border-radius: 25px;
   z-index: -1;
 }
 
 .cardButton:hover {
-  background: linear-gradient(120deg, #2bc0e4, #eaecc6);
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   color: #fff;
 }
 
@@ -97,8 +133,18 @@
   left: 2px;
   right: 2px;
   bottom: 2px;
-  border: none;
   background: transparent;
-  /* width: 150px; */
   padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    height: 360px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrap {
+    height: 250px;
+  }
 }

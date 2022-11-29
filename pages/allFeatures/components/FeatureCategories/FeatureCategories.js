@@ -3,7 +3,6 @@ import FeatureCard from "../FeatureCard/FeatureCard";
 import styles from "./FeatureCategories.module.css";
 
 const FeatureCategories = ({ categoriesData }) => {
-  console.log(categoriesData);
   return (
     <section
       style={{
@@ -14,7 +13,7 @@ const FeatureCategories = ({ categoriesData }) => {
       {categoriesData?.map((feature) => (
         <div
           key={feature.id}
-          className={`${styles.categoriesContainer} container-xl`}
+          className={`${styles.categoriesContainer} container-xl  `}
         >
           <h3 className={`${styles.categoriesContainerTitle}`}>
             {feature.title}

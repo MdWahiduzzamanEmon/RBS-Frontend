@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "./AllFeaturesBanner.module.css";
 
@@ -13,10 +14,14 @@ const AllFeaturesBanner = ({ bannerData }) => {
             <p className={`${styles.bannerDescription}`}>{description}</p>
           </div>
           <div className={`${styles.bannerButtonContainer}`}>
-            <button className={`${styles.bannerButtonLeft}`}>Try Free</button>
-            <button className={`${styles.bannerButtonRight}`}>
-              See Pricing
-            </button>
+            <Link href="/pricing">
+              <button className={`${styles.bannerButtonLeft}`}>Try Free</button>
+            </Link>
+            <Link href="/pricing">
+              <button className={`${styles.bannerButtonRight}`}>
+                See Pricing
+              </button>
+            </Link>
           </div>
           <div className={`${styles.bannerImageContainer}`}>
             {/* <div

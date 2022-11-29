@@ -5,9 +5,14 @@
 }
 
 .sFeatureContainer {
-  /* width: 400px; */
   border: 1px solid #ccc;
   border-radius: 5px;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sFeatureContainerTitleAndButton {
 }
 .sFeatureContainerTitle {
   color: #173465;
@@ -24,11 +29,16 @@
   padding: 10px 20px;
   background-color: transparent;
   border: none;
-  margin: 20px 10px;
+  /* margin: 20px 10px; */
   outline: 1px solid #5a5ad5;
   position: relative;
   z-index: 100;
   transition: all 0.3s ease;
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 .sFeatureContainerButton:hover {
   color: #fff;

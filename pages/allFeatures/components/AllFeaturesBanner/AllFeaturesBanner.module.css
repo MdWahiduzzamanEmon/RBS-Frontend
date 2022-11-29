@@ -50,8 +50,24 @@
   padding: 20px 10px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
+
 .bannerButtonRight {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.bannerButtonLeft:hover {
+  background-color: #173465;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.bannerButtonRight:hover {
+  background-color: #fff;
+  color: #000;
+  /* border: 2px solid #fff; */
 }
 
 /* banner image */
@@ -71,6 +87,7 @@
 
 .bannerImage {
   z-index: 1000 !important;
+
   /* width: 600px !important; */
   /* padding: 40px !important; */
   border-radius: 20px 20px !important;

@@ -16,21 +16,21 @@ export const allFeaturesMainPageData = {
           title: "Whit Label Branding",
           name: "Whit-Label-Branding",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget ",
         },
         {
           id: 2,
           title: "Kanban Board",
           name: "Kanban-Board",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget ",
         },
         {
           id: 3,
           title: "Gantt Chart",
           name: "Gantt-Chart",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nislc nisl, egeisl.",
         },
       ],
     },
@@ -43,21 +43,21 @@ export const allFeaturesMainPageData = {
           title: "Whit Label Branding",
           name: "Whit-Label-Branding",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
         },
         {
           id: 2,
           title: "Kanban Board",
           name: "Kanban-Board",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
         },
         {
           id: 3,
           title: "Gantt Chart",
           name: "Gantt-Chart",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed auctor, nisl eget aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
         },
       ],
     },
