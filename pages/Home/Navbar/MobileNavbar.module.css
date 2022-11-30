@@ -6,7 +6,7 @@
   padding-left: 16px;
   padding-right: 16px;
   height: 70px;
-  z-index: 1000;
+  background: #fff;
 }
 
 .accordionParent {

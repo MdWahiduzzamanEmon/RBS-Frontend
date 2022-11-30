@@ -9,7 +9,7 @@ export const allFeaturesMainPageData = {
   featureLists: [
     {
       id: 1,
-      title: "Deliver",
+      title: "Reporting",
       features: [
         {
           id: 1,

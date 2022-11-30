@@ -322,10 +322,10 @@ const NavBar = () => {
             <div
               className={`${navStyles.navbarContainer}`}
               style={{
-                position:
-                  state?.openProduct || state?.openResources
-                    ? "fixed"
-                    : "relative",
+                position: "fixed",
+                // state?.openProduct || state?.openResources
+                //   ? "fixed"
+                //   : "relative",
               }}
             >
               <div
@@ -339,7 +339,6 @@ const NavBar = () => {
                   }}
                 >
                   <Link href="/">
-                    {/* {" "} */}
                     <p className={`${navStyles.navbarBrandText}`}>Vitlous</p>
                   </Link>
                 </div>
@@ -442,10 +441,10 @@ const NavBar = () => {
                 //   position: state?.showActiveInnerText ? "fixed" : "absolute",
                 // }}
                 style={{
-                  position:
-                    state?.openProduct || state?.openResources
-                      ? "fixed"
-                      : "absolute",
+                  position: "fixed",
+                  // state?.openProduct || state?.openResources
+                  //   ? "fixed"
+                  //   : "absolute",
                 }}
               >
                 <div

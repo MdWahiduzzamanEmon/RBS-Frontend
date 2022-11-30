@@ -26,6 +26,7 @@ const AllFeatures = ({ featureLists, allFeaturesMainPageData }) => {
     >
       {/* banner */}
       <AllFeaturesBanner bannerData={allFeaturesMainPageData?.banner} />
+
       <FeatureCategories
         categoriesData={allFeaturesMainPageData?.featureLists}
       />

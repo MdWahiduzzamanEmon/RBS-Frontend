@@ -9,12 +9,20 @@ import styles from "./MobileNavbar.module.css";
 
 const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
   return (
-    <>
+    <div style={{ position: "fixed", width: "100vw", zIndex: "20000" }}>
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
           <Link href="/">
             {/* {" "} */}
-            <h1>Vitlous</h1>
+            <h1
+              style={{
+                fontFamily: "Poppins",
+                fontWeight: "700",
+                color: "#173465",
+              }}
+            >
+              Vitlous
+            </h1>
           </Link>
         </div>
         <div>
@@ -120,7 +128,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
           </Accordion>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
