@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "./BookingDemo.module.css";
 
@@ -23,7 +24,9 @@ const BookingDemo = ({ bookingDemoData }) => {
         <div className={`${styles.textWrapperInner}`}>
           <h3 className={`${styles.textWrapperTitle}`}>{title}</h3>
           <p className={`${styles.textWrapperDescription}`}>{description}</p>
-          <button className={`${styles.cardButton}`}>Book Demo</button>
+          <Link href="/pricing">
+            <button className={`${styles.cardButton}`}>Book Demo</button>
+          </Link>
         </div>
       </div>
     </div>
