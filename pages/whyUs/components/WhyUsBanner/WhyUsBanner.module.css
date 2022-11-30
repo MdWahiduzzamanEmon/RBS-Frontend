@@ -87,14 +87,12 @@
   box-shadow: -2px 2px 22px 1px rgba(143, 206, 233, 0.4);
   border-radius: 20px 20px;
   margin: 0 auto;
+  /* display: inline-block; */
 }
 
 .bannerImage {
-  z-index: 1000 !important;
-
-  /* width: 600px !important; */
-  /* padding: 40px !important; */
-  border-radius: 20px 20px !important;
+  /* display: inline-block; */
+  line-height: 0;
 }
 
 @media screen and (max-width: 992px) {

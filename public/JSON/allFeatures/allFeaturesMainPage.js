@@ -1,5 +1,4 @@
 export const allFeaturesMainPageData = {
-  id: 1,
   banner: {
     id: 1,
     title: "Features at a glance",

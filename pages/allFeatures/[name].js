@@ -10,7 +10,6 @@ export const getStaticPaths = async () => {
   const paths = allFeaturesDemoData.map((feature) => ({
     params: { name: feature.name.toString() },
   }));
-  console.log(allFeaturesDemoData);
   return {
     paths,
     fallback: false,
@@ -29,7 +28,6 @@ export const getStaticProps = async ({ params }) => {
 };
 
 const SingleFeature = ({ feature }) => {
-  console.log(feature);
   const [stepId, setStepId] = React.useState(0);
   console.log(stepId);
   return (

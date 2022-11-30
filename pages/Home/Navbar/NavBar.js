@@ -34,6 +34,7 @@ const NavBar = () => {
         {
           id: 1,
           title: "All features",
+          name: "allFeatures",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
           image: allFeaturesImage,
@@ -41,6 +42,7 @@ const NavBar = () => {
         {
           id: 2,
           title: "Why us",
+          name: "whyUs",
           description: "Lorem ipsum dolor sit amet.",
           image: whyImage,
         },

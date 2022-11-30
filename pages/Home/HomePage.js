@@ -41,7 +41,7 @@ const HomePage = ({
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
         <FeaturesBoard featuresData={featuresData} />
-        <ManagePlatform managePlatformData={managePlatformData} />
+        {/* <ManagePlatform managePlatformData={managePlatformData} /> */}
         {/* //**************Features section****************/}
         {/* <Home2nd home2ndData={home2ndData} /> */}
 

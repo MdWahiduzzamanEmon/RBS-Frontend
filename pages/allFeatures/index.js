@@ -16,7 +16,6 @@ export const getStaticProps = async () => {
 };
 
 const AllFeatures = ({ featureLists, allFeaturesMainPageData }) => {
-  console?.log(featureLists);
   return (
     <section
       style={{

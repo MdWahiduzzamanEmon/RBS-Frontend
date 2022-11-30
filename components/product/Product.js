@@ -95,7 +95,7 @@ const Product = ({ navLinks, dispatch }) => {
                 {navLink.allFeatures.map((item) => (
                   <Link
                     key={item.id}
-                    href="/allFeatures"
+                    href={`/${item.name}`}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
