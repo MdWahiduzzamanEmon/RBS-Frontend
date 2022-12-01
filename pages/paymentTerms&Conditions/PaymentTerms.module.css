@@ -1,0 +1,30 @@
+.paymentTermsWrapper {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-family: "Poppins", sans-serif;
+}
+
+.paymentTermsTitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.paymentTermsWrapper .paymentTermsAlert1 {
+  font-weight: 600;
+}
+
+.paymentTermsWrapper p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.tertiaryTitle {
+  font-weight: 600;
+  padding-right: 5px;
+}
+
+.paymentTermsWrapper .highLightedLink {
+  color: blue;
+  cursor: pointer;
+}

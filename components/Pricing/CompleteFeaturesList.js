@@ -112,18 +112,15 @@ const CompleteFeaturesList = ({ pricingData }) => {
                         {item.isAvailable && item.id ? (
                           <td key={item?.id}>
                             {item?.id === 1 && (
-                              <FaCheckCircle color="#173465" />
-                            )}
-                            {item?.id === 2 && (
                               <FaCheckCircle color="#a25ddc" />
                             )}
-                            {item?.id === 3 && (
+                            {item?.id === 2 && (
                               <FaCheckCircle color="#0085ff" />
                             )}
-                            {item?.id === 4 && (
+                            {item?.id === 3 && (
                               <FaCheckCircle color="#00ca72" />
                             )}
-                            {item?.id === 5 && (
+                            {item?.id === 4 && (
                               <FaCheckCircle color="#173465" />
                             )}
                           </td>

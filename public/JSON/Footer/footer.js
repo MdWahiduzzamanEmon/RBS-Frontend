@@ -40,8 +40,12 @@ export const footerDemoData = {
           item: "Security",
         },
         {
-          url: "/",
+          url: "/pricing",
           item: "Pricing",
+        },
+        {
+          url: "/paymentTerms&Conditions",
+          item: "Payment Terms & Conditions",
         },
         {
           url: "/termsAndConditions",
