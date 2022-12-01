@@ -45,7 +45,7 @@ export const footerDemoData = {
         },
         {
           url: "/termsAndConditions",
-          item: "Term and Condition",
+          item: "Terms and Conditions",
         },
         {
           url: "/privacyPolicy",
