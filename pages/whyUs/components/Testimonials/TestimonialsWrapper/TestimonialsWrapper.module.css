@@ -1,0 +1,24 @@
+.testimonialsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+}
+
+@media screen and (max-width: 850px) {
+  .testimonialsWrapper {
+    gap: 5px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .testimonialsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonialsWrapper {
+    grid-template-columns: 1fr;
+  }
+}
