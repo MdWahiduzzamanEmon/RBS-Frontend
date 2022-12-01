@@ -45,7 +45,7 @@ const Pricing = ({ pricingData }) => {
       style={{
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        padding: "50px 35px",
+        padding: "150px 35px",
         fontFamily: "Poppins",
       }}
     >
