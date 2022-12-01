@@ -44,11 +44,11 @@ export const footerDemoData = {
           item: "Pricing",
         },
         {
-          url: "/",
+          url: "/termsAndConditions",
           item: "Term and Condition",
         },
         {
-          url: "/",
+          url: "/privacyPolicy",
           item: "Privacy Policy",
         },
       ],

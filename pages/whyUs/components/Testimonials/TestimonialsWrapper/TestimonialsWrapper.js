@@ -3,53 +3,6 @@ import Testimonial from "./Testimonial/Testimonial";
 import styles from "./TestimonialsWrapper.module.css";
 
 const TestimonialsWrapper = ({ testimonials, selectedCategory }) => {
-  //   const showTestimonials = (testimonials, selectedCategory) => {
-  //     switch (selectedCategory) {
-  //       case selectedCategory: {
-  //         return (
-  //           <>
-  //             {testimonials
-  //               ?.filter(
-  //                 (testimonial) => testimonial.category === selectedCategory
-  //               )
-  //               .map((testimonial) => (
-  //                 <Testimonial
-  //                   key={testimonial.id}
-  //                   testimonial={testimonial}
-  //                   className={`${styles.testimonial}`}
-  //                 />
-  //               ))}
-  //           </>
-  //         );
-  //       }
-  //       case selectedCategory === "All Features": {
-  //         return (
-  //           <>
-  //             {testimonials?.map((testimonial) => (
-  //               <Testimonial
-  //                 key={testimonial.id}
-  //                 testimonial={testimonial}
-  //                 className={`${styles.testimonial}`}
-  //               />
-  //             ))}
-  //           </>
-  //         );
-  //       }
-  //       default:
-  //         return (
-  //           <>
-  //             {testimonials?.map((testimonial) => (
-  //               <Testimonial
-  //                 key={testimonial.id}
-  //                 testimonial={testimonial}
-  //                 className={`${styles.testimonial}`}
-  //               />
-  //             ))}
-  //           </>
-  //         );
-  //     }
-  //   };
-
   return (
     <div
       className={`${styles.testimonialsWrapper}`}
@@ -89,7 +42,6 @@ const TestimonialsWrapper = ({ testimonials, selectedCategory }) => {
           ))}
         </>
       )}
-      {/* {showTestimonials(testimonials, selectedCategory)} */}
     </div>
   );
 };
