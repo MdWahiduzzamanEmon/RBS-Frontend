@@ -2,7 +2,7 @@
   /* display: flex;
   flex-direction: column; */
   /* width: clamp(200px, 70vw, 320px); */
-  height: 300px;
+  height: 350px;
   margin: 10px;
   /* background: transparent; */
   background-size: cover;
@@ -57,20 +57,31 @@
 
 .testimonialWrapper .text {
   position: absolute;
-  padding: 30px;
+  padding: 20px;
   height: calc(100% - 60px);
 }
 
 .testimonialWrapper .text::before {
   position: absolute;
-  padding: 30px;
+  padding: 20px;
   height: calc(100% - 60px);
+}
+
+.textCategory {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #000;
+  font-size: 10px;
+  padding: 5px;
+  background-color: aquamarine;
+  border-radius: 10px;
 }
 
 .testimonialWrapper h3 {
   font-size: clamp(15px, 2vw, 18px);
   font-weight: 500;
-  margin: 20px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .testimonialWrapper p {
@@ -84,4 +95,10 @@
 .description {
   opacity: 1;
   transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonialWrapper {
+    height: 300px;
+  }
 }

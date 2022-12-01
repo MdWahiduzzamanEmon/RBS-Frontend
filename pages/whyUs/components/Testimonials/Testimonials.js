@@ -4,6 +4,8 @@ import styles from "./Testimonials.module.css";
 import TestimonialsWrapper from "./TestimonialsWrapper/TestimonialsWrapper";
 
 const Testimonials = ({ testimonialsData }) => {
+  const [selectedCategory, setSelectedCategory] = React.useState("");
+  console.log(selectedCategory);
   return (
     <section>
       <div className={`${styles.testimonialsWrapper} container-xl`}>
@@ -13,8 +15,14 @@ const Testimonials = ({ testimonialsData }) => {
         <p className={`${styles.testimonialsWrapperDescription}`}>
           {testimonialsData.description}
         </p>
-        <TCategories categoriesData={testimonialsData?.categories} />
-        <TestimonialsWrapper testimonials={testimonialsData?.testimonials} />
+        <TCategories
+          categoriesData={testimonialsData?.categories}
+          setSelectedCategory={setSelectedCategory}
+        />
+        <TestimonialsWrapper
+          testimonials={testimonialsData?.testimonials}
+          selectedCategory={selectedCategory}
+        />
       </div>
     </section>
   );
