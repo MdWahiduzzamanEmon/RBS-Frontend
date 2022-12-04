@@ -126,9 +126,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-top: 50px;
-  padding: 5px 10px;
   background: #173465;
-  border: none;
   border-radius: 5px;
   border: 3px solid #173465;
   cursor: pointer;
@@ -154,9 +152,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-top: 50px;
-  padding: 5px 10px;
   background: #173465;
-  border: none;
   border-radius: 5px;
   border: 3px solid #173465;
   cursor: pointer;
@@ -180,6 +176,10 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .wrapper {
+    margin-bottom: 50px;
+  }
+
   .formContentsTop {
     display: flex;
     flex-direction: column;
@@ -205,6 +205,10 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 150px;
+  }
+
   .formContentsMiddle {
     flex-direction: column;
   }

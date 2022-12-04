@@ -39,6 +39,93 @@ export const contactUsDemo = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?",
   },
+  support: {
+    id: 1,
+    title: "Find the answers you need",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?",
+    usersList: {
+      id: 1,
+      title: "Who are you?",
+      users: [
+        {
+          id: 1,
+          title: "User 1",
+        },
+        {
+          id: 2,
+          title: "User 2",
+        },
+      ],
+
+      questionsSection: [
+        {
+          id: 1,
+          user: "User 1",
+
+          questionsList: {
+            id: 1,
+            title: "General",
+            questions: [
+              {
+                id: 1,
+                title: "How will the vitlous process work for me?",
+                ans: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              },
+              {
+                id: 2,
+                title: "How do i create a new user?",
+                ans: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+              },
+            ],
+          },
+        },
+        {
+          id: 2,
+          user: "User 1",
+
+          questionsList: {
+            id: 1,
+            title: "Technical help",
+            questions: [
+              {
+                id: 1,
+                title: "How will the vitlous process work for me?",
+                ans: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              },
+              {
+                id: 2,
+                title: "How do i create a new user?",
+                ans: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+              },
+            ],
+          },
+        },
+        {
+          id: 3,
+          user: "User 2",
+
+          questionsList: {
+            id: 1,
+            title: "Users",
+            questions: [
+              {
+                id: 1,
+                title: "How will the vitlous process work for me?",
+                ans: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              },
+              {
+                id: 2,
+                title: "How do i create a new user?",
+                ans: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+              },
+            ],
+          },
+        },
+      ],
+    },
+    // questionsList:
+  },
   contactSupport: {
     id: 1,
     title: "Contact Support",

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./contactUsDynamic.module.css";
+import styles from "./contactSales.module.css";
 import WavesSvg from "../../svgComponents/wavesSvg";
 import { contactUsDemo } from "../../public/JSON/contactus/contactus";
 import { useForm } from "react-hook-form";
@@ -22,7 +22,7 @@ const ProductTraining = ({ contactUsData }) => {
 
   const onSubmit = (data) => console.log(data);
   return (
-    <section style={{ paddingTop: "70px" }}>
+    <section style={{ paddingTop: "70px" }} className={`${styles.wrapper}`}>
       <div className={`${styles.svgWrapper}`}>
         <WavesSvg />
       </div>
