@@ -4,18 +4,23 @@ import styles from "./AboutBanner.module.css";
 
 const AboutBanner = () => {
   return (
-    <div
+    <section
       style={{
-        backgroundImage: `url(${bannerCommon.src})`,
-        height: "300px",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        paddingTop: "70px",
       }}
     >
-      <div className=" d-flex justify-content-center align-items-center text-white text-center py-5 ">
-        <h1 className={`${styles.bannerText} bannerText`}>About us</h1>
+      <div
+        style={{
+          backgroundImage: `url(${bannerCommon.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className=" d-flex justify-content-center align-items-center text-white text-center py-5 ">
+          <h1 className={`${styles.bannerText}`}>About us</h1>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,7 +10,7 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
   const { id, title, description, keyPoints, image, hashLink } = feature;
   useEffect(() => {
     const hash = window.location.hash;
-    if (hash.length > 0) {
+    if (hash === `#${hashLink}`) {
       window.location.hash = "";
       window.location.hash = hash;
     }
@@ -22,8 +22,8 @@ const FeatureWithRightImage = ({ feature, colorChange }) => {
 
     //   return (window.location.pathname = "/");
     // }
+    console.log(hash);
   });
-
   return (
     <div
       id={hashLink}

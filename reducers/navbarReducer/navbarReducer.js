@@ -1,6 +1,7 @@
 export const initialState = {
   openProduct: false,
   openResources: false,
+  openContactUs: false,
   openPricing: false,
   openWatchADemo: false,
   showActiveInnerText: "",
@@ -15,8 +16,7 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        // openPricing: action.payload.openPricing,
-        // openWatchADemo: action.payload.openWatchADemo,
+        openContactUs: action.payload.openContactUs,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -26,8 +26,7 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        // openPricing: action.payload.openPricing,
-        // openWatchADemo: action.payload.openWatchADemo,
+        openContactUs: action.payload.openContactUs,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -37,8 +36,7 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        // openPricing: action.payload.openPricing,
-        // openWatchADemo: action.payload.openWatchADemo,
+        openContactUs: action.payload.openContactUs,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -48,8 +46,17 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        // openPricing: action.payload.openPricing,
-        // openWatchADemo: action.payload.openWatchADemo,
+        openContactUs: action.payload.openContactUs,
+        showActiveInnerText: action.payload.innerText,
+        changeNavbarPosition: action.payload.changeNavbarPosition,
+      };
+    }
+    case "OPEN_CONTACT_US": {
+      return {
+        ...state,
+        openProduct: action.payload.openProduct,
+        openResources: action.payload.openResources,
+        openContactUs: action.payload.openContactUs,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };
@@ -65,8 +72,7 @@ export default function navbarReducer(state = initialState, action) {
         ...state,
         openProduct: action.payload.openProduct,
         openResources: action.payload.openResources,
-        // openPricing: action.payload.openPricing,
-        // openWatchADemo: action.payload.openWatchADemo,
+        openContactUs: action.payload.openContactUs,
         showActiveInnerText: action.payload.innerText,
         changeNavbarPosition: action.payload.changeNavbarPosition,
       };

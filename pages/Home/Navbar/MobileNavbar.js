@@ -2,34 +2,27 @@ import Link from "next/link";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
 import Product from "../../../components/product/Product";
 import Resources from "../../../components/resources/Resources";
 import styles from "./MobileNavbar.module.css";
 
 const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
   return (
-    <>
-      <style>
-        {`
-       
-        .accordion-item:nth-child(3) .accordion-button::after {
-          width: 0;
-        }
-        .accordion-item:nth-child(4) .accordion-button::after {
-          width: 0;
-        }
-
-        .accordion-button:focus {
-          box-shadow: none;
-        }
-    }
-    `}
-      </style>
+    <div style={{ position: "fixed", width: "100vw", zIndex: "20000" }}>
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
           <Link href="/">
             {/* {" "} */}
-            <h1>Vitlous</h1>
+            <h1
+              style={{
+                fontFamily: "Poppins",
+                fontWeight: "700",
+                color: "#173465",
+              }}
+            >
+              Vitlous
+            </h1>
           </Link>
         </div>
         <div>
@@ -60,9 +53,17 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
       </div>
       {state.mobileNavbarOpen && (
         <div>
-          <Accordion defaultActiveKey="0" style={{ zIndex: "2000" }}>
+          <Accordion
+            defaultActiveKey="0"
+            style={{ zIndex: "2000" }}
+            className={`${styles.accordionParent}`}
+          >
             {navLinks.map((navLink) => (
-              <Accordion.Item eventKey={navLink.id} key={navLink.id}>
+              <Accordion.Item
+                eventKey={navLink.id}
+                key={navLink.id}
+                className={`${styles.accordionChildren}`}
+              >
                 {navLink.href ? (
                   <Link href={navLink.href}>
                     <Accordion.Header
@@ -96,10 +97,12 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                         {state?.openResources && (
                           <Resources navLinks={navLinks} dispatch={dispatch} />
                         )}
-                      </div>
-                      <div className={`${styles.navbarItemsContainerRight}`}>
-                        {/* <img src="" alt="" /> */}
-                        hello
+                        {state?.openContactUs && (
+                          <ContactUsNav
+                            navLinks={navLinks}
+                            dispatch={dispatch}
+                          />
+                        )}
                       </div>
                     </div>
                   </Accordion.Body>
@@ -125,7 +128,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
           </Accordion>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

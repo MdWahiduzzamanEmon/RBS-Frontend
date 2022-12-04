@@ -7,7 +7,9 @@ import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import React, { useReducer } from "react";
 import { Col, Dropdown, NavDropdown, Row } from "react-bootstrap";
-import navbarReducer, { initialState } from "../../../reducers/navbarReducer";
+import navbarReducer, {
+  initialState,
+} from "../../../reducers/navbarReducer/navbarReducer";
 import Product from "../../../components/product/Product";
 import Resources from "../../../components/resources/Resources";
 import { useRouter } from "next/router";
@@ -15,6 +17,11 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import useViewport from "../../../hooks/useViewport";
 import dynamic from "next/dynamic";
 import MobileNavbar from "./MobileNavbar";
+import { motion } from "framer-motion";
+import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
+import whyImage from "../../../public/svg/query-icon.svg";
+import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
+import { closeNavbar } from "../../../reducers/navbarReducer/actions";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -23,80 +30,162 @@ const NavBar = () => {
     {
       id: 1,
       text: "Product",
-      items: {
-        id: 1,
-        text: "Overview",
-        title: "RBS Platform",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-      },
-      subItems: [
+      allFeatures: [
         {
           id: 1,
-          text: "Capabilities",
-          options: [
-            {
-              id: 1,
-              title: "Project Management",
-            },
-            {
-              id: 2,
-              title: "IT & Ops",
-            },
-            {
-              id: 3,
-              title: "Marketing",
-            },
-            {
-              id: 4,
-              title: "Construction",
-            },
-          ],
+          title: "All features",
+          name: "allFeatures",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
+          image: allFeaturesImage,
+        },
+        {
+          id: 2,
+          title: "Why us",
+          name: "whyUs",
+          description: "Lorem ipsum dolor sit amet.",
+          image: whyImage,
         },
       ],
+      featuresList: {
+        id: 1,
+        title: "Features",
+        lists: [
+          {
+            id: 1,
+            title: "Whit label branding",
+            name: "Whit-Label-Branding",
+          },
+          {
+            id: 2,
+            title: "Kanban board",
+            name: "Kanban-Board",
+          },
+          {
+            id: 3,
+            title: "Gantt chart",
+            name: "Gantt-Chart",
+          },
+          {
+            id: 4,
+            title: "Calendar view",
+            name: "Calendar-View",
+          },
+          {
+            id: 5,
+            title: "Live chat communication",
+            name: "Live-Chat-Communication",
+          },
+          {
+            id: 6,
+            title: "Project & Task discussion",
+            name: "Project-Task-Discussion",
+          },
+          {
+            id: 7,
+            title: "Project & Task budget",
+            name: "Project-Task-Budget",
+          },
+          {
+            id: 8,
+            title: "Billing & Invoicing",
+            name: "Billing-Invoicing",
+          },
+          {
+            id: 9,
+            title: "Income & Expense",
+            name: "Income-Expense",
+          },
+          {
+            id: 10,
+            title: "Issue tracking",
+            name: "Issue-Tracking",
+          },
+          {
+            id: 11,
+            title: "Time tracking",
+            name: "Time-Tracking",
+          },
+          {
+            id: 12,
+            title: "Document management",
+            name: "Document-Management",
+          },
+        ],
+      },
     },
     {
       id: 2,
       text: "Resources",
-      items: {
-        id: 2,
-        text: "Overview re",
-        title: "RBS Platform",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? Suscipit veritatis exercitationem nemo facere accusantium error ullam quasi nulla!",
-      },
-      subItems: [
+      allFeatures: [
+        {
+          id: 1,
+          title: "All Resources",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
+          image: allFeaturesImage,
+        },
         {
           id: 2,
-          text: "Capabilities",
-          options: [
-            {
-              id: 1,
-              title: "Free classes",
-            },
-            {
-              id: 2,
-              title: "Tutorial videos",
-            },
-            {
-              id: 3,
-              title: "Blog",
-            },
-            {
-              id: 4,
-              title: "Tutorial",
-            },
-            {
-              id: 5,
-              title: "Social Community",
-            },
-            {
-              id: 6,
-              title: "Success Stories",
-            },
-          ],
+          title: "Why us",
+          description: "Lorem ipsum dolor sit amet.",
+          image: whyImage,
         },
       ],
+      featuresList: {
+        id: 1,
+        title: "Features",
+        lists: [
+          {
+            id: 1,
+            title: "Whit label branding",
+          },
+          {
+            id: 2,
+            title: "Kanban board",
+          },
+          {
+            id: 3,
+            title: "Gantt chart",
+          },
+          {
+            id: 4,
+            title: "Calendar view",
+          },
+          {
+            id: 5,
+            title: "Live chat communication",
+          },
+          {
+            id: 6,
+            title: "Project & Task discussion",
+          },
+          {
+            id: 7,
+            title: "Project & Task budget",
+          },
+          {
+            id: 8,
+            title: "Billing & Invoicing",
+          },
+          {
+            id: 9,
+            title: "Income & Expense",
+          },
+          {
+            id: 10,
+            title: "Issue tracking",
+          },
+          {
+            id: 11,
+            title: "Time tracking",
+          },
+          {
+            id: 12,
+            title: "Document management",
+          },
+        ],
+      },
     },
     {
       id: 3,
@@ -106,23 +195,46 @@ const NavBar = () => {
     },
     {
       id: 4,
-      text: "Watch a demo",
+      text: "Watch Demo",
       href: "/watchDemo",
       items: {},
+    },
+    {
+      id: 5,
+      text: "Contact us",
+      items: [
+        {
+          id: 1,
+          title: "Contact support",
+          pageName: "contactSupport",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
+        },
+        {
+          id: 2,
+          title: "Contact sales",
+          pageName: "contactSales",
+          description: "Lorem ipsum dolor sit amet.",
+        },
+        {
+          id: 3,
+          title: "Request training",
+          pageName: "productTraining",
+          description: "Lorem ipsum dolor sit amet.",
+        },
+      ],
     },
   ];
 
   const openNavElements = (e) => {
-    // console.log(e.target.innerText);
     let navItemName = e.target.innerText;
-    // console.log(navItemName);
     if (navItemName === "Product") {
       dispatch({
         type: "OPEN_PRODUCT",
         payload: {
           openProduct: !state.openProduct,
           openResources: false,
-          // openPricing: false,
+          openContactUs: false,
           innerText: navItemName,
         },
       });
@@ -132,7 +244,7 @@ const NavBar = () => {
         payload: {
           openResources: !state.openResources,
           openProduct: false,
-          // openPricing: false,
+          openContactUs: false,
           innerText: navItemName,
         },
       });
@@ -143,6 +255,7 @@ const NavBar = () => {
           // openPricing: !state.openPricing,
           openProduct: false,
           openResources: false,
+          openContactUs: false,
           // openWatchADemo: false,
           innerText: navItemName,
         },
@@ -153,6 +266,17 @@ const NavBar = () => {
         payload: {
           // openWatchADemo: true,
           // openPricing: false,
+          openProduct: false,
+          openResources: false,
+          openContactUs: false,
+          innerText: navItemName,
+        },
+      });
+    } else if (navItemName === "Contact us") {
+      dispatch({
+        type: "OPEN_CONTACT_US",
+        payload: {
+          openContactUs: !state.openContactUs,
           openProduct: false,
           openResources: false,
           innerText: navItemName,
@@ -185,7 +309,7 @@ const NavBar = () => {
   };
 
   const { width } = useViewport();
-  const breakpoint = 600;
+  const breakpoint = 992;
 
   return (
     <>
@@ -203,30 +327,23 @@ const NavBar = () => {
             <div
               className={`${navStyles.navbarContainer}`}
               style={{
-                position:
-                  state?.openProduct || state?.openResources
-                    ? "fixed"
-                    : "relative",
+                position: "fixed",
+                // state?.openProduct || state?.openResources
+                //   ? "fixed"
+                //   : "relative",
               }}
             >
-              <div className="container-lg d-flex align-items-center justify-content-lg-between">
+              <div
+                className="container-lg d-flex align-items-center justify-content-lg-between"
+                style={{ paddingLeft: "0px", paddingRight: "0px" }}
+              >
                 <div
                   className={`${navStyles.navbarBrand}`}
                   onClick={() => {
-                    dispatch({
-                      type: "CLOSE_NAVBAR",
-                      payload: {
-                        openProduct: false,
-                        openResources: false,
-                        openPricing: false,
-                        openWatchADemo: false,
-                        innerText: "",
-                      },
-                    });
+                    dispatch(closeNavbar());
                   }}
                 >
                   <Link href="/">
-                    {/* {" "} */}
                     <p className={`${navStyles.navbarBrandText}`}>Vitlous</p>
                   </Link>
                 </div>
@@ -240,15 +357,11 @@ const NavBar = () => {
                               (navLink.text === state?.showActiveInnerText &&
                                 state.openProduct) ||
                               (navLink.text === state?.showActiveInnerText &&
-                                state.openResources)
+                                state.openResources) ||
+                              (navLink.text === state?.showActiveInnerText &&
+                                state.openContactUs)
                                 ? `${navStyles.active}`
                                 : ""
-                              // (navLink.text === state?.showActiveInnerText &&
-                              //   state.openPricing) ||
-                              // (navLink.text === state?.showActiveInnerText &&
-                              //   state.openWatchADemo)
-                              // navLink.href === router.pathname ||
-                              // navLink.href === router.pathname
                             }`}
                             onClick={(e) => {
                               openNavElements(e);
@@ -270,31 +383,25 @@ const NavBar = () => {
                             (navLink.text === state?.showActiveInnerText &&
                               state.openProduct) ||
                             (navLink.text === state?.showActiveInnerText &&
-                              state.openResources)
-                              ? // ||
-                                // (navLink.text === state?.showActiveInnerText &&
-                                //   state.openPricing) ||
-                                // (navLink.text === state?.showActiveInnerText &&
-                                //   state.openWatchADemo)
-                                // navLink.href === router.pathname ||
-                                // navLink.href === router.pathname
-                                `${navStyles.active}`
+                              state.openResources) ||
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openContactUs)
+                              ? `${navStyles.active}`
                               : ""
                           }`}
                           onClick={(e) => {
                             openNavElements(e);
                           }}
-                          // style={{
-                          //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                          // }}
                         >
                           {navLink.text}
                           {/* {navLink.icon} */}
                           {(navLink.text === state?.showActiveInnerText &&
                             state.openProduct) ||
                           (navLink.text === state?.showActiveInnerText &&
-                            state.openResources) ? (
-                            <FaChevronDown
+                            state.openResources) ||
+                          (navLink.text === state?.showActiveInnerText &&
+                            state.openContactUs) ? (
+                            <FaChevronUp
                               style={{
                                 fontSize: "12px",
                                 marginLeft: "3px",
@@ -304,7 +411,7 @@ const NavBar = () => {
                               className={`${navStyles.navChevronIcons}`}
                             />
                           ) : (
-                            <FaChevronUp
+                            <FaChevronDown
                               style={{
                                 fontSize: "12px",
                                 marginLeft: "3px",
@@ -330,17 +437,19 @@ const NavBar = () => {
               </div>
               {/* <Product></Product> */}
             </div>
-            {(state?.openProduct || state?.openResources) && (
+            {(state?.openProduct ||
+              state?.openResources ||
+              state?.openContactUs) && (
               <div
                 className={`${navStyles.navbarItemsContainer}`}
                 // style={{
                 //   position: state?.showActiveInnerText ? "fixed" : "absolute",
                 // }}
                 style={{
-                  position:
-                    state?.openProduct || state?.openResources
-                      ? "fixed"
-                      : "absolute",
+                  position: "fixed",
+                  // state?.openProduct || state?.openResources
+                  //   ? "fixed"
+                  //   : "absolute",
                 }}
               >
                 <div
@@ -353,12 +462,11 @@ const NavBar = () => {
                     {state?.openResources && (
                       <Resources navLinks={navLinks} dispatch={dispatch} />
                     )}
+                    {state?.openContactUs && (
+                      <ContactUsNav navLinks={navLinks} dispatch={dispatch} />
+                    )}
 
                     {/* hello */}
-                  </div>
-                  <div className={`${navStyles.navbarItemsContainerRight}`}>
-                    {/* <img src="" alt="" /> */}
-                    hello
                   </div>
                 </div>
               </div>

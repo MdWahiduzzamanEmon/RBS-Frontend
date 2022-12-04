@@ -1,0 +1,14 @@
+.testimonialsWrapper {
+  padding: 50px;
+}
+.testimonialsWrapperTitle {
+  font-size: clamp(25px, 5vw, 40px);
+  color: #173465;
+  font-weight: 700;
+  text-align: center;
+}
+.testimonialsWrapperDescription {
+  font-size: clamp(15px, 2vw, 20px);
+  text-align: center;
+  padding-bottom: 30px;
+}

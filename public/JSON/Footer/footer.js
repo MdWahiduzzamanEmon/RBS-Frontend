@@ -40,15 +40,19 @@ export const footerDemoData = {
           item: "Security",
         },
         {
-          url: "/",
+          url: "/pricing",
           item: "Pricing",
         },
         {
-          url: "/",
-          item: "Term and Condition",
+          url: "/paymentTerms&Conditions",
+          item: "Payment Terms & Conditions",
         },
         {
-          url: "/",
+          url: "/termsAndConditions",
+          item: "Terms and Conditions",
+        },
+        {
+          url: "/privacyPolicy",
           item: "Privacy Policy",
         },
       ],

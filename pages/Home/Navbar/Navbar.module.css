@@ -6,7 +6,7 @@
   padding: 15px;
   width: 100%;
   height: 70px;
-  z-index: 1000;
+  z-index: 11000;
 }
 
 .stickyNav {
@@ -102,17 +102,18 @@
   top: 70px;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10000;
 }
 .navbarItemsInnerContainer {
   max-height: calc(100vh - 70px);
   overflow-y: auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
   background: #fff;
 }
 .navbarItemsContainerRight {
-  background: #212936;
+  /* background: #212936; */
+  border-left: 1px solid #e4e4e4;
 }
 
 .primaryButton {
@@ -147,13 +148,13 @@
     background: #fff;
   }
 
-  .navbarMainItems::after {
+  /* .navbarMainItems::after {
     content: none;
-  }
+  } */
 
-  .active::before {
+  /* .active::before {
     content: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 780px) {

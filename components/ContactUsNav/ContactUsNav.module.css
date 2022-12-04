@@ -1,0 +1,58 @@
+.contactContainer {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 20px 0;
+}
+
+/* contact us menu items container */
+.contactMenuItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menuItemHeading {
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: 400;
+  margin-top: 10px;
+}
+.menuItemDescription {
+  font-size: clamp(10px, 1.2vw, 12px);
+  color: #757575;
+}
+
+.innerContainerLeft {
+  padding: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.innerContainerLeft:hover {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/***********************Mobile Devices***********************/
+@media screen and (max-width: 992px) {
+  /* product menu items container */
+  .contactMenuItemsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+  }
+}
+
+/* ************Screen size: 600px********* */
+
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    padding: 0px;
+  }
+
+  .contactMenuItemsContainer {
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+  }
+}

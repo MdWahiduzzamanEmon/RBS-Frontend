@@ -4,19 +4,24 @@ import styles from "./contactBanner.module.css";
 
 const ContactBanner = () => {
   return (
-    <div
+    <section
       style={{
-        backgroundImage: `url(${bannerCommon2.src})`,
-        height: "300px",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        fontFamily: "Poppins",
+        paddingTop: "70px",
       }}
     >
-      <div className="text-white d-flex justify-content-center align-items-center py-5">
-        <h1 className={`${styles.bannerText} bannerText`}>Contact Us</h1>
+      <div
+        style={{
+          backgroundImage: `url(${bannerCommon2.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          fontFamily: "Poppins",
+        }}
+      >
+        <div className="text-white d-flex justify-content-center align-items-center py-5">
+          <h1 className={`${styles.bannerText} `}>Contact Us</h1>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

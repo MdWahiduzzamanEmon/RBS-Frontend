@@ -13,6 +13,9 @@ const Features = () => {
     });
   }, []);
 
+  const router = useRouter();
+  console.log(router.events);
+
   return (
     <div>
       {featuresData?.features?.map((feature) => {
@@ -27,6 +30,7 @@ const Features = () => {
         }
         return (
           <FeatureWithLeftImage
+            // id={id}
             key={feature.id}
             feature={feature}
             colorChange={changeColorOfCircleCheck}

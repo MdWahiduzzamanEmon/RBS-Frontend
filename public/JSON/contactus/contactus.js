@@ -27,4 +27,22 @@ export const contactUsDemo = {
       salesEmail: "sales@example.com",
     },
   ],
+  contactSales: {
+    id: 1,
+    title: "Contact Sales",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?",
+  },
+  training: {
+    id: 1,
+    title: "Product Training",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?",
+  },
+  contactSupport: {
+    id: 1,
+    title: "Contact Support",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, numquam?",
+  },
 };
