@@ -106,16 +106,7 @@ const Product = ({ navLinks, dispatch }) => {
                       }}
                       onMouseLeave={handleHideLinkIcon}
                       onClick={() => {
-                        dispatch({
-                          type: "CLOSE_NAVBAR",
-                          payload: {
-                            openProduct: false,
-                            openResources: false,
-                            openPricing: false,
-                            openWatchADemo: false,
-                            innerText: "",
-                          },
-                        });
+                        dispatch(closeNavbar());
                       }}
                     >
                       <div className="d-flex justify-content-between">

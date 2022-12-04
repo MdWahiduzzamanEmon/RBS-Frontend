@@ -1,8 +1,8 @@
 import axios from "axios";
 import React from "react";
-import ContactBanner from "../components/ContactUs/ContactBanner/ContactBanner";
-import ContactForm from "../components/ContactUs/ContactForm/ContactForm";
-import ContactInfos from "../components/ContactUs/ContactInfos/ContactInfos";
+import ContactBanner from "../../components/ContactUs/ContactBanner/ContactBanner";
+import ContactForm from "../../components/ContactUs/ContactForm/ContactForm";
+import ContactInfos from "../../components/ContactUs/ContactInfos/ContactInfos";
 
 const ContactUs = () => {
   const [contactUsData, setContactUsData] = React.useState({});

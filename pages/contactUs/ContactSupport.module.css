@@ -1,0 +1,56 @@
+.supportWrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.supportTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseUser {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chooseUserTitle {
+  font-size: clamp(15px, 2.5vw, 20px);
+  margin-top: 20px;
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.users p {
+  background: rgba(204, 204, 204, 0.5);
+  color: #173465;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordionWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.accordionWrapperLeft {
+  flex: 0 0 30%;
+  padding: 10px;
+}
+
+.accordionWrapperRight {
+  flex: 0 0 70%;
+  padding: 10px;
+}
+
+.accordion {
+  margin-top: 20px;
+}

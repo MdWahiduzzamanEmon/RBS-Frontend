@@ -1,8 +1,7 @@
 export const privacyPolicy = {
   policies: {
     title: "Privacy Policy",
-    text1:
-      "At vitlous.com, accessible from vitlous.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by vitlous.com and how we use it.",
+    text1: `At vitlous.com, accessible from vitlous.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by vitlous.com and how we use it.`,
     text2:
       "If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.",
     text3:

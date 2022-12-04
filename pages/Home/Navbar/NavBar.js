@@ -206,17 +206,20 @@ const NavBar = () => {
         {
           id: 1,
           title: "Contact support",
+          pageName: "contactSupport",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
         },
         {
           id: 2,
           title: "Contact sales",
+          pageName: "contactSales",
           description: "Lorem ipsum dolor sit amet.",
         },
         {
           id: 3,
           title: "Request training",
+          pageName: "productTraining",
           description: "Lorem ipsum dolor sit amet.",
         },
       ],

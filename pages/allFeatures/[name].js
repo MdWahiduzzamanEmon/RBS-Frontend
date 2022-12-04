@@ -29,7 +29,6 @@ export const getStaticProps = async ({ params }) => {
 
 const SingleFeature = ({ feature }) => {
   const [stepId, setStepId] = React.useState(0);
-  console.log(stepId);
   return (
     <section className="">
       {feature.map((item) => (

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import { closeNavbar } from "../../reducers/navbarReducer/actions";
 import ContactSalesSvg from "../../svgComponents/ContactSalesSvg";
 import ContactSupportSvg from "../../svgComponents/ContactSupportSvg";
 import TrainingSvg from "../../svgComponents/TrainingSvg";
 import styles from "./ContactUsNav.module.css";
 
-const ContactUsNav = ({ navLinks }) => {
+const ContactUsNav = ({ navLinks, dispatch }) => {
   return (
     <div className={`${styles.contactContainer} container-xl`}>
       {navLinks.map((navLink) => (
@@ -13,25 +14,11 @@ const ContactUsNav = ({ navLinks }) => {
           {navLink.text === "Contact us" && (
             <div className={`${styles.contactMenuItemsContainer}`}>
               {navLink.items.map((item) => (
-                <Link
-                  key={item.id}
-                  href="/pricing"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Link key={item.id} href={`/contactUs/${item.pageName}`}>
                   <div
                     className={`${styles.innerContainerLeft}`}
                     onClick={() => {
-                      dispatch({
-                        type: "CLOSE_NAVBAR",
-                        payload: {
-                          openProduct: false,
-                          openResources: false,
-                          openPricing: false,
-                          openWatchADemo: false,
-                          innerText: "",
-                        },
-                      });
+                      dispatch(closeNavbar());
                     }}
                   >
                     <div className="d-flex justify-content-between">
