@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import { contactUsDemo } from "../../public/JSON/contactus/contactus";
-import styles from "./support.module.css";
+import styles from "./Support.module.css";
 
 export const getStaticProps = async () => {
   return {

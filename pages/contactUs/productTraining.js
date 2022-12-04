@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./contactSales.module.css";
+import styles from "./ContactSales.module.css";
 import WavesSvg from "../../svgComponents/wavesSvg";
 import { contactUsDemo } from "../../public/JSON/contactus/contactus";
 import { useForm } from "react-hook-form";

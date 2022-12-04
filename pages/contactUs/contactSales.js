@@ -6,7 +6,7 @@ import { contactUsDemo } from "../../public/JSON/contactus/contactus";
 import image1 from "../../public/policyImage.png";
 import image2 from "../../public/smoke.png";
 import WavesSvg from "../../svgComponents/wavesSvg";
-import styles from "./contactSales.module.css";
+import styles from "./ContactSales.module.css";
 
 export const getStaticProps = async () => {
   return {
