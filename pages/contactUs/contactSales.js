@@ -6,7 +6,7 @@ import { contactUsDemo } from "../../public/JSON/contactus/contactus";
 import image1 from "../../public/policyImage.png";
 import image2 from "../../public/smoke.png";
 import WavesSvg from "../../svgComponents/wavesSvg";
-import styles from "./contactUsDynamic.module.css";
+import styles from "./contactSales.module.css";
 
 export const getStaticProps = async () => {
   return {
@@ -27,7 +27,7 @@ const ContactSales = ({ contactUsData }) => {
   const onSubmit = (data) => console.log(data);
   return (
     <div>
-      <section style={{ paddingTop: "70px" }}>
+      <section style={{ paddingTop: "70px" }} className={`${styles.wrapper}`}>
         <div className={`${styles.svgWrapper}`}>
           <WavesSvg />
         </div>
@@ -104,7 +104,9 @@ const ContactSales = ({ contactUsData }) => {
                 </label>
               </div>
               <div className={`${styles.submitWrapper}`}>
-                <input type="submit" className={`${styles.submit}`} />
+                <button type="submit" className={`${styles.submit}`}>
+                  Submit
+                </button>
               </div>
             </form>
           </div>

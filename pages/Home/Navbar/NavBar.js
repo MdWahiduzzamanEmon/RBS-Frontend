@@ -206,7 +206,7 @@ const NavBar = () => {
         {
           id: 1,
           title: "Contact support",
-          pageName: "contactSupport",
+          pageName: "support",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
         },
