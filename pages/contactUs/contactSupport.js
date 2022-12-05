@@ -62,7 +62,10 @@ const ContactSupport = ({ contactSupportData }) => {
               </div>
               <div className={`${styles.formContentTop3}`}>
                 <label>Phone Number</label>
-                <input {...register("phoneNumber")} />
+                <input
+                  {...register("phoneNumber")}
+                  placeholder="Enter your phone number"
+                />
               </div>
             </div>
             <div className={`${styles.formContentsMiddle}`}>
