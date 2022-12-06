@@ -53,7 +53,7 @@ const FeaturesBoard = () => {
                   height={80}
 
                 />
-                <h3 className="fs-5 fw-bold mt-3">{card.title}</h3>
+                <h3 className="fs-5 fw-bold mt-3 text-capitalize">{card.title}</h3>
                 <p className="fs-6 px-1 ">{card.description}</p>
               </div>
 
