@@ -1,14 +1,10 @@
-import Image from "next/image";
+import bannerImage from "../../../public/banner/cover2.jpg";
 // import bannerImageVector from "../../../public/banner/backgroundVector.png";
-import bannerImage from "../../../public/banner/bannerImage.jpg";
-import NavBar from "../Navbar/NavBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import bannerStyles from "../../../styles/Banner.module.css";
-import { Col, Row } from "react-bootstrap";
 import Aos from "aos";
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import CircularMotion from "../../../components/circularMotion/CircularMotion";
+import bannerStyles from "../../../styles/Banner.module.css";
 
 const Banner = ({ bannerData, bannerImagesData }) => {
   React.useEffect(() => {
@@ -17,6 +13,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
       easing: "ease-in-out-quart",
     });
   }, []);
+
 
   //get banner detail api
   const marqueeTextDemo = [
@@ -32,7 +29,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
       }}
-      // className="container"
+    // className="container"
     >
       {/* <NavBar></NavBar> */}
       {/* marquee text */}
@@ -109,13 +106,20 @@ const Banner = ({ bannerData, bannerImagesData }) => {
                       style={{ display: item?.isShow ? "block" : "none" }}
                     >
                       <h1
-                        className="fw-bold mb-5 "
-                        style={{ fontSize: "45px" }}
+                        className="fw-bold mb-5 text-uppercase"
+                        style={{
+                          fontSize: "60px",
+                          //  color: "#000000",
+                          fontFamily: "Oxanium",
+                        }}
                         data-aos="fade-down"
                       >
                         {item?.title}
                       </h1>
-                      <div style={{ fontSize: "18px" }}>
+                      <div style={{
+                        fontSize: "18px",
+                        // color: "#000",
+                      }}>
                         <p className="" data-aos="fade-up">
                           <small>{item?.primaryDescription}</small>
                         </p>

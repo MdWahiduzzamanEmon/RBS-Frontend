@@ -22,7 +22,7 @@ export const home2ndJson = {
         id: 1,
         isShow: true,
         title: "Very informative Dashboard",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/Calendar.png'),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -30,7 +30,7 @@ export const home2ndJson = {
         id: 2,
         isShow: true,
         title: "Kanban Board",
-        img: "/banner2.jpeg",
+        img: require('../image/workflowImages/KanbanBoard.png'),
         description:
           "Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually.",
       },
@@ -38,7 +38,7 @@ export const home2ndJson = {
         id: 3,
         isShow: true,
         title: "Gantt Chart",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/GanttChart.png'),
         description:
           "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.",
       },
@@ -46,7 +46,7 @@ export const home2ndJson = {
         id: 4,
         isShow: true,
         title: "Calendar view",
-        img: "/banner2.jpeg",
+        img: require('../image/workflowImages/Calendar.png'),
         description:
           "It lets a user view and interact with a calendar that they can navigate by month, year, or decade.",
       },
@@ -54,7 +54,7 @@ export const home2ndJson = {
         id: 5,
         isShow: true,
         title: "Vendor/Contractor Control Panel",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/controlPanel.png'),
         description:
           "Organizations use to manage vendors and monitor projects which are developing by them.",
       },
@@ -62,7 +62,7 @@ export const home2ndJson = {
         id: 6,
         isShow: true,
         title: "In depth Program Management System",
-        img: "/banner2.jpeg",
+        img: require('../image/workflowImages/ProgramManagement.png'),
         description:
           "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
       },
@@ -70,7 +70,7 @@ export const home2ndJson = {
         id: 7,
         isShow: true,
         title: "In depth Task  Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/TaskManagement.png'),
         description:
           "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
       },
@@ -78,7 +78,7 @@ export const home2ndJson = {
         id: 8,
         isShow: true,
         title: "Document Management System",
-        img: "/banner2.jpeg",
+        img: require('../image/workflowImages/DocumentManagement.png'),
         description:
           "That helps to store, manage, and track electronic documents and electronic images of paper-based information captured.",
       },
@@ -86,7 +86,7 @@ export const home2ndJson = {
         id: 9,
         isShow: true,
         title: "User Role Based Permission ",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/Permission.png'),
         description:
           "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.",
       },
@@ -94,7 +94,7 @@ export const home2ndJson = {
         id: 10,
         isShow: true,
         title: "Client Control Panel",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ClientControlPanel.png'),
         description:
           "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.",
       },
@@ -102,7 +102,7 @@ export const home2ndJson = {
         id: 11,
         isShow: true,
         title: "Approval Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ApprovalManagementSystem.png'),
         description:
           "That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility.",
       },
@@ -111,7 +111,7 @@ export const home2ndJson = {
         id: 12,
         isShow: true,
         title: "Project Budget Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ProjectBudgetManagementSystem.png'),
         description:
           "A project without a budget is like a car without fuel. creating a project budget and helping those wheels spin will most likely be your full responsibility.",
       },
@@ -119,7 +119,7 @@ export const home2ndJson = {
         id: 13,
         isShow: true,
         title: "Budget & Cost Comparison",
-        img: "/banner2.jpeg",
+        img: require('../image/workflowImages/BudgetCostComparison.png'),
         description:
           "It will help you to monitor your expense in regard to budget that will make direct impact to make maximum profit.",
       },
@@ -127,7 +127,7 @@ export const home2ndJson = {
         id: 14,
         isShow: true,
         title: "Project-Discussion",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ProjectDiscussion.png'),
         description:
           "An effective discussion informs members what can be done in next which contains the results and outcomes of the project.",
       },
@@ -135,7 +135,7 @@ export const home2ndJson = {
         id: 15,
         isShow: true,
         title: "Task-Discussion",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/TaskDiscussion.png'),
         description:
           "Create discussions about your tasks and projects to improve team collaboration for the ongoing & next tasks.",
       },
@@ -143,7 +143,7 @@ export const home2ndJson = {
         id: 16,
         isShow: true,
         title: "Task-Budget Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/TaskBudgetManagementSystem.png'),
         description:
           "View your task's budget in hours or money. Keep track of your progress as you work and ensure your finances don't take you by surprise.",
       },
@@ -151,7 +151,7 @@ export const home2ndJson = {
         id: 17,
         isShow: true,
         title: "Issue Tracking Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/IssueTrackingManagementSystem.png'),
         description:
           "That allows users to record and follow the progress of every “ticket” or 'issue' until the problem is resolved.",
       },
@@ -159,7 +159,7 @@ export const home2ndJson = {
         id: 18,
         isShow: true,
         title: "One 2 One & One 2 Many Chat",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/chat.png'),
         description:
           "This is easier when working together in the same physical office space or communicating remotely or working with freelancers around the world?",
       },
@@ -167,7 +167,7 @@ export const home2ndJson = {
         id: 19,
         isShow: true,
         title: "Resource management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ResourceManagementSystem.png'),
         description:
           "This is the well practice of planning, scheduling, and allocating people, money, and technology to a project or program.",
       },
@@ -175,7 +175,7 @@ export const home2ndJson = {
         id: 20,
         isShow: true,
         title: "Work Board Check List",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/WorkBoardCheckList.png'),
         description:
           "The Checklist Item of Kanban Board enables you to visualize all of your Checklist Items based on their current ‘Status’.",
       },
@@ -183,7 +183,7 @@ export const home2ndJson = {
         id: 21,
         isShow: true,
         title: "Time Tracking Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/TimeTrackingManagementSystem.png'),
         description:
           "It helps to track a time that will save you and your company precious time - and money.",
       },
@@ -191,7 +191,7 @@ export const home2ndJson = {
         id: 22,
         isShow: true,
         title: "Requisition Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/RequisitionManagementSystem.png'),
         description:
           "It helps the process of creating, processing, authorizing, and tracking purchase requests within an organization.",
       },
@@ -199,7 +199,7 @@ export const home2ndJson = {
         id: 23,
         isShow: true,
         title: "Expense Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/ExpenseManagementSystem.png'),
         description:
           "It helps the systems deployed by a business to process, pay, and audit employee-initiated expenses.",
       },
@@ -207,7 +207,7 @@ export const home2ndJson = {
         id: 24,
         isShow: true,
         title: "Income Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/IncomeManagementSystem.png'),
         description:
           "Effectively manage your income stream with our all-in-one financial management solution.",
       },
@@ -215,7 +215,7 @@ export const home2ndJson = {
         id: 25,
         isShow: true,
         title: "Invoice Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/InvoiceManagementSystem.png'),
         description:
           "It has been designed to automate your accounts receivable process. Connect and sync invoices and start chasing down unpaid bills.",
       },
@@ -223,7 +223,7 @@ export const home2ndJson = {
         id: 26,
         isShow: true,
         title: "VAT -TAX Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/VATTAXManagementSystem.png'),
         description:
           "The Tax Management module provides organizations with centralized tax configuration, management, and reporting.",
       },
@@ -231,7 +231,7 @@ export const home2ndJson = {
         id: 27,
         isShow: true,
         title: "LOS-Profit Management System",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/LOSProfitManagementSystem.png'),
         description:
           "It helps to manage income and expenses to ensure that a business earns a net operating profit.",
       },
@@ -239,7 +239,7 @@ export const home2ndJson = {
         id: 28,
         isShow: true,
         title: "All types of Approval",
-        img: "/images.jpg",
+        img: require('../image/workflowImages/AllTypesOfApproval.png'),
         description:
           "It provides a system to manage approval workflow transparently, effectively, and accurately.",
       },
