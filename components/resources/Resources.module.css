@@ -1,4 +1,4 @@
-.productContainer {
+.resourcesContainer {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -7,38 +7,51 @@
   padding: 20px 0;
 }
 
-/* product menu items container */
-.productMenuItemsContainer {
+/* resources menu items container */
+.menuItemsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.menuItemHeading {
+.menuItemContainerTitle {
   font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.menuItemHeading {
+  font-size: clamp(12px, 1.2vw, 14px);
   font-weight: 400;
   margin-top: 10px;
 }
+
 .menuItemDescription {
   font-size: clamp(10px, 1.2vw, 12px);
   color: #757575;
 }
 
+.menuItem {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.menuItem:hover {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .menuItemContainerLeft {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-height: 150px;
+  grid-template-columns: 1fr;
+  /* max-height: 150px; */
   padding-right: 10px;
 }
 
-.innerContainerLeft {
-  padding: 10px;
-  border: 1px solid transparent;
+.menuItemLinkContainerLeft {
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
-}
-
-.innerContainerLeft:hover {
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* features showing in list  */
@@ -56,7 +69,7 @@
 
 .listContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   font-size: 10px;
 }
 
@@ -86,7 +99,7 @@
 /***********************Mobile Devices***********************/
 @media screen and (max-width: 992px) {
   /* product menu items container */
-  .productMenuItemsContainer {
+  .menuItemsContainer {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -106,14 +119,18 @@
 /* ************Screen size: 600px********* */
 
 @media screen and (max-width: 600px) {
-  .productContainer {
+  .resourcesContainer {
     padding: 0px;
   }
 
   .menuItemContainerLeft {
     grid-template-columns: 1fr;
-    max-height: 600px;
+    max-height: initial;
     padding-top: 10px;
+  }
+
+  .menuItemLinkContainerLeft {
+    flex-direction: column;
   }
 
   .listContainer {

@@ -2,12 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import { FaBars, FaTimes } from "react-icons/fa";
-import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
-import Product from "../../../components/product/Product";
-import Resources from "../../../components/resources/Resources";
-import styles from "./MobileNavbar.module.css";
+import Manage from "../../Manage/Manage";
+import styles from "./MobileNavbarBlog.module.css";
 
-const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
+const MobileNavbarBlog = ({ navItems, state, dispatch, openNavElements }) => {
+  console.log(state.mobileNavbarOpen);
   return (
     <div style={{ position: "fixed", width: "100vw", zIndex: "20000" }}>
       <div className={`${styles.mobileNavbarContainer}`}>
@@ -22,6 +21,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
               }}
             >
               Vitlous
+              <span className={`${styles.navbarBrandTextSecondary}`}>Blog</span>
             </h1>
           </Link>
         </div>
@@ -32,7 +32,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                 dispatch({
                   type: "MOBILE_NAVBAR_OPEN",
                   payload: {
-                    mobileNavbarOpen: false,
+                    mobileNavbarOpen: !state.mobileNavbarOpen,
                   },
                 });
               }}
@@ -43,7 +43,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                 dispatch({
                   type: "MOBILE_NAVBAR_OPEN",
                   payload: {
-                    mobileNavbarOpen: true,
+                    mobileNavbarOpen: !state.mobileNavbarOpen,
                   },
                 });
               }}
@@ -58,21 +58,21 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
             style={{ zIndex: "2000" }}
             className={`${styles.accordionParent}`}
           >
-            {navLinks.map((navLink) => (
+            {navItems.map((navItem) => (
               <Accordion.Item
-                eventKey={navLink.id}
-                key={navLink.id}
+                eventKey={navItem.id}
+                key={navItem.id}
                 className={`${styles.accordionChildren}`}
               >
-                {navLink.href ? (
-                  <Link href={navLink.href}>
+                {navItem.href ? (
+                  <Link href={navItem.href}>
                     <Accordion.Header
                       onClick={(e) => {
                         openNavElements(e);
                       }}
                       // style={{ padding: "0px" }}
                     >
-                      {navLink.text}
+                      {navItem.text}
                     </Accordion.Header>
                   </Link>
                 ) : (
@@ -82,26 +82,16 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                     }}
                     // style={{ padding: "0px" }}
                   >
-                    {navLink.text}
+                    {navItem.text}
                   </Accordion.Header>
                 )}
 
-                {!navLink.href && (
+                {!navItem.href && (
                   <Accordion.Body style={{ padding: "0px" }}>
                     <div className={`${styles.navbarItemsInnerContainer}`}>
                       <div>
-                        {" "}
-                        {state?.openProduct && (
-                          <Product navLinks={navLinks} dispatch={dispatch} />
-                        )}
-                        {state?.openResources && (
-                          <Resources navLinks={navLinks} dispatch={dispatch} />
-                        )}
-                        {state?.openContactUs && (
-                          <ContactUsNav
-                            navLinks={navLinks}
-                            dispatch={dispatch}
-                          />
+                        {state?.openManage && (
+                          <Manage navItems={navItems} dispatch={dispatch} />
                         )}
                       </div>
                     </div>
@@ -120,4 +110,4 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
   );
 };
 
-export default MobileNavbar;
+export default MobileNavbarBlog;

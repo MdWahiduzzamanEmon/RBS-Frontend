@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import LargeSubscriptionBanner from "../../components/Blog/LargeSubscriptionBanner/LargeSubscriptionBanner";
 import { contactUsDemo } from "../../public/JSON/contactus/contactus";
 import image1 from "../../public/policyImage.png";
 import image2 from "../../public/smoke.png";
@@ -111,6 +112,7 @@ const ContactSales = ({ contactUsData }) => {
             </form>
           </div>
         </div>
+        <LargeSubscriptionBanner />
       </section>
     </div>
   );

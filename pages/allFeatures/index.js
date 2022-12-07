@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link.js";
 import React from "react";
+import LargeSubscriptionBanner from "../../components/Blog/LargeSubscriptionBanner/LargeSubscriptionBanner.js";
 import { allFeaturesDemoData } from "../../public/JSON/allFeatures/allFeatures.js";
 import { allFeaturesMainPageData } from "../../public/JSON/allFeatures/allFeaturesMainPage.js";
 import AllFeaturesBanner from "./components/AllFeaturesBanner/AllFeaturesBanner.js";
@@ -34,6 +35,7 @@ const AllFeatures = ({ featureLists, allFeaturesMainPageData }) => {
           <h1>{featureList.name}</h1>
         </Link>
       ))} */}
+      <LargeSubscriptionBanner />
     </section>
   );
 };

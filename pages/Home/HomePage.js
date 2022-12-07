@@ -17,6 +17,7 @@ import FeaturesBoard from "../../components/featuresBoard/FeaturesBoard";
 import CompareBoard from "../../components/compareBoard.js/CompareBoard";
 import ProjectManagement from "./ProjectManagement";
 import FinancialManagement from "../../components/FinancialManagement/FinancialManagement";
+import LargeSubscriptionBanner from "../../components/Blog/LargeSubscriptionBanner/LargeSubscriptionBanner";
 
 const HomePage = ({
   bannerData,
@@ -69,6 +70,7 @@ const HomePage = ({
         {/* //**********Why Software is better section*******  */}
         <Home9th home9thData={home9thData} />
         {/* <PurchaseCard purchaseCardData={purchaseCardData} /> */}
+        <LargeSubscriptionBanner />
       </div>
     </div>
   );

@@ -17,7 +17,6 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import useViewport from "../../../hooks/useViewport";
 import dynamic from "next/dynamic";
 import MobileNavbar from "./MobileNavbar";
-import { motion } from "framer-motion";
 import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
 import whyImage from "../../../public/svg/query-icon.svg";
 import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
@@ -117,73 +116,102 @@ const NavBar = () => {
     {
       id: 2,
       text: "Resources",
-      allFeatures: [
+      categories: [
         {
           id: 1,
-          title: "All Resources",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum? ",
-          image: allFeaturesImage,
+          title: "Learn",
+
+          linkList: [
+            {
+              id: 1,
+              title: "Blog",
+              description: "Latest stories on how to use vitlous",
+              image: allFeaturesImage,
+            },
+            {
+              id: 2,
+              title: "Vitlous University",
+              description: "Lorem ipsum dolor sit amet.",
+              image: whyImage,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Why us",
-          description: "Lorem ipsum dolor sit amet.",
-          image: whyImage,
+          title: "Premium Features",
+
+          linkList: [
+            {
+              id: 3,
+              title: "Professional Services",
+              description: "Latest stories on how to use vitlous",
+              image: allFeaturesImage,
+            },
+            {
+              id: 4,
+              title: "Verified Integrations",
+              description: "Lorem ipsum dolor sit amet.",
+              image: whyImage,
+            },
+          ],
         },
       ],
       featuresList: {
         id: 1,
-        title: "Features",
+        title: "Latest From Blog",
         lists: [
           {
             id: 1,
             title: "Whit label branding",
+            image: "/product-Banner.png",
           },
           {
             id: 2,
             title: "Kanban board",
+            image: "/product-Banner.png",
           },
           {
             id: 3,
             title: "Gantt chart",
+            image: "/product-Banner.png",
           },
           {
             id: 4,
             title: "Calendar view",
+            image: "/product-Banner.png",
           },
-          {
-            id: 5,
-            title: "Live chat communication",
-          },
-          {
-            id: 6,
-            title: "Project & Task discussion",
-          },
-          {
-            id: 7,
-            title: "Project & Task budget",
-          },
-          {
-            id: 8,
-            title: "Billing & Invoicing",
-          },
-          {
-            id: 9,
-            title: "Income & Expense",
-          },
-          {
-            id: 10,
-            title: "Issue tracking",
-          },
-          {
-            id: 11,
-            title: "Time tracking",
-          },
-          {
-            id: 12,
-            title: "Document management",
-          },
+          // {
+          //   id: 5,
+          //   title: "Live chat communication",
+          // },
+          // {
+          //   id: 6,
+          //   title: "Project & Task discussion",
+          // },
+          // {
+          //   id: 7,
+          //   title: "Project & Task budget",
+          // },
+          // {
+          //   id: 8,
+          //   title: "Billing & Invoicing",
+          // },
+          // {
+          //   id: 9,
+          //   title: "Income & Expense",
+          // },
+          // {
+          //   id: 10,
+          //   title: "Issue tracking",
+          // },
+          // {
+          //   id: 11,
+          //   title: "Time tracking",
+          // },
+          // {
+          //   id: 12,
+          //   title: "Document management",
+          // },
         ],
       },
     },
