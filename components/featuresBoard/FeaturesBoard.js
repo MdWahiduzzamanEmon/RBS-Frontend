@@ -51,6 +51,7 @@ const FeaturesBoard = () => {
                   alt="Picture of the author"
                   width={80}
                   height={80}
+                  style={{ borderRadius: "50%" }}
 
                 />
                 <h3 className="fs-5 fw-bold mt-3 text-capitalize">{card.title}</h3>
