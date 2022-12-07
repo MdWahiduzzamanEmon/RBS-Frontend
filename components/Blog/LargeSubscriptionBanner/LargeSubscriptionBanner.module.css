@@ -1,0 +1,54 @@
+.subscriptionContainer {
+  display: flex;
+  /* gap: 40px; */
+  align-items: center;
+  justify-content: center;
+  background: #fed8d4;
+  /* background: transparent; */
+  width: 100%;
+  z-index: -1;
+}
+
+.subscriptionImageContainer {
+  flex: 0 0 50%;
+
+  padding: 50px;
+}
+
+.subscriptionTextContainer {
+  flex: 0 0 50%;
+
+  padding: 50px;
+}
+
+.subscriptionTitle {
+  font-size: clamp(30px, 10vw, 50px);
+  font-weight: 700;
+  color: #173465;
+}
+
+.subscriptionTitleSpan {
+  background: linear-gradient(45deg, #2627fa, #ff544f 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subscriptionContainerSVG {
+  z-index: 100;
+}
+
+.subscriptionButton {
+  background: rgba(23, 52, 101, 0.6);
+  /* background: transparent; */
+  border: 2px solid aqua;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subscriptionButton:hover {
+  color: aqua;
+}

@@ -9,6 +9,11 @@
   background: #fff;
 }
 
+.navbarBrandTextSecondary {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .accordionParent {
   /* border: 2px solid red !important; */
 }
@@ -35,7 +40,7 @@
 }
 
 .navbarItemsInnerContainer {
-  height: calc(100vh - 70px);
+  height: 250px;
   overflow-y: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -43,6 +48,7 @@
 
 .buttonsContainer {
   padding: 20px;
+  background-color: #fff;
   /* padding-bottom: 15px; */
 }
 

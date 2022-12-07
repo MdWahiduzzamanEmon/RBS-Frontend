@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import BillingInvoiceSvg from "../../svgComponents/BillingInvoiceSvg";
@@ -84,13 +85,188 @@ const Resources = ({ navLinks, dispatch }) => {
     }
   };
 
+  // declaring variable
+  const category1 = "Learn";
+  const category2 = "Premium Features";
+
   return (
-    <div className={`${resourcesStyles.productContainer} container-xl`}>
+    <div className={`${resourcesStyles.resourcesContainer} container-xl`}>
       {navLinks.map((navLink) => (
         <div key={navLink.id}>
-          {navLink.text === "Product" && (
-            <div className={`${resourcesStyles.productMenuItemsContainer}`}>
+          {navLink.text === "Resources" && (
+            <div className={`${resourcesStyles.menuItemsContainer}`}>
               <div className={`${resourcesStyles.menuItemContainerLeft}`}>
+                {navLink.categories.map((category) => (
+                  <div
+                    key={category.id}
+                    className={`${resourcesStyles.menuItemContainerLeftInner}`}
+                  >
+                    <h4 className={`${resourcesStyles.menuItemContainerTitle}`}>
+                      {category?.title}
+                    </h4>
+                    <div
+                      className={`${resourcesStyles.menuItemLinkContainerLeft}`}
+                    >
+                      {category.linkList.map((link) => (
+                        <>
+                          {category.title === category1 && (
+                            <div key={link.id}>
+                              <Link href="/blog">
+                                <div
+                                  onMouseOver={() => {
+                                    handleShowLinkIcon(link.id);
+                                  }}
+                                  onMouseLeave={handleHideLinkIcon}
+                                  onClick={() => {
+                                    dispatch({
+                                      type: "CLOSE_NAVBAR",
+                                      payload: {
+                                        openProduct: false,
+                                        openResources: false,
+                                        openPricing: false,
+                                        openWatchADemo: false,
+                                        innerText: "",
+                                      },
+                                    });
+                                  }}
+                                  className={`${resourcesStyles.menuItem}`}
+                                >
+                                  <div className="d-flex justify-content-between">
+                                    <div>
+                                      {link.title === "Blog" && (
+                                        <FeaturesSvg
+                                          height="32px"
+                                          width="32px"
+                                          fill="#173465"
+                                        />
+                                      )}
+                                      {link.title === "Vitlous University" && (
+                                        <QuerySvg
+                                          height="32px"
+                                          width="32px"
+                                          fill="#173465"
+                                          // stroke="green"
+                                        />
+                                      )}
+                                    </div>
+                                    {showLinkIcon && linkId === link.id && (
+                                      <div
+                                        className={`${resourcesStyles.link}`}
+                                      >
+                                        <ExternalLinkSvg
+                                          width="12px"
+                                          height="12px"
+                                        />
+                                      </div>
+                                    )}
+                                  </div>
+                                  <div>
+                                    <h4
+                                      className={`${resourcesStyles.menuItemHeading}`}
+                                    >
+                                      {link.title}
+                                    </h4>
+                                    <p
+                                      className={`${resourcesStyles.menuItemDescription}`}
+                                    >
+                                      {link.description}
+                                    </p>
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+                          )}
+                          <>
+                            {category.title === category2 && (
+                              <div key={link.id}>
+                                <Link href="/pricing">
+                                  <div
+                                    onMouseOver={() => {
+                                      handleShowLinkIcon(link.id);
+                                    }}
+                                    onMouseLeave={handleHideLinkIcon}
+                                    onClick={() => {
+                                      dispatch({
+                                        type: "CLOSE_NAVBAR",
+                                        payload: {
+                                          openProduct: false,
+                                          openResources: false,
+                                          openPricing: false,
+                                          openWatchADemo: false,
+                                          innerText: "",
+                                        },
+                                      });
+                                    }}
+                                    className={`${resourcesStyles.menuItem}`}
+                                  >
+                                    <div className="d-flex justify-content-between">
+                                      <div>
+                                        {link.title ===
+                                          "Professional Services" && (
+                                          <FeaturesSvg
+                                            height="32px"
+                                            width="32px"
+                                            fill="#173465"
+                                          />
+                                        )}
+                                        {link.title ===
+                                          "Verified Integrations" && (
+                                          <QuerySvg
+                                            height="32px"
+                                            width="32px"
+                                            fill="#173465"
+                                            // stroke="green"
+                                          />
+                                        )}
+                                      </div>
+                                      {showLinkIcon && linkId === link.id && (
+                                        <div
+                                          className={`${resourcesStyles.link}`}
+                                        >
+                                          <ExternalLinkSvg
+                                            width="12px"
+                                            height="12px"
+                                          />
+                                        </div>
+                                      )}
+                                    </div>
+                                    <div>
+                                      <h4
+                                        className={`${resourcesStyles.menuItemHeading}`}
+                                      >
+                                        {link.title}
+                                      </h4>
+                                      <p
+                                        className={`${resourcesStyles.menuItemDescription}`}
+                                      >
+                                        {link.description}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            )}
+                          </>
+                        </>
+                      ))}
+                      {/* {category.linkList.map((link) => (
+                        <>
+                          {category.title === category2 && (
+                            <div key={link.id}>
+                              <div>
+                                <h4>{link.title}</h4>
+                                <p>{link.description}</p>
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      ))} */}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* <div className={`${resourcesStyles.menuItemContainerLeft}`}>
                 {navLink.allFeatures.map((item) => (
                   <Link
                     key={item.id}
@@ -117,16 +293,19 @@ const Resources = ({ navLinks, dispatch }) => {
                         });
                       }}
                     >
+                      <div>
+                        <h4></h4>
+                      </div>
                       <div className="d-flex justify-content-between">
                         <div>
-                          {item.title === "All features" && (
+                          {item.title === "Blog" && (
                             <FeaturesSvg
                               height="32px"
                               width="32px"
                               fill="#173465"
                             />
                           )}
-                          {item.title === "Why us" && (
+                          {item.title === "Vitlous University" && (
                             <QuerySvg
                               height="32px"
                               width="32px"
@@ -151,7 +330,7 @@ const Resources = ({ navLinks, dispatch }) => {
                     </div>
                   </Link>
                 ))}
-              </div>
+              </div> */}
               {/* features list section */}
               <div className={`${resourcesStyles.menuItemContainerRight}`}>
                 {/* <div className={`${resourcesStyles.listContainer}`}> */}
@@ -168,7 +347,15 @@ const Resources = ({ navLinks, dispatch }) => {
                         onMouseLeave={handleHideListLinkIcon}
                       >
                         <div className={`${resourcesStyles.listLeftSide}`}>
-                          {showListSvg(list.title)}
+                          {/* {showListSvg(list.title)} */}
+                          <Image
+                            src={list.image}
+                            alt="image"
+                            width={150}
+                            height={50}
+                            // layout="respofinsive"
+                            objectFit="cover"
+                          ></Image>
                           <h1 className={`${resourcesStyles.listTitle}`}>
                             {list.title}
                           </h1>

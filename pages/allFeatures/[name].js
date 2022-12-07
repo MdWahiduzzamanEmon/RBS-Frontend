@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link.js";
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import LargeSubscriptionBanner from "../../components/Blog/LargeSubscriptionBanner/LargeSubscriptionBanner";
 import { allFeaturesDemoData } from "../../public/JSON/allFeatures/allFeatures";
 import ScrollFeatures from "./components/ScrollFeatures/ScrollFeatures";
 import styles from "./SingleFeature.module.css";
@@ -196,6 +197,7 @@ const SingleFeature = ({ feature }) => {
           </div>
           {/* showing features with scroll */}
           <ScrollFeatures items={item} />
+          <LargeSubscriptionBanner />
         </div>
       ))}
     </section>

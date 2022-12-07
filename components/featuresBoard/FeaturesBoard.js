@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
+import { home2ndJson } from "../../public/JSON/home2ndJson";
 import styles from "./FeaturesBoard.module.css";
-import Aos from "aos";
-
-const FeaturesBoard = ({ featuresData }) => {
+const featuresData = home2ndJson;
+const FeaturesBoard = () => {
   return (
     <section
       style={{
@@ -29,195 +30,39 @@ const FeaturesBoard = ({ featuresData }) => {
       <div className="container ">
         <div
           className="row container justify-content-center text-center"
-          // data-layout="masonry"
-          // style="overflow: visible"
+        // data-layout="masonry"
+        // style="overflow: visible"
         >
           {featuresData?.cardItem?.items.map((card) => (
             <div
               className="col-md-4 col-lg-3 mb-4"
-              key={card.id}
-              data-aos="zoom-out-right"
+              key={Math.random()}
+            // data-aos="zoom-out-right"
             >
-              <div className={`${styles.flipCard} text-center`}>
-                <div
-                  className={`${styles.flipCardFront}`}
-                  //   style="background-image: url('demos/business/images/featured/1.jpg')"
-                >
-                  <div className={`${styles.flipCardInner}`}>
-                    <div className="card bg-transparent border-0 text-center">
-                      <div>
-                        <i className="icon-line2-camera h1"></i>
-                        <h3 className="" style={{ fontSize: "15px" }}>
-                          {card.title}
-                        </h3>
-                        {/* <p className="card-text fw-normal">
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                      </p> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={`${styles.flipCardBack} ${styles.noAfter}`}>
-                  <div className={`${styles.flipCardInner}`}>
-                    <p className="mb-2 text-white">{card.description}</p>
-                    {/* <button
-                      type="button"
-                      className="btn btn-outline-light mt-2"
-                    >
-                      View Details
-                    </button> */}
-                  </div>
-                </div>
+              <div
+                style={{
+                  border: "1px solid #ccc",
+                  borderRadius: "10px",
+                  padding: "20px",
+                }}
+              >
+                <Image
+                  src={card.img}
+                  alt="Picture of the author"
+                  width={80}
+                  height={80}
+                  style={{ borderRadius: "50%" }}
+
+                />
+                <h3 className="fs-5 fw-bold mt-3 text-capitalize">{card.title}</h3>
+                <p className="fs-6 px-1 ">{card.description}</p>
               </div>
+
             </div>
           ))}
-
-          {/* <div className="col-lg-4 mb-4">
-          <div
-            className={`${styles.flipCard} ${styles.topToBottom} text-center`}
-          >
-            <div
-              className={`${styles.flipCardFront} dark`}
-              //   style="background-image: url('demos/business/images/featured/2.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <div className="card bg-transparent border-0 text-center">
-                  <div className="card-body">
-                    <h3 className="card-title">Special title treatment</h3>
-                    <p className="card-text fw-normal">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.flipCardBack}`}
-              //   style="background-image: url('demos/business/images/featured/3.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <p className="mb-2 text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Alias cum repellat velit.
-                </p>
-                <button type="button" className="btn btn-outline-light mt-2">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-          {/* <div className="col-lg-4 mb-4">
-          <div className={`${styles.flipCard} text-center`}>
-            <div
-              className={`${styles.flipCardFront} dark `}
-              //   style="background-image: url('demos/ecommerce/images/catagories/1.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <div className="card bg-transparent border-0 text-center">
-                  <div className="card-body">
-                    <i className="icon-line2-briefcase h1"></i>
-                    <h3 className="card-title">Special title treatment</h3>
-                    <p className="card-text fw-normal">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.flipCardBack}`}
-              data-height-xl="505"
-              //   style="background-image: url('demos/ecommerce/images/catagories/2.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <p className="mb-2 text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Alias cum repellat velit.
-                </p>
-                <button type="button" className="btn btn-outline-light mt-2">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-          {/* <div className="col-lg-4 mb-4">
-          <div
-            className={`${styles.flipCard} ${styles.topToBottom} text-center`}
-          >
-            <div
-              className={`${styles.flipCardFront} bg-info dark`}
-              data-height-xl="200"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <div className="card bg-transparent border-0 text-center">
-                  <div className="card-body">
-                    <i className="icon-line2-check h1"></i>
-                    <h3 className="card-title">Special title treatment</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.flipCardBack}`}
-              data-height-xl="200"
-              //   style="background-image: url('demos/ecommerce/images/catagories/3.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <p className="mb-2 text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Alias cum repellat velit.
-                </p>
-                <button type="button" className="btn btn-outline-light mt-2">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-          {/* <div className="col-lg-4 mb-4">
-          <div className={`${styles.flipCard} ${styles.topToBottom}`}>
-            <div
-              className={`${styles.flipCardFront} dark`}
-              data-height-xl="200"
-              //   style="background-image: url('demos/photography/images/items/3.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <div className="card bg-transparent border-0">
-                  <div className="card-body">
-                    <h3 className="card-title mb-0">Beautiful Nature</h3>
-                    <span className="fst-italic">New Zealand</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`${styles.flipCardBack}`}
-              data-height-xl="200"
-              //   style="background-image: url('demos/photography/images/items/2.jpg');"
-            >
-              <div className={`${styles.flipCardInner}`}>
-                <p className="mb-2 text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Alias cum repellat velit.
-                </p>
-                <button type="button" className="btn btn-outline-light mt-2">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
