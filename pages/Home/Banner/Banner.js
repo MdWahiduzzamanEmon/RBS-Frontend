@@ -14,6 +14,7 @@ const Banner = ({ bannerData, bannerImagesData }) => {
     });
   }, []);
 
+
   //get banner detail api
   const marqueeTextDemo = [
     {
