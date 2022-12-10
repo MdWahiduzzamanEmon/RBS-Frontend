@@ -21,7 +21,8 @@ function MyApp({ Component, pageProps }) {
       {pageLoaded ? (
         <SSRProvider>
           <Layout>
-            {router.asPath.includes("/blog") ? <NavbarBlog /> : <NavBar />}
+            {/* {router.asPath.includes("/blog") ? <NavbarBlog /> : <NavBar />} */}
+            <NavBar />
             <Component {...pageProps} />
           </Layout>
         </SSRProvider>
