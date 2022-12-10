@@ -1,26 +1,19 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import navStyles from "./Navbar.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useReducer } from "react";
-import { Col, Dropdown, NavDropdown, Row } from "react-bootstrap";
-import navbarReducer, {
-  initialState,
-} from "../../../reducers/navbarReducer/navbarReducer";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
 import Product from "../../../components/product/Product";
 import Resources from "../../../components/resources/Resources";
-import { useRouter } from "next/router";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import useViewport from "../../../hooks/useViewport";
-import dynamic from "next/dynamic";
-import MobileNavbar from "./MobileNavbar";
-import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
 import whyImage from "../../../public/svg/query-icon.svg";
-import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
+import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
 import { closeNavbar } from "../../../reducers/navbarReducer/actions";
+import navbarReducer, {
+  initialState
+} from "../../../reducers/navbarReducer/navbarReducer";
+import MobileNavbar from "./MobileNavbar";
+import navStyles from "./Navbar.module.css";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -381,22 +374,21 @@ const NavBar = () => {
                       {navLink.href ? (
                         <Link href={navLink.href} key={navLink.id}>
                           <p
-                            className={`${navStyles.navbarMainItems} ${
-                              (navLink.text === state?.showActiveInnerText &&
-                                state.openProduct) ||
+                            className={`${navStyles.navbarMainItems} ${(navLink.text === state?.showActiveInnerText &&
+                              state.openProduct) ||
                               (navLink.text === state?.showActiveInnerText &&
                                 state.openResources) ||
                               (navLink.text === state?.showActiveInnerText &&
                                 state.openContactUs)
-                                ? `${navStyles.active}`
-                                : ""
-                            }`}
+                              ? `${navStyles.active}`
+                              : ""
+                              }`}
                             onClick={(e) => {
                               openNavElements(e);
                             }}
-                            // style={{
-                            //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                            // }}
+                          // style={{
+                          //   borderBottom: state?.isActive ? {navStyles.active} : "",
+                          // }}
                           >
                             {/* {faChevronUp} */}
                             {/* <FaChevronUp style={{ color: "green" }} />  */}
@@ -407,16 +399,15 @@ const NavBar = () => {
                       ) : (
                         <p
                           key={navLink.id}
-                          className={`${navStyles.navbarMainItems} ${
-                            (navLink.text === state?.showActiveInnerText &&
-                              state.openProduct) ||
+                          className={`${navStyles.navbarMainItems} ${(navLink.text === state?.showActiveInnerText &&
+                            state.openProduct) ||
                             (navLink.text === state?.showActiveInnerText &&
                               state.openResources) ||
                             (navLink.text === state?.showActiveInnerText &&
                               state.openContactUs)
-                              ? `${navStyles.active}`
-                              : ""
-                          }`}
+                            ? `${navStyles.active}`
+                            : ""
+                            }`}
                           onClick={(e) => {
                             openNavElements(e);
                           }}
@@ -425,10 +416,10 @@ const NavBar = () => {
                           {/* {navLink.icon} */}
                           {(navLink.text === state?.showActiveInnerText &&
                             state.openProduct) ||
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openResources) ||
-                          (navLink.text === state?.showActiveInnerText &&
-                            state.openContactUs) ? (
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openResources) ||
+                            (navLink.text === state?.showActiveInnerText &&
+                              state.openContactUs) ? (
                             <FaChevronUp
                               style={{
                                 fontSize: "12px",
@@ -468,37 +459,37 @@ const NavBar = () => {
             {(state?.openProduct ||
               state?.openResources ||
               state?.openContactUs) && (
-              <div
-                className={`${navStyles.navbarItemsContainer}`}
-                // style={{
-                //   position: state?.showActiveInnerText ? "fixed" : "absolute",
-                // }}
-                style={{
-                  position: "fixed",
-                  // state?.openProduct || state?.openResources
-                  //   ? "fixed"
-                  //   : "absolute",
-                }}
-              >
                 <div
-                  className={`${navStyles.navbarItemsInnerContainer} ${stickyClass}`}
+                  className={`${navStyles.navbarItemsContainer}`}
+                  // style={{
+                  //   position: state?.showActiveInnerText ? "fixed" : "absolute",
+                  // }}
+                  style={{
+                    position: "fixed",
+                    // state?.openProduct || state?.openResources
+                    //   ? "fixed"
+                    //   : "absolute",
+                  }}
                 >
-                  <div className={`${navStyles.navbarItemsContainerLeft}`}>
-                    {state?.openProduct && (
-                      <Product navLinks={navLinks} dispatch={dispatch} />
-                    )}
-                    {state?.openResources && (
-                      <Resources navLinks={navLinks} dispatch={dispatch} />
-                    )}
-                    {state?.openContactUs && (
-                      <ContactUsNav navLinks={navLinks} dispatch={dispatch} />
-                    )}
+                  <div
+                    className={`${navStyles.navbarItemsInnerContainer} ${stickyClass}`}
+                  >
+                    <div className={`${navStyles.navbarItemsContainerLeft}`}>
+                      {state?.openProduct && (
+                        <Product navLinks={navLinks} dispatch={dispatch} />
+                      )}
+                      {state?.openResources && (
+                        <Resources navLinks={navLinks} dispatch={dispatch} />
+                      )}
+                      {state?.openContactUs && (
+                        <ContactUsNav navLinks={navLinks} dispatch={dispatch} />
+                      )}
 
-                    {/* hello */}
+                      {/* hello */}
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
           </div>
         </div>
       ) : (

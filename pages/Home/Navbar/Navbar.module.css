@@ -1,5 +1,5 @@
 .navbarContainer {
-  background: linear-gradient(90deg, #faebeb 0%, #dde6fd 100%);
+  background: linear-gradient(90deg, #140C1F 0%, #140C1F 100%);
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -20,7 +20,8 @@
 .navbarBrand {
   font-size: 40px;
   font-weight: 600;
-  color: #173465;
+  color: #fff;
+  /* color: #173465; */
   margin-right: 40px;
   margin-bottom: 0;
   display: flex;
@@ -36,7 +37,8 @@
 
 .navbarMainItems {
   display: inline-block;
-  color: #173465;
+  color: #fff;
+  /* color: #173465; */
   font-size: clamp(13px, 1.1vw, 20px);
   font-weight: 400;
   margin-bottom: 0;
