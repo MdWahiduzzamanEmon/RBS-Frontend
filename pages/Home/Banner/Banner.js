@@ -154,7 +154,7 @@ const Banner = ({ bannerImagesData }) => {
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
-                            minHeight: "150px",
+                            minHeight: "120px",
                           }}
                         >
                           <i>
@@ -175,7 +175,7 @@ const Banner = ({ bannerImagesData }) => {
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
-                            minHeight: "150px",
+                            minHeight: "120px",
                           }}
                         >
                           <i>
@@ -196,7 +196,7 @@ const Banner = ({ bannerImagesData }) => {
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
-                            minHeight: "150px",
+                            minHeight: "120px",
                           }}
                         >
                           <i>

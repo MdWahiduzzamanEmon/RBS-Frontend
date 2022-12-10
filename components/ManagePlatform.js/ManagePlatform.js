@@ -28,30 +28,30 @@ const ManagePlatform = ({ managePlatformData }) => {
           font-weight: 500;
         }
 
-        .nav-item .nav-link::before {
-            content: "";
-            position: absolute;
-            left:0;
-            bottom: 40px;
-            height: 2px;
-            width: 0%;
-            background-color: #2a75d1;
-            transform: scaleX(0);
-            transform-origin: top right;
-            transition: transform 0.5s ease-in-out;
-        }
+        // .nav-item .nav-link::before {
+        //     content: "";
+        //     position: absolute;
+        //     left:0;
+        //     bottom: 40px;
+        //     height: 2px;
+        //     width: 0%;
+        //     background-color: #2a75d1;
+        //     transform: scaleX(0);
+        //     transform-origin: top right;
+        //     transition: transform 0.5s ease-in-out;
+        // }
 
-        .nav-item .nav-link:hover::before, .nav-item .nav-link:focus::before {
-            content: "";
-            position: absolute;
-            left:0;
-            bottom: 40px;
-            height: 2px;
-            width: 100%;
-            background-color: #2a75d1;
-            transform: scaleX(1);
-            transform-origin: top left;
-        }
+        // .nav-item .nav-link:hover::before, .nav-item .nav-link:focus::before {
+        //     content: "";
+        //     position: absolute;
+        //     left:0;
+        //     bottom: 40px;
+        //     height: 2px;
+        //     width: 100%;
+        //     background-color: #2a75d1;
+        //     transform: scaleX(1);
+        //     transform-origin: top left;
+        // }
             .nav-fill {
                 padding-left: 100px;
                 padding-right: 100px;
@@ -71,6 +71,7 @@ const ManagePlatform = ({ managePlatformData }) => {
       <section
         style={{
           background: "rgb(226, 246, 254)",
+          // background: "linear-gradient(to right, #24c6dc, #514a9d)",
 
           // backgroundImage:
           //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",

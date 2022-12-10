@@ -142,26 +142,26 @@ export const footerDemoData = {
           item: "Live Communication",
           url: "/features#liveCommunication",
         },
-        {
-          url: "/",
-          item: "Issue Tracking",
-          url: "/features#issueTracking",
-        },
-        {
-          url: "/",
-          item: "Time Tracking",
-          url: "/features#timeTracking",
-        },
-        {
-          url: "/",
-          item: "Resource management",
-          url: "/features#resourceManagement",
-        },
-        {
-          url: "/",
-          item: "Requisition, Invoice, Income, Expense, VAT-TAX Management",
-          url: "/features#requisitionInvoiceIncomeExpenseVatTaxManagement",
-        },
+        // {
+        //   url: "/",
+        //   item: "Issue Tracking",
+        //   url: "/features#issueTracking",
+        // },
+        // {
+        //   url: "/",
+        //   item: "Time Tracking",
+        //   url: "/features#timeTracking",
+        // },
+        // {
+        //   url: "/",
+        //   item: "Resource management",
+        //   url: "/features#resourceManagement",
+        // },
+        // {
+        //   url: "/",
+        //   item: "Requisition, Invoice, Income, Expense, VAT-TAX Management",
+        //   url: "/features#requisitionInvoiceIncomeExpenseVatTaxManagement",
+        // },
       ],
     },
   ],
