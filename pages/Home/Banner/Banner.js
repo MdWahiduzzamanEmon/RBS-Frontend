@@ -2,6 +2,7 @@
 // import bannerImageVector from "../../../public/banner/backgroundVector.png";
 import Aos from "aos";
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import { banner } from "../../../public/JSON/banner";
 import bannerStyles from "../../../styles/Banner.module.css";
 import ApprovalIcon from "../../../svgComponents/ApprovalIcon";
@@ -135,23 +136,25 @@ const Banner = ({ bannerImagesData }) => {
                       {item.title4}
                       {/* {item?.title} */}
                     </h1>
-                    <div className="d-flex justify-content-center">
-                      <div
-                        className="row gx-3 gy-3"
-                        style={{
-                          fontSize: "20px",
-                          fontFamily: "Poppins",
-                          textTransform: "lowercase",
-                        }}
-                      >
+                    {/* <div className="d-flex justify-content-center"> */}
+                    <Row
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Poppins",
+                        textTransform: "lowercase",
+                        // gap: "5px",
+                      }}
+                      className="g-4"
+                    >
+                      <Col sm={12} md={4} lg={4}>
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4"
                           style={{
                             border: "1px solid #0f0",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
@@ -163,14 +166,16 @@ const Banner = ({ bannerImagesData }) => {
                           </i>
                           {item?.primaryDescription}
                         </div>
+                      </Col>
+                      <Col sm={12} md={4} lg={4}>
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4 gx-3"
                           style={{
                             border: "1px solid #f0f",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
@@ -182,14 +187,16 @@ const Banner = ({ bannerImagesData }) => {
                           </i>
                           {item?.secondaryDescription}
                         </div>
+                      </Col>
+                      <Col sm={12} md={4} lg={4}>
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4"
                           style={{
                             border: "1px solid #0ff",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
@@ -197,8 +204,9 @@ const Banner = ({ bannerImagesData }) => {
                           </i>
                           {item?.tertiaryDescription}
                         </div>
-                      </div>
-                    </div>
+                      </Col>
+                    </Row>
+                    {/* </div> */}
 
                     {/* <div style={{
                       fontSize: "18px",
