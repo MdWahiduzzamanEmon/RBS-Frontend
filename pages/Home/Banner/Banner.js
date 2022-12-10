@@ -136,25 +136,25 @@ const Banner = ({ bannerImagesData }) => {
                       {item.title4}
                       {/* {item?.title} */}
                     </h1>
-                    <div className="d-flex justify-content-center">
-                      <Row
-                        gap="10px"
-                        style={{
-                          fontSize: "20px",
-                          fontFamily: "Poppins",
-                          textTransform: "lowercase",
-                        }}
-                      >
-                        <Col
-                          sm={12}
-                          md={4}
-                          lg={4}
+                    {/* <div className="d-flex justify-content-center"> */}
+                    <Row
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Poppins",
+                        textTransform: "lowercase",
+                        // gap: "5px",
+                      }}
+                      className="g-4"
+                    >
+                      <Col sm={12} md={4} lg={4}>
+                        <div
                           style={{
                             border: "1px solid #0f0",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
@@ -165,17 +165,17 @@ const Banner = ({ bannerImagesData }) => {
                             />
                           </i>
                           {item?.primaryDescription}
-                        </Col>
-                        <Col
-                          sm={12}
-                          md={4}
-                          lg={4}
+                        </div>
+                      </Col>
+                      <Col sm={12} md={4} lg={4}>
+                        <div
                           style={{
                             border: "1px solid #f0f",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
@@ -186,26 +186,27 @@ const Banner = ({ bannerImagesData }) => {
                             />
                           </i>
                           {item?.secondaryDescription}
-                        </Col>
-                        <Col
-                          sm={12}
-                          md={4}
-                          lg={4}
+                        </div>
+                      </Col>
+                      <Col sm={12} md={4} lg={4}>
+                        <div
                           style={{
                             border: "1px solid #0ff",
                             borderRadius: "10px",
                             padding: "10px",
                             display: "flex",
                             gap: "10px",
+                            minHeight: "150px",
                           }}
                         >
                           <i>
                             <BossIcon fill="#0ff" hight="20px" width="20px" />
                           </i>
                           {item?.tertiaryDescription}
-                        </Col>
-                      </Row>
-                    </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    {/* </div> */}
 
                     {/* <div style={{
                       fontSize: "18px",
