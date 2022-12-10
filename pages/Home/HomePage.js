@@ -59,7 +59,7 @@ const HomePage = ({
         <Home5th home5thData={home5thData} />
 
         {/* //*******************Review section****************/}
-        <Home6th home6thData={home6thData} />
+        {/* <Home6th home6thData={home6thData} /> */}
         {/* <Home7th home7thData={home7thData} /> */}
 
         {/* //***************Mini pricing section************* */}
