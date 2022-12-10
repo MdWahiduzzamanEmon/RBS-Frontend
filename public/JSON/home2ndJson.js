@@ -30,7 +30,7 @@ export const home2ndJson = {
         id: 2,
         isShow: true,
         title: "Project Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/ProgramManagement.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -109,7 +109,8 @@ export const home2ndJson = {
       {
         id: 12,
         isShow: true,
-        title: "Very informative Dashboard",
+        title: "informative Dashboard",
+        // title: "Very informative Dashboard",
         img: require("../image/workflowImages/info.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
