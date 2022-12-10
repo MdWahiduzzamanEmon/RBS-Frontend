@@ -137,7 +137,7 @@ const Banner = ({ bannerImagesData }) => {
                     </h1>
                     <div className="d-flex justify-content-center">
                       <div
-                        className="row gx-3 gy-3"
+                        className="row gx-lg-3 gx-md-3 gx-sm-3"
                         style={{
                           fontSize: "20px",
                           fontFamily: "Poppins",
@@ -145,7 +145,7 @@ const Banner = ({ bannerImagesData }) => {
                         }}
                       >
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4"
+                          className="col-sm-12 col-md-4"
                           style={{
                             border: "1px solid #0f0",
                             borderRadius: "10px",
@@ -164,7 +164,7 @@ const Banner = ({ bannerImagesData }) => {
                           {item?.primaryDescription}
                         </div>
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4 gx-3"
+                          className="col-sm-12 col-md-4 "
                           style={{
                             border: "1px solid #f0f",
                             borderRadius: "10px",
@@ -183,7 +183,7 @@ const Banner = ({ bannerImagesData }) => {
                           {item?.secondaryDescription}
                         </div>
                         <div
-                          className="col-sm-12 col-md-4 col-lg-4"
+                          className="col-sm-12 col-md-4 "
                           style={{
                             border: "1px solid #0ff",
                             borderRadius: "10px",
