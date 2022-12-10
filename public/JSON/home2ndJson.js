@@ -22,7 +22,7 @@ export const home2ndJson = {
         id: 1,
         isShow: true,
         title: "Very informative Dashboard",
-        img: require('../image/workflowImages/Calendar.png'),
+        img: require('../image/workflowImages/info.png'),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
