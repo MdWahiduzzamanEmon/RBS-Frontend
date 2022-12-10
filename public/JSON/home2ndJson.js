@@ -21,225 +21,313 @@ export const home2ndJson = {
       {
         id: 1,
         isShow: true,
-        title: "Very informative Dashboard",
-        img: require('../image/workflowImages/info.png'),
+        title: "Agile Methodology",
+        img: require("../image/workflowImages/info.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 2,
         isShow: true,
-        title: "Kanban Board",
-        img: require('../image/workflowImages/KanbanBoard.png'),
+        title: "Project Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 3,
         isShow: true,
-        title: "Gantt Chart",
-        img: require('../image/workflowImages/GanttChart.png'),
+        title: "Collaboration",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 4,
         isShow: true,
-        title: "Calendar view",
-        img: require('../image/workflowImages/Calendar.png'),
+        title: "Resource Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "It lets a user view and interact with a calendar that they can navigate by month, year, or decade.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 5,
         isShow: true,
-        title: "Vendor/Contractor Control Panel",
-        img: require('../image/workflowImages/controlPanel.png'),
+        title: "Time Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "Organizations use to manage vendors and monitor projects which are developing by them.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 6,
         isShow: true,
-        title: "In depth Program Management System",
-        img: require('../image/workflowImages/ProgramManagement.png'),
+        title: "Plan View",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 7,
         isShow: true,
-        title: "In depth Task  Management System",
-        img: require('../image/workflowImages/TaskManagement.png'),
+        title: "Document Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 8,
         isShow: true,
-        title: "Document Management System",
-        img: require('../image/workflowImages/DocumentManagement.png'),
+        title: "Issue Tracking",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "That helps to store, manage, and track electronic documents and electronic images of paper-based information captured.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 9,
         isShow: true,
-        title: "User Role Based Permission ",
-        img: require('../image/workflowImages/Permission.png'),
+        title: "Budget Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 10,
         isShow: true,
-        title: "Client Control Panel",
-        img: require('../image/workflowImages/ClientControlPanel.png'),
+        title: "Financial Management",
+        img: require("../image/workflowImages/info.png"),
         description:
-          "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.",
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
       {
         id: 11,
         isShow: true,
+        title: "Chat Communication",
+        img: require("../image/workflowImages/info.png"),
+        description:
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
+      },
+      {
+        id: 12,
+        isShow: true,
+        title: "Very informative Dashboard",
+        img: require("../image/workflowImages/info.png"),
+        description:
+          "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
+      },
+      {
+        id: 13,
+        isShow: true,
+        title: "Kanban Board",
+        img: require("../image/workflowImages/KanbanBoard.png"),
+        description:
+          "Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually.",
+      },
+      {
+        id: 14,
+        isShow: true,
+        title: "Gantt Chart",
+        img: require("../image/workflowImages/GanttChart.png"),
+        description:
+          "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.",
+      },
+      {
+        id: 15,
+        isShow: true,
+        title: "Calendar view",
+        img: require("../image/workflowImages/Calendar.png"),
+        description:
+          "It lets a user view and interact with a calendar that they can navigate by month, year, or decade.",
+      },
+      {
+        id: 16,
+        isShow: true,
+        title: "Vendor/Contractor Control Panel",
+        img: require("../image/workflowImages/controlPanel.png"),
+        description:
+          "Organizations use to manage vendors and monitor projects which are developing by them.",
+      },
+      {
+        id: 17,
+        isShow: true,
+        title: "In depth Program Management System",
+        img: require("../image/workflowImages/ProgramManagement.png"),
+        description:
+          "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
+      },
+      {
+        id: 18,
+        isShow: true,
+        title: "In depth Task  Management System",
+        img: require("../image/workflowImages/TaskManagement.png"),
+        description:
+          "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.",
+      },
+      // {
+      //   id: 19,
+      //   isShow: true,
+      //   title: "Document Management System",
+      //   img: require("../image/workflowImages/DocumentManagement.png"),
+      //   description:
+      //     "That helps to store, manage, and track electronic documents and electronic images of paper-based information captured.",
+      // },
+      {
+        id: 19,
+        isShow: true,
+        title: "User Role Based Permission ",
+        img: require("../image/workflowImages/Permission.png"),
+        description:
+          "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.",
+      },
+      {
+        id: 20,
+        isShow: true,
+        title: "Client Control Panel",
+        img: require("../image/workflowImages/ClientControlPanel.png"),
+        description:
+          "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.",
+      },
+      {
+        id: 21,
+        isShow: true,
         title: "Approval Management System",
-        img: require('../image/workflowImages/ApprovalManagementSystem.png'),
+        img: require("../image/workflowImages/ApprovalManagementSystem.png"),
         description:
           "That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility.",
       },
 
       {
-        id: 12,
+        id: 22,
         isShow: true,
         title: "Project Budget Management System",
-        img: require('../image/workflowImages/ProjectBudgetManagementSystem.png'),
+        img: require("../image/workflowImages/ProjectBudgetManagementSystem.png"),
         description:
           "A project without a budget is like a car without fuel. creating a project budget and helping those wheels spin will most likely be your full responsibility.",
       },
       {
-        id: 13,
+        id: 23,
         isShow: true,
         title: "Budget & Cost Comparison",
-        img: require('../image/workflowImages/BudgetCostComparison.png'),
+        img: require("../image/workflowImages/BudgetCostComparison.png"),
         description:
           "It will help you to monitor your expense in regard to budget that will make direct impact to make maximum profit.",
       },
       {
-        id: 14,
+        id: 24,
         isShow: true,
         title: "Project-Discussion",
-        img: require('../image/workflowImages/ProjectDiscussion.png'),
+        img: require("../image/workflowImages/ProjectDiscussion.png"),
         description:
           "An effective discussion informs members what can be done in next which contains the results and outcomes of the project.",
       },
       {
-        id: 15,
+        id: 25,
         isShow: true,
         title: "Task-Discussion",
-        img: require('../image/workflowImages/TaskDiscussion.png'),
+        img: require("../image/workflowImages/TaskDiscussion.png"),
         description:
           "Create discussions about your tasks and projects to improve team collaboration for the ongoing & next tasks.",
       },
       {
-        id: 16,
+        id: 26,
         isShow: true,
         title: "Task-Budget Management System",
-        img: require('../image/workflowImages/TaskBudgetManagementSystem.png'),
+        img: require("../image/workflowImages/TaskBudgetManagementSystem.png"),
         description:
           "View your task's budget in hours or money. Keep track of your progress as you work and ensure your finances don't take you by surprise.",
       },
+      // {
+      //   id: 27,
+      //   isShow: true,
+      //   title: "Issue Tracking Management System",
+      //   img: require("../image/workflowImages/IssueTrackingManagementSystem.png"),
+      //   description:
+      //     "That allows users to record and follow the progress of every “ticket” or 'issue' until the problem is resolved.",
+      // },
       {
-        id: 17,
-        isShow: true,
-        title: "Issue Tracking Management System",
-        img: require('../image/workflowImages/IssueTrackingManagementSystem.png'),
-        description:
-          "That allows users to record and follow the progress of every “ticket” or 'issue' until the problem is resolved.",
-      },
-      {
-        id: 18,
+        id: 27,
         isShow: true,
         title: "One 2 One & One 2 Many Chat",
-        img: require('../image/workflowImages/chat.png'),
+        img: require("../image/workflowImages/chat.png"),
         description:
           "This is easier when working together in the same physical office space or communicating remotely or working with freelancers around the world?",
       },
+      // {
+      //   id: 28,
+      //   isShow: true,
+      //   title: "Resource management System",
+      //   img: require("../image/workflowImages/ResourceManagementSystem.png"),
+      //   description:
+      //     "This is the well practice of planning, scheduling, and allocating people, money, and technology to a project or program.",
+      // },
       {
-        id: 19,
-        isShow: true,
-        title: "Resource management System",
-        img: require('../image/workflowImages/ResourceManagementSystem.png'),
-        description:
-          "This is the well practice of planning, scheduling, and allocating people, money, and technology to a project or program.",
-      },
-      {
-        id: 20,
+        id: 28,
         isShow: true,
         title: "Work Board Check List",
-        img: require('../image/workflowImages/WorkBoardCheckList.png'),
+        img: require("../image/workflowImages/WorkBoardCheckList.png"),
         description:
           "The Checklist Item of Kanban Board enables you to visualize all of your Checklist Items based on their current ‘Status’.",
       },
       {
-        id: 21,
+        id: 29,
         isShow: true,
         title: "Time Tracking Management System",
-        img: require('../image/workflowImages/TimeTrackingManagementSystem.png'),
+        img: require("../image/workflowImages/TimeTrackingManagementSystem.png"),
         description:
           "It helps to track a time that will save you and your company precious time - and money.",
       },
       {
-        id: 22,
+        id: 30,
         isShow: true,
         title: "Requisition Management System",
-        img: require('../image/workflowImages/RequisitionManagementSystem.png'),
+        img: require("../image/workflowImages/RequisitionManagementSystem.png"),
         description:
           "It helps the process of creating, processing, authorizing, and tracking purchase requests within an organization.",
       },
       {
-        id: 23,
+        id: 31,
         isShow: true,
         title: "Expense Management System",
-        img: require('../image/workflowImages/ExpenseManagementSystem.png'),
+        img: require("../image/workflowImages/ExpenseManagementSystem.png"),
         description:
           "It helps the systems deployed by a business to process, pay, and audit employee-initiated expenses.",
       },
       {
-        id: 24,
+        id: 32,
         isShow: true,
         title: "Income Management System",
-        img: require('../image/workflowImages/IncomeManagementSystem.png'),
+        img: require("../image/workflowImages/IncomeManagementSystem.png"),
         description:
           "Effectively manage your income stream with our all-in-one financial management solution.",
       },
       {
-        id: 25,
+        id: 33,
         isShow: true,
         title: "Invoice Management System",
-        img: require('../image/workflowImages/InvoiceManagementSystem.png'),
+        img: require("../image/workflowImages/InvoiceManagementSystem.png"),
         description:
           "It has been designed to automate your accounts receivable process. Connect and sync invoices and start chasing down unpaid bills.",
       },
       {
-        id: 26,
+        id: 34,
         isShow: true,
         title: "VAT -TAX Management System",
-        img: require('../image/workflowImages/VATTAXManagementSystem.png'),
+        img: require("../image/workflowImages/VATTAXManagementSystem.png"),
         description:
           "The Tax Management module provides organizations with centralized tax configuration, management, and reporting.",
       },
       {
-        id: 27,
+        id: 35,
         isShow: true,
         title: "LOS-Profit Management System",
-        img: require('../image/workflowImages/LOSProfitManagementSystem.png'),
+        img: require("../image/workflowImages/LOSProfitManagementSystem.png"),
         description:
           "It helps to manage income and expenses to ensure that a business earns a net operating profit.",
       },
       {
-        id: 28,
+        id: 36,
         isShow: true,
         title: "All types of Approval",
-        img: require('../image/workflowImages/AllTypesOfApproval.png'),
+        img: require("../image/workflowImages/AllTypesOfApproval.png"),
         description:
           "It provides a system to manage approval workflow transparently, effectively, and accurately.",
       },

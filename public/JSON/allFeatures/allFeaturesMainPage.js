@@ -60,5 +60,32 @@ export const allFeaturesMainPageData = {
         },
       ],
     },
+    {
+      id: 3,
+      title: "Docs",
+      features: [
+        {
+          id: 1,
+          title: "Whit Label Branding",
+          name: "Whit-Label-Branding",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
+        },
+        {
+          id: 2,
+          title: "Kanban Board",
+          name: "Kanban-Board",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
+        },
+        {
+          id: 3,
+          title: "Gantt Chart",
+          name: "Gantt-Chart",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed semper nisl. Sed auctor, ",
+        },
+      ],
+    },
   ],
 };

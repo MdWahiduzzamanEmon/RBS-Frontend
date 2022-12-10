@@ -6,9 +6,7 @@ import Aos from "aos";
 
 const MiniPricing = ({ miniPricingData }) => {
   const changePriceColor = (itemName) => {
-    if (itemName === "Individual") {
-      return `${styles.rateContainerItemBlack}`;
-    } else if (itemName === "Basic") {
+    if (itemName === "Basic") {
       return `${styles.rateContainerItemPurple}`;
     } else if (itemName === "Standard") {
       return ` ${styles.rateContainerItemBlue}`;
@@ -49,6 +47,7 @@ const MiniPricing = ({ miniPricingData }) => {
                   </p>
                 </div>
               </div>
+
               <Link href="/pricing">
                 <button className={`${styles.primaryButton} mb-2`}>
                   Try for free

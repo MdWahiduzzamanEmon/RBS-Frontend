@@ -13,9 +13,9 @@ const ManagePlatform = ({ managePlatformData }) => {
     <>
       <style>
         {`
-        .nav-tabs {
-            --bs-nav-tabs-border-width: none;
-        }
+        // .nav-tabs {
+        //     --bs-nav-tabs-border-width: none;
+        // }
 
         .nav-item{
          
