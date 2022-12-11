@@ -14,7 +14,6 @@ const Features = () => {
   }, []);
 
   const router = useRouter();
-  console.log(router.events);
 
   return (
     <div>
