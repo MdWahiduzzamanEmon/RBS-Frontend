@@ -101,114 +101,91 @@ const Banner = ({ bannerImagesData }) => {
         {/* <div className="d-flex align-items-center"> */}
         <div className={`${bannerStyles.bannerContent} container `}>
           <div>
-            {bannerData?.isShow && (
-              <div>
-                {bannerData?.items?.map((item, index) => (
-                  <div
-                    key={item?.id}
-                    style={{ display: item?.isShow ? "block" : "none" }}
+            <div>
+              {bannerData?.items?.map((item, index) => (
+                <div key={item?.id}>
+                  <h1
+                    className={`${bannerStyles.secondaryHeading} fw-bold`}
+                    style={{
+                      // fontSize: "44px",
+                      fontFamily: "Work Sans",
+                      textAlign: "center",
+                      fontWeight: 200,
+                    }}
+                    data-aos="fade-down"
                   >
-                    <h1
-                      className="fw-bold "
-                      style={{
-                        fontSize: "44px",
-                        fontFamily: "Work Sans",
-                        textAlign: "center",
-                        fontWeight: 200,
-                      }}
-                      data-aos="fade-down"
-                    >
-                      {item.title1} <font color="#0f0"> {item.bluetext1}</font>{" "}
-                      {item.title2}
-                      {/* {item?.title} */}
-                    </h1>
-                    <h1
-                      className="fw-bold mb-5 "
-                      style={{
-                        fontSize: "70px",
-                        //  color: "#000000",
-                        fontFamily: "Work Sans",
-                        textAlign: "center",
-                      }}
-                      data-aos="fade-down"
-                    >
-                      {item.title3} <font color="#0f0"> {item.bluetext2}</font>{" "}
-                      {item.title4}
-                      {/* {item?.title} */}
-                    </h1>
-                    {/* <div className="d-flex justify-content-center"> */}
-                    <Row
-                      style={{
-                        fontSize: "20px",
-                        fontFamily: "Poppins",
-                        textTransform: "lowercase",
-                        // gap: "5px",
-                      }}
-                      className="g-4"
-                    >
-                      <Col sm={12} md={4} lg={4}>
-                        <div
-                          style={{
-                            border: "1px solid #0f0",
-                            borderRadius: "10px",
-                            padding: "10px",
-                            display: "flex",
-                            gap: "10px",
-                            minHeight: "120px",
-                          }}
-                        >
-                          <i>
-                            <ApprovalIcon
-                              fill="#0f0"
-                              hight="20px"
-                              width="20px"
-                            />
-                          </i>
-                          {item?.primaryDescription}
-                        </div>
-                      </Col>
-                      <Col sm={12} md={4} lg={4}>
-                        <div
-                          style={{
-                            border: "1px solid #f0f",
-                            borderRadius: "10px",
-                            padding: "10px",
-                            display: "flex",
-                            gap: "10px",
-                            minHeight: "120px",
-                          }}
-                        >
-                          <i>
-                            <SettingIcon
-                              fill="#f0f"
-                              hight="20px"
-                              width="20px"
-                            />
-                          </i>
-                          {item?.secondaryDescription}
-                        </div>
-                      </Col>
-                      <Col sm={12} md={4} lg={4}>
-                        <div
-                          style={{
-                            border: "1px solid #0ff",
-                            borderRadius: "10px",
-                            padding: "10px",
-                            display: "flex",
-                            gap: "10px",
-                            minHeight: "120px",
-                          }}
-                        >
-                          <i>
-                            <BossIcon fill="#0ff" hight="20px" width="20px" />
-                          </i>
-                          {item?.tertiaryDescription}
-                        </div>
-                      </Col>
-                    </Row>
-                    {/* </div> */}
+                    {item.title1} <font color="#0f0"> {item.blueText1}</font>{" "}
+                    {item.title2}
+                    {/* {item?.title} */}
+                  </h1>
+                  <h1
+                    // className="fw-bold mb-5 "
+                    style={{
+                      // fontSize: "70px",
+                      //  color: "#000000",
+                      fontFamily: "Work Sans",
+                      textAlign: "center",
+                    }}
+                    className={`${bannerStyles.primaryHeading} mb-5 `}
+                    data-aos="fade-down"
+                  >
+                    {item.title3} <font color="#0f0"> {item.blueText2}</font>{" "}
+                    {item.title4}
+                    {/* {item?.title} */}
+                  </h1>
+                  {/* <div className="d-flex justify-content-center"> */}
+                  <Row
+                    style={{
+                      fontSize: "16px",
+                      fontFamily: "Poppins",
+                      textTransform: "lowercase",
+                      // gap: "5px",
+                    }}
+                    className={`${bannerStyles.row} g-4`}
+                  >
+                    <Col sm={12} md={12} lg={4}>
+                      <div
+                        style={{
+                          border: "1px solid #0f0",
+                        }}
+                        className={`${bannerStyles.rowColumn}`}
+                      >
+                        <i>
+                          <ApprovalIcon fill="#0f0" hight="20px" width="20px" />
+                        </i>
+                        {item?.primaryDescription}
+                      </div>
+                    </Col>
+                    <Col sm={12} md={12} lg={4}>
+                      <div
+                        style={{
+                          border: "1px solid #f0f",
+                        }}
+                        className={`${bannerStyles.rowColumn}`}
+                      >
+                        <i>
+                          <SettingIcon fill="#f0f" hight="20px" width="20px" />
+                        </i>
+                        {item?.secondaryDescription}
+                      </div>
+                    </Col>
+                    <Col sm={12} md={12} lg={4}>
+                      <div
+                        style={{
+                          border: "1px solid #0ff",
+                        }}
+                        className={`${bannerStyles.rowColumn}`}
+                      >
+                        <i>
+                          <BossIcon fill="#0ff" hight="20px" width="20px" />
+                        </i>
+                        {item?.tertiaryDescription}
+                      </div>
+                    </Col>
+                  </Row>
+                  {/* </div> */}
 
-                    {/* <div style={{
+                  {/* <div style={{
                       fontSize: "18px",
                       // color: "#000",
                       justifyContent: "center",
@@ -244,10 +221,9 @@ const Banner = ({ bannerImagesData }) => {
                         <small>{item?.tertiaryDescription}</small>
                       </p>
                     </div> */}
-                  </div>
-                ))}
-              </div>
-            )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

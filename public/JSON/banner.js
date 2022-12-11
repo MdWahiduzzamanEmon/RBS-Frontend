@@ -5,12 +5,12 @@ export const banner = {
     {
       id: 1,
       isShow: true,
-      title: "Control Your TIME And FINANCE,Be the best project manager!",
+      title: "Control Your TIME And Finance,Be the best project manager!",
       title1: "Control Your ",
-      bluetext1: "TIME",
-      title2: "And FINANCE",
+      blueText1: "TIME",
+      title2: "And Finance",
       title3: "Be the ",
-      bluetext2: "best",
+      blueText2: "best",
       title4: "project manager!",
       primaryDescription:
         "Nothing will be happened without your approval, everything is in your hand.",
