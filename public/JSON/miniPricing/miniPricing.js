@@ -4,30 +4,24 @@ export const miniPricingDemoData = {
   packages: [
     {
       id: 1,
-      title: "Individual",
-      details: "The Ultimate Package",
-      price: "$0",
-    },
-    {
-      id: 2,
       title: "Basic",
       details: "The Ultimate Package",
       price: "$8",
     },
     {
-      id: 3,
+      id: 2,
       title: "Standard",
       details: "The Ultimate Package",
       price: "$10",
     },
     {
-      id: 4,
+      id: 3,
       title: "Pro",
       details: "The Ultimate Package",
       price: "$16",
     },
     {
-      id: 5,
+      id: 4,
       title: "Enterprise",
       details: "The Ultimate Package",
       price: "$8",

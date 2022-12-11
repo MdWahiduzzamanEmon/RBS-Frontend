@@ -25,7 +25,7 @@ const FooterCommon = ({ footerDetails }) => {
                 )}
               </div>
               {/* {data?.description && <p>{data?.description}</p>} */}
-              <h1 className="fs-6 fw-bold" style={{ color: "#173465" }}>
+              <h1 className="fs-6 fw-bold" style={{ color: "#fff" }}>
                 {data.title}
               </h1>
               <ul className={`${footerCommonStyles.textContainer} ms-0 ps-0`}>

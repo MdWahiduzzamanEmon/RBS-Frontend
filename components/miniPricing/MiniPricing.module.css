@@ -9,19 +9,25 @@
 }
 
 .planContainer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(4, 250px);
   justify-items: center;
   align-items: center;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px; */
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .singlePlan {
   text-align: center;
   padding: 15px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
+  box-shadow: 3px 8px 20px 0 rgba(0, 0, 0, 0.1);
+  /* -1px -9px 15px 0 rgba(0, 0, 0, 0.1); */
 }
 
 .rateContainerMiniPricing {
@@ -63,6 +69,7 @@
   padding: 8px 10px;
   background-color: #5a5ad5;
   border: none;
+  margin-top: 15px;
 }
 .primaryButton:hover {
   background-color: #7373de;
@@ -80,6 +87,17 @@
   font-weight: 500;
 }
 
+.featuresList {
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 15px;
+  /* color: #000; */
+}
+
 /* media queries for max-width: 600px and 992px */
 
 @media screen and (max-width: 992px) {
@@ -94,7 +112,7 @@
 @media screen and (max-width: 600px) {
   .planContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-items: center;
     row-gap: 15px;
   }

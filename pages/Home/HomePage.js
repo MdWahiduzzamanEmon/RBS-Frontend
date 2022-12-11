@@ -42,12 +42,8 @@ const HomePage = ({
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
         <FeaturesBoard featuresData={featuresData} />
-        <ManagePlatform managePlatformData={managePlatformData} />
         {/* //**************Features section****************/}
         {/* <Home2nd home2ndData={home2ndData} /> */}
-
-        {/* //***************Video section***************** */}
-        <Home5th home5thData={home5thData} />
 
         {/* //********Describing features in details******** */}
         <Home3rd home3rdData={home3rdData} />
@@ -57,15 +53,20 @@ const HomePage = ({
         />
         <Home8th home8thData={home8thData} />
 
+        <ManagePlatform managePlatformData={managePlatformData} />
+
+        {/* //***************Video section***************** */}
+        <Home5th home5thData={home5thData} />
+
         {/* //*******************Review section****************/}
-        <Home6th home6thData={home6thData} />
+        {/* <Home6th home6thData={home6thData} /> */}
         {/* <Home7th home7thData={home7thData} /> */}
 
         {/* //***************Mini pricing section************* */}
         <MiniPricing miniPricingData={miniPricingData} />
 
         {/*//**************Comparing softwares******************/}
-        <CompareBoard />
+        {/* <CompareBoard /> */}
 
         {/* //**********Why Software is better section*******  */}
         <Home9th home9thData={home9thData} />

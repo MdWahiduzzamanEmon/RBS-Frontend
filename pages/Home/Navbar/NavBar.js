@@ -1,26 +1,19 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import navStyles from "./Navbar.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useReducer } from "react";
-import { Col, Dropdown, NavDropdown, Row } from "react-bootstrap";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
+import Product from "../../../components/product/Product";
+import Resources from "../../../components/resources/Resources";
+import useViewport from "../../../hooks/useViewport";
+import whyImage from "../../../public/svg/query-icon.svg";
+import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
+import { closeNavbar } from "../../../reducers/navbarReducer/actions";
 import navbarReducer, {
   initialState,
 } from "../../../reducers/navbarReducer/navbarReducer";
-import Product from "../../../components/product/Product";
-import Resources from "../../../components/resources/Resources";
-import { useRouter } from "next/router";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import useViewport from "../../../hooks/useViewport";
-import dynamic from "next/dynamic";
 import MobileNavbar from "./MobileNavbar";
-import allFeaturesImage from "../../../public/svg/right-file-icon.svg";
-import whyImage from "../../../public/svg/query-icon.svg";
-import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
-import { closeNavbar } from "../../../reducers/navbarReducer/actions";
+import navStyles from "./Navbar.module.css";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -455,12 +448,16 @@ const NavBar = () => {
                   ))}
                 </div>
                 <div className="">
-                  <button className={`${navStyles.primaryButton}`}>
-                    Log in
-                  </button>
-                  <button className={`${navStyles.primaryButton}`}>
-                    Sign up
-                  </button>
+                  <Link href="/signin">
+                    <button className={`${navStyles.primaryButton}`}>
+                      Sign in
+                    </button>
+                  </Link>
+                  <Link href="/signup">
+                    <button className={`${navStyles.primaryButton}`}>
+                      Sign up
+                    </button>
+                  </Link>
                 </div>
               </div>
               {/* <Product></Product> */}

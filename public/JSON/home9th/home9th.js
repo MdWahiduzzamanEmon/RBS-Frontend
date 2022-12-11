@@ -36,11 +36,12 @@ export const home9thDemoData = {
     // },
     {
       id: 5,
-      img: "/todoBoard5.png",
+      img: "/video/corporateVideo.gif",
     },
     {
       id: 6,
-      img: "/todoBoard6.png",
+      // img: "/todoBoard6.png",
+      img: "/video/corporateVideo2.gif",
     },
   ],
 };

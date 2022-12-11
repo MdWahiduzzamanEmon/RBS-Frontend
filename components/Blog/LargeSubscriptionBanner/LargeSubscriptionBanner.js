@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LargeSubscriptionBanner.module.css";
-import imageSubscription from "../../../public/pageImages/pageImage2.png";
+import imageSubscription from "../../../public/largeSubscriptionBanner.png";
 import Image from "next/image";
 import LargeSubscriptionSvg from "../../../svgComponents/largeSubscriptionSvg";
 import Link from "next/link";
@@ -17,9 +17,9 @@ const LargeSubscriptionBanner = () => {
             src={imageSubscription}
             alt="image"
             width={550}
-            height={250}
-            layout="intrinsic"
-            objectFit="cover"
+            height={450}
+            layout="responsive"
+            objectFit="contain"
             className={`${styles.subscriptionImage}`}
           ></Image>
         </div>

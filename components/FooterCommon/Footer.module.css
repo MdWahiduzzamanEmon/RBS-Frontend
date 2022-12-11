@@ -1,12 +1,14 @@
 .footerCommon {
   /* background: #1E2334; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     90deg,
     rgb(250, 235, 235) 0%,
     rgb(223, 231, 253) 100%
-  );
+  ); */
+  background: linear-gradient(to right, #140c1f, #140c1f);
   /* color: #000; */
-  color: #173465;
+  /* color: #173465; */
+  color: #fff;
   font-family: "Poppins", sans-serif;
   /* background-image: url(../../public/footer2.png); */
   /* background-position: 70% 130px; */
@@ -23,7 +25,8 @@
 
 .text {
   width: fit-content;
-  color: #173465;
+  /* color: #173465; */
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
   opacity: 0.6;
@@ -31,16 +34,18 @@
 }
 
 .text:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #fff;
 }
 
 .footerBottom {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     90deg,
     rgb(250, 235, 235) 0%,
     rgb(223, 231, 253) 100%
-  );
+  ); */
+  background: linear-gradient(to right, #140c1f, #140c1f);
   padding: 20px 0px;
-  color: #173465;
-  font-weight: 500;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
 }
