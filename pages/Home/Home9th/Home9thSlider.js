@@ -23,33 +23,35 @@ const Home9thSlider = ({ sliderData }) => {
   return (
     <>
       <div className="w-100 rounded-5 overflow-hidden " data-aos="zoom-in-up">
-        {!isSSR && <Swiper
-          slidesPerView={1}
-          loop={true}
-          modules={[Autoplay, Pagination]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          observer={true}
-          observerParents={true}
-          className="mySwiper"
-        >
-          {sliderData?.map((data) => (
-            <SwiperSlide key={data.id}>
-              <Image
-                key={data.id}
-                src={data.img}
-                width={640}
-                height={510}
-                layout="responsive"
-                objectFit="cover"
-                alt="image"
-                className="rounded-5"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>}
+        {!isSSR && (
+          <Swiper
+            slidesPerView={1}
+            loop={true}
+            modules={[Autoplay, Pagination]}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            observer={true}
+            observerParents={true}
+            className="mySwiper"
+          >
+            {sliderData?.map((data) => (
+              <SwiperSlide key={data.id}>
+                <Image
+                  key={data.id}
+                  src={data.img}
+                  width={640}
+                  height={510}
+                  layout="responsive"
+                  objectFit="contain"
+                  alt="image"
+                  className="rounded-5"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
     </>
   );

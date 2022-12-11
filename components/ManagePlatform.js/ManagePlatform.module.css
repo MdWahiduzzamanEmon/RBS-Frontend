@@ -5,6 +5,22 @@
   padding-bottom: 50px;
 }
 
+.managePlatformTabs {
+  border: none !important;
+  border-color: transparent !important;
+}
+
+.managePlatformTabs li button {
+  border-color: transparent !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  color: #173465 !important;
+  font-weight: 500;
+}
+.managePlatformTabs li button:hover {
+  color: #0d6efd !important;
+}
+
 @media screen and (max-width: 920px) {
   .managePlatformContainer {
     display: flex;

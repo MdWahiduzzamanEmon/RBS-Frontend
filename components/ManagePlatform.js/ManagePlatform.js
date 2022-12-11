@@ -11,7 +11,7 @@ import ManagePlatformDetailInformation from "./managePlatformDetailInformation/M
 const ManagePlatform = ({ managePlatformData }) => {
   return (
     <>
-      <style>
+      {/* <style>
         {`
         // .nav-tabs {
         //     --bs-nav-tabs-border-width: none;
@@ -67,7 +67,7 @@ const ManagePlatform = ({ managePlatformData }) => {
             }
             }
         `}
-      </style>
+      </style> */}
       <section
         style={{
           background: "rgb(226, 246, 254)",
@@ -97,6 +97,7 @@ const ManagePlatform = ({ managePlatformData }) => {
               id="fill-tab-example"
               fill
               style={{ color: "#2a75d1" }}
+              className={`${styles.managePlatformTabs}`}
               // style={{}}
               // data-aos="zoom-out-down"
             >
@@ -105,14 +106,8 @@ const ManagePlatform = ({ managePlatformData }) => {
                   eventKey={data.eventKey}
                   title={data.title}
                   key={data.id}
-                  // data-aos="zoom-out-down"
+                  className={`${styles.managePlatformTab}`}
                 >
-                  {/* <Home7th /> */}
-                  {/* <EngineeringTeam /> */}
-                  {/* {data?.submenus?.map((data) => ( */}
-                  {/* <CVerticalTab cVerticalTabData={data} /> */}
-                  {/* ))} */}
-                  {/* <Image src={image} alt="image" width={500} height={500}></Image> */}
                   <ManagePlatformDetailInformation platformInformation={data} />
                 </Tab>
               ))}

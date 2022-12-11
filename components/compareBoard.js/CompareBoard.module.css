@@ -28,13 +28,22 @@
 .compareTabs {
   justify-content: center;
   width: 100%;
+  border: none !important;
+  /* border-color: transparent !important; */
 }
 
 .compareTabs li button {
   padding-left: 50px;
   padding-right: 50px;
+  border-color: transparent !important;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
+  color: #173465 !important;
+  font-weight: 500;
+}
+
+.compareTabs li button:hover {
+  color: #0d6efd !important;
 }
 
 .titleContainer {
