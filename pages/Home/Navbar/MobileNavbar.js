@@ -18,7 +18,8 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
               style={{
                 fontFamily: "Poppins",
                 fontWeight: "700",
-                color: "#173465",
+                color: "#fff",
+                // color: "#173465",
               }}
             >
               Vitlous
@@ -28,6 +29,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
         <div>
           {state.mobileNavbarOpen ? (
             <FaTimes
+              style={{ color: "#fff" }}
               onClick={() => {
                 dispatch({
                   type: "MOBILE_NAVBAR_OPEN",
@@ -39,6 +41,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
             />
           ) : (
             <FaBars
+              style={{ color: "#fff" }}
               onClick={() => {
                 dispatch({
                   type: "MOBILE_NAVBAR_OPEN",
@@ -111,8 +114,12 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
             ))}
           </Accordion>
           <div className={`${styles.buttonsContainer}`}>
-            <button className={`${styles.primaryButton}`}>Log in</button>
-            <button className={`${styles.primaryButton}`}>Sign up</button>
+            <Link href="/signin">
+              <button className={`${styles.primaryButton}`}>Log in</button>
+            </Link>
+            <Link href="/signup">
+              <button className={`${styles.primaryButton}`}>Sign up</button>
+            </Link>
           </div>
         </div>
       )}

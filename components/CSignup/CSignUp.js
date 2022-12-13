@@ -4,10 +4,8 @@ import { useForm } from "react-hook-form";
 import logoVitlous from "../../public/logoVitlous.png";
 import jwt_decode from "jwt-decode";
 import GoogleSvg from "../../svgComponents/GoogleSvg";
-import styles from "./CSignIn.module.css";
+import styles from "./CSignUp.module.css";
 import {
-  getAuth,
-  signInWithPopup,
   GoogleAuthProvider,
   signInWithCredential,
   signOut,
@@ -18,7 +16,7 @@ import Link from "next/link";
 import useViewport from "../../hooks/useViewport";
 import { useRouter } from "next/router";
 
-const CSignIn = () => {
+const CSignUp = () => {
   const [user, setUser] = React.useState("");
   const divRef = React.useRef(null);
   const router = useRouter();
@@ -110,7 +108,7 @@ const CSignIn = () => {
         <div className={`${styles.formContainer}`}>
           <div className={`${styles.formTextContainer}`}>
             <h3 className={`${styles.formTextContainerTitle}`}>
-              Sign in to Vitlous
+              Sign up to Vitlous
             </h3>
             {/* Google logo with label */}
             {/* <div className={`${styles.formTextContainerSocial}`}>
@@ -130,31 +128,70 @@ const CSignIn = () => {
             </div>
             <div className={`${styles.formTextContainerForm}`}>
               <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="d-flex gap-2">
+                  <div>
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      {...register("name", {
+                        required: true,
+                      })}
+                    />
+                    {errors.name?.type === "required" && (
+                      <p
+                        role="alert"
+                        className="text-danger"
+                        style={{ fontSize: "13px" }}
+                      >
+                        Name is required
+                      </p>
+                    )}
+                  </div>
+                  <div>
+                    <label>Username</label>
+                    <input
+                      type="text"
+                      {...register("username", {
+                        required: true,
+                      })}
+                    />
+                    {errors.username?.type === "required" && (
+                      <p
+                        role="alert"
+                        className="text-danger"
+                        style={{ fontSize: "13px" }}
+                      >
+                        Username is required
+                      </p>
+                    )}
+                  </div>
+                </div>
+
                 <div className="">
                   <label className="">Email</label>
                   <input
                     type="email"
                     {...register("email", {
-                      required: true,
+                      required: "Email is required",
                       pattern: /^[A-Za-z]+$/i,
                     })}
                   />
-                  {errors.email?.type === "required" && (
+                  {errors.email && (
                     <p
                       role="alert"
                       className="text-danger"
                       style={{ fontSize: "13px" }}
                     >
-                      Email is required
+                      {errors.email?.message}
                     </p>
                   )}
                 </div>
                 <div className="">
                   <div className="d-flex justify-content-between">
                     <label>Password</label>
-                    <label className={`${styles.formForgetPasswordLabel}`}>
+                    {/* <label className={`${styles.formForgetPasswordLabel}`}>
                       Forgot password?
-                    </label>
+                    </label> */}
                   </div>
                   <input
                     type="password"
@@ -174,7 +211,8 @@ const CSignIn = () => {
                     </p>
                   )}
                 </div>
-                <button type="submit">Sign in</button>
+                <div></div>
+                <button type="submit">Sign up</button>
                 <div
                   className={`${styles.formToggle}`}
                   style={{
@@ -184,10 +222,10 @@ const CSignIn = () => {
                 >
                   <p>
                     <small>
-                      {`Don't have an account?`}{" "}
-                      <Link href="/signup">
-                        <span className={`${styles.toggleLink}`}>
-                          Sign up now
+                      Already have an account?
+                      <Link href="/signin">
+                        <span className={`${styles.toggleLink} ps-1`}>
+                          Sign in
                         </span>
                       </Link>
                     </small>
@@ -202,4 +240,4 @@ const CSignIn = () => {
   );
 };
 
-export default CSignIn;
+export default CSignUp;

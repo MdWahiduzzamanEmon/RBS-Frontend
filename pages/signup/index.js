@@ -1,7 +1,12 @@
 import React from "react";
+import CSignUp from "../../components/CSignUp/CSignUp";
 
 const SignUp = () => {
-  return <div></div>;
+  return (
+    <section>
+      <CSignUp />
+    </section>
+  );
 };
 
 export default SignUp;

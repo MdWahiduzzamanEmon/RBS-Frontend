@@ -6,7 +6,7 @@
   padding-left: 16px;
   padding-right: 16px;
   height: 70px;
-  background: #fff;
+  background: linear-gradient(to right, #140c1f, #140c1f);
 }
 
 .navbarBrandTextSecondary {

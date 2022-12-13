@@ -14,6 +14,9 @@ import navbarReducer, {
 } from "../../../reducers/navbarReducer/navbarReducer";
 import MobileNavbar from "./MobileNavbar";
 import navStyles from "./Navbar.module.css";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
+import Image from "next/image";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -331,6 +334,18 @@ const NavBar = () => {
 
   const { width } = useViewport();
   const breakpoint = 992;
+  const user = auth?.currentUser;
+
+  // for signing out user
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {})
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
+  const profileImage = auth?.currentUser?.photoURL;
 
   return (
     <>
@@ -448,16 +463,42 @@ const NavBar = () => {
                   ))}
                 </div>
                 <div className="">
-                  <Link href="/signin">
-                    <button className={`${navStyles.primaryButton}`}>
-                      Sign in
-                    </button>
-                  </Link>
-                  <Link href="/signup">
-                    <button className={`${navStyles.primaryButton}`}>
-                      Sign up
-                    </button>
-                  </Link>
+                  {user ? (
+                    <div className="d-flex align-items-center">
+                      <p style={{ color: "#fff" }}>
+                        {/* {auth.currentUser.displayName} */}
+                      </p>
+                      {/* <Image
+                      src={profileImage}
+                      alt="user image"
+                      width={40}
+                      height={40}
+                      objectFit="cover"
+                      // layout="responsive"
+                      style={{ borderRadius: "50%" }}
+                    ></Image> */}
+                      <button
+                        className={`${navStyles.primaryButton}`}
+                        onClick={handleSignOut}
+                        style={{ marginLeft: "10px" }}
+                      >
+                        Sign out
+                      </button>
+                    </div>
+                  ) : (
+                    <>
+                      <Link href="/signin">
+                        <button className={`${navStyles.primaryButton}`}>
+                          Sign in
+                        </button>
+                      </Link>
+                      <Link href="/signup">
+                        <button className={`${navStyles.primaryButton}`}>
+                          Sign up
+                        </button>
+                      </Link>
+                    </>
+                  )}
                 </div>
               </div>
               {/* <Product></Product> */}
