@@ -12,7 +12,7 @@ const FeaturesBoard = () => {
         padding: "50px 0",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        //   "linear-gradient(to right, #24c6dc, #514a9d)",
+        backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
       }}
     >
       <div

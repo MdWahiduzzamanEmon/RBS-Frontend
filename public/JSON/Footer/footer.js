@@ -36,6 +36,10 @@ export const footerDemoData = {
           item: "Careers",
         },
         {
+          url: "/developersProfile",
+          item: "Developers",
+        },
+        {
           url: "/",
           item: "Security",
         },

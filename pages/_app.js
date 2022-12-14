@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
     //   });
     // }
     if (!user) {
-      window.google?.accounts?.id.prompt();
+      // window.google?.accounts?.id.prompt();
 
       window.google.accounts.id.cancel();
     }
