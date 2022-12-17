@@ -16,9 +16,7 @@ const Home3rd = ({ home3rdData }) => {
     <div
       style={{
         fontFamily: "Poppins",
-        display: home3rdData?.isShow ? "block" : "none",
-        background: "rgb(226, 246, 254)",
-        // background: "linear-gradient(to right, #24c6dc, #514a9d)",
+        background: "#E7F8FD",
         padding: "50px 0",
       }}
     >

@@ -25,13 +25,26 @@ const Banner = ({ bannerImagesData }) => {
     },
   ];
 
+  function createMarkup(c) {
+    // let formattedText = c.replace({ divStyle }, { divStyle });
+    return { __html: c };
+  }
+
+  const divStyle = {
+    color: "blue",
+    // backgroundImage: 'url(' + imgUrl + ')',
+  };
+
   return (
     <section
-    // style={{
-    //   backgroundImage:
-    //     "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-    // }}
-    // className="container"
+      style={{
+        backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+      }}
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+      // }}
+      // className="container"
     >
       {/* <NavBar></NavBar> */}
       {/* marquee text */}
@@ -80,7 +93,7 @@ const Banner = ({ bannerImagesData }) => {
           }}
           className="container"
         >
-          <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
+          {/* <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
             <p
               style={{
                 marginTop: "5px",
@@ -96,7 +109,7 @@ const Banner = ({ bannerImagesData }) => {
                 </>
               ))}
             </p>
-          </div>
+          </div> */}
         </div>
         {/* <div className="d-flex align-items-center"> */}
         <div className={`${bannerStyles.bannerContent} container `}>
@@ -105,17 +118,18 @@ const Banner = ({ bannerImagesData }) => {
               {bannerData?.items?.map((item, index) => (
                 <div key={item?.id}>
                   <h1
-                    className={`${bannerStyles.secondaryHeading} fw-bold`}
+                    className={`${bannerStyles.secondaryHeading}`}
                     style={{
                       // fontSize: "44px",
-                      fontFamily: "Work Sans",
+                      // fontFamily: "Work Sans",
                       textAlign: "center",
-                      fontWeight: 200,
+                      // fontWeight: 200,
                     }}
                     data-aos="fade-down"
+                    dangerouslySetInnerHTML={createMarkup(item?.title)}
                   >
-                    {item.title1} <font color="#0f0"> {item.blueText1}</font>{" "}
-                    {item.title2}
+                    {/* {item.title1} <font color="#0f0"> {item.blueText1}</font>{" "}
+                    {item.title2} */}
                     {/* {item?.title} */}
                   </h1>
                   <h1
@@ -123,14 +137,15 @@ const Banner = ({ bannerImagesData }) => {
                     style={{
                       // fontSize: "70px",
                       //  color: "#000000",
-                      fontFamily: "Work Sans",
+                      // fontFamily: "Work Sans",
                       textAlign: "center",
                     }}
                     className={`${bannerStyles.primaryHeading} mb-5 `}
+                    dangerouslySetInnerHTML={createMarkup(item?.title2)}
                     data-aos="fade-down"
                   >
-                    {item.title3} <font color="#0f0"> {item.blueText2}</font>{" "}
-                    {item.title4}
+                    {/* {item.title3} <font color="#0f0"> {item.blueText2}</font>{" "}
+                    {item.title4} */}
                     {/* {item?.title} */}
                   </h1>
                   {/* <div className="d-flex justify-content-center"> */}
@@ -151,7 +166,11 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <ApprovalIcon fill="#0f0" hight="20px" width="20px" />
+                          <ApprovalIcon
+                            fill="#0f0"
+                            height="20px"
+                            width="20px"
+                          />
                         </i>
                         {item?.primaryDescription}
                       </div>
@@ -164,7 +183,7 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <SettingIcon fill="#f0f" hight="20px" width="20px" />
+                          <SettingIcon fill="#f0f" height="20px" width="20px" />
                         </i>
                         {item?.secondaryDescription}
                       </div>
@@ -177,7 +196,7 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <BossIcon fill="#0ff" hight="20px" width="20px" />
+                          <BossIcon fill="#0ff" height="20px" width="20px" />
                         </i>
                         {item?.tertiaryDescription}
                       </div>

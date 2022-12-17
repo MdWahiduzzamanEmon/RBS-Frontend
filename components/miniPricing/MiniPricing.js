@@ -10,7 +10,7 @@ const MiniPricing = ({ miniPricingData }) => {
       return `${styles.rateContainerItemPurple}`;
     } else if (itemName === "Standard") {
       return ` ${styles.rateContainerItemBlue}`;
-    } else if (itemName === "Pro") {
+    } else if (itemName === "Premium") {
       return ` ${styles.rateContainerItemGreen}`;
     } else if (itemName === "Enterprise") {
       return ` ${styles.rateContainerItemBlack}`;
@@ -32,19 +32,37 @@ const MiniPricing = ({ miniPricingData }) => {
         <div className={`${styles.planContainer}`} data-aos="fade-up-right">
           {miniPricingData?.packages?.map((plan) => (
             <div key={plan.id} className={`${styles.singlePlan}`}>
-              <h4>{plan.title}</h4>
-              <p style={{ fontSize: "15px" }}>{plan.details}</p>
-              <div className={`${styles.rateContainerMiniPricing}`}>
-                <p className={changePriceColor(plan.title)}>
-                  <small>{plan.price}</small>
-                </p>
-                <div className={`${styles.rateContainerRight}`}>
-                  <p className="mb-0">
-                    <small>seat/</small>
-                  </p>
-                  <p className="">
-                    <small>month</small>
-                  </p>
+              <div style={{ height: "150px" }}>
+                <h4>{plan.title}</h4>
+                <p style={{ fontSize: "15px" }}>{plan.details}</p>
+                <div className={`${styles.rateContainerMiniPricing}`}>
+                  {plan.title !== "Enterprise" && (
+                    <p className={changePriceColor(plan.title)}>
+                      <small>{plan.price}</small>
+                    </p>
+                  )}
+                  <div className={`${styles.rateContainerRight}`}>
+                    {plan.title === "Enterprise" && (
+                      <button className={`${styles.primaryButton}`}>
+                        Contact us
+                      </button>
+                    )}
+                    {plan.title === "Basic" && (
+                      <p className="mb-0">
+                        <small>person/</small>
+                      </p>
+                    )}
+                    {plan.title !== "Basic" && plan.title !== "Enterprise" && (
+                      <p className="mb-0">
+                        <small>company/</small>
+                      </p>
+                    )}
+                    {plan.title !== "Enterprise" && (
+                      <p className="">
+                        <small>month</small>
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
               <div>

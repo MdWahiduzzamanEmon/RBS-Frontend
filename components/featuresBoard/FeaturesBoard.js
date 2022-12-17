@@ -8,10 +8,12 @@ const FeaturesBoard = () => {
   return (
     <section
       style={{
-        fontFamily: "Poppins",
+        // fontFamily: "Poppins",
+        fontFamily: "open sans",
         padding: "50px 0",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // backgroundImage: "linear-gradient(45deg, #0192bc 0%, #44f3c9 100%)",
         backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
       }}
     >
@@ -23,18 +25,18 @@ const FeaturesBoard = () => {
       >
         {featuresData?.titleData?.titleItems?.map((data) => (
           <div key={data.id} data-aos="zoom-out-right">
-            <h1
-              className="fw-bold mb-3 text-center "
+            <h2
+              className=" mb-3 text-center "
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
                 fontSize: "50px",
-                fontFamily: "Work Sans",
+                fontFamily: "Fjalla One",
                 color: "#fff",
                 // color: "#140C1F",
               }}
             >
               {data.title}{" "}
-            </h1>
+            </h2>
             <p
               className="text-center fs-6 mb-5 text-white  "
               style={{

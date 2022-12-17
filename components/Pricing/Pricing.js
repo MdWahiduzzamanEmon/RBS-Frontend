@@ -66,7 +66,7 @@ const Pricing = ({ pricingData }) => {
                   <h5 className={`${styles.heading}`}>{item.title}</h5>
                   <div className={`${styles.rateContainer}`}>
                     <div className={`${styles.rateContainerTop}`}>
-                      {item.title !== "Enterprise" && (
+                      {item.title == "Basic" && (
                         <>
                           <p className={changePriceColor(item.title)}>
                             ${item.price}
@@ -74,11 +74,39 @@ const Pricing = ({ pricingData }) => {
                           <div
                             className={`${styles.rateContainerTopItemRight}`}
                           >
-                            <p className="mb-0">seat/</p>
+                            <p className="mb-0">user/</p>
                             <p>month</p>
                           </div>
                         </>
                       )}
+
+                      {item.title !== "Enterprise" &&
+                        item.title !== "Basic" && (
+                          <>
+                            <p className={changePriceColor(item.title)}>
+                              ${item.price}
+                            </p>
+                            <div
+                              className={`${styles.rateContainerTopItemRight}`}
+                            >
+                              <p className="mb-0">company/</p>
+                              <p>month</p>
+                            </div>
+                          </>
+                        )}
+                      {/* {item.title !== "Enterprise" && (
+                        <>
+                          <p className={changePriceColor(item.title)}>
+                            ${item.price}
+                          </p>
+                          <div
+                            className={`${styles.rateContainerTopItemRight}`}
+                          >
+                            <p className="mb-0">company/</p>
+                            <p>month</p>
+                          </div>
+                        </>
+                      )} */}
                     </div>
                     <div className={`${styles.rateContainerBottom}`}>
                       {item.title === "Enterprise" ? (
@@ -86,20 +114,20 @@ const Pricing = ({ pricingData }) => {
                           src={item?.icon}
                           alt="enterprise image"
                           width={80}
-                          height={150}
+                          height={130}
                           objectFit="contain"
                           // layout="responsive"
                           style={{
-                            width: "50px",
-                            height: "50px",
+                            width: "30px",
+                            height: "30px",
                             margin: "0 auto",
                           }}
                         ></Image>
                       ) : (
                         <>
-                          <p className={`${styles.rateContainerBottomItemTop}`}>
+                          {/* <p className={`${styles.rateContainerBottomItemTop}`}>
                             Total ${item.monthlyPrice} / month
-                          </p>
+                          </p> */}
                           <p
                             className={`${styles.rateContainerBottomItemBottom}`}
                           >

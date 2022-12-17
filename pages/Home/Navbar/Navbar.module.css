@@ -1,6 +1,8 @@
 .navbarContainer {
-  background: linear-gradient(90deg, #140C1F 0%, #140C1F 100%);
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #140c1f 0%, #140c1f 100%);
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   padding: 15px;

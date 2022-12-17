@@ -36,7 +36,7 @@ export const pricingDemoData = {
     {
       id: 2,
       title: "Basic",
-      price: "30",
+      price: "5",
       monthlyPrice: "24",
       billingDuration: "Billed annually",
       shortIntro: "Manage all your teams’ work in one place",
