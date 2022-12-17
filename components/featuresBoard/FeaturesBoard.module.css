@@ -13,8 +13,25 @@
   justify-content: flex-end;
   padding: 0 40px;
 }
+
 .featureBoardButton {
-  /* background: linear-gradient(120deg, #085078, #85d8ce); */
+  width: 180px;
+  background: rgba(23, 52, 101, 0.6);
+  /* background: transparent; */
+  border: 2px solid aqua;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.featureBoardButton:hover {
+  color: aqua;
+}
+/* .featureBoardButton {
   background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   width: 150px;
   font-size: 15px;
@@ -38,7 +55,6 @@
   right: 1px;
   bottom: 1px;
   background: #fff;
-  /* width: 150px; */
   padding: 10px 20px;
   border-radius: 25px;
   z-index: -1;
@@ -58,7 +74,7 @@
   bottom: 2px;
   background: transparent;
   padding: 10px 20px;
-}
+} */
 
 /* ----------------------------------------------------------------
 	Flip Cards

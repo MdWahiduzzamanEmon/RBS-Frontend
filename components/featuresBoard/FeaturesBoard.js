@@ -10,11 +10,12 @@ const FeaturesBoard = () => {
       style={{
         // fontFamily: "Poppins",
         fontFamily: "open sans",
-        padding: "50px 0",
+        padding: "180px 0 80px",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         // backgroundImage: "linear-gradient(45deg, #0192bc 0%, #44f3c9 100%)",
-        backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+        // backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+        background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
       }}
     >
       <div
@@ -86,8 +87,8 @@ const FeaturesBoard = () => {
               
                 "
                   style={{
-                    color: "#140C1F",
-                    // color: '#fff'
+                    // color: "#140C1F",
+                    color: "#fff",
                   }}
                 >
                   {card.title}

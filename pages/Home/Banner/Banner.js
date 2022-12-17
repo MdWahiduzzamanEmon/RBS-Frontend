@@ -3,6 +3,7 @@
 import Aos from "aos";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import SmallBanner from "../../../components/SmallBanner/SmallBanner";
 import { banner } from "../../../public/JSON/banner";
 import bannerStyles from "../../../styles/Banner.module.css";
 import ApprovalIcon from "../../../svgComponents/ApprovalIcon";
@@ -83,7 +84,7 @@ const Banner = ({ bannerImagesData }) => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "35% 18%",
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
+          // clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
         {/* marquee text */}
@@ -245,6 +246,7 @@ const Banner = ({ bannerImagesData }) => {
             </div>
           </div>
         </div>
+        <SmallBanner />
       </div>
       {/* </div> */}
     </section>
