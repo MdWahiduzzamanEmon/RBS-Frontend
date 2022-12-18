@@ -6,7 +6,6 @@ import footerCommonStyles from "./Footer.module.css";
 
 const FooterCommon = ({ footerDetails }) => {
   const router = useRouter();
-  console.log(footerDetails);
   return (
     <>
       <div className={`${footerCommonStyles.footerCommon} px-3 pt-5`}>

@@ -1,5 +1,5 @@
 .mobileNavbarContainer {
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +53,7 @@
 }
 
 .primaryButton {
+  font-family: "open sans", sans-serif;
   width: 90px;
   color: #fff;
   font-size: 12px;
@@ -61,5 +62,4 @@
   margin-right: 15px;
   background-color: #5a5ad5;
   border: none;
-  font-family: "Poppins", sans-serif;
 }

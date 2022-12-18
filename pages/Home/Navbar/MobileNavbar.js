@@ -9,16 +9,23 @@ import styles from "./MobileNavbar.module.css";
 
 const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
   return (
-    <div style={{ position: "fixed", width: "100vw", zIndex: "20000" }}>
+    <div
+      style={{
+        position: "fixed",
+        width: "100vw",
+        zIndex: "20000",
+        fontFamily: "open sans",
+      }}
+    >
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
           <Link href="/">
             {/* {" "} */}
             <h1
               style={{
-                fontFamily: "Poppins",
                 fontWeight: "700",
                 color: "#fff",
+                fontFamily: "open sans",
                 // color: "#173465",
               }}
             >
@@ -58,7 +65,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
         <div>
           <Accordion
             defaultActiveKey="0"
-            style={{ zIndex: "2000" }}
+            style={{ zIndex: "2000", fontFamily: "open sans" }}
             className={`${styles.accordionParent}`}
           >
             {navLinks.map((navLink) => (
@@ -73,7 +80,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                       onClick={(e) => {
                         openNavElements(e);
                       }}
-                      // style={{ padding: "0px" }}
+                      style={{ fontFamily: "open sans" }}
                     >
                       {navLink.text}
                     </Accordion.Header>
@@ -83,7 +90,7 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
                     onClick={(e) => {
                       openNavElements(e);
                     }}
-                    // style={{ padding: "0px" }}
+                    style={{ fontFamily: "open sans" }}
                   >
                     {navLink.text}
                   </Accordion.Header>

@@ -61,8 +61,8 @@
 .smallBannerSubText5 {
   /* font-family: "Kristi", cursive; */
   font-family: "Fjalla One", sans-serif;
-  /* color: #0f0; */
-  color: red;
+  color: #0f0;
+  /* color: red; */
   font-size: 18px;
   padding-left: 5px;
   padding-right: 5px;

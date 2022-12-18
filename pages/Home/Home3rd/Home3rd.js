@@ -15,7 +15,7 @@ const Home3rd = ({ home3rdData }) => {
   return (
     <div
       style={{
-        fontFamily: "Poppins",
+        fontFamily: "open sans",
         background: "#E7F8FD",
         padding: "50px 0",
       }}

@@ -31,7 +31,7 @@ const FeaturesBoard = () => {
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
                 fontSize: "50px",
-                fontFamily: "Fjalla One",
+                // fontFamily: "Fjalla One",
                 color: "#fff",
                 // color: "#140C1F",
               }}
@@ -89,6 +89,7 @@ const FeaturesBoard = () => {
                   style={{
                     // color: "#140C1F",
                     color: "#fff",
+                    fontFamily: "open sans",
                   }}
                 >
                   {card.title}

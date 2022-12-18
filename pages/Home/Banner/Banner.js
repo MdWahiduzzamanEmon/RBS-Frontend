@@ -9,6 +9,8 @@ import bannerStyles from "../../../styles/Banner.module.css";
 import ApprovalIcon from "../../../svgComponents/ApprovalIcon";
 import BossIcon from "../../../svgComponents/BossIcon";
 import SettingIcon from "../../../svgComponents/SettingIcon";
+import bgVideo from "../../../public/video/corporateVideo.gif";
+
 const Banner = ({ bannerImagesData }) => {
   const bannerData = banner;
   React.useEffect(() => {
@@ -78,7 +80,7 @@ const Banner = ({ bannerImagesData }) => {
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
-          backgroundImage: "linear-gradient(to right, #140C1F, #140C1F)",
+          // backgroundImage: "linear-gradient(to right, #140C1F, #140C1F)",
 
           // `url(${bannerImage.src})`,
           backgroundRepeat: "no-repeat",
@@ -87,6 +89,18 @@ const Banner = ({ bannerImagesData }) => {
           // clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
+        <div className={`${bannerStyles.overlay}`}></div>
+        <div style={{ width: "100%", height: "100%", paddingTop: "70px" }}>
+          <video
+            src="/video/backgroundAdVideo3.mp4"
+            autoPlay
+            loop
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            // controls
+
+            muted
+          ></video>
+        </div>
         {/* marquee text */}
         <div
           style={{
@@ -154,7 +168,7 @@ const Banner = ({ bannerImagesData }) => {
                     style={{
                       fontSize: "16px",
                       fontFamily: "Poppins",
-                      textTransform: "lowercase",
+                      // textTransform: "lowercase",
                       // gap: "5px",
                     }}
                     className={`${bannerStyles.row} g-4`}
