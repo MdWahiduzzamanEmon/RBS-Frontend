@@ -15,8 +15,8 @@ const Home5th = ({ home5thData }) => {
       style={{
         fontFamily: "open sans",
         display: home5thData?.isShow ? "block" : "none",
-        backgroundImage:
-          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        // backgroundImage:
+        //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
         padding: "50px 0",
       }}
       className=""

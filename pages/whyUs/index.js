@@ -15,7 +15,12 @@ export const getStaticProps = async () => {
 
 const WhyUs = ({ whyUsData }) => {
   return (
-    <section>
+    <section
+      style={{
+        backgroundImage:
+          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+      }}
+    >
       <WhyUsBanner whyUsData={whyUsData?.banner} />
       <BookingDemo bookingDemoData={whyUsData?.bookingDemo} />
       {/* testimonial - customer reviews */}

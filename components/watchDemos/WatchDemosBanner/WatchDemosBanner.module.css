@@ -1,6 +1,6 @@
 .banner {
   background: #173465;
-  background: linear-gradient(to right, #140c1f, #140c1f);
+  /* background: linear-gradient(to right, #140c1f, #140c1f); */
   font-family: "open sans", sans-serif;
   height: 100%;
   /* height: 100vh; */

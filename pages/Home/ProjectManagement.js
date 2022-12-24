@@ -9,8 +9,9 @@ const ProjectManagement = ({ projectManagementData }) => {
     <div
       className=""
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // backgroundImage:
+        //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
         padding: "50px 0",
         // fontFamily: "Poppins",
         fontFamily: "open sans",

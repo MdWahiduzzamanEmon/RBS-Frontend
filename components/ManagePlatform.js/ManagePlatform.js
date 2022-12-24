@@ -70,13 +70,8 @@ const ManagePlatform = ({ managePlatformData }) => {
       </style> */}
       <section
         style={{
-          background: "rgb(226, 246, 254)",
-          // background: "linear-gradient(to right, #24c6dc, #514a9d)",
-
-          // backgroundImage:
-          //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-          // "linear-gradient(to right, #24c6dc, #514a9d)",
-          // padding: "50px 35px ",
+          // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
+          // background: "rgb(226, 246, 254)",
           fontFamily: "open sans",
           // marginBottom: "200px",
         }}
@@ -86,7 +81,12 @@ const ManagePlatform = ({ managePlatformData }) => {
           <div data-aos="zoom-in-down">
             {managePlatformData?.titleData?.map((data, index) => (
               <div key={data?.id}>
-                <h1 className="fs-2 text-center fw-bold my-3">{data?.title}</h1>
+                <h1
+                  className="fs-2 text-center fw-bold my-3"
+                  // style={{ color: "#fff" }}
+                >
+                  {data?.title}
+                </h1>
                 <p className="text-center mb-5 " style={{ fontSize: "20px" }}>
                   {data?.description}
                 </p>
@@ -96,7 +96,7 @@ const ManagePlatform = ({ managePlatformData }) => {
               defaultActiveKey="engineering-team"
               id="fill-tab-example"
               fill
-              style={{ color: "#2a75d1" }}
+              // style={{ color: "#2a75d1" }}
               className={`${styles.managePlatformTabs}`}
               // style={{}}
               // data-aos="zoom-out-down"
