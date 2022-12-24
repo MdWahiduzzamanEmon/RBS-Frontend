@@ -40,7 +40,7 @@ const HomePage = ({
   return (
     <div>
       <div>
-        <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
+        {/* <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} /> */}
         <FeaturesBoard featuresData={featuresData} />
         {/* //**************Features section****************/}
         {/* <Home2nd home2ndData={home2ndData} /> */}

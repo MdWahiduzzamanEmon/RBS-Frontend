@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
 
   React.useEffect(() => {
     // if (divRef.current) {
-    window.google?.accounts?.id.initialize({
+    window.google?.accounts?.id?.initialize({
       client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
       // callback: (res, error) => {
       //   // This is the function that will be executed once the authentication with google is finished
@@ -61,8 +61,7 @@ function MyApp({ Component, pageProps }) {
     // }
     if (!user) {
       // window.google?.accounts?.id.prompt();
-
-      window.google.accounts.id.cancel();
+      // window.google.accounts.id.cancel();
     }
   }, [user]);
   return (

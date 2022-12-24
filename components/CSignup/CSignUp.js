@@ -52,14 +52,14 @@ const CSignUp = () => {
 
   React.useEffect(() => {
     if (divRef.current) {
-      window.google?.accounts?.id.initialize({
+      window?.google?.accounts?.id.initialize({
         client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
         // callback: (res, error) => {
         //   // This is the function that will be executed once the authentication with google is finished
         // },
         callback: handleCredentialResponse,
       });
-      window.google?.accounts?.id.renderButton(divRef.current, {
+      window?.google?.accounts?.id.renderButton(divRef.current, {
         type: "standard",
         size: "large",
         theme: "filled_blue",

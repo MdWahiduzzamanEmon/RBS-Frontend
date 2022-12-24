@@ -92,7 +92,7 @@ const Banner = ({ bannerImagesData }) => {
         <div className={`${bannerStyles.overlay}`}></div>
         <div style={{ width: "100%", height: "100%", paddingTop: "70px" }}>
           <video
-            src="/video/backgroundAdVideo3.mp4"
+            src="/video/backgroundAdVideo4.mp4"
             autoPlay
             loop
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -260,7 +260,7 @@ const Banner = ({ bannerImagesData }) => {
             </div>
           </div>
         </div>
-        <SmallBanner />
+        {/* <SmallBanner /> */}
       </div>
       {/* </div> */}
     </section>
