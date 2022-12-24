@@ -5,6 +5,14 @@ import oneSoftwareImage from "../../public/oneSoftwareImage.png";
 import Link from "next/link";
 
 const OneSoftware = () => {
+  const [email, setEmail] = React.useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.target.value = "";
+    setEmail("");
+    console.log(email);
+  };
   return (
     <div className={`${styles.container}`}>
       <div className={`${styles.imageContainer}`}>
@@ -17,6 +25,7 @@ const OneSoftware = () => {
         ></Image>
       </div>
       <div className={`${styles.overlay}`}></div>
+      {/* <div className={`${styles.textButtonContainer}`}> */}
       <div className={`${styles.textContainer}`}>
         <h3 className={`${styles.title}`}>
           Replace Your Expensive Project Management Software:
@@ -24,7 +33,7 @@ const OneSoftware = () => {
         <p className={`${styles.highlightedTitle}`}>
           One
           <span className={`${styles.highlightedTitleColored1}`}>Software</span>
-          , one
+          ,<br /> one
           <span className={`${styles.highlightedTitleColored2}`}>Company</span>,
           <span className={`${styles.highlightedTitleColored3}`}>
             Unlimited
@@ -33,21 +42,28 @@ const OneSoftware = () => {
           <span className={`${styles.highlightedTitleColored4}`}>
             Unlimited
           </span>
-          features and
+          features <br /> and
           <span className={`${styles.highlightedTitleColored5}`}>
             Unlimited
           </span>
           opportunities.
         </p>
-        <div>
-          <Link href="/pricing">
-            <button className={`${styles.smallBannerButton}`}>
-              Get Started
-            </button>
-          </Link>
-        </div>
+        <form className={`${styles.submitContainer}`} onSubmit={handleSubmit}>
+          <input
+            className={`${styles.emailField}`}
+            value={email}
+            placeholder="Enter your email"
+            onChange={(e) => setEmail(e.target.value)}
+          ></input>
+          {/* <Link href="/pricing"> */}
+          <button className={`${styles.smallBannerButton}`} type="submit">
+            Submit Now
+          </button>
+          {/* </Link> */}
+        </form>
       </div>
     </div>
+    // </div>
   );
 };
 

@@ -30,7 +30,7 @@ const FeaturesBoard = () => {
               className=" mb-3 text-center "
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
-                fontSize: "50px",
+                fontSize: "35px",
                 // fontFamily: "Fjalla One",
                 color: "#fff",
                 // color: "#140C1F",
@@ -53,7 +53,7 @@ const FeaturesBoard = () => {
       </div>
       <div className="container ">
         <div
-          className="row container justify-content-center text-center"
+          className="row justify-content-center text-center"
           // data-layout="masonry"
           // style="overflow: visible"
         >
@@ -78,8 +78,8 @@ const FeaturesBoard = () => {
                 <Image
                   src={card.img}
                   alt="Picture of the author"
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                   style={{ borderRadius: "50%" }}
                 />
                 <h3

@@ -22,7 +22,7 @@ export const home2ndJson = {
         id: 1,
         isShow: true,
         title: "Agile Methodology",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/agile.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -38,7 +38,7 @@ export const home2ndJson = {
         id: 3,
         isShow: true,
         title: "Collaboration",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/collaboration.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -46,7 +46,7 @@ export const home2ndJson = {
         id: 4,
         isShow: true,
         title: "Resource Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/ResourceManagementSystem.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -54,7 +54,7 @@ export const home2ndJson = {
         id: 5,
         isShow: true,
         title: "Time Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/TimeTrackingManagementSystem.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -62,7 +62,7 @@ export const home2ndJson = {
         id: 6,
         isShow: true,
         title: "Plan View",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/planning.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -70,7 +70,7 @@ export const home2ndJson = {
         id: 7,
         isShow: true,
         title: "Document Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/DocumentManagement.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -78,7 +78,7 @@ export const home2ndJson = {
         id: 8,
         isShow: true,
         title: "Issue Tracking",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/IssueTrackingManagementSystem.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -86,7 +86,7 @@ export const home2ndJson = {
         id: 9,
         isShow: true,
         title: "Budget Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/ProjectBudgetManagementSystem.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -94,7 +94,7 @@ export const home2ndJson = {
         id: 10,
         isShow: true,
         title: "Financial Management",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/IncomeManagementSystem.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -102,7 +102,7 @@ export const home2ndJson = {
         id: 11,
         isShow: true,
         title: "Chat Communication",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/chat.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
@@ -111,7 +111,7 @@ export const home2ndJson = {
         isShow: true,
         title: "informative Dashboard",
         // title: "Very informative Dashboard",
-        img: require("../image/workflowImages/info.png"),
+        img: require("../image/workflowImages/dashboard.png"),
         description:
           "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).",
       },
