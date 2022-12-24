@@ -10,7 +10,7 @@ const FeaturesBoard = () => {
       style={{
         // fontFamily: "Poppins",
         fontFamily: "open sans",
-        padding: "180px 0 80px",
+        padding: "80px 0 60px",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         // backgroundImage: "linear-gradient(45deg, #0192bc 0%, #44f3c9 100%)",

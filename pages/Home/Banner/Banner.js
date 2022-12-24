@@ -155,7 +155,7 @@ const Banner = ({ bannerImagesData }) => {
                       // fontFamily: "Work Sans",
                       textAlign: "center",
                     }}
-                    className={`${bannerStyles.primaryHeading} mb-5 `}
+                    className={`${bannerStyles.primaryHeading}`}
                     dangerouslySetInnerHTML={createMarkup(item?.title2)}
                     data-aos="fade-down"
                   >
