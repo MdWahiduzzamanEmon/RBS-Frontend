@@ -5,9 +5,17 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
 import Product from "../../../components/product/Product";
 import Resources from "../../../components/resources/Resources";
+import CButton from "../../../components/utility/buttons/CButton";
 import styles from "./MobileNavbar.module.css";
 
-const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
+const MobileNavbar = ({
+  navLinks,
+  state,
+  dispatch,
+  openNavElements,
+  user,
+  handleSignOut,
+}) => {
   return (
     <div
       style={{
@@ -121,12 +129,56 @@ const MobileNavbar = ({ navLinks, state, dispatch, openNavElements }) => {
             ))}
           </Accordion>
           <div className={`${styles.buttonsContainer}`}>
-            <Link href="/signin">
-              <button className={`${styles.primaryButton}`}>Log in</button>
+            {user ? (
+              <div className="d-flex align-items-center">
+                <p style={{ color: "#fff" }}>
+                  {/* {auth.currentUser.displayName} */}
+                </p>
+
+                <CButton
+                  // className={`${navStyles.primaryButton}`}
+                  onClick={handleSignOut}
+                  style={{ marginTop: "0px" }}
+                >
+                  Sign out
+                </CButton>
+              </div>
+            ) : (
+              <div className="">
+                <Link href="/signin">
+                  <CButton
+                    style={{ marginTop: "0px", marginRight: "10px" }}
+                    // className={`${navStyles.primaryButton}`}
+                  >
+                    Sign in
+                  </CButton>
+                </Link>
+                <Link href="/signup">
+                  <CButton
+                    style={{ marginTop: "0px" }}
+                    // className={`${navStyles.primaryButton}`}
+                  >
+                    Sign up
+                  </CButton>
+                </Link>
+              </div>
+            )}
+            {/* <Link href="/signin">
+              <CButton
+                style={{ marginTop: "0px" }}
+                // className={`${styles.primaryButton}`}
+              >
+                Log in
+              </CButton>
             </Link>
             <Link href="/signup">
-              <button className={`${styles.primaryButton}`}>Sign up</button>
-            </Link>
+              <CButton
+                style={{ marginTop: "0px" }}
+                // className={`${styles.primaryButton}`}
+              >
+                Sign up
+              </CButton>
+            </Link> */}
           </div>
         </div>
       )}

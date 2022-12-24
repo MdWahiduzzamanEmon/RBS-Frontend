@@ -11,6 +11,7 @@ import { FaExclamationCircle } from "react-icons/fa";
 import styles from "./PricingForSD.module.css";
 import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Image from "next/image";
+import CButton from "../../utility/buttons/CButton";
 
 const PricingForSD = ({ pricingData }) => {
   const changePriceColor = (itemName) => {
@@ -128,13 +129,12 @@ const PricingForSD = ({ pricingData }) => {
               </div>
               <div>
                 {item.title === "Enterprise" ? (
-                  <button className={`${styles.primaryButton}`}>
-                    Contact us
-                  </button>
+                  // <button className={`${styles.primaryButton}`}>
+                  //   Contact us
+                  // </button>
+                  <CButton>Contact us</CButton>
                 ) : (
-                  <button className={`${styles.primaryButton}`}>
-                    Try for free
-                  </button>
+                  <CButton>Try for free</CButton>
                 )}
                 <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
               </div>

@@ -3,6 +3,7 @@ import { Tab, Tabs } from "react-bootstrap";
 import styles from "./CompareBoard.module.css";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { HiXCircle } from "react-icons/hi2";
+import CButton from "../utility/buttons/CButton";
 
 const CompareBoard = () => {
   const [showDetails, setShowDetails] = React.useState(false);
@@ -1817,18 +1818,42 @@ const CompareBoard = () => {
                   // }}
                 >
                   {showDetails && competitor.name === selectedTab ? (
-                    <button
-                      className={`${styles.comparisonCollapseButton}`}
+                    // <button
+                    //   className={`${styles.comparisonCollapseButton}`}
+                    //   onClick={() => {
+                    //     setShowDetails(!showDetails);
+                    //     setSelectedTab(competitor.name);
+                    //   }}
+                    // >
+                    //   Collapse full comparison
+                    // </button>
+                    <CButton
                       onClick={() => {
                         setShowDetails(!showDetails);
                         setSelectedTab(competitor.name);
                       }}
+                      style={{
+                        width: "250px",
+                      }}
                     >
                       Collapse full comparison
-                    </button>
+                    </CButton>
                   ) : (
-                    <button
-                      className={`${styles.comparisonShowButton}`}
+                    //  )}
+                    // <button
+                    //   className={`${styles.comparisonShowButton}`}
+                    //   onClick={() => {
+                    //     setShowDetails(true);
+                    //     setSelectedTab(competitor.name);
+                    //   }}
+                    //   style={{
+                    //     display:
+                    //       competitor?.challenges?.length > 3 ? "block" : "none",
+                    //   }}
+                    // >
+                    //   View full comparison
+                    // </button>
+                    <CButton
                       onClick={() => {
                         setShowDetails(true);
                         setSelectedTab(competitor.name);
@@ -1836,10 +1861,11 @@ const CompareBoard = () => {
                       style={{
                         display:
                           competitor?.challenges?.length > 3 ? "block" : "none",
+                        width: "210px",
                       }}
                     >
                       View full comparison
-                    </button>
+                    </CButton>
                   )}
                 </div>
               </Tab>

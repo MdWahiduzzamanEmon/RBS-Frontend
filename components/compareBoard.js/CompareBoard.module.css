@@ -97,11 +97,13 @@
 }
 
 .buttonsContainer {
-  width: 22%;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.comparisonShowButton {
+/* .comparisonShowButton {
   width: clamp(150px, 22vw, 200px);
   color: #fff;
   font-size: clamp(11px, 1.6vw, 15px);
@@ -113,15 +115,15 @@
 }
 .comparisonShowButton:hover {
   background-color: #6262e4;
-}
+} */
 
-.primaryButtonText {
+/* .primaryButtonText {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.comparisonCollapseButton {
+/* .comparisonCollapseButton {
   width: clamp(220px, 22vw, 290px);
   color: #fff;
   font-size: clamp(11px, 1.6vw, 15px);
@@ -133,7 +135,7 @@
 }
 .comparisonCollapseButton:hover {
   background-color: #6262e4;
-}
+} */
 
 @media screen and (max-width: 990px) {
   .compareHeadingContainer {

@@ -3,6 +3,7 @@ import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import styles from "./MiniPricing.module.css";
 import Aos from "aos";
+import CButton from "../utility/buttons/CButton";
 
 const MiniPricing = ({ miniPricingData }) => {
   const changePriceColor = (itemName) => {
@@ -42,11 +43,11 @@ const MiniPricing = ({ miniPricingData }) => {
                     </p>
                   )}
                   <div className={`${styles.rateContainerRight}`}>
-                    {plan.title === "Enterprise" && (
+                    {/* {plan.title === "Enterprise" && (
                       <button className={`${styles.primaryButton}`}>
                         Contact us
                       </button>
-                    )}
+                    )} */}
                     {plan.title === "Basic" && (
                       <p className="mb-0">
                         <small>person/</small>
@@ -79,11 +80,19 @@ const MiniPricing = ({ miniPricingData }) => {
                 </ul>
               </div>
 
-              <Link href="/pricing">
-                <button className={`${styles.primaryButton} mb-2`}>
-                  Try for free
-                </button>
-              </Link>
+              {plan.title !== "Enterprise" ? (
+                <Link href="/pricing">
+                  <CButton
+                  // className={`${styles.primaryButton} mb-2`}
+                  >
+                    Try for free
+                  </CButton>
+                </Link>
+              ) : (
+                <Link href="/contactUs/contactSales">
+                  <CButton> Contact us</CButton>
+                </Link>
+              )}
               {/* <Link href="/pricing">
                 <p
                   className={`${styles.mPricingLink}`}

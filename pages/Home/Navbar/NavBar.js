@@ -17,6 +17,7 @@ import navStyles from "./Navbar.module.css";
 import auth from "../../../firebase.init";
 import { signOut } from "firebase/auth";
 import Image from "next/image";
+import CButton from "../../../components/utility/buttons/CButton";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -284,7 +285,7 @@ const NavBar = () => {
           innerText: navItemName,
         },
       });
-    } else if (navItemName === "Watch a demo") {
+    } else if (navItemName === "Watch Demo") {
       dispatch({
         type: "OPEN_WATCH_A_DEMO",
         payload: {
@@ -468,36 +469,34 @@ const NavBar = () => {
                       <p style={{ color: "#fff" }}>
                         {/* {auth.currentUser.displayName} */}
                       </p>
-                      {/* <Image
-                      src={profileImage}
-                      alt="user image"
-                      width={40}
-                      height={40}
-                      objectFit="cover"
-                      // layout="responsive"
-                      style={{ borderRadius: "50%" }}
-                    ></Image> */}
-                      <button
-                        className={`${navStyles.primaryButton}`}
+
+                      <CButton
+                        // className={`${navStyles.primaryButton}`}
                         onClick={handleSignOut}
-                        style={{ marginLeft: "10px" }}
+                        style={{ marginTop: "0px" }}
                       >
                         Sign out
-                      </button>
+                      </CButton>
                     </div>
                   ) : (
-                    <>
+                    <div className="d-flex align-items-center justify-content-center">
                       <Link href="/signin">
-                        <button className={`${navStyles.primaryButton}`}>
+                        <CButton
+                          style={{ marginTop: "0px", marginRight: "10px" }}
+                          // className={`${navStyles.primaryButton}`}
+                        >
                           Sign in
-                        </button>
+                        </CButton>
                       </Link>
                       <Link href="/signup">
-                        <button className={`${navStyles.primaryButton}`}>
+                        <CButton
+                          style={{ marginTop: "0px" }}
+                          // className={`${navStyles.primaryButton}`}
+                        >
                           Sign up
-                        </button>
+                        </CButton>
                       </Link>
-                    </>
+                    </div>
                   )}
                 </div>
               </div>
@@ -544,6 +543,8 @@ const NavBar = () => {
           navLinks={navLinks}
           state={state}
           dispatch={dispatch}
+          user={user}
+          handleSignOut={handleSignOut}
           openNavElements={openNavElements}
         />
       )}
