@@ -1,15 +1,6 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* background-color: rgb(249, 236, 248); */
-  background: linear-gradient(
-    90deg,
-    rgb(226, 246, 254) 30%,
-    rgb(249, 236, 248) 100%
-  );
-  /* box-shadow: 3px 3px black, -2px 0 0.4em black; */
-  /* box-shadow: -5px -5px 9px 1px rgba(0, 0, 0, 0.2); */
-  /* background: linear-gradient(to right, #bbd2c5, #536976); */
 }
 
 .imageContainer {
@@ -28,28 +19,11 @@
     rgb(249, 236, 248) 15%,
     rgb(226, 246, 254) 100%
   ); */
-  background: linear-gradient(to right, #24c6dc, #514a9d);
+  background: linear-gradient(55deg, #24c6dc 0%, #140c1f 100%);
+  /* background: linear-gradient(to right, #24c6dc, #514a9d); */
   border-radius: 18px;
   box-shadow: -9px 7px 20px 1px rgba(143, 206, 233, 0.6);
-  /* background: rgb(226, 246, 254); */
-  /* background: linear-gradient(
-    90deg,
-    rgb(226, 246, 254) 30%,
-    rgb(249, 236, 248) 100%
-  ); */
-  /* background: linear-gradient(to right, #bbd2c5, #536976); */
 }
-
-/* .description::first-letter {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000;
-}
-.secondaryDescription::first-letter {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000;
-} */
 
 @media screen and (max-width: 992px) {
   .container {

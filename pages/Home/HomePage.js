@@ -18,6 +18,7 @@ import CompareBoard from "../../components/compareBoard.js/CompareBoard";
 import ProjectManagement from "./ProjectManagement";
 import FinancialManagement from "../../components/FinancialManagement/FinancialManagement";
 import LargeSubscriptionBanner from "../../components/Blog/LargeSubscriptionBanner/LargeSubscriptionBanner";
+import OneSoftware from "../../components/OneSoftware/OneSoftware";
 
 const HomePage = ({
   bannerData,
@@ -41,6 +42,7 @@ const HomePage = ({
     <div>
       <div>
         <Banner bannerData={bannerData} bannerImagesData={bannerImagesData} />
+        <OneSoftware />
         <FeaturesBoard featuresData={featuresData} />
         {/* //**************Features section****************/}
         {/* <Home2nd home2ndData={home2ndData} /> */}

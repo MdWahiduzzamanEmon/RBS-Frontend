@@ -8,11 +8,14 @@ const FeaturesBoard = () => {
   return (
     <section
       style={{
-        fontFamily: "Poppins",
-        padding: "50px 0",
+        // fontFamily: "Poppins",
+        fontFamily: "open sans",
+        padding: "80px 0 60px",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        //   "linear-gradient(to right, #24c6dc, #514a9d)",
+        // backgroundImage: "linear-gradient(45deg, #0192bc 0%, #44f3c9 100%)",
+        // backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+        background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
       }}
     >
       <div
@@ -23,18 +26,18 @@ const FeaturesBoard = () => {
       >
         {featuresData?.titleData?.titleItems?.map((data) => (
           <div key={data.id} data-aos="zoom-out-right">
-            <h1
-              className="fw-bold mb-3 text-center "
+            <h2
+              className=" mb-3 text-center "
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
-                fontSize: "50px",
-                fontFamily: "Work Sans",
+                fontSize: "35px",
+                // fontFamily: "Fjalla One",
                 color: "#fff",
                 // color: "#140C1F",
               }}
             >
               {data.title}{" "}
-            </h1>
+            </h2>
             <p
               className="text-center fs-6 mb-5 text-white  "
               style={{
@@ -50,7 +53,7 @@ const FeaturesBoard = () => {
       </div>
       <div className="container ">
         <div
-          className="row container justify-content-center text-center"
+          className="row justify-content-center text-center"
           // data-layout="masonry"
           // style="overflow: visible"
         >
@@ -75,8 +78,8 @@ const FeaturesBoard = () => {
                 <Image
                   src={card.img}
                   alt="Picture of the author"
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                   style={{ borderRadius: "50%" }}
                 />
                 <h3
@@ -84,8 +87,9 @@ const FeaturesBoard = () => {
               
                 "
                   style={{
-                    color: "#140C1F",
-                    // color: '#fff'
+                    // color: "#140C1F",
+                    color: "#fff",
+                    fontFamily: "open sans",
                   }}
                 >
                   {card.title}

@@ -24,8 +24,8 @@ const Home8th = ({ home8thData }) => {
         width: "100%",
         display: home8thData?.isShow ? "block" : "none",
         padding: "50px 0",
-        backgroundColor: "rgb(226, 246, 254)",
-        fontFamily: "Poppins",
+        // backgroundColor: "rgb(226, 246, 254)",
+        fontFamily: "open sans",
       }}
     >
       <div className=" container-lg">
@@ -117,7 +117,7 @@ const Home8th = ({ home8thData }) => {
             </div>
 
             <div data-aos="zoom-in-right">
-              <h1 className="fs-2 fw-bold">{data.title}</h1>
+              <h1 className="fs-2 fw-bold mt-3">{data.title}</h1>
               <p className="fs-6" style={{ textAlign: "justify" }}>
                 {data.titleDescription}
               </p>

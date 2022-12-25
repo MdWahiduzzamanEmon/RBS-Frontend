@@ -11,10 +11,10 @@ const FinancialManagement = ({ financialManagementData }) => {
     <div
       className=""
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // backgroundImage:
+        //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "50px 0",
-        fontFamily: "Poppins",
+        fontFamily: "open sans",
       }}
     >
       <div className="d-flex flex-column flex-lg-row-reverse align-items-center container-lg">
@@ -59,7 +59,7 @@ const FinancialManagement = ({ financialManagementData }) => {
                 <p
                   className="fs-6"
                   style={{
-                    color: "rgb(75, 101, 126)",
+                    // color: "rgb(75, 101, 126)",
                     textAlign: "justify",
                   }}
                 >

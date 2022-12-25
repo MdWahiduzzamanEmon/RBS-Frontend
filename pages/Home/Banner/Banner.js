@@ -3,11 +3,14 @@
 import Aos from "aos";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import SmallBanner from "../../../components/SmallBanner/SmallBanner";
 import { banner } from "../../../public/JSON/banner";
 import bannerStyles from "../../../styles/Banner.module.css";
 import ApprovalIcon from "../../../svgComponents/ApprovalIcon";
 import BossIcon from "../../../svgComponents/BossIcon";
 import SettingIcon from "../../../svgComponents/SettingIcon";
+import bgVideo from "../../../public/video/corporateVideo.gif";
+
 const Banner = ({ bannerImagesData }) => {
   const bannerData = banner;
   React.useEffect(() => {
@@ -25,13 +28,26 @@ const Banner = ({ bannerImagesData }) => {
     },
   ];
 
+  function createMarkup(c) {
+    // let formattedText = c.replace({ divStyle }, { divStyle });
+    return { __html: c };
+  }
+
+  const divStyle = {
+    color: "blue",
+    // backgroundImage: 'url(' + imgUrl + ')',
+  };
+
   return (
     <section
-    // style={{
-    //   backgroundImage:
-    //     "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-    // }}
-    // className="container"
+      style={{
+        backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+      }}
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+      // }}
+      // className="container"
     >
       {/* <NavBar></NavBar> */}
       {/* marquee text */}
@@ -64,15 +80,27 @@ const Banner = ({ bannerImagesData }) => {
       <div
         className={`${bannerStyles.bannerWidth}  `}
         style={{
-          backgroundImage: "linear-gradient(to right, #140C1F, #140C1F)",
+          // backgroundImage: "linear-gradient(to right, #140C1F, #140C1F)",
 
           // `url(${bannerImage.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "35% 18%",
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
+          // clipPath: "polygon(0 0, 100% 0, 100% 100%, 81% 90%, 0 100%, 0% 50%)",
         }}
       >
+        <div className={`${bannerStyles.overlay}`}></div>
+        <div style={{ width: "100%", height: "100%", paddingTop: "70px" }}>
+          <video
+            src="/video/backgroundAdVideo4.mp4"
+            autoPlay
+            loop
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            // controls
+
+            muted
+          ></video>
+        </div>
         {/* marquee text */}
         <div
           style={{
@@ -80,7 +108,7 @@ const Banner = ({ bannerImagesData }) => {
           }}
           className="container"
         >
-          <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
+          {/* <div className={`${bannerStyles.marqueeText} shadow-lg ps-3`}>
             <p
               style={{
                 marginTop: "5px",
@@ -96,7 +124,7 @@ const Banner = ({ bannerImagesData }) => {
                 </>
               ))}
             </p>
-          </div>
+          </div> */}
         </div>
         {/* <div className="d-flex align-items-center"> */}
         <div className={`${bannerStyles.bannerContent} container `}>
@@ -105,17 +133,18 @@ const Banner = ({ bannerImagesData }) => {
               {bannerData?.items?.map((item, index) => (
                 <div key={item?.id}>
                   <h1
-                    className={`${bannerStyles.secondaryHeading} fw-bold`}
+                    className={`${bannerStyles.secondaryHeading}`}
                     style={{
                       // fontSize: "44px",
-                      fontFamily: "Work Sans",
+                      // fontFamily: "Work Sans",
                       textAlign: "center",
-                      fontWeight: 200,
+                      // fontWeight: 200,
                     }}
                     data-aos="fade-down"
+                    dangerouslySetInnerHTML={createMarkup(item?.title)}
                   >
-                    {item.title1} <font color="#0f0"> {item.blueText1}</font>{" "}
-                    {item.title2}
+                    {/* {item.title1} <font color="#0f0"> {item.blueText1}</font>{" "}
+                    {item.title2} */}
                     {/* {item?.title} */}
                   </h1>
                   <h1
@@ -123,14 +152,15 @@ const Banner = ({ bannerImagesData }) => {
                     style={{
                       // fontSize: "70px",
                       //  color: "#000000",
-                      fontFamily: "Work Sans",
+                      // fontFamily: "Work Sans",
                       textAlign: "center",
                     }}
-                    className={`${bannerStyles.primaryHeading} mb-5 `}
+                    className={`${bannerStyles.primaryHeading}`}
+                    dangerouslySetInnerHTML={createMarkup(item?.title2)}
                     data-aos="fade-down"
                   >
-                    {item.title3} <font color="#0f0"> {item.blueText2}</font>{" "}
-                    {item.title4}
+                    {/* {item.title3} <font color="#0f0"> {item.blueText2}</font>{" "}
+                    {item.title4} */}
                     {/* {item?.title} */}
                   </h1>
                   {/* <div className="d-flex justify-content-center"> */}
@@ -138,7 +168,7 @@ const Banner = ({ bannerImagesData }) => {
                     style={{
                       fontSize: "16px",
                       fontFamily: "Poppins",
-                      textTransform: "lowercase",
+                      // textTransform: "lowercase",
                       // gap: "5px",
                     }}
                     className={`${bannerStyles.row} g-4`}
@@ -151,7 +181,11 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <ApprovalIcon fill="#0f0" hight="20px" width="20px" />
+                          <ApprovalIcon
+                            fill="#0f0"
+                            height="20px"
+                            width="20px"
+                          />
                         </i>
                         {item?.primaryDescription}
                       </div>
@@ -164,7 +198,7 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <SettingIcon fill="#f0f" hight="20px" width="20px" />
+                          <SettingIcon fill="#f0f" height="20px" width="20px" />
                         </i>
                         {item?.secondaryDescription}
                       </div>
@@ -177,7 +211,7 @@ const Banner = ({ bannerImagesData }) => {
                         className={`${bannerStyles.rowColumn}`}
                       >
                         <i>
-                          <BossIcon fill="#0ff" hight="20px" width="20px" />
+                          <BossIcon fill="#0ff" height="20px" width="20px" />
                         </i>
                         {item?.tertiaryDescription}
                       </div>
@@ -226,6 +260,7 @@ const Banner = ({ bannerImagesData }) => {
             </div>
           </div>
         </div>
+        {/* <SmallBanner /> */}
       </div>
       {/* </div> */}
     </section>

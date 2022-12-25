@@ -6,19 +6,19 @@ export const miniPricingDemoData = {
       id: 1,
       title: "Basic",
       details: "The Ultimate Package",
-      price: "$8",
+      price: "$5",
     },
     {
       id: 2,
       title: "Standard",
       details: "The Ultimate Package",
-      price: "$10",
+      price: "$50",
     },
     {
       id: 3,
-      title: "Pro",
+      title: "Premium",
       details: "The Ultimate Package",
-      price: "$16",
+      price: "$100",
     },
     {
       id: 4,

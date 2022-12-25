@@ -1,5 +1,5 @@
 .miniPricingContainer {
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
 }
 
 .miniPricingTitle {
@@ -106,9 +106,16 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     column-gap: 10px;
-    row-gap: 15px;
+    row-gap: 5px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .planContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .planContainer {
     display: grid;

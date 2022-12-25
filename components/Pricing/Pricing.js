@@ -17,6 +17,7 @@ import {
   FaExclamationCircle,
 } from "react-icons/fa";
 import useViewport from "../../hooks/useViewport";
+import CButton from "../utility/buttons/CButton";
 import CompleteFeaturesList from "./CompleteFeaturesList";
 import styles from "./Pricing.module.css";
 import PricingForSD from "./pricingForSmallDevices/PricingForSD";
@@ -45,8 +46,8 @@ const Pricing = ({ pricingData }) => {
       style={{
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        padding: "150px 35px",
-        fontFamily: "Poppins",
+        padding: "150px 35px 50px",
+        fontFamily: "open sans",
       }}
     >
       <div className={`${styles.mainTitleContainer}`}>
@@ -66,7 +67,7 @@ const Pricing = ({ pricingData }) => {
                   <h5 className={`${styles.heading}`}>{item.title}</h5>
                   <div className={`${styles.rateContainer}`}>
                     <div className={`${styles.rateContainerTop}`}>
-                      {item.title !== "Enterprise" && (
+                      {item.title == "Basic" && (
                         <>
                           <p className={changePriceColor(item.title)}>
                             ${item.price}
@@ -74,11 +75,39 @@ const Pricing = ({ pricingData }) => {
                           <div
                             className={`${styles.rateContainerTopItemRight}`}
                           >
-                            <p className="mb-0">seat/</p>
+                            <p className="mb-0">user/</p>
                             <p>month</p>
                           </div>
                         </>
                       )}
+
+                      {item.title !== "Enterprise" &&
+                        item.title !== "Basic" && (
+                          <>
+                            <p className={changePriceColor(item.title)}>
+                              ${item.price}
+                            </p>
+                            <div
+                              className={`${styles.rateContainerTopItemRight}`}
+                            >
+                              <p className="mb-0">company/</p>
+                              <p>month</p>
+                            </div>
+                          </>
+                        )}
+                      {/* {item.title !== "Enterprise" && (
+                        <>
+                          <p className={changePriceColor(item.title)}>
+                            ${item.price}
+                          </p>
+                          <div
+                            className={`${styles.rateContainerTopItemRight}`}
+                          >
+                            <p className="mb-0">company/</p>
+                            <p>month</p>
+                          </div>
+                        </>
+                      )} */}
                     </div>
                     <div className={`${styles.rateContainerBottom}`}>
                       {item.title === "Enterprise" ? (
@@ -86,20 +115,20 @@ const Pricing = ({ pricingData }) => {
                           src={item?.icon}
                           alt="enterprise image"
                           width={80}
-                          height={150}
+                          height={130}
                           objectFit="contain"
                           // layout="responsive"
                           style={{
-                            width: "50px",
-                            height: "50px",
+                            width: "30px",
+                            height: "30px",
                             margin: "0 auto",
                           }}
                         ></Image>
                       ) : (
                         <>
-                          <p className={`${styles.rateContainerBottomItemTop}`}>
+                          {/* <p className={`${styles.rateContainerBottomItemTop}`}>
                             Total ${item.monthlyPrice} / month
-                          </p>
+                          </p> */}
                           <p
                             className={`${styles.rateContainerBottomItemBottom}`}
                           >
@@ -110,13 +139,15 @@ const Pricing = ({ pricingData }) => {
                     </div>
                   </div>
                   {item.title === "Enterprise" ? (
-                    <button className={`${styles.primaryButton}`}>
-                      Contact us
-                    </button>
+                    // <button className={`${styles.primaryButton}`}>
+                    //   Contact us
+                    // </button>
+                    <CButton>Contact us</CButton>
                   ) : (
-                    <button className={`${styles.primaryButton}`}>
-                      Try for free
-                    </button>
+                    // <button className={`${styles.primaryButton}`}>
+                    //   Try for free
+                    // </button>
+                    <CButton> Try for free</CButton>
                   )}
                   <p className={`${styles.shortIntro}`}>{item.shortIntro}</p>
                 </div>
@@ -197,72 +228,3 @@ const Pricing = ({ pricingData }) => {
 };
 
 export default Pricing;
-
-{
-  /* <section
-style={{
-  display: pricingData?.isShow ? "block" : "none",
-  backgroundImage:
-    "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-  padding: "50px  0",
-}}
->
-<Card className={`${pricingStyles.priceCard} mx-auto  p-3 border-0`}>
-  <Card.Body>
-    <Card.Title className="fs-2 fw-bold pt-3">
-      {pricingData?.title}
-    </Card.Title>
-    <Card.Subtitle className="fw-normal my-3">
-      {pricingData?.description}
-    </Card.Subtitle>
-    <div>
-      <Row className="g-4">
-        {pricingData?.items?.map((data, index) => (
-          <Col key={index} sm={1} md={3}>
-            <Card
-              className={`${pricingStyles.singlePriceCard} my-2 my-lg-5 py-2 border-0`}
-              style={{
-                backgroundColor: data?.status === "active" && "#353B80",
-                color: data?.status === "active" && "#FFF",
-                display: data?.isShow ? "block" : "none",
-              }}
-            >
-              <Card.Body>
-                <h1 className="fs-4 fw-bold py-3">{data?.title}</h1>
-                <h1 className="">
-                  <span className="fs-1 fw-bold">${data?.price}</span>
-                  <span className="fs-6 fw-normal">/month</span>
-                </h1>
-                <p className="fs-6 py-3 fw-normal">{data?.description}</p>
-                <ul className="list-unstyled">
-                  {data?.features?.map((item, index) => (
-                    <li key={index}>
-                      <FontAwesomeIcon
-                        icon={faCheckCircle}
-                        color={
-                          data?.status === "active" ? "#FFF" : "#353B80"
-                        }
-                        className="me-1"
-                      />
-                      {item?.name}
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  className={`${pricingStyles.buttonGradientOutline} my-3`}
-                  style={{
-                    backgroundColor: data?.status === "active" && "#FFF",
-                  }}
-                >
-                  <span className="fw-bold">Choose plan</span>
-                </button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </div>
-  </Card.Body>
-</Card>
-</section> */
-}

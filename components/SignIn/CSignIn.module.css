@@ -1,0 +1,132 @@
+.signInWrapper {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+
+  /* padding-top: 150px; */
+}
+
+.signInImageWrapper {
+  flex: 0 0 35%;
+  /* background: linear-gradient(to right, #24c6dc, #514a9d); */
+  background: #24c6dc;
+  padding-top: 150px;
+  padding-left: 100px;
+  color: #fff;
+}
+
+.signInFormWrapper {
+  flex: 0 0 65%;
+  padding-top: 50px;
+
+  /* padding-right: 100px; */
+}
+
+/* form toggle from sign in to sign up and vice versa */
+
+.formToggle {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggleLink {
+  font-size: 14px;
+  color: #4f3cc9;
+  cursor: pointer;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTextContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+  /* border: 1px solid #ccc; */
+}
+
+.formTextContainerTitle {
+  font-size: clamp(20px, 5vw, 30px);
+  margin-bottom: 40px;
+}
+
+.formTextContainerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  gap: 20px;
+  background: #5194ee;
+  padding: 10px;
+  border: 1px solid #5194ee;
+}
+
+.formTextContainerSocial p {
+  margin-bottom: 0;
+}
+
+.formTextContainerDivider {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formTextContainerDivider p {
+  display: inline-block;
+  margin: 0 10px;
+  color: rgba(110, 109, 122, 0.966);
+  font-weight: 300;
+}
+
+.formTextContainerForm {
+  margin-top: 20px;
+}
+
+.formTextContainerForm label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.formForgetPasswordLabel {
+  font-size: 14px;
+  color: #4f3cc9;
+  cursor: pointer;
+}
+
+.formTextContainerForm input {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.formTextContainerForm button {
+  width: 100%;
+  background: rgba(23, 52, 101, 0.9);
+  /* background: transparent; */
+  border: 2px solid aqua;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.formTextContainerForm button:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 992px) {
+  .signInImageWrapper {
+    display: none;
+  }
+}

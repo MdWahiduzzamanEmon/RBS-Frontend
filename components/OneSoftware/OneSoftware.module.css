@@ -1,0 +1,183 @@
+.container {
+  position: relative;
+  font-family: "open sans", sans-serif;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0; */
+  transition: 0.5s ease;
+  /* background-color: rgba(20, 12, 31, 0.8); */
+  background-color: rgba(42, 43, 54, 0.8);
+}
+
+/* .textButtonContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+} */
+
+.textContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px;
+  /* top: 0; */
+}
+
+.title {
+  width: 100%;
+  font-size: 40px;
+  /* font-weight: 700; */
+  text-align: center;
+}
+
+.highlightedTitle {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.highlightedTitleColored1,
+.highlightedTitleColored2 {
+  font-family: "fjalla one", sans-serif;
+  /* font-family: "Kristi", cursive; */
+  color: #0f0;
+  font-size: 30px;
+  padding-left: 5px;
+  /* padding-right: 5px; */
+}
+.highlightedTitleColored3,
+.highlightedTitleColored4,
+.highlightedTitleColored5 {
+  font-family: "fjalla one", sans-serif;
+  /* font-family: "Kristi", cursive; */
+  color: #0f0;
+  font-size: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.submitContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.emailField {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 30px;
+  border: none;
+  position: relative;
+}
+
+.emailField:focus {
+  outline: none;
+}
+
+.smallBannerButton {
+  font-family: "open sans", sans-serif;
+  width: 200px;
+  /* height: 100px; */
+  background: rgb(23, 52, 101);
+  /* background: transparent; */
+  border: 2px solid aqua;
+  color: #fff;
+  padding: 13px 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  /* flex: 0 0 40%; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: 60%; */
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  /* margin-top: 50px; */
+}
+
+.smallBannerButton:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+  .textContainer {
+    overflow-x: auto;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 25px;
+    /* font-weight: 700; */
+    text-align: center;
+  }
+
+  .highlightedTitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .highlightedTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .highlightedTitleColored1,
+  .highlightedTitleColored2,
+  .highlightedTitleColored3,
+  .highlightedTitleColored4,
+  .highlightedTitleColored5 {
+    font-size: 20px;
+  }
+
+  .submitContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}

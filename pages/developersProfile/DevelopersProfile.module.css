@@ -1,0 +1,144 @@
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.containerTitle {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.profileWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  width: 250px;
+  height: 340px;
+  margin: 10px;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 2px 0 rgba(31, 38, 135, 0.37),
+    0 -1px 2px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  color: #000;
+  font-family: "Poppins";
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 2px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  font-family: "Poppins";
+}
+
+.blankWrapper {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 2px 0 rgba(31, 38, 135, 0.37),
+    0 -8px 2px 0 rgba(31, 38, 135, 0.37), -8px 0px 2px 0 rgba(31, 38, 135, 0.37),
+    8px 0 2px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card .text {
+  position: absolute;
+  padding: 3px;
+}
+
+.card .text::before {
+  position: absolute;
+  padding: 3px;
+}
+
+.textCategory {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #000;
+  font-size: 10px;
+  padding: 5px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.profileImageContainer {
+  width: 242px;
+}
+
+.profileImageContainer img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 500;
+  margin: 15px 0 0 0;
+  padding: 5px;
+}
+
+.card p {
+  font-size: clamp(13px, 2vw, 15px);
+  font-weight: 300;
+  line-height: 25px;
+  transition-delay: 0.2s;
+  padding-left: 5px;
+}
+
+.description {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 1150px) {
+  .profileWrapper {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+@media screen and (max-width: 930px) {
+  .profileWrapper {
+    grid-template-columns: repeat(3, 250px);
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .profileWrapper {
+    grid-template-columns: repeat(2, 250px);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profileWrapper {
+    grid-template-columns: 250px;
+  }
+}

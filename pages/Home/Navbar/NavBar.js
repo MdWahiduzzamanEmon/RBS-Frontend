@@ -14,6 +14,10 @@ import navbarReducer, {
 } from "../../../reducers/navbarReducer/navbarReducer";
 import MobileNavbar from "./MobileNavbar";
 import navStyles from "./Navbar.module.css";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
+import Image from "next/image";
+import CButton from "../../../components/utility/buttons/CButton";
 
 const NavBar = () => {
   //***navbarReducer */
@@ -281,7 +285,7 @@ const NavBar = () => {
           innerText: navItemName,
         },
       });
-    } else if (navItemName === "Watch a demo") {
+    } else if (navItemName === "Watch Demo") {
       dispatch({
         type: "OPEN_WATCH_A_DEMO",
         payload: {
@@ -331,6 +335,18 @@ const NavBar = () => {
 
   const { width } = useViewport();
   const breakpoint = 992;
+  const user = auth?.currentUser;
+
+  // for signing out user
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {})
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
+  const profileImage = auth?.currentUser?.photoURL;
 
   return (
     <>
@@ -448,16 +464,40 @@ const NavBar = () => {
                   ))}
                 </div>
                 <div className="">
-                  <Link href="/signin">
-                    <button className={`${navStyles.primaryButton}`}>
-                      Sign in
-                    </button>
-                  </Link>
-                  <Link href="/signup">
-                    <button className={`${navStyles.primaryButton}`}>
-                      Sign up
-                    </button>
-                  </Link>
+                  {user ? (
+                    <div className="d-flex align-items-center">
+                      <p style={{ color: "#fff" }}>
+                        {/* {auth.currentUser.displayName} */}
+                      </p>
+
+                      <CButton
+                        // className={`${navStyles.primaryButton}`}
+                        onClick={handleSignOut}
+                        style={{ marginTop: "0px" }}
+                      >
+                        Sign out
+                      </CButton>
+                    </div>
+                  ) : (
+                    <div className="d-flex align-items-center justify-content-center">
+                      <Link href="/signin">
+                        <CButton
+                          style={{ marginTop: "0px", marginRight: "10px" }}
+                          // className={`${navStyles.primaryButton}`}
+                        >
+                          Sign in
+                        </CButton>
+                      </Link>
+                      <Link href="/signup">
+                        <CButton
+                          style={{ marginTop: "0px" }}
+                          // className={`${navStyles.primaryButton}`}
+                        >
+                          Sign up
+                        </CButton>
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
               {/* <Product></Product> */}
@@ -503,6 +543,8 @@ const NavBar = () => {
           navLinks={navLinks}
           state={state}
           dispatch={dispatch}
+          user={user}
+          handleSignOut={handleSignOut}
           openNavElements={openNavElements}
         />
       )}

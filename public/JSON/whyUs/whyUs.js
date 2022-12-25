@@ -1,7 +1,7 @@
 export const whyUsDemoData = {
   banner: {
     id: 1,
-    title: "Why Us",
+    title: "Why Us?",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fuga?",
     video: "https://www.youtube.com/embed/Jk-JwtScIlw",

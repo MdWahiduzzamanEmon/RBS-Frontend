@@ -9,10 +9,12 @@ const ProjectManagement = ({ projectManagementData }) => {
     <div
       className=""
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // backgroundImage:
+        //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
         padding: "50px 0",
-        fontFamily: "Poppins",
+        // fontFamily: "Poppins",
+        fontFamily: "open sans",
       }}
     >
       <div className="d-flex flex-column flex-lg-row align-items-center container-lg">
@@ -37,7 +39,7 @@ const ProjectManagement = ({ projectManagementData }) => {
             <p
               className="fs-6"
               style={{
-                color: "rgb(75, 101, 126)",
+                // color: "rgb(75, 101, 126)",
                 textAlign: "justify",
               }}
             >
@@ -57,7 +59,7 @@ const ProjectManagement = ({ projectManagementData }) => {
                 <p
                   className="fs-6"
                   style={{
-                    color: "rgb(75, 101, 126)",
+                    // color: "rgb(75, 101, 126)",
                     textAlign: "justify",
                   }}
                 >

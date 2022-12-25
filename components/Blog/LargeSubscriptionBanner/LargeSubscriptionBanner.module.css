@@ -9,6 +9,7 @@
   /* background: transparent; */
   width: 100%;
   z-index: -1;
+  font-family: "open sans", sans-serif;
 }
 
 .subscriptionImageContainer {

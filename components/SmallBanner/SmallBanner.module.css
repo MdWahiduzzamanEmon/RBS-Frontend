@@ -1,0 +1,164 @@
+.smallBannerContainer {
+  /* display: block; */
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  left: 0;
+  bottom: -110px;
+  z-index: 12000;
+  background: linear-gradient(
+    45deg,
+    #140c1f 0%,
+    #24c6dc 100% /* #24c6dc 100% */
+  );
+  /* background: #fff; */
+  width: 75%;
+  height: 220px;
+  color: #fff;
+  /* margin: 0 auto; */
+  border-radius: 10px;
+  font-family: "open sans", sans-serif;
+  box-shadow: 2px 8px 40px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+
+.textContainer {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 2fr 250px;
+  /* justify-content: center; */
+  align-items: center;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  gap: 25px;
+}
+
+.smallBannerText {
+  /* padding: 15px; */
+  /* font-family: "Fjalla One", sans-serif; */
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: clamp(13px, 2vw, 18px);
+  margin-bottom: 0;
+}
+
+.smallBannerSubText1 {
+  font-size: clamp(13px, 2vw, 20px);
+  font-weight: 700;
+  /* font-family: "Fjalla One", sans-serif; */
+}
+.smallBannerSubText2,
+.smallBannerSubText3,
+.smallBannerSubText4,
+.smallBannerSubText5 {
+  /* font-family: "Kristi", cursive; */
+  font-family: "Fjalla One", sans-serif;
+  color: #0f0;
+  /* color: red; */
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.smallBannerButton {
+  font-family: "open sans", sans-serif;
+  width: 220px;
+  background: rgba(23, 52, 101, 0.6);
+  /* background: transparent; */
+  border: 2px solid aqua;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  /* margin-top: 50px; */
+}
+
+.smallBannerButton:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 992px) {
+  .smallBannerContainer {
+    width: 70%;
+    padding: 10px;
+    /* flex-direction: column; */
+    /* height: 500px; */
+  }
+
+  .textContainer {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .smallBannerButton {
+    font-family: "open sans", sans-serif;
+    width: 180px;
+    background: rgba(23, 52, 101, 0.6);
+    /* background: transparent; */
+    border: 2px solid aqua;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    /* margin-top: 50px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .smallBannerContainer {
+    width: 70%;
+    padding: 20px 10px;
+    /* flex-direction: column; */
+    /* height: 500px; */
+  }
+
+  .textContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .smallBannerButton {
+    font-family: "open sans", sans-serif;
+    width: 180px;
+    background: rgba(23, 52, 101, 0.6);
+    /* background: transparent; */
+    border: 2px solid aqua;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    /* margin-top: 50px; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .smallBannerContainer {
+    width: 100%;
+    padding: 10px;
+    /* flex-direction: column; */
+    /* height: 500px; */
+  }
+
+  .textContainer {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

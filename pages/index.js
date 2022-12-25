@@ -2,9 +2,6 @@ import HomePage from "./Home/HomePage";
 import axios from "axios";
 import React, { useEffect } from "react";
 import app from "../firebase.init";
-import { getAuth } from "firebase/auth";
-
-const auth = getAuth(app);
 
 export default function Home() {
   const [bannerData, setBannerData] = React.useState({});
@@ -80,9 +77,8 @@ export default function Home() {
     <div
       style={{
         color: "rgb(23, 52, 101)",
-        // backgroundImage:
-        //   "linearGradient(90deg, rgb(226, 246, 254) 0%, rgb(249, 236, 248) 100% )",
-        background: "linear-gradient(to right, #24c6dc, #514a9d)",
+        backgroundImage:
+          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
       }}
     >
       <HomePage

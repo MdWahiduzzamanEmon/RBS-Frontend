@@ -1,12 +1,14 @@
 .navbarContainer {
-  background: linear-gradient(90deg, #140C1F 0%, #140C1F 100%);
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #140c1f 0%, #140c1f 100%);
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   padding: 15px;
   width: 100%;
   height: 70px;
-  z-index: 11000;
+  z-index: 15000;
 }
 
 .stickyNav {
@@ -104,7 +106,7 @@
   top: 70px;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 15000;
 }
 .navbarItemsInnerContainer {
   max-height: calc(100vh - 70px);
@@ -118,7 +120,7 @@
   border-left: 1px solid #e4e4e4;
 }
 
-.primaryButton {
+/* .primaryButton {
   width: 90px;
   color: #fff;
   font-size: 12px;
@@ -127,14 +129,12 @@
   margin-right: 5px;
   background-color: #5a5ad5;
   border: none;
-  font-family: "Poppins", sans-serif;
 }
 .primaryButton:hover {
   background-color: #7373de;
-}
+} */
 
 .marqueeText {
-  font-family: "Poppins", sans-serif;
   position: absolute;
   top: 70px;
   left: 0;

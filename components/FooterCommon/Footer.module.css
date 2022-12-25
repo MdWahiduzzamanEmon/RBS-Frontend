@@ -9,7 +9,7 @@
   /* color: #000; */
   /* color: #173465; */
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "open sans", sans-serif;
   /* background-image: url(../../public/footer2.png); */
   /* background-position: 70% 130px; */
   /* background-repeat: no-repeat; */
@@ -43,6 +43,7 @@
     rgb(250, 235, 235) 0%,
     rgb(223, 231, 253) 100%
   ); */
+  font-family: "open sans", sans-serif;
   background: linear-gradient(to right, #140c1f, #140c1f);
   padding: 20px 0px;
   color: #fff;

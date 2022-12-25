@@ -5,7 +5,6 @@ import TestimonialsWrapper from "./TestimonialsWrapper/TestimonialsWrapper";
 
 const Testimonials = ({ testimonialsData }) => {
   const [selectedCategory, setSelectedCategory] = React.useState("");
-  console.log(selectedCategory);
   return (
     <section>
       <div className={`${styles.testimonialsWrapper} container-xl`}>

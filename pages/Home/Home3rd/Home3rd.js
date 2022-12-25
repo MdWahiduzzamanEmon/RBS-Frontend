@@ -15,10 +15,14 @@ const Home3rd = ({ home3rdData }) => {
   return (
     <div
       style={{
-        fontFamily: "Poppins",
-        display: home3rdData?.isShow ? "block" : "none",
-        background: "rgb(226, 246, 254)",
-        // background: "linear-gradient(to right, #24c6dc, #514a9d)",
+        fontFamily: "open sans",
+        // background: "#50577A",
+        // background: "#41475E",
+        // background: "#2A2B36",
+
+        // background: "linear-gradient(55deg, #47E2D0 0%,#47BDE2 100%)",
+        // color: "#50577A",
+        // background: "#E7F8FD",
         padding: "50px 0",
       }}
     >
@@ -33,7 +37,8 @@ const Home3rd = ({ home3rdData }) => {
               <p
                 className="fs-6"
                 style={{
-                  color: "rgb(75, 101, 126)",
+                  // color: "rgba(255, 255, 255, 0.8)",
+                  // color: "rgb(75, 101, 126)",
                   textAlign: "justify",
                 }}
               >
@@ -48,7 +53,8 @@ const Home3rd = ({ home3rdData }) => {
               <p
                 className="fs-6"
                 style={{
-                  color: "rgb(75, 101, 126)",
+                  // color: "rgb(75, 101, 126)",
+                  // color: "#000",
                   textAlign: "justify",
                 }}
               >
@@ -63,7 +69,8 @@ const Home3rd = ({ home3rdData }) => {
               <p
                 className="fs-6"
                 style={{
-                  color: "rgb(75, 101, 126)",
+                  // color: "rgb(75, 101, 126)",
+                  // color: "#000",
                   textAlign: "justify",
                 }}
               >
@@ -78,7 +85,7 @@ const Home3rd = ({ home3rdData }) => {
               <p
                 className="fs-6 my-4"
                 style={{
-                  color: "rgb(75, 101, 126)",
+                  // color: "rgb(75, 101, 126)",
                   textAlign: "justify",
                 }}
               >

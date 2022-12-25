@@ -3,6 +3,7 @@ import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import styles from "./MiniPricing.module.css";
 import Aos from "aos";
+import CButton from "../utility/buttons/CButton";
 
 const MiniPricing = ({ miniPricingData }) => {
   const changePriceColor = (itemName) => {
@@ -10,7 +11,7 @@ const MiniPricing = ({ miniPricingData }) => {
       return `${styles.rateContainerItemPurple}`;
     } else if (itemName === "Standard") {
       return ` ${styles.rateContainerItemBlue}`;
-    } else if (itemName === "Pro") {
+    } else if (itemName === "Premium") {
       return ` ${styles.rateContainerItemGreen}`;
     } else if (itemName === "Enterprise") {
       return ` ${styles.rateContainerItemBlack}`;
@@ -20,8 +21,8 @@ const MiniPricing = ({ miniPricingData }) => {
   return (
     <section
       style={{
-        backgroundImage:
-          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        // backgroundImage:
+        //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
         padding: "50px 0",
       }}
     >
@@ -32,19 +33,37 @@ const MiniPricing = ({ miniPricingData }) => {
         <div className={`${styles.planContainer}`} data-aos="fade-up-right">
           {miniPricingData?.packages?.map((plan) => (
             <div key={plan.id} className={`${styles.singlePlan}`}>
-              <h4>{plan.title}</h4>
-              <p style={{ fontSize: "15px" }}>{plan.details}</p>
-              <div className={`${styles.rateContainerMiniPricing}`}>
-                <p className={changePriceColor(plan.title)}>
-                  <small>{plan.price}</small>
-                </p>
-                <div className={`${styles.rateContainerRight}`}>
-                  <p className="mb-0">
-                    <small>seat/</small>
-                  </p>
-                  <p className="">
-                    <small>month</small>
-                  </p>
+              <div style={{ height: "150px" }}>
+                <h4>{plan.title}</h4>
+                <p style={{ fontSize: "15px" }}>{plan.details}</p>
+                <div className={`${styles.rateContainerMiniPricing}`}>
+                  {plan.title !== "Enterprise" && (
+                    <p className={changePriceColor(plan.title)}>
+                      <small>{plan.price}</small>
+                    </p>
+                  )}
+                  <div className={`${styles.rateContainerRight}`}>
+                    {/* {plan.title === "Enterprise" && (
+                      <button className={`${styles.primaryButton}`}>
+                        Contact us
+                      </button>
+                    )} */}
+                    {plan.title === "Basic" && (
+                      <p className="mb-0">
+                        <small>person/</small>
+                      </p>
+                    )}
+                    {plan.title !== "Basic" && plan.title !== "Enterprise" && (
+                      <p className="mb-0">
+                        <small>company/</small>
+                      </p>
+                    )}
+                    {plan.title !== "Enterprise" && (
+                      <p className="">
+                        <small>month</small>
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
               <div>
@@ -61,11 +80,19 @@ const MiniPricing = ({ miniPricingData }) => {
                 </ul>
               </div>
 
-              <Link href="/pricing">
-                <button className={`${styles.primaryButton} mb-2`}>
-                  Try for free
-                </button>
-              </Link>
+              {plan.title !== "Enterprise" ? (
+                <Link href="/pricing">
+                  <CButton
+                  // className={`${styles.primaryButton} mb-2`}
+                  >
+                    Try for free
+                  </CButton>
+                </Link>
+              ) : (
+                <Link href="/contactUs/contactSales">
+                  <CButton> Contact us</CButton>
+                </Link>
+              )}
               {/* <Link href="/pricing">
                 <p
                   className={`${styles.mPricingLink}`}
