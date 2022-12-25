@@ -1,5 +1,6 @@
 .testimonialsWrapper {
   padding: 50px;
+  font-family: "open sans", sans-serif;
 }
 .testimonialsWrapperTitle {
   font-size: clamp(25px, 5vw, 40px);
