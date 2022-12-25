@@ -31,7 +31,10 @@ export const getStaticProps = async ({ params }) => {
 const SingleFeature = ({ feature }) => {
   const [stepId, setStepId] = React.useState(0);
   return (
-    <section className="">
+    <section
+      className={`${styles.container}`}
+      style={{ fontFamily: "open sans" }}
+    >
       {feature.map((item) => (
         <div key={item.id}>
           {/* banner */}
@@ -44,9 +47,7 @@ const SingleFeature = ({ feature }) => {
             <div
               className={`${styles.bannerContainer} container-xl flex-md-column flex-sm-column flex-lg-row flex-column align-items-center justify-content-center`}
             >
-              <div
-                className={`${styles.bannerInnerContainerTop} p-5 text-justify`}
-              >
+              <div className={`${styles.bannerInnerContainerTop} text-justify`}>
                 <p className={`${styles.bannerInnerContainerPath}`}>
                   <Link href="/allFeatures">
                     <span className={`${styles.bannerInnerContainerPathLeft}`}>
@@ -150,19 +151,6 @@ const SingleFeature = ({ feature }) => {
                         </Accordion.Body>
                       </Accordion.Item>
                     ))}
-                    {/* <Accordion.Item eventKey="1">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </Accordion.Body>
-                  </Accordion.Item> */}
                   </Accordion>
                 </div>
                 <div className={`${styles.tutorialsImageContainer}`}>

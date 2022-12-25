@@ -39,7 +39,7 @@ const ProjectManagement = ({ projectManagementData }) => {
             <p
               className="fs-6"
               style={{
-                color: "rgb(75, 101, 126)",
+                // color: "rgb(75, 101, 126)",
                 textAlign: "justify",
               }}
             >
@@ -59,7 +59,7 @@ const ProjectManagement = ({ projectManagementData }) => {
                 <p
                   className="fs-6"
                   style={{
-                    color: "rgb(75, 101, 126)",
+                    // color: "rgb(75, 101, 126)",
                     textAlign: "justify",
                   }}
                 >

@@ -22,6 +22,7 @@ const AllFeatures = ({ featureLists, allFeaturesMainPageData }) => {
       style={{
         backgroundImage:
           "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        fontFamily: "open sans",
       }}
     >
       {/* banner */}

@@ -2,16 +2,13 @@ import Image from "next/image";
 import React from "react";
 import styles from "./OneSoftware.module.css";
 import oneSoftwareImage from "../../public/oneSoftwareImage.png";
-import Link from "next/link";
 
 const OneSoftware = () => {
   const [email, setEmail] = React.useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    e.target.value = "";
     setEmail("");
-    console.log(email);
   };
   return (
     <div className={`${styles.container}`}>
@@ -25,7 +22,6 @@ const OneSoftware = () => {
         ></Image>
       </div>
       <div className={`${styles.overlay}`}></div>
-      {/* <div className={`${styles.textButtonContainer}`}> */}
       <div className={`${styles.textContainer}`}>
         <h3 className={`${styles.title}`}>
           Replace Your Expensive Project Management Software:
@@ -55,15 +51,12 @@ const OneSoftware = () => {
             placeholder="Enter your email"
             onChange={(e) => setEmail(e.target.value)}
           ></input>
-          {/* <Link href="/pricing"> */}
           <button className={`${styles.smallBannerButton}`} type="submit">
             Submit Now
           </button>
-          {/* </Link> */}
         </form>
       </div>
     </div>
-    // </div>
   );
 };
 
