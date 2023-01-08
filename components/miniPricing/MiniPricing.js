@@ -27,7 +27,10 @@ const MiniPricing = ({ miniPricingData }) => {
       }}
     >
       <div className={`${styles.miniPricingContainer} container`}>
-        <h1 className={`${styles.miniPricingTitle}`} data-aos="fade-down-right">
+        <h1
+          className={`${styles.miniPricingTitle} mb-5`}
+          data-aos="fade-down-right"
+        >
           {miniPricingData.title}
         </h1>
         <div className={`${styles.planContainer}`} data-aos="fade-up-right">

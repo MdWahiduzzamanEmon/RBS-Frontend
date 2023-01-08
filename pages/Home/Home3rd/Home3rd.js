@@ -30,9 +30,9 @@ const Home3rd = ({ home3rdData }) => {
         <div className=" w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
             <div key={data?.id}>
-              <h1 className="fs-2 fw-bold  mb-3">{data?.title}</h1>
+              <h1 className=" fw-bold mb-3">{data?.title}</h1>
               <p
-                className="fs-6"
+                className="fs-6 mb-4"
                 style={{
                   // color: "rgba(255, 255, 255, 0.8)",
                   // color: "rgb(75, 101, 126)",

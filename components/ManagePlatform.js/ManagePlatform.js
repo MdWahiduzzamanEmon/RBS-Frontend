@@ -11,63 +11,6 @@ import ManagePlatformDetailInformation from "./managePlatformDetailInformation/M
 const ManagePlatform = ({ managePlatformData }) => {
   return (
     <>
-      {/* <style>
-        {`
-        // .nav-tabs {
-        //     --bs-nav-tabs-border-width: none;
-        // }
-
-        .nav-item{
-         
-            position: relative;
-          
-        }
-
-        .nav-link {
-          color: rgb(23, 52, 101);
-          font-weight: 500;
-        }
-
-        // .nav-item .nav-link::before {
-        //     content: "";
-        //     position: absolute;
-        //     left:0;
-        //     bottom: 40px;
-        //     height: 2px;
-        //     width: 0%;
-        //     background-color: #2a75d1;
-        //     transform: scaleX(0);
-        //     transform-origin: top right;
-        //     transition: transform 0.5s ease-in-out;
-        // }
-
-        // .nav-item .nav-link:hover::before, .nav-item .nav-link:focus::before {
-        //     content: "";
-        //     position: absolute;
-        //     left:0;
-        //     bottom: 40px;
-        //     height: 2px;
-        //     width: 100%;
-        //     background-color: #2a75d1;
-        //     transform: scaleX(1);
-        //     transform-origin: top left;
-        // }
-            .nav-fill {
-                padding-left: 100px;
-                padding-right: 100px;
-            }
-
-            @media (max-width: 768px) {
-              .nav-item .nav-link::before {
-                background-color: transparent;
-            }
-    
-            .nav-item .nav-link:hover::before, .nav-item .nav-link:focus::before {
-                background-color: transparent;
-            }
-            }
-        `}
-      </style> */}
       <section
         style={
           {
@@ -83,13 +26,8 @@ const ManagePlatform = ({ managePlatformData }) => {
           <div data-aos="zoom-in-down">
             {managePlatformData?.titleData?.map((data, index) => (
               <div key={data?.id}>
-                <h1
-                  className="fs-2 text-center fw-bold my-3"
-                  // style={{ color: "#fff" }}
-                >
-                  {data?.title}
-                </h1>
-                <p className="text-center mb-5 " style={{ fontSize: "20px" }}>
+                <h1 className="text-center fw-bold my-3">{data?.title}</h1>
+                <p className="text-center mb-5" style={{ fontSize: "20px" }}>
                   {data?.description}
                 </p>
               </div>

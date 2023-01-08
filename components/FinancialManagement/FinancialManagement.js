@@ -34,9 +34,9 @@ const FinancialManagement = ({ financialManagementData }) => {
         <div className="w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <div>
-            <h1 className="fs-2 fw-bold  mb-3">{title}</h1>
+            <h1 className="fw-bold mb-3">{title}</h1>
             <p
-              className="fs-6"
+              className="fs-6 mb-4"
               style={{
                 color: "rgb(75, 101, 126)",
                 textAlign: "justify",

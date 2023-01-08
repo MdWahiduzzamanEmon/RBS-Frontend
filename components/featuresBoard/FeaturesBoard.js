@@ -22,18 +22,18 @@ const FeaturesBoard = () => {
       <div className={`${styles.description}`}>
         {featuresData?.titleData?.titleItems?.map((data) => (
           <div key={data.id} data-aos="zoom-out-right">
-            <h2
+            <h1
               className=" mb-3 text-center "
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
-                fontSize: "35px",
+                // fontSize: "35px",
                 // fontFamily: "Fjalla One",
                 color: "#fff",
                 // color: "#140C1F",
               }}
             >
               {data.title}{" "}
-            </h2>
+            </h1>
             <p
               className="text-center fs-6 mb-5 text-white  "
               style={{

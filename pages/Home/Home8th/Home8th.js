@@ -49,8 +49,8 @@ const Home8th = ({ home8thData }) => {
             </div>
 
             <div data-aos="zoom-in-right" className="w-100 w-lg-50">
-              <h1 className="fs-2 fw-bold mt-3">{data.title}</h1>
-              <p className="fs-6" style={{ textAlign: "justify" }}>
+              <h1 className="fw-bold mt-3 mb-3">{data.title}</h1>
+              <p className="fs-6 mb-4" style={{ textAlign: "justify" }}>
                 {data.titleDescription}
               </p>
               <div>

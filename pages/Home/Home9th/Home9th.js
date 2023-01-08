@@ -26,13 +26,13 @@ const Home9th = ({ home9thData }) => {
       <div className=" container">
         <div>
           <h1
-            className="fs-2 text-center fw-bold  m-auto"
+            className="text-center fw-bold  m-auto"
             style={{ width: "80%" }}
             data-aos="zoom-out"
           >
             {home9thData?.title}
           </h1>
-          <div className="my-5 gap-5">
+          <div className="my-5 gap-5 pt-4">
             <Row className="d-flex justify-content-md-between">
               <Col xs={12} md={12} lg={5}>
                 {home9thData?.items?.map((data, index) => (

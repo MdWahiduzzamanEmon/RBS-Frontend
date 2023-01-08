@@ -22,14 +22,10 @@ const Home5th = ({ home5thData }) => {
       className=""
     >
       {home5thData?.titleData?.map((data, index) => (
-        <div
-          key={data?.id}
-          style={{ display: data?.isShow ? "block" : "none" }}
-          data-aos="fade-down"
-        >
-          <h1 className="text-center fs-2 fw-bold ">{data?.title}</h1>
+        <div key={data?.id} data-aos="fade-down">
+          <h1 className="text-center fw-bold mb-4">{data?.title}</h1>
           <p
-            className={`${home5thStyles.headingDescription} fs-6  text-center mb-5 px-2`}
+            className={`${home5thStyles.headingDescription} text-center mb-5 px-2`}
           >
             {data?.description}
           </p>
