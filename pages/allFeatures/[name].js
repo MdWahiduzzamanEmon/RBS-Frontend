@@ -33,17 +33,18 @@ const SingleFeature = ({ feature }) => {
   return (
     <section
       className={`${styles.container}`}
-      style={{ fontFamily: "open sans" }}
+      // style={{ fontFamily: "open sans" }}
+      style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        // backgroundImage:
+        //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+      }}
     >
       {feature.map((item) => (
         <div key={item.id}>
           {/* banner */}
-          <div
-            style={{
-              backgroundImage:
-                "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-            }}
-          >
+          <div>
             <div
               className={`${styles.bannerContainer} container-xl flex-md-column flex-sm-column flex-lg-row flex-column align-items-center justify-content-center`}
             >
@@ -78,7 +79,7 @@ const SingleFeature = ({ feature }) => {
             </div>
           </div>
           {/* large image with features in two columns */}
-          <div style={{ background: "rgb(226, 246, 254)" }}>
+          <div>
             <div className={`${styles.largeImageWithFeatures} container-xl`}>
               <div className={`${styles.largeImageWithFeaturesTitleContainer}`}>
                 <h3 className={`${styles.largeImageWithFeaturesTitle}`}>
@@ -116,12 +117,12 @@ const SingleFeature = ({ feature }) => {
           </div>
           {/* accordion with image ---tutorials steps */}
           <div
-            style={{
-              backgroundImage:
-                "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-            }}
+          // style={{
+          //   backgroundImage:
+          //     "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+          // }}
           >
-            <div className={`${styles.tutorialsContainer} p-5 container-xl`}>
+            <div className={`${styles.tutorialsContainer} container-lg`}>
               <h3 className={`${styles.tutorialsContainerTitle}`}>
                 {item.tutorials.title}
               </h3>

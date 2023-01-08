@@ -9,16 +9,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ScrollFeatures = ({ items }) => {
-  console.log(items);
   return (
     <section
       style={{
-        padding: "50px 0",
-        backgroundImage:
-          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        padding: "50px 0 130px",
+        // backgroundImage:
+        //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
       }}
     >
-      <div className="container-xl p-5">
+      <div className="container-lg">
         <div>
           <h1 className={`${styles.scrollFeaturesContainerTitle}`}>
             {items?.scrollFeatures?.title}

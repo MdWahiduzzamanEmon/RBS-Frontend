@@ -47,7 +47,7 @@ const Pricing = ({ pricingData }) => {
         backgroundImage:
           "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "150px 35px 50px",
-        fontFamily: "open sans",
+        fontFamily: "Ubuntu",
       }}
     >
       <div className={`${styles.mainTitleContainer}`}>

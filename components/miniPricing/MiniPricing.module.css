@@ -10,11 +10,6 @@
 
 .planContainer {
   display: flex;
-  /* grid-template-columns: repeat(4, 250px);
-  justify-items: center;
-  align-items: center;
-  column-gap: 5px;
-  row-gap: 5px; */
   flex-direction: row;
   gap: 20px;
   align-items: center;
@@ -22,7 +17,7 @@
 }
 
 .singlePlan {
-  text-align: center;
+  /* text-align: center; */
   padding: 15px;
   /* border: 1px solid #ccc; */
   border-radius: 5px;
@@ -105,8 +100,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    column-gap: 10px;
-    row-gap: 5px;
+    column-gap: 15px;
+    row-gap: 15px;
   }
 }
 

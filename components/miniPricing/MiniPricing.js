@@ -96,16 +96,6 @@ const MiniPricing = ({ miniPricingData }) => {
                   <CButton> Contact us</CButton>
                 </Link>
               )}
-              {/* <Link href="/pricing">
-                <p
-                  className={`${styles.mPricingLink}`}
-                  style={{ cursor: "pointer", color: "#5a5ad5" }}
-                > */}
-              {/* <small> */}
-              {/* Learn more <FaChevronRight fontSize="10px" /> */}
-              {/* </small> */}
-              {/* </p>
-              </Link> */}
             </div>
           ))}
         </div>

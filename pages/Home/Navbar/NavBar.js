@@ -373,6 +373,7 @@ const NavBar = () => {
             >
               <div
                 className="container-lg d-flex align-items-center justify-content-lg-between"
+                style={{ height: "100%" }}
                 // style={{ paddingLeft: "0px", paddingRight: "0px" }}
               >
                 <div

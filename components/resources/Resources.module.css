@@ -1,5 +1,5 @@
 .resourcesContainer {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   font-size: 15px;
   text-align: justify;
   padding-left: 0;
@@ -87,7 +87,7 @@
 }
 
 .listTitle {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   font-weight: 600;
   font-size: clamp(12px, 1vw, 14px);
   margin-left: 10px;
