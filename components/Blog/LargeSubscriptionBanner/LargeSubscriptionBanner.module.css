@@ -1,11 +1,15 @@
 .subscriptionContainer {
+  /* background: linear-gradient(to right, #24c6dc, #514a9d); */
+  background: linear-gradient(55deg, #24c6dc 0%, #140c1f 100%);
+}
+
+.subscriptionInnerContainer {
   display: flex;
   /* gap: 40px; */
   align-items: center;
   justify-content: center;
   color: #fff;
   /* background: #fed8d4; */
-  background: linear-gradient(to right, #24c6dc, #514a9d);
   /* background: transparent; */
   width: 100%;
   z-index: -1;
@@ -58,7 +62,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .subscriptionContainer {
+  .subscriptionInnerContainer {
     flex-direction: column;
   }
 

@@ -23,16 +23,13 @@ const Home3rd = ({ home3rdData }) => {
         // background: "linear-gradient(55deg, #47E2D0 0%,#47BDE2 100%)",
         // color: "#50577A",
         // background: "#E7F8FD",
-        padding: "50px 0",
+        padding: "130px 0",
       }}
     >
-      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg">
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg gap-5">
+        <div className=" w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
-            <div
-              key={data?.id}
-              style={{ display: data?.isShow ? "block" : "none" }}
-            >
+            <div key={data?.id}>
               <h1 className="fs-2 fw-bold  mb-3">{data?.title}</h1>
               <p
                 className="fs-6"
@@ -94,7 +91,7 @@ const Home3rd = ({ home3rdData }) => {
             </div>
           ))}
         </div>
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+        <div className=" w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
             <Image
               key={data?.id}

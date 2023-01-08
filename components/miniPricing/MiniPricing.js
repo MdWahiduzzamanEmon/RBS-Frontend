@@ -23,7 +23,7 @@ const MiniPricing = ({ miniPricingData }) => {
       style={{
         // backgroundImage:
         //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-        padding: "50px 0",
+        padding: "50px 0 130px",
       }}
     >
       <div className={`${styles.miniPricingContainer} container`}>

@@ -11,7 +11,7 @@ const FeaturesBoard = () => {
         fontFamily: "Ubuntu",
         // fontFamily: "open sans",
 
-        padding: "80px 0 60px",
+        padding: "130px 0",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         // backgroundImage: "linear-gradient(45deg, #0192bc 0%, #44f3c9 100%)",
@@ -19,12 +19,7 @@ const FeaturesBoard = () => {
         background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
       }}
     >
-      <div
-        style={{
-          display: featuresData?.titleData?.isShow ? "block" : "none",
-        }}
-        className={`${styles.description}`}
-      >
+      <div className={`${styles.description}`}>
         {featuresData?.titleData?.titleItems?.map((data) => (
           <div key={data.id} data-aos="zoom-out-right">
             <h2

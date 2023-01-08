@@ -12,12 +12,12 @@ const FinancialManagement = ({ financialManagementData }) => {
       style={{
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        padding: "50px 0",
+        padding: "50px 0 130px",
         // fontFamily: "open sans",
       }}
     >
-      <div className="d-flex flex-column flex-lg-row-reverse align-items-center container-lg">
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+      <div className="d-flex flex-column flex-lg-row-reverse align-items-center container-lg gap-5">
+        <div className="w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <Image
             // key={data.id}
@@ -31,7 +31,7 @@ const FinancialManagement = ({ financialManagementData }) => {
           />
           {/* ))} */}
         </div>
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+        <div className="w-100 w-lg-50" data-aos="zoom-in-down">
           {/* {home3rdData?.items?.map((data, index) => ( */}
           <div>
             <h1 className="fs-2 fw-bold  mb-3">{title}</h1>

@@ -372,8 +372,8 @@ const NavBar = () => {
               }}
             >
               <div
-                className="container-sm d-flex align-items-center justify-content-lg-between"
-                style={{ paddingLeft: "0px", paddingRight: "0px" }}
+                className="container-lg d-flex align-items-center justify-content-lg-between"
+                // style={{ paddingLeft: "0px", paddingRight: "0px" }}
               >
                 <div
                   className={`${navStyles.navbarBrand}`}
