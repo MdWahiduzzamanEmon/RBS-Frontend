@@ -5,7 +5,6 @@ import React from "react";
 import changeColorOfCircleCheck from "../utility/functions/changeColorOfCircleCheck";
 
 const FinancialManagement = ({ financialManagementData }) => {
-  console.log(financialManagementData);
   const { id, title, description, keyPoints, image } = financialManagementData;
   return (
     <div
@@ -14,7 +13,7 @@ const FinancialManagement = ({ financialManagementData }) => {
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "50px 0",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
       }}
     >
       <div className="d-flex flex-column flex-lg-row-reverse align-items-center container-lg">

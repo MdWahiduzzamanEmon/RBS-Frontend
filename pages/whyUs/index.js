@@ -19,7 +19,8 @@ const WhyUs = ({ whyUsData }) => {
       style={{
         backgroundImage:
           "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
+        fontFamily: "Ubuntu",
       }}
     >
       <WhyUsBanner whyUsData={whyUsData?.banner} />

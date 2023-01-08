@@ -15,7 +15,7 @@ const Home3rd = ({ home3rdData }) => {
   return (
     <div
       style={{
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
         // background: "#50577A",
         // background: "#41475E",
         // background: "#2A2B36",
@@ -83,7 +83,7 @@ const Home3rd = ({ home3rdData }) => {
                 {data?.subTitle3}
               </h3>
               <p
-                className="fs-6 my-4"
+                className="fs-6 "
                 style={{
                   // color: "rgb(75, 101, 126)",
                   textAlign: "justify",

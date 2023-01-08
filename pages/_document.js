@@ -11,27 +11,22 @@ export default function Document() {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-        />
+        /> */}
         {/* <link
-          href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kristi&family=Open+Sans&display=swap"
           rel="stylesheet"
         ></link> */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kristi&family=Open+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         ></link>
-        {/* <script
-          src="https://accounts.google.com/gsi/client"
-          async
-          defer
-        ></script> */}
         <Script
           src="https://accounts.google.com/gsi/client"
           async

@@ -69,12 +69,14 @@ const ManagePlatform = ({ managePlatformData }) => {
         `}
       </style> */}
       <section
-        style={{
-          // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
-          // background: "rgb(226, 246, 254)",
-          fontFamily: "open sans",
-          // marginBottom: "200px",
-        }}
+        style={
+          {
+            // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
+            // background: "rgb(226, 246, 254)",
+            // fontFamily: "open sans",
+            // marginBottom: "200px",
+          }
+        }
         className={`${styles.managePlatformContainer}`}
       >
         <div className="container">

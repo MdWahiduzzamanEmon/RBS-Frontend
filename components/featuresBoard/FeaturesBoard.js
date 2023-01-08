@@ -8,8 +8,9 @@ const FeaturesBoard = () => {
   return (
     <section
       style={{
-        // fontFamily: "Poppins",
-        fontFamily: "open sans",
+        fontFamily: "Ubuntu",
+        // fontFamily: "open sans",
+
         padding: "80px 0 60px",
         // backgroundImage:
         //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
@@ -89,7 +90,7 @@ const FeaturesBoard = () => {
                   style={{
                     // color: "#140C1F",
                     color: "#fff",
-                    fontFamily: "open sans",
+                    // fontFamily: "open sans",
                   }}
                 >
                   {card.title}

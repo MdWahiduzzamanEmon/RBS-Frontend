@@ -13,7 +13,7 @@ const Home5th = ({ home5thData }) => {
   return (
     <div
       style={{
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
         display: home5thData?.isShow ? "block" : "none",
         // backgroundImage:
         //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",

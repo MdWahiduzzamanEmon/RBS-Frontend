@@ -14,7 +14,7 @@ const ProjectManagement = ({ projectManagementData }) => {
         // background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
         padding: "50px 0",
         // fontFamily: "Poppins",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
       }}
     >
       <div className="d-flex flex-column flex-lg-row align-items-center container-lg">

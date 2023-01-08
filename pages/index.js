@@ -79,6 +79,7 @@ export default function Home() {
         color: "rgb(23, 52, 101)",
         backgroundImage:
           "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        fontFamily: "Ubuntu",
       }}
     >
       <HomePage

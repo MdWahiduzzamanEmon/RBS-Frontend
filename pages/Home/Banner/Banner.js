@@ -167,9 +167,6 @@ const Banner = ({ bannerImagesData }) => {
                   <Row
                     style={{
                       fontSize: "16px",
-                      fontFamily: "Poppins",
-                      // textTransform: "lowercase",
-                      // gap: "5px",
                     }}
                     className={`${bannerStyles.row} g-4`}
                   >

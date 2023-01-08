@@ -25,7 +25,7 @@ const Home8th = ({ home8thData }) => {
         display: home8thData?.isShow ? "block" : "none",
         padding: "50px 0",
         // backgroundColor: "rgb(226, 246, 254)",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
       }}
     >
       <div className=" container-lg">
