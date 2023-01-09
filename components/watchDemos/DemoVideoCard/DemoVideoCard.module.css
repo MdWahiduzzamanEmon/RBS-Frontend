@@ -13,7 +13,7 @@
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: rgb(23, 52, 101);
-  font-family: "open sans";
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* .wrap::before {

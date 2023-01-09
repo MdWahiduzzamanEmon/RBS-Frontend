@@ -44,10 +44,8 @@ const Pricing = ({ pricingData }) => {
   return (
     <section
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         padding: "150px 35px 50px",
-        fontFamily: "Ubuntu",
+        // fontFamily: "Ubuntu",
       }}
     >
       <div className={`${styles.mainTitleContainer}`}>

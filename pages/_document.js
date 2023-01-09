@@ -34,7 +34,7 @@ export default function Document() {
           strategy="beforeInteractive"
         />
       </Head>
-      <body>
+      <body style={{ fontFamily: "Ubuntu" }}>
         <Main />
         <NextScript />
       </body>

@@ -42,7 +42,7 @@ const FooterCommon = ({ footerDetails }) => {
                       className={`${footerCommonStyles.text}`}
                       style={{ listStyle: "none", cursor: "pointer" }}
                       onClick={() => {
-                        router.push(itemData.url);
+                        router.push("/allFeatures/" + itemData?.name);
                         // router.push({
                         //   pathname: "/features",
                         //   query: { title: itemData.item },

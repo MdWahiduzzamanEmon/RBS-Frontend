@@ -5,7 +5,6 @@ import styles from "./WatchDemosBanner.module.css";
 
 const WatchDemosBanner = (data) => {
   const { title, description, image } = data.data;
-  console.log(title, description, image);
   return (
     <section className={`${styles.banner}`}>
       <div className={`${styles.bannerContainer} container-xl`}>

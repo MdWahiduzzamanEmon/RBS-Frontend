@@ -2,20 +2,19 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About3rd = ({ about3rdData }) => {
-  console.log(about3rdData);
   return (
     <div
       style={{
-        display: about3rdData.isShow ? "block" : "none",
-        background: "rgb(226, 246, 254)",
-        padding: "50px 0",
+        // display: about3rdData.isShow ? "block" : "none",
+        // background: "rgb(226, 246, 254)",
+        padding: "50px 0 130px",
       }}
     >
       {about3rdData?.items?.map((data) => (
         <div
           key={data.id}
           className="d-flex flex-column flex-lg-row  align-items-center container-lg"
-          style={{ fontFamily: "Poppins" }}
+          // style={{ fontFamily: "Poppins" }}
         >
           <div className="p-3">
             <h1 className="fs-2 fw-bold">{data.title}</h1>

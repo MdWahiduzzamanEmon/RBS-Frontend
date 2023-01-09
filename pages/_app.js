@@ -9,9 +9,11 @@ import { useRouter } from "next/router";
 import auth from "../firebase.init";
 import jwt_decode from "jwt-decode";
 import { GoogleAuthProvider, signInWithCredential } from "firebase/auth";
+import GoToTop from "../components/GoToTop/GoToTop";
 
 function MyApp({ Component, pageProps }) {
   const [pageLoaded, setPageLoaded] = React.useState(false);
+  const [showButton, setShowButton] = React.useState(false);
 
   React.useEffect(() => {
     setPageLoaded(true);
@@ -60,16 +62,33 @@ function MyApp({ Component, pageProps }) {
     //   });
     // }
     if (!user) {
-      // window.google?.accounts?.id.prompt();
+      window.google?.accounts?.id.prompt();
       // window.google.accounts.id.cancel();
     }
   }, [user]);
+
+  // * scroll to top button */
+  React.useEffect(() => {
+    const handleScrollButtonVisibility = () => {
+      window.pageYOffset > 50 ? setShowButton(true) : setShowButton(false);
+    };
+    window.addEventListener("scroll", handleScrollButtonVisibility);
+    return () => {
+      window.removeEventListener("scroll", handleScrollButtonVisibility);
+    };
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {pageLoaded ? (
         <SSRProvider>
           <Layout>
             {/* {router.asPath.includes("/blog") ? <NavbarBlog /> : <NavBar />} */}
+            {showButton && <GoToTop handleScrollToTop={handleScrollToTop} />}
             <NavBar />
             <Component {...pageProps} />
           </Layout>

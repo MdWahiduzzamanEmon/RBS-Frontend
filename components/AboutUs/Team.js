@@ -6,17 +6,19 @@ const Team = ({ teamData }) => {
   return (
     <section
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-        padding: "50px 0 ",
+        // backgroundImage:
+        //   "linear-gradient(90deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+        padding: "50px 0 130px",
       }}
     >
       <div
         className="container-lg mx-auto"
-        style={{
-          fontFamily: "Poppins",
-          display: teamData.isShow ? "block" : "none",
-        }}
+        style={
+          {
+            // fontFamily: "Poppins",
+            // display: teamData.isShow ? "block" : "none",
+          }
+        }
       >
         {teamData?.titleData?.titleItems?.map((textData) => (
           <div key={textData.id}>
