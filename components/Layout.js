@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
       .get("/api/footerapi")
       .then((response) => setFooterDetails(response.data));
   }, []);
+
   return (
     <>
       <div>{children}</div>

@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
     setPageLoaded(true);
   }, []);
   const router = useRouter();
+
   const user = auth.currentUser;
   function handleCredentialResponse(response) {
     const userObject = jwt_decode(response.credential);
@@ -42,30 +43,6 @@ function MyApp({ Component, pageProps }) {
         // ...
       });
   }
-
-  React.useEffect(() => {
-    // if (divRef.current) {
-    window.google?.accounts?.id?.initialize({
-      client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
-      // callback: (res, error) => {
-      //   // This is the function that will be executed once the authentication with google is finished
-      // },
-      callback: handleCredentialResponse,
-    });
-    //   window.google?.accounts?.id.renderButton(divRef.current, {
-    //     type: "standard",
-    //     size: "large",
-    //     theme: "filled_blue",
-    //     text: "sign_in_with",
-    //     shape: "rectangular",
-    //     logo_alignment: "left",
-    //   });
-    // }
-    if (!user) {
-      // window.google?.accounts?.id.prompt();
-      // window.google.accounts.id.cancel();
-    }
-  }, [user]);
 
   // * scroll to top button */
   React.useEffect(() => {

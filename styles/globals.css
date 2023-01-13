@@ -33,3 +33,8 @@ h5 {
   background-color: #ccc;
   border-radius: 10px;
 } */
+
+#gLoginNew {
+  position: absolute;
+  top: 120px;
+}

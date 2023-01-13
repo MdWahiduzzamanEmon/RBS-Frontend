@@ -2,6 +2,7 @@ import HomePage from "./Home/HomePage";
 import axios from "axios";
 import React, { useEffect } from "react";
 import app from "../firebase.init";
+import callOneTapPrompt from "../components/utility/callOneTapPrompt";
 
 export default function Home() {
   const [bannerData, setBannerData] = React.useState({});
