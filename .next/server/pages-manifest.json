@@ -2,5 +2,20 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/api/banner": "pages/api/banner.js",
+  "/": "pages/index.js",
+  "/api/bannerImage": "pages/api/bannerImage.js",
+  "/api/home2ndapi": "pages/api/home2ndapi.js",
+  "/api/home3rdapi": "pages/api/home3rdapi.js",
+  "/api/projectManagementapi": "pages/api/projectManagementapi.js",
+  "/api/home5thapi": "pages/api/home5thapi.js",
+  "/api/home8thapi": "pages/api/home8thapi.js",
+  "/api/home7thapi": "pages/api/home7thapi.js",
+  "/api/home6thapi": "pages/api/home6thapi.js",
+  "/api/miniPricingapi": "pages/api/miniPricingapi.js",
+  "/api/home9thapi": "pages/api/home9thapi.js",
+  "/api/home10thapi": "pages/api/home10thapi.js",
+  "/api/purchaseCard": "pages/api/purchaseCard.js",
+  "/api/financialManagementapi": "pages/api/financialManagementapi.js",
+  "/api/footerapi": "pages/api/footerapi.js"
 }
