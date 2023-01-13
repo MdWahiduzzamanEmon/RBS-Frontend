@@ -1,5 +1,5 @@
 .categoriesWrapper {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;

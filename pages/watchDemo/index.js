@@ -13,7 +13,6 @@ export const getStaticProps = async () => {
 };
 
 const WatchDemos = ({ watchDemosData }) => {
-  console.log(watchDemosData);
   return (
     <div
       // style={{ background: "linear-gradient(45deg,#140c1f 0%,#24c6dc 100%)" }}

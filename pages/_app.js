@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
     //   });
     // }
     if (!user) {
-      window.google?.accounts?.id.prompt();
+      // window.google?.accounts?.id.prompt();
       // window.google.accounts.id.cancel();
     }
   }, [user]);
@@ -70,7 +70,7 @@ function MyApp({ Component, pageProps }) {
   // * scroll to top button */
   React.useEffect(() => {
     const handleScrollButtonVisibility = () => {
-      window.pageYOffset > 50 ? setShowButton(true) : setShowButton(false);
+      window.pageYOffset > 150 ? setShowButton(true) : setShowButton(false);
     };
     window.addEventListener("scroll", handleScrollButtonVisibility);
     return () => {

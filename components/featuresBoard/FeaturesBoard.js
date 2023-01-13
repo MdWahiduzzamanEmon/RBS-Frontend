@@ -19,11 +19,11 @@ const FeaturesBoard = () => {
         background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
       }}
     >
-      <div className={`${styles.description}`}>
+      <div className={`${styles.description} container-lg`}>
         {featuresData?.titleData?.titleItems?.map((data) => (
           <div key={data.id} data-aos="zoom-out-right">
             <h1
-              className=" mb-3 text-center "
+              className="mb-3 text-center"
               //className="fs-3 text-center fw-bold mb-3 "
               style={{
                 // fontSize: "35px",
