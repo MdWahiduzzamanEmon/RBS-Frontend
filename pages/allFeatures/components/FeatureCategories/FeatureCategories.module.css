@@ -1,5 +1,5 @@
 .categoriesContainer {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   font-size: clamp(15px, 2vw, 20px);
   font-weight: 400;
   color: #173465;

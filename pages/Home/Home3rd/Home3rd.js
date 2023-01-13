@@ -15,7 +15,7 @@ const Home3rd = ({ home3rdData }) => {
   return (
     <div
       style={{
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
         // background: "#50577A",
         // background: "#41475E",
         // background: "#2A2B36",
@@ -23,19 +23,16 @@ const Home3rd = ({ home3rdData }) => {
         // background: "linear-gradient(55deg, #47E2D0 0%,#47BDE2 100%)",
         // color: "#50577A",
         // background: "#E7F8FD",
-        padding: "50px 0",
+        padding: "130px 0",
       }}
     >
-      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg">
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+      <div className="d-flex flex-column-reverse flex-lg-row align-items-center container-lg gap-5">
+        <div className=" w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
-            <div
-              key={data?.id}
-              style={{ display: data?.isShow ? "block" : "none" }}
-            >
-              <h1 className="fs-2 fw-bold  mb-3">{data?.title}</h1>
+            <div key={data?.id}>
+              <h1 className=" fw-bold mb-3">{data?.title}</h1>
               <p
-                className="fs-6"
+                className="fs-6 mb-4"
                 style={{
                   // color: "rgba(255, 255, 255, 0.8)",
                   // color: "rgb(75, 101, 126)",
@@ -83,7 +80,7 @@ const Home3rd = ({ home3rdData }) => {
                 {data?.subTitle3}
               </h3>
               <p
-                className="fs-6 my-4"
+                className="fs-6 "
                 style={{
                   // color: "rgb(75, 101, 126)",
                   textAlign: "justify",
@@ -94,7 +91,7 @@ const Home3rd = ({ home3rdData }) => {
             </div>
           ))}
         </div>
-        <div className="p-3 w-100 w-lg-50" data-aos="zoom-in-down">
+        <div className=" w-100 w-lg-50" data-aos="zoom-in-down">
           {home3rdData?.items?.map((data, index) => (
             <Image
               key={data?.id}

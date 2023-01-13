@@ -27,7 +27,6 @@ const ContactForm = ({ contactUsForm }) => {
     >
       <Card
         className={`${contactFormStyles.contactForm} mx-auto p-2 p-lg-5 shadow-md bg-white rounded border-0`}
-        style={{ display: contactUsForm?.isShow ? "block" : "none" }}
       >
         <Card.Body>
           <Form onSubmit={handleFormSubmit}>

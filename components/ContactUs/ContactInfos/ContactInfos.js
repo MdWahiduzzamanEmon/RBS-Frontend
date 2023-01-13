@@ -10,22 +10,13 @@ const ContactInfos = ({ contactUsData }) => {
         padding: "80px 0",
       }}
     >
-      <div
-        className={`${infosStyles.infos} container`}
-        style={{
-          display: contactUsData?.isShow ? "block" : "none",
-        }}
-      >
+      <div className={`${infosStyles.infos} container`}>
         <div
           className="row row-cols-1 row-cols-md-3 justify-content-center"
           style={{ gap: "25px" }}
         >
           {contactUsData?.items?.map((data, index) => (
-            <div
-              className=""
-              key={data?.id}
-              style={{ display: data?.isShow ? "block" : "none" }}
-            >
+            <div className="" key={data?.id}>
               <h1 className="fs-2 mb-3">{data?.title}</h1>
               <p>{data?.description}</p>
               <p style={{ color: "#625DF5" }} className="fw-bold">

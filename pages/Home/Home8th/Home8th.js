@@ -23,87 +23,19 @@ const Home8th = ({ home8thData }) => {
         backgroundRepeat: "no-repeat",
         width: "100%",
         display: home8thData?.isShow ? "block" : "none",
-        padding: "50px 0",
+        padding: "50px 0 130px",
         // backgroundColor: "rgb(226, 246, 254)",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
       }}
     >
       <div className=" container-lg">
         {home8thData?.items?.map((data, index) => (
           <div
             key={index}
-            className="row row-cols-1 row-cols-md-1 row-cols-lg-2 align-items-center p-3"
+            // className="row row-cols-1 row-cols-md-1 row-cols-lg-2 align-items-center "
+            className="d-flex flex-column flex-lg-row align-items-center  gap-5"
           >
-            {/* <div
-              className="position-relative mb-lg-0 d-lg-block d-none"
-              data-aos="zoom-out-up"
-            >
-              <div
-                className={`${home8thStyles.dotImage} position-absolute w-100 `}
-              >
-                <Image
-                  src={data.image5}
-                  alt=""
-                  height={200}
-                  width={200}
-                  objectFit="cover"
-                  layout="responsive"
-                  className=" img-fluid"
-                />
-              </div>
-              <div
-                className={`${home8thStyles.middleImage} position-absolute w-100 `}
-              >
-                <Image
-                  src={data.image1}
-                  alt=""
-                  height={300}
-                  width={300}
-                  objectFit="cover"
-                  layout="responsive"
-                  className=" img-fluid"
-                />
-              </div>
-              <div
-                className={`${home8thStyles.bottomImage} position-absolute w-100 `}
-              >
-                <Image
-                  src={data.image2}
-                  alt=""
-                  height={300}
-                  width={300}
-                  objectFit="cover"
-                  layout="responsive"
-                  className=" img-fluid"
-                />
-              </div>
-              <div
-                className={`${home8thStyles.topImage} position-absolute w-100 `}
-              >
-                <Image
-                  src={data.image3}
-                  alt=""
-                  height={300}
-                  width={300}
-                  objectFit="cover"
-                  layout="responsive"
-                  className=" img-fluid"
-                />
-              </div>
-              <div
-                className={`${home8thStyles.checkImage} position-absolute w-100`}
-              >
-                <Image
-                  src={data.image4}
-                  alt=""
-                  height={50}
-                  width={50}
-                  objectFit="cover"
-                  layout="responsive"
-                />
-              </div>
-            </div> */}
-            <div data-aos="zoom-in-right">
+            <div data-aos="zoom-in-right" className="w-100 w-lg-50">
               <Image
                 key={data?.id}
                 src={communicationImage}
@@ -112,13 +44,13 @@ const Home8th = ({ home8thData }) => {
                 width={500}
                 height={450}
                 layout="responsive"
-                className="rounded-5 p-2"
+                className="rounded-5 "
               />
             </div>
 
-            <div data-aos="zoom-in-right">
-              <h1 className="fs-2 fw-bold mt-3">{data.title}</h1>
-              <p className="fs-6" style={{ textAlign: "justify" }}>
+            <div data-aos="zoom-in-right" className="w-100 w-lg-50">
+              <h1 className="fw-bold mt-3 mb-3">{data.title}</h1>
+              <p className="fs-6 mb-4" style={{ textAlign: "justify" }}>
                 {data.titleDescription}
               </p>
               <div>

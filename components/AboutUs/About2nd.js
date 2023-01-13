@@ -2,21 +2,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "react-bootstrap";
 import about2ndStyles from "./About2nd.module.css";
 
-const Home2nd = ({ about2ndData }) => {
-  console.log(about2ndData);
+const About2nd = ({ about2ndData }) => {
   return (
     <section
       style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-        padding: "50px 0",
+        // backgroundImage:
+        //   "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+        padding: "50px 0 130px",
       }}
     >
       <div
         className="container-lg mx-auto"
-        style={{
-          fontFamily: "Poppins",
-        }}
+        style={
+          {
+            // fontFamily: "Poppins",
+          }
+        }
       >
         {about2ndData?.titleData?.map((data, index) => (
           <div key={data?.id}>
@@ -77,4 +78,4 @@ const Home2nd = ({ about2ndData }) => {
   );
 };
 
-export default Home2nd;
+export default About2nd;

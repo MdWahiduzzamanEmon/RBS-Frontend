@@ -17,7 +17,7 @@ const ContactUs = () => {
     });
   }, []);
   return (
-    <section className="" style={{ color: "rgb(23, 52, 101)" }}>
+    <section style={{ color: "rgb(23, 52, 101)", fontFamily: "Ubuntu" }}>
       <ContactBanner />
       <ContactInfos contactUsData={contactUsData} />
       <ContactForm contactUsForm={contactUsForm} />

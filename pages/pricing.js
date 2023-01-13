@@ -20,13 +20,18 @@ const PricingMain = () => {
   }, []);
 
   return (
-    <>
+    <section
+      style={{
+        background:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+      }}
+    >
       {/* <PricingBanner /> */}
       <Pricing pricingData={pricingData} />
       {/*//**************Comparing softwares******************/}
       <CompareBoard />
       {/* <Policy policyData={policyData} /> */}
-    </>
+    </section>
   );
 };
 

@@ -17,7 +17,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   overflow: hidden;
   color: #000;
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
 }
 
 .testimonialWrapper::before {
@@ -35,7 +35,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   overflow: hidden;
   /* color: #fff; */
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
 }
 
 /* background: #173465; */

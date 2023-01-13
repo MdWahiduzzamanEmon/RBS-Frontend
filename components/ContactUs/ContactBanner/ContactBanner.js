@@ -14,7 +14,7 @@ const ContactBanner = () => {
           backgroundImage: `url(${bannerCommon2.src})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          fontFamily: "Poppins",
+          // fontFamily: "Poppins",
         }}
       >
         <div className="text-white d-flex justify-content-center align-items-center py-5">

@@ -7,10 +7,11 @@
 
 html,
 body {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "open sans", sans-serif;
+  box-sizing: border-box; */
+  /* font-family: "open sans", sans-serif; */
+  /* font-family: "Ubuntu", sans-serif; */
   background-color: #000;
   /* background-image: linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% ) */
 }
@@ -20,7 +21,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Fjalla One", sans-serif;
+  /* font-family: "Fjalla One", sans-serif; */
+  /* font-family: "Ubuntu", sans-serif; */
 }
 /* scroll bar desigin */
 /* ::-webkit-scrollbar{

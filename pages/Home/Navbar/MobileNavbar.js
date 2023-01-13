@@ -22,7 +22,7 @@ const MobileNavbar = ({
         position: "fixed",
         width: "100vw",
         zIndex: "20000",
-        fontFamily: "open sans",
+        // fontFamily: "open sans",
       }}
     >
       <div className={`${styles.mobileNavbarContainer}`}>
@@ -33,7 +33,7 @@ const MobileNavbar = ({
               style={{
                 fontWeight: "700",
                 color: "#fff",
-                fontFamily: "open sans",
+                // fontFamily: "open sans",
                 // color: "#173465",
               }}
             >
@@ -73,7 +73,10 @@ const MobileNavbar = ({
         <div>
           <Accordion
             defaultActiveKey="0"
-            style={{ zIndex: "2000", fontFamily: "open sans" }}
+            style={{
+              zIndex: "2000",
+              // fontFamily: "open sans"
+            }}
             className={`${styles.accordionParent}`}
           >
             {navLinks.map((navLink) => (
@@ -88,7 +91,7 @@ const MobileNavbar = ({
                       onClick={(e) => {
                         openNavElements(e);
                       }}
-                      style={{ fontFamily: "open sans" }}
+                      // style={{ fontFamily: "open sans" }}
                     >
                       {navLink.text}
                     </Accordion.Header>
@@ -98,7 +101,7 @@ const MobileNavbar = ({
                     onClick={(e) => {
                       openNavElements(e);
                     }}
-                    style={{ fontFamily: "open sans" }}
+                    // style={{ fontFamily: "open sans" }}
                   >
                     {navLink.text}
                   </Accordion.Header>

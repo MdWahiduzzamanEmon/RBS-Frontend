@@ -25,8 +25,9 @@ const AboutUs = () => {
   return (
     <div
       style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
         color: "rgb(23, 52, 101)",
-        fontFamily: "Poppins",
       }}
     >
       <AboutBanner></AboutBanner>

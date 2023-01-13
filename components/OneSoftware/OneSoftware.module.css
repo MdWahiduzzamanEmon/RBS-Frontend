@@ -1,6 +1,7 @@
 .container {
   position: relative;
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
+  font-family: "Ubuntu", sans-serif;
 }
 
 .imageContainer {
@@ -73,7 +74,7 @@
 
 .highlightedTitleColored1,
 .highlightedTitleColored2 {
-  font-family: "fjalla one", sans-serif;
+  /* font-family: "fjalla one", sans-serif; */
   /* font-family: "Kristi", cursive; */
   color: #0f0;
   font-size: 30px;
@@ -83,8 +84,7 @@
 .highlightedTitleColored3,
 .highlightedTitleColored4,
 .highlightedTitleColored5 {
-  font-family: "fjalla one", sans-serif;
-  /* font-family: "Kristi", cursive; */
+  /* font-family: "fjalla one", sans-serif; */
   color: #0f0;
   font-size: 30px;
   padding-left: 5px;
@@ -113,7 +113,7 @@
 }
 
 .smallBannerButton {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   width: 200px;
   /* height: 100px; */
   background: rgb(23, 52, 101);

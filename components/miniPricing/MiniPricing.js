@@ -23,11 +23,14 @@ const MiniPricing = ({ miniPricingData }) => {
       style={{
         // backgroundImage:
         //   "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-        padding: "50px 0",
+        padding: "50px 0 130px",
       }}
     >
       <div className={`${styles.miniPricingContainer} container`}>
-        <h1 className={`${styles.miniPricingTitle}`} data-aos="fade-down-right">
+        <h1
+          className={`${styles.miniPricingTitle} mb-5`}
+          data-aos="fade-down-right"
+        >
           {miniPricingData.title}
         </h1>
         <div className={`${styles.planContainer}`} data-aos="fade-up-right">
@@ -93,16 +96,6 @@ const MiniPricing = ({ miniPricingData }) => {
                   <CButton> Contact us</CButton>
                 </Link>
               )}
-              {/* <Link href="/pricing">
-                <p
-                  className={`${styles.mPricingLink}`}
-                  style={{ cursor: "pointer", color: "#5a5ad5" }}
-                > */}
-              {/* <small> */}
-              {/* Learn more <FaChevronRight fontSize="10px" /> */}
-              {/* </small> */}
-              {/* </p>
-              </Link> */}
             </div>
           ))}
         </div>

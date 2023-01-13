@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
 
 const TermsAndConditions = ({ termsData }) => {
   return (
-    <section style={{ fontFamily: "Poppins" }}>
+    <section style={{ fontFamily: "Ubuntu" }}>
       <div className={`${styles.termsWrapper} container-xl`}>
         {/* terms */}
         <div>

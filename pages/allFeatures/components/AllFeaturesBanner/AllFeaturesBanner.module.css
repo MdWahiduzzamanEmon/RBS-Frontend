@@ -1,6 +1,6 @@
 .banner {
   background: #173465;
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   height: 100%;
   max-height: 1000px;
   margin-bottom: 100px;
@@ -10,7 +10,7 @@
 .bannerContainer {
   padding-top: 150px;
   position: relative;
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
 }
 
 /* banner title and description */
@@ -25,13 +25,13 @@
   text-align: center;
 }
 .bannerDescription {
-  font-family: "open sans", sans-serif;
+  /* font-family: "open sans", sans-serif; */
   color: #fff;
   font-size: clamp(18px, 5vw, 25px);
-  /* font-weight: 300; */
-  font-weight: 500;
+  font-weight: 300;
+  /* font-weight: 400; */
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 /* banner buttons container */

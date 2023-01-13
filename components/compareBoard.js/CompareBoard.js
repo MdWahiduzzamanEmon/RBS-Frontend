@@ -1606,7 +1606,7 @@ const CompareBoard = () => {
   return (
     <section
       style={{
-        background: "rgb(226, 246, 254)",
+        // background: "rgb(226, 246, 254)",
         padding: "50px 0",
       }}
     >

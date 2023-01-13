@@ -99,52 +99,43 @@ export const footerDemoData = {
       lists: [
         {
           item: "Intuitive Dashboard",
-          url: "/features#dashboard",
+          name: "Dashboard",
         },
         {
-          url: "/",
           item: "Kanban Board",
-          url: "/features#kanban",
+          name: "Kanban-Board",
         },
         {
-          url: "/",
           item: "Gantt Chart",
-          url: "/features#gantt",
+          name: "Gantt-Chart",
         },
         {
-          url: "/",
           item: "Calendar view ",
-          url: "/features#calendar",
+          name: "Calendar-View",
         },
         {
-          url: "/",
           item: "Project Management",
-          url: "/features#projectManagement",
+          name: "Project-Management",
         },
         {
-          url: "/",
           item: "Task  Management",
-          url: "/features#taskManagement",
+          name: "Task-Management",
         },
         {
-          url: "/",
           item: "Document Management",
-          url: "/features#documentManagement",
+          name: "Document-Management",
         },
         {
-          url: "/",
           item: "Budget Management ",
-          url: "/features#budgetManagement",
+          name: "Budget-Management",
         },
         {
-          url: "/",
           item: "Project & Task Discussion",
-          url: "/features#projectTaskDiscussion",
+          name: "Project-Task-Discussion",
         },
         {
-          url: "/",
           item: "Live Communication",
-          url: "/features#liveCommunication",
+          name: "Live-Chat-Communication",
         },
         // {
         //   url: "/",

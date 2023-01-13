@@ -351,10 +351,11 @@ const NavBar = () => {
   return (
     <>
       {width > breakpoint ? (
-        <div>
+        <div className="">
           <div
             style={{
               background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%)",
+              fontFamily: "Ubuntu",
             }}
           >
             {/* ${
@@ -372,7 +373,8 @@ const NavBar = () => {
             >
               <div
                 className="container-lg d-flex align-items-center justify-content-lg-between"
-                style={{ paddingLeft: "0px", paddingRight: "0px" }}
+                style={{ height: "100%" }}
+                // style={{ paddingLeft: "0px", paddingRight: "0px" }}
               >
                 <div
                   className={`${navStyles.navbarBrand}`}
