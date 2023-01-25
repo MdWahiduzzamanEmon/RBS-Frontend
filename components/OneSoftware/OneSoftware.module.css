@@ -173,7 +173,7 @@
   }
 
   .submitContainer {
-    width: 400px;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: center;

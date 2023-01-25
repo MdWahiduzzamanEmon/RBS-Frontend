@@ -117,12 +117,13 @@ const SingleFeature = ({ feature }) => {
           </div>
           {/* accordion with image ---tutorials steps */}
           <div
-          // style={{
-          //   backgroundImage:
-          //     "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
-          // }}
+            // style={{
+            //   backgroundImage:
+            //     "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+            // }}
+            className="container-xl"
           >
-            <div className={`${styles.tutorialsContainer} container-lg`}>
+            <div className={`${styles.tutorialsContainer}`}>
               <h3 className={`${styles.tutorialsContainerTitle}`}>
                 {item.tutorials.title}
               </h3>
