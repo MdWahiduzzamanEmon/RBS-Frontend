@@ -1,45 +1,179 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/home7thapi";
-exports.ids = ["pages/api/home7thapi"];
+exports.id = 9762;
+exports.ids = [9762];
 exports.modules = {
 
-/***/ "@fortawesome/free-solid-svg-icons":
-/*!****************************************************!*\
-  !*** external "@fortawesome/free-solid-svg-icons" ***!
-  \****************************************************/
+/***/ 4563:
 /***/ ((module) => {
 
 module.exports = import("@fortawesome/free-solid-svg-icons");;
 
 /***/ }),
 
-/***/ "(api)/./pages/api/home7thapi.js":
-/*!*********************************!*\
-  !*** ./pages/api/home7thapi.js ***!
-  \*********************************/
+/***/ 6837:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var _public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/JSON/Home7th/Home7th */ \"(api)/./public/JSON/Home7th/Home7th.js\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__]);\n_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\nfunction handler(req, res) {\n  res.status(200).json(_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__.home7thDemoData);\n}\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvaG9tZTd0aGFwaS5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBRWUsU0FBU0MsT0FBVCxDQUFpQkMsR0FBakIsRUFBcUJDLEdBQXJCLEVBQXlCO0VBQ3BDQSxHQUFHLENBQUNDLE1BQUosQ0FBVyxHQUFYLEVBQWdCQyxJQUFoQixDQUFxQkwseUVBQXJCO0FBQ0gsQyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wYWdlcy9hcGkvaG9tZTd0aGFwaS5qcz9kYTY4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGhvbWU3dGhEZW1vRGF0YSB9IGZyb20gXCIuLi8uLi9wdWJsaWMvSlNPTi9Ib21lN3RoL0hvbWU3dGhcIjtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gaGFuZGxlcihyZXEscmVzKXtcbiAgICByZXMuc3RhdHVzKDIwMCkuanNvbihob21lN3RoRGVtb0RhdGEpXG59Il0sIm5hbWVzIjpbImhvbWU3dGhEZW1vRGF0YSIsImhhbmRsZXIiLCJyZXEiLCJyZXMiLCJzdGF0dXMiLCJqc29uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/home7thapi.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ handler)
+/* harmony export */ });
+/* harmony import */ var _public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5480);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__]);
+_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+function handler(req, res) {
+  res.status(200).json(_public_JSON_Home7th_Home7th__WEBPACK_IMPORTED_MODULE_0__/* .home7thDemoData */ .k);
+}
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "(api)/./public/JSON/Home7th/Home7th.js":
-/*!****************************************!*\
-  !*** ./public/JSON/Home7th/Home7th.js ***!
-  \****************************************/
+/***/ 5480:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home7thDemoData\": () => (/* binding */ home7thDemoData)\n/* harmony export */ });\n/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ \"@fortawesome/free-solid-svg-icons\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__]);\n_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\nconst home7thDemoData = {\n  id: 1,\n  isShow: true,\n  titleData: [{\n    id: 1,\n    isShow: true,\n    title: \"A platform designed for a new style of working\",\n    description: \"What you would like to manage with our platform\"\n  }],\n  items: [{\n    id: 1,\n    isShow: true,\n    title: \"Engineering\",\n    eventKey: \"engineering-team\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faHouse,\n    color: \"#6C6CFF\",\n    pics: \"/engineering.jpg\",\n    description: {\n      id: 1,\n      title: \"There is a growing need for better management of projects within the disciplines of engineering, business and technology, and this software is a direct response to that need. With an emphasis on practical application, this software addresses the final objective of project management: to integrate and integrate the interests, resources and efforts of many interested parties to achieve the general goals of the project.\"\n    }\n  }, {\n    id: 2,\n    isShow: true,\n    title: \"Construction \",\n    eventKey: \"real-state\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faCode,\n    color: \"#00C875\",\n    pics: \"/construction2.png\",\n    description: {\n      id: 1,\n      title: \"Construction Project management is a responsible process. The project management process connects all other project activities together and creates the harmony in the project. Therefore, the project management team should have a detailed understanding on all the project management processes and this software that can make use for each project management process.\"\n    }\n  }, {\n    id: 3,\n    isShow: true,\n    title: \"IT\",\n    eventKey: \"it\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faTowerCell,\n    color: \"green\",\n    pics: \"/it.png\",\n    description: {\n      id: 1,\n      title: \"The IT Project management is one of the critical processes of any project. This is due to the fact that project management is the core process that connects all other project activities and processes together. When it comes to the activities of project management, there are plenty. However, these plenty of project management activities can be categorized into This software.\"\n    }\n  }, {\n    id: 4,\n    isShow: true,\n    title: \"Telecommunication\",\n    eventKey: \"telecommunication\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faTowerCell,\n    color: \"green\",\n    pics: \"/telecommunication.png\",\n    description: {\n      id: 1,\n      title: \"Any business, large or small, needs to make use of project management software if they are to operate at the highest efficiency possible. In the telecoms industry, the amount of infrastructure and software used in day-to-day operations makes accurate management even more crucial using telecom project management software to get Increased productivity, Better control and visibility and Reduced Cost of Error.\"\n    }\n  }, {\n    id: 5,\n    isShow: true,\n    title: \"Sales & Marketing\",\n    eventKey: \"sales-marketing\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faBullhorn,\n    color: \"#00D2D2\",\n    pics: \"/sales-marketing.png\",\n    description: {\n      id: 1,\n      title: \"This software is the perfect solution to make the planning and execution of specific tasks carried out by a marketing department to ensure that a marketing campaign's goal is successfully reached. It entails employing different skills, tools, and expertise to ensure that finances, sales, and user experience are on point.\"\n    },\n    secondaryDescription: {\n      id: 1,\n      title: \" This software helps marketing teams communicate effectively from start to finish. This software will help marketing teams make use of communication to ensure team members keep in touch and communicate anytime. Communication is a key feature of successful marketing campaigns\"\n    }\n  }, {\n    id: 6,\n    isShow: true,\n    title: \"Others\",\n    eventKey: \"others\",\n    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faBullhorn,\n    color: \"#00D2D2\",\n    pics: \"/hr.jpg\",\n    description: {\n      id: 1,\n      title: \"Vitlous is also perfect for…….\",\n      items: [{\n        id: 1,\n        title: \"Creative & Design\"\n      }, {\n        id: 2,\n        title: \"Architects\"\n      }, {\n        id: 3,\n        title: \"Consultants\"\n      }, {\n        id: 4,\n        title: \"Agencies\"\n      }, {\n        id: 5,\n        title: \"HR\"\n      }, {\n        id: 6,\n        title: \"Product\"\n      }, {\n        id: 7,\n        title: \"Operations\"\n      }]\n    },\n    secondaryDescription: {\n      id: 1,\n      title: \"This software can be used for any project and this software is the perfect solution to make…..\",\n      items: [{\n        id: 1,\n        title: \"Project Initiation\"\n      }, {\n        id: 2,\n        title: \"Project Planning\"\n      }, {\n        id: 3,\n        title: \"Project Execution\"\n      }, {\n        id: 4,\n        title: \"Project Control and Validation\"\n      }, {\n        id: 5,\n        title: \"Project Closeout and Evaluation\"\n      }]\n    }\n  }]\n};\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvSlNPTi9Ib21lN3RoL0hvbWU3dGguanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTtBQU9PLE1BQU1JLGVBQWUsR0FBRztFQUM3QkMsRUFBRSxFQUFFLENBRHlCO0VBRTdCQyxNQUFNLEVBQUUsSUFGcUI7RUFHN0JDLFNBQVMsRUFBRSxDQUNUO0lBQ0VGLEVBQUUsRUFBRSxDQUROO0lBRUVDLE1BQU0sRUFBRSxJQUZWO0lBR0VFLEtBQUssRUFBRSxnREFIVDtJQUlFQyxXQUFXLEVBQUU7RUFKZixDQURTLENBSGtCO0VBVzdCQyxLQUFLLEVBQUUsQ0FDTDtJQUNFTCxFQUFFLEVBQUUsQ0FETjtJQUVFQyxNQUFNLEVBQUUsSUFGVjtJQUdFRSxLQUFLLEVBQUUsYUFIVDtJQUlFRyxRQUFRLEVBQUUsa0JBSlo7SUFLRUMsSUFBSSxFQUFFVixzRUFMUjtJQU1FVyxLQUFLLEVBQUUsU0FOVDtJQU9FQyxJQUFJLEVBQUUsa0JBUFI7SUFRRUwsV0FBVyxFQUFFO01BQ1hKLEVBQUUsRUFBRSxDQURPO01BRVhHLEtBQUssRUFDSDtJQUhTO0VBUmYsQ0FESyxFQWVMO0lBQ0VILEVBQUUsRUFBRSxDQUROO0lBRUVDLE1BQU0sRUFBRSxJQUZWO0lBR0VFLEtBQUssRUFBRSxlQUhUO0lBSUVHLFFBQVEsRUFBRSxZQUpaO0lBS0VDLElBQUksRUFBRVgscUVBTFI7SUFNRVksS0FBSyxFQUFFLFNBTlQ7SUFPRUMsSUFBSSxFQUFFLG9CQVBSO0lBUUVMLFdBQVcsRUFBRTtNQUNYSixFQUFFLEVBQUUsQ0FETztNQUVYRyxLQUFLLEVBQ0g7SUFIUztFQVJmLENBZkssRUE2Qkw7SUFDRUgsRUFBRSxFQUFFLENBRE47SUFFRUMsTUFBTSxFQUFFLElBRlY7SUFHRUUsS0FBSyxFQUFFLElBSFQ7SUFJRUcsUUFBUSxFQUFFLElBSlo7SUFLRUMsSUFBSSxFQUFFVCwwRUFMUjtJQU1FVSxLQUFLLEVBQUUsT0FOVDtJQU9FQyxJQUFJLEVBQUUsU0FQUjtJQVFFTCxXQUFXLEVBQUU7TUFDWEosRUFBRSxFQUFFLENBRE87TUFFWEcsS0FBSyxFQUNIO0lBSFM7RUFSZixDQTdCSyxFQTJDTDtJQUNFSCxFQUFFLEVBQUUsQ0FETjtJQUVFQyxNQUFNLEVBQUUsSUFGVjtJQUdFRSxLQUFLLEVBQUUsbUJBSFQ7SUFJRUcsUUFBUSxFQUFFLG1CQUpaO0lBS0VDLElBQUksRUFBRVQsMEVBTFI7SUFNRVUsS0FBSyxFQUFFLE9BTlQ7SUFPRUMsSUFBSSxFQUFFLHdCQVBSO0lBUUVMLFdBQVcsRUFBRTtNQUNYSixFQUFFLEVBQUUsQ0FETztNQUVYRyxLQUFLLEVBQ0g7SUFIUztFQVJmLENBM0NLLEVBeURMO0lBQ0VILEVBQUUsRUFBRSxDQUROO0lBRUVDLE1BQU0sRUFBRSxJQUZWO0lBR0VFLEtBQUssRUFBRSxtQkFIVDtJQUlFRyxRQUFRLEVBQUUsaUJBSlo7SUFLRUMsSUFBSSxFQUFFWix5RUFMUjtJQU1FYSxLQUFLLEVBQUUsU0FOVDtJQU9FQyxJQUFJLEVBQUUsc0JBUFI7SUFRRUwsV0FBVyxFQUFFO01BQ1hKLEVBQUUsRUFBRSxDQURPO01BRVhHLEtBQUssRUFDSDtJQUhTLENBUmY7SUFjRU8sb0JBQW9CLEVBQUU7TUFDcEJWLEVBQUUsRUFBRSxDQURnQjtNQUVwQkcsS0FBSyxFQUNIO0lBSGtCO0VBZHhCLENBekRLLEVBNkVMO0lBQ0VILEVBQUUsRUFBRSxDQUROO0lBRUVDLE1BQU0sRUFBRSxJQUZWO0lBR0VFLEtBQUssRUFBRSxRQUhUO0lBSUVHLFFBQVEsRUFBRSxRQUpaO0lBS0VDLElBQUksRUFBRVoseUVBTFI7SUFNRWEsS0FBSyxFQUFFLFNBTlQ7SUFPRUMsSUFBSSxFQUFFLFNBUFI7SUFRRUwsV0FBVyxFQUFFO01BQ1hKLEVBQUUsRUFBRSxDQURPO01BRVhHLEtBQUssRUFBRSxnQ0FGSTtNQUdYRSxLQUFLLEVBQUUsQ0FDTDtRQUNFTCxFQUFFLEVBQUUsQ0FETjtRQUVFRyxLQUFLLEVBQUU7TUFGVCxDQURLLEVBS0w7UUFDRUgsRUFBRSxFQUFFLENBRE47UUFFRUcsS0FBSyxFQUFFO01BRlQsQ0FMSyxFQVNMO1FBQ0VILEVBQUUsRUFBRSxDQUROO1FBRUVHLEtBQUssRUFBRTtNQUZULENBVEssRUFhTDtRQUNFSCxFQUFFLEVBQUUsQ0FETjtRQUVFRyxLQUFLLEVBQUU7TUFGVCxDQWJLLEVBaUJMO1FBQ0VILEVBQUUsRUFBRSxDQUROO1FBRUVHLEtBQUssRUFBRTtNQUZULENBakJLLEVBcUJMO1FBQ0VILEVBQUUsRUFBRSxDQUROO1FBRUVHLEtBQUssRUFBRTtNQUZULENBckJLLEVBeUJMO1FBQ0VILEVBQUUsRUFBRSxDQUROO1FBRUVHLEtBQUssRUFBRTtNQUZULENBekJLO0lBSEksQ0FSZjtJQTJDRU8sb0JBQW9CLEVBQUU7TUFDcEJWLEVBQUUsRUFBRSxDQURnQjtNQUVwQkcsS0FBSyxFQUNILGdHQUhrQjtNQUlwQkUsS0FBSyxFQUFFLENBQ0w7UUFDRUwsRUFBRSxFQUFFLENBRE47UUFFRUcsS0FBSyxFQUFFO01BRlQsQ0FESyxFQUtMO1FBQ0VILEVBQUUsRUFBRSxDQUROO1FBRUVHLEtBQUssRUFBRTtNQUZULENBTEssRUFTTDtRQUNFSCxFQUFFLEVBQUUsQ0FETjtRQUVFRyxLQUFLLEVBQUU7TUFGVCxDQVRLLEVBYUw7UUFDRUgsRUFBRSxFQUFFLENBRE47UUFFRUcsS0FBSyxFQUFFO01BRlQsQ0FiSyxFQWlCTDtRQUNFSCxFQUFFLEVBQUUsQ0FETjtRQUVFRyxLQUFLLEVBQUU7TUFGVCxDQWpCSztJQUphO0VBM0N4QixDQTdFSztBQVhzQixDQUF4QixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9KU09OL0hvbWU3dGgvSG9tZTd0aC5qcz9iYTlhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIGZhQnVsbGhvcm4sXG4gIGZhQ29kZSxcbiAgZmFIb3VzZSxcbiAgZmFUb3dlckNlbGwsXG59IGZyb20gXCJAZm9ydGF3ZXNvbWUvZnJlZS1zb2xpZC1zdmctaWNvbnNcIjtcblxuZXhwb3J0IGNvbnN0IGhvbWU3dGhEZW1vRGF0YSA9IHtcbiAgaWQ6IDEsXG4gIGlzU2hvdzogdHJ1ZSxcbiAgdGl0bGVEYXRhOiBbXG4gICAge1xuICAgICAgaWQ6IDEsXG4gICAgICBpc1Nob3c6IHRydWUsXG4gICAgICB0aXRsZTogXCJBIHBsYXRmb3JtIGRlc2lnbmVkIGZvciBhIG5ldyBzdHlsZSBvZiB3b3JraW5nXCIsXG4gICAgICBkZXNjcmlwdGlvbjogXCJXaGF0IHlvdSB3b3VsZCBsaWtlIHRvIG1hbmFnZSB3aXRoIG91ciBwbGF0Zm9ybVwiLFxuICAgIH0sXG4gIF0sXG4gIGl0ZW1zOiBbXG4gICAge1xuICAgICAgaWQ6IDEsXG4gICAgICBpc1Nob3c6IHRydWUsXG4gICAgICB0aXRsZTogXCJFbmdpbmVlcmluZ1wiLFxuICAgICAgZXZlbnRLZXk6IFwiZW5naW5lZXJpbmctdGVhbVwiLFxuICAgICAgaWNvbjogZmFIb3VzZSxcbiAgICAgIGNvbG9yOiBcIiM2QzZDRkZcIixcbiAgICAgIHBpY3M6IFwiL2VuZ2luZWVyaW5nLmpwZ1wiLFxuICAgICAgZGVzY3JpcHRpb246IHtcbiAgICAgICAgaWQ6IDEsXG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgIFwiVGhlcmUgaXMgYSBncm93aW5nIG5lZWQgZm9yIGJldHRlciBtYW5hZ2VtZW50IG9mIHByb2plY3RzIHdpdGhpbiB0aGUgZGlzY2lwbGluZXMgb2YgZW5naW5lZXJpbmcsIGJ1c2luZXNzIGFuZCB0ZWNobm9sb2d5LCBhbmQgdGhpcyBzb2Z0d2FyZSBpcyBhIGRpcmVjdCByZXNwb25zZSB0byB0aGF0IG5lZWQuIFdpdGggYW4gZW1waGFzaXMgb24gcHJhY3RpY2FsIGFwcGxpY2F0aW9uLCB0aGlzIHNvZnR3YXJlIGFkZHJlc3NlcyB0aGUgZmluYWwgb2JqZWN0aXZlIG9mIHByb2plY3QgbWFuYWdlbWVudDogdG8gaW50ZWdyYXRlIGFuZCBpbnRlZ3JhdGUgdGhlIGludGVyZXN0cywgcmVzb3VyY2VzIGFuZCBlZmZvcnRzIG9mIG1hbnkgaW50ZXJlc3RlZCBwYXJ0aWVzIHRvIGFjaGlldmUgdGhlIGdlbmVyYWwgZ29hbHMgb2YgdGhlIHByb2plY3QuXCIsXG4gICAgICB9LFxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDIsXG4gICAgICBpc1Nob3c6IHRydWUsXG4gICAgICB0aXRsZTogXCJDb25zdHJ1Y3Rpb24gXCIsXG4gICAgICBldmVudEtleTogXCJyZWFsLXN0YXRlXCIsXG4gICAgICBpY29uOiBmYUNvZGUsXG4gICAgICBjb2xvcjogXCIjMDBDODc1XCIsXG4gICAgICBwaWNzOiBcIi9jb25zdHJ1Y3Rpb24yLnBuZ1wiLFxuICAgICAgZGVzY3JpcHRpb246IHtcbiAgICAgICAgaWQ6IDEsXG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgIFwiQ29uc3RydWN0aW9uIFByb2plY3QgbWFuYWdlbWVudCBpcyBhIHJlc3BvbnNpYmxlIHByb2Nlc3MuIFRoZSBwcm9qZWN0IG1hbmFnZW1lbnQgcHJvY2VzcyBjb25uZWN0cyBhbGwgb3RoZXIgcHJvamVjdCBhY3Rpdml0aWVzIHRvZ2V0aGVyIGFuZCBjcmVhdGVzIHRoZSBoYXJtb255IGluIHRoZSBwcm9qZWN0LiBUaGVyZWZvcmUsIHRoZSBwcm9qZWN0IG1hbmFnZW1lbnQgdGVhbSBzaG91bGQgaGF2ZSBhIGRldGFpbGVkIHVuZGVyc3RhbmRpbmcgb24gYWxsIHRoZSBwcm9qZWN0IG1hbmFnZW1lbnQgcHJvY2Vzc2VzIGFuZCB0aGlzIHNvZnR3YXJlIHRoYXQgY2FuIG1ha2UgdXNlIGZvciBlYWNoIHByb2plY3QgbWFuYWdlbWVudCBwcm9jZXNzLlwiLFxuICAgICAgfSxcbiAgICB9LFxuICAgIHtcbiAgICAgIGlkOiAzLFxuICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgdGl0bGU6IFwiSVRcIixcbiAgICAgIGV2ZW50S2V5OiBcIml0XCIsXG4gICAgICBpY29uOiBmYVRvd2VyQ2VsbCxcbiAgICAgIGNvbG9yOiBcImdyZWVuXCIsXG4gICAgICBwaWNzOiBcIi9pdC5wbmdcIixcbiAgICAgIGRlc2NyaXB0aW9uOiB7XG4gICAgICAgIGlkOiAxLFxuICAgICAgICB0aXRsZTpcbiAgICAgICAgICBcIlRoZSBJVCBQcm9qZWN0IG1hbmFnZW1lbnQgaXMgb25lIG9mIHRoZSBjcml0aWNhbCBwcm9jZXNzZXMgb2YgYW55IHByb2plY3QuIFRoaXMgaXMgZHVlIHRvIHRoZSBmYWN0IHRoYXQgcHJvamVjdCBtYW5hZ2VtZW50IGlzIHRoZSBjb3JlIHByb2Nlc3MgdGhhdCBjb25uZWN0cyBhbGwgb3RoZXIgcHJvamVjdCBhY3Rpdml0aWVzIGFuZCBwcm9jZXNzZXMgdG9nZXRoZXIuIFdoZW4gaXQgY29tZXMgdG8gdGhlIGFjdGl2aXRpZXMgb2YgcHJvamVjdCBtYW5hZ2VtZW50LCB0aGVyZSBhcmUgcGxlbnR5LiBIb3dldmVyLCB0aGVzZSBwbGVudHkgb2YgcHJvamVjdCBtYW5hZ2VtZW50IGFjdGl2aXRpZXMgY2FuIGJlIGNhdGVnb3JpemVkIGludG8gVGhpcyBzb2Z0d2FyZS5cIixcbiAgICAgIH0sXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogNCxcbiAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgIHRpdGxlOiBcIlRlbGVjb21tdW5pY2F0aW9uXCIsXG4gICAgICBldmVudEtleTogXCJ0ZWxlY29tbXVuaWNhdGlvblwiLFxuICAgICAgaWNvbjogZmFUb3dlckNlbGwsXG4gICAgICBjb2xvcjogXCJncmVlblwiLFxuICAgICAgcGljczogXCIvdGVsZWNvbW11bmljYXRpb24ucG5nXCIsXG4gICAgICBkZXNjcmlwdGlvbjoge1xuICAgICAgICBpZDogMSxcbiAgICAgICAgdGl0bGU6XG4gICAgICAgICAgXCJBbnkgYnVzaW5lc3MsIGxhcmdlIG9yIHNtYWxsLCBuZWVkcyB0byBtYWtlIHVzZSBvZiBwcm9qZWN0IG1hbmFnZW1lbnQgc29mdHdhcmUgaWYgdGhleSBhcmUgdG8gb3BlcmF0ZSBhdCB0aGUgaGlnaGVzdCBlZmZpY2llbmN5IHBvc3NpYmxlLiBJbiB0aGUgdGVsZWNvbXMgaW5kdXN0cnksIHRoZSBhbW91bnQgb2YgaW5mcmFzdHJ1Y3R1cmUgYW5kIHNvZnR3YXJlIHVzZWQgaW4gZGF5LXRvLWRheSBvcGVyYXRpb25zIG1ha2VzIGFjY3VyYXRlIG1hbmFnZW1lbnQgZXZlbiBtb3JlIGNydWNpYWwgdXNpbmcgdGVsZWNvbSBwcm9qZWN0IG1hbmFnZW1lbnQgc29mdHdhcmUgdG8gZ2V0IEluY3JlYXNlZCBwcm9kdWN0aXZpdHksIEJldHRlciBjb250cm9sIGFuZCB2aXNpYmlsaXR5IGFuZCBSZWR1Y2VkIENvc3Qgb2YgRXJyb3IuXCIsXG4gICAgICB9LFxuICAgIH0sXG4gICAge1xuICAgICAgaWQ6IDUsXG4gICAgICBpc1Nob3c6IHRydWUsXG4gICAgICB0aXRsZTogXCJTYWxlcyAmIE1hcmtldGluZ1wiLFxuICAgICAgZXZlbnRLZXk6IFwic2FsZXMtbWFya2V0aW5nXCIsXG4gICAgICBpY29uOiBmYUJ1bGxob3JuLFxuICAgICAgY29sb3I6IFwiIzAwRDJEMlwiLFxuICAgICAgcGljczogXCIvc2FsZXMtbWFya2V0aW5nLnBuZ1wiLFxuICAgICAgZGVzY3JpcHRpb246IHtcbiAgICAgICAgaWQ6IDEsXG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgIFwiVGhpcyBzb2Z0d2FyZSBpcyB0aGUgcGVyZmVjdCBzb2x1dGlvbiB0byBtYWtlIHRoZSBwbGFubmluZyBhbmQgZXhlY3V0aW9uIG9mIHNwZWNpZmljIHRhc2tzIGNhcnJpZWQgb3V0IGJ5IGEgbWFya2V0aW5nIGRlcGFydG1lbnQgdG8gZW5zdXJlIHRoYXQgYSBtYXJrZXRpbmcgY2FtcGFpZ24ncyBnb2FsIGlzIHN1Y2Nlc3NmdWxseSByZWFjaGVkLiBJdCBlbnRhaWxzIGVtcGxveWluZyBkaWZmZXJlbnQgc2tpbGxzLCB0b29scywgYW5kIGV4cGVydGlzZSB0byBlbnN1cmUgdGhhdCBmaW5hbmNlcywgc2FsZXMsIGFuZCB1c2VyIGV4cGVyaWVuY2UgYXJlIG9uIHBvaW50LlwiLFxuICAgICAgfSxcblxuICAgICAgc2Vjb25kYXJ5RGVzY3JpcHRpb246IHtcbiAgICAgICAgaWQ6IDEsXG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgIFwiIFRoaXMgc29mdHdhcmUgaGVscHMgbWFya2V0aW5nIHRlYW1zIGNvbW11bmljYXRlIGVmZmVjdGl2ZWx5IGZyb20gc3RhcnQgdG8gZmluaXNoLiBUaGlzIHNvZnR3YXJlIHdpbGwgaGVscCBtYXJrZXRpbmcgdGVhbXMgbWFrZSB1c2Ugb2YgY29tbXVuaWNhdGlvbiB0byBlbnN1cmUgdGVhbSBtZW1iZXJzIGtlZXAgaW4gdG91Y2ggYW5kIGNvbW11bmljYXRlIGFueXRpbWUuIENvbW11bmljYXRpb24gaXMgYSBrZXkgZmVhdHVyZSBvZiBzdWNjZXNzZnVsIG1hcmtldGluZyBjYW1wYWlnbnNcIixcbiAgICAgIH0sXG4gICAgfSxcbiAgICB7XG4gICAgICBpZDogNixcbiAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgIHRpdGxlOiBcIk90aGVyc1wiLFxuICAgICAgZXZlbnRLZXk6IFwib3RoZXJzXCIsXG4gICAgICBpY29uOiBmYUJ1bGxob3JuLFxuICAgICAgY29sb3I6IFwiIzAwRDJEMlwiLFxuICAgICAgcGljczogXCIvaHIuanBnXCIsXG4gICAgICBkZXNjcmlwdGlvbjoge1xuICAgICAgICBpZDogMSxcbiAgICAgICAgdGl0bGU6IFwiVml0bG91cyBpcyBhbHNvIHBlcmZlY3QgZm9y4oCm4oCmLlwiLFxuICAgICAgICBpdGVtczogW1xuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiAxLFxuICAgICAgICAgICAgdGl0bGU6IFwiQ3JlYXRpdmUgJiBEZXNpZ25cIixcbiAgICAgICAgICB9LFxuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgdGl0bGU6IFwiQXJjaGl0ZWN0c1wiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDMsXG4gICAgICAgICAgICB0aXRsZTogXCJDb25zdWx0YW50c1wiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICB0aXRsZTogXCJBZ2VuY2llc1wiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDUsXG4gICAgICAgICAgICB0aXRsZTogXCJIUlwiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDYsXG4gICAgICAgICAgICB0aXRsZTogXCJQcm9kdWN0XCIsXG4gICAgICAgICAgfSxcbiAgICAgICAgICB7XG4gICAgICAgICAgICBpZDogNyxcbiAgICAgICAgICAgIHRpdGxlOiBcIk9wZXJhdGlvbnNcIixcbiAgICAgICAgICB9LFxuICAgICAgICBdLFxuICAgICAgfSxcblxuICAgICAgc2Vjb25kYXJ5RGVzY3JpcHRpb246IHtcbiAgICAgICAgaWQ6IDEsXG4gICAgICAgIHRpdGxlOlxuICAgICAgICAgIFwiVGhpcyBzb2Z0d2FyZSBjYW4gYmUgdXNlZCBmb3IgYW55IHByb2plY3QgYW5kIHRoaXMgc29mdHdhcmUgaXMgdGhlIHBlcmZlY3Qgc29sdXRpb24gdG8gbWFrZeKApi4uXCIsXG4gICAgICAgIGl0ZW1zOiBbXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDEsXG4gICAgICAgICAgICB0aXRsZTogXCJQcm9qZWN0IEluaXRpYXRpb25cIixcbiAgICAgICAgICB9LFxuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiAyLFxuICAgICAgICAgICAgdGl0bGU6IFwiUHJvamVjdCBQbGFubmluZ1wiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDMsXG4gICAgICAgICAgICB0aXRsZTogXCJQcm9qZWN0IEV4ZWN1dGlvblwiLFxuICAgICAgICAgIH0sXG4gICAgICAgICAge1xuICAgICAgICAgICAgaWQ6IDQsXG4gICAgICAgICAgICB0aXRsZTogXCJQcm9qZWN0IENvbnRyb2wgYW5kIFZhbGlkYXRpb25cIixcbiAgICAgICAgICB9LFxuICAgICAgICAgIHtcbiAgICAgICAgICAgIGlkOiA1LFxuICAgICAgICAgICAgdGl0bGU6IFwiUHJvamVjdCBDbG9zZW91dCBhbmQgRXZhbHVhdGlvblwiLFxuICAgICAgICAgIH0sXG4gICAgICAgIF0sXG4gICAgICB9LFxuICAgIH0sXG4gIF0sXG59O1xuIl0sIm5hbWVzIjpbImZhQnVsbGhvcm4iLCJmYUNvZGUiLCJmYUhvdXNlIiwiZmFUb3dlckNlbGwiLCJob21lN3RoRGVtb0RhdGEiLCJpZCIsImlzU2hvdyIsInRpdGxlRGF0YSIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJpdGVtcyIsImV2ZW50S2V5IiwiaWNvbiIsImNvbG9yIiwicGljcyIsInNlY29uZGFyeURlc2NyaXB0aW9uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/JSON/Home7th/Home7th.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "k": () => (/* binding */ home7thDemoData)
+/* harmony export */ });
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4563);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__]);
+_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+const home7thDemoData = {
+  id: 1,
+  isShow: true,
+  titleData: [{
+    id: 1,
+    isShow: true,
+    title: "A platform designed for a new style of working",
+    description: "What you would like to manage with our platform"
+  }],
+  items: [{
+    id: 1,
+    isShow: true,
+    title: "Engineering",
+    eventKey: "engineering-team",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faHouse,
+    color: "#6C6CFF",
+    pics: "/engineering.jpg",
+    description: {
+      id: 1,
+      title: "There is a growing need for better management of projects within the disciplines of engineering, business and technology, and this software is a direct response to that need. With an emphasis on practical application, this software addresses the final objective of project management: to integrate and integrate the interests, resources and efforts of many interested parties to achieve the general goals of the project."
+    }
+  }, {
+    id: 2,
+    isShow: true,
+    title: "Construction ",
+    eventKey: "real-state",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faCode,
+    color: "#00C875",
+    pics: "/construction2.png",
+    description: {
+      id: 1,
+      title: "Construction Project management is a responsible process. The project management process connects all other project activities together and creates the harmony in the project. Therefore, the project management team should have a detailed understanding on all the project management processes and this software that can make use for each project management process."
+    }
+  }, {
+    id: 3,
+    isShow: true,
+    title: "IT",
+    eventKey: "it",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faTowerCell,
+    color: "green",
+    pics: "/it.png",
+    description: {
+      id: 1,
+      title: "The IT Project management is one of the critical processes of any project. This is due to the fact that project management is the core process that connects all other project activities and processes together. When it comes to the activities of project management, there are plenty. However, these plenty of project management activities can be categorized into This software."
+    }
+  }, {
+    id: 4,
+    isShow: true,
+    title: "Telecommunication",
+    eventKey: "telecommunication",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faTowerCell,
+    color: "green",
+    pics: "/telecommunication.png",
+    description: {
+      id: 1,
+      title: "Any business, large or small, needs to make use of project management software if they are to operate at the highest efficiency possible. In the telecoms industry, the amount of infrastructure and software used in day-to-day operations makes accurate management even more crucial using telecom project management software to get Increased productivity, Better control and visibility and Reduced Cost of Error."
+    }
+  }, {
+    id: 5,
+    isShow: true,
+    title: "Sales & Marketing",
+    eventKey: "sales-marketing",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faBullhorn,
+    color: "#00D2D2",
+    pics: "/sales-marketing.png",
+    description: {
+      id: 1,
+      title: "This software is the perfect solution to make the planning and execution of specific tasks carried out by a marketing department to ensure that a marketing campaign's goal is successfully reached. It entails employing different skills, tools, and expertise to ensure that finances, sales, and user experience are on point."
+    },
+    secondaryDescription: {
+      id: 1,
+      title: " This software helps marketing teams communicate effectively from start to finish. This software will help marketing teams make use of communication to ensure team members keep in touch and communicate anytime. Communication is a key feature of successful marketing campaigns"
+    }
+  }, {
+    id: 6,
+    isShow: true,
+    title: "Others",
+    eventKey: "others",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_0__.faBullhorn,
+    color: "#00D2D2",
+    pics: "/hr.jpg",
+    description: {
+      id: 1,
+      title: "Vitlous is also perfect for…….",
+      items: [{
+        id: 1,
+        title: "Creative & Design"
+      }, {
+        id: 2,
+        title: "Architects"
+      }, {
+        id: 3,
+        title: "Consultants"
+      }, {
+        id: 4,
+        title: "Agencies"
+      }, {
+        id: 5,
+        title: "HR"
+      }, {
+        id: 6,
+        title: "Product"
+      }, {
+        id: 7,
+        title: "Operations"
+      }]
+    },
+    secondaryDescription: {
+      id: 1,
+      title: "This software can be used for any project and this software is the perfect solution to make…..",
+      items: [{
+        id: 1,
+        title: "Project Initiation"
+      }, {
+        id: 2,
+        title: "Project Planning"
+      }, {
+        id: 3,
+        title: "Project Execution"
+      }, {
+        id: 4,
+        title: "Project Control and Validation"
+      }, {
+        id: 5,
+        title: "Project Closeout and Evaluation"
+      }]
+    }
+  }]
+};
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ })
 
@@ -50,7 +184,7 @@ eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/home7thapi.js"));
+var __webpack_exports__ = (__webpack_exec__(6837));
 module.exports = __webpack_exports__;
 
 })();

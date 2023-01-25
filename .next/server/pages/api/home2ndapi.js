@@ -1,345 +1,628 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/home2ndapi";
-exports.ids = ["pages/api/home2ndapi"];
+exports.id = 8412;
+exports.ids = [8412];
 exports.modules = {
 
-/***/ "(api)/./pages/api/home2ndapi.js":
-/*!*********************************!*\
-  !*** ./pages/api/home2ndapi.js ***!
-  \*********************************/
+/***/ 3828:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var _public_JSON_home2ndJson__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/JSON/home2ndJson */ \"(api)/./public/JSON/home2ndJson.js\");\n\nfunction handler(req, res) {\n  res.status(200).json(_public_JSON_home2ndJson__WEBPACK_IMPORTED_MODULE_0__.home2ndJson);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvaG9tZTJuZGFwaS5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFBO0FBRWUsU0FBU0MsT0FBVCxDQUFpQkMsR0FBakIsRUFBc0JDLEdBQXRCLEVBQTJCO0VBQ3hDQSxHQUFHLENBQUNDLE1BQUosQ0FBVyxHQUFYLEVBQWdCQyxJQUFoQixDQUFxQkwsaUVBQXJCO0FBQ0QiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcGFnZXMvYXBpL2hvbWUybmRhcGkuanM/M2JmMSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBob21lMm5kSnNvbiB9IGZyb20gXCIuLi8uLi9wdWJsaWMvSlNPTi9ob21lMm5kSnNvblwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBoYW5kbGVyKHJlcSwgcmVzKSB7XG4gIHJlcy5zdGF0dXMoMjAwKS5qc29uKGhvbWUybmRKc29uKTtcbn1cbiJdLCJuYW1lcyI6WyJob21lMm5kSnNvbiIsImhhbmRsZXIiLCJyZXEiLCJyZXMiLCJzdGF0dXMiLCJqc29uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/home2ndapi.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ handler)
+});
+
+;// CONCATENATED MODULE: ./public/JSON/home2ndJson.js
+const home2ndJson = {
+  id: 1,
+  isShow: true,
+  titleData: {
+    id: 1,
+    isShow: true,
+    titleItems: [{
+      id: 1,
+      isShow: true,
+      title: "Speed Up Your Workflow",
+      titleDescription: "Boost your team's performance, accelerate growth, and enhance customer experience with our software's rich and comprehensive features."
+    }]
+  },
+  cardItem: {
+    id: 1,
+    isShow: true,
+    items: [{
+      id: 1,
+      isShow: true,
+      title: "Agile Methodology",
+      img: __webpack_require__(4714),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 2,
+      isShow: true,
+      title: "Project Management",
+      img: __webpack_require__(2810),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 3,
+      isShow: true,
+      title: "Collaboration",
+      img: __webpack_require__(8559),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 4,
+      isShow: true,
+      title: "Resource Management",
+      img: __webpack_require__(2730),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 5,
+      isShow: true,
+      title: "Time Management",
+      img: __webpack_require__(171),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 6,
+      isShow: true,
+      title: "Plan View",
+      img: __webpack_require__(8561),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 7,
+      isShow: true,
+      title: "Document Management",
+      img: __webpack_require__(1471),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 8,
+      isShow: true,
+      title: "Issue Tracking",
+      img: __webpack_require__(2223),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 9,
+      isShow: true,
+      title: "Budget Management",
+      img: __webpack_require__(1431),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 10,
+      isShow: true,
+      title: "Financial Management",
+      img: __webpack_require__(4034),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 11,
+      isShow: true,
+      title: "Chat Communication",
+      img: __webpack_require__(6418),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 12,
+      isShow: true,
+      title: "informative Dashboard",
+      // title: "Very informative Dashboard",
+      img: __webpack_require__(4025),
+      description: "This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow)."
+    }, {
+      id: 13,
+      isShow: true,
+      title: "Kanban Board",
+      img: __webpack_require__(5601),
+      description: "Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually."
+    }, {
+      id: 14,
+      isShow: true,
+      title: "Gantt Chart",
+      img: __webpack_require__(3163),
+      description: "A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status."
+    }, {
+      id: 15,
+      isShow: true,
+      title: "Calendar view",
+      img: __webpack_require__(1628),
+      description: "It lets a user view and interact with a calendar that they can navigate by month, year, or decade."
+    }, {
+      id: 16,
+      isShow: true,
+      title: "Vendor/Contractor Control Panel",
+      img: __webpack_require__(5173),
+      description: "Organizations use to manage vendors and monitor projects which are developing by them."
+    }, {
+      id: 17,
+      isShow: true,
+      title: "In depth Program Management System",
+      img: __webpack_require__(2810),
+      description: "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly."
+    }, {
+      id: 18,
+      isShow: true,
+      title: "In depth Task  Management System",
+      img: __webpack_require__(2716),
+      description: "That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly."
+    }, // {
+    //   id: 19,
+    //   isShow: true,
+    //   title: "Document Management System",
+    //   img: require("../image/workflowImages/DocumentManagement.png"),
+    //   description:
+    //     "That helps to store, manage, and track electronic documents and electronic images of paper-based information captured.",
+    // },
+    {
+      id: 19,
+      isShow: true,
+      title: "User Role Based Permission ",
+      img: __webpack_require__(3497),
+      description: "Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights."
+    }, {
+      id: 20,
+      isShow: true,
+      title: "Client Control Panel",
+      img: __webpack_require__(5844),
+      description: "Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail."
+    }, {
+      id: 21,
+      isShow: true,
+      title: "Approval Management System",
+      img: __webpack_require__(2569),
+      description: "That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility."
+    }, {
+      id: 22,
+      isShow: true,
+      title: "Project Budget Management System",
+      img: __webpack_require__(1431),
+      description: "A project without a budget is like a car without fuel. creating a project budget and helping those wheels spin will most likely be your full responsibility."
+    }, {
+      id: 23,
+      isShow: true,
+      title: "Budget & Cost Comparison",
+      img: __webpack_require__(4220),
+      description: "It will help you to monitor your expense in regard to budget that will make direct impact to make maximum profit."
+    }, {
+      id: 24,
+      isShow: true,
+      title: "Project-Discussion",
+      img: __webpack_require__(7025),
+      description: "An effective discussion informs members what can be done in next which contains the results and outcomes of the project."
+    }, {
+      id: 25,
+      isShow: true,
+      title: "Task-Discussion",
+      img: __webpack_require__(432),
+      description: "Create discussions about your tasks and projects to improve team collaboration for the ongoing & next tasks."
+    }, {
+      id: 26,
+      isShow: true,
+      title: "Task-Budget Management System",
+      img: __webpack_require__(5213),
+      description: "View your task's budget in hours or money. Keep track of your progress as you work and ensure your finances don't take you by surprise."
+    }, // {
+    //   id: 27,
+    //   isShow: true,
+    //   title: "Issue Tracking Management System",
+    //   img: require("../image/workflowImages/IssueTrackingManagementSystem.png"),
+    //   description:
+    //     "That allows users to record and follow the progress of every “ticket” or 'issue' until the problem is resolved.",
+    // },
+    {
+      id: 27,
+      isShow: true,
+      title: "One 2 One & One 2 Many Chat",
+      img: __webpack_require__(6418),
+      description: "This is easier when working together in the same physical office space or communicating remotely or working with freelancers around the world?"
+    }, // {
+    //   id: 28,
+    //   isShow: true,
+    //   title: "Resource management System",
+    //   img: require("../image/workflowImages/ResourceManagementSystem.png"),
+    //   description:
+    //     "This is the well practice of planning, scheduling, and allocating people, money, and technology to a project or program.",
+    // },
+    {
+      id: 28,
+      isShow: true,
+      title: "Work Board Check List",
+      img: __webpack_require__(7286),
+      description: "The Checklist Item of Kanban Board enables you to visualize all of your Checklist Items based on their current ‘Status’."
+    }, {
+      id: 29,
+      isShow: true,
+      title: "Time Tracking Management System",
+      img: __webpack_require__(171),
+      description: "It helps to track a time that will save you and your company precious time - and money."
+    }, {
+      id: 30,
+      isShow: true,
+      title: "Requisition Management System",
+      img: __webpack_require__(9342),
+      description: "It helps the process of creating, processing, authorizing, and tracking purchase requests within an organization."
+    }, {
+      id: 31,
+      isShow: true,
+      title: "Expense Management System",
+      img: __webpack_require__(4914),
+      description: "It helps the systems deployed by a business to process, pay, and audit employee-initiated expenses."
+    }, {
+      id: 32,
+      isShow: true,
+      title: "Income Management System",
+      img: __webpack_require__(4034),
+      description: "Effectively manage your income stream with our all-in-one financial management solution."
+    }, {
+      id: 33,
+      isShow: true,
+      title: "Invoice Management System",
+      img: __webpack_require__(3647),
+      description: "It has been designed to automate your accounts receivable process. Connect and sync invoices and start chasing down unpaid bills."
+    }, {
+      id: 34,
+      isShow: true,
+      title: "VAT -TAX Management System",
+      img: __webpack_require__(866),
+      description: "The Tax Management module provides organizations with centralized tax configuration, management, and reporting."
+    }, {
+      id: 35,
+      isShow: true,
+      title: "LOS-Profit Management System",
+      img: __webpack_require__(340),
+      description: "It helps to manage income and expenses to ensure that a business earns a net operating profit."
+    }, {
+      id: 36,
+      isShow: true,
+      title: "All types of Approval",
+      img: __webpack_require__(109),
+      description: "It provides a system to manage approval workflow transparently, effectively, and accurately."
+    }]
+  }
+};
+;// CONCATENATED MODULE: ./pages/api/home2ndapi.js
+
+function handler(req, res) {
+  res.status(200).json(home2ndJson);
+}
 
 /***/ }),
 
-/***/ "(api)/./public/JSON/home2ndJson.js":
-/*!************************************!*\
-  !*** ./public/JSON/home2ndJson.js ***!
-  \************************************/
+/***/ 109:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home2ndJson\": () => (/* binding */ home2ndJson)\n/* harmony export */ });\nconst home2ndJson = {\n  id: 1,\n  isShow: true,\n  titleData: {\n    id: 1,\n    isShow: true,\n    titleItems: [{\n      id: 1,\n      isShow: true,\n      title: \"Speed Up Your Workflow\",\n      titleDescription: \"Boost your team's performance, accelerate growth, and enhance customer experience with our software's rich and comprehensive features.\"\n    }]\n  },\n  cardItem: {\n    id: 1,\n    isShow: true,\n    items: [{\n      id: 1,\n      isShow: true,\n      title: \"Agile Methodology\",\n      img: __webpack_require__(/*! ../image/workflowImages/agile.png */ \"(api)/./public/image/workflowImages/agile.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 2,\n      isShow: true,\n      title: \"Project Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/ProgramManagement.png */ \"(api)/./public/image/workflowImages/ProgramManagement.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 3,\n      isShow: true,\n      title: \"Collaboration\",\n      img: __webpack_require__(/*! ../image/workflowImages/collaboration.png */ \"(api)/./public/image/workflowImages/collaboration.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 4,\n      isShow: true,\n      title: \"Resource Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/ResourceManagementSystem.png */ \"(api)/./public/image/workflowImages/ResourceManagementSystem.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 5,\n      isShow: true,\n      title: \"Time Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/TimeTrackingManagementSystem.png */ \"(api)/./public/image/workflowImages/TimeTrackingManagementSystem.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 6,\n      isShow: true,\n      title: \"Plan View\",\n      img: __webpack_require__(/*! ../image/workflowImages/planning.png */ \"(api)/./public/image/workflowImages/planning.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 7,\n      isShow: true,\n      title: \"Document Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/DocumentManagement.png */ \"(api)/./public/image/workflowImages/DocumentManagement.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 8,\n      isShow: true,\n      title: \"Issue Tracking\",\n      img: __webpack_require__(/*! ../image/workflowImages/IssueTrackingManagementSystem.png */ \"(api)/./public/image/workflowImages/IssueTrackingManagementSystem.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 9,\n      isShow: true,\n      title: \"Budget Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/ProjectBudgetManagementSystem.png */ \"(api)/./public/image/workflowImages/ProjectBudgetManagementSystem.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 10,\n      isShow: true,\n      title: \"Financial Management\",\n      img: __webpack_require__(/*! ../image/workflowImages/IncomeManagementSystem.png */ \"(api)/./public/image/workflowImages/IncomeManagementSystem.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 11,\n      isShow: true,\n      title: \"Chat Communication\",\n      img: __webpack_require__(/*! ../image/workflowImages/chat.png */ \"(api)/./public/image/workflowImages/chat.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 12,\n      isShow: true,\n      title: \"informative Dashboard\",\n      // title: \"Very informative Dashboard\",\n      img: __webpack_require__(/*! ../image/workflowImages/dashboard.png */ \"(api)/./public/image/workflowImages/dashboard.png\"),\n      description: \"This is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).\"\n    }, {\n      id: 13,\n      isShow: true,\n      title: \"Kanban Board\",\n      img: __webpack_require__(/*! ../image/workflowImages/KanbanBoard.png */ \"(api)/./public/image/workflowImages/KanbanBoard.png\"),\n      description: \"Offers a simple, manageable approach to access management that is less prone to error than assigning permissions to users individually.\"\n    }, {\n      id: 14,\n      isShow: true,\n      title: \"Gantt Chart\",\n      img: __webpack_require__(/*! ../image/workflowImages/GanttChart.png */ \"(api)/./public/image/workflowImages/GanttChart.png\"),\n      description: \"A Gantt chart is a type of bar chart that illustrates a project schedule, Gantt charts also show the dependency relationships between activities and the current schedule status.\"\n    }, {\n      id: 15,\n      isShow: true,\n      title: \"Calendar view\",\n      img: __webpack_require__(/*! ../image/workflowImages/Calendar.png */ \"(api)/./public/image/workflowImages/Calendar.png\"),\n      description: \"It lets a user view and interact with a calendar that they can navigate by month, year, or decade.\"\n    }, {\n      id: 16,\n      isShow: true,\n      title: \"Vendor/Contractor Control Panel\",\n      img: __webpack_require__(/*! ../image/workflowImages/controlPanel.png */ \"(api)/./public/image/workflowImages/controlPanel.png\"),\n      description: \"Organizations use to manage vendors and monitor projects which are developing by them.\"\n    }, {\n      id: 17,\n      isShow: true,\n      title: \"In depth Program Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/ProgramManagement.png */ \"(api)/./public/image/workflowImages/ProgramManagement.png\"),\n      description: \"That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.\"\n    }, {\n      id: 18,\n      isShow: true,\n      title: \"In depth Task  Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/TaskManagement.png */ \"(api)/./public/image/workflowImages/TaskManagement.png\"),\n      description: \"That shows the detail overview of the project, tasks, expense, income, budget, loss-profit briefly.\"\n    }, // {\n    //   id: 19,\n    //   isShow: true,\n    //   title: \"Document Management System\",\n    //   img: require(\"../image/workflowImages/DocumentManagement.png\"),\n    //   description:\n    //     \"That helps to store, manage, and track electronic documents and electronic images of paper-based information captured.\",\n    // },\n    {\n      id: 19,\n      isShow: true,\n      title: \"User Role Based Permission \",\n      img: __webpack_require__(/*! ../image/workflowImages/Permission.png */ \"(api)/./public/image/workflowImages/Permission.png\"),\n      description: \"Shows actionable and useful information at a glance of complex data and helps stakeholders understand, analyze, and present key insights.\"\n    }, {\n      id: 20,\n      isShow: true,\n      title: \"Client Control Panel\",\n      img: __webpack_require__(/*! ../image/workflowImages/ClientControlPanel.png */ \"(api)/./public/image/workflowImages/ClientControlPanel.png\"),\n      description: \"Our client control panel enables our customers to login to their account 24 hours a day, 7 days a week to monitor the project in detail.\"\n    }, {\n      id: 21,\n      isShow: true,\n      title: \"Approval Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/ApprovalManagementSystem.png */ \"(api)/./public/image/workflowImages/ApprovalManagementSystem.png\"),\n      description: \"That helps organizations reduce operational costs and improve employee satisfaction by approval workflow automation, and process visibility.\"\n    }, {\n      id: 22,\n      isShow: true,\n      title: \"Project Budget Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/ProjectBudgetManagementSystem.png */ \"(api)/./public/image/workflowImages/ProjectBudgetManagementSystem.png\"),\n      description: \"A project without a budget is like a car without fuel. creating a project budget and helping those wheels spin will most likely be your full responsibility.\"\n    }, {\n      id: 23,\n      isShow: true,\n      title: \"Budget & Cost Comparison\",\n      img: __webpack_require__(/*! ../image/workflowImages/BudgetCostComparison.png */ \"(api)/./public/image/workflowImages/BudgetCostComparison.png\"),\n      description: \"It will help you to monitor your expense in regard to budget that will make direct impact to make maximum profit.\"\n    }, {\n      id: 24,\n      isShow: true,\n      title: \"Project-Discussion\",\n      img: __webpack_require__(/*! ../image/workflowImages/ProjectDiscussion.png */ \"(api)/./public/image/workflowImages/ProjectDiscussion.png\"),\n      description: \"An effective discussion informs members what can be done in next which contains the results and outcomes of the project.\"\n    }, {\n      id: 25,\n      isShow: true,\n      title: \"Task-Discussion\",\n      img: __webpack_require__(/*! ../image/workflowImages/TaskDiscussion.png */ \"(api)/./public/image/workflowImages/TaskDiscussion.png\"),\n      description: \"Create discussions about your tasks and projects to improve team collaboration for the ongoing & next tasks.\"\n    }, {\n      id: 26,\n      isShow: true,\n      title: \"Task-Budget Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/TaskBudgetManagementSystem.png */ \"(api)/./public/image/workflowImages/TaskBudgetManagementSystem.png\"),\n      description: \"View your task's budget in hours or money. Keep track of your progress as you work and ensure your finances don't take you by surprise.\"\n    }, // {\n    //   id: 27,\n    //   isShow: true,\n    //   title: \"Issue Tracking Management System\",\n    //   img: require(\"../image/workflowImages/IssueTrackingManagementSystem.png\"),\n    //   description:\n    //     \"That allows users to record and follow the progress of every “ticket” or 'issue' until the problem is resolved.\",\n    // },\n    {\n      id: 27,\n      isShow: true,\n      title: \"One 2 One & One 2 Many Chat\",\n      img: __webpack_require__(/*! ../image/workflowImages/chat.png */ \"(api)/./public/image/workflowImages/chat.png\"),\n      description: \"This is easier when working together in the same physical office space or communicating remotely or working with freelancers around the world?\"\n    }, // {\n    //   id: 28,\n    //   isShow: true,\n    //   title: \"Resource management System\",\n    //   img: require(\"../image/workflowImages/ResourceManagementSystem.png\"),\n    //   description:\n    //     \"This is the well practice of planning, scheduling, and allocating people, money, and technology to a project or program.\",\n    // },\n    {\n      id: 28,\n      isShow: true,\n      title: \"Work Board Check List\",\n      img: __webpack_require__(/*! ../image/workflowImages/WorkBoardCheckList.png */ \"(api)/./public/image/workflowImages/WorkBoardCheckList.png\"),\n      description: \"The Checklist Item of Kanban Board enables you to visualize all of your Checklist Items based on their current ‘Status’.\"\n    }, {\n      id: 29,\n      isShow: true,\n      title: \"Time Tracking Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/TimeTrackingManagementSystem.png */ \"(api)/./public/image/workflowImages/TimeTrackingManagementSystem.png\"),\n      description: \"It helps to track a time that will save you and your company precious time - and money.\"\n    }, {\n      id: 30,\n      isShow: true,\n      title: \"Requisition Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/RequisitionManagementSystem.png */ \"(api)/./public/image/workflowImages/RequisitionManagementSystem.png\"),\n      description: \"It helps the process of creating, processing, authorizing, and tracking purchase requests within an organization.\"\n    }, {\n      id: 31,\n      isShow: true,\n      title: \"Expense Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/ExpenseManagementSystem.png */ \"(api)/./public/image/workflowImages/ExpenseManagementSystem.png\"),\n      description: \"It helps the systems deployed by a business to process, pay, and audit employee-initiated expenses.\"\n    }, {\n      id: 32,\n      isShow: true,\n      title: \"Income Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/IncomeManagementSystem.png */ \"(api)/./public/image/workflowImages/IncomeManagementSystem.png\"),\n      description: \"Effectively manage your income stream with our all-in-one financial management solution.\"\n    }, {\n      id: 33,\n      isShow: true,\n      title: \"Invoice Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/InvoiceManagementSystem.png */ \"(api)/./public/image/workflowImages/InvoiceManagementSystem.png\"),\n      description: \"It has been designed to automate your accounts receivable process. Connect and sync invoices and start chasing down unpaid bills.\"\n    }, {\n      id: 34,\n      isShow: true,\n      title: \"VAT -TAX Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/VATTAXManagementSystem.png */ \"(api)/./public/image/workflowImages/VATTAXManagementSystem.png\"),\n      description: \"The Tax Management module provides organizations with centralized tax configuration, management, and reporting.\"\n    }, {\n      id: 35,\n      isShow: true,\n      title: \"LOS-Profit Management System\",\n      img: __webpack_require__(/*! ../image/workflowImages/LOSProfitManagementSystem.png */ \"(api)/./public/image/workflowImages/LOSProfitManagementSystem.png\"),\n      description: \"It helps to manage income and expenses to ensure that a business earns a net operating profit.\"\n    }, {\n      id: 36,\n      isShow: true,\n      title: \"All types of Approval\",\n      img: __webpack_require__(/*! ../image/workflowImages/AllTypesOfApproval.png */ \"(api)/./public/image/workflowImages/AllTypesOfApproval.png\"),\n      description: \"It provides a system to manage approval workflow transparently, effectively, and accurately.\"\n    }]\n  }\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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VDtJQU5KLENBblRLO0VBSEM7QUFoQmUsQ0FBcEIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL0pTT04vaG9tZTJuZEpzb24uanM/ODMzNyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgaG9tZTJuZEpzb24gPSB7XG4gIGlkOiAxLFxuICBpc1Nob3c6IHRydWUsXG4gIHRpdGxlRGF0YToge1xuICAgIGlkOiAxLFxuICAgIGlzU2hvdzogdHJ1ZSxcbiAgICB0aXRsZUl0ZW1zOiBbXG4gICAgICB7XG4gICAgICAgIGlkOiAxLFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIlNwZWVkIFVwIFlvdXIgV29ya2Zsb3dcIixcbiAgICAgICAgdGl0bGVEZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIkJvb3N0IHlvdXIgdGVhbSdzIHBlcmZvcm1hbmNlLCBhY2NlbGVyYXRlIGdyb3d0aCwgYW5kIGVuaGFuY2UgY3VzdG9tZXIgZXhwZXJpZW5jZSB3aXRoIG91ciBzb2Z0d2FyZSdzIHJpY2ggYW5kIGNvbXByZWhlbnNpdmUgZmVhdHVyZXMuXCIsXG4gICAgICB9LFxuICAgIF0sXG4gIH0sXG4gIGNhcmRJdGVtOiB7XG4gICAgaWQ6IDEsXG4gICAgaXNTaG93OiB0cnVlLFxuICAgIGl0ZW1zOiBbXG4gICAgICB7XG4gICAgICAgIGlkOiAxLFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkFnaWxlIE1ldGhvZG9sb2d5XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL2FnaWxlLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAyLFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIlByb2plY3QgTWFuYWdlbWVudFwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9Qcm9ncmFtTWFuYWdlbWVudC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhpcyBpcyBhbiBhZ2lsZSBwcm9qZWN0IG1hbmFnZW1lbnQgdG9vbCBkZXNpZ25lZCB0byBoZWxwIHZpc3VhbGl6ZSB3b3JrLCBsaW1pdCB3b3JrLWluLXByb2dyZXNzLCBhbmQgbWF4aW1pemUgZWZmaWNpZW5jeSAob3IgZmxvdykuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMyxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJDb2xsYWJvcmF0aW9uXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL2NvbGxhYm9yYXRpb24ucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlRoaXMgaXMgYW4gYWdpbGUgcHJvamVjdCBtYW5hZ2VtZW50IHRvb2wgZGVzaWduZWQgdG8gaGVscCB2aXN1YWxpemUgd29yaywgbGltaXQgd29yay1pbi1wcm9ncmVzcywgYW5kIG1heGltaXplIGVmZmljaWVuY3kgKG9yIGZsb3cpLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDQsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiUmVzb3VyY2UgTWFuYWdlbWVudFwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9SZXNvdXJjZU1hbmFnZW1lbnRTeXN0ZW0ucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlRoaXMgaXMgYW4gYWdpbGUgcHJvamVjdCBtYW5hZ2VtZW50IHRvb2wgZGVzaWduZWQgdG8gaGVscCB2aXN1YWxpemUgd29yaywgbGltaXQgd29yay1pbi1wcm9ncmVzcywgYW5kIG1heGltaXplIGVmZmljaWVuY3kgKG9yIGZsb3cpLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDUsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiVGltZSBNYW5hZ2VtZW50XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1RpbWVUcmFja2luZ01hbmFnZW1lbnRTeXN0ZW0ucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlRoaXMgaXMgYW4gYWdpbGUgcHJvamVjdCBtYW5hZ2VtZW50IHRvb2wgZGVzaWduZWQgdG8gaGVscCB2aXN1YWxpemUgd29yaywgbGltaXQgd29yay1pbi1wcm9ncmVzcywgYW5kIG1heGltaXplIGVmZmljaWVuY3kgKG9yIGZsb3cpLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDYsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiUGxhbiBWaWV3XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL3BsYW5uaW5nLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiA3LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkRvY3VtZW50IE1hbmFnZW1lbnRcIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvRG9jdW1lbnRNYW5hZ2VtZW50LnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiA4LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIklzc3VlIFRyYWNraW5nXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0lzc3VlVHJhY2tpbmdNYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiA5LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkJ1ZGdldCBNYW5hZ2VtZW50XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1Byb2plY3RCdWRnZXRNYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAxMCxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJGaW5hbmNpYWwgTWFuYWdlbWVudFwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9JbmNvbWVNYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGlzIGlzIGFuIGFnaWxlIHByb2plY3QgbWFuYWdlbWVudCB0b29sIGRlc2lnbmVkIHRvIGhlbHAgdmlzdWFsaXplIHdvcmssIGxpbWl0IHdvcmstaW4tcHJvZ3Jlc3MsIGFuZCBtYXhpbWl6ZSBlZmZpY2llbmN5IChvciBmbG93KS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAxMSxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJDaGF0IENvbW11bmljYXRpb25cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY2hhdC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhpcyBpcyBhbiBhZ2lsZSBwcm9qZWN0IG1hbmFnZW1lbnQgdG9vbCBkZXNpZ25lZCB0byBoZWxwIHZpc3VhbGl6ZSB3b3JrLCBsaW1pdCB3b3JrLWluLXByb2dyZXNzLCBhbmQgbWF4aW1pemUgZWZmaWNpZW5jeSAob3IgZmxvdykuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMTIsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiaW5mb3JtYXRpdmUgRGFzaGJvYXJkXCIsXG4gICAgICAgIC8vIHRpdGxlOiBcIlZlcnkgaW5mb3JtYXRpdmUgRGFzaGJvYXJkXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL2Rhc2hib2FyZC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhpcyBpcyBhbiBhZ2lsZSBwcm9qZWN0IG1hbmFnZW1lbnQgdG9vbCBkZXNpZ25lZCB0byBoZWxwIHZpc3VhbGl6ZSB3b3JrLCBsaW1pdCB3b3JrLWluLXByb2dyZXNzLCBhbmQgbWF4aW1pemUgZWZmaWNpZW5jeSAob3IgZmxvdykuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMTMsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiS2FuYmFuIEJvYXJkXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0thbmJhbkJvYXJkLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJPZmZlcnMgYSBzaW1wbGUsIG1hbmFnZWFibGUgYXBwcm9hY2ggdG8gYWNjZXNzIG1hbmFnZW1lbnQgdGhhdCBpcyBsZXNzIHByb25lIHRvIGVycm9yIHRoYW4gYXNzaWduaW5nIHBlcm1pc3Npb25zIHRvIHVzZXJzIGluZGl2aWR1YWxseS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAxNCxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJHYW50dCBDaGFydFwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9HYW50dENoYXJ0LnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJBIEdhbnR0IGNoYXJ0IGlzIGEgdHlwZSBvZiBiYXIgY2hhcnQgdGhhdCBpbGx1c3RyYXRlcyBhIHByb2plY3Qgc2NoZWR1bGUsIEdhbnR0IGNoYXJ0cyBhbHNvIHNob3cgdGhlIGRlcGVuZGVuY3kgcmVsYXRpb25zaGlwcyBiZXR3ZWVuIGFjdGl2aXRpZXMgYW5kIHRoZSBjdXJyZW50IHNjaGVkdWxlIHN0YXR1cy5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAxNSxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJDYWxlbmRhciB2aWV3XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0NhbGVuZGFyLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJJdCBsZXRzIGEgdXNlciB2aWV3IGFuZCBpbnRlcmFjdCB3aXRoIGEgY2FsZW5kYXIgdGhhdCB0aGV5IGNhbiBuYXZpZ2F0ZSBieSBtb250aCwgeWVhciwgb3IgZGVjYWRlLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDE2LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIlZlbmRvci9Db250cmFjdG9yIENvbnRyb2wgUGFuZWxcIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY29udHJvbFBhbmVsLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJPcmdhbml6YXRpb25zIHVzZSB0byBtYW5hZ2UgdmVuZG9ycyBhbmQgbW9uaXRvciBwcm9qZWN0cyB3aGljaCBhcmUgZGV2ZWxvcGluZyBieSB0aGVtLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDE3LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkluIGRlcHRoIFByb2dyYW0gTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvZ3JhbU1hbmFnZW1lbnQucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlRoYXQgc2hvd3MgdGhlIGRldGFpbCBvdmVydmlldyBvZiB0aGUgcHJvamVjdCwgdGFza3MsIGV4cGVuc2UsIGluY29tZSwgYnVkZ2V0LCBsb3NzLXByb2ZpdCBicmllZmx5LlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDE4LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkluIGRlcHRoIFRhc2sgIE1hbmFnZW1lbnQgU3lzdGVtXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1Rhc2tNYW5hZ2VtZW50LnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJUaGF0IHNob3dzIHRoZSBkZXRhaWwgb3ZlcnZpZXcgb2YgdGhlIHByb2plY3QsIHRhc2tzLCBleHBlbnNlLCBpbmNvbWUsIGJ1ZGdldCwgbG9zcy1wcm9maXQgYnJpZWZseS5cIixcbiAgICAgIH0sXG4gICAgICAvLyB7XG4gICAgICAvLyAgIGlkOiAxOSxcbiAgICAgIC8vICAgaXNTaG93OiB0cnVlLFxuICAgICAgLy8gICB0aXRsZTogXCJEb2N1bWVudCBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgLy8gICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9Eb2N1bWVudE1hbmFnZW1lbnQucG5nXCIpLFxuICAgICAgLy8gICBkZXNjcmlwdGlvbjpcbiAgICAgIC8vICAgICBcIlRoYXQgaGVscHMgdG8gc3RvcmUsIG1hbmFnZSwgYW5kIHRyYWNrIGVsZWN0cm9uaWMgZG9jdW1lbnRzIGFuZCBlbGVjdHJvbmljIGltYWdlcyBvZiBwYXBlci1iYXNlZCBpbmZvcm1hdGlvbiBjYXB0dXJlZC5cIixcbiAgICAgIC8vIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAxOSxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJVc2VyIFJvbGUgQmFzZWQgUGVybWlzc2lvbiBcIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUGVybWlzc2lvbi5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiU2hvd3MgYWN0aW9uYWJsZSBhbmQgdXNlZnVsIGluZm9ybWF0aW9uIGF0IGEgZ2xhbmNlIG9mIGNvbXBsZXggZGF0YSBhbmQgaGVscHMgc3Rha2Vob2xkZXJzIHVuZGVyc3RhbmQsIGFuYWx5emUsIGFuZCBwcmVzZW50IGtleSBpbnNpZ2h0cy5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAyMCxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJDbGllbnQgQ29udHJvbCBQYW5lbFwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9DbGllbnRDb250cm9sUGFuZWwucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIk91ciBjbGllbnQgY29udHJvbCBwYW5lbCBlbmFibGVzIG91ciBjdXN0b21lcnMgdG8gbG9naW4gdG8gdGhlaXIgYWNjb3VudCAyNCBob3VycyBhIGRheSwgNyBkYXlzIGEgd2VlayB0byBtb25pdG9yIHRoZSBwcm9qZWN0IGluIGRldGFpbC5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAyMSxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJBcHByb3ZhbCBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9BcHByb3ZhbE1hbmFnZW1lbnRTeXN0ZW0ucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlRoYXQgaGVscHMgb3JnYW5pemF0aW9ucyByZWR1Y2Ugb3BlcmF0aW9uYWwgY29zdHMgYW5kIGltcHJvdmUgZW1wbG95ZWUgc2F0aXNmYWN0aW9uIGJ5IGFwcHJvdmFsIHdvcmtmbG93IGF1dG9tYXRpb24sIGFuZCBwcm9jZXNzIHZpc2liaWxpdHkuXCIsXG4gICAgICB9LFxuXG4gICAgICB7XG4gICAgICAgIGlkOiAyMixcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJQcm9qZWN0IEJ1ZGdldCBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9Qcm9qZWN0QnVkZ2V0TWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiQSBwcm9qZWN0IHdpdGhvdXQgYSBidWRnZXQgaXMgbGlrZSBhIGNhciB3aXRob3V0IGZ1ZWwuIGNyZWF0aW5nIGEgcHJvamVjdCBidWRnZXQgYW5kIGhlbHBpbmcgdGhvc2Ugd2hlZWxzIHNwaW4gd2lsbCBtb3N0IGxpa2VseSBiZSB5b3VyIGZ1bGwgcmVzcG9uc2liaWxpdHkuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMjMsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiQnVkZ2V0ICYgQ29zdCBDb21wYXJpc29uXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0J1ZGdldENvc3RDb21wYXJpc29uLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJJdCB3aWxsIGhlbHAgeW91IHRvIG1vbml0b3IgeW91ciBleHBlbnNlIGluIHJlZ2FyZCB0byBidWRnZXQgdGhhdCB3aWxsIG1ha2UgZGlyZWN0IGltcGFjdCB0byBtYWtlIG1heGltdW0gcHJvZml0LlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDI0LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIlByb2plY3QtRGlzY3Vzc2lvblwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9Qcm9qZWN0RGlzY3Vzc2lvbi5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiQW4gZWZmZWN0aXZlIGRpc2N1c3Npb24gaW5mb3JtcyBtZW1iZXJzIHdoYXQgY2FuIGJlIGRvbmUgaW4gbmV4dCB3aGljaCBjb250YWlucyB0aGUgcmVzdWx0cyBhbmQgb3V0Y29tZXMgb2YgdGhlIHByb2plY3QuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMjUsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiVGFzay1EaXNjdXNzaW9uXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1Rhc2tEaXNjdXNzaW9uLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJDcmVhdGUgZGlzY3Vzc2lvbnMgYWJvdXQgeW91ciB0YXNrcyBhbmQgcHJvamVjdHMgdG8gaW1wcm92ZSB0ZWFtIGNvbGxhYm9yYXRpb24gZm9yIHRoZSBvbmdvaW5nICYgbmV4dCB0YXNrcy5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAyNixcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJUYXNrLUJ1ZGdldCBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9UYXNrQnVkZ2V0TWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVmlldyB5b3VyIHRhc2sncyBidWRnZXQgaW4gaG91cnMgb3IgbW9uZXkuIEtlZXAgdHJhY2sgb2YgeW91ciBwcm9ncmVzcyBhcyB5b3Ugd29yayBhbmQgZW5zdXJlIHlvdXIgZmluYW5jZXMgZG9uJ3QgdGFrZSB5b3UgYnkgc3VycHJpc2UuXCIsXG4gICAgICB9LFxuICAgICAgLy8ge1xuICAgICAgLy8gICBpZDogMjcsXG4gICAgICAvLyAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgIC8vICAgdGl0bGU6IFwiSXNzdWUgVHJhY2tpbmcgTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgIC8vICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSXNzdWVUcmFja2luZ01hbmFnZW1lbnRTeXN0ZW0ucG5nXCIpLFxuICAgICAgLy8gICBkZXNjcmlwdGlvbjpcbiAgICAgIC8vICAgICBcIlRoYXQgYWxsb3dzIHVzZXJzIHRvIHJlY29yZCBhbmQgZm9sbG93IHRoZSBwcm9ncmVzcyBvZiBldmVyeSDigJx0aWNrZXTigJ0gb3IgJ2lzc3VlJyB1bnRpbCB0aGUgcHJvYmxlbSBpcyByZXNvbHZlZC5cIixcbiAgICAgIC8vIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiAyNyxcbiAgICAgICAgaXNTaG93OiB0cnVlLFxuICAgICAgICB0aXRsZTogXCJPbmUgMiBPbmUgJiBPbmUgMiBNYW55IENoYXRcIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY2hhdC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhpcyBpcyBlYXNpZXIgd2hlbiB3b3JraW5nIHRvZ2V0aGVyIGluIHRoZSBzYW1lIHBoeXNpY2FsIG9mZmljZSBzcGFjZSBvciBjb21tdW5pY2F0aW5nIHJlbW90ZWx5IG9yIHdvcmtpbmcgd2l0aCBmcmVlbGFuY2VycyBhcm91bmQgdGhlIHdvcmxkP1wiLFxuICAgICAgfSxcbiAgICAgIC8vIHtcbiAgICAgIC8vICAgaWQ6IDI4LFxuICAgICAgLy8gICBpc1Nob3c6IHRydWUsXG4gICAgICAvLyAgIHRpdGxlOiBcIlJlc291cmNlIG1hbmFnZW1lbnQgU3lzdGVtXCIsXG4gICAgICAvLyAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1Jlc291cmNlTWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAvLyAgIGRlc2NyaXB0aW9uOlxuICAgICAgLy8gICAgIFwiVGhpcyBpcyB0aGUgd2VsbCBwcmFjdGljZSBvZiBwbGFubmluZywgc2NoZWR1bGluZywgYW5kIGFsbG9jYXRpbmcgcGVvcGxlLCBtb25leSwgYW5kIHRlY2hub2xvZ3kgdG8gYSBwcm9qZWN0IG9yIHByb2dyYW0uXCIsXG4gICAgICAvLyB9LFxuICAgICAge1xuICAgICAgICBpZDogMjgsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiV29yayBCb2FyZCBDaGVjayBMaXN0XCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1dvcmtCb2FyZENoZWNrTGlzdC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhlIENoZWNrbGlzdCBJdGVtIG9mIEthbmJhbiBCb2FyZCBlbmFibGVzIHlvdSB0byB2aXN1YWxpemUgYWxsIG9mIHlvdXIgQ2hlY2tsaXN0IEl0ZW1zIGJhc2VkIG9uIHRoZWlyIGN1cnJlbnQg4oCYU3RhdHVz4oCZLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDI5LFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIlRpbWUgVHJhY2tpbmcgTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGltZVRyYWNraW5nTWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiSXQgaGVscHMgdG8gdHJhY2sgYSB0aW1lIHRoYXQgd2lsbCBzYXZlIHlvdSBhbmQgeW91ciBjb21wYW55IHByZWNpb3VzIHRpbWUgLSBhbmQgbW9uZXkuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMzAsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiUmVxdWlzaXRpb24gTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUmVxdWlzaXRpb25NYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJJdCBoZWxwcyB0aGUgcHJvY2VzcyBvZiBjcmVhdGluZywgcHJvY2Vzc2luZywgYXV0aG9yaXppbmcsIGFuZCB0cmFja2luZyBwdXJjaGFzZSByZXF1ZXN0cyB3aXRoaW4gYW4gb3JnYW5pemF0aW9uLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDMxLFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkV4cGVuc2UgTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvRXhwZW5zZU1hbmFnZW1lbnRTeXN0ZW0ucG5nXCIpLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIkl0IGhlbHBzIHRoZSBzeXN0ZW1zIGRlcGxveWVkIGJ5IGEgYnVzaW5lc3MgdG8gcHJvY2VzcywgcGF5LCBhbmQgYXVkaXQgZW1wbG95ZWUtaW5pdGlhdGVkIGV4cGVuc2VzLlwiLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgaWQ6IDMyLFxuICAgICAgICBpc1Nob3c6IHRydWUsXG4gICAgICAgIHRpdGxlOiBcIkluY29tZSBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9JbmNvbWVNYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJFZmZlY3RpdmVseSBtYW5hZ2UgeW91ciBpbmNvbWUgc3RyZWFtIHdpdGggb3VyIGFsbC1pbi1vbmUgZmluYW5jaWFsIG1hbmFnZW1lbnQgc29sdXRpb24uXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMzMsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiSW52b2ljZSBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9JbnZvaWNlTWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiSXQgaGFzIGJlZW4gZGVzaWduZWQgdG8gYXV0b21hdGUgeW91ciBhY2NvdW50cyByZWNlaXZhYmxlIHByb2Nlc3MuIENvbm5lY3QgYW5kIHN5bmMgaW52b2ljZXMgYW5kIHN0YXJ0IGNoYXNpbmcgZG93biB1bnBhaWQgYmlsbHMuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMzQsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiVkFUIC1UQVggTWFuYWdlbWVudCBTeXN0ZW1cIixcbiAgICAgICAgaW1nOiByZXF1aXJlKFwiLi4vaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVkFUVEFYTWFuYWdlbWVudFN5c3RlbS5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiVGhlIFRheCBNYW5hZ2VtZW50IG1vZHVsZSBwcm92aWRlcyBvcmdhbml6YXRpb25zIHdpdGggY2VudHJhbGl6ZWQgdGF4IGNvbmZpZ3VyYXRpb24sIG1hbmFnZW1lbnQsIGFuZCByZXBvcnRpbmcuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMzUsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiTE9TLVByb2ZpdCBNYW5hZ2VtZW50IFN5c3RlbVwiLFxuICAgICAgICBpbWc6IHJlcXVpcmUoXCIuLi9pbWFnZS93b3JrZmxvd0ltYWdlcy9MT1NQcm9maXRNYW5hZ2VtZW50U3lzdGVtLnBuZ1wiKSxcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJJdCBoZWxwcyB0byBtYW5hZ2UgaW5jb21lIGFuZCBleHBlbnNlcyB0byBlbnN1cmUgdGhhdCBhIGJ1c2luZXNzIGVhcm5zIGEgbmV0IG9wZXJhdGluZyBwcm9maXQuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogMzYsXG4gICAgICAgIGlzU2hvdzogdHJ1ZSxcbiAgICAgICAgdGl0bGU6IFwiQWxsIHR5cGVzIG9mIEFwcHJvdmFsXCIsXG4gICAgICAgIGltZzogcmVxdWlyZShcIi4uL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0FsbFR5cGVzT2ZBcHByb3ZhbC5wbmdcIiksXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiSXQgcHJvdmlkZXMgYSBzeXN0ZW0gdG8gbWFuYWdlIGFwcHJvdmFsIHdvcmtmbG93IHRyYW5zcGFyZW50bHksIGVmZmVjdGl2ZWx5LCBhbmQgYWNjdXJhdGVseS5cIixcbiAgICAgIH0sXG4gICAgXSxcbiAgfSxcbn07XG4iXSwibmFtZXMiOlsiaG9tZTJuZEpzb24iLCJpZCIsImlzU2hvdyIsInRpdGxlRGF0YSIsInRpdGxlSXRlbXMiLCJ0aXRsZSIsInRpdGxlRGVzY3JpcHRpb24iLCJjYXJkSXRlbSIsIml0ZW1zIiwiaW1nIiwicmVxdWlyZSIsImRlc2NyaXB0aW9uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/JSON/home2ndJson.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/AllTypesOfApproval.f3a26e7a.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA9ElEQVR42h3PO0rEQByA8e8/M8lmEVmjYKGgLCISwQOELQUr8QQewMKTeIKAhY0XsNRWlmAlVlpYrCgo+IhhlZ2dPMZH8XVf8xOAISdJRZ0JKgXQ6Nxsdw+AW8k5TurD+WFvdyXWSoFRlPevNEcvRbgeDUxDkJmlKO7vbLnxRxnO9GZxsXbl81Psl9vMCJLiwX3Z0I4nGBPBtw9/w4tPjQdEBK01Vdty+XCBnZas7c/RXFuUQF67igmts5HlpjnncWHkiu47wVuQyxWnyXRPDV1fxaqG0cYdVeHYPEuKTtQZCMDf5EMyvyip/gxQocr9qv9n/gA9YGF5+vEPmAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/AllTypesOfApproval.png":
-/*!************************************************************!*\
-  !*** ./public/image/workflowImages/AllTypesOfApproval.png ***!
-  \************************************************************/
+/***/ 2569:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/AllTypesOfApproval.f3a26e7a.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAllTypesOfApproval.f3a26e7a.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQWxsVHlwZXNPZkFwcHJvdmFsLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyx3TkFBd04iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0FsbFR5cGVzT2ZBcHByb3ZhbC5wbmc/ODdlYiJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvQWxsVHlwZXNPZkFwcHJvdmFsLmYzYTI2ZTdhLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGQWxsVHlwZXNPZkFwcHJvdmFsLmYzYTI2ZTdhLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/AllTypesOfApproval.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ApprovalManagementSystem.255b3fd1.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABBklEQVR42hWKMUvDQACF76e4nghOdXBwrjSaRi2iguIsOLi4OUr9A0JBY4cSrEFI2iTSJrY9idJNqlAFHToouBgj1cO75Zl78ODxfY+o6F8tOvXdZLPjQE6mrpxIXVZKQ5qVkOW/Dl1IGsnx4xUqfRf14Q1Ohm3MfzrJquhRsvIbsJknD/1KWTwfELy/jjB6eRPTgzpKvMWIMXZkLozRCyLYhwZccxd21UTR81H48WR2cGWue4dGdI/gugPHuUC15mOuews9c0TnPss3z2FsmWJz7wzb+zVs7Fgi79lQjmg8oksfl0nxwcS6dYQ1qwx9cArFCpkjKhpiushDpvG2VFVbMQ0x+Qcq9Kgt4UZdNAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ApprovalManagementSystem.png":
-/*!******************************************************************!*\
-  !*** ./public/image/workflowImages/ApprovalManagementSystem.png ***!
-  \******************************************************************/
+/***/ 4220:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ApprovalManagementSystem.255b3fd1.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FApprovalManagementSystem.255b3fd1.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQXBwcm92YWxNYW5hZ2VtZW50U3lzdGVtLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyxvT0FBb08iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0FwcHJvdmFsTWFuYWdlbWVudFN5c3RlbS5wbmc/Yzg5OCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvQXBwcm92YWxNYW5hZ2VtZW50U3lzdGVtLjI1NWIzZmQxLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGQXBwcm92YWxNYW5hZ2VtZW50U3lzdGVtLjI1NWIzZmQxLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ApprovalManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/BudgetCostComparison.555786f6.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA/0lEQVR42gWAPUsCYRzAf//rfBSR6DJzKaiQ4JYaIuKQHIIWh75GbSEEQVAfoC/QfYhe1iBoSq5FwiDsJkPKNAxf4eyx7kIAqJZsBJcQBwSmxEPkAKgJzyV7aRSVcwOsZDdkGASM5k2aM7HuRzaZNwkjNxmIlb4O9Huur8Zak7gJdWcvYSFp1yASxw7/2FoLVHn2h0pGKG4qVRhp8L8ck4nB4UKb7RWfVnUZo/fLye4lhc4Od29zYmDide6/aZxWdKru8zAscnFb11e1I1B9T/CP7Y3GoLz41LIe4xNaKgvDdYh/dlenz/MCQPPMptFzeWk7qclYMrFXL6v8faD2D/S/ZdyPw+TuAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/BudgetCostComparison.png":
-/*!**************************************************************!*\
-  !*** ./public/image/workflowImages/BudgetCostComparison.png ***!
-  \**************************************************************/
+/***/ 1628:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/BudgetCostComparison.555786f6.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBudgetCostComparison.555786f6.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQnVkZ2V0Q29zdENvbXBhcmlzb24ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDROQUE0TiIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQnVkZ2V0Q29zdENvbXBhcmlzb24ucG5nPzQ4NWYiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0J1ZGdldENvc3RDb21wYXJpc29uLjU1NTc4NmY2LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGQnVkZ2V0Q29zdENvbXBhcmlzb24uNTU1Nzg2ZjYucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/BudgetCostComparison.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Calendar.d6c5ad35.png","height":113,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA2UlEQVR42h2PvUrEQBgA59t87uYHkWhha2kKS+EOKx/EPuhbWOoL3L2NIOEqS0krWgkxh4hgNsmuesVUwxQjAP39TWX89zpEWQAYiZtgixpopb+7rkRd449OSps6APwwYLuXbZyGC+Xna83pWcn5pU8Ojy1A7N69PD2UsW1WCslCMocOnzZ+dJgECrdnZ6dgdGmIHpJ9Qn5AEGHmD82ISQFxwjCPmzgOuDL1JsvB5Yhznsnz7xRNa16fm/nRlGItxEAYveWt3aKuFoD+9qpimlaoXYLsSlR3m7+eQldC9CbjKgAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/Calendar.png":
-/*!**************************************************!*\
-  !*** ./public/image/workflowImages/Calendar.png ***!
-  \**************************************************/
+/***/ 5844:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/Calendar.d6c5ad35.png\",\"height\":113,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCalendar.d6c5ad35.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQ2FsZW5kYXIucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLG9NQUFvTSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQ2FsZW5kYXIucG5nPzczYzMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0NhbGVuZGFyLmQ2YzVhZDM1LnBuZ1wiLFwiaGVpZ2h0XCI6MTEzLFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGQ2FsZW5kYXIuZDZjNWFkMzUucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/Calendar.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ClientControlPanel.276edbb8.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA8UlEQVR42iXPsUpCURzA4d+10wn1mh3BREFoMmyIIggkqqmlHqPFR6gHCXyDxrZovYPcqeYGQykILOwQN/T213tOSNu3fgDgaZMRFT3ScMi6JyKjDRAssT+66htVMcNZzHClRMs1KeVD+1i/PlIGevZ7YQavG3L5s6vH5Tq3YUGOt1KDp6dsQOdg8sVo8qkP1z6ovluSWUlLMYUmnRwLoJWH05TtuwI+SXg+e2NcnVL2oGrexE+NmxMUEu+dazGOwc6DNOdo7cJYpYHthlmlj5qb+4sX8lNF4Fe1uNC6nO0CUBbatTS3rAkO2fwNIiP/zT9K/mFnuKFjxQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ClientControlPanel.png":
-/*!************************************************************!*\
-  !*** ./public/image/workflowImages/ClientControlPanel.png ***!
-  \************************************************************/
+/***/ 1471:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ClientControlPanel.276edbb8.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FClientControlPanel.276edbb8.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvQ2xpZW50Q29udHJvbFBhbmVsLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyx3TkFBd04iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0NsaWVudENvbnRyb2xQYW5lbC5wbmc/ZmRlNyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvQ2xpZW50Q29udHJvbFBhbmVsLjI3NmVkYmI4LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGQ2xpZW50Q29udHJvbFBhbmVsLjI3NmVkYmI4LnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ClientControlPanel.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/DocumentManagement.255e20c7.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA/0lEQVR42i3PPUvDQADG8XydODqLOLiJQ7ERUbTt9TXp5ZK2KkVQpAoVOolWBxHFF3ARbHptc+l04mQHv0n2u+UxfXnW/7P8jOmow023OpSUCs3oUB8yLk9qPXMRB9MY2+UALvlAucixdRCBFMP42OemwZy+rDhjtLwnNemaeLuo4/uxpW5O75EpCGkwOtIk/4msVcdzm+D2sgb1k8Lf+zk2doU2PDfSVrqNpWULK+sEvJsFJin8vpxhc29+kCT3itW1vNpPNxBcdyDurlSn+QBSCqVRtfsmo2HsVHpw7AF2cmNsZyIUSiI+8vhMkpyCRDKSiUb7lOtGwmz6X7P4D1rCjjobP3+4AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/DocumentManagement.png":
-/*!************************************************************!*\
-  !*** ./public/image/workflowImages/DocumentManagement.png ***!
-  \************************************************************/
+/***/ 4914:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/DocumentManagement.255e20c7.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDocumentManagement.255e20c7.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvRG9jdW1lbnRNYW5hZ2VtZW50LnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyx3TkFBd04iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL0RvY3VtZW50TWFuYWdlbWVudC5wbmc/MTE3MCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvRG9jdW1lbnRNYW5hZ2VtZW50LjI1NWUyMGM3LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGRG9jdW1lbnRNYW5hZ2VtZW50LjI1NWUyMGM3LnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/DocumentManagement.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ExpenseManagementSystem.4a24756c.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABA0lEQVR42h3Pv0rDQBwH8O/vLncFpUIksYPUIhYxKDhKqKOLiihScHJy8RV8k3Rw1ycQ/AMuIauC4OIYwRZDoGlsc0nuRD9v8CEAeBgce0Y0AjDyTVUCpo4M0SWAd7oPjjwtrbDIRnbymWFpzQG3XJBWKVD1WC0bgZgk9k77QvXPrrFh7YKNb5XFZjZIBKwsYn/VPkRr/1Q2uxpx5wDR3I38mG6Dm8xnMBUYl4CQMNMET8kQCyvLoGYXuvoGP+/7e3n60lnMHaVZm6tihk2dq/r1jsNthPQ3KC0K+c+XzSdvGLlX4GYeZfyctrZkjwDgcXDiVUIGhpFPxRC1HkfCWf9v/gLCZmZUkheNxwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ExpenseManagementSystem.png":
-/*!*****************************************************************!*\
-  !*** ./public/image/workflowImages/ExpenseManagementSystem.png ***!
-  \*****************************************************************/
+/***/ 3163:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ExpenseManagementSystem.4a24756c.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FExpenseManagementSystem.4a24756c.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvRXhwZW5zZU1hbmFnZW1lbnRTeXN0ZW0ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLGtPQUFrTyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvRXhwZW5zZU1hbmFnZW1lbnRTeXN0ZW0ucG5nPzMwZDYiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0V4cGVuc2VNYW5hZ2VtZW50U3lzdGVtLjRhMjQ3NTZjLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGRXhwZW5zZU1hbmFnZW1lbnRTeXN0ZW0uNGEyNDc1NmMucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ExpenseManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/GanttChart.c84a5942.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+0lEQVR42j2PP0vDQADF7+vc6hfo4O7oJoLVDFEvJkWECtEaI5q7pKEibq4OUnByEcGUgrtYQXQyUEHIJa2tmEN4HpZ2eNPv8f4QAOSnuU2H3EkKbqtCaIVWkglGoRn5jmr0IzBlGq+i3zKQiio+OYMUlpTaRAbC7rwHa7jllfLheA5pcx65MMpRxJAJKyE6Sn3FDt52TZwv1dCt+7hxfTx5NobRpiIy3FJ5YCLzl9HzdnDnmjjzVvD6b2CKjE6MTq91gIur67LLG7h06ng8qpbjaQXcCn059eR9u43neA/9ww0NHOQhm4wEQH73F+i4sZgM+LoqdKyGs5t/VS+tIBOdeUcAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/GanttChart.png":
-/*!****************************************************!*\
-  !*** ./public/image/workflowImages/GanttChart.png ***!
-  \****************************************************/
+/***/ 4034:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/GanttChart.c84a5942.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGanttChart.c84a5942.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvR2FudHRDaGFydC5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsd01BQXdNIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9HYW50dENoYXJ0LnBuZz84MWI4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9HYW50dENoYXJ0LmM4NGE1OTQyLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGR2FudHRDaGFydC5jODRhNTk0Mi5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/GanttChart.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/IncomeManagementSystem.14ca1971.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA1klEQVR42h2Pv0rEQBDGv9ld9lZDxEAQoo3ttYLF4QvlkfI4NpLCB7BQEEQ0hSHYmL3xdudm79d8ML/5wxCU+Hi33WzMAMEuJYEy2jPTa77QqjJU9mn+4Wb+PaC9dEgJ4ENebq7DgwnBDNO0b94+I9eVhSHC+1fkbx1AksGVtfW5haZ//VgROeMvZt+1HsU5KCkL2saV6VODCNDUqjQNgJH/pdxlZwnTzPCOuLvyEJHRwJt+5bxcVNZDue0CiOBjzAsF2xMUeb7f5n0eVOzIlRKNEDm9eQRqDl/PfkYCLAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/IncomeManagementSystem.png":
-/*!****************************************************************!*\
-  !*** ./public/image/workflowImages/IncomeManagementSystem.png ***!
-  \****************************************************************/
+/***/ 3647:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/IncomeManagementSystem.14ca1971.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIncomeManagementSystem.14ca1971.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSW5jb21lTWFuYWdlbWVudFN5c3RlbS5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsZ09BQWdPIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9JbmNvbWVNYW5hZ2VtZW50U3lzdGVtLnBuZz8zODMwIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9JbmNvbWVNYW5hZ2VtZW50U3lzdGVtLjE0Y2ExOTcxLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGSW5jb21lTWFuYWdlbWVudFN5c3RlbS4xNGNhMTk3MS5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/IncomeManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/InvoiceManagementSystem.10e3876f.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA/0lEQVR42h3Pu0rDUAAG4P80ycmt2ByswQoOVTKcWBCcWoSu7k7SyUn0TXyE9lkEB1GixVUUBKumhKYIMda09OTSQr43+AhKLsc2G4CpbRACvlv3mKFdAnglQIufXZ08uNxhukKBosCt94zvn9/IMrRjGTVzcNTi7OK8J8R8TmVNxyScirtRwA4NrS+jabVTkWIcRlTKlshWCf5nCV38Jci3rE4FEkGaZ1ApRa5S3MefULp72Hd3IOIZKvBjjyoKGps18Tbxcf0yRNduiHAFSHnhSUj0J7tp94KxX/16H0H5mOLxZijlQRRpzDwlKB1wQO7D2eg4rIpUlb26ZZbNNXttXL49vLAMAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/InvoiceManagementSystem.png":
-/*!*****************************************************************!*\
-  !*** ./public/image/workflowImages/InvoiceManagementSystem.png ***!
-  \*****************************************************************/
+/***/ 2223:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/InvoiceManagementSystem.10e3876f.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvoiceManagementSystem.10e3876f.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSW52b2ljZU1hbmFnZW1lbnRTeXN0ZW0ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLGtPQUFrTyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSW52b2ljZU1hbmFnZW1lbnRTeXN0ZW0ucG5nPzMxNGIiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0ludm9pY2VNYW5hZ2VtZW50U3lzdGVtLjEwZTM4NzZmLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGSW52b2ljZU1hbmFnZW1lbnRTeXN0ZW0uMTBlMzg3NmYucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/InvoiceManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/IssueTrackingManagementSystem.ae816242.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA80lEQVR42h2Pv0rDUBhHf1/uTWKwoKFiQsXBTuYBHELfwC7q7KKLPoHgm+SFShD8syhdG+oSEtuhkrQ3937X4IEznekQer6m14mCzdjzU1gLMOcBm0cAc5pfXiXL4XD2dnIadp0CC4kD1jgvy/XZajWRbRBkLSF8jmMF1XmAxQWzeqp/wsb3M8lAytLFdLf1xnWJl6MRxkHnkQCYKJUQAs7mFzdNjVF8CK5KfEQRSBuACI60Nm9diddiqb6LBQp3D8ebRvUFDnNOi7uH5L2qZs12F0aDfZheYRgDrdeOEBNCz+ftfdIxZ5o5hTEgINdC/G/+Ad5dbGhr1aNFAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/IssueTrackingManagementSystem.png":
-/*!***********************************************************************!*\
-  !*** ./public/image/workflowImages/IssueTrackingManagementSystem.png ***!
-  \***********************************************************************/
+/***/ 5601:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/IssueTrackingManagementSystem.ae816242.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FIssueTrackingManagementSystem.ae816242.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSXNzdWVUcmFja2luZ01hbmFnZW1lbnRTeXN0ZW0ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDhPQUE4TyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvSXNzdWVUcmFja2luZ01hbmFnZW1lbnRTeXN0ZW0ucG5nPzQyMGQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0lzc3VlVHJhY2tpbmdNYW5hZ2VtZW50U3lzdGVtLmFlODE2MjQyLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGSXNzdWVUcmFja2luZ01hbmFnZW1lbnRTeXN0ZW0uYWU4MTYyNDIucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/IssueTrackingManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/KanbanBoard.b8857f68.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABB0lEQVR42mOAAk0rBoaDgQxWv8IZnH+5MBgeBInBJRdNnvfuwN7D/4/tP/R/48q1/zcuWvZ/amPPO7AiSwb7gxe3bPv//9zBn///////6Pnr/7def/65af3W//YMDAcZPESCf52fP+///5b8//8/XPr//Pqu/4FX//+fsWLn/2AGht8M/gzuv87t2Pn/7+WL/7+9OPH//tm1/1dfe/9/xapN//1AClJVQw7WJJf+ry6s+tle0/e/prD5f11g4M8Cn4j/YUxmhxjSzaM14/l834Uy6P5vyC35nx2T9d+TQel/EIPuu2gpK4hPch0TNLOt4g9mO0T+itF2+R0tb3coQcdVM0HHlQEAGgmD+Y2Ee1AAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/KanbanBoard.png":
-/*!*****************************************************!*\
-  !*** ./public/image/workflowImages/KanbanBoard.png ***!
-  \*****************************************************/
+/***/ 340:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/KanbanBoard.b8857f68.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FKanbanBoard.b8857f68.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvS2FuYmFuQm9hcmQucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDBNQUEwTSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvS2FuYmFuQm9hcmQucG5nPzcwMjUiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL0thbmJhbkJvYXJkLmI4ODU3ZjY4LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGS2FuYmFuQm9hcmQuYjg4NTdmNjgucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/KanbanBoard.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/LOSProfitManagementSystem.c881b5e5.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA8UlEQVR42mMAAb+27ZqB7TsPOnfv/eUKxCA2SAws6Q+RfOfZvuN/cdrU//lpU/57ANkgMZAcQ1Dr9oPuXXv/52XN+rnc2+H/PC/b/+lAthdQLBAoxxDYtuOXZ/vO/7HpU/7P9kv+P9kv6X9I+uT/3kAxkBxDQMeuX/4NG/+bVK34X5nc/b80qfu/ZfWK/76NG/+D5IBW7D/o3Nz6X6aK4eddI5H/V4z4/+/MYPjZXVj/36TzwEGG0Lazmp5Ns94Z1LX+n57a+X9yeuf/ioLG/zll09+JTjwP8Ulw61nNkLYDB4269v0yAWLrzoMHGSZAJAEMFYkEO7RM3QAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/LOSProfitManagementSystem.png":
-/*!*******************************************************************!*\
-  !*** ./public/image/workflowImages/LOSProfitManagementSystem.png ***!
-  \*******************************************************************/
+/***/ 3497:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/LOSProfitManagementSystem.c881b5e5.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLOSProfitManagementSystem.c881b5e5.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvTE9TUHJvZml0TWFuYWdlbWVudFN5c3RlbS5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsc09BQXNPIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9MT1NQcm9maXRNYW5hZ2VtZW50U3lzdGVtLnBuZz9kOGY0Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9MT1NQcm9maXRNYW5hZ2VtZW50U3lzdGVtLmM4ODFiNWU1LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGTE9TUHJvZml0TWFuYWdlbWVudFN5c3RlbS5jODgxYjVlNS5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/LOSProfitManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Permission.ea90bab2.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABAElEQVR42mMAAV3rSk0Fq6qDDBbVv7Rsq37p2FUfVLas1ARLagMllayq3lnYVv6Pdy39L2VU/p9Pt/S/pk3VO7AiI5vKgwwm1f9bg0t+Pki1+B8fWvU/LG3iT1mTiv+aIDkDm8pfIAXdoSX/j0Y4/J/W1vm/vr79v4Nb+X8Z86pfDAzm1b9iXUr//6kL/P+uyPH/123q/98vVvlfGeL5n0E69xcDr2XVQS+H8v/1jsE/c0yc/t9cqvP/0Wz9nxluzv8ZGDwOMphal2uKW1W/YzCq+M8gEPKfgcENiL3+M7B5vlOU8Yb4xNCqTNME6DU9q/JfcnJBv6QF3Q4pyPiAJQFmgms+UDGqrQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/Permission.png":
-/*!****************************************************!*\
-  !*** ./public/image/workflowImages/Permission.png ***!
-  \****************************************************/
+/***/ 2810:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/Permission.ea90bab2.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPermission.ea90bab2.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUGVybWlzc2lvbi5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsd01BQXdNIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9QZXJtaXNzaW9uLnBuZz85NDVkIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9QZXJtaXNzaW9uLmVhOTBiYWIyLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUGVybWlzc2lvbi5lYTkwYmFiMi5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/Permission.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ProgramManagement.649a8629.png","height":113,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABBklEQVR42g3Nu0rDUBzH8d//5JzTpBfTqIWIgg6CFBTtZiiISBcXn6M+QjcHRx8gD+EioouToHbuIPE2ecEO9iKhJU1ycprvA3w/hLyTy/P6t0z9LCMv+TXBNXV3VlUbQEC47dSh2CN45iAwgbt/wJZAyxph+6/JO4OKf/xTdWxWitlXQepGCBYinr0K56pi+by/7Hrv64c4qpHcMMfAxAXcsgQBD8/XHhtxRh8LBkKrCDCFxOlDJQNoI98IA8wm616kKUTCEygJFo1hTESsWQkrhXKXNRb3LqrcwExOBYocytlClBMp0bC1ttumz0iLm7fe/suwd8YJBypL9RKXT83a5imAYA5YYVmfUiTSPQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ProgramManagement.png":
-/*!***********************************************************!*\
-  !*** ./public/image/workflowImages/ProgramManagement.png ***!
-  \***********************************************************/
+/***/ 1431:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ProgramManagement.649a8629.png\",\"height\":113,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FProgramManagement.649a8629.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvZ3JhbU1hbmFnZW1lbnQucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLHNOQUFzTiIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvZ3JhbU1hbmFnZW1lbnQucG5nP2E5NjMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Byb2dyYW1NYW5hZ2VtZW50LjY0OWE4NjI5LnBuZ1wiLFwiaGVpZ2h0XCI6MTEzLFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUHJvZ3JhbU1hbmFnZW1lbnQuNjQ5YTg2MjkucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ProgramManagement.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ProjectBudgetManagementSystem.a6b3ae65.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAzUlEQVR42h3PsU6DUBSA4f9c6BU1tMFY42C6M8vS+EI8Ei+kLDo7upgOXSghkPZeOKdJvzf4BMC+q9KCNabsnQAJLepq4FfspyoPB/uM0RXrB2U4CwC7F+0g+Ui50MRFCzfmwXn1xz5hiWko8qHIH0Mj9lWFqLrq/nO6eUWG4HGc7ibKtzE6bgwEdtvASRb+ppnXTQARHEIr5ojZGIY48pz3PK37EOMMKq0ztTpNpDPMTxfh3gvbjXk16UitFgBr30uQBrW9mmDQJpndmlfrt2XBXe+rmQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ProjectBudgetManagementSystem.png":
-/*!***********************************************************************!*\
-  !*** ./public/image/workflowImages/ProjectBudgetManagementSystem.png ***!
-  \***********************************************************************/
+/***/ 7025:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ProjectBudgetManagementSystem.a6b3ae65.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FProjectBudgetManagementSystem.a6b3ae65.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvamVjdEJ1ZGdldE1hbmFnZW1lbnRTeXN0ZW0ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDhPQUE4TyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvamVjdEJ1ZGdldE1hbmFnZW1lbnRTeXN0ZW0ucG5nP2U3YzkiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Byb2plY3RCdWRnZXRNYW5hZ2VtZW50U3lzdGVtLmE2YjNhZTY1LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUHJvamVjdEJ1ZGdldE1hbmFnZW1lbnRTeXN0ZW0uYTZiM2FlNjUucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ProjectBudgetManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ProjectDiscussion.9ea7bb83.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABA0lEQVR42iXOX0vCUAAF8Pt17jeJvkbPkVAvgRBKEP2DRoXbSxLhQ0nm7jaXQg8XQds0bdeCei9SqFHuj+5inDY6cF7O7+WQLANrRkc3ARe2lKK5kE/1kAtrTtP+Y4+Ffrn5jXOli4uDNjT7E139x39uSEqGjYR3qhPkSneJsl+AtrOB4tl9wi8/8Jga8W4XkmkjbK8s472n4EuUoKwuoXbYgWj9SiJYJE+MCfLqFV7sdby2NlFQKzitvSEz8mBE3DEjHK2pSX6vjK3iMXZzatI2AwxSIy4LaHrU91iESn2M6vUYHgsxtOa+a4SUZHH1Ke2bMfeMWHpmLPvWjDvp5uhT8ge7orx9iDVMiwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ProjectDiscussion.png":
-/*!***********************************************************!*\
-  !*** ./public/image/workflowImages/ProjectDiscussion.png ***!
-  \***********************************************************/
+/***/ 9342:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ProjectDiscussion.9ea7bb83.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FProjectDiscussion.9ea7bb83.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvamVjdERpc2N1c3Npb24ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLHNOQUFzTiIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUHJvamVjdERpc2N1c3Npb24ucG5nPzNiODgiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Byb2plY3REaXNjdXNzaW9uLjllYTdiYjgzLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUHJvamVjdERpc2N1c3Npb24uOWVhN2JiODMucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ProjectDiscussion.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/RequisitionManagementSystem.54b63170.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA8UlEQVR42mMAg/8Mmgy/GA4y/AGSEHwQJAaX9Pvg9W7ygwX/my9N/d97ecb/umeT/ru8CX0HUfSb4eCku3P+N+zc97N7Wef/jxuK/n/ZsuTn3LPJ/xn+MRwEKfjVfGv6f4WVU//nzy3+/3hX0/+361L+bzpi9J/hL+MvsIL+6wv/l2/e+H/hju3/Hzx/9f/K5Zv//e86gkwAKzgY8Sr6f9aDkp/rLm/5//bh+/+3rt//afLO9j/DX4aDDFo/VTUZ/jC8Y/jH8J/hI8P/3juT/ic9Tf3P8JPhndVPC4hPDL7pa6r+UDgo+psR7k2z3wZgSQA95I3rZjlZowAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/RequisitionManagementSystem.png":
-/*!*********************************************************************!*\
-  !*** ./public/image/workflowImages/RequisitionManagementSystem.png ***!
-  \*********************************************************************/
+/***/ 2730:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/RequisitionManagementSystem.54b63170.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRequisitionManagementSystem.54b63170.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUmVxdWlzaXRpb25NYW5hZ2VtZW50U3lzdGVtLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQywwT0FBME8iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1JlcXVpc2l0aW9uTWFuYWdlbWVudFN5c3RlbS5wbmc/N2M2MyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvUmVxdWlzaXRpb25NYW5hZ2VtZW50U3lzdGVtLjU0YjYzMTcwLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUmVxdWlzaXRpb25NYW5hZ2VtZW50U3lzdGVtLjU0YjYzMTcwLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/RequisitionManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/ResourceManagementSystem.ca6dd340.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAclBMVEVL9bNP77dI+bBM9bNP77dP7rhO7rhM9rNQ87VN9LRQ8bZQ8rZT67pH2sJH2cNmu9RQ9LVR8rVP87VQ8rZP8bZQ8bZT7blP77dN6btb3sNj2MdS4MBU2sRD3sBM2MRA28FM08ZYy8tNz8hjwtFByslAyclV/jHaAAAAFXRSTlMAACkpKSkpwcHBwe7u+fn5+vr6+vp500TtAAAAR0lEQVR42gVABxZAIAD9NhUlSUsa3P+KHpqB7AcZGvT0vJ+LjpjN9n6rmSFKTCkWAelDzsFLTJbXyu2EjjmtHeuAdlFqafEDpKEEhX8n31sAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/ResourceManagementSystem.png":
-/*!******************************************************************!*\
-  !*** ./public/image/workflowImages/ResourceManagementSystem.png ***!
-  \******************************************************************/
+/***/ 5213:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/ResourceManagementSystem.ca6dd340.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FResourceManagementSystem.ca6dd340.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvUmVzb3VyY2VNYW5hZ2VtZW50U3lzdGVtLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyxvT0FBb08iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1Jlc291cmNlTWFuYWdlbWVudFN5c3RlbS5wbmc/ZjdjNyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvUmVzb3VyY2VNYW5hZ2VtZW50U3lzdGVtLmNhNmRkMzQwLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGUmVzb3VyY2VNYW5hZ2VtZW50U3lzdGVtLmNhNmRkMzQwLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/ResourceManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/TaskBudgetManagementSystem.dc2267ff.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABCUlEQVR42h3Pu0rDYACG4S9pDq1G6A9FNCIROkgmNzFYcNdNR2chg3fjEhfBwWtwUsFSA4LUKqItqINCi4fUtmnSJP/B0Gd9p1dC7vp0z6ZQPc6pwxiFBOGXFO4CeJYuTnbtcUobg99XUlANELIABhmUiX5Zo5sykHm9gUys2lFarB6i+9FGMzTT28o6EdGPpySTb8e09mFVbW1peQWVrTqunh60etwB59yRs6QN01pFUdcQjoaIgz/kBSxLAKkAmQnd5+EnZksz6eNbD537FmprG+mOvogw9X2lPL/tdl+OG6NhQIwxRWTM4b11ruGr2RcCroTc5dmBHQU3nqoRh9MYk+jOB8d08x8HI3kvLlRFXwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/TaskBudgetManagementSystem.png":
-/*!********************************************************************!*\
-  !*** ./public/image/workflowImages/TaskBudgetManagementSystem.png ***!
-  \********************************************************************/
+/***/ 432:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/TaskBudgetManagementSystem.dc2267ff.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTaskBudgetManagementSystem.dc2267ff.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza0J1ZGdldE1hbmFnZW1lbnRTeXN0ZW0ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLHdPQUF3TyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza0J1ZGdldE1hbmFnZW1lbnRTeXN0ZW0ucG5nP2QzMjMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Rhc2tCdWRnZXRNYW5hZ2VtZW50U3lzdGVtLmRjMjI2N2ZmLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGVGFza0J1ZGdldE1hbmFnZW1lbnRTeXN0ZW0uZGMyMjY3ZmYucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/TaskBudgetManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/TaskDiscussion.3f35595c.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA/0lEQVR42h3PsUrDQBwH4N/9c7mDtFaiQuhQqAWRLKLgEgQnfQNfwC1P45xFx0w+gw5SIi4u2tZFQekgRNNWmti73EXwe4OPAcAtrkIBnhCcqBFAo5BZ2BjAmN3gMmyfd4byzPc11yBjQb8W1fWy0OnqiATcxAmEn66N1MXsAcU2wT2QinelT6CEsx6PKvWNwcKIfk7w5jV0tRLlMoc7aEXc7Qo8j+7A5Ax1LfA0yfFD72iPA+xvnYDbRZ0F/b1j2mFqPp2K0vvCbu9UOZ+OsI8643Zi4s7h+lB+eP6G3IRCCf7aEsbVhX0xMQOAe6RhzU3CQhYxQ2jebEYV/Tf/AE8oZeq35X88AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/TaskDiscussion.png":
-/*!********************************************************!*\
-  !*** ./public/image/workflowImages/TaskDiscussion.png ***!
-  \********************************************************/
+/***/ 2716:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/TaskDiscussion.3f35595c.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTaskDiscussion.3f35595c.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza0Rpc2N1c3Npb24ucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLGdOQUFnTiIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza0Rpc2N1c3Npb24ucG5nP2Q5MTgiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Rhc2tEaXNjdXNzaW9uLjNmMzU1OTVjLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGVGFza0Rpc2N1c3Npb24uM2YzNTU5NWMucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/TaskDiscussion.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/TaskManagement.2f148df0.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+ElEQVR42i2PzUrDQBSF53XyOD5BXVgx/d/4AlK1aZIGpEJF0bZgwApdqKCbouO6LeqiPwhFNyEqTIdUIzOLnnJD7/Z8nPsdRqe9rDEvb/KFY+rY3dZ/1S3+fZg11mHOCKpFMW3WMay76F12Mb5oIKoVRALJ/RSfNI/Rb/vquveKMF7ifvSlCKImJq0d/XFygLvzDl5mP/gXIUaBxFPnBrGT1mxeK+nIymNQycN/eMZ7+Ivu4xsGRzYWTkYzaRf5zDMxbm2ooVXA7dkV+i1fkROJs3hv15h6aUFQZOXweVrBpN1AYJeEcs1kSQJRE70jJ1lOceVmknAFCbyrkGti1ecAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/TaskManagement.png":
-/*!********************************************************!*\
-  !*** ./public/image/workflowImages/TaskManagement.png ***!
-  \********************************************************/
+/***/ 171:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/TaskManagement.2f148df0.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTaskManagement.2f148df0.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza01hbmFnZW1lbnQucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLGdOQUFnTiIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGFza01hbmFnZW1lbnQucG5nPzljNTIiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL1Rhc2tNYW5hZ2VtZW50LjJmMTQ4ZGYwLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGVGFza01hbmFnZW1lbnQuMmYxNDhkZjAucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/TaskManagement.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/TimeTrackingManagementSystem.5106dff6.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABB0lEQVR42h3PsUrDQACH8f9d0pS0DeWaIlhREXEIGQUhVHwFX6KDdClCcXHwNbL7DoIgbjUUBXFpNxEplQ6aNNHEu8slBn8P8MFHUBmMHx3JE78olaeDwIQKakqcAZiTwfmD0/qaTbbkilmahl8p8N7cBzftUFeiT2me+s10wQ75pThRdzjiPrrZh1BEYyWor9eqbFLfxDQaGg1Z4DNz8dZoG4ZQMHTi6TkobL7AsXUDW7iIvBjdgxfcPp/iaeWCGqQIlvU9XOdDcTXfBu/soNeZCdP4wbekARmN7p10vZyUhDLGQ8RmG7sswWvUC5nV6hNUxhdTR2ZrX4J4Wlkg5nqw0Sr/N/8AVpdvLznH3HUAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/TimeTrackingManagementSystem.png":
-/*!**********************************************************************!*\
-  !*** ./public/image/workflowImages/TimeTrackingManagementSystem.png ***!
-  \**********************************************************************/
+/***/ 866:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/TimeTrackingManagementSystem.5106dff6.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTimeTrackingManagementSystem.5106dff6.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVGltZVRyYWNraW5nTWFuYWdlbWVudFN5c3RlbS5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsNE9BQTRPIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9UaW1lVHJhY2tpbmdNYW5hZ2VtZW50U3lzdGVtLnBuZz8zZDMwIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9UaW1lVHJhY2tpbmdNYW5hZ2VtZW50U3lzdGVtLjUxMDZkZmY2LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGVGltZVRyYWNraW5nTWFuYWdlbWVudFN5c3RlbS41MTA2ZGZmNi5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/TimeTrackingManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/VATTAXManagementSystem.a46cc4c6.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA3ElEQVR42hWMTUrDUBRGz72pr2pLbSZShw4zcxqyAmeCuAeXlGU4Ex0WSnZgxoIDQTBIq/l5L++awjf44HCOANy3L1noxxIjl0QAKrecPQK1PITX7PDZ7eJgqSj4A7i18vfVN5ubdTELXSzHPqZt44fozc1XJ7ilG3Qmab/3pWKWiwjTnI0GZkhizi0TLFquCIzBiB4me/qB77eB/XtgqqBglQSH85tBwzkS59AuhrPLY4FK7n6eM7CdRVLD+P0wFldKckozdhT6dHFbW6QQla2q+tW1enVsjxCo/wH9HmhpBl/GSwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/VATTAXManagementSystem.png":
-/*!****************************************************************!*\
-  !*** ./public/image/workflowImages/VATTAXManagementSystem.png ***!
-  \****************************************************************/
+/***/ 7286:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/VATTAXManagementSystem.a46cc4c6.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FVATTAXManagementSystem.a46cc4c6.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvVkFUVEFYTWFuYWdlbWVudFN5c3RlbS5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsZ09BQWdPIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9WQVRUQVhNYW5hZ2VtZW50U3lzdGVtLnBuZz80MTYzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9WQVRUQVhNYW5hZ2VtZW50U3lzdGVtLmE0NmNjNGM2LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGVkFUVEFYTWFuYWdlbWVudFN5c3RlbS5hNDZjYzRjNi5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/VATTAXManagementSystem.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/WorkBoardCheckList.c01a135b.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA+ElEQVR42g3KO04CQQCA4X+GmQFFIRsTsJCQ2K16gRUr4wmId9BbeI29gxUHsPBBttDOKJpYGKOBRAUSYWFnHyPF130CwB2d+u5uHEItEE2Nm+dR7qfnwEAUh12f8bIvTtpesfNE8v3B2mgXHmuTrJx1FE6F4uXLS3oXNm165vP1mWz4YOu9a6+13wgleRGwLrBxZuayTbJ5QKr3zNXsnbdZHkicg7pBpimlxRxXZMgVjeL2NxESXYoYLqhsVa3X2KCqLMZkFspoLSNhg66vp7Y/Pd727msVmI5IfmIml8uJaqmOAEhXSUV/4YA4uEEKg4rKLX0GDP4BdbFnrFWfdekAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/WorkBoardCheckList.png":
-/*!************************************************************!*\
-  !*** ./public/image/workflowImages/WorkBoardCheckList.png ***!
-  \************************************************************/
+/***/ 4714:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/WorkBoardCheckList.c01a135b.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FWorkBoardCheckList.c01a135b.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvV29ya0JvYXJkQ2hlY2tMaXN0LnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyx3TkFBd04iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL1dvcmtCb2FyZENoZWNrTGlzdC5wbmc/OTBjMSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvV29ya0JvYXJkQ2hlY2tMaXN0LmMwMWExMzViLnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGV29ya0JvYXJkQ2hlY2tMaXN0LmMwMWExMzViLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/WorkBoardCheckList.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/agile.7b53be6c.png","height":124,"width":124,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAqUlEQVR42lWOSw6CMBiEe1cv4Dnc+TiFkPggUEU2QgJEYhojMdEdbkxNUwUV1NrWYl3oLOZP5s98GSCEkD/igitXIVDnUYkBdoyTkbNcp8pBWTLLxDCLnMJq4x5h5NtYJhQlVHPQFdnEroH8BeYLBv2nfkTHlYmDuqFQRRq6ncl5HYWHuDFrZr5bDae3OAFyY8idydK+t4X7wLuPXdrqXkYQCEWU//qsegM8p6vRnYMpUQAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/agile.png":
-/*!***********************************************!*\
-  !*** ./public/image/workflowImages/agile.png ***!
-  \***********************************************/
+/***/ 6418:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/agile.7b53be6c.png\",\"height\":124,\"width\":124,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fagile.7b53be6c.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvYWdpbGUucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLDhMQUE4TCIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvYWdpbGUucG5nPzA5YTkiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL2FnaWxlLjdiNTNiZTZjLnBuZ1wiLFwiaGVpZ2h0XCI6MTI0LFwid2lkdGhcIjoxMjQsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGYWdpbGUuN2I1M2JlNmMucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/agile.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/chat.f47a2756.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA30lEQVR4nE2PMUoDYRCF35t1l5UsuAFtRRAsBAtL8QLiHQQ3hYewMdoIHkGsPIMewEIszZZiGwgY0M6Efzf/5C2kyBQzzPDB94b17QCqA3d/NPK0LBLXfNd+pfs362G1D/IDxA4JlL0EAuCOH7UT1neDV2/8PAYPliDrFxswICBlxoQv/Ly+/Mt3s7K3l2PxH1FkBm4amnFAO2l+O2AqYFuAL2aRHWC5eRgHtpMw7RTPUlysFOlK0UqRSvHE0U3Vp/FNIY+UbT0k1A45GlYw41aMfq95JmAu4EtvHgt5WAI68ViG0UL+OgAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/chat.png":
-/*!**********************************************!*\
-  !*** ./public/image/workflowImages/chat.png ***!
-  \**********************************************/
+/***/ 8559:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/chat.f47a2756.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchat.f47a2756.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY2hhdC5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsNExBQTRMIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9jaGF0LnBuZz9iZTQ1Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9jaGF0LmY0N2EyNzU2LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGY2hhdC5mNDdhMjc1Ni5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/chat.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/collaboration.94246607.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA80lEQVR42mMAAS33OE1L39iDDDaxv0AYxAaJATEDg6FnnKaFT9w7BuvY/w3l8f9BGKjoP0gMJMdg5BV30MIn9j+DVfzPE7MD/x+fE/SfwS75J0jMyCv2IIOxV+wvI2+QrtD/26aU/N82uei/gJIVUDIeiON+MYAIbfeY/7OT0//XdE3/X9kz+3/ShOX/9dyjIQpYPeMOJnhF/3+RGvazwN7jv3J6w/+8Q89/mseX/9d3CDrIwOCerFnpE/lus2/A/1oX3/+KBT3/nSdt/W+V2/5OjYFBkwEMPJI0GTwTDgp6J/wycQz5patmfFATKKnJwMAAAKC6behmRHxBAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/collaboration.png":
-/*!*******************************************************!*\
-  !*** ./public/image/workflowImages/collaboration.png ***!
-  \*******************************************************/
+/***/ 5173:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/collaboration.94246607.png\",\"height\":512,\"width\":512,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcollaboration.94246607.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY29sbGFib3JhdGlvbi5wbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsOE1BQThNIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmJzLWZyb250ZW5kLW5ldy8uL3B1YmxpYy9pbWFnZS93b3JrZmxvd0ltYWdlcy9jb2xsYWJvcmF0aW9uLnBuZz9mYzJmIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9jb2xsYWJvcmF0aW9uLjk0MjQ2NjA3LnBuZ1wiLFwiaGVpZ2h0XCI6NTEyLFwid2lkdGhcIjo1MTIsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGY29sbGFib3JhdGlvbi45NDI0NjYwNy5wbmcmdz04JnE9NzBcIixcImJsdXJXaWR0aFwiOjgsXCJibHVySGVpZ2h0XCI6OH07Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/collaboration.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/controlPanel.16f4a754.png","height":114,"width":113,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA9ElEQVR42iXPT0oCURzA8e/vzfP5vxxJKFJcJUydYHDrKbpAnSZazgnadIBOIEOrwIW2iKJABsKaKMt8M86LcP1ZfQTg+ZIAiBBCpdqIeLFy/jkwk38spDvO6PqusKzXc5xbUat8plVzNNTaI0p++v51fmr3dytm0PAQ59mT9MbfyFWkkUaYrRN+X6em2AkY9TsYow2TY77uCFVRrCiVW4w6t5Q/HrB9zbKa4MhpThClZBN7OGbzgV19KxbvJRb5oc3TN6gTy8uFCXLdGleTA799n2GzHDF1Kptp6tV6Q9k2TeC0jfYem2H9qSzoZUypdwbM/gAxV15YCg3/agAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/controlPanel.png":
-/*!******************************************************!*\
-  !*** ./public/image/workflowImages/controlPanel.png ***!
-  \******************************************************/
+/***/ 4025:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/controlPanel.16f4a754.png\",\"height\":114,\"width\":113,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcontrolPanel.16f4a754.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvY29udHJvbFBhbmVsLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyw0TUFBNE0iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL2NvbnRyb2xQYW5lbC5wbmc/ODNhOSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvY29udHJvbFBhbmVsLjE2ZjRhNzU0LnBuZ1wiLFwiaGVpZ2h0XCI6MTE0LFwid2lkdGhcIjoxMTMsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGY29udHJvbFBhbmVsLjE2ZjRhNzU0LnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/controlPanel.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/dashboard.b63997d0.png","height":240,"width":240,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA/0lEQVR42h2PP0vDQABHf3fJHSkoqU2sglDQwRt0dLDpIu5Orn4B/UKZ3Ys4ODkqreDSDlERFEQtVEvIP2vM9cz1D7w3vekRAGheDUX6k/jQ2iMACCHd1WrtFMAz2T3vi+A376DUDspynmfM1P/hzordMoMk8dtbf45orElCOed0Alnksv9ZOCePQ98EZd5GnaLuMr5sueBWBdoAz9QL0Bt5JkyARxJlleN7/IaBWsd2jQGTMaA1jMbx2WE4iDejOJUVZhhFluK69y4vnzLjw7JvSfPiVdxFeUco5RzYDBQaN7HCg9Th/hJrEQA4agfifiT9r1x5IIBr0u4eLxebU0BiaBb2ewbbAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 
-/***/ "(api)/./public/image/workflowImages/dashboard.png":
-/*!***************************************************!*\
-  !*** ./public/image/workflowImages/dashboard.png ***!
-  \***************************************************/
+/***/ 8561:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/dashboard.b63997d0.png\",\"height\":240,\"width\":240,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdashboard.b63997d0.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvZGFzaGJvYXJkLnBuZy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUsQ0FBQyxzTUFBc00iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yYnMtZnJvbnRlbmQtbmV3Ly4vcHVibGljL2ltYWdlL3dvcmtmbG93SW1hZ2VzL2Rhc2hib2FyZC5wbmc/MDc1NyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XCJzcmNcIjpcIi9fbmV4dC9zdGF0aWMvbWVkaWEvZGFzaGJvYXJkLmI2Mzk5N2QwLnBuZ1wiLFwiaGVpZ2h0XCI6MjQwLFwid2lkdGhcIjoyNDAsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGZGFzaGJvYXJkLmI2Mzk5N2QwLnBuZyZ3PTgmcT03MFwiLFwiYmx1cldpZHRoXCI6OCxcImJsdXJIZWlnaHRcIjo4fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/dashboard.png\n");
-
-/***/ }),
-
-/***/ "(api)/./public/image/workflowImages/planning.png":
-/*!**************************************************!*\
-  !*** ./public/image/workflowImages/planning.png ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/planning.18354fa0.png\",\"height\":512,\"width\":512,\"blurDataURL\":\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fplanning.18354fa0.png&w=8&q=70\",\"blurWidth\":8,\"blurHeight\":8});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvcGxhbm5pbmcucG5nLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxDQUFDLG9NQUFvTSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jicy1mcm9udGVuZC1uZXcvLi9wdWJsaWMvaW1hZ2Uvd29ya2Zsb3dJbWFnZXMvcGxhbm5pbmcucG5nPzJlNTciXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1wic3JjXCI6XCIvX25leHQvc3RhdGljL21lZGlhL3BsYW5uaW5nLjE4MzU0ZmEwLnBuZ1wiLFwiaGVpZ2h0XCI6NTEyLFwid2lkdGhcIjo1MTIsXCJibHVyRGF0YVVSTFwiOlwiL19uZXh0L2ltYWdlP3VybD0lMkZfbmV4dCUyRnN0YXRpYyUyRm1lZGlhJTJGcGxhbm5pbmcuMTgzNTRmYTAucG5nJnc9OCZxPTcwXCIsXCJibHVyV2lkdGhcIjo4LFwiYmx1ckhlaWdodFwiOjh9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./public/image/workflowImages/planning.png\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/planning.18354fa0.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABE0lEQVR4nAEIAff+AbxNUP/1/QHrCEQB2rYQLDvj+f8AfwLWw9DnBaBfgPbKAcSCVXMcIgaMCw39ANL0JwD/AAD/LwvZAQgHBe6Vt/eGAc6gWrQcEwRL9fPv/OcPYgQIBAAAAuOc+xAOEgUEAv7LAdCeWf8ZEgMA9vb8AL34GAD6/QAATA7oAP8CAwAQCgH5AfS4Xffv9P8I/fv8AL/4GAD5/P8AUhPqAAUGBADh6vwAAeCqW8sDAgI0+fjw++sRYgUHBAAABOSd/BQTEgTs8/yzAYluVHloSAl4+Pj7DtP3J////wABLgvZAPn3AwDj3ft1AQAATiSRdwkyMRf7aacPK0Dm+AAAafjVvgfPACv67P4XG9R2mJZVt9cAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ })
 
@@ -350,7 +633,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/home2ndapi.js"));
+var __webpack_exports__ = (__webpack_exec__(3828));
 module.exports = __webpack_exports__;
 
 })();
