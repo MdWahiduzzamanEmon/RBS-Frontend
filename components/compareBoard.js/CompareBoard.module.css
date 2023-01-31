@@ -1,7 +1,9 @@
 .container {
-  /* font-family: "open sans", sans-serif; */
-  /* font-family: "Ubuntu", sans-serif; */
   color: rgb(23, 52, 101);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .compareHeadingContainer {
@@ -17,11 +19,8 @@
 }
 
 .compareShortDetails {
-  /* font-family: "Ubuntu"; */
   font-weight: 400;
   text-align: center;
-  /* font-size: 16px; */
-  /* font-weight: 400; */
   width: 65%;
   margin: 0 auto;
 }
@@ -30,7 +29,6 @@
   justify-content: center;
   width: 100%;
   border: none !important;
-  /* border-color: transparent !important; */
 }
 
 .compareTabs li button {
@@ -54,11 +52,9 @@
 
 .title {
   flex: 1 0 20%;
-  /* color: #000000; */
   padding: 7px;
   font-size: 30px;
   font-weight: 600;
-  /* height: 30px; */
 }
 
 .titleBlank {
@@ -83,7 +79,6 @@
 }
 
 .featuresTitle {
-  /* font-size: clamp(12px, 2vw, 18px); */
   font-size: clamp(10px, 1.5vw, 14px);
   font-weight: 400;
   width: 75%;

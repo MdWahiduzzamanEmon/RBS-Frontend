@@ -1606,7 +1606,6 @@ const CompareBoard = () => {
   return (
     <section
       style={{
-        // background: "rgb(226, 246, 254)",
         padding: "50px 0",
       }}
     >
@@ -1635,7 +1634,6 @@ const CompareBoard = () => {
                 title={competitor.name}
                 key={competitor.id}
                 className={`${styles.compareTab}`}
-                // data-aos="zoom-in-down"
               >
                 <div>
                   <div className={`${styles.titleContainer}`}>
@@ -1698,31 +1696,6 @@ const CompareBoard = () => {
                                 </p>
                               ))}
                             </div>
-
-                            {/* <div key={item.id}>
-                              
-                               <p>Portfolio</p>
-                               <p>Project time budget</p>
-                            </div> */}
-
-                            {/* {challenge?.company2?.items?.map((item) => (
-                            <div key={item.id}>
-                              <p>
-                                <FaCheckCircle color="#134d34" />
-                                Board view
-                              </p>
-                              <p>Portfolio</p>
-                              <p>Project time budget</p>
-                            </div>
-                          ))} */}
-                            {/* <div>
-                            <p>Board view</p>
-                            <p>
-                              <HiXCircle />
-                              Portfolio
-                            </p>
-                            <p>Project time budget</p>
-                          </div> */}
                           </div>
                         </>
                       ))}
@@ -1776,57 +1749,15 @@ const CompareBoard = () => {
                                 </p>
                               ))}
                             </div>
-
-                            {/* <div key={item.id}>
-                              
-                               <p>Portfolio</p>
-                               <p>Project time budget</p>
-                            </div> */}
-
-                            {/* {challenge?.company2?.items?.map((item) => (
-                            <div key={item.id}>
-                              <p>
-                                <FaCheckCircle color="#134d34" />
-                                Board view
-                              </p>
-                              <p>Portfolio</p>
-                              <p>Project time budget</p>
-                            </div>
-                          ))} */}
-                            {/* <div>
-                            <p>Board view</p>
-                            <p>
-                              <HiXCircle />
-                              Portfolio
-                            </p>
-                            <p>Project time budget</p>
-                          </div> */}
                           </div>
                         </>
                       ))}
                     </>
                   )}
                 </div>
-                {/* {chall} */}
-                <div
-                  className={`${styles.buttonsContainer} mt-5`}
-                  // style={{
-                  //   display:
-                  //     showDetails && competitor.name === selectedTab
-                  //       ? "none"
-                  //       : "block",
-                  // }}
-                >
+
+                <div className={`${styles.buttonsContainer} mt-5`}>
                   {showDetails && competitor.name === selectedTab ? (
-                    // <button
-                    //   className={`${styles.comparisonCollapseButton}`}
-                    //   onClick={() => {
-                    //     setShowDetails(!showDetails);
-                    //     setSelectedTab(competitor.name);
-                    //   }}
-                    // >
-                    //   Collapse full comparison
-                    // </button>
                     <CButton
                       onClick={() => {
                         setShowDetails(!showDetails);
@@ -1839,20 +1770,6 @@ const CompareBoard = () => {
                       Collapse full comparison
                     </CButton>
                   ) : (
-                    //  )}
-                    // <button
-                    //   className={`${styles.comparisonShowButton}`}
-                    //   onClick={() => {
-                    //     setShowDetails(true);
-                    //     setSelectedTab(competitor.name);
-                    //   }}
-                    //   style={{
-                    //     display:
-                    //       competitor?.challenges?.length > 3 ? "block" : "none",
-                    //   }}
-                    // >
-                    //   View full comparison
-                    // </button>
                     <CButton
                       onClick={() => {
                         setShowDetails(true);
