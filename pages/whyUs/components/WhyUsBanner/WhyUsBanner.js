@@ -9,22 +9,19 @@ const WhyUsBanner = ({ whyUsData }) => {
   return (
     <section className={`${styles.banner}`}>
       <div className={`${styles.bannerContainer} container-xl`}>
-        <div>
-          <div className={`${styles.bannerTitleContainer}`}>
-            <h3 className={`${styles.bannerTitle}`}>{title}</h3>
-            <p className={`${styles.bannerDescription}`}>{description}</p>
-          </div>
+        <div className={`${styles.bannerTitleContainer}`}>
+          <h3 className={`${styles.bannerTitle}`}>{title}</h3>
+          <p className={`${styles.bannerDescription}`}>{description}</p>
+        </div>
 
-          <div className={`${styles.bannerImageContainer}`}>
-            <Iframe
-              src={video}
-              alt="video"
-              width="100%"
-              height="400px"
-              objectFit="contain"
-              className={`${styles.bannerImage}`}
-            />
-          </div>
+        <div className={`${styles.bannerImageContainer}`}>
+          <Iframe
+            src={video}
+            alt="video"
+            width="100%"
+            height="100%"
+            className={`${styles.bannerImage}`}
+          />
         </div>
       </div>
     </section>

@@ -4,12 +4,12 @@
   /* font-family: "Poppins", sans-serif; */
 }
 
-/* .supportTitleWrapper {
+.supportTitleWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-} */
+}
 
 .chooseUser {
   width: 100%;

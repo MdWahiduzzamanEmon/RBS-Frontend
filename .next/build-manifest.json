@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/contactUs/support": [
+    "/whyUs": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/contactUs/support.js"
+      "static/chunks/pages/whyUs.js"
     ]
   },
   "ampFirstPages": []

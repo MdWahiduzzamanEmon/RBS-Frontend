@@ -1,21 +1,7 @@
 .footerCommon {
-  /* background: #1E2334; */
-  /* background-image: linear-gradient(
-    90deg,
-    rgb(250, 235, 235) 0%,
-    rgb(223, 231, 253) 100%
-  ); */
   background: linear-gradient(to right, #140c1f, #140c1f);
-  /* color: #000; */
-  /* color: #173465; */
   color: #fff;
-  /* font-family: "open sans", sans-serif; */
   font-family: "Ubuntu", sans-serif;
-  /* background-image: url(../../public/footer2.png); */
-  /* background-position: 70% 130px; */
-  /* background-repeat: no-repeat; */
-  /* background-size: auto; */
-  /* padding: 80px 20px; */
   line-height: 2;
 }
 
@@ -39,12 +25,6 @@
 }
 
 .footerBottom {
-  /* background-image: linear-gradient(
-    90deg,
-    rgb(250, 235, 235) 0%,
-    rgb(223, 231, 253) 100%
-  ); */
-  /* font-family: "open sans", sans-serif; */
   font-family: "Ubuntu", sans-serif;
   background: linear-gradient(to right, #140c1f, #140c1f);
   padding: 20px 0px;

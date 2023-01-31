@@ -6,9 +6,13 @@ const DemoCards = () => {
   return (
     <div
       className="container-xl"
-      style={{ marginTop: "150px", color: "rgb(23, 52, 101)" }}
+      style={{
+        paddingTop: "130px",
+        paddingBottom: "130px",
+        color: "rgb(23, 52, 101)",
+      }}
     >
-      <h1>Tutorial Lists</h1>
+      <h1 style={{ marginBottom: "40px" }}>Tutorial Lists</h1>
       <div className={`${styles.demoCardsContainer}`}>
         <DemoVideoCard />
         <DemoVideoCard />
