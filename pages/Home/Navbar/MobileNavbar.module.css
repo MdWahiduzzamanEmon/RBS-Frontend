@@ -16,7 +16,7 @@
 
 .accordionChildren {
   border: none !important;
-  border-bottom: 1px solid #ccc !important;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5) !important;
 }
 .accordionChildren:first-of-type button {
   border-top-left-radius: 0px !important;

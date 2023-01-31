@@ -22,25 +22,22 @@ const MobileNavbar = ({
         position: "fixed",
         width: "100vw",
         zIndex: "20000",
-        // fontFamily: "open sans",
       }}
     >
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
           <Link href="/">
-            {/* {" "} */}
             <h1
               style={{
                 fontWeight: "700",
                 color: "#fff",
-                // fontFamily: "open sans",
-                // color: "#173465",
               }}
             >
               Vitlous
             </h1>
           </Link>
         </div>
+        {/* hamburger menu..opening/closing menu */}
         <div>
           {state.mobileNavbarOpen ? (
             <FaTimes
@@ -90,8 +87,13 @@ const MobileNavbar = ({
                     <Accordion.Header
                       onClick={(e) => {
                         openNavElements(e);
+                        dispatch({
+                          type: "MOBILE_NAVBAR_OPEN",
+                          payload: {
+                            mobileNavbarOpen: false,
+                          },
+                        });
                       }}
-                      // style={{ fontFamily: "open sans" }}
                     >
                       {navLink.text}
                     </Accordion.Header>
@@ -101,7 +103,6 @@ const MobileNavbar = ({
                     onClick={(e) => {
                       openNavElements(e);
                     }}
-                    // style={{ fontFamily: "open sans" }}
                   >
                     {navLink.text}
                   </Accordion.Header>
@@ -111,7 +112,6 @@ const MobileNavbar = ({
                   <Accordion.Body style={{ padding: "0px" }}>
                     <div className={`${styles.navbarItemsInnerContainer}`}>
                       <div>
-                        {" "}
                         {state?.openProduct && (
                           <Product navLinks={navLinks} dispatch={dispatch} />
                         )}

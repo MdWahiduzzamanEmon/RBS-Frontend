@@ -137,14 +137,11 @@ const Resources = ({ navLinks, dispatch }) => {
                                   }}
                                   onMouseLeave={handleHideLinkIcon}
                                   onClick={() => {
+                                    dispatch(closeNavbar());
                                     dispatch({
-                                      type: "CLOSE_NAVBAR",
+                                      type: "MOBILE_NAVBAR_OPEN",
                                       payload: {
-                                        openProduct: false,
-                                        openResources: false,
-                                        openPricing: false,
-                                        openWatchADemo: false,
-                                        innerText: "",
+                                        mobileNavbarOpen: false,
                                       },
                                     });
                                   }}

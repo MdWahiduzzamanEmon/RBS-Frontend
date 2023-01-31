@@ -15,8 +15,8 @@ export const getStaticProps = async () => {
 const ContactSupport = ({ supportData }) => {
   const [selectedUser, setSelectedUser] = React.useState("User 1");
   return (
-    <section className={`${styles.supportWrapper}`}>
-      <div className={`${styles.supportInnerWrapper} container-xl`}>
+    <section className={`${styles.supportWrapper} container-lg`}>
+      <div className={`${styles.supportInnerWrapper} `}>
         <div className={`${styles.supportTitleWrapper}`}>
           <h3>{supportData?.support?.title}</h3>
           <p>{supportData?.support?.description}</p>
@@ -62,8 +62,13 @@ const ContactSupport = ({ supportData }) => {
                     className={`${styles.accordion}`}
                     key={question.id}
                   >
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header>{question.title}</Accordion.Header>
+                    <Accordion.Item
+                      eventKey="0"
+                      className={`${styles.accordionItem}`}
+                    >
+                      <Accordion.Header className={`${styles.accordionHeader}`}>
+                        {question.title}
+                      </Accordion.Header>
                       <Accordion.Body>{question.ans}</Accordion.Body>
                     </Accordion.Item>
                   </Accordion>

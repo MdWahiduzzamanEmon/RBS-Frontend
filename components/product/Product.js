@@ -133,6 +133,12 @@ const Product = ({ navLinks, dispatch, state }) => {
                       onMouseLeave={handleHideLinkIcon}
                       onClick={() => {
                         dispatch(closeNavbar());
+                        dispatch({
+                          type: "MOBILE_NAVBAR_OPEN",
+                          payload: {
+                            mobileNavbarOpen: false,
+                          },
+                        });
                       }}
                     >
                       <div className="d-flex justify-content-between">
@@ -149,7 +155,6 @@ const Product = ({ navLinks, dispatch, state }) => {
                               height="32px"
                               width="32px"
                               fill="#173465"
-                              // stroke="green"
                             />
                           )}
                         </div>
@@ -183,7 +188,9 @@ const Product = ({ navLinks, dispatch, state }) => {
                         className={`${productStyles.list}`}
                         onMouseOver={() => handleShowListLinkIcon(list.id)}
                         onMouseLeave={handleHideListLinkIcon}
-                        onClick={() => dispatch(closeNavbar())}
+                        onClick={() => {
+                          dispatch(closeNavbar());
+                        }}
                       >
                         <div className={`${productStyles.listLeftSide}`}>
                           {showListSvg(list.title)}
