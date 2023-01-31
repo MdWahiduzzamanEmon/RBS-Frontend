@@ -2,6 +2,7 @@ import HomePage from "./Home/HomePage";
 import axios from "axios";
 import React, { useEffect } from "react";
 import app from "../firebase.init";
+import Head from "next/head";
 
 export default function Home() {
   const [bannerData, setBannerData] = React.useState({});
@@ -82,6 +83,9 @@ export default function Home() {
         fontFamily: "Ubuntu",
       }}
     >
+      <Head>
+        <title>Vitlous</title>
+      </Head>
       <HomePage
         bannerData={bannerData}
         bannerImagesData={bannerImagesData}

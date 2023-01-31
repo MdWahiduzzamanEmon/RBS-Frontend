@@ -350,6 +350,7 @@ const NavBar = () => {
 
   return (
     <>
+     
       {width > breakpoint ? (
         <div className="">
           <div
