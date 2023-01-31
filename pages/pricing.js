@@ -25,11 +25,9 @@ const PricingMain = () => {
           "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
       }}
     >
-      {/* <PricingBanner /> */}
       <Pricing pricingData={pricingData} />
       {/*//**************Comparing softwares******************/}
       <CompareBoard />
-      {/* <Policy policyData={policyData} /> */}
     </section>
   );
 };

@@ -24,9 +24,6 @@ const AllFeaturesBanner = ({ bannerData }) => {
             </Link>
           </div>
           <div className={`${styles.bannerImageContainer}`}>
-            {/* <div
-              style={{ width: "100%", height: "100%", position: "relative" }}
-            > */}
             <Image
               src={image}
               alt="image"
@@ -36,7 +33,6 @@ const AllFeaturesBanner = ({ bannerData }) => {
               objectFit="fill"
               className={`${styles.bannerImage}`}
             />
-            {/* </div> */}
           </div>
         </div>
       </div>

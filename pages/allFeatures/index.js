@@ -31,11 +31,6 @@ const AllFeatures = ({ featureLists, allFeaturesMainPageData }) => {
       <FeatureCategories
         categoriesData={allFeaturesMainPageData?.featureLists}
       />
-      {/* {featureLists.map((featureList) => (
-        <Link href={"/allFeatures/" + featureList.name} key={featureList.id}>
-          <h1>{featureList.name}</h1>
-        </Link>
-      ))} */}
       <LargeSubscriptionBanner />
     </section>
   );
