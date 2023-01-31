@@ -19,7 +19,7 @@ import QuerySvg from "../../svgComponents/QuerySvg";
 import TimeTracking from "../../svgComponents/TimeTracking";
 import productStyles from "./Product.module.css";
 
-const Product = ({ navLinks, dispatch }) => {
+const Product = ({ navLinks, dispatch, state }) => {
   const [showLinkIcon, setShowLinkIcon] = React.useState(false);
   const [showListLinkIcon, setShowListLinkIcon] = React.useState(false);
   const [linkId, setLinkId] = React.useState(null);
@@ -85,8 +85,35 @@ const Product = ({ navLinks, dispatch }) => {
       }
     }
   };
+
+  // detect outside click
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        // dispatch(closeNavbar());
+        dispatch({
+          type: "OPEN_PRODUCT",
+          payload: {
+            openProduct: !state.openProduct,
+            openResources: false,
+            openContactUs: false,
+            innerText: navItemName,
+          },
+        });
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, [dispatch]);
+
+  // if (!props.show) return null;
+
   return (
-    <div className={`${productStyles.productContainer} container-xl`}>
+    <div className={`${productStyles.productContainer} container-xl`} ref={ref}>
       {navLinks.map((navLink) => (
         <div key={navLink.id}>
           {navLink.text === "Product" && (

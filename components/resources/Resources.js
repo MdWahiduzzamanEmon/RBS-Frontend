@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { closeNavbar } from "../../reducers/navbarReducer/actions";
 import BillingInvoiceSvg from "../../svgComponents/BillingInvoiceSvg";
 import CalenderViewSvg from "../../svgComponents/CalenderViewSvg";
 import DocumentSvg from "../../svgComponents/DocumentSvg";
@@ -89,8 +90,26 @@ const Resources = ({ navLinks, dispatch }) => {
   const category1 = "Learn";
   const category2 = "Premium Features";
 
+  // detect outside click
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        dispatch(closeNavbar());
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, [ref, dispatch]);
+
   return (
-    <div className={`${resourcesStyles.resourcesContainer} container-xl`}>
+    <div
+      className={`${resourcesStyles.resourcesContainer} container-xl`}
+      ref={ref}
+    >
       {navLinks.map((navLink) => (
         <div key={navLink.id}>
           {navLink.text === "Resources" && (
