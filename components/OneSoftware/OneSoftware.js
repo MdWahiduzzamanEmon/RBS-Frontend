@@ -2,14 +2,25 @@ import Image from "next/image";
 import React from "react";
 import styles from "./OneSoftware.module.css";
 import oneSoftwareImage from "../../public/oneSoftwareImage.png";
+import useViewport from "../../hooks/useViewport";
 
 const OneSoftware = () => {
   const [email, setEmail] = React.useState("");
+  const { width } = useViewport();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setEmail("");
   };
+
+  const breakpoint = 485;
+
+  const handleBrPosition = () => {
+    if (width < breakpoint) {
+      return <br />;
+    }
+  };
+
   return (
     <div className={`${styles.container}`}>
       <div className={`${styles.imageContainer}`}>
@@ -34,7 +45,7 @@ const OneSoftware = () => {
           <span className={`${styles.highlightedTitleColored3}`}>
             Unlimited
           </span>
-          users,
+          users, {handleBrPosition()}
           <span className={`${styles.highlightedTitleColored4}`}>
             Unlimited
           </span>
