@@ -38,7 +38,7 @@ const FinancialManagement = ({ financialManagementData }) => {
             <p
               className="fs-6 mb-4"
               style={{
-                color: "rgb(75, 101, 126)",
+                // color: "rgb(75, 101, 126)",
                 textAlign: "justify",
               }}
             >

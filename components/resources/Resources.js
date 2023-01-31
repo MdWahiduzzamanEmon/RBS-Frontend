@@ -91,24 +91,24 @@ const Resources = ({ navLinks, dispatch }) => {
   const category2 = "Premium Features";
 
   // detect outside click
-  const ref = React.useRef(null);
+  // const ref = React.useRef(null);
 
-  React.useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (ref.current && !ref.current.contains(event.target)) {
-        dispatch(closeNavbar());
-      }
-    };
-    document.addEventListener("click", handleClickOutside, true);
-    return () => {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  }, [ref, dispatch]);
+  // React.useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (ref.current && !ref.current.contains(event.target)) {
+  //       dispatch(closeNavbar());
+  //     }
+  //   };
+  //   document.addEventListener("click", handleClickOutside, true);
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside, true);
+  //   };
+  // }, [ref, dispatch]);
 
   return (
     <div
       className={`${resourcesStyles.resourcesContainer} container-xl`}
-      ref={ref}
+      // ref={ref}
     >
       {navLinks.map((navLink) => (
         <div key={navLink.id}>

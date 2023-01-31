@@ -482,7 +482,7 @@ const NavBar = (props) => {
                     </div>
                   ) : (
                     <div className="d-flex align-items-center justify-content-center">
-                      <Link href="/signin">
+                      <Link href="https://app.vitlous.com/login">
                         <CButton
                           style={{ marginTop: "0px", marginRight: "10px" }}
                           // className={`${navStyles.primaryButton}`}
@@ -490,7 +490,7 @@ const NavBar = (props) => {
                           Sign in
                         </CButton>
                       </Link>
-                      <Link href="/signup">
+                      <Link href="https://app.vitlous.com/logOut">
                         <CButton
                           style={{ marginTop: "0px" }}
                           // className={`${navStyles.primaryButton}`}

@@ -10,6 +10,7 @@ import auth from "../firebase.init";
 import jwt_decode from "jwt-decode";
 import { GoogleAuthProvider, signInWithCredential } from "firebase/auth";
 import GoToTop from "../components/GoToTop/GoToTop";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const [pageLoaded, setPageLoaded] = React.useState(false);
@@ -19,12 +20,13 @@ function MyApp({ Component, pageProps }) {
     setPageLoaded(true);
   }, []);
   const router = useRouter();
+
   const user = auth.currentUser;
   function handleCredentialResponse(response) {
     const userObject = jwt_decode(response.credential);
     const idToken = response.credential;
     const credential = GoogleAuthProvider.credential(idToken);
-    console.log(credential);
+    // console.log(credential);
 
     // Sign in with credential from the Google user.
     signInWithCredential(auth, credential)
@@ -42,30 +44,6 @@ function MyApp({ Component, pageProps }) {
         // ...
       });
   }
-
-  React.useEffect(() => {
-    // if (divRef.current) {
-    window.google?.accounts?.id?.initialize({
-      client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
-      // callback: (res, error) => {
-      //   // This is the function that will be executed once the authentication with google is finished
-      // },
-      callback: handleCredentialResponse,
-    });
-    //   window.google?.accounts?.id.renderButton(divRef.current, {
-    //     type: "standard",
-    //     size: "large",
-    //     theme: "filled_blue",
-    //     text: "sign_in_with",
-    //     shape: "rectangular",
-    //     logo_alignment: "left",
-    //   });
-    // }
-    if (!user) {
-      // window.google?.accounts?.id.prompt();
-      // window.google.accounts.id.cancel();
-    }
-  }, [user]);
 
   // * scroll to top button */
   React.useEffect(() => {
@@ -90,6 +68,9 @@ function MyApp({ Component, pageProps }) {
             {/* {router.asPath.includes("/blog") ? <NavbarBlog /> : <NavBar />} */}
             {showButton && <GoToTop handleScrollToTop={handleScrollToTop} />}
             <NavBar />
+            <Head>
+              <title>Vitlous</title>
+            </Head>
             <Component {...pageProps} />
           </Layout>
         </SSRProvider>
