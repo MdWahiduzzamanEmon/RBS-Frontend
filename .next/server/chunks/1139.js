@@ -119,7 +119,7 @@ const GoogleSvg = _ref => {
 /***/ (() => {
 
 "use strict";
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/logoVitlous.9815b769.png","height":800,"width":800,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAnUlEQVR42oXMsQ2CQBjF8fc+DjjgTMyFCSzcwC0snMPazikcwCGcwgWMsbXSaDRQQOEZPmkNBb/XveKPeFcx3ddELz80BP4NDqyeNEsragkxVCTHEPtTSOaq4h+aDgpm+950GSxTzsRJgPBCwxqOSb/WfK/h7i3yT0xtDKPIyaRzUopl0EJuGMPp+sXqDGAhKLywzQiJAJSRguBo4QcA1igYnXufxAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/logoVitlous.9815b769.png","height":800,"width":800,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAHlBMVEVMaXEDcewDn/MFYekCifACkPAK7PwCfe4ErvUDlvLBCoUVAAAACnRSTlMAdmJbfpkGfVVvzbjgawAAAAlwSFlzAAALEwAACxMBAJqcGAAAACVJREFUeJxjYMAEbAxsYJqRnZWVk4mJg4GZmZGRnYWFCYtaGAAAC9sATU2m3rcAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 

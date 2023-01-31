@@ -148,7 +148,7 @@ const MobileNavbar = ({
               </div>
             ) : (
               <div className="">
-                <Link href="/signin">
+                <Link href="https://app.vitlous.com/login">
                   <CButton
                     style={{ marginTop: "0px", marginRight: "10px" }}
                     // className={`${navStyles.primaryButton}`}
@@ -156,7 +156,7 @@ const MobileNavbar = ({
                     Sign in
                   </CButton>
                 </Link>
-                <Link href="/signup">
+                <Link href="https://app.vitlous.com/logOut">
                   <CButton
                     style={{ marginTop: "0px" }}
                     // className={`${navStyles.primaryButton}`}

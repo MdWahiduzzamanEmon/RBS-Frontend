@@ -17,7 +17,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./public/pm.png
-/* harmony default export */ const pm = ({"src":"/_next/static/media/pm.573ff875.png","height":1131,"width":1260,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAIAAAC6O5sJAAAAuklEQVR42gGvAFD/AKnB97/Q9O7y9+vv9uXr9fr7++bo7eLk6ADQ2/LM1OXS2+jf5e7c3+Xk6O3j5+3g5u8A8vX35eru4+Tj2NnV2tzY5ebl6e3z8vT4AKOnrqmvvsvO2bLB0JugppaZmaKpr77FzQAnJzd8cXmhlqJ3h55WX29kYF94c22MjIsANjY6UVBUQktUbW1xfnh8hISIqrHEjpy7AFxZWSgwN0NQWTw8RaeNi5iRj5qq0JSv6dCTcarDu6g2AAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":7});
+/* harmony default export */ const pm = ({"src":"/_next/static/media/pm.573ff875.png","height":1131,"width":1260,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAMAAAACh/xsAAAAYFBMVEXX293T3ujFzNbU1dLq7/RuaGzU4vDY3+Y3O0OHj5lAQki7zedVWmXK1uawvsufqLeNjI33+PhqeJAeJSqQhpO3w9R8gIMcHiKmv/MyMj1XVVZxcneJla+Rq+Sbq8+TfXsgvZl6AAAACXBIWXMAACxLAAAsSwGlPZapAAAAP0lEQVR4nAXBBwKAIAwEsAMKbdnurf//pQn2RCEMDJQlFcvGgADnwARttuqqFYefx3z6jk1i9le7ESeRr7/PD0IcApqoe8cCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":7});
 ;// CONCATENATED MODULE: ./public/JSON/projectManagementJson.js
 
 const projectManagementJson = {

@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 6081;
-exports.ids = [6081,541,8612,2937,9863,7848,8197,5563,8513,3315];
+exports.ids = [6081,541,8612,2937,9863,7848,8197,5563,3315,8513];
 exports.modules = {
 
 /***/ 3784:
@@ -205,14 +205,14 @@ __webpack_async_result__();
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/policyImage.6614139f.png","height":970,"width":1280,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAIAAABxZ0isAAAAoUlEQVR42gGWAGn/ACacoXixtU+bmFKdnFaenVWhnh2eogeboQADmZ4AmJ1Xn555r658sbBZpKYAmp8KmqAADJmfAJedNp+ku8vPvtDYOZ6hAJedCpmeAByaoACSmXe0zarM6M3MyZKnmgCUoCOangAAlp1vpp+vx8no8PfW4uywxNh4qaEAlZ0AXpyX9L5qu8WuxMrdus3q2ce99r1lW5yYarlSstUYHFcAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":6});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/policyImage.6614139f.png","height":970,"width":1280,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAMAAADJ2y/JAAAAQlBMVEUEmp+VucPmvmC1xtUzq6wfnJYgoaEAl58NnaIanptNsMIvppuCxMbQ1+JSppXg6PCLyMyYxePBxrw1p5vNw6est5d5dHk1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANklEQVR4nBXGSRLAIAgEwEHAgWwmLv//aspTN8I8swYApFndMq43uHN8/SHAU9otg/CyVGfxHx/VAVN9GJYHAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":6});
 
 /***/ }),
 
 /***/ 9827:
 /***/ (() => {
 
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/smoke.840e9379.png","height":1080,"width":1080,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAm0lEQVR42h2NsQ7CMAxEz46T0MLIVIkNBmY2/v8bGFhYmJiQKiq1jW0M77Y76R09nm9mBhxAksSSiRLcZV5XJoomMDWzmRAhWRZlJicUpqYtugCAmK7jOPd9nQi15JwlBEwskpNqu91fn2k24Ho59V31ULn7ppbdtjsMe3PLvzcCuZgj13w+DqVIKNRitVhE18aJQdCmwB+CmX0BvvJBC2itUC8AAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/smoke.840e9379.png","height":1080,"width":1080,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAGFBMVEXg5vDc4uvR2OTm7fi8xdeTpL+Rob2ir8avvQJnAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMElEQVR4nB2LwQ0AMQzCHIe2+2984nggywIAdneZmSJoATBqrXn31JokP7T66KD5AA39AGhdzCoFAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 

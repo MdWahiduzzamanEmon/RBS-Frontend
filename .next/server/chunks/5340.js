@@ -554,7 +554,7 @@ const NavBar = () => {
               }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsxs)("div", {
                 className: "d-flex align-items-center justify-content-center",
                 children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx((next_link__WEBPACK_IMPORTED_MODULE_0___default()), {
-                  href: "/signin",
+                  href: "https://app.vitlous.com/login",
                   children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx(_components_utility_buttons_CButton__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
                     style: {
                       marginTop: "0px",
@@ -564,7 +564,7 @@ const NavBar = () => {
                     children: "Sign in"
                   })
                 }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx((next_link__WEBPACK_IMPORTED_MODULE_0___default()), {
-                  href: "/signup",
+                  href: "https://app.vitlous.com/logOut",
                   children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx(_components_utility_buttons_CButton__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
                     style: {
                       marginTop: "0px"

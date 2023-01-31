@@ -177,7 +177,7 @@ module.exports = {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/gradient-image-1.cadd4b40.png","height":1639,"width":2817,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAfklEQVR42m2KMQoCMRREZz75G0Gws9vKe3gEL2DhKb2AJxEXFRQb2Rg2K+Sb3/uGYaZ4POxfi05X5f44SS7P5ZguTHmYU75Ot/PRAsA4fgYVUQJoNZ8oDLrut99AsMJqBQUwM5BwDKZtYmhnAl0yOPSQbql7BP7Tb3Zdmd/6A5qHLuweRBCZAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":5});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/gradient-image-1.cadd4b40.png","height":1639,"width":2817,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAMAAABPT11nAAAABlBMVEUyNIQyNYS1RJQyAAAAAnRSTlMLAntpdd8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAbSURBVHicY2BkZGBgYASTYABngEUh4mAGkAUAAX4AEidovKgAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":5});
 
 /***/ }),
 
@@ -188,7 +188,7 @@ module.exports = {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/online-communication.b843e05d.png","height":1131,"width":1260,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAIAAAC6O5sJAAAAq0lEQVR42gXAWgqCsN2/A/RREH0EFVHYA3OG2pTN15wNzSSSzHRO/ewAAVZmtbEqnXcWqzGOEXsvjA8kBTi6QvUFSnsVYl8Zt2TNHdsOEgCjBvF+poar2Twz16m5dTyf5zW4JpLkA6QluRU0ee1xNj4RlEhwpoOCf2bc6aE8uV8v77y8vzABNNZCJhVv0KhQcInunRaJ0eQJDkGjUrEjErLW4PIciaVWTJePP0NMhNi1RSDIAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":7});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/online-communication.b843e05d.png","height":1131,"width":1260,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAMAAAACh/xsAAAAQlBMVEW5zuimvs+Asseitd7J2Oirx+a/zdqzyunB1Oqlv+PLvZWjwfSBkZDDwrqYpdjO0NOdra+zqnuhv7vqv37HuqeFldyUF33kAAAACXBIWXMAACxLAAAsSwGlPZapAAAAOElEQVR4nAXBBwLAIAwDsQMCduhe//9qJTI9ttEKks/reQu4rnPegaOPo1SjRcoIgK40H6Jj2v4DNpMBkFDxh+gAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":7});
 
 /***/ })
 
