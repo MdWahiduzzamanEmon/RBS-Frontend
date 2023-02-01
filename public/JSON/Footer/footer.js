@@ -20,13 +20,13 @@ export const footerDemoData = {
           item: "About us",
         },
         {
-          url: "/contactUs",
+          url: "/contactUs/contactSupport",
           item: "Contact us",
         },
-        {
-          url: "/contactUs",
-          item: "24/7 Customer Support",
-        },
+        // {
+        //   url: "/contactUs",
+        //   item: "24/7 Customer Support",
+        // },
         {
           url: "/",
           item: "Brand",

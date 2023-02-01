@@ -52,10 +52,6 @@ const FooterCommon = ({ footerDetails }) => {
                           style={{ listStyle: "none", cursor: "pointer" }}
                           onClick={() => {
                             router.push("/allFeatures/" + itemData?.name);
-                            // router.push({
-                            //   pathname: "/features",
-                            //   query: { title: itemData.item },
-                            // });
                           }}
                         >
                           {itemData.item}
