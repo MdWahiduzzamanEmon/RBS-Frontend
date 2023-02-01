@@ -10,12 +10,8 @@ import styles from "./Blog.module.css";
 
 const Blog = () => {
   return (
-    <div className="">
-      {/* <NavbarBlog /> */}
-      <div className={`${styles.bannerContainer}`}>
-        <BannerBlog />
-      </div>
-      {/* <SearchBar /> */}
+    <div className={`${styles.wrapper}`}>
+      <BannerBlog />
       <AllBlogPosts />
       <CategoriesBlog />
       <FeaturedArticles />

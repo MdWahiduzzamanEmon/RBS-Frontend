@@ -7,7 +7,7 @@ import { FaRegClock } from "react-icons/fa";
 const AllBlogPosts = () => {
   return (
     <section>
-      <div className={`${styles.blogsContainer} container-xl`}>
+      <div className={`${styles.blogsContainer} container-lg`}>
         {allBlogsDemoData.map((blog) => (
           <div key={blog.id} className={`${styles.blog}`}>
             <div className={`${styles.blogImage}`}>

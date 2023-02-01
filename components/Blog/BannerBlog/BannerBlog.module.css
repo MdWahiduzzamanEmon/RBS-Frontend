@@ -1,56 +1,36 @@
+.container {
+  background: #173465;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .bannerContainer {
-  /* height: calc(100vh - 250px); */
-  /* background: #173465;
-  padding-top: 150px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  position: relative; */
-  /* padding-top: 70px; */
-  /* padding-top: 70px; */
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .bannerWrapper {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  height: 100%; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  height: 100%;
-
-  /* grid-template-columns: repeat(2, 1fr); */
-
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* gap: 20px; */
-
-  /* height: calc(100vh - 200px); */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .bannerImageWrapper {
   flex: 0 0 50%;
   position: relative;
-  height: 80vh;
-  padding: 20px;
-}
-
-.bannerImageWrapper > span {
-  /* position: relative !important; */
-  /* height: 100% !important; */
-}
-
-.bannerImageWrapper .bannerImage {
-  object-fit: cover;
   width: 100%;
-  height: 100%;
-  /* width: 100%; */
-  /* height: 800px !important; */
-  position: relative !important;
-  /* height: unset !important; */
+  height: 400px;
+  right: 0;
+  top: 0;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .bannerCategoryText {
@@ -59,11 +39,8 @@
 
 .bannerText {
   flex: 0 0 50%;
-  background: rgba(255, 255, 255, 0.2);
-  /* margin-right: 70px; */
-  padding: 20px;
   color: #fff;
-  height: 100%;
+  padding-right: 20px;
 }
 
 .bannerTextTitle {
@@ -76,7 +53,6 @@
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  /* padding: 15px 32px; */
   background: transparent;
   outline: 1px solid aqua;
   padding: 5px 15px;
@@ -86,13 +62,17 @@
 
 .button:hover {
   color: aqua;
-  /* color: #173465; */
-  /* transform: scaleX(1.2); */
 }
 
 /* animation keyframes */
 
 @media screen and (max-width: 900px) {
+  .bannerWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .bannerWrapper {
     flex-direction: column;
   }
