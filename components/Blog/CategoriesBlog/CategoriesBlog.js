@@ -21,7 +21,7 @@ const CategoriesBlog = () => {
   ];
   return (
     <section>
-      <div className={`${styles.categoriesContainer} container-xl`}>
+      <div className={`${styles.categoriesContainer} container-lg`}>
         {categories.map((category) => (
           <div key={category.id} className={`${styles.category}`}>
             {category.name}

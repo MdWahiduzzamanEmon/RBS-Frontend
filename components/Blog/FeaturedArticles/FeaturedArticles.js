@@ -50,11 +50,9 @@ const FeaturedArticles = () => {
     },
   ];
   return (
-    <section>
-      <h3 className={`${styles.containerPrimaryTitle} container-xl`}>
-        Featured Articles
-      </h3>
-      <div className={`${styles.featuredArticleContainer} container-xl`}>
+    <section className="container-lg">
+      <h3 className={`${styles.containerPrimaryTitle}`}>Featured Articles</h3>
+      <div className={`${styles.featuredArticleContainer} `}>
         {featuredArticles.map((featuredArticle) => (
           <div key={featuredArticle.id} className={`${styles.featuredArticle}`}>
             <div className={`${styles.featuredArticleImageWrapper}`}>
