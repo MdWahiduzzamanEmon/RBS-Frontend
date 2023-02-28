@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="92913b8a-623b-48a8-a33c-a912b2d4b2c5" name="aws">
+        <fileTransfer rootFolder="/srv/docker_project/vitlous.com/landing/landing_page" accessType="SFTP" host="34.228.251.203" port="22" sshConfigId="26e6e238-b493-444c-afdb-fbb016bf8e54" sshConfig="root@34.228.251.203:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
