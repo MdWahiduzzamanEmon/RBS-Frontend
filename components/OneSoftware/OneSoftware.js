@@ -29,7 +29,7 @@ const OneSoftware = () => {
           alt="one software image"
           width={400}
           height={300}
-          // layout="fill"
+          layout="fill"
         ></Image>
       </div>
       <div className={`${styles.overlay}`}></div>
