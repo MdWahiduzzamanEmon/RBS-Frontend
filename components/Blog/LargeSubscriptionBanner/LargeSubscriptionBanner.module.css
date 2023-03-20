@@ -28,7 +28,7 @@
 }
 
 .subscriptionTitle {
-  font-size: clamp(30px, 10vw, 50px);
+  font-size: clamp(25px, 5vw, 50px);
   font-weight: 700;
   /* color: #173465; */
   color: #fff;
@@ -68,5 +68,19 @@
 
   .subscriptionImageContainer {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subscriptionInnerContainer {
+    flex-direction: column;
+  }
+
+  .subscriptionImageContainer {
+    display: none;
+  }
+  .subscriptionTextContainer {
+    flex: 0 0 100%;
+    padding: 40px 10px;
   }
 }

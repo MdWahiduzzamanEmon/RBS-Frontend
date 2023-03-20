@@ -1,5 +1,12 @@
 .svgWrapper {
   position: relative;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    120deg,
+    rgb(249, 236, 248) 15%,
+    rgb(226, 246, 254) 100%
+  );
 }
 
 .textWrapper {
@@ -52,8 +59,6 @@
 .form label:last-child {
   position: relative;
   top: -1.5px;
-  /* font-size: 12px; */
-  /* padding-left: 10px; */
 }
 
 .formWrapper input,
@@ -66,9 +71,6 @@
 .formContentsTop {
   display: flex;
   flex-direction: row;
-  /* gap: 10px; */
-  /* width: 100%; */
-  /* padding: 10px; */
 }
 
 .formContentTop1,
@@ -83,8 +85,6 @@
 .formContentsMiddle {
   display: flex;
   flex-direction: row;
-  /* gap: 10px; */
-  /* padding: 10px; */
 }
 
 .formContentMiddle1,
@@ -92,14 +92,12 @@
   display: flex;
   flex-direction: column;
   flex: 0 0 33.33%;
-  /* gap: 10px; */
   padding: 10px;
 }
 
 .textArea {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
   padding: 10px;
 }
 
@@ -177,15 +175,11 @@
 }
 @media screen and (max-width: 1000px) {
   .wrapper {
-    margin-bottom: 50px;
   }
 
   .formContentsTop {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
-    /* width: 100%; */
-    /* padding: 10px; */
   }
   .formContentTop1,
   .formContentTop2,
@@ -195,21 +189,39 @@
     flex: 0 0 20%;
     padding: 10px;
   }
+  .subscriptionWrapper {
+    margin-top: 100px;
+  }
 }
 @media screen and (max-width: 700px) {
   .form label:last-child {
     position: relative;
     top: -2.5px;
-    /* font-size: 12px; */
-    /* padding-left: 10px; */
+  }
+
+  .subscriptionWrapper {
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 600px) {
   .wrapper {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+  }
+  .contactWrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    right: 0px;
+    border-radius: 15px;
   }
 
   .formContentsMiddle {
     flex-direction: column;
+  }
+
+  .subscriptionWrapper {
+    margin-top: 200px;
   }
 }

@@ -17,42 +17,49 @@ const FooterCommon = ({ footerDetails }) => {
                   {data?.logo && (
                     <Image
                       src={data?.logo}
-                      width="120px"
-                      height="120px"
+                      width={120}
+                      height={120}
                       alt="logo"
                       className="img-fluid rounded-circle "
                     />
                   )}
                 </div>
-                {/* {data?.description && <p>{data?.description}</p>} */}
                 <h1 className="fs-6 fw-bold" style={{ color: "#fff" }}>
                   {data.title}
                 </h1>
                 <ul className={`${footerCommonStyles.textContainer} ms-0 ps-0`}>
-                  {data?.lists?.map((itemData, index) => (
-                    // <Link
-                    //   href={{
-                    //     pathname: "/features/[slug]",
-                    //     query: { slug: itemData.item },
-                    //   }}
-                    //   key={index}
-                    // >
-                    <li
-                      key={index}
-                      className={`${footerCommonStyles.text}`}
-                      style={{ listStyle: "none", cursor: "pointer" }}
-                      onClick={() => {
-                        router.push("/allFeatures/" + itemData?.name);
-                        // router.push({
-                        //   pathname: "/features",
-                        //   query: { title: itemData.item },
-                        // });
-                      }}
-                    >
-                      {itemData.item}
-                    </li>
-                    // </Link>
-                  ))}
+                  {data.title === "Company" || data.title === "Resources" ? (
+                    <>
+                      {data?.lists?.map((itemData, index) => (
+                        <li
+                          key={index}
+                          className={`${footerCommonStyles.text}`}
+                          style={{ listStyle: "none", cursor: "pointer" }}
+                          onClick={() => {
+                            router.push(itemData?.url);
+                          }}
+                        >
+                          {itemData.item}
+                        </li>
+                      ))}
+                    </>
+                  ) : (
+                    <>
+                      {data?.lists?.map((itemData, index) => (
+                        <li
+                          key={index}
+                          className={`${footerCommonStyles.text}`}
+                          style={{ listStyle: "none", cursor: "pointer" }}
+                          onClick={() => {
+                            router.push("/allFeatures/" + itemData?.name);
+                          }}
+                        >
+                          {itemData.item}
+                        </li>
+                        // </Link>
+                      ))}
+                    </>
+                  )}
                 </ul>
               </div>
             ))}

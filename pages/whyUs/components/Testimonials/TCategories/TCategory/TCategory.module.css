@@ -1,17 +1,13 @@
 .categoryWrapper {
-  /* width: 200px; */
   font-weight: 400;
   padding: 1px;
   border-radius: 20px;
-  /* background: linear-gradient(235deg, #772aff, #010615, #2196f3); */
   background: rgba(255, 255, 255, 0.25);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 20, 135, 0.1); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
-  /* font-family: "open sans", sans-serif; */
 }
 
 .categoryTitle {

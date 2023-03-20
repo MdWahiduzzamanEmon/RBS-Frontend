@@ -41,7 +41,8 @@ const Banner = ({ bannerImagesData }) => {
   return (
     <section
       style={{
-        backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+        // backgroundImage: "linear-gradient(to right, #24c6dc, #514a9d)",
+        background: "linear-gradient(55deg, #24c6dc 0%,#140c1f 100%)",
       }}
       // style={{
       //   backgroundImage:

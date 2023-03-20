@@ -1,11 +1,11 @@
 .categoriesWrapper {
-  /* font-family: "open sans", sans-serif; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
   row-gap: 15px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1075px) {

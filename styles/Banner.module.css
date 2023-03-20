@@ -192,17 +192,7 @@
 }
 
 @media (max-width: 600px) {
-  .bannerWidth {
-    /* height: 550px; */
-    /* padding-top: 150px; */
-    /* display: flex;
-    justify-content: center; */
-    /* gap: 500px; */
-  }
-
   .bannerContent {
-    /* height: 90vh; */
-    /* min-height: 690px; */
     padding-top: 0px;
     padding-bottom: 0px;
   }

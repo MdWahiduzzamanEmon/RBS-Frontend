@@ -19,7 +19,7 @@ import QuerySvg from "../../svgComponents/QuerySvg";
 import TimeTracking from "../../svgComponents/TimeTracking";
 import productStyles from "./Product.module.css";
 
-const Product = ({ navLinks, dispatch }) => {
+const Product = ({ navLinks, dispatch, state }) => {
   const [showLinkIcon, setShowLinkIcon] = React.useState(false);
   const [showListLinkIcon, setShowListLinkIcon] = React.useState(false);
   const [linkId, setLinkId] = React.useState(null);
@@ -85,6 +85,32 @@ const Product = ({ navLinks, dispatch }) => {
       }
     }
   };
+
+  // detect outside click
+  // const ref = React.useRef(null);
+
+  // React.useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (ref.current && !ref.current.contains(event.target)) {
+  //       // dispatch(closeNavbar());
+  //       dispatch({
+  //         type: "OPEN_PRODUCT",
+  //         payload: {
+  //           openProduct: false,
+  //           openResources: false,
+  //           openContactUs: false,
+  //           innerText: "Product",
+  //         },
+  //       });
+  //     }
+  //   };
+  //   document.addEventListener("click", handleClickOutside, true);
+
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside, true);
+  //   };
+  // }, [state.openProduct, dispatch]);
+
   return (
     <div className={`${productStyles.productContainer} container-xl`}>
       {navLinks.map((navLink) => (
@@ -107,6 +133,12 @@ const Product = ({ navLinks, dispatch }) => {
                       onMouseLeave={handleHideLinkIcon}
                       onClick={() => {
                         dispatch(closeNavbar());
+                        dispatch({
+                          type: "MOBILE_NAVBAR_OPEN",
+                          payload: {
+                            mobileNavbarOpen: false,
+                          },
+                        });
                       }}
                     >
                       <div className="d-flex justify-content-between">
@@ -123,7 +155,6 @@ const Product = ({ navLinks, dispatch }) => {
                               height="32px"
                               width="32px"
                               fill="#173465"
-                              // stroke="green"
                             />
                           )}
                         </div>
@@ -157,7 +188,9 @@ const Product = ({ navLinks, dispatch }) => {
                         className={`${productStyles.list}`}
                         onMouseOver={() => handleShowListLinkIcon(list.id)}
                         onMouseLeave={handleHideListLinkIcon}
-                        onClick={() => dispatch(closeNavbar())}
+                        onClick={() => {
+                          dispatch(closeNavbar());
+                        }}
                       >
                         <div className={`${productStyles.listLeftSide}`}>
                           {showListSvg(list.title)}

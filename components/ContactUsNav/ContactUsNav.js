@@ -19,6 +19,12 @@ const ContactUsNav = ({ navLinks, dispatch }) => {
                     className={`${styles.innerContainerLeft}`}
                     onClick={() => {
                       dispatch(closeNavbar());
+                      dispatch({
+                        type: "MOBILE_NAVBAR_OPEN",
+                        payload: {
+                          mobileNavbarOpen: false,
+                        },
+                      });
                     }}
                   >
                     <div className="d-flex justify-content-between">

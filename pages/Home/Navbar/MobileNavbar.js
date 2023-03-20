@@ -22,25 +22,22 @@ const MobileNavbar = ({
         position: "fixed",
         width: "100vw",
         zIndex: "20000",
-        // fontFamily: "open sans",
       }}
     >
       <div className={`${styles.mobileNavbarContainer}`}>
         <div>
           <Link href="/">
-            {/* {" "} */}
             <h1
               style={{
                 fontWeight: "700",
                 color: "#fff",
-                // fontFamily: "open sans",
-                // color: "#173465",
               }}
             >
               Vitlous
             </h1>
           </Link>
         </div>
+        {/* hamburger menu..opening/closing menu */}
         <div>
           {state.mobileNavbarOpen ? (
             <FaTimes
@@ -75,7 +72,6 @@ const MobileNavbar = ({
             defaultActiveKey="0"
             style={{
               zIndex: "2000",
-              // fontFamily: "open sans"
             }}
             className={`${styles.accordionParent}`}
           >
@@ -90,8 +86,13 @@ const MobileNavbar = ({
                     <Accordion.Header
                       onClick={(e) => {
                         openNavElements(e);
+                        dispatch({
+                          type: "MOBILE_NAVBAR_OPEN",
+                          payload: {
+                            mobileNavbarOpen: false,
+                          },
+                        });
                       }}
-                      // style={{ fontFamily: "open sans" }}
                     >
                       {navLink.text}
                     </Accordion.Header>
@@ -101,7 +102,6 @@ const MobileNavbar = ({
                     onClick={(e) => {
                       openNavElements(e);
                     }}
-                    // style={{ fontFamily: "open sans" }}
                   >
                     {navLink.text}
                   </Accordion.Header>
@@ -111,7 +111,6 @@ const MobileNavbar = ({
                   <Accordion.Body style={{ padding: "0px" }}>
                     <div className={`${styles.navbarItemsInnerContainer}`}>
                       <div>
-                        {" "}
                         {state?.openProduct && (
                           <Product navLinks={navLinks} dispatch={dispatch} />
                         )}
@@ -148,7 +147,7 @@ const MobileNavbar = ({
               </div>
             ) : (
               <div className="">
-                <Link href="/signin">
+                <Link href="https://app.vitlous.com/login">
                   <CButton
                     style={{ marginTop: "0px", marginRight: "10px" }}
                     // className={`${navStyles.primaryButton}`}
@@ -156,7 +155,7 @@ const MobileNavbar = ({
                     Sign in
                   </CButton>
                 </Link>
-                <Link href="/signup">
+                <Link href="https://app.vitlous.com/logOut">
                   <CButton
                     style={{ marginTop: "0px" }}
                     // className={`${navStyles.primaryButton}`}

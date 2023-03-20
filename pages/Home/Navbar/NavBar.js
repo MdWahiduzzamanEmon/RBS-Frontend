@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useReducer } from "react";
+import React, { useReducer, useRef } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ContactUsNav from "../../../components/ContactUsNav/ContactUsNav";
 import Product from "../../../components/product/Product";
@@ -19,7 +19,7 @@ import { signOut } from "firebase/auth";
 import Image from "next/image";
 import CButton from "../../../components/utility/buttons/CButton";
 
-const NavBar = () => {
+const NavBar = (props) => {
   //***navbarReducer */
   const [state, dispatch] = useReducer(navbarReducer, initialState);
   const navLinks = [
@@ -482,7 +482,7 @@ const NavBar = () => {
                     </div>
                   ) : (
                     <div className="d-flex align-items-center justify-content-center">
-                      <Link href="/signin">
+                      <Link href="https://app.vitlous.com/login">
                         <CButton
                           style={{ marginTop: "0px", marginRight: "10px" }}
                           // className={`${navStyles.primaryButton}`}
@@ -490,7 +490,7 @@ const NavBar = () => {
                           Sign in
                         </CButton>
                       </Link>
-                      <Link href="/signup">
+                      <Link href="https://app.vitlous.com/signUp">
                         <CButton
                           style={{ marginTop: "0px" }}
                           // className={`${navStyles.primaryButton}`}
@@ -524,7 +524,11 @@ const NavBar = () => {
                 >
                   <div className={`${navStyles.navbarItemsContainerLeft}`}>
                     {state?.openProduct && (
-                      <Product navLinks={navLinks} dispatch={dispatch} />
+                      <Product
+                        navLinks={navLinks}
+                        dispatch={dispatch}
+                        state={state}
+                      />
                     )}
                     {state?.openResources && (
                       <Resources navLinks={navLinks} dispatch={dispatch} />

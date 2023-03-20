@@ -51,17 +51,10 @@ const NavbarBlog = () => {
               background: "linear-gradient(90deg, #faebeb 0%, #dde6fd 100%)",
             }}
           >
-            {/* ${
-                  (state?.showActiveInnerText && state.openProduct) ||
-                  (state?.showActiveInnerText && state.openResources)
-                } */}
             <div
               className={`${styles.navbarContainer}`}
               style={{
                 position: "fixed",
-                // state?.openProduct || state?.openResources
-                //   ? "fixed"
-                //   : "relative",
               }}
             >
               <div
@@ -98,14 +91,8 @@ const NavbarBlog = () => {
                             onClick={(e) => {
                               openNavElements(e);
                             }}
-                            // style={{
-                            //   borderBottom: state?.isActive ? {navStyles.active} : "",
-                            // }}
                           >
-                            {/* {faChevronUp} */}
-                            {/* <FaChevronUp style={{ color: "green" }} />  */}
                             {navItem.text}
-                            {/* <FaChevronUp style={{ color: "green" }} /> */}
                           </p>
                         </Link>
                       ) : (
@@ -122,7 +109,6 @@ const NavbarBlog = () => {
                           }}
                         >
                           {navItem.text}
-                          {/* {navItem.icon} */}
                           {navItem.text === state?.showActiveInnerText &&
                           state.openManage ? (
                             <FaChevronUp
@@ -144,7 +130,6 @@ const NavbarBlog = () => {
                               className={`${styles.navChevronIcons}`}
                             />
                           )}
-                          {/* <FaChevronUp style={{ color: "green" }} /> */}
                         </p>
                       )}
                     </>
@@ -157,19 +142,12 @@ const NavbarBlog = () => {
                   </button>
                 </div>
               </div>
-              {/* <Product></Product> */}
             </div>
             {state?.openManage && (
               <div
                 className={`${styles.navbarItemsContainer}`}
-                // style={{
-                //   position: state?.showActiveInnerText ? "fixed" : "absolute",
-                // }}
                 style={{
                   position: "fixed",
-                  // state?.openProduct || state?.openResources
-                  //   ? "fixed"
-                  //   : "absolute",
                 }}
               >
                 <div
@@ -182,8 +160,6 @@ const NavbarBlog = () => {
                         dispatch={dispatch}
                       />
                     )}
-
-                    {/* hello */}
                   </div>
                 </div>
               </div>

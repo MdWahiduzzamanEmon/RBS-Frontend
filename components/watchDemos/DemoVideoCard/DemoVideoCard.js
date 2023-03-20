@@ -18,15 +18,8 @@ const DemoVideoCard = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <h3>how to use vitlous dashboard </h3>
-        {/* <p className={`${styles.description}`}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio debitis
-          dolore nesciunt magnam, culpa quo?
-        </p> */}
+        <h3>how to use vitlous dashboard. </h3>
       </div>
-      {/* <Link href={`/allFeatures/${featureCardData?.name}`}>
-        <button className={`${styles.cardButton}`}>Read More</button>
-      </Link> */}
     </div>
   );
 };

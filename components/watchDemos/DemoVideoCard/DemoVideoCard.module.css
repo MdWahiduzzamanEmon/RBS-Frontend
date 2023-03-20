@@ -1,10 +1,8 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  /* width: clamp(200px, 70vw, 320px); */
   height: 300px;
   margin: 10px;
-  /* background: linear-gradient(235deg, #772aff, #010615, #2196f3); */
   background-size: cover;
   position: relative;
   cursor: pointer;
@@ -16,59 +14,14 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-/* .wrap::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-  overflow: hidden;
-  color: white;
-  font-family: "Poppins";
-} */
-
-/* .wrap::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-  overflow: hidden;
-  color: white;
-  font-family: "Poppins";
-} */
-
-/* .blankWrapper {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  background: #173465;
-} */
-
 .wrap .text {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   padding: 30px;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
-
-/* .wrap .text::before {
-  position: absolute;
-  padding: 30px;
-  height: calc(100% - 60px);
-} */
 
 .wrap h3 {
   font-size: clamp(15px, 2vw, 18px);
@@ -90,13 +43,11 @@
 }
 
 .wrap:hover .text {
-  /* box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64); */
   transform: scale(1.05);
 }
 
 /* button */
 .cardButton {
-  /* background: linear-gradient(120deg, #085078, #85d8ce); */
   background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   width: 150px;
   font-size: 15px;
@@ -143,12 +94,18 @@
 
 @media (max-width: 800px) {
   .wrap {
-    height: 360px;
+    height: 300px;
   }
 }
 
 @media (max-width: 700px) {
   .wrap {
-    height: 250px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    height: 280px;
   }
 }

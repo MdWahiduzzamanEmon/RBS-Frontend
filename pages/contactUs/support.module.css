@@ -1,14 +1,16 @@
 .supportWrapper {
   padding-top: 100px;
   padding-bottom: 100px;
-  /* font-family: "Poppins", sans-serif; */
+  background: linear-gradient(
+    120deg,
+    rgb(249, 236, 248) 15%,
+    rgb(226, 246, 254) 100%
+  );
 }
 
 .supportTitleWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .chooseUser {
@@ -44,18 +46,25 @@
 
 .accordionWrapperLeft {
   flex: 0 0 30%;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .accordionWrapperRight {
   flex: 0 0 70%;
   padding: 10px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .accordion {
   margin-top: 20px;
+}
+
+.accordionItem .accordionHeader button:focus {
+  box-shadow: none !important;
+  color: #000 !important;
+}
+
+.accordionItem .accordionHeader button:active {
+  color: #000 !important;
 }
 
 .supportBoardLink {
@@ -76,7 +85,6 @@
 
 /* button */
 .buttonSupport {
-  /* background: linear-gradient(120deg, #085078, #85d8ce); */
   background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   width: 180px;
   font-size: 15px;
@@ -84,13 +92,12 @@
   position: relative;
   z-index: 1;
   margin-top: auto;
-  /* margin-left: 30px; */
-  /* margin-bottom: 20px; */
   display: inline-block;
   align-self: flex-start;
   border: none;
   border-radius: 25px;
 }
+
 .buttonSupport::after {
   content: "";
   position: absolute;
@@ -99,7 +106,6 @@
   right: 1px;
   bottom: 1px;
   background: #fff;
-  /* width: 150px; */
   padding: 10px 20px;
   border-radius: 25px;
   z-index: -1;

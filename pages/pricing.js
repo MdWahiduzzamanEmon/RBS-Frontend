@@ -12,7 +12,6 @@ const PricingMain = () => {
   React.useEffect(() => {
     axios.get("/api/pricing/pricingapi").then((res) => {
       setPricingData(res.data);
-      console.log(pricingData);
     });
     axios.get("/api/pricing/policyapi").then((res) => {
       setPolicyData(res.data);
@@ -23,14 +22,12 @@ const PricingMain = () => {
     <section
       style={{
         background:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
+          "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
       }}
     >
-      {/* <PricingBanner /> */}
       <Pricing pricingData={pricingData} />
       {/*//**************Comparing softwares******************/}
       <CompareBoard />
-      {/* <Policy policyData={policyData} /> */}
     </section>
   );
 };

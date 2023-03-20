@@ -1,7 +1,6 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  /* width: clamp(200px, 70vw, 320px); */
   height: 300px;
   margin: 10px;
   background: linear-gradient(235deg, #772aff, #010615, #2196f3);
@@ -12,7 +11,6 @@
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: white;
-  /* font-family: "open sans", sans-serif; */
 }
 
 .wrap::before {
@@ -27,7 +25,6 @@
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: white;
-  /* font-family: "open sans", sans-serif; */
 }
 
 .wrap::before {
@@ -42,7 +39,6 @@
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: white;
-  /* font-family: "open sans", sans-serif; */
 }
 
 .blankWrapper {
@@ -92,7 +88,6 @@
 
 /* button */
 .cardButton {
-  /* background: linear-gradient(120deg, #085078, #85d8ce); */
   background: linear-gradient(235deg, #772aff, #010615, #2196f3);
   width: 150px;
   font-size: 15px;

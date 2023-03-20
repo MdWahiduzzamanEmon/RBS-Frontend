@@ -80,19 +80,6 @@ const CSignIn = () => {
 
   return (
     <div className={`${styles.signInWrapper} `}>
-      {/* <div className={`${styles.signInImageWrapper} container`}>
-        <Image
-          src={logoVitlous}
-          alt="logo"
-          width={120}
-          height={120}
-          objectFit="contain"
-        ></Image>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam?</p>
-      </div> */}
-
-      {/* form section */}
-
       <div className={`${styles.signInFormWrapper} container-xl`}>
         {/* <div
           className={`${styles.formToggle}`}

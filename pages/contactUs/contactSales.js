@@ -112,7 +112,9 @@ const ContactSales = ({ contactUsData }) => {
             </form>
           </div>
         </div>
-        <LargeSubscriptionBanner />
+        <div className={`${styles.subscriptionWrapper}`}>
+          <LargeSubscriptionBanner />
+        </div>
       </section>
     </div>
   );

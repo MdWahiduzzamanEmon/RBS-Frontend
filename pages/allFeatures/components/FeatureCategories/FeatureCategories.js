@@ -5,12 +5,7 @@ import styles from "./FeatureCategories.module.css";
 
 const FeatureCategories = ({ categoriesData }) => {
   return (
-    <section
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgb(226, 246, 254) 30%, rgb(249, 236, 248) 100% )",
-      }}
-    >
+    <section>
       <div className="container-xl" style={{ position: "relative" }}>
         {/* section Categories Menu bar */}
         <div style={{ position: "sticky", top: "20px", zIndex: "50" }}>

@@ -45,7 +45,6 @@ const Pricing = ({ pricingData }) => {
     <section
       style={{
         padding: "150px 35px 50px",
-        // fontFamily: "Ubuntu",
       }}
     >
       <div className={`${styles.mainTitleContainer}`}>
