@@ -490,7 +490,7 @@ const NavBar = (props) => {
                           Sign in
                         </CButton>
                       </Link>
-                      <Link href="https://app.vitlous.com/logOut">
+                      <Link href="https://app.vitlous.com/signUp">
                         <CButton
                           style={{ marginTop: "0px" }}
                           // className={`${navStyles.primaryButton}`}
