@@ -1,28 +1,17 @@
-import axios from "axios";
-import React from "react";
-import ContactBanner from "../../components/ContactUs/ContactBanner/ContactBanner";
-import ContactForm from "../../components/ContactUs/ContactForm/ContactForm";
-import ContactInfos from "../../components/ContactUs/ContactInfos/ContactInfos";
+// import axios from "axios";
+// import React from "react";
 
-const ContactUs = () => {
-  const [contactUsData, setContactUsData] = React.useState({});
-  const [contactUsForm, setContactUsForm] = React.useState({});
+// const ContactUs = () => {
+//   return (
+//     <section
+//       style={{
+//         color: "rgb(23, 52, 101)",
+//         fontFamily: "Ubuntu",
+//         backgroundImage:
+//           "linear-gradient(120deg, rgb(249, 236, 248) 15%, rgb(226, 246, 254) 100%)",
+//       }}
+//     ></section>
+//   );
+// };
 
-  React.useEffect(() => {
-    axios.get("/api/contactus/contactusapi").then((res) => {
-      setContactUsData(res.data);
-    });
-    axios.get("/api/contactus/contactusFormapi").then((res) => {
-      setContactUsForm(res.data);
-    });
-  }, []);
-  return (
-    <section style={{ color: "rgb(23, 52, 101)", fontFamily: "Ubuntu" }}>
-      <ContactBanner />
-      <ContactInfos contactUsData={contactUsData} />
-      <ContactForm contactUsForm={contactUsForm} />
-    </section>
-  );
-};
-
-export default ContactUs;
+// export default ContactUs;

@@ -17,8 +17,8 @@ const FooterCommon = ({ footerDetails }) => {
                   {data?.logo && (
                     <Image
                       src={data?.logo}
-                      width="120px"
-                      height="120px"
+                      width={120}
+                      height={120}
                       alt="logo"
                       className="img-fluid rounded-circle "
                     />
@@ -52,10 +52,6 @@ const FooterCommon = ({ footerDetails }) => {
                           style={{ listStyle: "none", cursor: "pointer" }}
                           onClick={() => {
                             router.push("/allFeatures/" + itemData?.name);
-                            // router.push({
-                            //   pathname: "/features",
-                            //   query: { title: itemData.item },
-                            // });
                           }}
                         >
                           {itemData.item}

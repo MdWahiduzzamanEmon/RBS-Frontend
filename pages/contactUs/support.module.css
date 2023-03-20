@@ -1,6 +1,11 @@
 .supportWrapper {
   padding-top: 100px;
   padding-bottom: 100px;
+  background: linear-gradient(
+    120deg,
+    rgb(249, 236, 248) 15%,
+    rgb(226, 246, 254) 100%
+  );
 }
 
 .supportTitleWrapper {

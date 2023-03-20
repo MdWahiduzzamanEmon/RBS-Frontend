@@ -72,7 +72,6 @@ const MobileNavbar = ({
             defaultActiveKey="0"
             style={{
               zIndex: "2000",
-              // fontFamily: "open sans"
             }}
             className={`${styles.accordionParent}`}
           >
